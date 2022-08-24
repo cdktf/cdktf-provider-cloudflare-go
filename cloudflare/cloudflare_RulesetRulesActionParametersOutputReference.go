@@ -11,6 +11,14 @@ import (
 
 type RulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticHttpsRewrites() interface{}
+	SetAutomaticHttpsRewrites(val interface{})
+	AutomaticHttpsRewritesInput() interface{}
+	Autominify() RulesetRulesActionParametersAutominifyList
+	AutominifyInput() interface{}
+	Bic() interface{}
+	SetBic(val interface{})
+	BicInput() interface{}
 	BrowserTtl() RulesetRulesActionParametersBrowserTtlOutputReference
 	BrowserTtlInput() *RulesetRulesActionParametersBrowserTtl
 	Cache() interface{}
@@ -42,8 +50,20 @@ type RulesetRulesActionParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableApps() interface{}
+	SetDisableApps(val interface{})
+	DisableAppsInput() interface{}
+	DisableRailgun() interface{}
+	SetDisableRailgun(val interface{})
+	DisableRailgunInput() interface{}
+	DisableZaraz() interface{}
+	SetDisableZaraz(val interface{})
+	DisableZarazInput() interface{}
 	EdgeTtl() RulesetRulesActionParametersEdgeTtlOutputReference
 	EdgeTtlInput() *RulesetRulesActionParametersEdgeTtl
+	EmailObfuscation() interface{}
+	SetEmailObfuscation(val interface{})
+	EmailObfuscationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	FromList() RulesetRulesActionParametersFromListOutputReference
@@ -55,6 +75,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	HostHeader() *string
 	SetHostHeader(val *string)
 	HostHeaderInput() *string
+	HotlinkProtection() interface{}
+	SetHotlinkProtection(val interface{})
+	HotlinkProtectionInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -65,6 +88,12 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetInternalValue(val *RulesetRulesActionParameters)
 	MatchedData() RulesetRulesActionParametersMatchedDataOutputReference
 	MatchedDataInput() *RulesetRulesActionParametersMatchedData
+	Mirage() interface{}
+	SetMirage(val interface{})
+	MirageInput() interface{}
+	OpportunisticEncryption() interface{}
+	SetOpportunisticEncryption(val interface{})
+	OpportunisticEncryptionInput() interface{}
 	Origin() RulesetRulesActionParametersOriginOutputReference
 	OriginErrorPagePassthru() interface{}
 	SetOriginErrorPagePassthru(val interface{})
@@ -75,6 +104,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	Phases() *[]*string
 	SetPhases(val *[]*string)
 	PhasesInput() *[]*string
+	Polish() *string
+	SetPolish(val *string)
+	PolishInput() *string
 	Products() *[]*string
 	SetProducts(val *[]*string)
 	ProductsInput() *[]*string
@@ -89,6 +121,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetResponseFields(val *[]*string)
 	ResponseFieldsInput() *[]*string
 	ResponseInput() interface{}
+	RocketLoader() interface{}
+	SetRocketLoader(val interface{})
+	RocketLoaderInput() interface{}
 	Rules() *map[string]*string
 	SetRules(val *map[string]*string)
 	Ruleset() *string
@@ -98,13 +133,25 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetRulesets(val *[]*string)
 	RulesetsInput() *[]*string
 	RulesInput() *map[string]*string
+	SecurityLevel() *string
+	SetSecurityLevel(val *string)
+	SecurityLevelInput() *string
+	ServerSideExcludes() interface{}
+	SetServerSideExcludes(val interface{})
+	ServerSideExcludesInput() interface{}
 	ServeStale() RulesetRulesActionParametersServeStaleOutputReference
 	ServeStaleInput() *RulesetRulesActionParametersServeStale
 	Sni() RulesetRulesActionParametersSniOutputReference
 	SniInput() *RulesetRulesActionParametersSni
+	Ssl() *string
+	SetSsl(val *string)
+	SslInput() *string
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
+	Sxg() interface{}
+	SetSxg(val interface{})
+	SxgInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,6 +189,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutominify(value interface{})
 	PutBrowserTtl(value *RulesetRulesActionParametersBrowserTtl)
 	PutCacheKey(value *RulesetRulesActionParametersCacheKey)
 	PutEdgeTtl(value *RulesetRulesActionParametersEdgeTtl)
@@ -155,35 +203,51 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutServeStale(value *RulesetRulesActionParametersServeStale)
 	PutSni(value *RulesetRulesActionParametersSni)
 	PutUri(value *RulesetRulesActionParametersUri)
+	ResetAutomaticHttpsRewrites()
+	ResetAutominify()
+	ResetBic()
 	ResetBrowserTtl()
 	ResetCache()
 	ResetCacheKey()
 	ResetContent()
 	ResetContentType()
 	ResetCookieFields()
+	ResetDisableApps()
+	ResetDisableRailgun()
+	ResetDisableZaraz()
 	ResetEdgeTtl()
+	ResetEmailObfuscation()
 	ResetFromList()
 	ResetFromValue()
 	ResetHeaders()
 	ResetHostHeader()
+	ResetHotlinkProtection()
 	ResetId()
 	ResetIncrement()
 	ResetMatchedData()
+	ResetMirage()
+	ResetOpportunisticEncryption()
 	ResetOrigin()
 	ResetOriginErrorPagePassthru()
 	ResetOverrides()
 	ResetPhases()
+	ResetPolish()
 	ResetProducts()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
 	ResetResponse()
 	ResetResponseFields()
+	ResetRocketLoader()
 	ResetRules()
 	ResetRuleset()
 	ResetRulesets()
+	ResetSecurityLevel()
+	ResetServerSideExcludes()
 	ResetServeStale()
 	ResetSni()
+	ResetSsl()
 	ResetStatusCode()
+	ResetSxg()
 	ResetUri()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
@@ -199,6 +263,66 @@ type RulesetRulesActionParametersOutputReference interface {
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AutomaticHttpsRewrites() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticHttpsRewrites",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AutomaticHttpsRewritesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticHttpsRewritesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Autominify() RulesetRulesActionParametersAutominifyList {
+	var returns RulesetRulesActionParametersAutominifyList
+	_jsii_.Get(
+		j,
+		"autominify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AutominifyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autominifyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Bic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) BicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bicInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) BrowserTtl() RulesetRulesActionParametersBrowserTtlOutputReference {
@@ -351,6 +475,66 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CreationStack() 
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableApps() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableApps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableAppsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAppsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRailgun() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRailgun",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRailgunInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRailgunInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableZaraz() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableZaraz",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableZarazInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableZarazInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EdgeTtl() RulesetRulesActionParametersEdgeTtlOutputReference {
 	var returns RulesetRulesActionParametersEdgeTtlOutputReference
 	_jsii_.Get(
@@ -366,6 +550,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EdgeTtlInput() *
 	_jsii_.Get(
 		j,
 		"edgeTtlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EmailObfuscation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailObfuscation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EmailObfuscationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailObfuscationInput",
 		&returns,
 	)
 	return returns
@@ -461,6 +665,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) HostHeaderInput(
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) HotlinkProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hotlinkProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) HotlinkProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hotlinkProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -526,6 +750,46 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MatchedDataInput
 	_jsii_.Get(
 		j,
 		"matchedDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Mirage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mirage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) MirageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mirageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OpportunisticEncryption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"opportunisticEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OpportunisticEncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"opportunisticEncryptionInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +870,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PhasesInput() *[
 	_jsii_.Get(
 		j,
 		"phasesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Polish() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"polish",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PolishInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"polishInput",
 		&returns,
 	)
 	return returns
@@ -711,6 +995,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ResponseInput() 
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RocketLoader() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rocketLoader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RocketLoaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rocketLoaderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Rules() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -771,6 +1075,46 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RulesInput() *ma
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SecurityLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SecurityLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ServerSideExcludes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverSideExcludes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ServerSideExcludesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverSideExcludesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ServeStale() RulesetRulesActionParametersServeStaleOutputReference {
 	var returns RulesetRulesActionParametersServeStaleOutputReference
 	_jsii_.Get(
@@ -811,6 +1155,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SniInput() *Rule
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Ssl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SslInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StatusCode() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -826,6 +1190,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) StatusCodeInput(
 	_jsii_.Get(
 		j,
 		"statusCodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Sxg() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sxg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SxgInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sxgInput",
 		&returns,
 	)
 	return returns
@@ -916,6 +1300,22 @@ func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActio
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetAutomaticHttpsRewrites(val interface{}) {
+	_jsii_.Set(
+		j,
+		"automaticHttpsRewrites",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetBic(val interface{}) {
+	_jsii_.Set(
+		j,
+		"bic",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetCache(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -964,10 +1364,50 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetCookieFields(
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetDisableApps(val interface{}) {
+	_jsii_.Set(
+		j,
+		"disableApps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetDisableRailgun(val interface{}) {
+	_jsii_.Set(
+		j,
+		"disableRailgun",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetDisableZaraz(val interface{}) {
+	_jsii_.Set(
+		j,
+		"disableZaraz",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetEmailObfuscation(val interface{}) {
+	_jsii_.Set(
+		j,
+		"emailObfuscation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetHostHeader(val *string) {
 	_jsii_.Set(
 		j,
 		"hostHeader",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetHotlinkProtection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"hotlinkProtection",
 		val,
 	)
 }
@@ -996,6 +1436,22 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetInternalValue
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetMirage(val interface{}) {
+	_jsii_.Set(
+		j,
+		"mirage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetOpportunisticEncryption(val interface{}) {
+	_jsii_.Set(
+		j,
+		"opportunisticEncryption",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetOriginErrorPagePassthru(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -1008,6 +1464,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetPhases(val *[
 	_jsii_.Set(
 		j,
 		"phases",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetPolish(val *string) {
+	_jsii_.Set(
+		j,
+		"polish",
 		val,
 	)
 }
@@ -1044,6 +1508,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetResponseField
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetRocketLoader(val interface{}) {
+	_jsii_.Set(
+		j,
+		"rocketLoader",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetRules(val *map[string]*string) {
 	_jsii_.Set(
 		j,
@@ -1068,10 +1540,42 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetRulesets(val 
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetSecurityLevel(val *string) {
+	_jsii_.Set(
+		j,
+		"securityLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetServerSideExcludes(val interface{}) {
+	_jsii_.Set(
+		j,
+		"serverSideExcludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetSsl(val *string) {
+	_jsii_.Set(
+		j,
+		"ssl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetStatusCode(val *float64) {
 	_jsii_.Set(
 		j,
 		"statusCode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) SetSxg(val interface{}) {
+	_jsii_.Set(
+		j,
+		"sxg",
 		val,
 	)
 }
@@ -1256,6 +1760,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationFor
 	return returns
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutAutominify(value interface{}) {
+	_jsii_.InvokeVoid(
+		r,
+		"putAutominify",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutBrowserTtl(value *RulesetRulesActionParametersBrowserTtl) {
 	_jsii_.InvokeVoid(
 		r,
@@ -1360,6 +1872,30 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value *Ru
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAutomaticHttpsRewrites() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutomaticHttpsRewrites",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAutominify() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutominify",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetBic() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBic",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetBrowserTtl() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1408,10 +1944,42 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetCookieField
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableApps() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableApps",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableRailgun() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableRailgun",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableZaraz() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableZaraz",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetEdgeTtl() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEdgeTtl",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetEmailObfuscation() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEmailObfuscation",
 		nil, // no parameters
 	)
 }
@@ -1448,6 +2016,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetHostHeader(
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetHotlinkProtection() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetHotlinkProtection",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1468,6 +2044,22 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMatchedData
 	_jsii_.InvokeVoid(
 		r,
 		"resetMatchedData",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetMirage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMirage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOpportunisticEncryption() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOpportunisticEncryption",
 		nil, // no parameters
 	)
 }
@@ -1500,6 +2092,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPhases() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPhases",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPolish() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPolish",
 		nil, // no parameters
 	)
 }
@@ -1544,6 +2144,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetResponseFie
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRocketLoader() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRocketLoader",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRules() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1568,6 +2176,22 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRulesets() 
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSecurityLevel() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecurityLevel",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetServerSideExcludes() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetServerSideExcludes",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetServeStale() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1584,10 +2208,26 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSni() {
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSsl() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSsl",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetStatusCode() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatusCode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSxg() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSxg",
 		nil, // no parameters
 	)
 }

@@ -3,6 +3,18 @@ package cloudflare
 
 
 type RulesetRulesActionParameters struct {
+	// Turn on or off Cloudflare Automatic HTTPS rewrites.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+	AutomaticHttpsRewrites interface{} `field:"optional" json:"automaticHttpsRewrites" yaml:"automaticHttpsRewrites"`
+	// autominify block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#autominify Ruleset#autominify}
+	Autominify interface{} `field:"optional" json:"autominify" yaml:"autominify"`
+	// Inspect the visitor's browser for headers commonly associated with spammers and certain bots.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#bic Ruleset#bic}
+	Bic interface{} `field:"optional" json:"bic" yaml:"bic"`
 	// browser_ttl block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#browser_ttl Ruleset#browser_ttl}
@@ -27,10 +39,26 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#cookie_fields Ruleset#cookie_fields}
 	CookieFields *[]*string `field:"optional" json:"cookieFields" yaml:"cookieFields"`
+	// Turn off all active Cloudflare Apps.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_apps Ruleset#disable_apps}
+	DisableApps interface{} `field:"optional" json:"disableApps" yaml:"disableApps"`
+	// Turn off railgun feature of the Cloudflare Speed app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_railgun Ruleset#disable_railgun}
+	DisableRailgun interface{} `field:"optional" json:"disableRailgun" yaml:"disableRailgun"`
+	// Turn off zaraz feature.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#disable_zaraz Ruleset#disable_zaraz}
+	DisableZaraz interface{} `field:"optional" json:"disableZaraz" yaml:"disableZaraz"`
 	// edge_ttl block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#edge_ttl Ruleset#edge_ttl}
 	EdgeTtl *RulesetRulesActionParametersEdgeTtl `field:"optional" json:"edgeTtl" yaml:"edgeTtl"`
+	// Turn on or off the Cloudflare Email Obfuscation feature of the Cloudflare Scrape Shield app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#email_obfuscation Ruleset#email_obfuscation}
+	EmailObfuscation interface{} `field:"optional" json:"emailObfuscation" yaml:"emailObfuscation"`
 	// from_list block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#from_list Ruleset#from_list}
@@ -47,6 +75,10 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#host_header Ruleset#host_header}
 	HostHeader *string `field:"optional" json:"hostHeader" yaml:"hostHeader"`
+	// Turn on or off the hotlink protection feature.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#hotlink_protection Ruleset#hotlink_protection}
+	HotlinkProtection interface{} `field:"optional" json:"hotlinkProtection" yaml:"hotlinkProtection"`
 	// Identifier of the action parameter to modify.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#id Ruleset#id}
@@ -60,6 +92,14 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#matched_data Ruleset#matched_data}
 	MatchedData *RulesetRulesActionParametersMatchedData `field:"optional" json:"matchedData" yaml:"matchedData"`
+	// Turn on or off Cloudflare Mirage of the Cloudflare Speed app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#mirage Ruleset#mirage}
+	Mirage interface{} `field:"optional" json:"mirage" yaml:"mirage"`
+	// Turn on or off the Cloudflare Opportunistic Encryption feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+	OpportunisticEncryption interface{} `field:"optional" json:"opportunisticEncryption" yaml:"opportunisticEncryption"`
 	// origin block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#origin Ruleset#origin}
@@ -74,10 +114,14 @@ type RulesetRulesActionParameters struct {
 	Overrides *RulesetRulesActionParametersOverrides `field:"optional" json:"overrides" yaml:"overrides"`
 	// Point in the request/response lifecycle where the ruleset will be created.
 	//
-	// Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`.
+	// Available values: `ddos_l4`, `ddos_l7`, `http_custom_errors`, `http_log_custom_fields`, `http_request_cache_settings`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_late_transform_managed`, `http_request_main`, `http_request_origin`, `http_request_dynamic_redirect`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_firewall_managed`, `http_response_headers_transform`, `http_response_headers_transform_managed`, `magic_transit`, `http_ratelimit`, `http_request_sbfm`, `http_config_settings`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#phases Ruleset#phases}
 	Phases *[]*string `field:"optional" json:"phases" yaml:"phases"`
+	// Apply options from the Polish feature of the Cloudflare Speed app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#polish Ruleset#polish}
+	Polish *string `field:"optional" json:"polish" yaml:"polish"`
 	// Products to target with the actions. Available values: `bic`, `hot`, `ratelimit`, `securityLevel`, `uablock`, `waf`, `zonelockdown`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#products Ruleset#products}
@@ -98,6 +142,10 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#response_fields Ruleset#response_fields}
 	ResponseFields *[]*string `field:"optional" json:"responseFields" yaml:"responseFields"`
+	// Turn on or off Cloudflare Rocket Loader in the Cloudflare Speed app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#rocket_loader Ruleset#rocket_loader}
+	RocketLoader interface{} `field:"optional" json:"rocketLoader" yaml:"rocketLoader"`
 	// Map of managed WAF rule ID to comma-delimited string of ruleset rule IDs.
 	//
 	// Example: `rules = { "efb7b8c949ac4650a09736fc376e9aee" = "5de7edfa648c4d6891dc3e7f84534ffa,e3a567afc347477d9702d9047e97d760" }`.
@@ -112,6 +160,14 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#rulesets Ruleset#rulesets}
 	Rulesets *[]*string `field:"optional" json:"rulesets" yaml:"rulesets"`
+	// Control options for the Security Level feature from the Security app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#security_level Ruleset#security_level}
+	SecurityLevel *string `field:"optional" json:"securityLevel" yaml:"securityLevel"`
+	// Turn on or off the Server Side Excludes feature of the Cloudflare Scrape Shield app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#server_side_excludes Ruleset#server_side_excludes}
+	ServerSideExcludes interface{} `field:"optional" json:"serverSideExcludes" yaml:"serverSideExcludes"`
 	// serve_stale block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#serve_stale Ruleset#serve_stale}
@@ -120,10 +176,18 @@ type RulesetRulesActionParameters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#sni Ruleset#sni}
 	Sni *RulesetRulesActionParametersSni `field:"optional" json:"sni" yaml:"sni"`
+	// Control options for the SSL feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#ssl Ruleset#ssl}
+	Ssl *string `field:"optional" json:"ssl" yaml:"ssl"`
 	// HTTP status code of the custom error response.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#status_code Ruleset#status_code}
 	StatusCode *float64 `field:"optional" json:"statusCode" yaml:"statusCode"`
+	// Turn on or off the SXG feature.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#sxg Ruleset#sxg}
+	Sxg interface{} `field:"optional" json:"sxg" yaml:"sxg"`
 	// uri block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#uri Ruleset#uri}

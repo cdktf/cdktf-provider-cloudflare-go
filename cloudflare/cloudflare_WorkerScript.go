@@ -64,6 +64,8 @@ type WorkerScript interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	R2BucketBinding() WorkerScriptR2BucketBindingList
+	R2BucketBindingInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	SecretTextBinding() WorkerScriptSecretTextBindingList
@@ -105,6 +107,7 @@ type WorkerScript interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutKvNamespaceBinding(value interface{})
 	PutPlainTextBinding(value interface{})
+	PutR2BucketBinding(value interface{})
 	PutSecretTextBinding(value interface{})
 	PutServiceBinding(value interface{})
 	PutWebassemblyBinding(value interface{})
@@ -114,6 +117,7 @@ type WorkerScript interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlainTextBinding()
+	ResetR2BucketBinding()
 	ResetSecretTextBinding()
 	ResetServiceBinding()
 	ResetWebassemblyBinding()
@@ -347,6 +351,26 @@ func (j *jsiiProxy_WorkerScript) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) R2BucketBinding() WorkerScriptR2BucketBindingList {
+	var returns WorkerScriptR2BucketBindingList
+	_jsii_.Get(
+		j,
+		"r2BucketBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) R2BucketBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"r2BucketBindingInput",
 		&returns,
 	)
 	return returns
@@ -764,6 +788,14 @@ func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value interface{}) {
+	_jsii_.InvokeVoid(
+		w,
+		"putR2BucketBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutSecretTextBinding(value interface{}) {
 	_jsii_.InvokeVoid(
 		w,
@@ -816,6 +848,14 @@ func (w *jsiiProxy_WorkerScript) ResetPlainTextBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPlainTextBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetR2BucketBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetR2BucketBinding",
 		nil, // no parameters
 	)
 }
