@@ -551,6 +551,9 @@ func (j *jsiiProxy_GreTunnel) TtlInput() *float64 {
 func NewGreTunnel(scope constructs.Construct, id *string, config *GreTunnelConfig) GreTunnel {
 	_init_.Initialize()
 
+	if err := validateNewGreTunnelParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GreTunnel{}
 
 	_jsii_.Create(
@@ -573,7 +576,10 @@ func NewGreTunnel_Override(g GreTunnel, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetAccountId(val *string) {
+func (j *jsiiProxy_GreTunnel)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -581,7 +587,10 @@ func (j *jsiiProxy_GreTunnel) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetCloudflareGreEndpoint(val *string) {
+func (j *jsiiProxy_GreTunnel)SetCloudflareGreEndpoint(val *string) {
+	if err := j.validateSetCloudflareGreEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cloudflareGreEndpoint",
@@ -589,7 +598,10 @@ func (j *jsiiProxy_GreTunnel) SetCloudflareGreEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetConnection(val interface{}) {
+func (j *jsiiProxy_GreTunnel)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -597,7 +609,7 @@ func (j *jsiiProxy_GreTunnel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetCount(val *float64) {
+func (j *jsiiProxy_GreTunnel)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -605,7 +617,10 @@ func (j *jsiiProxy_GreTunnel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetCustomerGreEndpoint(val *string) {
+func (j *jsiiProxy_GreTunnel)SetCustomerGreEndpoint(val *string) {
+	if err := j.validateSetCustomerGreEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customerGreEndpoint",
@@ -613,7 +628,7 @@ func (j *jsiiProxy_GreTunnel) SetCustomerGreEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GreTunnel)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -621,7 +636,10 @@ func (j *jsiiProxy_GreTunnel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetDescription(val *string) {
+func (j *jsiiProxy_GreTunnel)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -629,7 +647,7 @@ func (j *jsiiProxy_GreTunnel) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GreTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -637,7 +655,10 @@ func (j *jsiiProxy_GreTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetHealthCheckEnabled(val interface{}) {
+func (j *jsiiProxy_GreTunnel)SetHealthCheckEnabled(val interface{}) {
+	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckEnabled",
@@ -645,7 +666,10 @@ func (j *jsiiProxy_GreTunnel) SetHealthCheckEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetHealthCheckTarget(val *string) {
+func (j *jsiiProxy_GreTunnel)SetHealthCheckTarget(val *string) {
+	if err := j.validateSetHealthCheckTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckTarget",
@@ -653,7 +677,10 @@ func (j *jsiiProxy_GreTunnel) SetHealthCheckTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetHealthCheckType(val *string) {
+func (j *jsiiProxy_GreTunnel)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckType",
@@ -661,7 +688,10 @@ func (j *jsiiProxy_GreTunnel) SetHealthCheckType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetId(val *string) {
+func (j *jsiiProxy_GreTunnel)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -669,7 +699,10 @@ func (j *jsiiProxy_GreTunnel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetInterfaceAddress(val *string) {
+func (j *jsiiProxy_GreTunnel)SetInterfaceAddress(val *string) {
+	if err := j.validateSetInterfaceAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
@@ -677,7 +710,10 @@ func (j *jsiiProxy_GreTunnel) SetInterfaceAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GreTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -685,7 +721,10 @@ func (j *jsiiProxy_GreTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetMtu(val *float64) {
+func (j *jsiiProxy_GreTunnel)SetMtu(val *float64) {
+	if err := j.validateSetMtuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mtu",
@@ -693,7 +732,10 @@ func (j *jsiiProxy_GreTunnel) SetMtu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetName(val *string) {
+func (j *jsiiProxy_GreTunnel)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -701,7 +743,7 @@ func (j *jsiiProxy_GreTunnel) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GreTunnel)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -709,7 +751,10 @@ func (j *jsiiProxy_GreTunnel) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GreTunnel)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -717,7 +762,10 @@ func (j *jsiiProxy_GreTunnel) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GreTunnel) SetTtl(val *float64) {
+func (j *jsiiProxy_GreTunnel)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -745,6 +793,9 @@ func (j *jsiiProxy_GreTunnel) SetTtl(val *float64) {
 func GreTunnel_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGreTunnel_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -769,6 +820,9 @@ func GreTunnel_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GreTunnel) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -777,6 +831,9 @@ func (g *jsiiProxy_GreTunnel) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GreTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -790,6 +847,9 @@ func (g *jsiiProxy_GreTunnel) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (g *jsiiProxy_GreTunnel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -803,6 +863,9 @@ func (g *jsiiProxy_GreTunnel) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (g *jsiiProxy_GreTunnel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -816,6 +879,9 @@ func (g *jsiiProxy_GreTunnel) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GreTunnel) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -829,6 +895,9 @@ func (g *jsiiProxy_GreTunnel) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (g *jsiiProxy_GreTunnel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -842,6 +911,9 @@ func (g *jsiiProxy_GreTunnel) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (g *jsiiProxy_GreTunnel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -855,6 +927,9 @@ func (g *jsiiProxy_GreTunnel) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GreTunnel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -868,6 +943,9 @@ func (g *jsiiProxy_GreTunnel) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GreTunnel) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -881,6 +959,9 @@ func (g *jsiiProxy_GreTunnel) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (g *jsiiProxy_GreTunnel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -894,6 +975,9 @@ func (g *jsiiProxy_GreTunnel) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (g *jsiiProxy_GreTunnel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -907,6 +991,9 @@ func (g *jsiiProxy_GreTunnel) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GreTunnel) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

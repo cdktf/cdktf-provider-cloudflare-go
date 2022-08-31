@@ -409,6 +409,9 @@ func (j *jsiiProxy_CustomPages) ZoneIdInput() *string {
 func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesConfig) CustomPages {
 	_init_.Initialize()
 
+	if err := validateNewCustomPagesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomPages{}
 
 	_jsii_.Create(
@@ -431,7 +434,10 @@ func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetAccountId(val *string) {
+func (j *jsiiProxy_CustomPages)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -439,7 +445,10 @@ func (j *jsiiProxy_CustomPages) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomPages)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -447,7 +456,7 @@ func (j *jsiiProxy_CustomPages) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetCount(val *float64) {
+func (j *jsiiProxy_CustomPages)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -455,7 +464,7 @@ func (j *jsiiProxy_CustomPages) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomPages)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -463,7 +472,7 @@ func (j *jsiiProxy_CustomPages) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomPages)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -471,7 +480,10 @@ func (j *jsiiProxy_CustomPages) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetId(val *string) {
+func (j *jsiiProxy_CustomPages)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -479,7 +491,10 @@ func (j *jsiiProxy_CustomPages) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomPages)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -487,7 +502,7 @@ func (j *jsiiProxy_CustomPages) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomPages)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +510,10 @@ func (j *jsiiProxy_CustomPages) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomPages)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -503,7 +521,10 @@ func (j *jsiiProxy_CustomPages) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetState(val *string) {
+func (j *jsiiProxy_CustomPages)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -511,7 +532,10 @@ func (j *jsiiProxy_CustomPages) SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetType(val *string) {
+func (j *jsiiProxy_CustomPages)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -519,7 +543,10 @@ func (j *jsiiProxy_CustomPages) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetUrl(val *string) {
+func (j *jsiiProxy_CustomPages)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -527,7 +554,10 @@ func (j *jsiiProxy_CustomPages) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages) SetZoneId(val *string) {
+func (j *jsiiProxy_CustomPages)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -555,6 +585,9 @@ func (j *jsiiProxy_CustomPages) SetZoneId(val *string) {
 func CustomPages_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustomPages_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -579,6 +612,9 @@ func CustomPages_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CustomPages) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -587,6 +623,9 @@ func (c *jsiiProxy_CustomPages) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CustomPages) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -600,6 +639,9 @@ func (c *jsiiProxy_CustomPages) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomPages) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -613,6 +655,9 @@ func (c *jsiiProxy_CustomPages) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CustomPages) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -626,6 +671,9 @@ func (c *jsiiProxy_CustomPages) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CustomPages) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -639,6 +687,9 @@ func (c *jsiiProxy_CustomPages) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (c *jsiiProxy_CustomPages) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -652,6 +703,9 @@ func (c *jsiiProxy_CustomPages) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomPages) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -665,6 +719,9 @@ func (c *jsiiProxy_CustomPages) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CustomPages) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -678,6 +735,9 @@ func (c *jsiiProxy_CustomPages) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CustomPages) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -691,6 +751,9 @@ func (c *jsiiProxy_CustomPages) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (c *jsiiProxy_CustomPages) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -704,6 +767,9 @@ func (c *jsiiProxy_CustomPages) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (c *jsiiProxy_CustomPages) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -717,6 +783,9 @@ func (c *jsiiProxy_CustomPages) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CustomPages) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

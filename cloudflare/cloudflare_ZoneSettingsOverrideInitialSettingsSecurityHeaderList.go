@@ -99,6 +99,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) WrapsS
 func NewZoneSettingsOverrideInitialSettingsSecurityHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsSecurityHeaderList {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewZoneSettingsOverrideInitialSettingsSecurityHeaderList_Override(z ZoneSet
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) Comput
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) Get(index *float64) ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference {
+	if err := z.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) Get(in
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

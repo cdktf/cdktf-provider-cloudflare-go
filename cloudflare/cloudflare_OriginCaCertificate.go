@@ -407,6 +407,9 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
+	if err := validateNewOriginCaCertificateParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OriginCaCertificate{}
 
 	_jsii_.Create(
@@ -429,7 +432,10 @@ func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetConnection(val interface{}) {
+func (j *jsiiProxy_OriginCaCertificate)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -437,7 +443,7 @@ func (j *jsiiProxy_OriginCaCertificate) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetCount(val *float64) {
+func (j *jsiiProxy_OriginCaCertificate)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -445,7 +451,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetCsr(val *string) {
+func (j *jsiiProxy_OriginCaCertificate)SetCsr(val *string) {
+	if err := j.validateSetCsrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"csr",
@@ -453,7 +462,7 @@ func (j *jsiiProxy_OriginCaCertificate) SetCsr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OriginCaCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -461,7 +470,7 @@ func (j *jsiiProxy_OriginCaCertificate) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OriginCaCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +478,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetHostnames(val *[]*string) {
+func (j *jsiiProxy_OriginCaCertificate)SetHostnames(val *[]*string) {
+	if err := j.validateSetHostnamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostnames",
@@ -477,7 +489,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetHostnames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetId(val *string) {
+func (j *jsiiProxy_OriginCaCertificate)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -485,7 +500,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -493,7 +511,7 @@ func (j *jsiiProxy_OriginCaCertificate) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OriginCaCertificate)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -501,7 +519,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OriginCaCertificate)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -509,7 +530,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetRequestedValidity(val *float64) {
+func (j *jsiiProxy_OriginCaCertificate)SetRequestedValidity(val *float64) {
+	if err := j.validateSetRequestedValidityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestedValidity",
@@ -517,7 +541,10 @@ func (j *jsiiProxy_OriginCaCertificate) SetRequestedValidity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate) SetRequestType(val *string) {
+func (j *jsiiProxy_OriginCaCertificate)SetRequestType(val *string) {
+	if err := j.validateSetRequestTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestType",
@@ -545,6 +572,9 @@ func (j *jsiiProxy_OriginCaCertificate) SetRequestType(val *string) {
 func OriginCaCertificate_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOriginCaCertificate_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -569,6 +599,9 @@ func OriginCaCertificate_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OriginCaCertificate) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -577,6 +610,9 @@ func (o *jsiiProxy_OriginCaCertificate) AddOverride(path *string, value interfac
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -590,6 +626,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -603,6 +642,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetBooleanAttribute(terraformAttribute *
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -616,6 +658,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -629,6 +674,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetListAttribute(terraformAttribute *str
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -642,6 +690,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -655,6 +706,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberListAttribute(terraformAttribut
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -668,6 +722,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -681,6 +738,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetStringAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OriginCaCertificate) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -694,6 +754,9 @@ func (o *jsiiProxy_OriginCaCertificate) GetStringMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OriginCaCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -707,6 +770,9 @@ func (o *jsiiProxy_OriginCaCertificate) InterpolationForAttribute(terraformAttri
 }
 
 func (o *jsiiProxy_OriginCaCertificate) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",

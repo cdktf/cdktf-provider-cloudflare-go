@@ -197,6 +197,9 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) Terrafor
 func NewManagedHeadersManagedResponseHeadersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedHeadersManagedResponseHeadersOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewManagedHeadersManagedResponseHeadersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewManagedHeadersManagedResponseHeadersOutputReference_Override(m ManagedHe
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetEnabl
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetId(val *string) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetId(va
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) ComputeF
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetAnyMa
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetBoole
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetBoole
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetListA
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetStrin
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) Interpol
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) Interpol
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

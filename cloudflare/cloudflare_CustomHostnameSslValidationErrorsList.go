@@ -99,6 +99,9 @@ func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) WrapsSet() *bool {
 func NewCustomHostnameSslValidationErrorsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslValidationErrorsList {
 	_init_.Initialize()
 
+	if err := validateNewCustomHostnameSslValidationErrorsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomHostnameSslValidationErrorsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewCustomHostnameSslValidationErrorsList_Override(c CustomHostnameSslValida
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomHostnameSslValidationErrorsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomHostnameSslValidationErrorsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslValidationErrorsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CustomHostnameSslValidationErrorsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (c *jsiiProxy_CustomHostnameSslValidationErrorsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CustomHostnameSslValidationErrorsList) Get(index *float64) CustomHostnameSslValidationErrorsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CustomHostnameSslValidationErrorsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (c *jsiiProxy_CustomHostnameSslValidationErrorsList) Get(index *float64) Cu
 }
 
 func (c *jsiiProxy_CustomHostnameSslValidationErrorsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

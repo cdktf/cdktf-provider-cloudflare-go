@@ -111,6 +111,9 @@ func (j *jsiiProxy_ApiTokenPolicyList) WrapsSet() *bool {
 func NewApiTokenPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiTokenPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewApiTokenPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApiTokenPolicyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewApiTokenPolicyList_Override(a ApiTokenPolicyList, terraformResource cdkt
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPolicyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApiTokenPolicyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ApiTokenPolicyList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiTokenPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ApiTokenPolicyList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiTokenPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ApiTokenPolicyList) SetTerraformResource(val cdktf.IInterpola
 	)
 }
 
-func (j *jsiiProxy_ApiTokenPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApiTokenPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_ApiTokenPolicyList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_ApiTokenPolicyList) Get(index *float64) ApiTokenPolicyOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ApiTokenPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_ApiTokenPolicyList) Get(index *float64) ApiTokenPolicyOutputR
 }
 
 func (a *jsiiProxy_ApiTokenPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

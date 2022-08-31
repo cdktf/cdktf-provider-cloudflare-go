@@ -111,6 +111,9 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) WrapsSet() *bool {
 func NewPageRuleActionsMinifyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PageRuleActionsMinifyList {
 	_init_.Initialize()
 
+	if err := validateNewPageRuleActionsMinifyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PageRuleActionsMinifyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPageRuleActionsMinifyList_Override(p PageRuleActionsMinifyList, terrafor
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsMinifyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PageRuleActionsMinifyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PageRuleActionsMinifyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PageRuleActionsMinifyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PageRuleActionsMinifyList) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PageRuleActionsMinifyList) Get(index *float64) PageRuleActionsMinifyOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PageRuleActionsMinifyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PageRuleActionsMinifyList) Get(index *float64) PageRuleAction
 }
 
 func (p *jsiiProxy_PageRuleActionsMinifyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

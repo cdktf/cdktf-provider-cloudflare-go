@@ -393,6 +393,9 @@ func (j *jsiiProxy_ZoneSettingsOverride) ZoneType() *string {
 func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) ZoneSettingsOverride {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverride{}
 
 	_jsii_.Create(
@@ -415,7 +418,10 @@ func NewZoneSettingsOverride_Override(z ZoneSettingsOverride, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -423,7 +429,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetCount(val *float64) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -431,7 +437,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -439,7 +445,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +453,10 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetId(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -455,7 +464,10 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -463,7 +475,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -471,7 +483,10 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -479,7 +494,10 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverride) SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverride)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -507,6 +525,9 @@ func (j *jsiiProxy_ZoneSettingsOverride) SetZoneId(val *string) {
 func ZoneSettingsOverride_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateZoneSettingsOverride_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -531,6 +552,9 @@ func ZoneSettingsOverride_TfResourceType() *string {
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) AddOverride(path *string, value interface{}) {
+	if err := z.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
@@ -539,6 +563,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) AddOverride(path *string, value interfa
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -552,6 +579,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -565,6 +595,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanAttribute(terraformAttribute 
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -578,6 +611,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -591,6 +627,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetListAttribute(terraformAttribute *st
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -604,6 +643,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetNumberAttribute(terraformAttribute *
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -617,6 +659,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetNumberListAttribute(terraformAttribu
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -630,6 +675,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetNumberMapAttribute(terraformAttribut
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -643,6 +691,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetStringAttribute(terraformAttribute *
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -656,6 +707,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) GetStringMapAttribute(terraformAttribut
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -669,6 +723,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) InterpolationForAttribute(terraformAttr
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) OverrideLogicalId(newLogicalId *string) {
+	if err := z.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
@@ -677,6 +734,9 @@ func (z *jsiiProxy_ZoneSettingsOverride) OverrideLogicalId(newLogicalId *string)
 }
 
 func (z *jsiiProxy_ZoneSettingsOverride) PutSettings(value *ZoneSettingsOverrideSettings) {
+	if err := z.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"putSettings",

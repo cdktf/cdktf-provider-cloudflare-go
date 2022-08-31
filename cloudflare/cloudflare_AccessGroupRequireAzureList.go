@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessGroupRequireAzureList) WrapsSet() *bool {
 func NewAccessGroupRequireAzureList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireAzureList {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupRequireAzureListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupRequireAzureList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessGroupRequireAzureList_Override(a AccessGroupRequireAzureList, terr
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireAzureList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireAzureList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireAzureList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireAzureList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureList) Get(index *float64) AccessGroupRequireAzureOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessGroupRequireAzureOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureList) Get(index *float64) AccessGroupR
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

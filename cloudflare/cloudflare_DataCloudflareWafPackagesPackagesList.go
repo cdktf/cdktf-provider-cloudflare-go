@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) WrapsSet() *bool {
 func NewDataCloudflareWafPackagesPackagesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareWafPackagesPackagesList {
 	_init_.Initialize()
 
+	if err := validateNewDataCloudflareWafPackagesPackagesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataCloudflareWafPackagesPackagesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataCloudflareWafPackagesPackagesList_Override(d DataCloudflareWafPackag
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareWafPackagesPackagesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesPackagesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesPackagesList) Get(index *float64) DataCloudflareWafPackagesPackagesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataCloudflareWafPackagesPackagesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesPackagesList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesPackagesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

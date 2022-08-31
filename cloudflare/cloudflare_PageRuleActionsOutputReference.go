@@ -1039,6 +1039,9 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) WafInput() *string {
 func NewPageRuleActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PageRuleActionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPageRuleActionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PageRuleActionsOutputReference{}
 
 	_jsii_.Create(
@@ -1060,7 +1063,10 @@ func NewPageRuleActionsOutputReference_Override(p PageRuleActionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetAlwaysUseHttps(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetAlwaysUseHttps(val interface{}) {
+	if err := j.validateSetAlwaysUseHttpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alwaysUseHttps",
@@ -1068,7 +1074,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetAlwaysUseHttps(val interfa
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetAutomaticHttpsRewrites(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetAutomaticHttpsRewrites(val *string) {
+	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"automaticHttpsRewrites",
@@ -1076,7 +1085,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetAutomaticHttpsRewrites(val
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCacheTtl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCacheTtl(val *string) {
+	if err := j.validateSetBrowserCacheTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"browserCacheTtl",
@@ -1084,7 +1096,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCacheTtl(val *strin
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCheck(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetBrowserCheck(val *string) {
+	if err := j.validateSetBrowserCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"browserCheck",
@@ -1092,7 +1107,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetBrowserCheck(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetBypassCacheOnCookie(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetBypassCacheOnCookie(val *string) {
+	if err := j.validateSetBypassCacheOnCookieParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bypassCacheOnCookie",
@@ -1100,7 +1118,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetBypassCacheOnCookie(val *s
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheByDeviceType(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheByDeviceType(val *string) {
+	if err := j.validateSetCacheByDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheByDeviceType",
@@ -1108,7 +1129,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheByDeviceType(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheDeceptionArmor(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheDeceptionArmor(val *string) {
+	if err := j.validateSetCacheDeceptionArmorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheDeceptionArmor",
@@ -1116,7 +1140,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheDeceptionArmor(val *s
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheLevel(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheLevel(val *string) {
+	if err := j.validateSetCacheLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheLevel",
@@ -1124,7 +1151,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheOnCookie(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheOnCookie(val *string) {
+	if err := j.validateSetCacheOnCookieParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheOnCookie",
@@ -1132,7 +1162,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetCacheOnCookie(val *string)
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -1140,7 +1173,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -1148,7 +1184,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableApps(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableApps(val interface{}) {
+	if err := j.validateSetDisableAppsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableApps",
@@ -1156,7 +1195,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableApps(val interface{
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisablePerformance(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisablePerformance(val interface{}) {
+	if err := j.validateSetDisablePerformanceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disablePerformance",
@@ -1164,7 +1206,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisablePerformance(val int
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableRailgun(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableRailgun(val interface{}) {
+	if err := j.validateSetDisableRailgunParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableRailgun",
@@ -1172,7 +1217,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableRailgun(val interfa
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableSecurity(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableSecurity(val interface{}) {
+	if err := j.validateSetDisableSecurityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableSecurity",
@@ -1180,7 +1228,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableSecurity(val interf
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableZaraz(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetDisableZaraz(val interface{}) {
+	if err := j.validateSetDisableZarazParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableZaraz",
@@ -1188,7 +1239,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetDisableZaraz(val interface
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetEdgeCacheTtl(val *float64) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetEdgeCacheTtl(val *float64) {
+	if err := j.validateSetEdgeCacheTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"edgeCacheTtl",
@@ -1196,7 +1250,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetEdgeCacheTtl(val *float64)
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetEmailObfuscation(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetEmailObfuscation(val *string) {
+	if err := j.validateSetEmailObfuscationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailObfuscation",
@@ -1204,7 +1261,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetEmailObfuscation(val *stri
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetExplicitCacheControl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetExplicitCacheControl(val *string) {
+	if err := j.validateSetExplicitCacheControlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"explicitCacheControl",
@@ -1212,7 +1272,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetExplicitCacheControl(val *
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetHostHeaderOverride(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetHostHeaderOverride(val *string) {
+	if err := j.validateSetHostHeaderOverrideParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hostHeaderOverride",
@@ -1220,7 +1283,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetHostHeaderOverride(val *st
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetInternalValue(val *PageRuleActions) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetInternalValue(val *PageRuleActions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -1228,7 +1294,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetInternalValue(val *PageRul
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetIpGeolocation(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetIpGeolocation(val *string) {
+	if err := j.validateSetIpGeolocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipGeolocation",
@@ -1236,7 +1305,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetIpGeolocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetMirage(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetMirage(val *string) {
+	if err := j.validateSetMirageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirage",
@@ -1244,7 +1316,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetMirage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetOpportunisticEncryption(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetOpportunisticEncryption(val *string) {
+	if err := j.validateSetOpportunisticEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"opportunisticEncryption",
@@ -1252,7 +1327,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetOpportunisticEncryption(va
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetOriginErrorPagePassThru(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetOriginErrorPagePassThru(val *string) {
+	if err := j.validateSetOriginErrorPagePassThruParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originErrorPagePassThru",
@@ -1260,7 +1338,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetOriginErrorPagePassThru(va
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetPolish(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetPolish(val *string) {
+	if err := j.validateSetPolishParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"polish",
@@ -1268,7 +1349,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetPolish(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetResolveOverride(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetResolveOverride(val *string) {
+	if err := j.validateSetResolveOverrideParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resolveOverride",
@@ -1276,7 +1360,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetResolveOverride(val *strin
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetRespectStrongEtag(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetRespectStrongEtag(val *string) {
+	if err := j.validateSetRespectStrongEtagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"respectStrongEtag",
@@ -1284,7 +1371,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetRespectStrongEtag(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetResponseBuffering(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetResponseBuffering(val *string) {
+	if err := j.validateSetResponseBufferingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseBuffering",
@@ -1292,7 +1382,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetResponseBuffering(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetRocketLoader(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetRocketLoader(val *string) {
+	if err := j.validateSetRocketLoaderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rocketLoader",
@@ -1300,7 +1393,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetRocketLoader(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetSecurityLevel(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetSecurityLevel(val *string) {
+	if err := j.validateSetSecurityLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityLevel",
@@ -1308,7 +1404,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetSecurityLevel(val *string)
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetServerSideExclude(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetServerSideExclude(val *string) {
+	if err := j.validateSetServerSideExcludeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverSideExclude",
@@ -1316,7 +1415,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetServerSideExclude(val *str
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetSortQueryStringForCache(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetSortQueryStringForCache(val *string) {
+	if err := j.validateSetSortQueryStringForCacheParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sortQueryStringForCache",
@@ -1324,7 +1426,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetSortQueryStringForCache(va
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetSsl(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetSsl(val *string) {
+	if err := j.validateSetSslParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssl",
@@ -1332,7 +1437,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetSsl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -1340,7 +1448,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -1348,7 +1459,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetTrueClientIpHeader(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetTrueClientIpHeader(val *string) {
+	if err := j.validateSetTrueClientIpHeaderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"trueClientIpHeader",
@@ -1356,7 +1470,10 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) SetTrueClientIpHeader(val *st
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) SetWaf(val *string) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetWaf(val *string) {
+	if err := j.validateSetWafParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"waf",
@@ -1378,6 +1495,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1391,6 +1511,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1404,6 +1527,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanAttribute(terraform
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1417,6 +1543,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1430,6 +1559,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetListAttribute(terraformAtt
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1443,6 +1575,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberAttribute(terraformA
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1456,6 +1591,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberListAttribute(terraf
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1469,6 +1607,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1482,6 +1623,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) GetStringAttribute(terraformA
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1508,6 +1652,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1521,6 +1668,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) InterpolationForAttribute(pro
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheKeyFields(value *PageRuleActionsCacheKeyFields) {
+	if err := p.validatePutCacheKeyFieldsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putCacheKeyFields",
@@ -1529,6 +1679,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheKeyFields(value *Page
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheTtlByStatus(value interface{}) {
+	if err := p.validatePutCacheTtlByStatusParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putCacheTtlByStatus",
@@ -1537,6 +1690,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutCacheTtlByStatus(value int
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) PutForwardingUrl(value *PageRuleActionsForwardingUrl) {
+	if err := p.validatePutForwardingUrlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putForwardingUrl",
@@ -1545,6 +1701,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) PutForwardingUrl(value *PageR
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) PutMinify(value interface{}) {
+	if err := p.validatePutMinifyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putMinify",
@@ -1849,6 +2008,9 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) ResetWaf() {
 }
 
 func (p *jsiiProxy_PageRuleActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

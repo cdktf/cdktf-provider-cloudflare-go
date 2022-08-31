@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) WrapsSet() *bool {
 func NewAccessGroupIncludeGithubList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeGithubList {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupIncludeGithubListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupIncludeGithubList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessGroupIncludeGithubList_Override(a AccessGroupIncludeGithubList, te
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeGithubList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeGithubList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeGithubList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeGithubList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeGithubList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupIncludeGithubList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessGroupIncludeGithubList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeGithubList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupIncludeGithubList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessGroupIncludeGithubList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeGithubList) Get(index *float64) AccessGroupIncludeGithubOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessGroupIncludeGithubOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessGroupIncludeGithubList) Get(index *float64) AccessGroup
 }
 
 func (a *jsiiProxy_AccessGroupIncludeGithubList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

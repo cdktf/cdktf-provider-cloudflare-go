@@ -199,6 +199,9 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) TerraformResource() cdktf
 func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesLoggingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRulesLoggingOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputR
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetInternalValue(val *RulesetRulesLogging) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetInternalValue(val *RulesetRulesLogging) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetInternalValue(val *Rul
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetStatus(val *string) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetBooleanAttribute(terra
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetBooleanMapAttribute(te
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetListAttribute(terrafor
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberAttribute(terraf
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberListAttribute(te
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetNumberMapAttribute(ter
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetStringAttribute(terraf
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) InterpolationAsList() cdk
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ResetStatus() {
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

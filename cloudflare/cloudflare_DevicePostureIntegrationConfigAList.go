@@ -111,6 +111,9 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) WrapsSet() *bool {
 func NewDevicePostureIntegrationConfigAList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureIntegrationConfigAList {
 	_init_.Initialize()
 
+	if err := validateNewDevicePostureIntegrationConfigAListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DevicePostureIntegrationConfigAList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDevicePostureIntegrationConfigAList_Override(d DevicePostureIntegrationC
 	)
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DevicePostureIntegrationConfigAList) Get(index *float64) DevicePostureIntegrationConfigAOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DevicePostureIntegrationConfigAOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAList) Get(index *float64) Devi
 }
 
 func (d *jsiiProxy_DevicePostureIntegrationConfigAList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

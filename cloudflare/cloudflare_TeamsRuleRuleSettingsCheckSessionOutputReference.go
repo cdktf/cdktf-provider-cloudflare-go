@@ -197,6 +197,9 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) TerraformRe
 func NewTeamsRuleRuleSettingsCheckSessionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsCheckSessionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsRuleRuleSettingsCheckSessionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewTeamsRuleRuleSettingsCheckSessionOutputReference_Override(t TeamsRuleRul
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetDuration(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetDuration(val *string) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetDuration
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetEnforce(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetEnforce(val interface{}) {
+	if err := j.validateSetEnforceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforce",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetEnforce(
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetInternalValue(val *TeamsRuleRuleSettingsCheckSession) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetInternalValue(val *TeamsRuleRuleSettingsCheckSession) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) ComputeFqn(
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetAnyMapAt
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetBooleanA
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetBooleanM
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetListAttr
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberAt
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberLi
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetNumberMa
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetStringAt
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) Interpolati
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) Interpolati
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

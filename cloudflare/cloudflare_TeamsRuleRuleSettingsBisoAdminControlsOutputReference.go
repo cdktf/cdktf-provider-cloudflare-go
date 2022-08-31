@@ -271,6 +271,9 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Terraf
 func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsBisoAdminControlsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsRuleRuleSettingsBisoAdminControlsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewTeamsRuleRuleSettingsBisoAdminControlsOutputReference_Override(t TeamsRu
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableCopyPaste(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableCopyPaste(val interface{}) {
+	if err := j.validateSetDisableCopyPasteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableCopyPaste",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDis
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableDownload(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableDownload(val interface{}) {
+	if err := j.validateSetDisableDownloadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableDownload",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDis
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableKeyboard(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableKeyboard(val interface{}) {
+	if err := j.validateSetDisableKeyboardParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableKeyboard",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDis
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisablePrinting(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisablePrinting(val interface{}) {
+	if err := j.validateSetDisablePrintingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disablePrinting",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDis
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDisableUpload(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetDisableUpload(val interface{}) {
+	if err := j.validateSetDisableUploadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableUpload",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetDis
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val *TeamsRuleRuleSettingsBisoAdminControls) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -356,7 +383,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -364,7 +394,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -386,6 +419,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Comput
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -399,6 +435,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetAny
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -412,6 +451,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBoo
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -425,6 +467,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetBoo
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -438,6 +483,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetLis
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -451,6 +499,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -464,6 +515,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -477,6 +531,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetNum
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -490,6 +547,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetStr
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -516,6 +576,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Interp
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +632,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) ResetD
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

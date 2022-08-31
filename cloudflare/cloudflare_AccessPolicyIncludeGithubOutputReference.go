@@ -223,6 +223,9 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) TerraformResource()
 func NewAccessPolicyIncludeGithubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessPolicyIncludeGithubOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyIncludeGithubOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyIncludeGithubOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewAccessPolicyIncludeGithubOutputReference_Override(a AccessPolicyIncludeG
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"identityProviderId",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetIdentityProvider
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetName(val *string) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetTeams(val *[]*string) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetTeams(val *[]*string) {
+	if err := j.validateSetTeamsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teams",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetTeams(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) ComputeFqn() *strin
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetAnyMapAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetBooleanAttribute
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetBooleanMapAttrib
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetListAttribute(te
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberListAttrib
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetNumberMapAttribu
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetStringAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) InterpolationAsList
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) ResetTeams() {
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

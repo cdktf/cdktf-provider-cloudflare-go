@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessPolicyExcludeAzureList) WrapsSet() *bool {
 func NewAccessPolicyExcludeAzureList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyExcludeAzureList {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyExcludeAzureListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyExcludeAzureList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessPolicyExcludeAzureList_Override(a AccessPolicyExcludeAzureList, te
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyExcludeAzureList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyExcludeAzureList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyExcludeAzureList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeAzureList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyExcludeAzureList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessPolicyExcludeAzureList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeAzureList) Get(index *float64) AccessPolicyExcludeAzureOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessPolicyExcludeAzureOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessPolicyExcludeAzureList) Get(index *float64) AccessPolic
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeAzureList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

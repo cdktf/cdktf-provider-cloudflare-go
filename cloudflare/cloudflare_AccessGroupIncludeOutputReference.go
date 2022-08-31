@@ -607,6 +607,9 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) TerraformResource() cdktf.
 func NewAccessGroupIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupIncludeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupIncludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupIncludeOutputReference{}
 
 	_jsii_.Create(
@@ -628,7 +631,10 @@ func NewAccessGroupIncludeOutputReference_Override(a AccessGroupIncludeOutputRef
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetAnyValidServiceToken(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetAnyValidServiceToken(val interface{}) {
+	if err := j.validateSetAnyValidServiceTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"anyValidServiceToken",
@@ -636,7 +642,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetAnyValidServiceToken(va
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetAuthMethod(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetAuthMethod(val *string) {
+	if err := j.validateSetAuthMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authMethod",
@@ -644,7 +653,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetAuthMethod(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetCertificate(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCertificate(val interface{}) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -652,7 +664,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetCertificate(val interfa
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetCommonName(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCommonName(val *string) {
+	if err := j.validateSetCommonNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commonName",
@@ -660,7 +675,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetCommonName(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -668,7 +686,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -676,7 +697,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetDevicePosture(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetDevicePosture(val *[]*string) {
+	if err := j.validateSetDevicePostureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"devicePosture",
@@ -684,7 +708,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetDevicePosture(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEmail(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetEmail(val *[]*string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"email",
@@ -692,7 +719,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEmail(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEmailDomain(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetEmailDomain(val *[]*string) {
+	if err := j.validateSetEmailDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailDomain",
@@ -700,7 +730,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEmailDomain(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEveryone(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetEveryone(val interface{}) {
+	if err := j.validateSetEveryoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"everyone",
@@ -708,7 +741,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetEveryone(val interface{
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetGeo(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetGeo(val *[]*string) {
+	if err := j.validateSetGeoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"geo",
@@ -716,7 +752,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetGeo(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetGroup(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetGroup(val *[]*string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"group",
@@ -724,7 +763,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetGroup(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -732,7 +774,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetIp(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetIp(val *[]*string) {
+	if err := j.validateSetIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ip",
@@ -740,7 +785,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetIp(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetLoginMethod(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetLoginMethod(val *[]*string) {
+	if err := j.validateSetLoginMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loginMethod",
@@ -748,7 +796,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetLoginMethod(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetServiceToken(val *[]*string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetServiceToken(val *[]*string) {
+	if err := j.validateSetServiceTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceToken",
@@ -756,7 +807,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetServiceToken(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -764,7 +818,10 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -786,6 +843,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -799,6 +859,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -812,6 +875,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetBooleanAttribute(terraf
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -825,6 +891,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -838,6 +907,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetListAttribute(terraform
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -851,6 +923,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberAttribute(terrafo
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -864,6 +939,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberListAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -877,6 +955,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetNumberMapAttribute(terr
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -890,6 +971,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetStringAttribute(terrafo
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -916,6 +1000,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) InterpolationAsList() cdkt
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -929,6 +1016,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) InterpolationForAttribute(
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAzure(value interface{}) {
+	if err := a.validatePutAzureParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAzure",
@@ -937,6 +1027,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAzure(value interface{}
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(value *AccessGroupIncludeExternalEvaluation) {
+	if err := a.validatePutExternalEvaluationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putExternalEvaluation",
@@ -945,6 +1038,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(valu
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutGithub(value interface{}) {
+	if err := a.validatePutGithubParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGithub",
@@ -953,6 +1049,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutGithub(value interface{
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutGsuite(value interface{}) {
+	if err := a.validatePutGsuiteParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGsuite",
@@ -961,6 +1060,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutGsuite(value interface{
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutOkta(value interface{}) {
+	if err := a.validatePutOktaParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOkta",
@@ -969,6 +1071,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutOkta(value interface{})
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutSaml(value interface{}) {
+	if err := a.validatePutSamlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putSaml",
@@ -1129,6 +1234,9 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetServiceToken() {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

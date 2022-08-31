@@ -367,6 +367,9 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformResource() cdk
 func NewTeamsRuleRuleSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsRuleRuleSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsRuleRuleSettingsOutputReference{}
 
 	_jsii_.Create(
@@ -388,7 +391,10 @@ func NewTeamsRuleRuleSettingsOutputReference_Override(t TeamsRuleRuleSettingsOut
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetAddHeaders(val *map[string]*string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetAddHeaders(val *map[string]*string) {
+	if err := j.validateSetAddHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"addHeaders",
@@ -396,7 +402,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetAddHeaders(val *map[
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetBlockPageEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetBlockPageEnabled(val interface{}) {
+	if err := j.validateSetBlockPageEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"blockPageEnabled",
@@ -404,7 +413,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetBlockPageEnabled(val
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetBlockPageReason(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetBlockPageReason(val *string) {
+	if err := j.validateSetBlockPageReasonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"blockPageReason",
@@ -412,7 +424,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetBlockPageReason(val 
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -420,7 +435,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -428,7 +446,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetInsecureDisableDnssecValidation(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetInsecureDisableDnssecValidation(val interface{}) {
+	if err := j.validateSetInsecureDisableDnssecValidationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecureDisableDnssecValidation",
@@ -436,7 +457,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetInsecureDisableDnsse
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetInternalValue(val *TeamsRuleRuleSettings) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetInternalValue(val *TeamsRuleRuleSettings) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -444,7 +468,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetInternalValue(val *T
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetOverrideHost(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetOverrideHost(val *string) {
+	if err := j.validateSetOverrideHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"overrideHost",
@@ -452,7 +479,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetOverrideHost(val *st
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetOverrideIps(val *[]*string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetOverrideIps(val *[]*string) {
+	if err := j.validateSetOverrideIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"overrideIps",
@@ -460,7 +490,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetOverrideIps(val *[]*
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -468,7 +501,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -490,6 +526,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -503,6 +542,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetAnyMapAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -516,6 +558,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanAttribute(ter
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -529,6 +574,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetBooleanMapAttribute(
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -542,6 +590,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetListAttribute(terraf
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -555,6 +606,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -568,6 +622,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberListAttribute(
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -581,6 +638,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetNumberMapAttribute(t
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -594,6 +654,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetStringAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -620,6 +683,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationAsList() c
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -633,6 +699,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationForAttribu
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls) {
+	if err := t.validatePutBisoAdminControlsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putBisoAdminControls",
@@ -641,6 +710,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutBisoAdminControls(va
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutCheckSession(value *TeamsRuleRuleSettingsCheckSession) {
+	if err := t.validatePutCheckSessionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putCheckSession",
@@ -649,6 +721,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutCheckSession(value *
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutL4Override(value *TeamsRuleRuleSettingsL4Override) {
+	if err := t.validatePutL4OverrideParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putL4Override",
@@ -729,6 +804,9 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetOverrideIps() {
 }
 
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

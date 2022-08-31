@@ -199,6 +199,9 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) TerraformResource(
 func NewApiTokenConditionRequestIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiTokenConditionRequestIpOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewApiTokenConditionRequestIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApiTokenConditionRequestIpOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewApiTokenConditionRequestIpOutputReference_Override(a ApiTokenConditionRe
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetIn(val *[]*string) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetIn(val *[]*string) {
+	if err := j.validateSetInParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"in",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetIn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetInternalValue(val *ApiTokenConditionRequestIp) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetInternalValue(val *ApiTokenConditionRequestIp) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetNotIn(val *[]*string) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetNotIn(val *[]*string) {
+	if err := j.validateSetNotInParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notIn",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetNotIn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) ComputeFqn() *stri
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetAnyMapAttribute
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetBooleanAttribut
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetBooleanMapAttri
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetListAttribute(t
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberAttribute
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberListAttri
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetNumberMapAttrib
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetStringAttribute
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) InterpolationAsLis
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) ResetNotIn() {
 }
 
 func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -553,6 +553,9 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
+	if err := validateNewLogpushJobParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogpushJob{}
 
 	_jsii_.Create(
@@ -575,7 +578,10 @@ func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetAccountId(val *string) {
+func (j *jsiiProxy_LogpushJob)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -583,7 +589,10 @@ func (j *jsiiProxy_LogpushJob) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetConnection(val interface{}) {
+func (j *jsiiProxy_LogpushJob)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -591,7 +600,7 @@ func (j *jsiiProxy_LogpushJob) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetCount(val *float64) {
+func (j *jsiiProxy_LogpushJob)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -599,7 +608,10 @@ func (j *jsiiProxy_LogpushJob) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetDataset(val *string) {
+func (j *jsiiProxy_LogpushJob)SetDataset(val *string) {
+	if err := j.validateSetDatasetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataset",
@@ -607,7 +619,7 @@ func (j *jsiiProxy_LogpushJob) SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogpushJob)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -615,7 +627,10 @@ func (j *jsiiProxy_LogpushJob) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetDestinationConf(val *string) {
+func (j *jsiiProxy_LogpushJob)SetDestinationConf(val *string) {
+	if err := j.validateSetDestinationConfParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationConf",
@@ -623,7 +638,10 @@ func (j *jsiiProxy_LogpushJob) SetDestinationConf(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetEnabled(val interface{}) {
+func (j *jsiiProxy_LogpushJob)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -631,7 +649,10 @@ func (j *jsiiProxy_LogpushJob) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetFilter(val *string) {
+func (j *jsiiProxy_LogpushJob)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filter",
@@ -639,7 +660,7 @@ func (j *jsiiProxy_LogpushJob) SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogpushJob)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -647,7 +668,10 @@ func (j *jsiiProxy_LogpushJob) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetFrequency(val *string) {
+func (j *jsiiProxy_LogpushJob)SetFrequency(val *string) {
+	if err := j.validateSetFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"frequency",
@@ -655,7 +679,10 @@ func (j *jsiiProxy_LogpushJob) SetFrequency(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetId(val *string) {
+func (j *jsiiProxy_LogpushJob)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -663,7 +690,10 @@ func (j *jsiiProxy_LogpushJob) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetKind(val *string) {
+func (j *jsiiProxy_LogpushJob)SetKind(val *string) {
+	if err := j.validateSetKindParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kind",
@@ -671,7 +701,10 @@ func (j *jsiiProxy_LogpushJob) SetKind(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogpushJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -679,7 +712,10 @@ func (j *jsiiProxy_LogpushJob) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetLogpullOptions(val *string) {
+func (j *jsiiProxy_LogpushJob)SetLogpullOptions(val *string) {
+	if err := j.validateSetLogpullOptionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logpullOptions",
@@ -687,7 +723,10 @@ func (j *jsiiProxy_LogpushJob) SetLogpullOptions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetName(val *string) {
+func (j *jsiiProxy_LogpushJob)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -695,7 +734,10 @@ func (j *jsiiProxy_LogpushJob) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetOwnershipChallenge(val *string) {
+func (j *jsiiProxy_LogpushJob)SetOwnershipChallenge(val *string) {
+	if err := j.validateSetOwnershipChallengeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ownershipChallenge",
@@ -703,7 +745,7 @@ func (j *jsiiProxy_LogpushJob) SetOwnershipChallenge(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogpushJob)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -711,7 +753,10 @@ func (j *jsiiProxy_LogpushJob) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogpushJob)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -719,7 +764,10 @@ func (j *jsiiProxy_LogpushJob) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob) SetZoneId(val *string) {
+func (j *jsiiProxy_LogpushJob)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -747,6 +795,9 @@ func (j *jsiiProxy_LogpushJob) SetZoneId(val *string) {
 func LogpushJob_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLogpushJob_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -771,6 +822,9 @@ func LogpushJob_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LogpushJob) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -779,6 +833,9 @@ func (l *jsiiProxy_LogpushJob) AddOverride(path *string, value interface{}) {
 }
 
 func (l *jsiiProxy_LogpushJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -792,6 +849,9 @@ func (l *jsiiProxy_LogpushJob) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (l *jsiiProxy_LogpushJob) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -805,6 +865,9 @@ func (l *jsiiProxy_LogpushJob) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (l *jsiiProxy_LogpushJob) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -818,6 +881,9 @@ func (l *jsiiProxy_LogpushJob) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogpushJob) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -831,6 +897,9 @@ func (l *jsiiProxy_LogpushJob) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (l *jsiiProxy_LogpushJob) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -844,6 +913,9 @@ func (l *jsiiProxy_LogpushJob) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (l *jsiiProxy_LogpushJob) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -857,6 +929,9 @@ func (l *jsiiProxy_LogpushJob) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (l *jsiiProxy_LogpushJob) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -870,6 +945,9 @@ func (l *jsiiProxy_LogpushJob) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (l *jsiiProxy_LogpushJob) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -883,6 +961,9 @@ func (l *jsiiProxy_LogpushJob) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (l *jsiiProxy_LogpushJob) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -896,6 +977,9 @@ func (l *jsiiProxy_LogpushJob) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (l *jsiiProxy_LogpushJob) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -909,6 +993,9 @@ func (l *jsiiProxy_LogpushJob) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (l *jsiiProxy_LogpushJob) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",

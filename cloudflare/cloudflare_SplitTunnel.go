@@ -360,6 +360,9 @@ func (j *jsiiProxy_SplitTunnel) TunnelsInput() interface{} {
 func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelConfig) SplitTunnel {
 	_init_.Initialize()
 
+	if err := validateNewSplitTunnelParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SplitTunnel{}
 
 	_jsii_.Create(
@@ -382,7 +385,10 @@ func NewSplitTunnel_Override(s SplitTunnel, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetAccountId(val *string) {
+func (j *jsiiProxy_SplitTunnel)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -390,7 +396,10 @@ func (j *jsiiProxy_SplitTunnel) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetConnection(val interface{}) {
+func (j *jsiiProxy_SplitTunnel)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -398,7 +407,7 @@ func (j *jsiiProxy_SplitTunnel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetCount(val *float64) {
+func (j *jsiiProxy_SplitTunnel)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -406,7 +415,7 @@ func (j *jsiiProxy_SplitTunnel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SplitTunnel)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -414,7 +423,7 @@ func (j *jsiiProxy_SplitTunnel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SplitTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +431,10 @@ func (j *jsiiProxy_SplitTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetId(val *string) {
+func (j *jsiiProxy_SplitTunnel)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -430,7 +442,10 @@ func (j *jsiiProxy_SplitTunnel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SplitTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -438,7 +453,10 @@ func (j *jsiiProxy_SplitTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetMode(val *string) {
+func (j *jsiiProxy_SplitTunnel)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mode",
@@ -446,7 +464,7 @@ func (j *jsiiProxy_SplitTunnel) SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SplitTunnel)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -454,7 +472,10 @@ func (j *jsiiProxy_SplitTunnel) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SplitTunnel)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -482,6 +503,9 @@ func (j *jsiiProxy_SplitTunnel) SetProvisioners(val *[]interface{}) {
 func SplitTunnel_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSplitTunnel_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -506,6 +530,9 @@ func SplitTunnel_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SplitTunnel) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -514,6 +541,9 @@ func (s *jsiiProxy_SplitTunnel) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SplitTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -527,6 +557,9 @@ func (s *jsiiProxy_SplitTunnel) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SplitTunnel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -540,6 +573,9 @@ func (s *jsiiProxy_SplitTunnel) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_SplitTunnel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -553,6 +589,9 @@ func (s *jsiiProxy_SplitTunnel) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SplitTunnel) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -566,6 +605,9 @@ func (s *jsiiProxy_SplitTunnel) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (s *jsiiProxy_SplitTunnel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -579,6 +621,9 @@ func (s *jsiiProxy_SplitTunnel) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SplitTunnel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -592,6 +637,9 @@ func (s *jsiiProxy_SplitTunnel) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_SplitTunnel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -605,6 +653,9 @@ func (s *jsiiProxy_SplitTunnel) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SplitTunnel) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -618,6 +669,9 @@ func (s *jsiiProxy_SplitTunnel) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SplitTunnel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -631,6 +685,9 @@ func (s *jsiiProxy_SplitTunnel) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SplitTunnel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -644,6 +701,9 @@ func (s *jsiiProxy_SplitTunnel) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SplitTunnel) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -652,6 +712,9 @@ func (s *jsiiProxy_SplitTunnel) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_SplitTunnel) PutTunnels(value interface{}) {
+	if err := s.validatePutTunnelsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTunnels",

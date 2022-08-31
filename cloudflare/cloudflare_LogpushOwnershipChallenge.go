@@ -373,6 +373,9 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneIdInput() *string {
 func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge {
 	_init_.Initialize()
 
+	if err := validateNewLogpushOwnershipChallengeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LogpushOwnershipChallenge{}
 
 	_jsii_.Create(
@@ -395,7 +398,10 @@ func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope co
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetAccountId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -403,7 +409,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetConnection(val interface{}) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -411,7 +420,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetCount(val *float64) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -419,7 +428,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +436,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetDestinationConf(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetDestinationConf(val *string) {
+	if err := j.validateSetDestinationConfParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"destinationConf",
@@ -435,7 +447,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetDestinationConf(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +455,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -451,7 +466,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -459,7 +477,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -467,7 +485,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -475,7 +496,10 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) SetZoneId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -503,6 +527,9 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) SetZoneId(val *string) {
 func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLogpushOwnershipChallenge_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -527,6 +554,9 @@ func LogpushOwnershipChallenge_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -535,6 +565,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) AddOverride(path *string, value in
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -548,6 +581,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetAnyMapAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -561,6 +597,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanAttribute(terraformAttri
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -574,6 +613,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanMapAttribute(terraformAt
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -587,6 +629,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetListAttribute(terraformAttribut
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -600,6 +645,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +661,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberListAttribute(terraformAt
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -626,6 +677,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberMapAttribute(terraformAtt
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -639,6 +693,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -652,6 +709,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringMapAttribute(terraformAtt
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -665,6 +725,9 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) InterpolationForAttribute(terrafor
 }
 
 func (l *jsiiProxy_LogpushOwnershipChallenge) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",

@@ -295,6 +295,9 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) TerraformResource() cdk
 func NewTeamsAccountBlockPageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountBlockPageOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsAccountBlockPageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsAccountBlockPageOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewTeamsAccountBlockPageOutputReference_Override(t TeamsAccountBlockPageOut
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetBackgroundColor(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetBackgroundColor(val *string) {
+	if err := j.validateSetBackgroundColorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backgroundColor",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetBackgroundColor(val 
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetFooterText(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetFooterText(val *string) {
+	if err := j.validateSetFooterTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"footerText",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetFooterText(val *stri
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetHeaderText(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetHeaderText(val *string) {
+	if err := j.validateSetHeaderTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headerText",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetHeaderText(val *stri
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetInternalValue(val *TeamsAccountBlockPage) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetInternalValue(val *TeamsAccountBlockPage) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetInternalValue(val *T
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetLogoPath(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetLogoPath(val *string) {
+	if err := j.validateSetLogoPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logoPath",
@@ -380,7 +407,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetLogoPath(val *string
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetName(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -388,7 +418,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -396,7 +429,10 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -418,6 +454,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -431,6 +470,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetAnyMapAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -444,6 +486,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanAttribute(ter
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -457,6 +502,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanMapAttribute(
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -470,6 +518,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetListAttribute(terraf
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -483,6 +534,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -496,6 +550,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberListAttribute(
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -509,6 +566,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberMapAttribute(t
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -522,6 +582,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetStringAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -548,6 +611,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) InterpolationAsList() c
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -609,6 +675,9 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ResetName() {
 }
 
 func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

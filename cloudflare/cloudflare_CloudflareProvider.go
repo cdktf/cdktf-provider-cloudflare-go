@@ -473,6 +473,9 @@ func (j *jsiiProxy_CloudflareProvider) TerraformResourceType() *string {
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
 
+	if err := validateNewCloudflareProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudflareProvider{}
 
 	_jsii_.Create(
@@ -495,7 +498,7 @@ func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetAccountId(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -503,7 +506,7 @@ func (j *jsiiProxy_CloudflareProvider) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetAlias(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -511,7 +514,7 @@ func (j *jsiiProxy_CloudflareProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiBasePath(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetApiBasePath(val *string) {
 	_jsii_.Set(
 		j,
 		"apiBasePath",
@@ -519,7 +522,10 @@ func (j *jsiiProxy_CloudflareProvider) SetApiBasePath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiClientLogging(val interface{}) {
+func (j *jsiiProxy_CloudflareProvider)SetApiClientLogging(val interface{}) {
+	if err := j.validateSetApiClientLoggingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiClientLogging",
@@ -527,7 +533,7 @@ func (j *jsiiProxy_CloudflareProvider) SetApiClientLogging(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiHostname(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetApiHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"apiHostname",
@@ -535,7 +541,7 @@ func (j *jsiiProxy_CloudflareProvider) SetApiHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiKey(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -543,7 +549,7 @@ func (j *jsiiProxy_CloudflareProvider) SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiToken(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetApiToken(val *string) {
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -551,7 +557,7 @@ func (j *jsiiProxy_CloudflareProvider) SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetApiUserServiceKey(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetApiUserServiceKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUserServiceKey",
@@ -559,7 +565,7 @@ func (j *jsiiProxy_CloudflareProvider) SetApiUserServiceKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetEmail(val *string) {
+func (j *jsiiProxy_CloudflareProvider)SetEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"email",
@@ -567,7 +573,7 @@ func (j *jsiiProxy_CloudflareProvider) SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetMaxBackoff(val *float64) {
+func (j *jsiiProxy_CloudflareProvider)SetMaxBackoff(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxBackoff",
@@ -575,7 +581,7 @@ func (j *jsiiProxy_CloudflareProvider) SetMaxBackoff(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetMinBackoff(val *float64) {
+func (j *jsiiProxy_CloudflareProvider)SetMinBackoff(val *float64) {
 	_jsii_.Set(
 		j,
 		"minBackoff",
@@ -583,7 +589,7 @@ func (j *jsiiProxy_CloudflareProvider) SetMinBackoff(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetRetries(val *float64) {
+func (j *jsiiProxy_CloudflareProvider)SetRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"retries",
@@ -591,7 +597,7 @@ func (j *jsiiProxy_CloudflareProvider) SetRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudflareProvider) SetRps(val *float64) {
+func (j *jsiiProxy_CloudflareProvider)SetRps(val *float64) {
 	_jsii_.Set(
 		j,
 		"rps",
@@ -619,6 +625,9 @@ func (j *jsiiProxy_CloudflareProvider) SetRps(val *float64) {
 func CloudflareProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudflareProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -643,6 +652,9 @@ func CloudflareProvider_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudflareProvider) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -651,6 +663,9 @@ func (c *jsiiProxy_CloudflareProvider) AddOverride(path *string, value interface
 }
 
 func (c *jsiiProxy_CloudflareProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

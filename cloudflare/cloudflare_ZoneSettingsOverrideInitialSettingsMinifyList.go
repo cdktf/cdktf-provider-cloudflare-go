@@ -99,6 +99,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) WrapsSet() *bo
 func NewZoneSettingsOverrideInitialSettingsMinifyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsMinifyList {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideInitialSettingsMinifyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewZoneSettingsOverrideInitialSettingsMinifyList_Override(z ZoneSettingsOve
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) ComputeFqn() *
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Get(index *float64) ZoneSettingsOverrideInitialSettingsMinifyOutputReference {
+	if err := z.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ZoneSettingsOverrideInitialSettingsMinifyOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Get(index *flo
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

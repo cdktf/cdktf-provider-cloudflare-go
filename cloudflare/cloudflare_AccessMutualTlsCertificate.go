@@ -421,6 +421,9 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) ZoneIdInput() *string {
 func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, config *AccessMutualTlsCertificateConfig) AccessMutualTlsCertificate {
 	_init_.Initialize()
 
+	if err := validateNewAccessMutualTlsCertificateParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessMutualTlsCertificate{}
 
 	_jsii_.Create(
@@ -443,7 +446,10 @@ func NewAccessMutualTlsCertificate_Override(a AccessMutualTlsCertificate, scope 
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetAccountId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -451,7 +457,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetAssociatedHostnames(val *[]*string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetAssociatedHostnames(val *[]*string) {
+	if err := j.validateSetAssociatedHostnamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"associatedHostnames",
@@ -459,7 +468,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetAssociatedHostnames(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetCertificate(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -467,7 +479,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -475,7 +490,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetCount(val *float64) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -483,7 +498,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -491,7 +506,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -499,7 +514,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -507,7 +525,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -515,7 +536,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetName(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -523,7 +547,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +555,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -539,7 +566,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) SetZoneId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -567,6 +597,9 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) SetZoneId(val *string) {
 func AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAccessMutualTlsCertificate_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -591,6 +624,9 @@ func AccessMutualTlsCertificate_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -599,6 +635,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) AddOverride(path *string, value i
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -612,6 +651,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetAnyMapAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -625,6 +667,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanAttribute(terraformAttr
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -638,6 +683,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanMapAttribute(terraformA
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -651,6 +699,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetListAttribute(terraformAttribu
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -664,6 +715,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -677,6 +731,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberListAttribute(terraformA
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -690,6 +747,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberMapAttribute(terraformAt
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -703,6 +763,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -716,6 +779,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringMapAttribute(terraformAt
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -729,6 +795,9 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) InterpolationForAttribute(terrafo
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

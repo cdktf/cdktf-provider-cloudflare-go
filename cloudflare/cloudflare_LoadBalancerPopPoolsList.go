@@ -111,6 +111,9 @@ func (j *jsiiProxy_LoadBalancerPopPoolsList) WrapsSet() *bool {
 func NewLoadBalancerPopPoolsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerPopPoolsList {
 	_init_.Initialize()
 
+	if err := validateNewLoadBalancerPopPoolsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadBalancerPopPoolsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLoadBalancerPopPoolsList_Override(l LoadBalancerPopPoolsList, terraformR
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPopPoolsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPopPoolsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPopPoolsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPopPoolsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsList) Get(index *float64) LoadBalancerPopPoolsOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LoadBalancerPopPoolsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsList) Get(index *float64) LoadBalancerPop
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

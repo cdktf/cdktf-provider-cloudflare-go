@@ -223,6 +223,9 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) TerraformResource() cd
 func NewAccessGroupRequireSamlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupRequireSamlOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupRequireSamlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupRequireSamlOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewAccessGroupRequireSamlOutputReference_Override(a AccessGroupRequireSamlO
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetAttributeName(val *string) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetAttributeName(val *string) {
+	if err := j.validateSetAttributeNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"attributeName",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetAttributeName(val *
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetAttributeValue(val *string) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetAttributeValue(val *string) {
+	if err := j.validateSetAttributeValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"attributeValue",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetAttributeValue(val 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"identityProviderId",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetIdentityProviderId(
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireSamlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireSamlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetAnyMapAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetBooleanAttribute(te
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetBooleanMapAttribute
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetListAttribute(terra
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberListAttribute
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetNumberMapAttribute(
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetStringAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) InterpolationAsList() 
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) ResetIdentityProviderI
 }
 
 func (a *jsiiProxy_AccessGroupRequireSamlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

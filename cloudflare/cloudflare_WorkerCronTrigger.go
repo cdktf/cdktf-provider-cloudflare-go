@@ -360,6 +360,9 @@ func (j *jsiiProxy_WorkerCronTrigger) TerraformResourceType() *string {
 func NewWorkerCronTrigger(scope constructs.Construct, id *string, config *WorkerCronTriggerConfig) WorkerCronTrigger {
 	_init_.Initialize()
 
+	if err := validateNewWorkerCronTriggerParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerCronTrigger{}
 
 	_jsii_.Create(
@@ -382,7 +385,10 @@ func NewWorkerCronTrigger_Override(w WorkerCronTrigger, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetAccountId(val *string) {
+func (j *jsiiProxy_WorkerCronTrigger)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -390,7 +396,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkerCronTrigger)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -398,7 +407,7 @@ func (j *jsiiProxy_WorkerCronTrigger) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetCount(val *float64) {
+func (j *jsiiProxy_WorkerCronTrigger)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -406,7 +415,7 @@ func (j *jsiiProxy_WorkerCronTrigger) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkerCronTrigger)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -414,7 +423,7 @@ func (j *jsiiProxy_WorkerCronTrigger) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkerCronTrigger)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +431,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetId(val *string) {
+func (j *jsiiProxy_WorkerCronTrigger)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -430,7 +442,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkerCronTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -438,7 +453,7 @@ func (j *jsiiProxy_WorkerCronTrigger) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkerCronTrigger)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -446,7 +461,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkerCronTrigger)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -454,7 +472,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetSchedules(val *[]*string) {
+func (j *jsiiProxy_WorkerCronTrigger)SetSchedules(val *[]*string) {
+	if err := j.validateSetSchedulesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"schedules",
@@ -462,7 +483,10 @@ func (j *jsiiProxy_WorkerCronTrigger) SetSchedules(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerCronTrigger) SetScriptName(val *string) {
+func (j *jsiiProxy_WorkerCronTrigger)SetScriptName(val *string) {
+	if err := j.validateSetScriptNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scriptName",
@@ -490,6 +514,9 @@ func (j *jsiiProxy_WorkerCronTrigger) SetScriptName(val *string) {
 func WorkerCronTrigger_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWorkerCronTrigger_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -514,6 +541,9 @@ func WorkerCronTrigger_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -522,6 +552,9 @@ func (w *jsiiProxy_WorkerCronTrigger) AddOverride(path *string, value interface{
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -535,6 +568,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -548,6 +584,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -561,6 +600,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -574,6 +616,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetListAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -587,6 +632,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetNumberAttribute(terraformAttribute *str
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -600,6 +648,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetNumberListAttribute(terraformAttribute 
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +664,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -626,6 +680,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetStringAttribute(terraformAttribute *str
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -639,6 +696,9 @@ func (w *jsiiProxy_WorkerCronTrigger) GetStringMapAttribute(terraformAttribute *
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -652,6 +712,9 @@ func (w *jsiiProxy_WorkerCronTrigger) InterpolationForAttribute(terraformAttribu
 }
 
 func (w *jsiiProxy_WorkerCronTrigger) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",

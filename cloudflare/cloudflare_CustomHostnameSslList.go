@@ -111,6 +111,9 @@ func (j *jsiiProxy_CustomHostnameSslList) WrapsSet() *bool {
 func NewCustomHostnameSslList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomHostnameSslList {
 	_init_.Initialize()
 
+	if err := validateNewCustomHostnameSslListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomHostnameSslList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCustomHostnameSslList_Override(c CustomHostnameSslList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CustomHostnameSslList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CustomHostnameSslList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomHostnameSslList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CustomHostnameSslList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomHostnameSslList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CustomHostnameSslList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CustomHostnameSslList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CustomHostnameSslList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CustomHostnameSslList) Get(index *float64) CustomHostnameSslOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CustomHostnameSslOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CustomHostnameSslList) Get(index *float64) CustomHostnameSslO
 }
 
 func (c *jsiiProxy_CustomHostnameSslList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

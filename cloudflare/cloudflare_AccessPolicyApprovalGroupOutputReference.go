@@ -222,6 +222,9 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) TerraformResource()
 func NewAccessPolicyApprovalGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessPolicyApprovalGroupOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyApprovalGroupOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyApprovalGroupOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewAccessPolicyApprovalGroupOutputReference_Override(a AccessPolicyApproval
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetApprovalsNeeded(val *float64) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetApprovalsNeeded(val *float64) {
+	if err := j.validateSetApprovalsNeededParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"approvalsNeeded",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetApprovalsNeeded(
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetEmailAddresses(val *[]*string) {
+	if err := j.validateSetEmailAddressesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailAddresses",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetEmailAddresses(v
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetEmailListUuid(val *string) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetEmailListUuid(val *string) {
+	if err := j.validateSetEmailListUuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailListUuid",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetEmailListUuid(va
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) ComputeFqn() *strin
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetAnyMapAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetBooleanAttribute
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetBooleanMapAttrib
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetListAttribute(te
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberListAttrib
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetNumberMapAttribu
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetStringAttribute(
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) InterpolationAsList
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) ResetEmailListUuid(
 }
 
 func (a *jsiiProxy_AccessPolicyApprovalGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

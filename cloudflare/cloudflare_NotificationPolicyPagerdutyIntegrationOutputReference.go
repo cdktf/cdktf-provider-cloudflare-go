@@ -198,6 +198,9 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) Terraf
 func NewNotificationPolicyPagerdutyIntegrationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyPagerdutyIntegrationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNotificationPolicyPagerdutyIntegrationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNotificationPolicyPagerdutyIntegrationOutputReference_Override(n Notific
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetId(val *string) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetId(
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetName(val *string) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetNam
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) Comput
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetAny
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetBoo
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetBoo
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetLis
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNum
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNum
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetNum
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetStr
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) Interp
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) ResetN
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

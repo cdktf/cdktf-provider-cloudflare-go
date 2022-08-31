@@ -361,6 +361,9 @@ func (j *jsiiProxy_WorkerRoute) ZoneIdInput() *string {
 func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteConfig) WorkerRoute {
 	_init_.Initialize()
 
+	if err := validateNewWorkerRouteParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerRoute{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkerRoute)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -391,7 +397,7 @@ func (j *jsiiProxy_WorkerRoute) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetCount(val *float64) {
+func (j *jsiiProxy_WorkerRoute)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -399,7 +405,7 @@ func (j *jsiiProxy_WorkerRoute) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkerRoute)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -407,7 +413,7 @@ func (j *jsiiProxy_WorkerRoute) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkerRoute)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_WorkerRoute) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetId(val *string) {
+func (j *jsiiProxy_WorkerRoute)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -423,7 +432,10 @@ func (j *jsiiProxy_WorkerRoute) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkerRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_WorkerRoute) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetPattern(val *string) {
+func (j *jsiiProxy_WorkerRoute)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pattern",
@@ -439,7 +454,7 @@ func (j *jsiiProxy_WorkerRoute) SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkerRoute)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -447,7 +462,10 @@ func (j *jsiiProxy_WorkerRoute) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkerRoute)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -455,7 +473,10 @@ func (j *jsiiProxy_WorkerRoute) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetScriptName(val *string) {
+func (j *jsiiProxy_WorkerRoute)SetScriptName(val *string) {
+	if err := j.validateSetScriptNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scriptName",
@@ -463,7 +484,10 @@ func (j *jsiiProxy_WorkerRoute) SetScriptName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute) SetZoneId(val *string) {
+func (j *jsiiProxy_WorkerRoute)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -491,6 +515,9 @@ func (j *jsiiProxy_WorkerRoute) SetZoneId(val *string) {
 func WorkerRoute_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWorkerRoute_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -515,6 +542,9 @@ func WorkerRoute_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WorkerRoute) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -523,6 +553,9 @@ func (w *jsiiProxy_WorkerRoute) AddOverride(path *string, value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -536,6 +569,9 @@ func (w *jsiiProxy_WorkerRoute) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WorkerRoute) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -549,6 +585,9 @@ func (w *jsiiProxy_WorkerRoute) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WorkerRoute) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -562,6 +601,9 @@ func (w *jsiiProxy_WorkerRoute) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WorkerRoute) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -575,6 +617,9 @@ func (w *jsiiProxy_WorkerRoute) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (w *jsiiProxy_WorkerRoute) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -588,6 +633,9 @@ func (w *jsiiProxy_WorkerRoute) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WorkerRoute) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -601,6 +649,9 @@ func (w *jsiiProxy_WorkerRoute) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WorkerRoute) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -614,6 +665,9 @@ func (w *jsiiProxy_WorkerRoute) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WorkerRoute) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -627,6 +681,9 @@ func (w *jsiiProxy_WorkerRoute) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WorkerRoute) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -640,6 +697,9 @@ func (w *jsiiProxy_WorkerRoute) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WorkerRoute) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -653,6 +713,9 @@ func (w *jsiiProxy_WorkerRoute) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (w *jsiiProxy_WorkerRoute) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",

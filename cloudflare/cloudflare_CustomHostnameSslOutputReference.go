@@ -352,6 +352,9 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) WildcardInput() interface{}
 func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomHostnameSslOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCustomHostnameSslOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomHostnameSslOutputReference{}
 
 	_jsii_.Create(
@@ -373,7 +376,10 @@ func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputRefer
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCertificateAuthority(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCertificateAuthority(val *string) {
+	if err := j.validateSetCertificateAuthorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateAuthority",
@@ -381,7 +387,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCertificateAuthority(val
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -389,7 +398,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -397,7 +409,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCustomCertificate(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCustomCertificate(val *string) {
+	if err := j.validateSetCustomCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customCertificate",
@@ -405,7 +420,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCustomCertificate(val *s
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCustomKey(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCustomKey(val *string) {
+	if err := j.validateSetCustomKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customKey",
@@ -413,7 +431,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetCustomKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -421,7 +442,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetMethod(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetMethod(val *string) {
+	if err := j.validateSetMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"method",
@@ -429,7 +453,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -437,7 +464,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -445,7 +475,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetType(val *string) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -453,7 +486,10 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) SetWildcard(val interface{}) {
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetWildcard(val interface{}) {
+	if err := j.validateSetWildcardParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wildcard",
@@ -475,6 +511,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -488,6 +527,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -501,6 +543,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -514,6 +559,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -527,6 +575,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetListAttribute(terraformA
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -540,6 +591,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberAttribute(terrafor
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -553,6 +607,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberListAttribute(terr
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -566,6 +623,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetNumberMapAttribute(terra
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -579,6 +639,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) GetStringAttribute(terrafor
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -605,6 +668,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationAsList() cdktf
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -618,6 +684,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(p
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) PutSettings(value interface{}) {
+	if err := c.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSettings",
@@ -682,6 +751,9 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetWildcard() {
 }
 
 func (c *jsiiProxy_CustomHostnameSslOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

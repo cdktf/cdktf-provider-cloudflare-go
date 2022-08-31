@@ -111,6 +111,9 @@ func (j *jsiiProxy_LoadBalancerRulesList) WrapsSet() *bool {
 func NewLoadBalancerRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesList {
 	_init_.Initialize()
 
+	if err := validateNewLoadBalancerRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadBalancerRulesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLoadBalancerRulesList_Override(l LoadBalancerRulesList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LoadBalancerRulesList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerRulesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LoadBalancerRulesList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LoadBalancerRulesList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerRulesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LoadBalancerRulesList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadBalancerRulesList) Get(index *float64) LoadBalancerRulesOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LoadBalancerRulesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LoadBalancerRulesList) Get(index *float64) LoadBalancerRulesO
 }
 
 func (l *jsiiProxy_LoadBalancerRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

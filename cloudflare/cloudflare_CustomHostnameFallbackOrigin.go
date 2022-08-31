@@ -348,6 +348,9 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) ZoneIdInput() *string {
 func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) CustomHostnameFallbackOrigin {
 	_init_.Initialize()
 
+	if err := validateNewCustomHostnameFallbackOriginParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomHostnameFallbackOrigin{}
 
 	_jsii_.Create(
@@ -370,7 +373,10 @@ func NewCustomHostnameFallbackOrigin_Override(c CustomHostnameFallbackOrigin, sc
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -378,7 +384,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetCount(val *float64) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -386,7 +392,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -394,7 +400,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -402,7 +408,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetId(val *string) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -410,7 +419,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -418,7 +430,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetOrigin(val *string) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetOrigin(val *string) {
+	if err := j.validateSetOriginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"origin",
@@ -426,7 +441,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetOrigin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -434,7 +449,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -442,7 +460,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetZoneId(val *string) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -470,6 +491,9 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) SetZoneId(val *string) {
 func CustomHostnameFallbackOrigin_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustomHostnameFallbackOrigin_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -494,6 +518,9 @@ func CustomHostnameFallbackOrigin_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -502,6 +529,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) AddOverride(path *string, value
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -515,6 +545,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetAnyMapAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -528,6 +561,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetBooleanAttribute(terraformAt
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -541,6 +577,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetBooleanMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -554,6 +593,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetListAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -567,6 +609,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -580,6 +625,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberListAttribute(terrafor
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -593,6 +641,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetNumberMapAttribute(terraform
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -606,6 +657,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetStringAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -619,6 +673,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) GetStringMapAttribute(terraform
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -632,6 +689,9 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) InterpolationForAttribute(terra
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

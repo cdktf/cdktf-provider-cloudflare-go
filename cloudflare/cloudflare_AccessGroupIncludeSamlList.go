@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessGroupIncludeSamlList) WrapsSet() *bool {
 func NewAccessGroupIncludeSamlList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeSamlList {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupIncludeSamlListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupIncludeSamlList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessGroupIncludeSamlList_Override(a AccessGroupIncludeSamlList, terraf
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeSamlList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessGroupIncludeSamlList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeSamlList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessGroupIncludeSamlList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupIncludeSamlList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessGroupIncludeSamlList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupIncludeSamlList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessGroupIncludeSamlList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeSamlList) Get(index *float64) AccessGroupIncludeSamlOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessGroupIncludeSamlOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessGroupIncludeSamlList) Get(index *float64) AccessGroupIn
 }
 
 func (a *jsiiProxy_AccessGroupIncludeSamlList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

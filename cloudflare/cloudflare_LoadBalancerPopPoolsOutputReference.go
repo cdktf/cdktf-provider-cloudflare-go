@@ -197,6 +197,9 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) TerraformResource() cdkt
 func NewLoadBalancerPopPoolsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPopPoolsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewLoadBalancerPopPoolsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadBalancerPopPoolsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewLoadBalancerPopPoolsOutputReference_Override(l LoadBalancerPopPoolsOutpu
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetPoolIds(val *[]*string) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetPoolIds(val *[]*string) {
+	if err := j.validateSetPoolIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"poolIds",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetPoolIds(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetPop(val *string) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetPop(val *string) {
+	if err := j.validateSetPopParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pop",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetPop(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPopPoolsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetAnyMapAttribute(terra
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetBooleanAttribute(terr
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetBooleanMapAttribute(t
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetListAttribute(terrafo
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberAttribute(terra
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberListAttribute(t
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetNumberMapAttribute(te
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetStringAttribute(terra
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) InterpolationAsList() cd
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) InterpolationForAttribut
 }
 
 func (l *jsiiProxy_LoadBalancerPopPoolsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -655,6 +655,9 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) TokenUrlInput()
 func NewAccessIdentityProviderConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessIdentityProviderConfigAOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessIdentityProviderConfigAOutputReference{}
 
 	_jsii_.Create(
@@ -676,7 +679,10 @@ func NewAccessIdentityProviderConfigAOutputReference_Override(a AccessIdentityPr
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetApiToken(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetApiToken(val *string) {
+	if err := j.validateSetApiTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -684,7 +690,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetApiToken(val
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAppsDomain(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAppsDomain(val *string) {
+	if err := j.validateSetAppsDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appsDomain",
@@ -692,7 +701,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAppsDomain(v
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAttributes(val *[]*string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAttributes(val *[]*string) {
+	if err := j.validateSetAttributesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"attributes",
@@ -700,7 +712,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAttributes(v
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAuthUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetAuthUrl(val *string) {
+	if err := j.validateSetAuthUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authUrl",
@@ -708,7 +723,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetAuthUrl(val 
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCentrifyAccount(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetCentrifyAccount(val *string) {
+	if err := j.validateSetCentrifyAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"centrifyAccount",
@@ -716,7 +734,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCentrifyAcco
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCentrifyAppId(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetCentrifyAppId(val *string) {
+	if err := j.validateSetCentrifyAppIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"centrifyAppId",
@@ -724,7 +745,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCentrifyAppI
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCertsUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetCertsUrl(val *string) {
+	if err := j.validateSetCertsUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certsUrl",
@@ -732,7 +756,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetCertsUrl(val
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetClientId(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -740,7 +767,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetClientId(val
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetClientSecret(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -748,7 +778,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetClientSecret
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -756,7 +789,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -764,7 +800,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetDirectoryId(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetDirectoryId(val *string) {
+	if err := j.validateSetDirectoryIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directoryId",
@@ -772,7 +811,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetDirectoryId(
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetEmailAttributeName(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetEmailAttributeName(val *string) {
+	if err := j.validateSetEmailAttributeNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailAttributeName",
@@ -780,7 +822,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetEmailAttribu
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetIdpPublicCert(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetIdpPublicCert(val *string) {
+	if err := j.validateSetIdpPublicCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"idpPublicCert",
@@ -788,7 +833,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetIdpPublicCer
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -796,7 +844,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetIssuerUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetIssuerUrl(val *string) {
+	if err := j.validateSetIssuerUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuerUrl",
@@ -804,7 +855,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetIssuerUrl(va
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetOktaAccount(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetOktaAccount(val *string) {
+	if err := j.validateSetOktaAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oktaAccount",
@@ -812,7 +866,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetOktaAccount(
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetOneloginAccount(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetOneloginAccount(val *string) {
+	if err := j.validateSetOneloginAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oneloginAccount",
@@ -820,7 +877,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetOneloginAcco
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetPkceEnabled(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPkceEnabled(val interface{}) {
+	if err := j.validateSetPkceEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pkceEnabled",
@@ -828,7 +888,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetPkceEnabled(
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetRedirectUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(val *string) {
+	if err := j.validateSetRedirectUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"redirectUrl",
@@ -836,7 +899,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetRedirectUrl(
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSignRequest(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetSignRequest(val interface{}) {
+	if err := j.validateSetSignRequestParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"signRequest",
@@ -844,7 +910,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSignRequest(
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSsoTargetUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetSsoTargetUrl(val *string) {
+	if err := j.validateSetSsoTargetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssoTargetUrl",
@@ -852,7 +921,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSsoTargetUrl
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSupportGroups(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetSupportGroups(val interface{}) {
+	if err := j.validateSetSupportGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"supportGroups",
@@ -860,7 +932,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetSupportGroup
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -868,7 +943,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -876,7 +954,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SetTokenUrl(val *string) {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetTokenUrl(val *string) {
+	if err := j.validateSetTokenUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenUrl",
@@ -898,6 +979,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ComputeFqn() *s
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -911,6 +995,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetAnyMapAttrib
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -924,6 +1011,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetBooleanAttri
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -937,6 +1027,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetBooleanMapAt
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -950,6 +1043,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetListAttribut
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -963,6 +1059,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberAttrib
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -976,6 +1075,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberListAt
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -989,6 +1091,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetNumberMapAtt
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1002,6 +1107,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetStringAttrib
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1028,6 +1136,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) InterpolationAs
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1209,6 +1320,9 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetTokenUrl()
 }
 
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

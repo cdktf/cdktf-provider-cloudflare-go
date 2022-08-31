@@ -433,6 +433,9 @@ func (j *jsiiProxy_AccessBookmark) ZoneIdInput() *string {
 func NewAccessBookmark(scope constructs.Construct, id *string, config *AccessBookmarkConfig) AccessBookmark {
 	_init_.Initialize()
 
+	if err := validateNewAccessBookmarkParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessBookmark{}
 
 	_jsii_.Create(
@@ -455,7 +458,10 @@ func NewAccessBookmark_Override(a AccessBookmark, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetAccountId(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -463,7 +469,10 @@ func (j *jsiiProxy_AccessBookmark) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetAppLauncherVisible(val interface{}) {
+func (j *jsiiProxy_AccessBookmark)SetAppLauncherVisible(val interface{}) {
+	if err := j.validateSetAppLauncherVisibleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appLauncherVisible",
@@ -471,7 +480,10 @@ func (j *jsiiProxy_AccessBookmark) SetAppLauncherVisible(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessBookmark)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -479,7 +491,7 @@ func (j *jsiiProxy_AccessBookmark) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetCount(val *float64) {
+func (j *jsiiProxy_AccessBookmark)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -487,7 +499,7 @@ func (j *jsiiProxy_AccessBookmark) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessBookmark)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +507,10 @@ func (j *jsiiProxy_AccessBookmark) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetDomain(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domain",
@@ -503,7 +518,7 @@ func (j *jsiiProxy_AccessBookmark) SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessBookmark)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -511,7 +526,10 @@ func (j *jsiiProxy_AccessBookmark) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetId(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -519,7 +537,10 @@ func (j *jsiiProxy_AccessBookmark) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessBookmark)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -527,7 +548,10 @@ func (j *jsiiProxy_AccessBookmark) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetLogoUrl(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetLogoUrl(val *string) {
+	if err := j.validateSetLogoUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logoUrl",
@@ -535,7 +559,10 @@ func (j *jsiiProxy_AccessBookmark) SetLogoUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetName(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -543,7 +570,7 @@ func (j *jsiiProxy_AccessBookmark) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessBookmark)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,7 +578,10 @@ func (j *jsiiProxy_AccessBookmark) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessBookmark)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -559,7 +589,10 @@ func (j *jsiiProxy_AccessBookmark) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessBookmark) SetZoneId(val *string) {
+func (j *jsiiProxy_AccessBookmark)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -587,6 +620,9 @@ func (j *jsiiProxy_AccessBookmark) SetZoneId(val *string) {
 func AccessBookmark_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAccessBookmark_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -611,6 +647,9 @@ func AccessBookmark_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AccessBookmark) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -619,6 +658,9 @@ func (a *jsiiProxy_AccessBookmark) AddOverride(path *string, value interface{}) 
 }
 
 func (a *jsiiProxy_AccessBookmark) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -632,6 +674,9 @@ func (a *jsiiProxy_AccessBookmark) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AccessBookmark) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -645,6 +690,9 @@ func (a *jsiiProxy_AccessBookmark) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (a *jsiiProxy_AccessBookmark) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -658,6 +706,9 @@ func (a *jsiiProxy_AccessBookmark) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AccessBookmark) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -671,6 +722,9 @@ func (a *jsiiProxy_AccessBookmark) GetListAttribute(terraformAttribute *string) 
 }
 
 func (a *jsiiProxy_AccessBookmark) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -684,6 +738,9 @@ func (a *jsiiProxy_AccessBookmark) GetNumberAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AccessBookmark) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -697,6 +754,9 @@ func (a *jsiiProxy_AccessBookmark) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AccessBookmark) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -710,6 +770,9 @@ func (a *jsiiProxy_AccessBookmark) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AccessBookmark) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -723,6 +786,9 @@ func (a *jsiiProxy_AccessBookmark) GetStringAttribute(terraformAttribute *string
 }
 
 func (a *jsiiProxy_AccessBookmark) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -736,6 +802,9 @@ func (a *jsiiProxy_AccessBookmark) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (a *jsiiProxy_AccessBookmark) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -749,6 +818,9 @@ func (a *jsiiProxy_AccessBookmark) InterpolationForAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AccessBookmark) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) WrapsSet() *bool {
 func NewAccessApplicationCorsHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessApplicationCorsHeadersList {
 	_init_.Initialize()
 
+	if err := validateNewAccessApplicationCorsHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessApplicationCorsHeadersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessApplicationCorsHeadersList_Override(a AccessApplicationCorsHeaders
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessApplicationCorsHeadersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessApplicationCorsHeadersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessApplicationCorsHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessApplicationCorsHeadersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessApplicationCorsHeadersList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessApplicationCorsHeadersList) Get(index *float64) AccessApplicationCorsHeadersOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessApplicationCorsHeadersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessApplicationCorsHeadersList) Get(index *float64) AccessA
 }
 
 func (a *jsiiProxy_AccessApplicationCorsHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

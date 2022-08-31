@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessPolicyIncludeOktaList) WrapsSet() *bool {
 func NewAccessPolicyIncludeOktaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeOktaList {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyIncludeOktaListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyIncludeOktaList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessPolicyIncludeOktaList_Override(a AccessPolicyIncludeOktaList, terr
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyIncludeOktaList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyIncludeOktaList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyIncludeOktaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeOktaList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyIncludeOktaList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessPolicyIncludeOktaList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeOktaList) Get(index *float64) AccessPolicyIncludeOktaOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessPolicyIncludeOktaOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessPolicyIncludeOktaList) Get(index *float64) AccessPolicy
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeOktaList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

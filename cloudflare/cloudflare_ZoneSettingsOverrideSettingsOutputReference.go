@@ -1471,6 +1471,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ZeroRttInput() *
 func NewZoneSettingsOverrideSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideSettingsOutputReference{}
 
 	_jsii_.Create(
@@ -1492,7 +1495,10 @@ func NewZoneSettingsOverrideSettingsOutputReference_Override(z ZoneSettingsOverr
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAlwaysOnline(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetAlwaysOnline(val *string) {
+	if err := j.validateSetAlwaysOnlineParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alwaysOnline",
@@ -1500,7 +1506,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAlwaysOnline(
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAlwaysUseHttps(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetAlwaysUseHttps(val *string) {
+	if err := j.validateSetAlwaysUseHttpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"alwaysUseHttps",
@@ -1508,7 +1517,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAlwaysUseHttp
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAutomaticHttpsRewrites(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetAutomaticHttpsRewrites(val *string) {
+	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"automaticHttpsRewrites",
@@ -1516,7 +1528,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetAutomaticHttp
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBinaryAst(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetBinaryAst(val *string) {
+	if err := j.validateSetBinaryAstParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"binaryAst",
@@ -1524,7 +1539,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBinaryAst(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrotli(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetBrotli(val *string) {
+	if err := j.validateSetBrotliParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"brotli",
@@ -1532,7 +1550,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrotli(val *s
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrowserCacheTtl(val *float64) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetBrowserCacheTtl(val *float64) {
+	if err := j.validateSetBrowserCacheTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"browserCacheTtl",
@@ -1540,7 +1561,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrowserCacheT
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrowserCheck(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetBrowserCheck(val *string) {
+	if err := j.validateSetBrowserCheckParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"browserCheck",
@@ -1548,7 +1572,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetBrowserCheck(
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCacheLevel(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetCacheLevel(val *string) {
+	if err := j.validateSetCacheLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cacheLevel",
@@ -1556,7 +1583,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCacheLevel(va
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetChallengeTtl(val *float64) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetChallengeTtl(val *float64) {
+	if err := j.validateSetChallengeTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"challengeTtl",
@@ -1564,7 +1594,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetChallengeTtl(
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCiphers(val *[]*string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetCiphers(val *[]*string) {
+	if err := j.validateSetCiphersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ciphers",
@@ -1572,7 +1605,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCiphers(val *
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCnameFlattening(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetCnameFlattening(val *string) {
+	if err := j.validateSetCnameFlatteningParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cnameFlattening",
@@ -1580,7 +1616,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetCnameFlatteni
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -1588,7 +1627,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -1596,7 +1638,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetDevelopmentMode(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetDevelopmentMode(val *string) {
+	if err := j.validateSetDevelopmentModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"developmentMode",
@@ -1604,7 +1649,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetDevelopmentMo
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetEarlyHints(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetEarlyHints(val *string) {
+	if err := j.validateSetEarlyHintsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"earlyHints",
@@ -1612,7 +1660,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetEarlyHints(va
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetEmailObfuscation(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetEmailObfuscation(val *string) {
+	if err := j.validateSetEmailObfuscationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailObfuscation",
@@ -1620,7 +1671,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetEmailObfuscat
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetFilterLogsToCloudflare(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetFilterLogsToCloudflare(val *string) {
+	if err := j.validateSetFilterLogsToCloudflareParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filterLogsToCloudflare",
@@ -1628,7 +1682,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetFilterLogsToC
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetH2Prioritization(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetH2Prioritization(val *string) {
+	if err := j.validateSetH2PrioritizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"h2Prioritization",
@@ -1636,7 +1693,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetH2Prioritizat
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHotlinkProtection(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetHotlinkProtection(val *string) {
+	if err := j.validateSetHotlinkProtectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hotlinkProtection",
@@ -1644,7 +1704,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHotlinkProtec
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHttp2(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetHttp2(val *string) {
+	if err := j.validateSetHttp2Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"http2",
@@ -1652,7 +1715,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHttp2(val *st
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHttp3(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetHttp3(val *string) {
+	if err := j.validateSetHttp3Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"http3",
@@ -1660,7 +1726,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetHttp3(val *st
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetImageResizing(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetImageResizing(val *string) {
+	if err := j.validateSetImageResizingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageResizing",
@@ -1668,7 +1737,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetImageResizing
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetInternalValue(val *ZoneSettingsOverrideSettings) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetInternalValue(val *ZoneSettingsOverrideSettings) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -1676,7 +1748,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetIpGeolocation(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetIpGeolocation(val *string) {
+	if err := j.validateSetIpGeolocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipGeolocation",
@@ -1684,7 +1759,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetIpGeolocation
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetIpv6(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetIpv6(val *string) {
+	if err := j.validateSetIpv6Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipv6",
@@ -1692,7 +1770,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetIpv6(val *str
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetLogToCloudflare(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetLogToCloudflare(val *string) {
+	if err := j.validateSetLogToCloudflareParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logToCloudflare",
@@ -1700,7 +1781,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetLogToCloudfla
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMaxUpload(val *float64) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetMaxUpload(val *float64) {
+	if err := j.validateSetMaxUploadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxUpload",
@@ -1708,7 +1792,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMaxUpload(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMinTlsVersion(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetMinTlsVersion(val *string) {
+	if err := j.validateSetMinTlsVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minTlsVersion",
@@ -1716,7 +1803,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMinTlsVersion
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMirage(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetMirage(val *string) {
+	if err := j.validateSetMirageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mirage",
@@ -1724,7 +1814,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetMirage(val *s
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOpportunisticEncryption(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOpportunisticEncryption(val *string) {
+	if err := j.validateSetOpportunisticEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"opportunisticEncryption",
@@ -1732,7 +1825,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOpportunistic
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOpportunisticOnion(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOpportunisticOnion(val *string) {
+	if err := j.validateSetOpportunisticOnionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"opportunisticOnion",
@@ -1740,7 +1836,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOpportunistic
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOrangeToOrange(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOrangeToOrange(val *string) {
+	if err := j.validateSetOrangeToOrangeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"orangeToOrange",
@@ -1748,7 +1847,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOrangeToOrang
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOriginErrorPagePassThru(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOriginErrorPagePassThru(val *string) {
+	if err := j.validateSetOriginErrorPagePassThruParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originErrorPagePassThru",
@@ -1756,7 +1858,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOriginErrorPa
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOriginMaxHttpVersion(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetOriginMaxHttpVersion(val *string) {
+	if err := j.validateSetOriginMaxHttpVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originMaxHttpVersion",
@@ -1764,7 +1869,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetOriginMaxHttp
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPolish(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPolish(val *string) {
+	if err := j.validateSetPolishParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"polish",
@@ -1772,7 +1880,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPolish(val *s
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPrefetchPreload(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPrefetchPreload(val *string) {
+	if err := j.validateSetPrefetchPreloadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prefetchPreload",
@@ -1780,7 +1891,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPrefetchPrelo
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPrivacyPass(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPrivacyPass(val *string) {
+	if err := j.validateSetPrivacyPassParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privacyPass",
@@ -1788,7 +1902,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPrivacyPass(v
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetProxyReadTimeout(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetProxyReadTimeout(val *string) {
+	if err := j.validateSetProxyReadTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"proxyReadTimeout",
@@ -1796,7 +1913,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetProxyReadTime
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPseudoIpv4(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPseudoIpv4(val *string) {
+	if err := j.validateSetPseudoIpv4Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pseudoIpv4",
@@ -1804,7 +1924,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetPseudoIpv4(va
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetResponseBuffering(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetResponseBuffering(val *string) {
+	if err := j.validateSetResponseBufferingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseBuffering",
@@ -1812,7 +1935,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetResponseBuffe
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetRocketLoader(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetRocketLoader(val *string) {
+	if err := j.validateSetRocketLoaderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rocketLoader",
@@ -1820,7 +1946,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetRocketLoader(
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSecurityLevel(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSecurityLevel(val *string) {
+	if err := j.validateSetSecurityLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityLevel",
@@ -1828,7 +1957,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSecurityLevel
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetServerSideExclude(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetServerSideExclude(val *string) {
+	if err := j.validateSetServerSideExcludeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverSideExclude",
@@ -1836,7 +1968,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetServerSideExc
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSortQueryStringForCache(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSortQueryStringForCache(val *string) {
+	if err := j.validateSetSortQueryStringForCacheParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sortQueryStringForCache",
@@ -1844,7 +1979,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSortQueryStri
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSsl(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSsl(val *string) {
+	if err := j.validateSetSslParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ssl",
@@ -1852,7 +1990,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetSsl(val *stri
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -1860,7 +2001,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -1868,7 +2012,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTls12Only(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTls12Only(val *string) {
+	if err := j.validateSetTls12OnlyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls12Only",
@@ -1876,7 +2023,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTls12Only(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTls13(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTls13(val *string) {
+	if err := j.validateSetTls13Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls13",
@@ -1884,7 +2034,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTls13(val *st
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTlsClientAuth(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTlsClientAuth(val *string) {
+	if err := j.validateSetTlsClientAuthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsClientAuth",
@@ -1892,7 +2045,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTlsClientAuth
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTrueClientIpHeader(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTrueClientIpHeader(val *string) {
+	if err := j.validateSetTrueClientIpHeaderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"trueClientIpHeader",
@@ -1900,7 +2056,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetTrueClientIpH
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetUniversalSsl(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetUniversalSsl(val *string) {
+	if err := j.validateSetUniversalSslParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"universalSsl",
@@ -1908,7 +2067,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetUniversalSsl(
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetVisitorIp(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetVisitorIp(val *string) {
+	if err := j.validateSetVisitorIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visitorIp",
@@ -1916,7 +2078,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetVisitorIp(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWaf(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetWaf(val *string) {
+	if err := j.validateSetWafParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"waf",
@@ -1924,7 +2089,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWaf(val *stri
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWebp(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetWebp(val *string) {
+	if err := j.validateSetWebpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webp",
@@ -1932,7 +2100,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWebp(val *str
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWebsockets(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetWebsockets(val *string) {
+	if err := j.validateSetWebsocketsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"websockets",
@@ -1940,7 +2111,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetWebsockets(va
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SetZeroRtt(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetZeroRtt(val *string) {
+	if err := j.validateSetZeroRttParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zeroRtt",
@@ -1962,6 +2136,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ComputeFqn() *st
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1975,6 +2152,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetAnyMapAttribu
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1988,6 +2168,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetBooleanAttrib
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -2001,6 +2184,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetBooleanMapAtt
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -2014,6 +2200,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetListAttribute
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -2027,6 +2216,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberAttribu
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -2040,6 +2232,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberListAtt
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -2053,6 +2248,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetNumberMapAttr
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -2066,6 +2264,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetStringAttribu
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -2092,6 +2293,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) InterpolationAsL
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2105,6 +2309,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) InterpolationFor
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMinify(value *ZoneSettingsOverrideSettingsMinify) {
+	if err := z.validatePutMinifyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"putMinify",
@@ -2113,6 +2320,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMinify(value 
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMobileRedirect(value *ZoneSettingsOverrideSettingsMobileRedirect) {
+	if err := z.validatePutMobileRedirectParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"putMobileRedirect",
@@ -2121,6 +2331,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMobileRedirec
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader) {
+	if err := z.validatePutSecurityHeaderParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"putSecurityHeader",
@@ -2569,6 +2782,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetZeroRtt() {
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

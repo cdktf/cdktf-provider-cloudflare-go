@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) WrapsSe
 func NewRulesetRulesActionParametersEdgeTtlStatusCodeTtlList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersEdgeTtlStatusCodeTtlList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRulesActionParametersEdgeTtlStatusCodeTtlListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRulesActionParametersEdgeTtlStatusCodeTtlList_Override(r RulesetR
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetInte
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetTerr
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) Compute
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) Get(index *float64) RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) Get(ind
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

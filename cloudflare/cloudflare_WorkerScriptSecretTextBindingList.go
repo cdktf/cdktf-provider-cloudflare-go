@@ -111,6 +111,9 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) WrapsSet() *bool {
 func NewWorkerScriptSecretTextBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptSecretTextBindingList {
 	_init_.Initialize()
 
+	if err := validateNewWorkerScriptSecretTextBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerScriptSecretTextBindingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewWorkerScriptSecretTextBindingList_Override(w WorkerScriptSecretTextBindi
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) ComputeFqn() *string {
 }
 
 func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Get(index *float64) WorkerScriptSecretTextBindingOutputReference {
+	if err := w.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns WorkerScriptSecretTextBindingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Get(index *float64) Worker
 }
 
 func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

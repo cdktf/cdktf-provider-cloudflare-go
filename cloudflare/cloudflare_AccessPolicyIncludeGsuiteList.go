@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) WrapsSet() *bool {
 func NewAccessPolicyIncludeGsuiteList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPolicyIncludeGsuiteList {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyIncludeGsuiteListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyIncludeGsuiteList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessPolicyIncludeGsuiteList_Override(a AccessPolicyIncludeGsuiteList, 
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyIncludeGsuiteList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyIncludeGsuiteList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyIncludeGsuiteList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGsuiteList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyIncludeGsuiteList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGsuiteList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGsuiteList) Get(index *float64) AccessPolicyIncludeGsuiteOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessPolicyIncludeGsuiteOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessPolicyIncludeGsuiteList) Get(index *float64) AccessPoli
 }
 
 func (a *jsiiProxy_AccessPolicyIncludeGsuiteList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

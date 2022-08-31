@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessGroupIncludeOktaList) WrapsSet() *bool {
 func NewAccessGroupIncludeOktaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeOktaList {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupIncludeOktaListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupIncludeOktaList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessGroupIncludeOktaList_Override(a AccessGroupIncludeOktaList, terraf
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOktaList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeOktaList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessGroupIncludeOktaList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOktaList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeOktaList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessGroupIncludeOktaList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOktaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupIncludeOktaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessGroupIncludeOktaList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOktaList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupIncludeOktaList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessGroupIncludeOktaList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOktaList) Get(index *float64) AccessGroupIncludeOktaOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessGroupIncludeOktaOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessGroupIncludeOktaList) Get(index *float64) AccessGroupIn
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOktaList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

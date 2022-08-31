@@ -99,6 +99,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) WrapsS
 func NewZoneSettingsOverrideInitialSettingsMobileRedirectList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsMobileRedirectList {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideInitialSettingsMobileRedirectListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewZoneSettingsOverrideInitialSettingsMobileRedirectList_Override(z ZoneSet
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) Comput
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) Get(index *float64) ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference {
+	if err := z.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) Get(in
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

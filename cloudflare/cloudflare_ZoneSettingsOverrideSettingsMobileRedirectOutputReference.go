@@ -220,6 +220,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Te
 func NewZoneSettingsOverrideSettingsMobileRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsMobileRedirectOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideSettingsMobileRedirectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewZoneSettingsOverrideSettingsMobileRedirectOutputReference_Override(z Zon
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetInternalValue(val *ZoneSettingsOverrideSettingsMobileRedirect) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetInternalValue(val *ZoneSettingsOverrideSettingsMobileRedirect) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetMobileSubdomain(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetMobileSubdomain(val *string) {
+	if err := j.validateSetMobileSubdomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mobileSubdomain",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetStatus(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetStripUri(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetStripUri(val interface{}) {
+	if err := j.validateSetStripUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"stripUri",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Co
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Ge
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) In
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) In
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMobileRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

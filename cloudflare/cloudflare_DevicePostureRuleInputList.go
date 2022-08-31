@@ -111,6 +111,9 @@ func (j *jsiiProxy_DevicePostureRuleInputList) WrapsSet() *bool {
 func NewDevicePostureRuleInputList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevicePostureRuleInputList {
 	_init_.Initialize()
 
+	if err := validateNewDevicePostureRuleInputListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DevicePostureRuleInputList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDevicePostureRuleInputList_Override(d DevicePostureRuleInputList, terraf
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DevicePostureRuleInputList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DevicePostureRuleInputList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicePostureRuleInputList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DevicePostureRuleInputList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DevicePostureRuleInputList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DevicePostureRuleInputList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputList) Get(index *float64) DevicePostureRuleInputOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DevicePostureRuleInputOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DevicePostureRuleInputList) Get(index *float64) DevicePosture
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

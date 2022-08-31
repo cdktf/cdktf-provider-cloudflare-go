@@ -624,6 +624,9 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
+	if err := validateNewSpectrumApplicationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpectrumApplication{}
 
 	_jsii_.Create(
@@ -646,7 +649,10 @@ func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetArgoSmartRouting(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication)SetArgoSmartRouting(val interface{}) {
+	if err := j.validateSetArgoSmartRoutingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"argoSmartRouting",
@@ -654,7 +660,10 @@ func (j *jsiiProxy_SpectrumApplication) SetArgoSmartRouting(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetConnection(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -662,7 +671,7 @@ func (j *jsiiProxy_SpectrumApplication) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetCount(val *float64) {
+func (j *jsiiProxy_SpectrumApplication)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -670,7 +679,7 @@ func (j *jsiiProxy_SpectrumApplication) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpectrumApplication)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -678,7 +687,10 @@ func (j *jsiiProxy_SpectrumApplication) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetEdgeIpConnectivity(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetEdgeIpConnectivity(val *string) {
+	if err := j.validateSetEdgeIpConnectivityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"edgeIpConnectivity",
@@ -686,7 +698,10 @@ func (j *jsiiProxy_SpectrumApplication) SetEdgeIpConnectivity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetEdgeIps(val *[]*string) {
+func (j *jsiiProxy_SpectrumApplication)SetEdgeIps(val *[]*string) {
+	if err := j.validateSetEdgeIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"edgeIps",
@@ -694,7 +709,7 @@ func (j *jsiiProxy_SpectrumApplication) SetEdgeIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpectrumApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -702,7 +717,10 @@ func (j *jsiiProxy_SpectrumApplication) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetId(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -710,7 +728,10 @@ func (j *jsiiProxy_SpectrumApplication) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetIpFirewall(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication)SetIpFirewall(val interface{}) {
+	if err := j.validateSetIpFirewallParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipFirewall",
@@ -718,7 +739,10 @@ func (j *jsiiProxy_SpectrumApplication) SetIpFirewall(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpectrumApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -726,7 +750,10 @@ func (j *jsiiProxy_SpectrumApplication) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetOriginDirect(val *[]*string) {
+func (j *jsiiProxy_SpectrumApplication)SetOriginDirect(val *[]*string) {
+	if err := j.validateSetOriginDirectParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originDirect",
@@ -734,7 +761,10 @@ func (j *jsiiProxy_SpectrumApplication) SetOriginDirect(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetOriginPort(val *float64) {
+func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *float64) {
+	if err := j.validateSetOriginPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originPort",
@@ -742,7 +772,10 @@ func (j *jsiiProxy_SpectrumApplication) SetOriginPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetProtocol(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -750,7 +783,7 @@ func (j *jsiiProxy_SpectrumApplication) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpectrumApplication)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -758,7 +791,10 @@ func (j *jsiiProxy_SpectrumApplication) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpectrumApplication)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -766,7 +802,10 @@ func (j *jsiiProxy_SpectrumApplication) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetProxyProtocol(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetProxyProtocol(val *string) {
+	if err := j.validateSetProxyProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"proxyProtocol",
@@ -774,7 +813,10 @@ func (j *jsiiProxy_SpectrumApplication) SetProxyProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetTls(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetTls(val *string) {
+	if err := j.validateSetTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls",
@@ -782,7 +824,10 @@ func (j *jsiiProxy_SpectrumApplication) SetTls(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetTrafficType(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetTrafficType(val *string) {
+	if err := j.validateSetTrafficTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"trafficType",
@@ -790,7 +835,10 @@ func (j *jsiiProxy_SpectrumApplication) SetTrafficType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication) SetZoneId(val *string) {
+func (j *jsiiProxy_SpectrumApplication)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -818,6 +866,9 @@ func (j *jsiiProxy_SpectrumApplication) SetZoneId(val *string) {
 func SpectrumApplication_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSpectrumApplication_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -842,6 +893,9 @@ func SpectrumApplication_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SpectrumApplication) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -850,6 +904,9 @@ func (s *jsiiProxy_SpectrumApplication) AddOverride(path *string, value interfac
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -863,6 +920,9 @@ func (s *jsiiProxy_SpectrumApplication) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -876,6 +936,9 @@ func (s *jsiiProxy_SpectrumApplication) GetBooleanAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -889,6 +952,9 @@ func (s *jsiiProxy_SpectrumApplication) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -902,6 +968,9 @@ func (s *jsiiProxy_SpectrumApplication) GetListAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -915,6 +984,9 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -928,6 +1000,9 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberListAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -941,6 +1016,9 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberMapAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -954,6 +1032,9 @@ func (s *jsiiProxy_SpectrumApplication) GetStringAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SpectrumApplication) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -967,6 +1048,9 @@ func (s *jsiiProxy_SpectrumApplication) GetStringMapAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SpectrumApplication) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -980,6 +1064,9 @@ func (s *jsiiProxy_SpectrumApplication) InterpolationForAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SpectrumApplication) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -988,6 +1075,9 @@ func (s *jsiiProxy_SpectrumApplication) OverrideLogicalId(newLogicalId *string) 
 }
 
 func (s *jsiiProxy_SpectrumApplication) PutDns(value *SpectrumApplicationDns) {
+	if err := s.validatePutDnsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDns",
@@ -996,6 +1086,9 @@ func (s *jsiiProxy_SpectrumApplication) PutDns(value *SpectrumApplicationDns) {
 }
 
 func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationOriginDns) {
+	if err := s.validatePutOriginDnsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOriginDns",
@@ -1004,6 +1097,9 @@ func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationO
 }
 
 func (s *jsiiProxy_SpectrumApplication) PutOriginPortRange(value *SpectrumApplicationOriginPortRange) {
+	if err := s.validatePutOriginPortRangeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOriginPortRange",

@@ -198,6 +198,9 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Terrafo
 func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyWebhooksIntegrationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNotificationPolicyWebhooksIntegrationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNotificationPolicyWebhooksIntegrationOutputReference_Override(n Notifica
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetId(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetId(v
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetName(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetName
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Compute
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetAnyM
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBool
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBool
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetList
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumb
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumb
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetNumb
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetStri
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Interpo
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) ResetNa
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

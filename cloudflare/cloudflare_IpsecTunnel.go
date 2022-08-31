@@ -647,6 +647,9 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
 
+	if err := validateNewIpsecTunnelParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IpsecTunnel{}
 
 	_jsii_.Create(
@@ -669,7 +672,10 @@ func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetAccountId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -677,7 +683,10 @@ func (j *jsiiProxy_IpsecTunnel) SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetAllowNullCipher(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel)SetAllowNullCipher(val interface{}) {
+	if err := j.validateSetAllowNullCipherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowNullCipher",
@@ -685,7 +694,10 @@ func (j *jsiiProxy_IpsecTunnel) SetAllowNullCipher(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetCloudflareEndpoint(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetCloudflareEndpoint(val *string) {
+	if err := j.validateSetCloudflareEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cloudflareEndpoint",
@@ -693,7 +705,10 @@ func (j *jsiiProxy_IpsecTunnel) SetCloudflareEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetConnection(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -701,7 +716,7 @@ func (j *jsiiProxy_IpsecTunnel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetCount(val *float64) {
+func (j *jsiiProxy_IpsecTunnel)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -709,7 +724,10 @@ func (j *jsiiProxy_IpsecTunnel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetCustomerEndpoint(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetCustomerEndpoint(val *string) {
+	if err := j.validateSetCustomerEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customerEndpoint",
@@ -717,7 +735,7 @@ func (j *jsiiProxy_IpsecTunnel) SetCustomerEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IpsecTunnel)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -725,7 +743,10 @@ func (j *jsiiProxy_IpsecTunnel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetDescription(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -733,7 +754,7 @@ func (j *jsiiProxy_IpsecTunnel) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -741,7 +762,10 @@ func (j *jsiiProxy_IpsecTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetFqdnId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetFqdnId(val *string) {
+	if err := j.validateSetFqdnIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fqdnId",
@@ -749,7 +773,10 @@ func (j *jsiiProxy_IpsecTunnel) SetFqdnId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetHealthCheckEnabled(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
+	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckEnabled",
@@ -757,7 +784,10 @@ func (j *jsiiProxy_IpsecTunnel) SetHealthCheckEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetHealthCheckTarget(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckTarget(val *string) {
+	if err := j.validateSetHealthCheckTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckTarget",
@@ -765,7 +795,10 @@ func (j *jsiiProxy_IpsecTunnel) SetHealthCheckTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetHealthCheckType(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckType",
@@ -773,7 +806,10 @@ func (j *jsiiProxy_IpsecTunnel) SetHealthCheckType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetHexId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetHexId(val *string) {
+	if err := j.validateSetHexIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hexId",
@@ -781,7 +817,10 @@ func (j *jsiiProxy_IpsecTunnel) SetHexId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -789,7 +828,10 @@ func (j *jsiiProxy_IpsecTunnel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetInterfaceAddress(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetInterfaceAddress(val *string) {
+	if err := j.validateSetInterfaceAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
@@ -797,7 +839,10 @@ func (j *jsiiProxy_IpsecTunnel) SetInterfaceAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IpsecTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -805,7 +850,10 @@ func (j *jsiiProxy_IpsecTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetName(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -813,7 +861,7 @@ func (j *jsiiProxy_IpsecTunnel) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IpsecTunnel)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -821,7 +869,10 @@ func (j *jsiiProxy_IpsecTunnel) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IpsecTunnel)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -829,7 +880,10 @@ func (j *jsiiProxy_IpsecTunnel) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetPsk(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetPsk(val *string) {
+	if err := j.validateSetPskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"psk",
@@ -837,7 +891,10 @@ func (j *jsiiProxy_IpsecTunnel) SetPsk(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetRemoteId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
+	if err := j.validateSetRemoteIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"remoteId",
@@ -845,7 +902,10 @@ func (j *jsiiProxy_IpsecTunnel) SetRemoteId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel) SetUserId(val *string) {
+func (j *jsiiProxy_IpsecTunnel)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -873,6 +933,9 @@ func (j *jsiiProxy_IpsecTunnel) SetUserId(val *string) {
 func IpsecTunnel_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIpsecTunnel_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -897,6 +960,9 @@ func IpsecTunnel_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IpsecTunnel) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -905,6 +971,9 @@ func (i *jsiiProxy_IpsecTunnel) AddOverride(path *string, value interface{}) {
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -918,6 +987,9 @@ func (i *jsiiProxy_IpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -931,6 +1003,9 @@ func (i *jsiiProxy_IpsecTunnel) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -944,6 +1019,9 @@ func (i *jsiiProxy_IpsecTunnel) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -957,6 +1035,9 @@ func (i *jsiiProxy_IpsecTunnel) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -970,6 +1051,9 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -983,6 +1067,9 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -996,6 +1083,9 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1009,6 +1099,9 @@ func (i *jsiiProxy_IpsecTunnel) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (i *jsiiProxy_IpsecTunnel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1022,6 +1115,9 @@ func (i *jsiiProxy_IpsecTunnel) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (i *jsiiProxy_IpsecTunnel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1035,6 +1131,9 @@ func (i *jsiiProxy_IpsecTunnel) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (i *jsiiProxy_IpsecTunnel) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",

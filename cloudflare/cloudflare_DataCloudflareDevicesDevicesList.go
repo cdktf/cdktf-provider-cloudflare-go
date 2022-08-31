@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesList) WrapsSet() *bool {
 func NewDataCloudflareDevicesDevicesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareDevicesDevicesList {
 	_init_.Initialize()
 
+	if err := validateNewDataCloudflareDevicesDevicesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataCloudflareDevicesDevicesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataCloudflareDevicesDevicesList_Override(d DataCloudflareDevicesDevices
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareDevicesDevicesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareDevicesDevicesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareDevicesDevicesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataCloudflareDevicesDevicesList) Get(index *float64) DataCloudflareDevicesDevicesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataCloudflareDevicesDevicesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesList) Get(index *float64) DataClo
 }
 
 func (d *jsiiProxy_DataCloudflareDevicesDevicesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

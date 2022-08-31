@@ -162,6 +162,9 @@ func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) TerraformReso
 func NewCertificatePackValidationErrorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CertificatePackValidationErrorsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCertificatePackValidationErrorsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CertificatePackValidationErrorsOutputReference{}
 
 	_jsii_.Create(
@@ -183,7 +186,10 @@ func NewCertificatePackValidationErrorsOutputReference_Override(c CertificatePac
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -191,7 +197,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -199,7 +208,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -207,7 +219,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -215,7 +230,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertificatePackValidationErrorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -237,6 +255,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) ComputeFqn() 
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -250,6 +271,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetAnyMapAttr
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -263,6 +287,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetBooleanAtt
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -276,6 +303,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetBooleanMap
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -289,6 +319,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetListAttrib
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -302,6 +335,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberAttr
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -315,6 +351,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberList
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -328,6 +367,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetNumberMapA
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -341,6 +383,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetStringAttr
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -367,6 +412,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +428,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

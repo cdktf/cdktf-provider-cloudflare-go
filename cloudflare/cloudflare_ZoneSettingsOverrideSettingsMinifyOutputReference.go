@@ -220,6 +220,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) TerraformR
 func NewZoneSettingsOverrideSettingsMinifyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsMinifyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideSettingsMinifyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewZoneSettingsOverrideSettingsMinifyOutputReference_Override(z ZoneSetting
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetCss(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetCss(val *string) {
+	if err := j.validateSetCssParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"css",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetCss(val
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetHtml(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetHtml(val *string) {
+	if err := j.validateSetHtmlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"html",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetHtml(va
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetInternalValue(val *ZoneSettingsOverrideSettingsMinify) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetInternalValue(val *ZoneSettingsOverrideSettingsMinify) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetJs(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetJs(val *string) {
+	if err := j.validateSetJsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"js",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetJs(val 
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) ComputeFqn
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetAnyMapA
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBoolean
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetBoolean
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetListAtt
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberA
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberL
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetNumberM
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetStringA
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Interpolat
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Interpolat
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

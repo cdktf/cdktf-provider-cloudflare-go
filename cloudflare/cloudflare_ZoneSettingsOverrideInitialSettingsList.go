@@ -99,6 +99,9 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) WrapsSet() *bool {
 func NewZoneSettingsOverrideInitialSettingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsList {
 	_init_.Initialize()
 
+	if err := validateNewZoneSettingsOverrideInitialSettingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewZoneSettingsOverrideInitialSettingsList_Override(z ZoneSettingsOverrideI
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) ComputeFqn() *string
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) Get(index *float64) ZoneSettingsOverrideInitialSettingsOutputReference {
+	if err := z.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ZoneSettingsOverrideInitialSettingsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) Get(index *float64) 
 }
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := z.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

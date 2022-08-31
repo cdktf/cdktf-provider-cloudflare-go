@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataCloudflareZonesZonesList) WrapsSet() *bool {
 func NewDataCloudflareZonesZonesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZonesZonesList {
 	_init_.Initialize()
 
+	if err := validateNewDataCloudflareZonesZonesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataCloudflareZonesZonesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataCloudflareZonesZonesList_Override(d DataCloudflareZonesZonesList, te
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZonesZonesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareZonesZonesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataCloudflareZonesZonesList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZonesZonesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareZonesZonesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataCloudflareZonesZonesList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZonesZonesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareZonesZonesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataCloudflareZonesZonesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataCloudflareZonesZonesList) Get(index *float64) DataCloudflareZonesZonesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataCloudflareZonesZonesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataCloudflareZonesZonesList) Get(index *float64) DataCloudfl
 }
 
 func (d *jsiiProxy_DataCloudflareZonesZonesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

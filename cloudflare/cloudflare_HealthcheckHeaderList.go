@@ -111,6 +111,9 @@ func (j *jsiiProxy_HealthcheckHeaderList) WrapsSet() *bool {
 func NewHealthcheckHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HealthcheckHeaderList {
 	_init_.Initialize()
 
+	if err := validateNewHealthcheckHeaderListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_HealthcheckHeaderList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewHealthcheckHeaderList_Override(h HealthcheckHeaderList, terraformResourc
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHeaderList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcheckHeaderList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_HealthcheckHeaderList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHeaderList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcheckHeaderList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_HealthcheckHeaderList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcheckHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_HealthcheckHeaderList) SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_HealthcheckHeaderList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_HealthcheckHeaderList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (h *jsiiProxy_HealthcheckHeaderList) ComputeFqn() *string {
 }
 
 func (h *jsiiProxy_HealthcheckHeaderList) Get(index *float64) HealthcheckHeaderOutputReference {
+	if err := h.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns HealthcheckHeaderOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (h *jsiiProxy_HealthcheckHeaderList) Get(index *float64) HealthcheckHeaderO
 }
 
 func (h *jsiiProxy_HealthcheckHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

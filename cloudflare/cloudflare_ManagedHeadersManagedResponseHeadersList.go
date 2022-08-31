@@ -111,6 +111,9 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) WrapsSet() *bool {
 func NewManagedHeadersManagedResponseHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedHeadersManagedResponseHeadersList {
 	_init_.Initialize()
 
+	if err := validateNewManagedHeadersManagedResponseHeadersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedHeadersManagedResponseHeadersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewManagedHeadersManagedResponseHeadersList_Override(m ManagedHeadersManage
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) ComputeFqn() *strin
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) Get(index *float64) ManagedHeadersManagedResponseHeadersOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ManagedHeadersManagedResponseHeadersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) Get(index *float64)
 }
 
 func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

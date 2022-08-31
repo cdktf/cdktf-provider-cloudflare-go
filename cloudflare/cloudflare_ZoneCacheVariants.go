@@ -578,6 +578,9 @@ func (j *jsiiProxy_ZoneCacheVariants) ZoneIdInput() *string {
 func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) ZoneCacheVariants {
 	_init_.Initialize()
 
+	if err := validateNewZoneCacheVariantsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneCacheVariants{}
 
 	_jsii_.Create(
@@ -600,7 +603,10 @@ func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetAvif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetAvif(val *[]*string) {
+	if err := j.validateSetAvifParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"avif",
@@ -608,7 +614,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetAvif(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetBmp(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetBmp(val *[]*string) {
+	if err := j.validateSetBmpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bmp",
@@ -616,7 +625,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetBmp(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneCacheVariants)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -624,7 +636,7 @@ func (j *jsiiProxy_ZoneCacheVariants) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetCount(val *float64) {
+func (j *jsiiProxy_ZoneCacheVariants)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -632,7 +644,7 @@ func (j *jsiiProxy_ZoneCacheVariants) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -640,7 +652,7 @@ func (j *jsiiProxy_ZoneCacheVariants) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneCacheVariants)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -648,7 +660,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetGif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetGif(val *[]*string) {
+	if err := j.validateSetGifParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gif",
@@ -656,7 +671,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetGif(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetId(val *string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -664,7 +682,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetJp2(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetJp2(val *[]*string) {
+	if err := j.validateSetJp2Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jp2",
@@ -672,7 +693,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetJp2(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetJpeg(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetJpeg(val *[]*string) {
+	if err := j.validateSetJpegParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jpeg",
@@ -680,7 +704,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetJpeg(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetJpg(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetJpg(val *[]*string) {
+	if err := j.validateSetJpgParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jpg",
@@ -688,7 +715,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetJpg(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetJpg2(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetJpg2(val *[]*string) {
+	if err := j.validateSetJpg2Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jpg2",
@@ -696,7 +726,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetJpg2(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneCacheVariants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -704,7 +737,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetPng(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetPng(val *[]*string) {
+	if err := j.validateSetPngParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"png",
@@ -712,7 +748,7 @@ func (j *jsiiProxy_ZoneCacheVariants) SetPng(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneCacheVariants)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -720,7 +756,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneCacheVariants)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -728,7 +767,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetTif(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetTif(val *[]*string) {
+	if err := j.validateSetTifParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tif",
@@ -736,7 +778,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetTif(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetTiff(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetTiff(val *[]*string) {
+	if err := j.validateSetTiffParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tiff",
@@ -744,7 +789,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetTiff(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetWebp(val *[]*string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetWebp(val *[]*string) {
+	if err := j.validateSetWebpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"webp",
@@ -752,7 +800,10 @@ func (j *jsiiProxy_ZoneCacheVariants) SetWebp(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneCacheVariants)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -780,6 +831,9 @@ func (j *jsiiProxy_ZoneCacheVariants) SetZoneId(val *string) {
 func ZoneCacheVariants_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateZoneCacheVariants_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -804,6 +858,9 @@ func ZoneCacheVariants_TfResourceType() *string {
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) AddOverride(path *string, value interface{}) {
+	if err := z.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
@@ -812,6 +869,9 @@ func (z *jsiiProxy_ZoneCacheVariants) AddOverride(path *string, value interface{
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -825,6 +885,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -838,6 +901,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -851,6 +917,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -864,6 +933,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetListAttribute(terraformAttribute *strin
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -877,6 +949,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetNumberAttribute(terraformAttribute *str
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -890,6 +965,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetNumberListAttribute(terraformAttribute 
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -903,6 +981,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -916,6 +997,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetStringAttribute(terraformAttribute *str
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -929,6 +1013,9 @@ func (z *jsiiProxy_ZoneCacheVariants) GetStringMapAttribute(terraformAttribute *
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -942,6 +1029,9 @@ func (z *jsiiProxy_ZoneCacheVariants) InterpolationForAttribute(terraformAttribu
 }
 
 func (z *jsiiProxy_ZoneCacheVariants) OverrideLogicalId(newLogicalId *string) {
+	if err := z.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",

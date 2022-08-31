@@ -228,6 +228,9 @@ func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) TerraformResour
 func NewDataCloudflareWafGroupsGroupsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareWafGroupsGroupsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataCloudflareWafGroupsGroupsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference{}
 
 	_jsii_.Create(
@@ -249,7 +252,10 @@ func NewDataCloudflareWafGroupsGroupsOutputReference_Override(d DataCloudflareWa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -257,7 +263,10 @@ func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -265,7 +274,10 @@ func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetInternalValue(val *DataCloudflareWafGroupsGroups) {
+func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference)SetInternalValue(val *DataCloudflareWafGroupsGroups) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -273,7 +285,10 @@ func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -281,7 +296,10 @@ func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -303,6 +321,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -316,6 +337,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetAnyMapAttrib
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -329,6 +353,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetBooleanAttri
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -342,6 +369,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetBooleanMapAt
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -355,6 +385,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetListAttribut
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -368,6 +401,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberAttrib
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +417,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberListAt
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -394,6 +433,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetNumberMapAtt
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -407,6 +449,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetStringAttrib
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -433,6 +478,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) InterpolationAs
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -446,6 +494,9 @@ func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) InterpolationFo
 }
 
 func (d *jsiiProxy_DataCloudflareWafGroupsGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

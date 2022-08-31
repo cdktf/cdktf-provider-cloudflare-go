@@ -111,6 +111,9 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderList) WrapsSet() *bool {
 func NewLoadBalancerMonitorHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerMonitorHeaderList {
 	_init_.Initialize()
 
+	if err := validateNewLoadBalancerMonitorHeaderListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadBalancerMonitorHeaderList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLoadBalancerMonitorHeaderList_Override(l LoadBalancerMonitorHeaderList, 
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LoadBalancerMonitorHeaderList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadBalancerMonitorHeaderList) Get(index *float64) LoadBalancerMonitorHeaderOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LoadBalancerMonitorHeaderOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LoadBalancerMonitorHeaderList) Get(index *float64) LoadBalanc
 }
 
 func (l *jsiiProxy_LoadBalancerMonitorHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

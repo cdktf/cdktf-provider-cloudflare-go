@@ -199,6 +199,9 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) TerraformResource() c
 func NewAccessGroupRequireAzureOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupRequireAzureOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupRequireAzureOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupRequireAzureOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewAccessGroupRequireAzureOutputReference_Override(a AccessGroupRequireAzur
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetId(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetId(val *[]*string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetId(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"identityProviderId",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetIdentityProviderId
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireAzureOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireAzureOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) ComputeFqn() *string 
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetAnyMapAttribute(te
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetBooleanAttribute(t
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetBooleanMapAttribut
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetListAttribute(terr
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberAttribute(te
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberListAttribut
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetNumberMapAttribute
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetStringAttribute(te
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) InterpolationAsList()
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) ResetIdentityProvider
 }
 
 func (a *jsiiProxy_AccessGroupRequireAzureOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -223,6 +223,9 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) TerraformResource() cd
 func NewRateLimitMatchResponseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RateLimitMatchResponseOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRateLimitMatchResponseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RateLimitMatchResponseOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewRateLimitMatchResponseOutputReference_Override(r RateLimitMatchResponseO
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetHeaders(val interface{}) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetHeaders(val interface{}) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headers",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetHeaders(val interfa
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetInternalValue(val *RateLimitMatchResponse) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetInternalValue(val *RateLimitMatchResponse) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetOriginTraffic(val interface{}) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetOriginTraffic(val interface{}) {
+	if err := j.validateSetOriginTrafficParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"originTraffic",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetOriginTraffic(val i
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetStatuses(val *[]*float64) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetStatuses(val *[]*float64) {
+	if err := j.validateSetStatusesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statuses",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetStatuses(val *[]*fl
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetAnyMapAttribute(ter
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetBooleanAttribute(te
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetBooleanMapAttribute
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetListAttribute(terra
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberAttribute(ter
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberListAttribute
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetNumberMapAttribute(
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetStringAttribute(ter
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) InterpolationAsList() 
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) ResetStatuses() {
 }
 
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

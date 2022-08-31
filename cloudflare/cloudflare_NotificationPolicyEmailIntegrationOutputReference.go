@@ -198,6 +198,9 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) TerraformR
 func NewNotificationPolicyEmailIntegrationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyEmailIntegrationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNotificationPolicyEmailIntegrationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationPolicyEmailIntegrationOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewNotificationPolicyEmailIntegrationOutputReference_Override(n Notificatio
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetId(val *string) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetId(val 
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetName(val *string) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetName(va
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) ComputeFqn
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetAnyMapA
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetBoolean
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetBoolean
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetListAtt
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberA
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberL
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetNumberM
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetStringA
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) Interpolat
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) ResetName(
 }
 
 func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

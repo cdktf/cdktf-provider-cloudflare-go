@@ -221,6 +221,9 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) TerraformResource() 
 func NewAccessApplicationSaasAppOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessApplicationSaasAppOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessApplicationSaasAppOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetConsumerServiceUrl(val *string) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetConsumerServiceUrl(val *string) {
+	if err := j.validateSetConsumerServiceUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consumerServiceUrl",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetConsumerServiceUr
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetInternalValue(val *AccessApplicationSaasApp) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetInternalValue(val *AccessApplicationSaasApp) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetNameIdFormat(val *string) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdFormat(val *string) {
+	if err := j.validateSetNameIdFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nameIdFormat",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetNameIdFormat(val 
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetSpEntityId(val *string) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetSpEntityId(val *string) {
+	if err := j.validateSetSpEntityIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spEntityId",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetSpEntityId(val *s
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -320,6 +347,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ComputeFqn() *string
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetAnyMapAttribute(t
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetBooleanAttribute(
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetBooleanMapAttribu
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetListAttribute(ter
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberAttribute(t
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberListAttribu
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetNumberMapAttribut
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetStringAttribute(t
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) InterpolationAsList(
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() 
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

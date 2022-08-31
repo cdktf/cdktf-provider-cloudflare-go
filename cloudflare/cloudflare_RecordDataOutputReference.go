@@ -1087,6 +1087,9 @@ func (j *jsiiProxy_RecordDataOutputReference) WeightInput() *float64 {
 func NewRecordDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecordDataOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRecordDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RecordDataOutputReference{}
 
 	_jsii_.Create(
@@ -1108,7 +1111,10 @@ func NewRecordDataOutputReference_Override(r RecordDataOutputReference, terrafor
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetAlgorithm(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetAlgorithm(val *float64) {
+	if err := j.validateSetAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"algorithm",
@@ -1116,7 +1122,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetAlgorithm(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetAltitude(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetAltitude(val *float64) {
+	if err := j.validateSetAltitudeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"altitude",
@@ -1124,7 +1133,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetAltitude(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetCertificate(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -1132,7 +1144,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RecordDataOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -1140,7 +1155,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetComplexObjectIndex(val interfac
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RecordDataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -1148,7 +1166,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetContent(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -1156,7 +1177,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetDigest(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetDigest(val *string) {
+	if err := j.validateSetDigestParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"digest",
@@ -1164,7 +1188,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetDigest(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetDigestType(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetDigestType(val *float64) {
+	if err := j.validateSetDigestTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"digestType",
@@ -1172,7 +1199,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetDigestType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetFingerprint(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetFingerprint(val *string) {
+	if err := j.validateSetFingerprintParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fingerprint",
@@ -1180,7 +1210,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetFingerprint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetFlags(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetFlags(val *string) {
+	if err := j.validateSetFlagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"flags",
@@ -1188,7 +1221,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetFlags(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetInternalValue(val *RecordData) {
+func (j *jsiiProxy_RecordDataOutputReference)SetInternalValue(val *RecordData) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -1196,7 +1232,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetInternalValue(val *RecordData) 
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetKeyTag(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetKeyTag(val *float64) {
+	if err := j.validateSetKeyTagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyTag",
@@ -1204,7 +1243,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetKeyTag(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLatDegrees(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLatDegrees(val *float64) {
+	if err := j.validateSetLatDegreesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"latDegrees",
@@ -1212,7 +1254,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLatDegrees(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLatDirection(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLatDirection(val *string) {
+	if err := j.validateSetLatDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"latDirection",
@@ -1220,7 +1265,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLatDirection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLatMinutes(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLatMinutes(val *float64) {
+	if err := j.validateSetLatMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"latMinutes",
@@ -1228,7 +1276,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLatMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLatSeconds(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLatSeconds(val *float64) {
+	if err := j.validateSetLatSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"latSeconds",
@@ -1236,7 +1287,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLatSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLongDegrees(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLongDegrees(val *float64) {
+	if err := j.validateSetLongDegreesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"longDegrees",
@@ -1244,7 +1298,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLongDegrees(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLongDirection(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLongDirection(val *string) {
+	if err := j.validateSetLongDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"longDirection",
@@ -1252,7 +1309,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLongDirection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLongMinutes(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLongMinutes(val *float64) {
+	if err := j.validateSetLongMinutesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"longMinutes",
@@ -1260,7 +1320,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLongMinutes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetLongSeconds(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetLongSeconds(val *float64) {
+	if err := j.validateSetLongSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"longSeconds",
@@ -1268,7 +1331,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetLongSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetMatchingType(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetMatchingType(val *float64) {
+	if err := j.validateSetMatchingTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchingType",
@@ -1276,7 +1342,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetMatchingType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetName(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1284,7 +1353,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetOrder(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetOrder(val *float64) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"order",
@@ -1292,7 +1364,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetOrder(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPort(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -1300,7 +1375,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPrecisionHorz(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPrecisionHorz(val *float64) {
+	if err := j.validateSetPrecisionHorzParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"precisionHorz",
@@ -1308,7 +1386,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPrecisionHorz(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPrecisionVert(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPrecisionVert(val *float64) {
+	if err := j.validateSetPrecisionVertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"precisionVert",
@@ -1316,7 +1397,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPrecisionVert(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPreference(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPreference(val *float64) {
+	if err := j.validateSetPreferenceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preference",
@@ -1324,7 +1408,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPreference(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPriority(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -1332,7 +1419,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetProto(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetProto(val *string) {
+	if err := j.validateSetProtoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"proto",
@@ -1340,7 +1430,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetProto(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetProtocol(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetProtocol(val *float64) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -1348,7 +1441,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetProtocol(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetPublicKey(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetPublicKey(val *string) {
+	if err := j.validateSetPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicKey",
@@ -1356,7 +1452,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetPublicKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetRegex(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetRegex(val *string) {
+	if err := j.validateSetRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"regex",
@@ -1364,7 +1463,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetReplacement(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetReplacement(val *string) {
+	if err := j.validateSetReplacementParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"replacement",
@@ -1372,7 +1474,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetReplacement(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetSelector(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetSelector(val *float64) {
+	if err := j.validateSetSelectorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"selector",
@@ -1380,7 +1485,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetSelector(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetService(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"service",
@@ -1388,7 +1496,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetSize(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"size",
@@ -1396,7 +1507,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetTag(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetTag(val *string) {
+	if err := j.validateSetTagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tag",
@@ -1404,7 +1518,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetTag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetTarget(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetTarget(val *string) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -1412,7 +1529,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -1420,7 +1540,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RecordDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -1428,7 +1551,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetType(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetType(val *float64) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1436,7 +1562,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetType(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetUsage(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetUsage(val *float64) {
+	if err := j.validateSetUsageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usage",
@@ -1444,7 +1573,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetUsage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_RecordDataOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -1452,7 +1584,10 @@ func (j *jsiiProxy_RecordDataOutputReference) SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RecordDataOutputReference) SetWeight(val *float64) {
+func (j *jsiiProxy_RecordDataOutputReference)SetWeight(val *float64) {
+	if err := j.validateSetWeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weight",
@@ -1474,6 +1609,9 @@ func (r *jsiiProxy_RecordDataOutputReference) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1487,6 +1625,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetAnyMapAttribute(terraformAttrib
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1500,6 +1641,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetBooleanAttribute(terraformAttri
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1513,6 +1657,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetBooleanMapAttribute(terraformAt
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1526,6 +1673,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetListAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1539,6 +1689,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetNumberAttribute(terraformAttrib
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1552,6 +1705,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetNumberListAttribute(terraformAt
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1565,6 +1721,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetNumberMapAttribute(terraformAtt
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1578,6 +1737,9 @@ func (r *jsiiProxy_RecordDataOutputReference) GetStringAttribute(terraformAttrib
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1604,6 +1766,9 @@ func (r *jsiiProxy_RecordDataOutputReference) InterpolationAsList() cdktf.IResol
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1929,6 +2094,9 @@ func (r *jsiiProxy_RecordDataOutputReference) ResetWeight() {
 }
 
 func (r *jsiiProxy_RecordDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

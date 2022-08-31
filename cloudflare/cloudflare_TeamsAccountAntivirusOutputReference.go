@@ -220,6 +220,9 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) TerraformResource() cdk
 func NewTeamsAccountAntivirusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountAntivirusOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsAccountAntivirusOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsAccountAntivirusOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewTeamsAccountAntivirusOutputReference_Override(t TeamsAccountAntivirusOut
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetEnabledDownloadPhase(val interface{}) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetEnabledDownloadPhase(val interface{}) {
+	if err := j.validateSetEnabledDownloadPhaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabledDownloadPhase",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetEnabledDownloadPhase
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetEnabledUploadPhase(val interface{}) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetEnabledUploadPhase(val interface{}) {
+	if err := j.validateSetEnabledUploadPhaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabledUploadPhase",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetEnabledUploadPhase(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetFailClosed(val interface{}) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetFailClosed(val interface{}) {
+	if err := j.validateSetFailClosedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"failClosed",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetFailClosed(val inter
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetInternalValue(val *TeamsAccountAntivirus) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetInternalValue(val *TeamsAccountAntivirus) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetInternalValue(val *T
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetAnyMapAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetBooleanAttribute(ter
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetBooleanMapAttribute(
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetListAttribute(terraf
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberListAttribute(
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetNumberMapAttribute(t
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetStringAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) InterpolationAsList() c
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) InterpolationForAttribu
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -362,6 +362,9 @@ func (j *jsiiProxy_ManagedHeaders) ZoneIdInput() *string {
 func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHeadersConfig) ManagedHeaders {
 	_init_.Initialize()
 
+	if err := validateNewManagedHeadersParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedHeaders{}
 
 	_jsii_.Create(
@@ -384,7 +387,10 @@ func NewManagedHeaders_Override(m ManagedHeaders, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetConnection(val interface{}) {
+func (j *jsiiProxy_ManagedHeaders)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -392,7 +398,7 @@ func (j *jsiiProxy_ManagedHeaders) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetCount(val *float64) {
+func (j *jsiiProxy_ManagedHeaders)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -400,7 +406,7 @@ func (j *jsiiProxy_ManagedHeaders) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ManagedHeaders)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -408,7 +414,7 @@ func (j *jsiiProxy_ManagedHeaders) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ManagedHeaders)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -416,7 +422,10 @@ func (j *jsiiProxy_ManagedHeaders) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetId(val *string) {
+func (j *jsiiProxy_ManagedHeaders)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -424,7 +433,10 @@ func (j *jsiiProxy_ManagedHeaders) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ManagedHeaders)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -432,7 +444,7 @@ func (j *jsiiProxy_ManagedHeaders) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ManagedHeaders)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -440,7 +452,10 @@ func (j *jsiiProxy_ManagedHeaders) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ManagedHeaders)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -448,7 +463,10 @@ func (j *jsiiProxy_ManagedHeaders) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders) SetZoneId(val *string) {
+func (j *jsiiProxy_ManagedHeaders)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -476,6 +494,9 @@ func (j *jsiiProxy_ManagedHeaders) SetZoneId(val *string) {
 func ManagedHeaders_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateManagedHeaders_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -500,6 +521,9 @@ func ManagedHeaders_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_ManagedHeaders) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -508,6 +532,9 @@ func (m *jsiiProxy_ManagedHeaders) AddOverride(path *string, value interface{}) 
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -521,6 +548,9 @@ func (m *jsiiProxy_ManagedHeaders) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -534,6 +564,9 @@ func (m *jsiiProxy_ManagedHeaders) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -547,6 +580,9 @@ func (m *jsiiProxy_ManagedHeaders) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -560,6 +596,9 @@ func (m *jsiiProxy_ManagedHeaders) GetListAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -573,6 +612,9 @@ func (m *jsiiProxy_ManagedHeaders) GetNumberAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -586,6 +628,9 @@ func (m *jsiiProxy_ManagedHeaders) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -599,6 +644,9 @@ func (m *jsiiProxy_ManagedHeaders) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -612,6 +660,9 @@ func (m *jsiiProxy_ManagedHeaders) GetStringAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_ManagedHeaders) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -625,6 +676,9 @@ func (m *jsiiProxy_ManagedHeaders) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_ManagedHeaders) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -638,6 +692,9 @@ func (m *jsiiProxy_ManagedHeaders) InterpolationForAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_ManagedHeaders) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -646,6 +703,9 @@ func (m *jsiiProxy_ManagedHeaders) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_ManagedHeaders) PutManagedRequestHeaders(value interface{}) {
+	if err := m.validatePutManagedRequestHeadersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedRequestHeaders",
@@ -654,6 +714,9 @@ func (m *jsiiProxy_ManagedHeaders) PutManagedRequestHeaders(value interface{}) {
 }
 
 func (m *jsiiProxy_ManagedHeaders) PutManagedResponseHeaders(value interface{}) {
+	if err := m.validatePutManagedResponseHeadersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedResponseHeaders",

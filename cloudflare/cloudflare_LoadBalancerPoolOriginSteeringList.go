@@ -111,6 +111,9 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) WrapsSet() *bool {
 func NewLoadBalancerPoolOriginSteeringList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerPoolOriginSteeringList {
 	_init_.Initialize()
 
+	if err := validateNewLoadBalancerPoolOriginSteeringListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LoadBalancerPoolOriginSteeringList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewLoadBalancerPoolOriginSteeringList_Override(l LoadBalancerPoolOriginStee
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPoolOriginSteeringList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_LoadBalancerPoolOriginSteeringList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_LoadBalancerPoolOriginSteeringList) Get(index *float64) LoadBalancerPoolOriginSteeringOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns LoadBalancerPoolOriginSteeringOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_LoadBalancerPoolOriginSteeringList) Get(index *float64) LoadB
 }
 
 func (l *jsiiProxy_LoadBalancerPoolOriginSteeringList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

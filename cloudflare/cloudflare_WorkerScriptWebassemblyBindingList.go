@@ -111,6 +111,9 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) WrapsSet() *bool {
 func NewWorkerScriptWebassemblyBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptWebassemblyBindingList {
 	_init_.Initialize()
 
+	if err := validateNewWorkerScriptWebassemblyBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerScriptWebassemblyBindingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewWorkerScriptWebassemblyBindingList_Override(w WorkerScriptWebassemblyBin
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkerScriptWebassemblyBindingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkerScriptWebassemblyBindingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptWebassemblyBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptWebassemblyBindingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkerScriptWebassemblyBindingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) ComputeFqn() *string {
 }
 
 func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) Get(index *float64) WorkerScriptWebassemblyBindingOutputReference {
+	if err := w.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns WorkerScriptWebassemblyBindingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) Get(index *float64) Worke
 }
 
 func (w *jsiiProxy_WorkerScriptWebassemblyBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

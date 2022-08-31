@@ -223,6 +223,9 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) TerraformResource() cdk
 func NewFallbackDomainDomainsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FallbackDomainDomainsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewFallbackDomainDomainsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FallbackDomainDomainsOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewFallbackDomainDomainsOutputReference_Override(f FallbackDomainDomainsOut
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetDnsServer(val *[]*string) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetDnsServer(val *[]*string) {
+	if err := j.validateSetDnsServerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dnsServer",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetDnsServer(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetSuffix(val *string) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetSuffix(val *string) {
+	if err := j.validateSetSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suffix",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetSuffix(val *string) 
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) ComputeFqn() *string {
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetAnyMapAttribute(terr
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetBooleanAttribute(ter
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := f.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetBooleanMapAttribute(
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := f.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetListAttribute(terraf
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := f.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberAttribute(terr
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := f.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberListAttribute(
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := f.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetNumberMapAttribute(t
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := f.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetStringAttribute(terr
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := f.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) InterpolationAsList() c
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) ResetSuffix() {
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

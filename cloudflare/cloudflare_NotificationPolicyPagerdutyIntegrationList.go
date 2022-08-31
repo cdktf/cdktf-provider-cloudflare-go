@@ -111,6 +111,9 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) WrapsSet() *bool 
 func NewNotificationPolicyPagerdutyIntegrationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyPagerdutyIntegrationList {
 	_init_.Initialize()
 
+	if err := validateNewNotificationPolicyPagerdutyIntegrationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationPolicyPagerdutyIntegrationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNotificationPolicyPagerdutyIntegrationList_Override(n NotificationPolicy
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) ComputeFqn() *str
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Get(index *float64) NotificationPolicyPagerdutyIntegrationOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NotificationPolicyPagerdutyIntegrationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Get(index *float6
 }
 
 func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

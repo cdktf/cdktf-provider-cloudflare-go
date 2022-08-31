@@ -463,6 +463,9 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionInput() *string
 func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDevicePostureRuleInputOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DevicePostureRuleInputOutputReference{}
 
 	_jsii_.Create(
@@ -484,7 +487,10 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -492,7 +498,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -500,7 +509,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplianceStatus(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplianceStatus(val *string) {
+	if err := j.validateSetComplianceStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complianceStatus",
@@ -508,7 +520,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplianceStatus(va
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetConnectionId(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetConnectionId(val *string) {
+	if err := j.validateSetConnectionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionId",
@@ -516,7 +531,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetConnectionId(val *s
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetDomain(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domain",
@@ -524,7 +542,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetDomain(val *string)
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetEnabled(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -532,7 +553,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetEnabled(val interfa
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetExists(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetExists(val interface{}) {
+	if err := j.validateSetExistsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"exists",
@@ -540,7 +564,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetExists(val interfac
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetId(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -548,7 +575,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -556,7 +586,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOperator(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string) {
+	if err := j.validateSetOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operator",
@@ -564,7 +597,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOperator(val *strin
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -572,7 +608,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRequireAll(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRequireAll(val interface{}) {
+	if err := j.validateSetRequireAllParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requireAll",
@@ -580,7 +619,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRequireAll(val inte
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRunning(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interface{}) {
+	if err := j.validateSetRunningParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"running",
@@ -588,7 +630,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRunning(val interfa
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetSha256(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSha256(val *string) {
+	if err := j.validateSetSha256Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sha256",
@@ -596,7 +641,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetSha256(val *string)
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -604,7 +652,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -612,7 +663,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetThumbprint(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetThumbprint(val *string) {
+	if err := j.validateSetThumbprintParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"thumbprint",
@@ -620,7 +674,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetThumbprint(val *str
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -642,6 +699,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -655,6 +715,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetAnyMapAttribute(ter
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -668,6 +731,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanAttribute(te
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -681,6 +747,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanMapAttribute
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -694,6 +763,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetListAttribute(terra
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -707,6 +779,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberAttribute(ter
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -720,6 +795,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberListAttribute
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -733,6 +811,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberMapAttribute(
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -746,6 +827,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringAttribute(ter
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -772,6 +856,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationAsList() 
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -889,6 +976,9 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetVersion() {
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

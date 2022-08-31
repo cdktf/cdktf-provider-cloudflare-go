@@ -337,6 +337,9 @@ func (j *jsiiProxy_DevicePolicyCertificates) ZoneIdInput() *string {
 func NewDevicePolicyCertificates(scope constructs.Construct, id *string, config *DevicePolicyCertificatesConfig) DevicePolicyCertificates {
 	_init_.Initialize()
 
+	if err := validateNewDevicePolicyCertificatesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DevicePolicyCertificates{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewDevicePolicyCertificates_Override(d DevicePolicyCertificates, scope cons
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetConnection(val interface{}) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -367,7 +373,7 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetCount(val *float64) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -375,7 +381,7 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -383,7 +389,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetEnabled(val interface{}) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -391,7 +400,7 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetId(val *string) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -415,7 +430,7 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_DevicePolicyCertificates) SetZoneId(val *string) {
+func (j *jsiiProxy_DevicePolicyCertificates)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_DevicePolicyCertificates) SetZoneId(val *string) {
 func DevicePolicyCertificates_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDevicePolicyCertificates_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func DevicePolicyCertificates_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -491,6 +518,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (d *jsiiProxy_DevicePolicyCertificates) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DevicePolicyCertificates) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

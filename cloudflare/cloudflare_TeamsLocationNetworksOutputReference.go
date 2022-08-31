@@ -185,6 +185,9 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) TerraformResource() cdk
 func NewTeamsLocationNetworksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TeamsLocationNetworksOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsLocationNetworksOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsLocationNetworksOutputReference{}
 
 	_jsii_.Create(
@@ -206,7 +209,10 @@ func NewTeamsLocationNetworksOutputReference_Override(t TeamsLocationNetworksOut
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -214,7 +220,10 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -222,7 +231,10 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -230,7 +242,10 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetNetwork(val *string) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetNetwork(val *string) {
+	if err := j.validateSetNetworkParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"network",
@@ -238,7 +253,10 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetNetwork(val *string)
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -246,7 +264,10 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsLocationNetworksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,6 +289,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -281,6 +305,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetAnyMapAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -294,6 +321,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetBooleanAttribute(ter
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -307,6 +337,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetBooleanMapAttribute(
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -320,6 +353,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetListAttribute(terraf
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -333,6 +369,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -346,6 +385,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberListAttribute(
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +401,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetNumberMapAttribute(t
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -372,6 +417,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetStringAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -398,6 +446,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) InterpolationAsList() c
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -411,6 +462,9 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) InterpolationForAttribu
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

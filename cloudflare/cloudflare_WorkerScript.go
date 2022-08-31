@@ -481,6 +481,9 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
+	if err := validateNewWorkerScriptParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerScript{}
 
 	_jsii_.Create(
@@ -503,7 +506,10 @@ func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkerScript)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -511,7 +517,10 @@ func (j *jsiiProxy_WorkerScript) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetContent(val *string) {
+func (j *jsiiProxy_WorkerScript)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -519,7 +528,7 @@ func (j *jsiiProxy_WorkerScript) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetCount(val *float64) {
+func (j *jsiiProxy_WorkerScript)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -527,7 +536,7 @@ func (j *jsiiProxy_WorkerScript) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkerScript)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -535,7 +544,7 @@ func (j *jsiiProxy_WorkerScript) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkerScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -543,7 +552,10 @@ func (j *jsiiProxy_WorkerScript) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetId(val *string) {
+func (j *jsiiProxy_WorkerScript)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -551,7 +563,10 @@ func (j *jsiiProxy_WorkerScript) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkerScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -559,7 +574,10 @@ func (j *jsiiProxy_WorkerScript) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetName(val *string) {
+func (j *jsiiProxy_WorkerScript)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -567,7 +585,7 @@ func (j *jsiiProxy_WorkerScript) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkerScript)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +593,10 @@ func (j *jsiiProxy_WorkerScript) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkerScript)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -603,6 +624,9 @@ func (j *jsiiProxy_WorkerScript) SetProvisioners(val *[]interface{}) {
 func WorkerScript_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWorkerScript_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -627,6 +651,9 @@ func WorkerScript_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WorkerScript) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -635,6 +662,9 @@ func (w *jsiiProxy_WorkerScript) AddOverride(path *string, value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -648,6 +678,9 @@ func (w *jsiiProxy_WorkerScript) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WorkerScript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -661,6 +694,9 @@ func (w *jsiiProxy_WorkerScript) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (w *jsiiProxy_WorkerScript) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -674,6 +710,9 @@ func (w *jsiiProxy_WorkerScript) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (w *jsiiProxy_WorkerScript) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -687,6 +726,9 @@ func (w *jsiiProxy_WorkerScript) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (w *jsiiProxy_WorkerScript) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -700,6 +742,9 @@ func (w *jsiiProxy_WorkerScript) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WorkerScript) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -713,6 +758,9 @@ func (w *jsiiProxy_WorkerScript) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (w *jsiiProxy_WorkerScript) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -726,6 +774,9 @@ func (w *jsiiProxy_WorkerScript) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WorkerScript) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -739,6 +790,9 @@ func (w *jsiiProxy_WorkerScript) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WorkerScript) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -752,6 +806,9 @@ func (w *jsiiProxy_WorkerScript) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WorkerScript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -765,6 +822,9 @@ func (w *jsiiProxy_WorkerScript) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (w *jsiiProxy_WorkerScript) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
@@ -773,6 +833,9 @@ func (w *jsiiProxy_WorkerScript) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
+	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putKvNamespaceBinding",
@@ -781,6 +844,9 @@ func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
+	if err := w.validatePutPlainTextBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putPlainTextBinding",
@@ -789,6 +855,9 @@ func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value interface{}) {
+	if err := w.validatePutR2BucketBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putR2BucketBinding",
@@ -797,6 +866,9 @@ func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutSecretTextBinding(value interface{}) {
+	if err := w.validatePutSecretTextBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putSecretTextBinding",
@@ -805,6 +877,9 @@ func (w *jsiiProxy_WorkerScript) PutSecretTextBinding(value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutServiceBinding(value interface{}) {
+	if err := w.validatePutServiceBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putServiceBinding",
@@ -813,6 +888,9 @@ func (w *jsiiProxy_WorkerScript) PutServiceBinding(value interface{}) {
 }
 
 func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value interface{}) {
+	if err := w.validatePutWebassemblyBindingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putWebassemblyBinding",

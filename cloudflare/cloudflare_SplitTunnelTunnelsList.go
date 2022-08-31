@@ -111,6 +111,9 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) WrapsSet() *bool {
 func NewSplitTunnelTunnelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SplitTunnelTunnelsList {
 	_init_.Initialize()
 
+	if err := validateNewSplitTunnelTunnelsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SplitTunnelTunnelsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSplitTunnelTunnelsList_Override(s SplitTunnelTunnelsList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SplitTunnelTunnelsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SplitTunnelTunnelsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SplitTunnelTunnelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SplitTunnelTunnelsList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SplitTunnelTunnelsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SplitTunnelTunnelsList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SplitTunnelTunnelsList) Get(index *float64) SplitTunnelTunnelsOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SplitTunnelTunnelsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SplitTunnelTunnelsList) Get(index *float64) SplitTunnelTunnel
 }
 
 func (s *jsiiProxy_SplitTunnelTunnelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

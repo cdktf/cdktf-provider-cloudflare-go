@@ -271,6 +271,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference_Override(r 
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKey) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKey) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -346,6 +364,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -359,6 +380,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -372,6 +396,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -385,6 +412,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -398,6 +428,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -411,6 +444,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -424,6 +460,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -437,6 +476,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -450,6 +492,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutCookie(value *RulesetRulesActionParametersCacheKeyCustomKeyCookie) {
+	if err := r.validatePutCookieParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putCookie",
@@ -497,6 +548,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHeader(value *RulesetRulesActionParametersCacheKeyCustomKeyHeader) {
+	if err := r.validatePutHeaderParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putHeader",
@@ -505,6 +559,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHost(value *RulesetRulesActionParametersCacheKeyCustomKeyHost) {
+	if err := r.validatePutHostParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putHost",
@@ -513,6 +570,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutQueryString(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryString) {
+	if err := r.validatePutQueryStringParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putQueryString",
@@ -521,6 +581,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutUser(value *RulesetRulesActionParametersCacheKeyCustomKeyUser) {
+	if err := r.validatePutUserParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putUser",
@@ -569,6 +632,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

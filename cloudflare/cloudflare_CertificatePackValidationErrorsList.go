@@ -111,6 +111,9 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) WrapsSet() *bool {
 func NewCertificatePackValidationErrorsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificatePackValidationErrorsList {
 	_init_.Initialize()
 
+	if err := validateNewCertificatePackValidationErrorsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CertificatePackValidationErrorsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewCertificatePackValidationErrorsList_Override(c CertificatePackValidation
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CertificatePackValidationErrorsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CertificatePackValidationErrorsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertificatePackValidationErrorsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CertificatePackValidationErrorsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsList) ComputeFqn() *string {
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsList) Get(index *float64) CertificatePackValidationErrorsOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns CertificatePackValidationErrorsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (c *jsiiProxy_CertificatePackValidationErrorsList) Get(index *float64) Cert
 }
 
 func (c *jsiiProxy_CertificatePackValidationErrorsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

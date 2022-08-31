@@ -111,6 +111,9 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) WrapsSet() *bool {
 func NewNotificationPolicyWebhooksIntegrationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyWebhooksIntegrationList {
 	_init_.Initialize()
 
+	if err := validateNewNotificationPolicyWebhooksIntegrationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationPolicyWebhooksIntegrationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNotificationPolicyWebhooksIntegrationList_Override(n NotificationPolicyW
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationList) ComputeFqn() *stri
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationList) Get(index *float64) NotificationPolicyWebhooksIntegrationOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NotificationPolicyWebhooksIntegrationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationList) Get(index *float64
 }
 
 func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

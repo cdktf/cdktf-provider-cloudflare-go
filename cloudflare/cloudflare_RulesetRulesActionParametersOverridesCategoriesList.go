@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) WrapsSet
 func NewRulesetRulesActionParametersOverridesCategoriesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersOverridesCategoriesList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRulesActionParametersOverridesCategoriesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRulesActionParametersOverridesCategoriesList_Override(r RulesetRu
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetInter
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetTerra
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) ComputeF
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) Get(index *float64) RulesetRulesActionParametersOverridesCategoriesOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRulesActionParametersOverridesCategoriesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) Get(inde
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

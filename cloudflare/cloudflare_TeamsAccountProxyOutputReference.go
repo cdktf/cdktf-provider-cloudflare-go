@@ -197,6 +197,9 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) UdpInput() interface{} {
 func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamsAccountProxyOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewTeamsAccountProxyOutputReference_Override(t TeamsAccountProxyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetInternalValue(val *TeamsAccountProxy) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetInternalValue(val *TeamsAccountProxy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetInternalValue(val *Teams
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTcp(val interface{}) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTcp(val interface{}) {
+	if err := j.validateSetTcpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tcp",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTcp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) SetUdp(val interface{}) {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetUdp(val interface{}) {
+	if err := j.validateSetUdpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"udp",
@@ -288,6 +312,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetAnyMapAttribute(terrafor
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanAttribute(terrafo
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetBooleanMapAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetListAttribute(terraformA
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberAttribute(terrafor
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberListAttribute(terr
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetNumberMapAttribute(terra
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetStringAttribute(terrafor
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationAsList() cdktf
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) InterpolationForAttribute(p
 }
 
 func (t *jsiiProxy_TeamsAccountProxyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

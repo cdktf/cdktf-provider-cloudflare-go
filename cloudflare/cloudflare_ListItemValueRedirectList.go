@@ -111,6 +111,9 @@ func (j *jsiiProxy_ListItemValueRedirectList) WrapsSet() *bool {
 func NewListItemValueRedirectList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListItemValueRedirectList {
 	_init_.Initialize()
 
+	if err := validateNewListItemValueRedirectListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ListItemValueRedirectList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewListItemValueRedirectList_Override(l ListItemValueRedirectList, terrafor
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ListItemValueRedirectList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ListItemValueRedirectList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ListItemValueRedirectList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ListItemValueRedirectList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ListItemValueRedirectList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ListItemValueRedirectList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (l *jsiiProxy_ListItemValueRedirectList) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_ListItemValueRedirectList) Get(index *float64) ListItemValueRedirectOutputReference {
+	if err := l.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ListItemValueRedirectOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (l *jsiiProxy_ListItemValueRedirectList) Get(index *float64) ListItemValueR
 }
 
 func (l *jsiiProxy_ListItemValueRedirectList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -670,6 +670,9 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
+	if err := validateNewWaitingRoomParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WaitingRoom{}
 
 	_jsii_.Create(
@@ -692,7 +695,10 @@ func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetConnection(val interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -700,7 +706,7 @@ func (j *jsiiProxy_WaitingRoom) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetCount(val *float64) {
+func (j *jsiiProxy_WaitingRoom)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -708,7 +714,10 @@ func (j *jsiiProxy_WaitingRoom) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetCustomPageHtml(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetCustomPageHtml(val *string) {
+	if err := j.validateSetCustomPageHtmlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customPageHtml",
@@ -716,7 +725,10 @@ func (j *jsiiProxy_WaitingRoom) SetCustomPageHtml(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetDefaultTemplateLanguage(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetDefaultTemplateLanguage(val *string) {
+	if err := j.validateSetDefaultTemplateLanguageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultTemplateLanguage",
@@ -724,7 +736,7 @@ func (j *jsiiProxy_WaitingRoom) SetDefaultTemplateLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WaitingRoom)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -732,7 +744,10 @@ func (j *jsiiProxy_WaitingRoom) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetDescription(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -740,7 +755,10 @@ func (j *jsiiProxy_WaitingRoom) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetDisableSessionRenewal(val interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetDisableSessionRenewal(val interface{}) {
+	if err := j.validateSetDisableSessionRenewalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableSessionRenewal",
@@ -748,7 +766,7 @@ func (j *jsiiProxy_WaitingRoom) SetDisableSessionRenewal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WaitingRoom)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -756,7 +774,10 @@ func (j *jsiiProxy_WaitingRoom) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetHost(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"host",
@@ -764,7 +785,10 @@ func (j *jsiiProxy_WaitingRoom) SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetId(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -772,7 +796,10 @@ func (j *jsiiProxy_WaitingRoom) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetJsonResponseEnabled(val interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetJsonResponseEnabled(val interface{}) {
+	if err := j.validateSetJsonResponseEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jsonResponseEnabled",
@@ -780,7 +807,10 @@ func (j *jsiiProxy_WaitingRoom) SetJsonResponseEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WaitingRoom)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -788,7 +818,10 @@ func (j *jsiiProxy_WaitingRoom) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetName(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -796,7 +829,10 @@ func (j *jsiiProxy_WaitingRoom) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetNewUsersPerMinute(val *float64) {
+func (j *jsiiProxy_WaitingRoom)SetNewUsersPerMinute(val *float64) {
+	if err := j.validateSetNewUsersPerMinuteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"newUsersPerMinute",
@@ -804,7 +840,10 @@ func (j *jsiiProxy_WaitingRoom) SetNewUsersPerMinute(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetPath(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -812,7 +851,7 @@ func (j *jsiiProxy_WaitingRoom) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WaitingRoom)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -820,7 +859,10 @@ func (j *jsiiProxy_WaitingRoom) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -828,7 +870,10 @@ func (j *jsiiProxy_WaitingRoom) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetQueueAll(val interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetQueueAll(val interface{}) {
+	if err := j.validateSetQueueAllParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"queueAll",
@@ -836,7 +881,10 @@ func (j *jsiiProxy_WaitingRoom) SetQueueAll(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetQueueingMethod(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetQueueingMethod(val *string) {
+	if err := j.validateSetQueueingMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"queueingMethod",
@@ -844,7 +892,10 @@ func (j *jsiiProxy_WaitingRoom) SetQueueingMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetSessionDuration(val *float64) {
+func (j *jsiiProxy_WaitingRoom)SetSessionDuration(val *float64) {
+	if err := j.validateSetSessionDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sessionDuration",
@@ -852,7 +903,10 @@ func (j *jsiiProxy_WaitingRoom) SetSessionDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetSuspended(val interface{}) {
+func (j *jsiiProxy_WaitingRoom)SetSuspended(val interface{}) {
+	if err := j.validateSetSuspendedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"suspended",
@@ -860,7 +914,10 @@ func (j *jsiiProxy_WaitingRoom) SetSuspended(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetTotalActiveUsers(val *float64) {
+func (j *jsiiProxy_WaitingRoom)SetTotalActiveUsers(val *float64) {
+	if err := j.validateSetTotalActiveUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"totalActiveUsers",
@@ -868,7 +925,10 @@ func (j *jsiiProxy_WaitingRoom) SetTotalActiveUsers(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom) SetZoneId(val *string) {
+func (j *jsiiProxy_WaitingRoom)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -896,6 +956,9 @@ func (j *jsiiProxy_WaitingRoom) SetZoneId(val *string) {
 func WaitingRoom_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateWaitingRoom_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -920,6 +983,9 @@ func WaitingRoom_TfResourceType() *string {
 }
 
 func (w *jsiiProxy_WaitingRoom) AddOverride(path *string, value interface{}) {
+	if err := w.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
@@ -928,6 +994,9 @@ func (w *jsiiProxy_WaitingRoom) AddOverride(path *string, value interface{}) {
 }
 
 func (w *jsiiProxy_WaitingRoom) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -941,6 +1010,9 @@ func (w *jsiiProxy_WaitingRoom) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WaitingRoom) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -954,6 +1026,9 @@ func (w *jsiiProxy_WaitingRoom) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (w *jsiiProxy_WaitingRoom) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -967,6 +1042,9 @@ func (w *jsiiProxy_WaitingRoom) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WaitingRoom) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -980,6 +1058,9 @@ func (w *jsiiProxy_WaitingRoom) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (w *jsiiProxy_WaitingRoom) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -993,6 +1074,9 @@ func (w *jsiiProxy_WaitingRoom) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WaitingRoom) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1006,6 +1090,9 @@ func (w *jsiiProxy_WaitingRoom) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (w *jsiiProxy_WaitingRoom) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1019,6 +1106,9 @@ func (w *jsiiProxy_WaitingRoom) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WaitingRoom) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1032,6 +1122,9 @@ func (w *jsiiProxy_WaitingRoom) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (w *jsiiProxy_WaitingRoom) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1045,6 +1138,9 @@ func (w *jsiiProxy_WaitingRoom) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (w *jsiiProxy_WaitingRoom) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1058,6 +1154,9 @@ func (w *jsiiProxy_WaitingRoom) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (w *jsiiProxy_WaitingRoom) OverrideLogicalId(newLogicalId *string) {
+	if err := w.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
@@ -1066,6 +1165,9 @@ func (w *jsiiProxy_WaitingRoom) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (w *jsiiProxy_WaitingRoom) PutTimeouts(value *WaitingRoomTimeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",

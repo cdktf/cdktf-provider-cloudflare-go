@@ -450,6 +450,9 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
+	if err := validateNewCustomSslParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomSsl{}
 
 	_jsii_.Create(
@@ -472,7 +475,10 @@ func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomSsl)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -480,7 +486,7 @@ func (j *jsiiProxy_CustomSsl) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetCount(val *float64) {
+func (j *jsiiProxy_CustomSsl)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -488,7 +494,7 @@ func (j *jsiiProxy_CustomSsl) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomSsl)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +502,7 @@ func (j *jsiiProxy_CustomSsl) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomSsl)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -504,7 +510,10 @@ func (j *jsiiProxy_CustomSsl) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetId(val *string) {
+func (j *jsiiProxy_CustomSsl)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -512,7 +521,10 @@ func (j *jsiiProxy_CustomSsl) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomSsl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -520,7 +532,7 @@ func (j *jsiiProxy_CustomSsl) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomSsl)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -528,7 +540,10 @@ func (j *jsiiProxy_CustomSsl) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomSsl)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -536,7 +551,10 @@ func (j *jsiiProxy_CustomSsl) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl) SetZoneId(val *string) {
+func (j *jsiiProxy_CustomSsl)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -564,6 +582,9 @@ func (j *jsiiProxy_CustomSsl) SetZoneId(val *string) {
 func CustomSsl_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustomSsl_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -588,6 +609,9 @@ func CustomSsl_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CustomSsl) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -596,6 +620,9 @@ func (c *jsiiProxy_CustomSsl) AddOverride(path *string, value interface{}) {
 }
 
 func (c *jsiiProxy_CustomSsl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -609,6 +636,9 @@ func (c *jsiiProxy_CustomSsl) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (c *jsiiProxy_CustomSsl) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +652,9 @@ func (c *jsiiProxy_CustomSsl) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (c *jsiiProxy_CustomSsl) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -635,6 +668,9 @@ func (c *jsiiProxy_CustomSsl) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CustomSsl) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -648,6 +684,9 @@ func (c *jsiiProxy_CustomSsl) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (c *jsiiProxy_CustomSsl) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -661,6 +700,9 @@ func (c *jsiiProxy_CustomSsl) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (c *jsiiProxy_CustomSsl) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -674,6 +716,9 @@ func (c *jsiiProxy_CustomSsl) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CustomSsl) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -687,6 +732,9 @@ func (c *jsiiProxy_CustomSsl) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CustomSsl) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -700,6 +748,9 @@ func (c *jsiiProxy_CustomSsl) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (c *jsiiProxy_CustomSsl) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -713,6 +764,9 @@ func (c *jsiiProxy_CustomSsl) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (c *jsiiProxy_CustomSsl) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -726,6 +780,9 @@ func (c *jsiiProxy_CustomSsl) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CustomSsl) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -734,6 +791,9 @@ func (c *jsiiProxy_CustomSsl) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CustomSsl) PutCustomSslOptions(value *CustomSslCustomSslOptions) {
+	if err := c.validatePutCustomSslOptionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomSslOptions",
@@ -742,6 +802,9 @@ func (c *jsiiProxy_CustomSsl) PutCustomSslOptions(value *CustomSslCustomSslOptio
 }
 
 func (c *jsiiProxy_CustomSsl) PutCustomSslPriority(value interface{}) {
+	if err := c.validatePutCustomSslPriorityParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomSslPriority",

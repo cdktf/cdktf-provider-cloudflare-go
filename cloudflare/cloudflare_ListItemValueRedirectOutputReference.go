@@ -317,6 +317,9 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) TerraformResource() cdk
 func NewListItemValueRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ListItemValueRedirectOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewListItemValueRedirectOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ListItemValueRedirectOutputReference{}
 
 	_jsii_.Create(
@@ -338,7 +341,10 @@ func NewListItemValueRedirectOutputReference_Override(l ListItemValueRedirectOut
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -346,7 +352,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -354,7 +363,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetIncludeSubdomains(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetIncludeSubdomains(val *string) {
+	if err := j.validateSetIncludeSubdomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeSubdomains",
@@ -362,7 +374,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetIncludeSubdomains(va
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -370,7 +385,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetPreservePathSuffix(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetPreservePathSuffix(val *string) {
+	if err := j.validateSetPreservePathSuffixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preservePathSuffix",
@@ -378,7 +396,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetPreservePathSuffix(v
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetPreserveQueryString(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetPreserveQueryString(val *string) {
+	if err := j.validateSetPreserveQueryStringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preserveQueryString",
@@ -386,7 +407,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetPreserveQueryString(
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetSourceUrl(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetSourceUrl(val *string) {
+	if err := j.validateSetSourceUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceUrl",
@@ -394,7 +418,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetSourceUrl(val *strin
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetStatusCode(val *float64) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetStatusCode(val *float64) {
+	if err := j.validateSetStatusCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statusCode",
@@ -402,7 +429,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetStatusCode(val *floa
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetSubpathMatching(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetSubpathMatching(val *string) {
+	if err := j.validateSetSubpathMatchingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subpathMatching",
@@ -410,7 +440,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetSubpathMatching(val 
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetTargetUrl(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetTargetUrl(val *string) {
+	if err := j.validateSetTargetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetUrl",
@@ -418,7 +451,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetTargetUrl(val *strin
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -426,7 +462,10 @@ func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ListItemValueRedirectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ListItemValueRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -448,6 +487,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) ComputeFqn() *string {
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -461,6 +503,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetAnyMapAttribute(terr
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -474,6 +519,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetBooleanAttribute(ter
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -487,6 +535,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetBooleanMapAttribute(
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -500,6 +551,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetListAttribute(terraf
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -513,6 +567,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberAttribute(terr
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -526,6 +583,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberListAttribute(
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -539,6 +599,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetNumberMapAttribute(t
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -552,6 +615,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetStringAttribute(terr
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -578,6 +644,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) InterpolationAsList() c
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -631,6 +700,9 @@ func (l *jsiiProxy_ListItemValueRedirectOutputReference) ResetSubpathMatching() 
 }
 
 func (l *jsiiProxy_ListItemValueRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

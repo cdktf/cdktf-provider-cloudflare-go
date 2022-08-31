@@ -247,6 +247,9 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) TerraformReso
 func NewDataCloudflareWafPackagesFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCloudflareWafPackagesFilterOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataCloudflareWafPackagesFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataCloudflareWafPackagesFilterOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDataCloudflareWafPackagesFilterOutputReference_Override(d DataCloudflare
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetActionMode(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetActionMode(val *string) {
+	if err := j.validateSetActionModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"actionMode",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetActionMode
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetDetectionMode(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetDetectionMode(val *string) {
+	if err := j.validateSetDetectionModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"detectionMode",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetDetectionM
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetInternalValue(val *DataCloudflareWafPackagesFilter) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetInternalValue(val *DataCloudflareWafPackagesFilter) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetName(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetSensitivity(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetSensitivity(val *string) {
+	if err := j.validateSetSensitivityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sensitivity",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetSensitivit
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetAnyMapAttr
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetBooleanAtt
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetBooleanMap
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetListAttrib
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberAttr
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberList
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetNumberMapA
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetStringAttr
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) Interpolation
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) ResetSensitiv
 }
 
 func (d *jsiiProxy_DataCloudflareWafPackagesFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

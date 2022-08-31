@@ -199,6 +199,9 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) TerraformResource() c
 func NewAccessPolicyExcludeOktaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessPolicyExcludeOktaOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessPolicyExcludeOktaOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessPolicyExcludeOktaOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewAccessPolicyExcludeOktaOutputReference_Override(a AccessPolicyExcludeOkt
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"identityProviderId",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetIdentityProviderId
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetName(val *[]*string) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetName(val *[]*string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetName(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) ComputeFqn() *string 
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetAnyMapAttribute(te
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetBooleanAttribute(t
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetBooleanMapAttribut
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetListAttribute(terr
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberAttribute(te
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberListAttribut
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetNumberMapAttribute
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetStringAttribute(te
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) InterpolationAsList()
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) ResetName() {
 }
 
 func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

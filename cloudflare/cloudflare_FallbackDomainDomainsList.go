@@ -111,6 +111,9 @@ func (j *jsiiProxy_FallbackDomainDomainsList) WrapsSet() *bool {
 func NewFallbackDomainDomainsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FallbackDomainDomainsList {
 	_init_.Initialize()
 
+	if err := validateNewFallbackDomainDomainsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_FallbackDomainDomainsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewFallbackDomainDomainsList_Override(f FallbackDomainDomainsList, terrafor
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FallbackDomainDomainsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_FallbackDomainDomainsList) SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FallbackDomainDomainsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_FallbackDomainDomainsList) SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FallbackDomainDomainsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_FallbackDomainDomainsList) SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FallbackDomainDomainsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (f *jsiiProxy_FallbackDomainDomainsList) ComputeFqn() *string {
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsList) Get(index *float64) FallbackDomainDomainsOutputReference {
+	if err := f.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns FallbackDomainDomainsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (f *jsiiProxy_FallbackDomainDomainsList) Get(index *float64) FallbackDomain
 }
 
 func (f *jsiiProxy_FallbackDomainDomainsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

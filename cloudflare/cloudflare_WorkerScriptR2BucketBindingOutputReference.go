@@ -197,6 +197,9 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) TerraformResource
 func NewWorkerScriptR2BucketBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkerScriptR2BucketBindingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewWorkerScriptR2BucketBindingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerScriptR2BucketBindingOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewWorkerScriptR2BucketBindingOutputReference_Override(w WorkerScriptR2Buck
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetBucketName(val *string) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketName",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetBucketName(val
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetName(val *string) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetName(val *stri
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) ComputeFqn() *str
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetAnyMapAttribut
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetBooleanAttribu
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetBooleanMapAttr
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetListAttribute(
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberAttribut
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberListAttr
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetNumberMapAttri
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetStringAttribut
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) InterpolationAsLi
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) InterpolationForA
 }
 
 func (w *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

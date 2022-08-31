@@ -111,6 +111,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) WrapsSet() *bool 
 func NewRulesetRulesActionParametersAutominifyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersAutominifyList {
 	_init_.Initialize()
 
+	if err := validateNewRulesetRulesActionParametersAutominifyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RulesetRulesActionParametersAutominifyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRulesetRulesActionParametersAutominifyList_Override(r RulesetRulesAction
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyList) ComputeFqn() *str
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersAutominifyList) Get(index *float64) RulesetRulesActionParametersAutominifyOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RulesetRulesActionParametersAutominifyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyList) Get(index *float6
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersAutominifyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

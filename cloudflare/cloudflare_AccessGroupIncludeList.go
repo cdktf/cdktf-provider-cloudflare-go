@@ -111,6 +111,9 @@ func (j *jsiiProxy_AccessGroupIncludeList) WrapsSet() *bool {
 func NewAccessGroupIncludeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupIncludeList {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupIncludeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupIncludeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAccessGroupIncludeList_Override(a AccessGroupIncludeList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupIncludeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AccessGroupIncludeList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupIncludeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AccessGroupIncludeList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupIncludeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AccessGroupIncludeList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_AccessGroupIncludeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupIncludeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AccessGroupIncludeList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AccessGroupIncludeList) Get(index *float64) AccessGroupIncludeOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AccessGroupIncludeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AccessGroupIncludeList) Get(index *float64) AccessGroupInclud
 }
 
 func (a *jsiiProxy_AccessGroupIncludeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

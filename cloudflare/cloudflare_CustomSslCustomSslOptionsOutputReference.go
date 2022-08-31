@@ -271,6 +271,9 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) TypeInput() *string
 func NewCustomSslCustomSslOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomSslCustomSslOptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCustomSslCustomSslOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustomSslCustomSslOptionsOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewCustomSslCustomSslOptionsOutputReference_Override(c CustomSslCustomSslOp
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetBundleMethod(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetBundleMethod(val *string) {
+	if err := j.validateSetBundleMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bundleMethod",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetBundleMethod(val
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetCertificate(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetCertificate(val 
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetGeoRestrictions(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetGeoRestrictions(val *string) {
+	if err := j.validateSetGeoRestrictionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"geoRestrictions",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetGeoRestrictions(
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetInternalValue(val *CustomSslCustomSslOptions) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetInternalValue(val *CustomSslCustomSslOptions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetPrivateKey(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetPrivateKey(val *
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -356,7 +383,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -364,7 +394,10 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) SetType(val *string) {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -386,6 +419,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) ComputeFqn() *strin
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -399,6 +435,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetAnyMapAttribute(
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -412,6 +451,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetBooleanAttribute
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -425,6 +467,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetBooleanMapAttrib
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -438,6 +483,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetListAttribute(te
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -451,6 +499,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberAttribute(
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -464,6 +515,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberListAttrib
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -477,6 +531,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetNumberMapAttribu
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -490,6 +547,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetStringAttribute(
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -516,6 +576,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) InterpolationAsList
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +632,9 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) ResetType() {
 }
 
 func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

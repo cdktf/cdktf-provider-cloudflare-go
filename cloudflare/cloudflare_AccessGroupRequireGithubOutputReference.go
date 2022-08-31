@@ -223,6 +223,9 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) TerraformResource() 
 func NewAccessGroupRequireGithubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupRequireGithubOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAccessGroupRequireGithubOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessGroupRequireGithubOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewAccessGroupRequireGithubOutputReference_Override(a AccessGroupRequireGit
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"identityProviderId",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetIdentityProviderI
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetName(val *string) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetName(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetTeams(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetTeams(val *[]*string) {
+	if err := j.validateSetTeamsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teams",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetTeams(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireGithubOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireGithubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,6 +349,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) ComputeFqn() *string
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetAnyMapAttribute(t
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetBooleanAttribute(
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetBooleanMapAttribu
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetListAttribute(ter
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberAttribute(t
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberListAttribu
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetNumberMapAttribut
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetStringAttribute(t
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) InterpolationAsList(
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) ResetTeams() {
 }
 
 func (a *jsiiProxy_AccessGroupRequireGithubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

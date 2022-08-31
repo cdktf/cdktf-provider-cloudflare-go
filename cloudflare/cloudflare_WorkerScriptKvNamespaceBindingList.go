@@ -111,6 +111,9 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) WrapsSet() *bool {
 func NewWorkerScriptKvNamespaceBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptKvNamespaceBindingList {
 	_init_.Initialize()
 
+	if err := validateNewWorkerScriptKvNamespaceBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkerScriptKvNamespaceBindingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewWorkerScriptKvNamespaceBindingList_Override(w WorkerScriptKvNamespaceBin
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkerScriptKvNamespaceBindingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) ComputeFqn() *string {
 }
 
 func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) Get(index *float64) WorkerScriptKvNamespaceBindingOutputReference {
+	if err := w.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns WorkerScriptKvNamespaceBindingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) Get(index *float64) Worke
 }
 
 func (w *jsiiProxy_WorkerScriptKvNamespaceBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

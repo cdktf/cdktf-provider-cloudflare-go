@@ -448,6 +448,9 @@ func (j *jsiiProxy_ZoneDnssec) ZoneIdInput() *string {
 func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecConfig) ZoneDnssec {
 	_init_.Initialize()
 
+	if err := validateNewZoneDnssecParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ZoneDnssec{}
 
 	_jsii_.Create(
@@ -470,7 +473,10 @@ func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetConnection(val interface{}) {
+func (j *jsiiProxy_ZoneDnssec)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -478,7 +484,7 @@ func (j *jsiiProxy_ZoneDnssec) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetCount(val *float64) {
+func (j *jsiiProxy_ZoneDnssec)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -486,7 +492,7 @@ func (j *jsiiProxy_ZoneDnssec) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ZoneDnssec)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +500,7 @@ func (j *jsiiProxy_ZoneDnssec) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ZoneDnssec)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +508,10 @@ func (j *jsiiProxy_ZoneDnssec) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetId(val *string) {
+func (j *jsiiProxy_ZoneDnssec)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -510,7 +519,10 @@ func (j *jsiiProxy_ZoneDnssec) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ZoneDnssec)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -518,7 +530,10 @@ func (j *jsiiProxy_ZoneDnssec) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetModifiedOn(val *string) {
+func (j *jsiiProxy_ZoneDnssec)SetModifiedOn(val *string) {
+	if err := j.validateSetModifiedOnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"modifiedOn",
@@ -526,7 +541,7 @@ func (j *jsiiProxy_ZoneDnssec) SetModifiedOn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ZoneDnssec)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -534,7 +549,10 @@ func (j *jsiiProxy_ZoneDnssec) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ZoneDnssec)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -542,7 +560,10 @@ func (j *jsiiProxy_ZoneDnssec) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec) SetZoneId(val *string) {
+func (j *jsiiProxy_ZoneDnssec)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zoneId",
@@ -570,6 +591,9 @@ func (j *jsiiProxy_ZoneDnssec) SetZoneId(val *string) {
 func ZoneDnssec_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateZoneDnssec_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -594,6 +618,9 @@ func ZoneDnssec_TfResourceType() *string {
 }
 
 func (z *jsiiProxy_ZoneDnssec) AddOverride(path *string, value interface{}) {
+	if err := z.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"addOverride",
@@ -602,6 +629,9 @@ func (z *jsiiProxy_ZoneDnssec) AddOverride(path *string, value interface{}) {
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -615,6 +645,9 @@ func (z *jsiiProxy_ZoneDnssec) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -628,6 +661,9 @@ func (z *jsiiProxy_ZoneDnssec) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := z.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -641,6 +677,9 @@ func (z *jsiiProxy_ZoneDnssec) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := z.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -654,6 +693,9 @@ func (z *jsiiProxy_ZoneDnssec) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := z.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -667,6 +709,9 @@ func (z *jsiiProxy_ZoneDnssec) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := z.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +725,9 @@ func (z *jsiiProxy_ZoneDnssec) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := z.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -693,6 +741,9 @@ func (z *jsiiProxy_ZoneDnssec) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetStringAttribute(terraformAttribute *string) *string {
+	if err := z.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -706,6 +757,9 @@ func (z *jsiiProxy_ZoneDnssec) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (z *jsiiProxy_ZoneDnssec) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := z.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -719,6 +773,9 @@ func (z *jsiiProxy_ZoneDnssec) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (z *jsiiProxy_ZoneDnssec) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := z.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -732,6 +789,9 @@ func (z *jsiiProxy_ZoneDnssec) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (z *jsiiProxy_ZoneDnssec) OverrideLogicalId(newLogicalId *string) {
+	if err := z.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
 		"overrideLogicalId",
