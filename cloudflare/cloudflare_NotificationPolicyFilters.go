@@ -15,7 +15,7 @@ type NotificationPolicyFilters struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#event_type NotificationPolicy#event_type}
 	EventType *[]*string `field:"optional" json:"eventType" yaml:"eventType"`
-	// Identifier health check.
+	// Identifier health check. Required when using `filters.0.status`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/notification_policy#health_check_id NotificationPolicy#health_check_id}
 	HealthCheckId *[]*string `field:"optional" json:"healthCheckId" yaml:"healthCheckId"`

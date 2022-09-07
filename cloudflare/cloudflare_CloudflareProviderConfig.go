@@ -27,7 +27,7 @@ type CloudflareProviderConfig struct {
 	ApiHostname *string `field:"optional" json:"apiHostname" yaml:"apiHostname"`
 	// The API key for operations.
 	//
-	// Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead.
+	// Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_key CloudflareProvider#api_key}
 	ApiKey *string `field:"optional" json:"apiKey" yaml:"apiKey"`
@@ -41,7 +41,9 @@ type CloudflareProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_user_service_key CloudflareProvider#api_user_service_key}
 	ApiUserServiceKey *string `field:"optional" json:"apiUserServiceKey" yaml:"apiUserServiceKey"`
-	// A registered Cloudflare email address. Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Conflicts with `api_token`.
+	// A registered Cloudflare email address.
+	//
+	// Alternatively, can be configured using the `CLOUDFLARE_EMAIL` environment variable. Required when using `api_key`. Conflicts with `api_token`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#email CloudflareProvider#email}
 	Email *string `field:"optional" json:"email" yaml:"email"`

@@ -33,7 +33,7 @@ type AccessServiceTokenConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Regenerates the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
+	// Refresh the token if terraform is run within the specified amount of days before expiration. Defaults to `0`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token#min_days_for_renewal AccessServiceToken#min_days_for_renewal}
 	MinDaysForRenewal *float64 `field:"optional" json:"minDaysForRenewal" yaml:"minDaysForRenewal"`

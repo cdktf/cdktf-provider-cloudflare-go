@@ -32,7 +32,7 @@ type LogpushJobConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#destination_conf LogpushJob#destination_conf}
 	DestinationConf *string `field:"required" json:"destinationConf" yaml:"destinationConf"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#account_id LogpushJob#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
@@ -73,7 +73,7 @@ type LogpushJobConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 	OwnershipChallenge *string `field:"optional" json:"ownershipChallenge" yaml:"ownershipChallenge"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_job#zone_id LogpushJob#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`

@@ -49,6 +49,9 @@ type WorkerScript interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Module() interface{}
+	SetModule(val interface{})
+	ModuleInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -113,6 +116,7 @@ type WorkerScript interface {
 	PutWebassemblyBinding(value interface{})
 	ResetId()
 	ResetKvNamespaceBinding()
+	ResetModule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_WorkerScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) Module() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"module",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) ModuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"moduleInput",
 		&returns,
 	)
 	return returns
@@ -570,6 +594,17 @@ func (j *jsiiProxy_WorkerScript)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetModule(val interface{}) {
+	if err := j.validateSetModuleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"module",
 		val,
 	)
 }
@@ -910,6 +945,14 @@ func (w *jsiiProxy_WorkerScript) ResetKvNamespaceBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetKvNamespaceBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetModule() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetModule",
 		nil, // no parameters
 	)
 }

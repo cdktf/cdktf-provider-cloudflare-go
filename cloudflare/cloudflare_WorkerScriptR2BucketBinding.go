@@ -3,9 +3,13 @@ package cloudflare
 
 
 type WorkerScriptR2BucketBinding struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#bucket_name WorkerScript#bucket_name}.
+	// The name of the Bucket to bind to.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#bucket_name WorkerScript#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}.
+	// The global variable for the binding in your Worker code.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
