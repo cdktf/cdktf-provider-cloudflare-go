@@ -99,7 +99,7 @@ type AccessApplicationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#skip_interstitial AccessApplication#skip_interstitial}
 	SkipInterstitial interface{} `field:"optional" json:"skipInterstitial" yaml:"skipInterstitial"`
-	// The application type. Available values: `self_hosted`, `saas`, `ssh`, `vnc`, `file`. Defaults to `self_hosted`.
+	// The application type. Available values: `self_hosted`, `saas`, `ssh`, `vnc`, `bookmark`. Defaults to `self_hosted`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_application#type AccessApplication#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`

@@ -27,17 +27,19 @@ type CloudflareProviderConfig struct {
 	ApiHostname *string `field:"optional" json:"apiHostname" yaml:"apiHostname"`
 	// The API key for operations.
 	//
-	// Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`.
+	// Alternatively, can be configured using the `CLOUDFLARE_API_KEY` environment variable. API keys are [now considered legacy by Cloudflare](https://developers.cloudflare.com/api/keys/#limitations), API tokens should be used instead. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_key CloudflareProvider#api_key}
 	ApiKey *string `field:"optional" json:"apiKey" yaml:"apiKey"`
-	// The API Token for operations. Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable.
+	// The API Token for operations.
+	//
+	// Alternatively, can be configured using the `CLOUDFLARE_API_TOKEN` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_token CloudflareProvider#api_token}
 	ApiToken *string `field:"optional" json:"apiToken" yaml:"apiToken"`
 	// A special Cloudflare API key good for a restricted set of endpoints.
 	//
-	// Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable.
+	// Alternatively, can be configured using the `CLOUDFLARE_API_USER_SERVICE_KEY` environment variable. Must provide only one of `api_key`, `api_token`, `api_user_service_key`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare#api_user_service_key CloudflareProvider#api_user_service_key}
 	ApiUserServiceKey *string `field:"optional" json:"apiUserServiceKey" yaml:"apiUserServiceKey"`
