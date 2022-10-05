@@ -55,9 +55,6 @@ type EmailRoutingCatchAll interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Priority() *float64
-	SetPriority(val *float64)
-	PriorityInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -110,7 +107,6 @@ type EmailRoutingCatchAll interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPriority()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -326,26 +322,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) Priority() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priority",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAll) PriorityInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priorityInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_EmailRoutingCatchAll) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -541,17 +517,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAll)SetPriority(val *float64) {
-	if err := j.validateSetPriorityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"priority",
 		val,
 	)
 }
@@ -856,14 +821,6 @@ func (e *jsiiProxy_EmailRoutingCatchAll) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EmailRoutingCatchAll) ResetPriority() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetPriority",
 		nil, // no parameters
 	)
 }

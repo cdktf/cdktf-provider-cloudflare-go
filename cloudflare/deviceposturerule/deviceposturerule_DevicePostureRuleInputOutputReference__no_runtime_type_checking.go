@@ -89,6 +89,14 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOperatorPar
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsDistroNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsDistroRevisionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetPathParameters(val *string) error {
 	return nil
 }

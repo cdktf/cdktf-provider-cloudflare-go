@@ -53,11 +53,23 @@ func (l *jsiiProxy_LoadBalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interface{}) error {
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value interface{}) error {
 	return nil
 }
 

@@ -50,6 +50,12 @@ type DevicePostureRuleInputOutputReference interface {
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
+	OsDistroName() *string
+	SetOsDistroName(val *string)
+	OsDistroNameInput() *string
+	OsDistroRevision() *string
+	SetOsDistroRevision(val *string)
+	OsDistroRevisionInput() *string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -107,6 +113,8 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetExists()
 	ResetId()
 	ResetOperator()
+	ResetOsDistroName()
+	ResetOsDistroRevision()
 	ResetPath()
 	ResetRequireAll()
 	ResetRunning()
@@ -313,6 +321,46 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperatorInput() *strin
 	_jsii_.Get(
 		j,
 		"operatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsDistroRevisionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevisionInput",
 		&returns,
 	)
 	return returns
@@ -592,6 +640,28 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string
 	_jsii_.Set(
 		j,
 		"operator",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroName(val *string) {
+	if err := j.validateSetOsDistroNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osDistroName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val *string) {
+	if err := j.validateSetOsDistroRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osDistroRevision",
 		val,
 	)
 }
@@ -922,6 +992,22 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOperator() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOperator",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsDistroName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroRevision() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsDistroRevision",
 		nil, // no parameters
 	)
 }

@@ -164,14 +164,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetFieldParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case *EmailRoutingCatchAllMatcher:
@@ -213,14 +205,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetTerraf
 }
 
 func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) validateSetValueParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

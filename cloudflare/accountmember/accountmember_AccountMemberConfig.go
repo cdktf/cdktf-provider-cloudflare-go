@@ -38,5 +38,9 @@ type AccountMemberConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// A member's status in the account. Available values: `accepted`, `pending`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member#status AccountMember#status}
+	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

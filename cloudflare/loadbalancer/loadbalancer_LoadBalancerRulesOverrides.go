@@ -2,6 +2,10 @@ package loadbalancer
 
 
 type LoadBalancerRulesOverrides struct {
+	// adaptive_routing block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+	AdaptiveRouting interface{} `field:"optional" json:"adaptiveRouting" yaml:"adaptiveRouting"`
 	// country_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#country_pools LoadBalancer#country_pools}
@@ -10,10 +14,18 @@ type LoadBalancerRulesOverrides struct {
 	DefaultPools *[]*string `field:"optional" json:"defaultPools" yaml:"defaultPools"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#fallback_pool LoadBalancer#fallback_pool}.
 	FallbackPool *string `field:"optional" json:"fallbackPool" yaml:"fallbackPool"`
+	// location_strategy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#location_strategy LoadBalancer#location_strategy}
+	LocationStrategy interface{} `field:"optional" json:"locationStrategy" yaml:"locationStrategy"`
 	// pop_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#pop_pools LoadBalancer#pop_pools}
 	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
+	// random_steering block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#random_steering LoadBalancer#random_steering}
+	RandomSteering interface{} `field:"optional" json:"randomSteering" yaml:"randomSteering"`
 	// region_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#region_pools LoadBalancer#region_pools}

@@ -64,6 +64,9 @@ type AccountMember interface {
 	RoleIds() *[]*string
 	SetRoleIds(val *[]*string)
 	RoleIdsInput() *[]*string
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -100,6 +103,7 @@ type AccountMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -325,6 +329,26 @@ func (j *jsiiProxy_AccountMember) RoleIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountMember) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountMember) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountMember) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -490,6 +514,17 @@ func (j *jsiiProxy_AccountMember)SetRoleIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roleIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountMember)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -742,6 +777,14 @@ func (a *jsiiProxy_AccountMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountMember) ResetStatus() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

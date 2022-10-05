@@ -85,6 +85,10 @@ func (j *jsiiProxy_AccountMember) validateSetRoleIdsParameters(val *[]*string) e
 	return nil
 }
 
+func (j *jsiiProxy_AccountMember) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccountMemberParameters(scope constructs.Construct, id *string, config *AccountMemberConfig) error {
 	return nil
 }

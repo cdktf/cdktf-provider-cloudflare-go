@@ -45,11 +45,23 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolat
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value interface{}) error {
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value interface{}) error {
 	return nil
 }
 

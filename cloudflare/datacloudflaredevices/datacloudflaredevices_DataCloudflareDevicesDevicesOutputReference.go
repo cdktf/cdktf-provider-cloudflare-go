@@ -37,6 +37,8 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	LastSeen() *string
 	Model() *string
 	Name() *string
+	OsDistroName() *string
+	OsDistroRevision() *string
 	OsVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -215,6 +217,26 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsDistroName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) OsDistroRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osDistroRevision",
 		&returns,
 	)
 	return returns

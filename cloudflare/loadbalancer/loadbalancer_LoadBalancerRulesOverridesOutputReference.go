@@ -10,6 +10,8 @@ import (
 
 type LoadBalancerRulesOverridesOutputReference interface {
 	cdktf.ComplexObject
+	AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingList
+	AdaptiveRoutingInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,8 +39,12 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LocationStrategy() LoadBalancerRulesOverridesLocationStrategyList
+	LocationStrategyInput() interface{}
 	PopPools() LoadBalancerRulesOverridesPopPoolsList
 	PopPoolsInput() interface{}
+	RandomSteering() LoadBalancerRulesOverridesRandomSteeringList
+	RandomSteeringInput() interface{}
 	RegionPools() LoadBalancerRulesOverridesRegionPoolsList
 	RegionPoolsInput() interface{}
 	SessionAffinity() *string
@@ -88,13 +94,19 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdaptiveRouting(value interface{})
 	PutCountryPools(value interface{})
+	PutLocationStrategy(value interface{})
 	PutPopPools(value interface{})
+	PutRandomSteering(value interface{})
 	PutRegionPools(value interface{})
+	ResetAdaptiveRouting()
 	ResetCountryPools()
 	ResetDefaultPools()
 	ResetFallbackPool()
+	ResetLocationStrategy()
 	ResetPopPools()
+	ResetRandomSteering()
 	ResetRegionPools()
 	ResetSessionAffinity()
 	ResetSessionAffinityAttributes()
@@ -114,6 +126,26 @@ type LoadBalancerRulesOverridesOutputReference interface {
 // The jsii proxy struct for LoadBalancerRulesOverridesOutputReference
 type jsiiProxy_LoadBalancerRulesOverridesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingList {
+	var returns LoadBalancerRulesOverridesAdaptiveRoutingList
+	_jsii_.Get(
+		j,
+		"adaptiveRouting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) AdaptiveRoutingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"adaptiveRoutingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ComplexObjectIndex() interface{} {
@@ -226,6 +258,26 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) InternalValue() in
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) LocationStrategy() LoadBalancerRulesOverridesLocationStrategyList {
+	var returns LoadBalancerRulesOverridesLocationStrategyList
+	_jsii_.Get(
+		j,
+		"locationStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) LocationStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locationStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PopPools() LoadBalancerRulesOverridesPopPoolsList {
 	var returns LoadBalancerRulesOverridesPopPoolsList
 	_jsii_.Get(
@@ -241,6 +293,26 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PopPoolsInput() in
 	_jsii_.Get(
 		j,
 		"popPoolsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RandomSteering() LoadBalancerRulesOverridesRandomSteeringList {
+	var returns LoadBalancerRulesOverridesRandomSteeringList
+	_jsii_.Get(
+		j,
+		"randomSteering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RandomSteeringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"randomSteeringInput",
 		&returns,
 	)
 	return returns
@@ -732,6 +804,17 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) InterpolationForAt
 	return returns
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutAdaptiveRouting(value interface{}) {
+	if err := l.validatePutAdaptiveRoutingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAdaptiveRouting",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutCountryPools(value interface{}) {
 	if err := l.validatePutCountryPoolsParameters(value); err != nil {
 		panic(err)
@@ -739,6 +822,17 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutCountryPools(va
 	_jsii_.InvokeVoid(
 		l,
 		"putCountryPools",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutLocationStrategy(value interface{}) {
+	if err := l.validatePutLocationStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putLocationStrategy",
 		[]interface{}{value},
 	)
 }
@@ -754,6 +848,17 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutPopPools(value 
 	)
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRandomSteering(value interface{}) {
+	if err := l.validatePutRandomSteeringParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putRandomSteering",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRegionPools(value interface{}) {
 	if err := l.validatePutRegionPoolsParameters(value); err != nil {
 		panic(err)
@@ -762,6 +867,14 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRegionPools(val
 		l,
 		"putRegionPools",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ResetAdaptiveRouting() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAdaptiveRouting",
+		nil, // no parameters
 	)
 }
 
@@ -789,10 +902,26 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ResetFallbackPool(
 	)
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ResetLocationStrategy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLocationStrategy",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ResetPopPools() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPopPools",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ResetRandomSteering() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRandomSteering",
 		nil, // no parameters
 	)
 }

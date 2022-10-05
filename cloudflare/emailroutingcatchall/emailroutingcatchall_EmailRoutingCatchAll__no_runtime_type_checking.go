@@ -85,10 +85,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) validateSetPriorityParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_EmailRoutingCatchAll) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

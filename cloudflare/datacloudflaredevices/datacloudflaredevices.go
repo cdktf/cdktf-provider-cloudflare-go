@@ -112,6 +112,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastSeen", GoGetter: "LastSeen"},
 			_jsii_.MemberProperty{JsiiProperty: "model", GoGetter: "Model"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "osDistroName", GoGetter: "OsDistroName"},
+			_jsii_.MemberProperty{JsiiProperty: "osDistroRevision", GoGetter: "OsDistroRevision"},
 			_jsii_.MemberProperty{JsiiProperty: "osVersion", GoGetter: "OsVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

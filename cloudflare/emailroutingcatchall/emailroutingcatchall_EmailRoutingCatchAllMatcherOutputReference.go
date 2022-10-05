@@ -25,9 +25,6 @@ type EmailRoutingCatchAllMatcherOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Field() *string
-	SetField(val *string)
-	FieldInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -43,9 +40,6 @@ type EmailRoutingCatchAllMatcherOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	Value() *string
-	SetValue(val *string)
-	ValueInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +64,6 @@ type EmailRoutingCatchAllMatcherOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetField()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,26 +104,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) Field() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"field",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) FieldInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"fieldInput",
 		&returns,
 	)
 	return returns
@@ -197,26 +169,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) TypeInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) Value() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"value",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) ValueInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewEmailRoutingCatchAllMatcherOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmailRoutingCatchAllMatcherOutputReference {
 	_init_.Initialize()
@@ -267,17 +219,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference)SetField(val *string) {
-	if err := j.validateSetFieldParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"field",
-		val,
-	)
-}
-
 func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -318,17 +259,6 @@ func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference)SetType(val *strin
 	_jsii_.Set(
 		j,
 		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference)SetValue(val *string) {
-	if err := j.validateSetValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"value",
 		val,
 	)
 }
@@ -517,22 +447,6 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) InterpolationForA
 	)
 
 	return returns
-}
-
-func (e *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) ResetField() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetField",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAllMatcherOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

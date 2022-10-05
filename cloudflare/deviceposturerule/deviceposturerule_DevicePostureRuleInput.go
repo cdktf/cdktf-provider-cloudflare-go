@@ -33,6 +33,14 @@ type DevicePostureRuleInput struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#operator DevicePostureRule#operator}
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
+	// The operating system excluding version information.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os_distro_name DevicePostureRule#os_distro_name}
+	OsDistroName *string `field:"optional" json:"osDistroName" yaml:"osDistroName"`
+	// The operating system version excluding OS name information or release name.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#os_distro_revision DevicePostureRule#os_distro_revision}
+	OsDistroRevision *string `field:"optional" json:"osDistroRevision" yaml:"osDistroRevision"`
 	// The path to the file.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/device_posture_rule#path DevicePostureRule#path}

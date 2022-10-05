@@ -112,6 +112,37 @@ func (l *jsiiProxy_LoadBalancer) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutAdaptiveRoutingParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LoadBalancerAdaptiveRouting:
+		value := value.(*[]*LoadBalancerAdaptiveRouting)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LoadBalancerAdaptiveRouting:
+		value_ := value.([]*LoadBalancerAdaptiveRouting)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerAdaptiveRouting; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -143,6 +174,37 @@ func (l *jsiiProxy_LoadBalancer) validatePutCountryPoolsParameters(value interfa
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutLocationStrategyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LoadBalancerLocationStrategy:
+		value := value.(*[]*LoadBalancerLocationStrategy)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LoadBalancerLocationStrategy:
+		value_ := value.([]*LoadBalancerLocationStrategy)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerLocationStrategy; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -168,6 +230,37 @@ func (l *jsiiProxy_LoadBalancer) validatePutPopPoolsParameters(value interface{}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerPopPools; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validatePutRandomSteeringParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LoadBalancerRandomSteering:
+		value := value.(*[]*LoadBalancerRandomSteering)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LoadBalancerRandomSteering:
+		value_ := value.([]*LoadBalancerRandomSteering)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRandomSteering; received %#v (a %T)", value, value)
 		}
 	}
 
