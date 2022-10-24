@@ -75,6 +75,9 @@ type CustomHostname interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WaitForSslPendingValidation() interface{}
+	SetWaitForSslPendingValidation(val interface{})
+	WaitForSslPendingValidationInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -111,6 +114,7 @@ type CustomHostname interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSsl()
+	ResetWaitForSslPendingValidation()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -416,6 +420,26 @@ func (j *jsiiProxy_CustomHostname) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForSslPendingValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForSslPendingValidationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomHostname) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,6 +595,17 @@ func (j *jsiiProxy_CustomHostname)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostname)SetWaitForSslPendingValidation(val interface{}) {
+	if err := j.validateSetWaitForSslPendingValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForSslPendingValidation",
 		val,
 	)
 }
@@ -861,6 +896,14 @@ func (c *jsiiProxy_CustomHostname) ResetSsl() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomHostname) ResetWaitForSslPendingValidation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWaitForSslPendingValidation",
 		nil, // no parameters
 	)
 }

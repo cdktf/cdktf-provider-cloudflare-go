@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package customhostname
 
@@ -86,6 +85,10 @@ func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktf.Ter
 }
 
 func (j *jsiiProxy_CustomHostname) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomHostname) validateSetWaitForSslPendingValidationParameters(val interface{}) error {
 	return nil
 }
 

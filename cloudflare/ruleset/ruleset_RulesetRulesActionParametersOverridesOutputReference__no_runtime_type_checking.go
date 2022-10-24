@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package ruleset
 
@@ -74,6 +73,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersOverrides) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetSensitivityLevelParameters(val *string) error {
 	return nil
 }
 

@@ -6,7 +6,7 @@ type PagesProjectSourceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#production_branch PagesProject#production_branch}
 	ProductionBranch *string `field:"required" json:"productionBranch" yaml:"productionBranch"`
-	// Toggle deployments on this repo.
+	// Toggle deployments on this repo. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#deployments_enabled PagesProject#deployments_enabled}
 	DeploymentsEnabled interface{} `field:"optional" json:"deploymentsEnabled" yaml:"deploymentsEnabled"`
@@ -14,7 +14,7 @@ type PagesProjectSourceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#owner PagesProject#owner}
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
-	// Enable Pages to comment on Pull Requests.
+	// Enable Pages to comment on Pull Requests. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
 	PrCommentsEnabled interface{} `field:"optional" json:"prCommentsEnabled" yaml:"prCommentsEnabled"`
@@ -26,11 +26,11 @@ type PagesProjectSourceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
 	PreviewBranchIncludes *[]*string `field:"optional" json:"previewBranchIncludes" yaml:"previewBranchIncludes"`
-	// Preview Deployment Setting.
+	// Preview Deployment Setting. Defaults to `all`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
 	PreviewDeploymentSetting *string `field:"optional" json:"previewDeploymentSetting" yaml:"previewDeploymentSetting"`
-	// Enable production deployments.
+	// Enable production deployments. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#production_deployment_enabled PagesProject#production_deployment_enabled}
 	ProductionDeploymentEnabled interface{} `field:"optional" json:"productionDeploymentEnabled" yaml:"productionDeploymentEnabled"`

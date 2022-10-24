@@ -39,6 +39,9 @@ type RulesetRulesActionParametersOverridesOutputReference interface {
 	SetInternalValue(val *RulesetRulesActionParametersOverrides)
 	Rules() RulesetRulesActionParametersOverridesRulesList
 	RulesInput() interface{}
+	SensitivityLevel() *string
+	SetSensitivityLevel(val *string)
+	SensitivityLevelInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -80,6 +83,7 @@ type RulesetRulesActionParametersOverridesOutputReference interface {
 	ResetCategories()
 	ResetEnabled()
 	ResetRules()
+	ResetSensitivityLevel()
 	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) RulesIn
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) SensitivityLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensitivityLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) SensitivityLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensitivityLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -345,6 +369,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetSensitivityLevel(val *string) {
+	if err := j.validateSetSensitivityLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sensitivityLevel",
 		val,
 	)
 }
@@ -618,6 +653,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) ResetRu
 	_jsii_.InvokeVoid(
 		r,
 		"resetRules",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) ResetSensitivityLevel() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSensitivityLevel",
 		nil, // no parameters
 	)
 }

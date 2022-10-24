@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package ruleset
 
@@ -257,6 +256,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersOverrides) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validateSetSensitivityLevelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

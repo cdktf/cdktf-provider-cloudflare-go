@@ -44,5 +44,9 @@ type CustomHostnameConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#ssl CustomHostname#ssl}
 	Ssl interface{} `field:"optional" json:"ssl" yaml:"ssl"`
+	// Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
+	WaitForSslPendingValidation interface{} `field:"optional" json:"waitForSslPendingValidation" yaml:"waitForSslPendingValidation"`
 }
 
