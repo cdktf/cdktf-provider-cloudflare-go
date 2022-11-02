@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	AllowInsecure() interface{}
 	SetAllowInsecure(val interface{})
 	AllowInsecureInput() interface{}
@@ -130,6 +133,7 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutHeader(value interface{})
+	ResetAccountId()
 	ResetAllowInsecure()
 	ResetDescription()
 	ResetExpectedBody()
@@ -161,6 +165,26 @@ type LoadBalancerMonitor interface {
 // The jsii proxy struct for LoadBalancerMonitor
 type jsiiProxy_LoadBalancerMonitor struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerMonitor) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LoadBalancerMonitor) AllowInsecure() interface{} {
@@ -673,6 +697,17 @@ func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Con
 	)
 }
 
+func (j *jsiiProxy_LoadBalancerMonitor)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LoadBalancerMonitor)SetAllowInsecure(val interface{}) {
 	if err := j.validateSetAllowInsecureParameters(val); err != nil {
 		panic(err)
@@ -1128,6 +1163,14 @@ func (l *jsiiProxy_LoadBalancerMonitor) PutHeader(value interface{}) {
 		l,
 		"putHeader",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerMonitor) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

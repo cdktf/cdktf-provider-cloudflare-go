@@ -25,6 +25,10 @@ type LoadBalancerPoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#origins LoadBalancerPool#origins}
 	Origins interface{} `field:"required" json:"origins" yaml:"origins"`
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#account_id LoadBalancerPool#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#check_regions LoadBalancerPool#check_regions}.
 	CheckRegions *[]*string `field:"optional" json:"checkRegions" yaml:"checkRegions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#description LoadBalancerPool#description}.

@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		reflect.TypeOf((*LoadBalancerPool)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "checkRegions", GoGetter: "CheckRegions"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOrigins", GoMethod: "PutOrigins"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginSteering", GoMethod: "PutOriginSteering"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckRegions", GoMethod: "ResetCheckRegions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
