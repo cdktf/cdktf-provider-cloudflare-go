@@ -16,6 +16,14 @@ func validateCloudflareProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudflareProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudflareProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudflareProvider) validateSetApiClientLoggingParameters(val interface{}) error {
 	return nil
 }

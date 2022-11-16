@@ -60,6 +60,14 @@ func validateDevicePostureIntegration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDevicePostureIntegration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevicePostureIntegration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureIntegration) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

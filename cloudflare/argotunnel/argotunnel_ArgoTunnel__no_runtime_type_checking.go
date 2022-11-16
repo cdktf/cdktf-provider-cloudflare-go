@@ -56,6 +56,14 @@ func validateArgoTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateArgoTunnel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateArgoTunnel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArgoTunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

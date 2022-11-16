@@ -2,10 +2,10 @@ package logpushownershipchallenge
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/logpushownershipchallenge/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/logpushownershipchallenge/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -534,6 +534,44 @@ func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogpushOwnershipChallenge_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LogpushOwnershipChallenge_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLogpushOwnershipChallenge_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

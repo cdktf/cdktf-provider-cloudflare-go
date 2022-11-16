@@ -2,10 +2,10 @@ package totaltls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/totaltls/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/totaltls/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -522,6 +522,44 @@ func TotalTls_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TotalTls_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTotalTls_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TotalTls_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTotalTls_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

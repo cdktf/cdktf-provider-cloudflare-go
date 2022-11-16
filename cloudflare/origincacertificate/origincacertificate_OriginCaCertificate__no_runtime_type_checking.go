@@ -56,6 +56,14 @@ func validateOriginCaCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOriginCaCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOriginCaCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OriginCaCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

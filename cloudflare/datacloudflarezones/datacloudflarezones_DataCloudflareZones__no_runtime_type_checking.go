@@ -60,6 +60,14 @@ func validateDataCloudflareZones_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataCloudflareZones_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareZones_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZones) validateSetIdParameters(val *string) error {
 	return nil
 }

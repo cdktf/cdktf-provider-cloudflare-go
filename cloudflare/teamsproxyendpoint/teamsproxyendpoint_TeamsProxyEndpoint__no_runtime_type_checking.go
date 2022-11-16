@@ -56,6 +56,14 @@ func validateTeamsProxyEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTeamsProxyEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeamsProxyEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsProxyEndpoint) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

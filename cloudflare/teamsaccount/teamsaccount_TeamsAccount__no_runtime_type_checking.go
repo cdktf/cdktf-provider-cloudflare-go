@@ -76,6 +76,14 @@ func validateTeamsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTeamsAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeamsAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsAccount) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v3/loadbalancerpool/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/loadbalancerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -861,6 +861,44 @@ func LoadBalancerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LoadBalancerPool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLoadBalancerPool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LoadBalancerPool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLoadBalancerPool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

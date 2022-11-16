@@ -56,6 +56,14 @@ func validateIpsecTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIpsecTunnel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIpsecTunnel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpsecTunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateLogpushOwnershipChallenge_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLogpushOwnershipChallenge_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogpushOwnershipChallenge_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

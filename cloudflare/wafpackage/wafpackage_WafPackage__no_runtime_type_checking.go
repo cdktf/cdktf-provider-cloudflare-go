@@ -56,6 +56,14 @@ func validateWafPackage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafPackage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafPackage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafPackage) validateSetActionModeParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateAccessRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessRule) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

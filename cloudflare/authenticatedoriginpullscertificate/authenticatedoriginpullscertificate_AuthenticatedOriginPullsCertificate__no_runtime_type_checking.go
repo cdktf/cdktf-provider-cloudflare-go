@@ -60,6 +60,14 @@ func validateAuthenticatedOriginPullsCertificate_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateAuthenticatedOriginPullsCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthenticatedOriginPullsCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCertificateParameters(val *string) error {
 	return nil
 }

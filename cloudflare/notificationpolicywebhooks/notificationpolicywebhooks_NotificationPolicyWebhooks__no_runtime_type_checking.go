@@ -56,6 +56,14 @@ func validateNotificationPolicyWebhooks_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateNotificationPolicyWebhooks_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotificationPolicyWebhooks_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

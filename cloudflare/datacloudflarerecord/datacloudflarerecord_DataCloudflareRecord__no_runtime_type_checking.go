@@ -56,6 +56,14 @@ func validateDataCloudflareRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataCloudflareRecord_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareRecord) validateSetHostnameParameters(val *string) error {
 	return nil
 }

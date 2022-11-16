@@ -60,6 +60,14 @@ func validateAccessOrganization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessOrganization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessOrganization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGreTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGreTunnel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGreTunnel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GreTunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

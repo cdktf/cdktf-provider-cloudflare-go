@@ -60,6 +60,14 @@ func validateList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateList_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateList_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_List) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

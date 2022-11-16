@@ -56,6 +56,14 @@ func validateArgo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateArgo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateArgo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Argo) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

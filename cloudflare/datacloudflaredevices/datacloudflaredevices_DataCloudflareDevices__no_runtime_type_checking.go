@@ -56,6 +56,14 @@ func validateDataCloudflareDevices_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataCloudflareDevices_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareDevices_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDevices) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

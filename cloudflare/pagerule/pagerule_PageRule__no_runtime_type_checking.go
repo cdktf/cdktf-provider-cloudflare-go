@@ -60,6 +60,14 @@ func validatePageRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePageRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePageRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PageRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

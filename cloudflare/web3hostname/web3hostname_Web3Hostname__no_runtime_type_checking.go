@@ -56,6 +56,14 @@ func validateWeb3Hostname_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWeb3Hostname_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWeb3Hostname_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Web3Hostname) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

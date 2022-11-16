@@ -56,6 +56,14 @@ func validateZoneCacheVariants_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateZoneCacheVariants_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateZoneCacheVariants_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneCacheVariants) validateSetAvifParameters(val *[]*string) error {
 	return nil
 }

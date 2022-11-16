@@ -60,6 +60,14 @@ func validateWaitingRoomRules_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWaitingRoomRules_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWaitingRoomRules_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoomRules) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

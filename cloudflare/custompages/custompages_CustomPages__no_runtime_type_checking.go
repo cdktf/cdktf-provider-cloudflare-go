@@ -56,6 +56,14 @@ func validateCustomPages_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCustomPages_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomPages_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomPages) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

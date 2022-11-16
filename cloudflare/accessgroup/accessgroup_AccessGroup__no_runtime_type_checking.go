@@ -68,6 +68,14 @@ func validateAccessGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessGroup) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

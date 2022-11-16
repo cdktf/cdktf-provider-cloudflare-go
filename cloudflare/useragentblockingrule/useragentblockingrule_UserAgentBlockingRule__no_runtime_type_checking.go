@@ -60,6 +60,14 @@ func validateUserAgentBlockingRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateUserAgentBlockingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserAgentBlockingRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserAgentBlockingRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

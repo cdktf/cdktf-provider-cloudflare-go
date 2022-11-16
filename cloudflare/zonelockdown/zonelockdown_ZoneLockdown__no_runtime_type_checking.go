@@ -60,6 +60,14 @@ func validateZoneLockdown_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateZoneLockdown_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateZoneLockdown_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneLockdown) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

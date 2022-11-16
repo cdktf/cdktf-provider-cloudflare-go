@@ -60,6 +60,14 @@ func validateDlpProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDlpProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDlpProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlpProfile) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateAccessCaCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessCaCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessCaCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessCaCertificate) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateWorkerCronTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWorkerCronTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorkerCronTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerCronTrigger) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

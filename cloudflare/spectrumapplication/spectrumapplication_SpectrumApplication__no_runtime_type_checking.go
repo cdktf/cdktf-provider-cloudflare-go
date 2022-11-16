@@ -68,6 +68,14 @@ func validateSpectrumApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpectrumApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpectrumApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpectrumApplication) validateSetArgoSmartRoutingParameters(val interface{}) error {
 	return nil
 }

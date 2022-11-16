@@ -56,6 +56,14 @@ func validateDevicePolicyCertificates_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDevicePolicyCertificates_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevicePolicyCertificates_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePolicyCertificates) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDataCloudflareWafPackages_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataCloudflareWafPackages_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareWafPackages_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareWafPackages) validateSetIdParameters(val *string) error {
 	return nil
 }

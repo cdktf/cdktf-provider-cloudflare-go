@@ -64,6 +64,14 @@ func validateCustomSsl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCustomSsl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomSsl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomSsl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

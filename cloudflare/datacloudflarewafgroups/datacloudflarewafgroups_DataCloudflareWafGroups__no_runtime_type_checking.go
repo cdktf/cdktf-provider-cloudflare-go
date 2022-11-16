@@ -60,6 +60,14 @@ func validateDataCloudflareWafGroups_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataCloudflareWafGroups_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareWafGroups_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareWafGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateAccessMutualTlsCertificate_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateAccessMutualTlsCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessMutualTlsCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateManagedHeaders_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedHeaders_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedHeaders_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedHeaders) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

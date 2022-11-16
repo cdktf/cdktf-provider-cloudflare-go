@@ -56,6 +56,14 @@ func validateDataCloudflareAccountRoles_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataCloudflareAccountRoles_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCloudflareAccountRoles_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAccountRoles) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

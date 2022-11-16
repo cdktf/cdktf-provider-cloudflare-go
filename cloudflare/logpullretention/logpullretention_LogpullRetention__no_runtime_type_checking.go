@@ -56,6 +56,14 @@ func validateLogpullRetention_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLogpullRetention_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLogpullRetention_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpullRetention) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

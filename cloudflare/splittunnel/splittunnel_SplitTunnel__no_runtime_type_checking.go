@@ -60,6 +60,14 @@ func validateSplitTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSplitTunnel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSplitTunnel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SplitTunnel) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

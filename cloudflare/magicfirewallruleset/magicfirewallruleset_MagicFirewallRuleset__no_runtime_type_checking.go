@@ -56,6 +56,14 @@ func validateMagicFirewallRuleset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMagicFirewallRuleset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMagicFirewallRuleset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicFirewallRuleset) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

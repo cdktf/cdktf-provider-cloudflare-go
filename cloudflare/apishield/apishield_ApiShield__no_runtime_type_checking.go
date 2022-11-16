@@ -60,6 +60,14 @@ func validateApiShield_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiShield_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiShield_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiShield) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

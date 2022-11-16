@@ -60,6 +60,14 @@ func validateRuleset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRuleset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRuleset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ruleset) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

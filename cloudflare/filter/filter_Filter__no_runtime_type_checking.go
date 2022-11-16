@@ -56,6 +56,14 @@ func validateFilter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Filter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

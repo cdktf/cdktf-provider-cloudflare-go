@@ -64,6 +64,14 @@ func validateRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRecord_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Record) validateSetAllowOverwriteParameters(val interface{}) error {
 	return nil
 }

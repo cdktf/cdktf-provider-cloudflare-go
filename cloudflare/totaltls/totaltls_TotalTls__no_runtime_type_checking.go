@@ -56,6 +56,14 @@ func validateTotalTls_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTotalTls_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTotalTls_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TotalTls) validateSetCertificateAuthorityParameters(val *string) error {
 	return nil
 }

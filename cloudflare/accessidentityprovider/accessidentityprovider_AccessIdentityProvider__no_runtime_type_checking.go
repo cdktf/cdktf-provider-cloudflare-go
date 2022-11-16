@@ -60,6 +60,14 @@ func validateAccessIdentityProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessIdentityProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessIdentityProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProvider) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

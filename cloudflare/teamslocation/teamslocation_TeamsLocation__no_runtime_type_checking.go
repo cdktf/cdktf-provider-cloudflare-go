@@ -60,6 +60,14 @@ func validateTeamsLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTeamsLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeamsLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsLocation) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

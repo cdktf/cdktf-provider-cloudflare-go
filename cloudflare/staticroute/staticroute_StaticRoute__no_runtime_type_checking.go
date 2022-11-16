@@ -56,6 +56,14 @@ func validateStaticRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStaticRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStaticRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticRoute) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

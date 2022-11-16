@@ -56,6 +56,14 @@ func validateAccessServiceToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessServiceToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessServiceToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessServiceToken) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

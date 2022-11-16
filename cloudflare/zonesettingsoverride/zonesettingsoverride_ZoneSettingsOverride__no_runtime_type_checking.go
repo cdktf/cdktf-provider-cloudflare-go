@@ -60,6 +60,14 @@ func validateZoneSettingsOverride_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateZoneSettingsOverride_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateZoneSettingsOverride_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverride) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

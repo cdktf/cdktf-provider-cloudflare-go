@@ -56,6 +56,14 @@ func validateWafOverride_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafOverride_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafOverride_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafOverride) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateEmailRoutingCatchAll_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmailRoutingCatchAll_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmailRoutingCatchAll_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailRoutingCatchAll) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

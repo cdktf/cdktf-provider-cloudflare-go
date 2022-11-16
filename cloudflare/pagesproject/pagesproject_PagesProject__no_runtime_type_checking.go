@@ -68,6 +68,14 @@ func validatePagesProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePagesProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePagesProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProject) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

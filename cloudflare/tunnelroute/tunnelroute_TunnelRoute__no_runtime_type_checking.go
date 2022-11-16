@@ -56,6 +56,14 @@ func validateTunnelRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTunnelRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTunnelRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TunnelRoute) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

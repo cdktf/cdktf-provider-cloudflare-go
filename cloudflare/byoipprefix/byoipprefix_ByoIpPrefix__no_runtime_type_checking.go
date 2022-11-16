@@ -56,6 +56,14 @@ func validateByoIpPrefix_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateByoIpPrefix_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateByoIpPrefix_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ByoIpPrefix) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateAccessBookmark_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccessBookmark_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessBookmark_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessBookmark) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

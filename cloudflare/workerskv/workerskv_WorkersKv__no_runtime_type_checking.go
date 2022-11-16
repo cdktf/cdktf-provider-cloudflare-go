@@ -56,6 +56,14 @@ func validateWorkersKv_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWorkersKv_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorkersKv_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKv) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

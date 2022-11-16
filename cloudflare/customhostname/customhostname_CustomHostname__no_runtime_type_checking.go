@@ -60,6 +60,14 @@ func validateCustomHostname_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCustomHostname_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomHostname_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostname) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
