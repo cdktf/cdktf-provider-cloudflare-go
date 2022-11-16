@@ -42,7 +42,7 @@ type ZoneConfig struct {
 	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
 	// The name of the commercial plan to apply to the zone.
 	//
-	// Available values: `free`, `pro`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
+	// Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#plan Zone#plan}
 	Plan *string `field:"optional" json:"plan" yaml:"plan"`
