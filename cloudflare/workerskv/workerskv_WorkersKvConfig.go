@@ -19,12 +19,24 @@ type WorkersKvConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#key WorkersKv#key}.
+	// Name of the KV pair. **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#key WorkersKv#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#namespace_id WorkersKv#namespace_id}.
+	// The ID of the Workers KV namespace in which you want to create the KV pair.
+	//
+	// **Modifying this attribute will force creation of a new resource.**
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#namespace_id WorkersKv#namespace_id}
 	NamespaceId *string `field:"required" json:"namespaceId" yaml:"namespaceId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#value WorkersKv#value}.
+	// Value of the KV pair.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#value WorkersKv#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#account_id WorkersKv#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv#id WorkersKv#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

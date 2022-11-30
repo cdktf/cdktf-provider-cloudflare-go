@@ -27,7 +27,7 @@ type RateLimitConfig struct {
 	Period *float64 `field:"required" json:"period" yaml:"period"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#threshold RateLimit#threshold}.
 	Threshold *float64 `field:"required" json:"threshold" yaml:"threshold"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#zone_id RateLimit#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

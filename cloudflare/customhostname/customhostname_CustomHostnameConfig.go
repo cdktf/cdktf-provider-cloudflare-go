@@ -19,11 +19,11 @@ type CustomHostnameConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Hostname you intend to request a certificate for.
+	// Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#hostname CustomHostname#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

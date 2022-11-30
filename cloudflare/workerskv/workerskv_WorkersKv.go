@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv cloudflare_workers_kv}.
 type WorkersKv interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -95,6 +98,7 @@ type WorkersKv interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -112,6 +116,26 @@ type WorkersKv interface {
 // The jsii proxy struct for WorkersKv
 type jsiiProxy_WorkersKv struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkersKv) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkersKv) CdktfStack() cdktf.TerraformStack {
@@ -381,6 +405,17 @@ func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, 
 		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkersKv)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -756,6 +791,14 @@ func (w *jsiiProxy_WorkersKv) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WorkersKv) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

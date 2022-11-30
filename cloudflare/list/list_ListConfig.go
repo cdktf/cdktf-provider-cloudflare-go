@@ -27,7 +27,7 @@ type ListConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/list#kind List#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// The name of the list.
+	// The name of the list. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/list#name List#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

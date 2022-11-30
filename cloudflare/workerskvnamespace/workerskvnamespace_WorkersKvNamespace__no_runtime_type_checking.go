@@ -64,6 +64,10 @@ func validateWorkersKvNamespace_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKvNamespace) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKvNamespace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

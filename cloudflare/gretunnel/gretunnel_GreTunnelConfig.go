@@ -27,7 +27,7 @@ type GreTunnelConfig struct {
 	InterfaceAddress *string `field:"required" json:"interfaceAddress" yaml:"interfaceAddress"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#name GreTunnel#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/gre_tunnel#account_id GreTunnel#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`

@@ -19,7 +19,7 @@ type ZoneConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The DNS zone name which will be added.
+	// The DNS zone name which will be added. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone#zone Zone#zone}
 	Zone *string `field:"required" json:"zone" yaml:"zone"`

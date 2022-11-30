@@ -23,7 +23,7 @@ type WaitingRoomConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#host WaitingRoom#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
-	// A unique name to identify the waiting room.
+	// A unique name to identify the waiting room. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#name WaitingRoom#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
@@ -35,7 +35,7 @@ type WaitingRoomConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#total_active_users WaitingRoom#total_active_users}
 	TotalActiveUsers *float64 `field:"required" json:"totalActiveUsers" yaml:"totalActiveUsers"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room#zone_id WaitingRoom#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

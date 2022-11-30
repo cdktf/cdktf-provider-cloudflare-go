@@ -23,7 +23,7 @@ type WorkerScriptConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#content WorkerScript#content}
 	Content *string `field:"required" json:"content" yaml:"content"`
-	// The name for the script.
+	// The name for the script. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

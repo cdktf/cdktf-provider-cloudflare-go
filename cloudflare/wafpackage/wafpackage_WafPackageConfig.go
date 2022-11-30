@@ -19,9 +19,11 @@ type WafPackageConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#package_id WafPackage#package_id}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#package_id WafPackage#package_id}
 	PackageId *string `field:"required" json:"packageId" yaml:"packageId"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_package#zone_id WafPackage#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

@@ -19,7 +19,9 @@ type LogpushOwnershipChallengeConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
 	DestinationConf *string `field:"required" json:"destinationConf" yaml:"destinationConf"`
 	// The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
 	//

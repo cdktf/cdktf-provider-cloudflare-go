@@ -19,9 +19,11 @@ type WafGroupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#group_id WafGroup#group_id}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#group_id WafGroup#group_id}
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waf_group#zone_id WafGroup#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

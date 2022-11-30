@@ -19,13 +19,17 @@ type ArgoTunnelConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#account_id ArgoTunnel#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#name ArgoTunnel#name}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#name ArgoTunnel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#secret ArgoTunnel#secret}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#secret ArgoTunnel#secret}
 	Secret *string `field:"required" json:"secret" yaml:"secret"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/argo_tunnel#id ArgoTunnel#id}.
 	//

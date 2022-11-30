@@ -23,7 +23,9 @@ type MagicFirewallRulesetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset#account_id MagicFirewallRuleset#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset#name MagicFirewallRuleset#name}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset#name MagicFirewallRuleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset#description MagicFirewallRuleset#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`

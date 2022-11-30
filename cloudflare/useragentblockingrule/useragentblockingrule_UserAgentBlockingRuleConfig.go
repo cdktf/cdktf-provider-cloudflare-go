@@ -35,7 +35,7 @@ type UserAgentBlockingRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
 	Paused interface{} `field:"required" json:"paused" yaml:"paused"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

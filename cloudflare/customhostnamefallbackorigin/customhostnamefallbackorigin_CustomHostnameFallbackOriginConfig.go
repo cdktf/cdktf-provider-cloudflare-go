@@ -21,7 +21,7 @@ type CustomHostnameFallbackOriginConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#origin CustomHostnameFallbackOrigin#origin}.
 	Origin *string `field:"required" json:"origin" yaml:"origin"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin#zone_id CustomHostnameFallbackOrigin#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

@@ -31,7 +31,7 @@ type HealthcheckConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#type Healthcheck#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/healthcheck#zone_id Healthcheck#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

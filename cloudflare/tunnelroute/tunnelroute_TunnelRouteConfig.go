@@ -19,7 +19,7 @@ type TunnelRouteConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#account_id TunnelRoute#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
@@ -42,7 +42,7 @@ type TunnelRouteConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The ID of the virtual network for which this route is being added;
 	//
-	// uses the default virtual network of the account if none is provided.
+	// uses the default virtual network of the account if none is provided. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_route#virtual_network_id TunnelRoute#virtual_network_id}
 	VirtualNetworkId *string `field:"optional" json:"virtualNetworkId" yaml:"virtualNetworkId"`

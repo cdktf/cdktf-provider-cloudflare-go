@@ -25,7 +25,9 @@ type IpListConfig struct {
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list#kind IpList#kind}.
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list#name IpList#name}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list#name IpList#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ip_list#description IpList#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`

@@ -19,7 +19,7 @@ type DlpProfileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#account_id DlpProfile#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
@@ -27,11 +27,11 @@ type DlpProfileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#entry DlpProfile#entry}
 	Entry interface{} `field:"required" json:"entry" yaml:"entry"`
-	// Name of the profile.
+	// Name of the profile. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#name DlpProfile#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The type of the profile. Available values: `custom`, `predefined`.
+	// The type of the profile. Available values: `custom`, `predefined`. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile#type DlpProfile#type}
 	Type *string `field:"required" json:"type" yaml:"type"`

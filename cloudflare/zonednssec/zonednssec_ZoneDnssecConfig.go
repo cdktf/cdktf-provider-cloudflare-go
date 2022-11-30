@@ -19,7 +19,7 @@ type ZoneDnssecConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_dnssec#zone_id ZoneDnssec#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

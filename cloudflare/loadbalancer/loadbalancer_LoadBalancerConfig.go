@@ -33,7 +33,7 @@ type LoadBalancerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#name LoadBalancer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The zone ID to add the load balancer to.
+	// The zone ID to add the load balancer to. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#zone_id LoadBalancer#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

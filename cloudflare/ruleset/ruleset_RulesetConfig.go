@@ -23,7 +23,7 @@ type RulesetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#kind Ruleset#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// Name of the ruleset.
+	// Name of the ruleset. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#name Ruleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

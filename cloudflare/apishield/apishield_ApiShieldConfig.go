@@ -23,7 +23,7 @@ type ApiShieldConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}
 	AuthIdCharacteristics interface{} `field:"required" json:"authIdCharacteristics" yaml:"authIdCharacteristics"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield#zone_id ApiShield#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

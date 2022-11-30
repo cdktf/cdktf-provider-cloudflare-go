@@ -32,5 +32,9 @@ type FallbackDomainConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The settings policy for which to configure this fallback domain policy.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/fallback_domain#policy_id FallbackDomain#policy_id}
+	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
 }
 

@@ -25,7 +25,7 @@ type PageRuleConfig struct {
 	Actions *PageRuleActions `field:"required" json:"actions" yaml:"actions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#target PageRule#target}.
 	Target *string `field:"required" json:"target" yaml:"target"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/page_rule#zone_id PageRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

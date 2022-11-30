@@ -23,7 +23,7 @@ type ByoIpPrefixConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#account_id ByoIpPrefix#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The assigned Bring-Your-Own-IP prefix ID.
+	// The assigned Bring-Your-Own-IP prefix ID. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/byo_ip_prefix#prefix_id ByoIpPrefix#prefix_id}
 	PrefixId *string `field:"required" json:"prefixId" yaml:"prefixId"`

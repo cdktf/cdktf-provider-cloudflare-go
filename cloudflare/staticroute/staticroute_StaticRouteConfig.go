@@ -25,7 +25,7 @@ type StaticRouteConfig struct {
 	Prefix *string `field:"required" json:"prefix" yaml:"prefix"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#priority StaticRoute#priority}.
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
-	// The account identifier to target for the resource.
+	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#account_id StaticRoute#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
@@ -40,7 +40,9 @@ type StaticRouteConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#weight StaticRoute#weight}.
+	// **Modifying this attribute will force creation of a new resource.**.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/static_route#weight StaticRoute#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

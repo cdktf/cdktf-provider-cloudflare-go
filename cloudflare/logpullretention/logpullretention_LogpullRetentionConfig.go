@@ -21,7 +21,7 @@ type LogpullRetentionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpull_retention#enabled LogpullRetention#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpull_retention#zone_id LogpullRetention#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

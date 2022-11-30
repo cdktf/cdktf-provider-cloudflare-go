@@ -25,7 +25,9 @@ type AccessGroupConfig struct {
 	Include interface{} `field:"required" json:"include" yaml:"include"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#name AccessGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource. Conflicts with `zone_id`.
+	// The account identifier to target for the resource.
+	//
+	// Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_group#account_id AccessGroup#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`

@@ -21,6 +21,10 @@ type WorkersKvNamespaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#title WorkersKvNamespace#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#id WorkersKvNamespace#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

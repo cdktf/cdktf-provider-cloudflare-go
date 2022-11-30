@@ -19,11 +19,11 @@ type WaitingRoomRulesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Waiting Room ID the rules should apply to.
+	// The Waiting Room ID the rules should apply to. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_rules#waiting_room_id WaitingRoomRules#waiting_room_id}
 	WaitingRoomId *string `field:"required" json:"waitingRoomId" yaml:"waitingRoomId"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_rules#zone_id WaitingRoomRules#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

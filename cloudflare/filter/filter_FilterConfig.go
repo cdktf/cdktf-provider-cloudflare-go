@@ -23,7 +23,7 @@ type FilterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#expression Filter#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/filter#zone_id Filter#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

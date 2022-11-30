@@ -25,7 +25,7 @@ type ZoneLockdownConfig struct {
 	Configurations interface{} `field:"required" json:"configurations" yaml:"configurations"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#urls ZoneLockdown#urls}.
 	Urls *[]*string `field:"required" json:"urls" yaml:"urls"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_lockdown#zone_id ZoneLockdown#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

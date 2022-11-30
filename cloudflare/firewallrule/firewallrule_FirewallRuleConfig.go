@@ -27,7 +27,7 @@ type FirewallRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#filter_id FirewallRule#filter_id}
 	FilterId *string `field:"required" json:"filterId" yaml:"filterId"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule#zone_id FirewallRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`

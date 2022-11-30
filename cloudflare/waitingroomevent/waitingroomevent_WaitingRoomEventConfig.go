@@ -21,21 +21,27 @@ type WaitingRoomEventConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ISO 8601 timestamp that marks the end of the event.
 	//
+	// **Modifying this attribute will force creation of a new resource.**
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
 	EventEndTime *string `field:"required" json:"eventEndTime" yaml:"eventEndTime"`
-	// ISO 8601 timestamp that marks the start of the event. Must occur at least 1 minute before `event_end_time`.
+	// ISO 8601 timestamp that marks the start of the event.
+	//
+	// Must occur at least 1 minute before `event_end_time`. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
 	EventStartTime *string `field:"required" json:"eventStartTime" yaml:"eventStartTime"`
-	// A unique name to identify the event. Only alphanumeric characters, hyphens, and underscores are allowed.
+	// A unique name to identify the event.
+	//
+	// Only alphanumeric characters, hyphens, and underscores are allowed. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#name WaitingRoomEvent#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The Waiting Room ID the event should apply to.
+	// The Waiting Room ID the event should apply to. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
 	WaitingRoomId *string `field:"required" json:"waitingRoomId" yaml:"waitingRoomId"`
-	// The zone identifier to target for the resource.
+	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
