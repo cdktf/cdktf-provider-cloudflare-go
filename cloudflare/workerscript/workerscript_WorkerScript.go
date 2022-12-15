@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
+	AnalyticsEngineBinding() WorkerScriptAnalyticsEngineBindingList
+	AnalyticsEngineBindingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -107,12 +109,14 @@ type WorkerScript interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAnalyticsEngineBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
 	PutPlainTextBinding(value interface{})
 	PutR2BucketBinding(value interface{})
 	PutSecretTextBinding(value interface{})
 	PutServiceBinding(value interface{})
 	PutWebassemblyBinding(value interface{})
+	ResetAnalyticsEngineBinding()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetModule()
@@ -137,6 +141,26 @@ type WorkerScript interface {
 // The jsii proxy struct for WorkerScript
 type jsiiProxy_WorkerScript struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkerScript) AnalyticsEngineBinding() WorkerScriptAnalyticsEngineBindingList {
+	var returns WorkerScriptAnalyticsEngineBindingList
+	_jsii_.Get(
+		j,
+		"analyticsEngineBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) AnalyticsEngineBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"analyticsEngineBindingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkerScript) CdktfStack() cdktf.TerraformStack {
@@ -904,6 +928,17 @@ func (w *jsiiProxy_WorkerScript) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutAnalyticsEngineBinding(value interface{}) {
+	if err := w.validatePutAnalyticsEngineBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAnalyticsEngineBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
 		panic(err)
@@ -967,6 +1002,14 @@ func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value interface{}) {
 		w,
 		"putWebassemblyBinding",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetAnalyticsEngineBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAnalyticsEngineBinding",
+		nil, // no parameters
 	)
 }
 

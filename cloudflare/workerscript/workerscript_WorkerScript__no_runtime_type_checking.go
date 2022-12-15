@@ -52,6 +52,10 @@ func (w *jsiiProxy_WorkerScript) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
 	return nil
 }
