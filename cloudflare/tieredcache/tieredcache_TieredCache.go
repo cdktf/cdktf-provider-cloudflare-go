@@ -1,19 +1,20 @@
-package apishield
+package tieredcache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/apishield/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/tieredcache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield cloudflare_api_shield}.
-type ApiShield interface {
+// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache}.
+type TieredCache interface {
 	cdktf.TerraformResource
-	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
-	AuthIdCharacteristicsInput() interface{}
+	CacheType() *string
+	SetCacheType(val *string)
+	CacheTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -91,8 +92,6 @@ type ApiShield interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthIdCharacteristics(value interface{})
-	ResetAuthIdCharacteristics()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -107,32 +106,32 @@ type ApiShield interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for ApiShield
-type jsiiProxy_ApiShield struct {
+// The jsii proxy struct for TieredCache
+type jsiiProxy_TieredCache struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ApiShield) AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList {
-	var returns ApiShieldAuthIdCharacteristicsList
+func (j *jsiiProxy_TieredCache) CacheType() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"authIdCharacteristics",
+		"cacheType",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) AuthIdCharacteristicsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TieredCache) CacheTypeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"authIdCharacteristicsInput",
+		"cacheTypeInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_TieredCache) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -142,7 +141,7 @@ func (j *jsiiProxy_ApiShield) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Connection() interface{} {
+func (j *jsiiProxy_TieredCache) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -152,7 +151,7 @@ func (j *jsiiProxy_ApiShield) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_TieredCache) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -162,7 +161,7 @@ func (j *jsiiProxy_ApiShield) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Count() *float64 {
+func (j *jsiiProxy_TieredCache) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ApiShield) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) DependsOn() *[]*string {
+func (j *jsiiProxy_TieredCache) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -182,7 +181,7 @@ func (j *jsiiProxy_ApiShield) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_TieredCache) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -192,7 +191,7 @@ func (j *jsiiProxy_ApiShield) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Fqn() *string {
+func (j *jsiiProxy_TieredCache) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -202,7 +201,7 @@ func (j *jsiiProxy_ApiShield) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) FriendlyUniqueId() *string {
+func (j *jsiiProxy_TieredCache) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -212,7 +211,7 @@ func (j *jsiiProxy_ApiShield) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Id() *string {
+func (j *jsiiProxy_TieredCache) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -222,7 +221,7 @@ func (j *jsiiProxy_ApiShield) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) IdInput() *string {
+func (j *jsiiProxy_TieredCache) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ApiShield) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_TieredCache) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ApiShield) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Node() constructs.Node {
+func (j *jsiiProxy_TieredCache) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ApiShield) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_TieredCache) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -262,7 +261,7 @@ func (j *jsiiProxy_ApiShield) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Provisioners() *[]interface{} {
+func (j *jsiiProxy_TieredCache) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -272,7 +271,7 @@ func (j *jsiiProxy_ApiShield) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) RawOverrides() interface{} {
+func (j *jsiiProxy_TieredCache) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -282,7 +281,7 @@ func (j *jsiiProxy_ApiShield) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_TieredCache) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ApiShield) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_TieredCache) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -302,7 +301,7 @@ func (j *jsiiProxy_ApiShield) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) TerraformResourceType() *string {
+func (j *jsiiProxy_TieredCache) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ApiShield) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) ZoneId() *string {
+func (j *jsiiProxy_TieredCache) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ApiShield) ZoneId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
+func (j *jsiiProxy_TieredCache) ZoneIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -333,17 +332,17 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield cloudflare_api_shield} Resource.
-func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache} Resource.
+func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheConfig) TieredCache {
 	_init_.Initialize()
 
-	if err := validateNewApiShieldParameters(scope, id, config); err != nil {
+	if err := validateNewTieredCacheParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_ApiShield{}
+	j := jsiiProxy_TieredCache{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,18 +350,29 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/api_shield cloudflare_api_shield} Resource.
-func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache} Resource.
+func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *string, config *TieredCacheConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		[]interface{}{scope, id, config},
-		a,
+		t,
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetConnection(val interface{}) {
+func (j *jsiiProxy_TieredCache)SetCacheType(val *string) {
+	if err := j.validateSetCacheTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TieredCache)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +383,7 @@ func (j *jsiiProxy_ApiShield)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetCount(val *float64) {
+func (j *jsiiProxy_TieredCache)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -381,7 +391,7 @@ func (j *jsiiProxy_ApiShield)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TieredCache)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +399,7 @@ func (j *jsiiProxy_ApiShield)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TieredCache)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +407,7 @@ func (j *jsiiProxy_ApiShield)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetId(val *string) {
+func (j *jsiiProxy_TieredCache)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +418,7 @@ func (j *jsiiProxy_ApiShield)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TieredCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +429,7 @@ func (j *jsiiProxy_ApiShield)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TieredCache)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,7 +437,7 @@ func (j *jsiiProxy_ApiShield)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TieredCache)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +448,7 @@ func (j *jsiiProxy_ApiShield)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetZoneId(val *string) {
+func (j *jsiiProxy_TieredCache)SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,16 +476,16 @@ func (j *jsiiProxy_ApiShield)SetZoneId(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiShield_IsConstruct(x interface{}) *bool {
+func TieredCache_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateApiShield_IsConstructParameters(x); err != nil {
+	if err := validateTieredCache_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,16 +495,16 @@ func ApiShield_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiShield_IsTerraformElement(x interface{}) *bool {
+func TieredCache_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateApiShield_IsTerraformElementParameters(x); err != nil {
+	if err := validateTieredCache_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,16 +514,16 @@ func ApiShield_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiShield_IsTerraformResource(x interface{}) *bool {
+func TieredCache_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateApiShield_IsTerraformResourceParameters(x); err != nil {
+	if err := validateTieredCache_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -522,36 +532,36 @@ func ApiShield_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func ApiShield_TfResourceType() *string {
+func TieredCache_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-cloudflare.apiShield.ApiShield",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) AddOverride(path *string, value interface{}) {
-	if err := a.validateAddOverrideParameters(path, value); err != nil {
+func (t *jsiiProxy_TieredCache) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		a,
+		t,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -560,14 +570,14 @@ func (a *jsiiProxy_ApiShield) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -576,14 +586,14 @@ func (a *jsiiProxy_ApiShield) GetBooleanAttribute(terraformAttribute *string) cd
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -592,14 +602,14 @@ func (a *jsiiProxy_ApiShield) GetBooleanMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -608,14 +618,14 @@ func (a *jsiiProxy_ApiShield) GetListAttribute(terraformAttribute *string) *[]*s
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -624,14 +634,14 @@ func (a *jsiiProxy_ApiShield) GetNumberAttribute(terraformAttribute *string) *fl
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -640,14 +650,14 @@ func (a *jsiiProxy_ApiShield) GetNumberListAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -656,14 +666,14 @@ func (a *jsiiProxy_ApiShield) GetNumberMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetStringAttribute(terraformAttribute *string) *string {
-	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -672,14 +682,14 @@ func (a *jsiiProxy_ApiShield) GetStringAttribute(terraformAttribute *string) *st
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -688,14 +698,14 @@ func (a *jsiiProxy_ApiShield) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (t *jsiiProxy_TieredCache) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -704,57 +714,38 @@ func (a *jsiiProxy_ApiShield) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) OverrideLogicalId(newLogicalId *string) {
-	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (t *jsiiProxy_TieredCache) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		a,
+		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) PutAuthIdCharacteristics(value interface{}) {
-	if err := a.validatePutAuthIdCharacteristicsParameters(value); err != nil {
-		panic(err)
-	}
+func (t *jsiiProxy_TieredCache) ResetId() {
 	_jsii_.InvokeVoid(
-		a,
-		"putAuthIdCharacteristics",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApiShield) ResetAuthIdCharacteristics() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAuthIdCharacteristics",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiShield) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
+		t,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (a *jsiiProxy_ApiShield) ResetOverrideLogicalId() {
+func (t *jsiiProxy_TieredCache) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		a,
+		t,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (a *jsiiProxy_ApiShield) SynthesizeAttributes() *map[string]interface{} {
+func (t *jsiiProxy_TieredCache) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -763,11 +754,11 @@ func (a *jsiiProxy_ApiShield) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToMetadata() interface{} {
+func (t *jsiiProxy_TieredCache) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -776,11 +767,11 @@ func (a *jsiiProxy_ApiShield) ToMetadata() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToString() *string {
+func (t *jsiiProxy_TieredCache) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -789,11 +780,11 @@ func (a *jsiiProxy_ApiShield) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToTerraform() interface{} {
+func (t *jsiiProxy_TieredCache) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		a,
+		t,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

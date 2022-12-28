@@ -19,7 +19,9 @@ type WorkersKvNamespaceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#title WorkersKvNamespace#title}.
+	// Title value of the Worker KV Namespace.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace#title WorkersKvNamespace#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
 	// The account identifier to target for the resource.
 	//

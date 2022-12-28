@@ -24,6 +24,9 @@ type CustomHostname interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomMetadata() *map[string]*string
+	SetCustomMetadata(val *map[string]*string)
+	CustomMetadataInput() *map[string]*string
 	CustomOriginServer() *string
 	SetCustomOriginServer(val *string)
 	CustomOriginServerInput() *string
@@ -107,6 +110,7 @@ type CustomHostname interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSsl(value interface{})
+	ResetCustomMetadata()
 	ResetCustomOriginServer()
 	ResetCustomOriginSni()
 	ResetId()
@@ -165,6 +169,26 @@ func (j *jsiiProxy_CustomHostname) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) CustomMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostname) CustomMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadataInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +529,17 @@ func (j *jsiiProxy_CustomHostname)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostname)SetCustomMetadata(val *map[string]*string) {
+	if err := j.validateSetCustomMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMetadata",
 		val,
 	)
 }
@@ -895,6 +930,14 @@ func (c *jsiiProxy_CustomHostname) PutSsl(value interface{}) {
 		c,
 		"putSsl",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CustomHostname) ResetCustomMetadata() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomMetadata",
+		nil, // no parameters
 	)
 }
 

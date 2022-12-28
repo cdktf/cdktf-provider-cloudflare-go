@@ -67,6 +67,8 @@ type ApiShieldAuthIdCharacteristicsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +483,22 @@ func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

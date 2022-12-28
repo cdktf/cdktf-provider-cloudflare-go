@@ -543,6 +543,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putStatusCodeTtl", GoMethod: "PutStatusCodeTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefault", GoMethod: "ResetDefault"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatusCodeTtl", GoMethod: "ResetStatusCodeTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "statusCodeTtl", GoGetter: "StatusCodeTtl"},

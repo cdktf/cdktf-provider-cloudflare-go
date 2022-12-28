@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	AnalyticsEngineBinding() WorkerScriptAnalyticsEngineBindingList
 	AnalyticsEngineBindingInput() interface{}
 	// Experimental.
@@ -116,6 +119,7 @@ type WorkerScript interface {
 	PutSecretTextBinding(value interface{})
 	PutServiceBinding(value interface{})
 	PutWebassemblyBinding(value interface{})
+	ResetAccountId()
 	ResetAnalyticsEngineBinding()
 	ResetId()
 	ResetKvNamespaceBinding()
@@ -141,6 +145,26 @@ type WorkerScript interface {
 // The jsii proxy struct for WorkerScript
 type jsiiProxy_WorkerScript struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkerScript) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkerScript) AnalyticsEngineBinding() WorkerScriptAnalyticsEngineBindingList {
@@ -550,6 +574,17 @@ func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *st
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -1002,6 +1037,14 @@ func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value interface{}) {
 		w,
 		"putWebassemblyBinding",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

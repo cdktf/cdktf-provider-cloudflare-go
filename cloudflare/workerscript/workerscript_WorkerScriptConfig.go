@@ -27,6 +27,10 @@ type WorkerScriptConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#name WorkerScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// The account identifier to target for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#account_id WorkerScript#account_id}
+	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// analytics_engine_binding block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#analytics_engine_binding WorkerScript#analytics_engine_binding}

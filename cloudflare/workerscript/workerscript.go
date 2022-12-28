@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		reflect.TypeOf((*WorkerScript)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsEngineBinding", GoGetter: "AnalyticsEngineBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsEngineBindingInput", GoGetter: "AnalyticsEngineBindingInput"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBinding", GoGetter: "R2BucketBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBindingInput", GoGetter: "R2BucketBindingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnalyticsEngineBinding", GoMethod: "ResetAnalyticsEngineBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKvNamespaceBinding", GoMethod: "ResetKvNamespaceBinding"},

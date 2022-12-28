@@ -27,6 +27,12 @@ type CustomHostnameConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#zone_id CustomHostname#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Custom metadata associated with custom hostname.
+	//
+	// Only supports primitive string values, all other values are accessible via the API directly.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+	CustomMetadata *map[string]*string `field:"optional" json:"customMetadata" yaml:"customMetadata"`
 	// The custom origin server used for certificates.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
