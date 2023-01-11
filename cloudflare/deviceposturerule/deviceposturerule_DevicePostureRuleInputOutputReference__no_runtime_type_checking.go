@@ -88,11 +88,19 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOperatorPar
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsDistroNameParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsDistroRevisionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOverallParameters(val *string) error {
 	return nil
 }
 
@@ -105,6 +113,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllP
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRunningParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetSensorConfigParameters(val *string) error {
 	return nil
 }
 
@@ -125,6 +137,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetThumbprintP
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetVersionOperatorParameters(val *string) error {
 	return nil
 }
 

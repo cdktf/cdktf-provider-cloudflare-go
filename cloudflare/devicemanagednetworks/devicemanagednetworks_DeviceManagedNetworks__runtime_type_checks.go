@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package record
+package devicemanagednetworks
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (r *jsiiProxy_Record) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (r *jsiiProxy_Record) validateAddOverrideParameters(path *string, value int
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (r *jsiiProxy_Record) validateGetAnyMapAttributeParameters(terraformAttribu
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (r *jsiiProxy_Record) validateGetBooleanAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (r *jsiiProxy_Record) validateGetBooleanMapAttributeParameters(terraformAtt
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (r *jsiiProxy_Record) validateGetListAttributeParameters(terraformAttribute
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (r *jsiiProxy_Record) validateGetNumberAttributeParameters(terraformAttribu
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (r *jsiiProxy_Record) validateGetNumberListAttributeParameters(terraformAtt
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (r *jsiiProxy_Record) validateGetNumberMapAttributeParameters(terraformAttr
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (r *jsiiProxy_Record) validateGetStringAttributeParameters(terraformAttribu
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (r *jsiiProxy_Record) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (r *jsiiProxy_Record) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
-func (r *jsiiProxy_Record) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (r *jsiiProxy_Record) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
-func (r *jsiiProxy_Record) validatePutDataParameters(value *RecordData) error {
+func (d *jsiiProxy_DeviceManagedNetworks) validatePutConfigParameters(value *DeviceManagedNetworksConfigA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -122,18 +122,7 @@ func (r *jsiiProxy_Record) validatePutDataParameters(value *RecordData) error {
 	return nil
 }
 
-func (r *jsiiProxy_Record) validatePutTimeoutsParameters(value *RecordTimeouts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func validateRecord_IsConstructParameters(x interface{}) error {
+func validateDeviceManagedNetworks_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -141,7 +130,7 @@ func validateRecord_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRecord_IsTerraformElementParameters(x interface{}) error {
+func validateDeviceManagedNetworks_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -149,7 +138,7 @@ func validateRecord_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRecord_IsTerraformResourceParameters(x interface{}) error {
+func validateDeviceManagedNetworks_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -157,27 +146,7 @@ func validateRecord_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetAllowOverwriteParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetCommentParameters(val *string) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -185,7 +154,7 @@ func (j *jsiiProxy_Record) validateSetCommentParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -218,7 +187,7 @@ func (j *jsiiProxy_Record) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,7 +195,7 @@ func (j *jsiiProxy_Record) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -234,7 +203,7 @@ func (j *jsiiProxy_Record) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,15 +211,7 @@ func (j *jsiiProxy_Record) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetPriorityParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -296,27 +257,7 @@ func (j *jsiiProxy_Record) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetProxiedParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetTagsParameters(val *[]*string) error {
+func (j *jsiiProxy_DeviceManagedNetworks) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -324,39 +265,7 @@ func (j *jsiiProxy_Record) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Record) validateSetTtlParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetValueParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_Record) validateSetZoneIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewRecordParameters(scope constructs.Construct, id *string, config *RecordConfig) error {
+func validateNewDeviceManagedNetworksParameters(scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

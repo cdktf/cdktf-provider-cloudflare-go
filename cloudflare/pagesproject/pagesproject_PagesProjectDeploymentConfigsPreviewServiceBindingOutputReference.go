@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type PagesProjectDeploymentConfigsOutputReference interface {
+type PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -25,14 +25,19 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Environment() *string
+	SetEnvironment(val *string)
+	EnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectDeploymentConfigs
-	SetInternalValue(val *PagesProjectDeploymentConfigs)
-	Preview() PagesProjectDeploymentConfigsPreviewOutputReference
-	PreviewInput() *PagesProjectDeploymentConfigsPreview
-	Production() PagesProjectDeploymentConfigsProductionOutputReference
-	ProductionInput() *PagesProjectDeploymentConfigsProduction
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Service() *string
+	SetService(val *string)
+	ServiceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,8 +70,7 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPreview(value *PagesProjectDeploymentConfigsPreview)
-	PutProduction(value *PagesProjectDeploymentConfigsProduction)
+	ResetEnvironment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,12 +81,12 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for PagesProjectDeploymentConfigsOutputReference
-type jsiiProxy_PagesProjectDeploymentConfigsOutputReference struct {
+// The jsii proxy struct for PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference
+type jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -92,7 +96,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComplexObjectIn
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -102,7 +106,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComplexObjectIs
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -112,7 +116,27 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Fqn() *string {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) Environment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) EnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"environmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -122,8 +146,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InternalValue() *PagesProjectDeploymentConfigs {
-	var returns *PagesProjectDeploymentConfigs
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -132,47 +156,47 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Preview() PagesProjectDeploymentConfigsPreviewOutputReference {
-	var returns PagesProjectDeploymentConfigsPreviewOutputReference
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"preview",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PreviewInput() *PagesProjectDeploymentConfigsPreview {
-	var returns *PagesProjectDeploymentConfigsPreview
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) NameInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"previewInput",
+		"nameInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Production() PagesProjectDeploymentConfigsProductionOutputReference {
-	var returns PagesProjectDeploymentConfigsProductionOutputReference
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) Service() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"production",
+		"service",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ProductionInput() *PagesProjectDeploymentConfigsProduction {
-	var returns *PagesProjectDeploymentConfigsProduction
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ServiceInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"productionInput",
+		"serviceInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -182,7 +206,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -193,34 +217,34 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformResour
 }
 
 
-func NewPagesProjectDeploymentConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsOutputReference {
+func NewPagesProjectDeploymentConfigsPreviewServiceBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPagesProjectDeploymentConfigsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewPagesProjectDeploymentConfigsPreviewServiceBindingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_PagesProjectDeploymentConfigsOutputReference{}
+	j := jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsOutputReference_Override(p PagesProjectDeploymentConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectDeploymentConfigsPreviewServiceBindingOutputReference_Override(p PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +255,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +266,18 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetInternalValue(val *PagesProjectDeploymentConfigs) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetEnvironment(val *string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +288,29 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetService(val *string) {
+	if err := j.validateSetServiceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +321,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +332,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformReso
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComputeFqn() *string {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -288,7 +345,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -304,7 +361,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -320,7 +377,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanAttri
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -336,7 +393,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanMapAt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -352,7 +409,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetListAttribut
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -368,7 +425,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -384,7 +441,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberListAt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -400,7 +457,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetNumberMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -416,7 +473,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetStringAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -432,7 +489,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -445,7 +502,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationAs
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -461,29 +518,15 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationFo
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PutPreview(value *PagesProjectDeploymentConfigsPreview) {
-	if err := p.validatePutPreviewParameters(value); err != nil {
-		panic(err)
-	}
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		p,
-		"putPreview",
-		[]interface{}{value},
+		"resetEnvironment",
+		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PutProduction(value *PagesProjectDeploymentConfigsProduction) {
-	if err := p.validatePutProductionParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putProduction",
-		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -499,7 +542,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Resolve(_contex
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ToString() *string {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewServiceBindingOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

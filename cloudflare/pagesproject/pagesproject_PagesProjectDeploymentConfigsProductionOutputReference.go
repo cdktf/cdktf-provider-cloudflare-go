@@ -10,6 +10,9 @@ import (
 
 type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	cdktf.ComplexObject
+	AlwaysUseLatestCompatibilityDate() interface{}
+	SetAlwaysUseLatestCompatibilityDate(val interface{})
+	AlwaysUseLatestCompatibilityDateInput() interface{}
 	CompatibilityDate() *string
 	SetCompatibilityDate(val *string)
 	CompatibilityDateInput() *string
@@ -40,6 +43,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
+	FailOpen() interface{}
+	SetFailOpen(val interface{})
+	FailOpenInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PagesProjectDeploymentConfigsProduction
@@ -50,6 +56,8 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	R2Buckets() *map[string]*string
 	SetR2Buckets(val *map[string]*string)
 	R2BucketsInput() *map[string]*string
+	ServiceBinding() PagesProjectDeploymentConfigsProductionServiceBindingList
+	ServiceBindingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,6 +66,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UsageModel() *string
+	SetUsageModel(val *string)
+	UsageModelInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,13 +93,18 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutServiceBinding(value interface{})
+	ResetAlwaysUseLatestCompatibilityDate()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetD1Databases()
 	ResetDurableObjectNamespaces()
 	ResetEnvironmentVariables()
+	ResetFailOpen()
 	ResetKvNamespaces()
 	ResetR2Buckets()
+	ResetServiceBinding()
+	ResetUsageModel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -102,6 +118,26 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 // The jsii proxy struct for PagesProjectDeploymentConfigsProductionOutputReference
 type jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysUseLatestCompatibilityDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"alwaysUseLatestCompatibilityDateInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) CompatibilityDate() *string {
@@ -234,6 +270,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Envir
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) FailOpen() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) FailOpenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOpenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -294,6 +350,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) R2Buc
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ServiceBinding() PagesProjectDeploymentConfigsProductionServiceBindingList {
+	var returns PagesProjectDeploymentConfigsProductionServiceBindingList
+	_jsii_.Get(
+		j,
+		"serviceBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ServiceBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serviceBindingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +385,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) UsageModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) UsageModelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModelInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +435,17 @@ func NewPagesProjectDeploymentConfigsProductionOutputReference_Override(p PagesP
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetAlwaysUseLatestCompatibilityDate(val interface{}) {
+	if err := j.validateSetAlwaysUseLatestCompatibilityDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alwaysUseLatestCompatibilityDate",
+		val,
 	)
 }
 
@@ -419,6 +526,17 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetEnv
 	)
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetFailOpen(val interface{}) {
+	if err := j.validateSetFailOpenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failOpen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetInternalValue(val *PagesProjectDeploymentConfigsProduction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -470,6 +588,17 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetUsageModel(val *string) {
+	if err := j.validateSetUsageModelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usageModel",
 		val,
 	)
 }
@@ -660,6 +789,25 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Inter
 	return returns
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) PutServiceBinding(value interface{}) {
+	if err := p.validatePutServiceBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putServiceBinding",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetAlwaysUseLatestCompatibilityDate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAlwaysUseLatestCompatibilityDate",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetCompatibilityDate() {
 	_jsii_.InvokeVoid(
 		p,
@@ -700,6 +848,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetFailOpen() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFailOpen",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetKvNamespaces() {
 	_jsii_.InvokeVoid(
 		p,
@@ -712,6 +868,22 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	_jsii_.InvokeVoid(
 		p,
 		"resetR2Buckets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetServiceBinding() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServiceBinding",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) ResetUsageModel() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUsageModel",
 		nil, // no parameters
 	)
 }

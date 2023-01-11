@@ -44,7 +44,15 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutServiceBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetAlwaysUseLatestCompatibilityDateParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,6 +84,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetFailOpenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetInternalValueParameters(val *PagesProjectDeploymentConfigsProduction) error {
 	return nil
 }
@@ -93,6 +105,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetUsageModelParameters(val *string) error {
 	return nil
 }
 
