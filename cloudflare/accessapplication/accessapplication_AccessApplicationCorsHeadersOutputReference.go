@@ -2,9 +2,9 @@ package accessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v4/accessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
