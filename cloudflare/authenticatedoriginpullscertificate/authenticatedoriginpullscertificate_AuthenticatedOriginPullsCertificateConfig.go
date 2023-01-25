@@ -19,15 +19,17 @@ type AuthenticatedOriginPullsCertificateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// **Modifying this attribute will force creation of a new resource.**.
+	// The public client certificate. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#certificate AuthenticatedOriginPullsCertificate#certificate}
 	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
-	// **Modifying this attribute will force creation of a new resource.**.
+	// The private key of the client certificate. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#private_key AuthenticatedOriginPullsCertificate#private_key}
 	PrivateKey *string `field:"required" json:"privateKey" yaml:"privateKey"`
-	// **Modifying this attribute will force creation of a new resource.**.
+	// The form of Authenticated Origin Pulls to upload the certificate to.
+	//
+	// Available values: `per-zone`, `per-hostname`. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/authenticated_origin_pulls_certificate#type AuthenticatedOriginPullsCertificate#type}
 	Type *string `field:"required" json:"type" yaml:"type"`

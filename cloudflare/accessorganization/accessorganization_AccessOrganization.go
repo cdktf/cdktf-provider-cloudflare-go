@@ -75,6 +75,9 @@ type AccessOrganization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserSeatExpirationInactiveTime() *string
+	SetUserSeatExpirationInactiveTime(val *string)
+	UserSeatExpirationInactiveTimeInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -112,6 +115,7 @@ type AccessOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUserSeatExpirationInactiveTime()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -408,6 +412,26 @@ func (j *jsiiProxy_AccessOrganization) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) UserSeatExpirationInactiveTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userSeatExpirationInactiveTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) UserSeatExpirationInactiveTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userSeatExpirationInactiveTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,6 +598,17 @@ func (j *jsiiProxy_AccessOrganization)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetUserSeatExpirationInactiveTime(val *string) {
+	if err := j.validateSetUserSeatExpirationInactiveTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userSeatExpirationInactiveTime",
 		val,
 	)
 }
@@ -910,6 +945,14 @@ func (a *jsiiProxy_AccessOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetUserSeatExpirationInactiveTime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUserSeatExpirationInactiveTime",
 		nil, // no parameters
 	)
 }

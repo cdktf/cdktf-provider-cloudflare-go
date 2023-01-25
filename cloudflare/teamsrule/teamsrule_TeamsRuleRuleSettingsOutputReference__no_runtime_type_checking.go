@@ -52,6 +52,10 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutCheckSession
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParameters(value *TeamsRuleRuleSettingsEgress) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverrideParameters(value *TeamsRuleRuleSettingsL4Override) error {
 	return nil
 }

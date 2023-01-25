@@ -112,6 +112,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutCheckSession
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParameters(value *TeamsRuleRuleSettingsEgress) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverrideParameters(value *TeamsRuleRuleSettingsL4Override) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

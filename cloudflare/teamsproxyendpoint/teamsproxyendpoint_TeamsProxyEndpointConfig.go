@@ -23,9 +23,13 @@ type TeamsProxyEndpointConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#account_id TeamsProxyEndpoint#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}.
+	// The networks CIDRs that will be allowed to initiate proxy connections.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#ips TeamsProxyEndpoint#ips}
 	Ips *[]*string `field:"required" json:"ips" yaml:"ips"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#name TeamsProxyEndpoint#name}.
+	// Name of the teams proxy endpoint.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#name TeamsProxyEndpoint#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint#id TeamsProxyEndpoint#id}.
 	//

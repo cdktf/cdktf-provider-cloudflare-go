@@ -19,7 +19,9 @@ type DataCloudflareAccessIdentityProviderConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/access_identity_provider#name DataCloudflareAccessIdentityProvider#name}.
+	// Access Identity Provider name to search for.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/d/access_identity_provider#name DataCloudflareAccessIdentityProvider#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The account identifier to target for the resource. Must provide only one of `zone_id`, `account_id`.
 	//

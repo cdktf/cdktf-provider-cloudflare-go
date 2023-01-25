@@ -23,9 +23,15 @@ type RateLimitConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#action RateLimit#action}
 	Action *RateLimitAction `field:"required" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#period RateLimit#period}.
+	// The time in seconds to count matching traffic.
+	//
+	// If the count exceeds threshold within this period the action will be performed.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#period RateLimit#period}
 	Period *float64 `field:"required" json:"period" yaml:"period"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#threshold RateLimit#threshold}.
+	// The threshold that triggers the rate limit mitigations, combine with period.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#threshold RateLimit#threshold}
 	Threshold *float64 `field:"required" json:"threshold" yaml:"threshold"`
 	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
@@ -37,9 +43,13 @@ type RateLimitConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#correlate RateLimit#correlate}
 	Correlate *RateLimitCorrelate `field:"optional" json:"correlate" yaml:"correlate"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#description RateLimit#description}.
+	// A note that you can use to describe the reason for a rate limit.
+	//
+	// This value is sanitized and all tags are removed.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#description RateLimit#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Defaults to `false`.
+	// Whether this ratelimit is currently disabled. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit#disabled RateLimit#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`

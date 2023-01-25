@@ -100,6 +100,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetUserSeatExpirationInactiveTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

@@ -19,7 +19,9 @@ type LoadBalancerPoolConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#name LoadBalancerPool#name}.
+	// A short name (tag) for the pool.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#name LoadBalancerPool#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// origins block.
 	//
@@ -29,11 +31,19 @@ type LoadBalancerPoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#account_id LoadBalancerPool#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#check_regions LoadBalancerPool#check_regions}.
+	// A list of regions (specified by region code) from which to run health checks.
+	//
+	// Empty means every Cloudflare data center (the default), but requires an Enterprise plan. Region codes can be found [here](https://developers.cloudflare.com/load-balancing/reference/region-mapping-api).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#check_regions LoadBalancerPool#check_regions}
 	CheckRegions *[]*string `field:"optional" json:"checkRegions" yaml:"checkRegions"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#description LoadBalancerPool#description}.
+	// Free text description.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#description LoadBalancerPool#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Defaults to `true`.
+	// Whether to enable (the default) this pool.
+	//
+	// Disabled pools will not receive traffic and are excluded from health checks. Disabling a pool will cause any load balancers using it to failover to the next pool (if any). Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#enabled LoadBalancerPool#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
@@ -42,21 +52,33 @@ type LoadBalancerPoolConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#latitude LoadBalancerPool#latitude}.
+	// The latitude this pool is physically located at; used for proximity steering.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#latitude LoadBalancerPool#latitude}
 	Latitude *float64 `field:"optional" json:"latitude" yaml:"latitude"`
 	// load_shedding block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#load_shedding LoadBalancerPool#load_shedding}
 	LoadShedding interface{} `field:"optional" json:"loadShedding" yaml:"loadShedding"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#longitude LoadBalancerPool#longitude}.
+	// The longitude this pool is physically located at; used for proximity steering.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#longitude LoadBalancerPool#longitude}
 	Longitude *float64 `field:"optional" json:"longitude" yaml:"longitude"`
-	// Defaults to `1`.
+	// The minimum number of origins that must be healthy for this pool to serve traffic.
+	//
+	// If the number of healthy origins falls below this number, the pool will be marked unhealthy and we will failover to the next available pool. Defaults to `1`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#minimum_origins LoadBalancerPool#minimum_origins}
 	MinimumOrigins *float64 `field:"optional" json:"minimumOrigins" yaml:"minimumOrigins"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#monitor LoadBalancerPool#monitor}.
+	// The ID of the Monitor to use for health checking origins within this pool.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#monitor LoadBalancerPool#monitor}
 	Monitor *string `field:"optional" json:"monitor" yaml:"monitor"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#notification_email LoadBalancerPool#notification_email}.
+	// The email address to send health status notifications to.
+	//
+	// This can be an individual mailbox or a mailing list. Multiple emails can be supplied as a comma delimited list.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool#notification_email LoadBalancerPool#notification_email}
 	NotificationEmail *string `field:"optional" json:"notificationEmail" yaml:"notificationEmail"`
 	// origin_steering block.
 	//

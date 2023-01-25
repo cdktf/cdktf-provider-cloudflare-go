@@ -19,7 +19,9 @@ type LogpushOwnershipChallengeConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// **Modifying this attribute will force creation of a new resource.**.
+	// Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
+	//
+	// Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#destination). **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/logpush_ownership_challenge#destination_conf LogpushOwnershipChallenge#destination_conf}
 	DestinationConf *string `field:"required" json:"destinationConf" yaml:"destinationConf"`

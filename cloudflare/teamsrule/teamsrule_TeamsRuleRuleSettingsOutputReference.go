@@ -38,6 +38,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Egress() TeamsRuleRuleSettingsEgressOutputReference
+	EgressInput() *TeamsRuleRuleSettingsEgress
 	// Experimental.
 	Fqn() *string
 	InsecureDisableDnssecValidation() interface{}
@@ -87,12 +89,14 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls)
 	PutCheckSession(value *TeamsRuleRuleSettingsCheckSession)
+	PutEgress(value *TeamsRuleRuleSettingsEgress)
 	PutL4Override(value *TeamsRuleRuleSettingsL4Override)
 	ResetAddHeaders()
 	ResetBisoAdminControls()
 	ResetBlockPageEnabled()
 	ResetBlockPageReason()
 	ResetCheckSession()
+	ResetEgress()
 	ResetInsecureDisableDnssecValidation()
 	ResetL4Override()
 	ResetOverrideHost()
@@ -237,6 +241,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Egress() TeamsRuleRuleSettingsEgressOutputReference {
+	var returns TeamsRuleRuleSettingsEgressOutputReference
+	_jsii_.Get(
+		j,
+		"egress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) EgressInput() *TeamsRuleRuleSettingsEgress {
+	var returns *TeamsRuleRuleSettingsEgress
+	_jsii_.Get(
+		j,
+		"egressInput",
 		&returns,
 	)
 	return returns
@@ -719,6 +743,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutCheckSession(value *
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutEgress(value *TeamsRuleRuleSettingsEgress) {
+	if err := t.validatePutEgressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putEgress",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutL4Override(value *TeamsRuleRuleSettingsL4Override) {
 	if err := t.validatePutL4OverrideParameters(value); err != nil {
 		panic(err)
@@ -766,6 +801,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetCheckSession() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetCheckSession",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetEgress() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEgress",
 		nil, // no parameters
 	)
 }

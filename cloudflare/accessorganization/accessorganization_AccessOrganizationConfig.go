@@ -44,6 +44,12 @@ type AccessOrganizationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization#name AccessOrganization#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// The amount of time a user seat is inactive before it expires.
+	//
+	// When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count. Must be in the format `300ms` or `2h45m`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization#user_seat_expiration_inactive_time AccessOrganization#user_seat_expiration_inactive_time}
+	UserSeatExpirationInactiveTime *string `field:"optional" json:"userSeatExpirationInactiveTime" yaml:"userSeatExpirationInactiveTime"`
 	// The zone identifier to target for the resource. Conflicts with `account_id`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization#zone_id AccessOrganization#zone_id}
