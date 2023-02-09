@@ -23,7 +23,7 @@ type PagesProjectConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#account_id PagesProject#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Name of the project.
+	// Name of the project. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_project#name PagesProject#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

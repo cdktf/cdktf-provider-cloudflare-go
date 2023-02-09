@@ -235,6 +235,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putUser", GoMethod: "PutUser"},
 			_jsii_.MemberProperty{JsiiProperty: "queryString", GoGetter: "QueryString"},
 			_jsii_.MemberProperty{JsiiProperty: "queryStringInput", GoGetter: "QueryStringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCookie", GoMethod: "ResetCookie"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeader", GoMethod: "ResetHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

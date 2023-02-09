@@ -47,6 +47,12 @@ type RulesetRulesRatelimitOutputReference interface {
 	RequestsToOrigin() interface{}
 	SetRequestsToOrigin(val interface{})
 	RequestsToOriginInput() interface{}
+	ScorePerPeriod() *float64
+	SetScorePerPeriod(val *float64)
+	ScorePerPeriodInput() *float64
+	ScoreResponseHeaderName() *string
+	SetScoreResponseHeaderName(val *string)
+	ScoreResponseHeaderNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,6 +91,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	ResetPeriod()
 	ResetRequestsPerPeriod()
 	ResetRequestsToOrigin()
+	ResetScorePerPeriod()
+	ResetScoreResponseHeaderName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -270,6 +278,46 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOriginInput()
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScorePerPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scorePerPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScorePerPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scorePerPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScoreResponseHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreResponseHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ScoreResponseHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scoreResponseHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,6 +461,28 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsToOrigin(val 
 	_jsii_.Set(
 		j,
 		"requestsToOrigin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScorePerPeriod(val *float64) {
+	if err := j.validateSetScorePerPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scorePerPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScoreResponseHeaderName(val *string) {
+	if err := j.validateSetScoreResponseHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scoreResponseHeaderName",
 		val,
 	)
 }
@@ -669,6 +739,22 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetRequestsToOrigin()
 	_jsii_.InvokeVoid(
 		r,
 		"resetRequestsToOrigin",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetScorePerPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetScorePerPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetScoreResponseHeaderName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetScoreResponseHeaderName",
 		nil, // no parameters
 	)
 }

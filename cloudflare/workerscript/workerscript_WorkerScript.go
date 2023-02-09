@@ -71,6 +71,8 @@ type WorkerScript interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueueBinding() WorkerScriptQueueBindingList
+	QueueBindingInput() interface{}
 	R2BucketBinding() WorkerScriptR2BucketBindingList
 	R2BucketBindingInput() interface{}
 	// Experimental.
@@ -115,6 +117,7 @@ type WorkerScript interface {
 	PutAnalyticsEngineBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
 	PutPlainTextBinding(value interface{})
+	PutQueueBinding(value interface{})
 	PutR2BucketBinding(value interface{})
 	PutSecretTextBinding(value interface{})
 	PutServiceBinding(value interface{})
@@ -128,6 +131,7 @@ type WorkerScript interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlainTextBinding()
+	ResetQueueBinding()
 	ResetR2BucketBinding()
 	ResetSecretTextBinding()
 	ResetServiceBinding()
@@ -422,6 +426,26 @@ func (j *jsiiProxy_WorkerScript) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) QueueBinding() WorkerScriptQueueBindingList {
+	var returns WorkerScriptQueueBindingList
+	_jsii_.Get(
+		j,
+		"queueBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) QueueBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queueBindingInput",
 		&returns,
 	)
 	return returns
@@ -996,6 +1020,17 @@ func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutQueueBinding(value interface{}) {
+	if err := w.validatePutQueueBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putQueueBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value interface{}) {
 	if err := w.validatePutR2BucketBindingParameters(value); err != nil {
 		panic(err)
@@ -1092,6 +1127,14 @@ func (w *jsiiProxy_WorkerScript) ResetPlainTextBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPlainTextBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetQueueBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetQueueBinding",
 		nil, // no parameters
 	)
 }

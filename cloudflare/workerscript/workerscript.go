@@ -54,10 +54,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAnalyticsEngineBinding", GoMethod: "PutAnalyticsEngineBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putKvNamespaceBinding", GoMethod: "PutKvNamespaceBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextBinding", GoMethod: "PutPlainTextBinding"},
+			_jsii_.MemberMethod{JsiiMethod: "putQueueBinding", GoMethod: "PutQueueBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putR2BucketBinding", GoMethod: "PutR2BucketBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecretTextBinding", GoMethod: "PutSecretTextBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceBinding", GoMethod: "PutServiceBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebassemblyBinding", GoMethod: "PutWebassemblyBinding"},
+			_jsii_.MemberProperty{JsiiProperty: "queueBinding", GoGetter: "QueueBinding"},
+			_jsii_.MemberProperty{JsiiProperty: "queueBindingInput", GoGetter: "QueueBindingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBinding", GoGetter: "R2BucketBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBindingInput", GoGetter: "R2BucketBindingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -68,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetModule", GoMethod: "ResetModule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextBinding", GoMethod: "ResetPlainTextBinding"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueueBinding", GoMethod: "ResetQueueBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetR2BucketBinding", GoMethod: "ResetR2BucketBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretTextBinding", GoMethod: "ResetSecretTextBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceBinding", GoMethod: "ResetServiceBinding"},
@@ -275,6 +279,67 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptPlainTextBindingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding",
+		reflect.TypeOf((*WorkerScriptQueueBinding)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingList",
+		reflect.TypeOf((*WorkerScriptQueueBindingList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkerScriptQueueBindingList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingOutputReference",
+		reflect.TypeOf((*WorkerScriptQueueBindingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "binding", GoGetter: "Binding"},
+			_jsii_.MemberProperty{JsiiProperty: "bindingInput", GoGetter: "BindingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "queue", GoGetter: "Queue"},
+			_jsii_.MemberProperty{JsiiProperty: "queueInput", GoGetter: "QueueInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkerScriptQueueBindingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

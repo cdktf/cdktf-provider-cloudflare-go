@@ -28,5 +28,13 @@ type RulesetRulesRatelimit struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#requests_to_origin Ruleset#requests_to_origin}
 	RequestsToOrigin interface{} `field:"optional" json:"requestsToOrigin" yaml:"requestsToOrigin"`
+	// The maximum aggregate score over the period of time that will trigger Rate Limiting rule.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#score_per_period Ruleset#score_per_period}
+	ScorePerPeriod *float64 `field:"optional" json:"scorePerPeriod" yaml:"scorePerPeriod"`
+	// Name of HTTP header in the response, set by the origin server, with the score for the current request.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset#score_response_header_name Ruleset#score_response_header_name}
+	ScoreResponseHeaderName *string `field:"optional" json:"scoreResponseHeaderName" yaml:"scoreResponseHeaderName"`
 }
 

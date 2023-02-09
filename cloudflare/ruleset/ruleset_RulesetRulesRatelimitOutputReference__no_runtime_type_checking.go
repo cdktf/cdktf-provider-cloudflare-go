@@ -84,6 +84,14 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetRequestsToOr
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetScorePerPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetScoreResponseHeaderNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

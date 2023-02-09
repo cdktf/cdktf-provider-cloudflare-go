@@ -52,6 +52,10 @@ type WorkerScriptConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#plain_text_binding WorkerScript#plain_text_binding}
 	PlainTextBinding interface{} `field:"optional" json:"plainTextBinding" yaml:"plainTextBinding"`
+	// queue_binding block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#queue_binding WorkerScript#queue_binding}
+	QueueBinding interface{} `field:"optional" json:"queueBinding" yaml:"queueBinding"`
 	// r2_bucket_binding block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script#r2_bucket_binding WorkerScript#r2_bucket_binding}

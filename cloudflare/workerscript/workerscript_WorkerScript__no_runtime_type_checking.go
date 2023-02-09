@@ -64,6 +64,10 @@ func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value int
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutQueueBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutR2BucketBindingParameters(value interface{}) error {
 	return nil
 }
