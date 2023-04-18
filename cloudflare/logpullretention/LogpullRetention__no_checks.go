@@ -68,6 +68,10 @@ func (j *jsiiProxy_LogpullRetention) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LogpullRetention) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpullRetention) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -223,14 +223,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) validateSetStatusParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

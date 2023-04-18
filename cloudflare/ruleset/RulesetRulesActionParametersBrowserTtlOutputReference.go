@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	DefaultInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersBrowserTtl
-	SetInternalValue(val *RulesetRulesActionParametersBrowserTtl)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -68,6 +68,7 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDefault()
+	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,8 +144,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) InternalValue() *RulesetRulesActionParametersBrowserTtl {
-	var returns *RulesetRulesActionParametersBrowserTtl
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Terraf
 }
 
 
-func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersBrowserTtlOutputReference {
+func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersBrowserTtlOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersBrowserTtlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersBrowserTtlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r RulesetRulesActionParametersBrowserTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r RulesetRulesActionParametersBrowserTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -254,7 +255,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetDefa
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetInternalValue(val *RulesetRulesActionParametersBrowserTtl) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,6 +489,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		r,
 		"resetDefault",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMode",
 		nil, // no parameters
 	)
 }

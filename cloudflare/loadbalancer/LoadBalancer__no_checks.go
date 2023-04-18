@@ -80,6 +80,10 @@ func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) e
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+	return nil
+}
+
 func validateLoadBalancer_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func validateLoadBalancer_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_LoadBalancer) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancer) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
@@ -133,10 +141,6 @@ func (j *jsiiProxy_LoadBalancer) validateSetProxiedParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_LoadBalancer) validateSetSessionAffinityParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancer) validateSetSessionAffinityAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 

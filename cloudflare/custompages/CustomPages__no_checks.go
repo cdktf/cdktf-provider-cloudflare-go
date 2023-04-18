@@ -72,6 +72,10 @@ func (j *jsiiProxy_CustomPages) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_CustomPages) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomPages) validateSetIdParameters(val *string) error {
 	return nil
 }

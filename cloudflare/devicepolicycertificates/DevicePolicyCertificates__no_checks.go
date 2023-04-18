@@ -68,6 +68,10 @@ func (j *jsiiProxy_DevicePolicyCertificates) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DevicePolicyCertificates) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePolicyCertificates) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

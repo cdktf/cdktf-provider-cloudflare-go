@@ -44,23 +44,23 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyCookie) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyHeader) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyHost) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryString) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyUser) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersCacheKeyCustomKey) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

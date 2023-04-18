@@ -2,14 +2,14 @@ package devicemanagednetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/devicemanagednetworks/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/devicemanagednetworks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/device_managed_networks cloudflare_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
 type DeviceManagedNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,9 +26,9 @@ type DeviceManagedNetworks interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DeviceManagedNetworks) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DeviceManagedNetworks) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DeviceManagedNetworks) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) DeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks_Override(d DeviceManagedNetworks, scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_DeviceManagedNetworks)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworks)SetCount(val *float64) {
+func (j *jsiiProxy_DeviceManagedNetworks)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

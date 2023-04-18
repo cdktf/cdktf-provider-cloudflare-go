@@ -72,6 +72,10 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_WorkersKvNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersKvNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

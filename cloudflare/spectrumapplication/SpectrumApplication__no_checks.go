@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpectrumApplication) validatePutDnsParameters(value *Spectrum
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validatePutEdgeIpsParameters(value *SpectrumApplicationEdgeIps) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *SpectrumApplicationOriginDns) error {
 	return nil
 }
@@ -84,11 +88,7 @@ func (j *jsiiProxy_SpectrumApplication) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetEdgeIpConnectivityParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_SpectrumApplication) validateSetEdgeIpsParameters(val *[]*string) error {
+func (j *jsiiProxy_SpectrumApplication) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 

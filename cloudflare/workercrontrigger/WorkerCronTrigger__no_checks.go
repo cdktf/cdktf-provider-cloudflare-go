@@ -72,6 +72,10 @@ func (j *jsiiProxy_WorkerCronTrigger) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_WorkerCronTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerCronTrigger) validateSetIdParameters(val *string) error {
 	return nil
 }

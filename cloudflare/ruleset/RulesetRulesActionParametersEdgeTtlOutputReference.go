@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	DefaultInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersEdgeTtl
-	SetInternalValue(val *RulesetRulesActionParametersEdgeTtl)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -71,6 +71,7 @@ type RulesetRulesActionParametersEdgeTtlOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutStatusCodeTtl(value interface{})
 	ResetDefault()
+	ResetMode()
 	ResetStatusCodeTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -147,8 +148,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) InternalValue() *RulesetRulesActionParametersEdgeTtl {
-	var returns *RulesetRulesActionParametersEdgeTtl
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,29 +219,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) Terraform
 }
 
 
-func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersEdgeTtlOutputReference {
+func NewRulesetRulesActionParametersEdgeTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersEdgeTtlOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersEdgeTtlOutputReference_Override(r RulesetRulesActionParametersEdgeTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersEdgeTtlOutputReference_Override(r RulesetRulesActionParametersEdgeTtlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -278,7 +279,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetDefault
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetInternalValue(val *RulesetRulesActionParametersEdgeTtl) {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,6 +524,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ResetDefa
 	_jsii_.InvokeVoid(
 		r,
 		"resetDefault",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMode",
 		nil, // no parameters
 	)
 }

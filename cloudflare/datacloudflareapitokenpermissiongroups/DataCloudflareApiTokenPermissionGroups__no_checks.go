@@ -64,6 +64,10 @@ func validateDataCloudflareApiTokenPermissionGroups_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

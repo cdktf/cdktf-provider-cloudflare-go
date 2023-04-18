@@ -8,8 +8,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfig",
-		reflect.TypeOf((*TunnelConfig)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
+		reflect.TypeOf((*TunnelConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -56,61 +56,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_TunnelConfig{}
+			j := jsiiProxy_TunnelConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
-		reflect.TypeOf((*TunnelConfigConfig)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig",
+		reflect.TypeOf((*TunnelConfigAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigA",
-		reflect.TypeOf((*TunnelConfigConfigA)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigAOutputReference",
-		reflect.TypeOf((*TunnelConfigConfigAOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ingressRule", GoGetter: "IngressRule"},
-			_jsii_.MemberProperty{JsiiProperty: "ingressRuleInput", GoGetter: "IngressRuleInput"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "originRequest", GoGetter: "OriginRequest"},
-			_jsii_.MemberProperty{JsiiProperty: "originRequestInput", GoGetter: "OriginRequestInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putIngressRule", GoMethod: "PutIngressRule"},
-			_jsii_.MemberMethod{JsiiMethod: "putOriginRequest", GoMethod: "PutOriginRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "putWarpRouting", GoMethod: "PutWarpRouting"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOriginRequest", GoMethod: "ResetOriginRequest"},
-			_jsii_.MemberMethod{JsiiMethod: "resetWarpRouting", GoMethod: "ResetWarpRouting"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "warpRouting", GoGetter: "WarpRouting"},
-			_jsii_.MemberProperty{JsiiProperty: "warpRoutingInput", GoGetter: "WarpRoutingInput"},
-		},
-		func() interface{} {
-			j := jsiiProxy_TunnelConfigConfigAOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
+		reflect.TypeOf((*TunnelConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
@@ -324,6 +281,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
+		reflect.TypeOf((*TunnelConfigConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ingressRule", GoGetter: "IngressRule"},
+			_jsii_.MemberProperty{JsiiProperty: "ingressRuleInput", GoGetter: "IngressRuleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "originRequest", GoGetter: "OriginRequest"},
+			_jsii_.MemberProperty{JsiiProperty: "originRequestInput", GoGetter: "OriginRequestInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putIngressRule", GoMethod: "PutIngressRule"},
+			_jsii_.MemberMethod{JsiiMethod: "putOriginRequest", GoMethod: "PutOriginRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "putWarpRouting", GoMethod: "PutWarpRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginRequest", GoMethod: "ResetOriginRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWarpRouting", GoMethod: "ResetWarpRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "warpRouting", GoGetter: "WarpRouting"},
+			_jsii_.MemberProperty{JsiiProperty: "warpRoutingInput", GoGetter: "WarpRoutingInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TunnelConfigConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

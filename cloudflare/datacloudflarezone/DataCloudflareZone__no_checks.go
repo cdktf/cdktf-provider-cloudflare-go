@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataCloudflareZone) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZone) validateSetIdParameters(val *string) error {
 	return nil
 }

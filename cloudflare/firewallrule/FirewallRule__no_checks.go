@@ -72,6 +72,10 @@ func (j *jsiiProxy_FirewallRule) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_FirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirewallRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

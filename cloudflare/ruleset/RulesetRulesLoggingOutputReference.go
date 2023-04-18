@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,11 +30,8 @@ type RulesetRulesLoggingOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesLogging
-	SetInternalValue(val *RulesetRulesLogging)
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +65,6 @@ type RulesetRulesLoggingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
-	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,31 +140,11 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) InternalValue() *RulesetRulesLogging {
-	var returns *RulesetRulesLogging
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
 		&returns,
 	)
 	return returns
@@ -195,29 +171,29 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) TerraformResource() cdktf
 }
 
 
-func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesLoggingOutputReference {
+func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesLoggingOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesLoggingOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -255,24 +231,13 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetInternalValue(val *RulesetRulesLogging) {
+func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesLoggingOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -489,14 +454,6 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

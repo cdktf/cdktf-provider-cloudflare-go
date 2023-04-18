@@ -92,6 +92,10 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDefaultParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package totaltls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/totaltls/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/totaltls/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls cloudflare_total_tls}.
 type TotalTls interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type TotalTls interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_TotalTls) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TotalTls) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TotalTls) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_TotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig) TotalTls {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewTotalTls(scope constructs.Construct, id *string, config *TotalTlsConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls cloudflare_total_tls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls cloudflare_total_tls} Resource.
 func NewTotalTls_Override(t TotalTls, scope constructs.Construct, id *string, config *TotalTlsConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_TotalTls)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TotalTls)SetCount(val *float64) {
+func (j *jsiiProxy_TotalTls)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

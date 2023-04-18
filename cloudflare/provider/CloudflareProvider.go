@@ -2,19 +2,16 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare cloudflare}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs cloudflare}.
 type CloudflareProvider interface {
 	cdktf.TerraformProvider
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -76,7 +73,6 @@ type CloudflareProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetAlias()
 	ResetApiBasePath()
 	ResetApiClientLogging()
@@ -105,26 +101,6 @@ type CloudflareProvider interface {
 // The jsii proxy struct for CloudflareProvider
 type jsiiProxy_CloudflareProvider struct {
 	internal.Type__cdktfTerraformProvider
-}
-
-func (j *jsiiProxy_CloudflareProvider) AccountId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) AccountIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accountIdInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CloudflareProvider) Alias() *string {
@@ -468,7 +444,7 @@ func (j *jsiiProxy_CloudflareProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs cloudflare} Resource.
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
 
@@ -486,7 +462,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs cloudflare} Resource.
 func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Construct, id *string, config *CloudflareProviderConfig) {
 	_init_.Initialize()
 
@@ -494,14 +470,6 @@ func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Const
 		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		[]interface{}{scope, id, config},
 		c,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetAccountId(val *string) {
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -707,14 +675,6 @@ func (c *jsiiProxy_CloudflareProvider) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -2,14 +2,14 @@ package datacloudflareapitokenpermissiongroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflareapitokenpermissiongroups/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareapitokenpermissiongroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/api_token_permission_groups cloudflare_api_token_permission_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
 type DataCloudflareApiTokenPermissionGroups interface {
 	cdktf.TerraformDataSource
 	Account() cdktf.StringMap
@@ -18,9 +18,9 @@ type DataCloudflareApiTokenPermissionGroups interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,7 +302,7 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Zone() cdktf.StringMa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
 func NewDataCloudflareApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsConfig) DataCloudflareApiTokenPermissionGroups {
 	_init_.Initialize()
 
@@ -320,7 +320,7 @@ func NewDataCloudflareApiTokenPermissionGroups(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
 func NewDataCloudflareApiTokenPermissionGroups_Override(d DataCloudflareApiTokenPermissionGroups, scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsConfig) {
 	_init_.Initialize()
 
@@ -331,7 +331,10 @@ func NewDataCloudflareApiTokenPermissionGroups_Override(d DataCloudflareApiToken
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups)SetCount(val *float64) {
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

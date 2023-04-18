@@ -2,14 +2,14 @@ package tieredcache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/tieredcache/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tieredcache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 type TieredCache interface {
 	cdktf.TerraformResource
 	CacheType() *string
@@ -24,9 +24,9 @@ type TieredCache interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_TieredCache) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_TieredCache) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TieredCache) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_TieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheConfig) TieredCache {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *string, config *TieredCacheConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_TieredCache)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TieredCache)SetCount(val *float64) {
+func (j *jsiiProxy_TieredCache)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

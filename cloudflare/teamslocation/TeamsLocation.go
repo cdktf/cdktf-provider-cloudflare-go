@@ -2,14 +2,14 @@ package teamslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/teamslocation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/teamslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location cloudflare_teams_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location cloudflare_teams_location}.
 type TeamsLocation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -28,9 +28,9 @@ type TeamsLocation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,8 +204,8 @@ func (j *jsiiProxy_TeamsLocation) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_TeamsLocation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TeamsLocation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,7 +435,7 @@ func (j *jsiiProxy_TeamsLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocationConfig) TeamsLocation {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation_Override(t TeamsLocation, scope constructs.Construct, id *string, config *TeamsLocationConfig) {
 	_init_.Initialize()
 
@@ -497,7 +497,10 @@ func (j *jsiiProxy_TeamsLocation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsLocation)SetCount(val *float64) {
+func (j *jsiiProxy_TeamsLocation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_EmailRoutingCatchAll) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_EmailRoutingCatchAll) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailRoutingCatchAll) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

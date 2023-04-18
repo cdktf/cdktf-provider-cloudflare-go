@@ -2,14 +2,14 @@ package splittunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/splittunnel/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/splittunnel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel cloudflare_split_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/split_tunnel cloudflare_split_tunnel}.
 type SplitTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type SplitTunnel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_SplitTunnel) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SplitTunnel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SplitTunnel) TunnelsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel cloudflare_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
 func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelConfig) SplitTunnel {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/split_tunnel cloudflare_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
 func NewSplitTunnel_Override(s SplitTunnel, scope constructs.Construct, id *string, config *SplitTunnelConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_SplitTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetCount(val *float64) {
+func (j *jsiiProxy_SplitTunnel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

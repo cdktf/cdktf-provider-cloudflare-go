@@ -76,6 +76,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetCert
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetClaimsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetClientIdParameters(val *string) error {
 	return nil
 }
@@ -125,6 +129,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkce
 }
 
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetRedirectUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
 

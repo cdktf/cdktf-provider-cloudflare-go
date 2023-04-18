@@ -2,14 +2,14 @@ package managedheaders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/managedheaders/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/managedheaders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/managed_headers cloudflare_managed_headers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers}.
 type ManagedHeaders interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ManagedHeaders interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ManagedHeaders) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ManagedHeaders) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ManagedHeaders) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ManagedHeaders) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHeadersConfig) ManagedHeaders {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders_Override(m ManagedHeaders, scope constructs.Construct, id *string, config *ManagedHeadersConfig) {
 	_init_.Initialize()
 
@@ -397,7 +397,10 @@ func (j *jsiiProxy_ManagedHeaders)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedHeaders)SetCount(val *float64) {
+func (j *jsiiProxy_ManagedHeaders)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

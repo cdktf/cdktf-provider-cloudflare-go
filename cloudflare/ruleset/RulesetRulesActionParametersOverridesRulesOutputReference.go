@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -44,9 +44,6 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	SensitivityLevel() *string
 	SetSensitivityLevel(val *string)
 	SensitivityLevelInput() *string
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,7 +81,6 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	ResetId()
 	ResetScoreThreshold()
 	ResetSensitivityLevel()
-	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -250,26 +246,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Se
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,17 +378,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"sensitivityLevel",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -661,14 +626,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Re
 	_jsii_.InvokeVoid(
 		r,
 		"resetSensitivityLevel",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

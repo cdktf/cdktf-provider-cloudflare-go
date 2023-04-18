@@ -88,6 +88,10 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPool) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

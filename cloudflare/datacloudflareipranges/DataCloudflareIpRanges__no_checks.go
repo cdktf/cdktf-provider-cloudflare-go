@@ -64,6 +64,10 @@ func validateDataCloudflareIpRanges_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareIpRanges) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

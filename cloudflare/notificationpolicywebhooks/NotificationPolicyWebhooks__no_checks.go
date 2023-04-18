@@ -72,6 +72,10 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyWebhooks) validateSetIdParameters(val *string) error {
 	return nil
 }

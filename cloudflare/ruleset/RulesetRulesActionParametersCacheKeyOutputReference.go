@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,15 +31,15 @@ type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomKey() RulesetRulesActionParametersCacheKeyCustomKeyOutputReference
-	CustomKeyInput() *RulesetRulesActionParametersCacheKeyCustomKey
+	CustomKey() RulesetRulesActionParametersCacheKeyCustomKeyList
+	CustomKeyInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreQueryStringsOrder() interface{}
 	SetIgnoreQueryStringsOrder(val interface{})
 	IgnoreQueryStringsOrderInput() interface{}
-	InternalValue() *RulesetRulesActionParametersCacheKey
-	SetInternalValue(val *RulesetRulesActionParametersCacheKey)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,7 +72,7 @@ type RulesetRulesActionParametersCacheKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomKey(value *RulesetRulesActionParametersCacheKeyCustomKey)
+	PutCustomKey(value interface{})
 	ResetCacheByDeviceType()
 	ResetCacheDeceptionArmor()
 	ResetCustomKey()
@@ -162,8 +162,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKey() RulesetRulesActionParametersCacheKeyCustomKeyOutputReference {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyOutputReference
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKey() RulesetRulesActionParametersCacheKeyCustomKeyList {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyList
 	_jsii_.Get(
 		j,
 		"customKey",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKe
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKeyInput() *RulesetRulesActionParametersCacheKeyCustomKey {
-	var returns *RulesetRulesActionParametersCacheKeyCustomKey
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) CustomKeyInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"customKeyInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) IgnoreQu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) InternalValue() *RulesetRulesActionParametersCacheKey {
-	var returns *RulesetRulesActionParametersCacheKey
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -243,29 +243,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Terrafor
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyOutputReference {
+func NewRulesetRulesActionParametersCacheKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyOutputReference_Override(r RulesetRulesActionParametersCacheKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersCacheKeyOutputReference_Override(r RulesetRulesActionParametersCacheKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -325,7 +325,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetIgnore
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetInternalValue(val *RulesetRulesActionParametersCacheKey) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +544,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) Interpol
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) PutCustomKey(value *RulesetRulesActionParametersCacheKeyCustomKey) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) PutCustomKey(value interface{}) {
 	if err := r.validatePutCustomKeyParameters(value); err != nil {
 		panic(err)
 	}

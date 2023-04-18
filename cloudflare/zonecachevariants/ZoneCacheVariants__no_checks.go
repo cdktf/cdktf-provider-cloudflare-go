@@ -76,6 +76,10 @@ func (j *jsiiProxy_ZoneCacheVariants) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ZoneCacheVariants) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneCacheVariants) validateSetGifParameters(val *[]*string) error {
 	return nil
 }

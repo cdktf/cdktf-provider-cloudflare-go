@@ -96,6 +96,10 @@ func (j *jsiiProxy_Healthcheck) validateSetConsecutiveSuccessesParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_Healthcheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Healthcheck) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

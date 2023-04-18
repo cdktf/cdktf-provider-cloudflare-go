@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,8 +27,8 @@ type RulesetRulesActionParametersFromListOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersFromList
-	SetInternalValue(val *RulesetRulesActionParametersFromList)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -67,6 +67,8 @@ type RulesetRulesActionParametersFromListOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKey()
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -122,8 +124,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) InternalValue() *RulesetRulesActionParametersFromList {
-	var returns *RulesetRulesActionParametersFromList
+func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Terrafor
 }
 
 
-func NewRulesetRulesActionParametersFromListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersFromListOutputReference {
+func NewRulesetRulesActionParametersFromListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersFromListOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersFromListOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersFromListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersFromListOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersFromListOutputReference_Override(r RulesetRulesActionParametersFromListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersFromListOutputReference_Override(r RulesetRulesActionParametersFromListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -242,7 +244,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetInternalValue(val *RulesetRulesActionParametersFromList) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +483,22 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -2,14 +2,14 @@ package accessorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessorganization/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type AccessOrganization interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -75,6 +75,9 @@ type AccessOrganization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UiReadOnlyToggleReason() *string
+	SetUiReadOnlyToggleReason(val *string)
+	UiReadOnlyToggleReasonInput() *string
 	UserSeatExpirationInactiveTime() *string
 	SetUserSeatExpirationInactiveTime(val *string)
 	UserSeatExpirationInactiveTimeInput() *string
@@ -115,6 +118,7 @@ type AccessOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUiReadOnlyToggleReason()
 	ResetUserSeatExpirationInactiveTime()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -202,8 +206,8 @@ func (j *jsiiProxy_AccessOrganization) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_AccessOrganization) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessOrganization) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -412,6 +416,26 @@ func (j *jsiiProxy_AccessOrganization) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessOrganization) UiReadOnlyToggleReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiReadOnlyToggleReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) UiReadOnlyToggleReasonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uiReadOnlyToggleReasonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessOrganization) UserSeatExpirationInactiveTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -453,7 +477,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 
@@ -515,7 +539,10 @@ func (j *jsiiProxy_AccessOrganization)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessOrganization)SetCount(val *float64) {
+func (j *jsiiProxy_AccessOrganization)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -598,6 +625,17 @@ func (j *jsiiProxy_AccessOrganization)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetUiReadOnlyToggleReason(val *string) {
+	if err := j.validateSetUiReadOnlyToggleReasonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uiReadOnlyToggleReason",
 		val,
 	)
 }
@@ -945,6 +983,14 @@ func (a *jsiiProxy_AccessOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetUiReadOnlyToggleReason() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUiReadOnlyToggleReason",
 		nil, // no parameters
 	)
 }

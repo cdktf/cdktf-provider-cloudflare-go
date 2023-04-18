@@ -2,14 +2,14 @@ package web3hostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/web3hostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/web3hostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 type Web3Hostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Web3Hostname interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -155,8 +155,8 @@ func (j *jsiiProxy_Web3Hostname) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Web3Hostname) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Web3Hostname) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_Web3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3HostnameConfig) Web3Hostname {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *string, config *Web3HostnameConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_Web3Hostname)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Web3Hostname)SetCount(val *float64) {
+func (j *jsiiProxy_Web3Hostname)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

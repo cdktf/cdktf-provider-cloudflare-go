@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type RulesetRulesActionParametersUriPathOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersUriPath
-	SetInternalValue(val *RulesetRulesActionParametersUriPath)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference) InternalValue() *RulesetRulesActionParametersUriPath {
-	var returns *RulesetRulesActionParametersUriPath
+func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference) ValueInpu
 }
 
 
-func NewRulesetRulesActionParametersUriPathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersUriPathOutputReference {
+func NewRulesetRulesActionParametersUriPathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersUriPathOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersUriPathOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersUriPathOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersUriPathOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersUriPathOutputReference_Override(r RulesetRulesActionParametersUriPathOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersUriPathOutputReference_Override(r RulesetRulesActionParametersUriPathOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriPathOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -255,7 +255,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference)SetExpress
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference)SetInternalValue(val *RulesetRulesActionParametersUriPath) {
+func (j *jsiiProxy_RulesetRulesActionParametersUriPathOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

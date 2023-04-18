@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRandomSteering", GoMethod: "PutRandomSteering"},
 			_jsii_.MemberMethod{JsiiMethod: "putRegionPools", GoMethod: "PutRegionPools"},
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
+			_jsii_.MemberMethod{JsiiMethod: "putSessionAffinityAttributes", GoMethod: "PutSessionAffinityAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "randomSteering", GoGetter: "RandomSteering"},
 			_jsii_.MemberProperty{JsiiProperty: "randomSteeringInput", GoGetter: "RandomSteeringInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -864,6 +865,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPopPools", GoMethod: "PutPopPools"},
 			_jsii_.MemberMethod{JsiiMethod: "putRandomSteering", GoMethod: "PutRandomSteering"},
 			_jsii_.MemberMethod{JsiiMethod: "putRegionPools", GoMethod: "PutRegionPools"},
+			_jsii_.MemberMethod{JsiiMethod: "putSessionAffinityAttributes", GoMethod: "PutSessionAffinityAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "randomSteering", GoGetter: "RandomSteering"},
 			_jsii_.MemberProperty{JsiiProperty: "randomSteeringInput", GoGetter: "RandomSteeringInput"},
 			_jsii_.MemberProperty{JsiiProperty: "regionPools", GoGetter: "RegionPools"},
@@ -1083,6 +1085,141 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributes",
+		reflect.TypeOf((*LoadBalancerRulesOverridesSessionAffinityAttributes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesList",
+		reflect.TypeOf((*LoadBalancerRulesOverridesSessionAffinityAttributesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
+		reflect.TypeOf((*LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSamesite", GoMethod: "ResetSamesite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecure", GoMethod: "ResetSecure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZeroDowntimeFailover", GoMethod: "ResetZeroDowntimeFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "samesite", GoGetter: "Samesite"},
+			_jsii_.MemberProperty{JsiiProperty: "samesiteInput", GoGetter: "SamesiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secure", GoGetter: "Secure"},
+			_jsii_.MemberProperty{JsiiProperty: "secureInput", GoGetter: "SecureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroDowntimeFailover", GoGetter: "ZeroDowntimeFailover"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroDowntimeFailoverInput", GoGetter: "ZeroDowntimeFailoverInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributes",
+		reflect.TypeOf((*LoadBalancerSessionAffinityAttributes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesList",
+		reflect.TypeOf((*LoadBalancerSessionAffinityAttributesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerSessionAffinityAttributesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerSessionAffinityAttributesOutputReference",
+		reflect.TypeOf((*LoadBalancerSessionAffinityAttributesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "drainDuration", GoGetter: "DrainDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "drainDurationInput", GoGetter: "DrainDurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDrainDuration", GoMethod: "ResetDrainDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSamesite", GoMethod: "ResetSamesite"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecure", GoMethod: "ResetSecure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZeroDowntimeFailover", GoMethod: "ResetZeroDowntimeFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "samesite", GoGetter: "Samesite"},
+			_jsii_.MemberProperty{JsiiProperty: "samesiteInput", GoGetter: "SamesiteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secure", GoGetter: "Secure"},
+			_jsii_.MemberProperty{JsiiProperty: "secureInput", GoGetter: "SecureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroDowntimeFailover", GoGetter: "ZeroDowntimeFailover"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroDowntimeFailoverInput", GoGetter: "ZeroDowntimeFailoverInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

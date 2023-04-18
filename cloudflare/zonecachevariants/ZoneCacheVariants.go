@@ -2,14 +2,14 @@ package zonecachevariants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/zonecachevariants/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/zonecachevariants/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
 type ZoneCacheVariants interface {
 	cdktf.TerraformResource
 	Avif() *[]*string
@@ -27,9 +27,9 @@ type ZoneCacheVariants interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -222,8 +222,8 @@ func (j *jsiiProxy_ZoneCacheVariants) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ZoneCacheVariants) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -573,7 +573,7 @@ func (j *jsiiProxy_ZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) ZoneCacheVariants {
 	_init_.Initialize()
 
@@ -591,7 +591,7 @@ func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) {
 	_init_.Initialize()
 
@@ -635,7 +635,10 @@ func (j *jsiiProxy_ZoneCacheVariants)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants)SetCount(val *float64) {
+func (j *jsiiProxy_ZoneCacheVariants)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

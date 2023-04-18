@@ -2,14 +2,14 @@ package custompages
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/custompages/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/custompages/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages cloudflare_custom_pages}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_pages cloudflare_custom_pages}.
 type CustomPages interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type CustomPages interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_CustomPages) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CustomPages) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomPages) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CustomPages) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesConfig) CustomPages {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *string, config *CustomPagesConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_CustomPages)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomPages)SetCount(val *float64) {
+func (j *jsiiProxy_CustomPages)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

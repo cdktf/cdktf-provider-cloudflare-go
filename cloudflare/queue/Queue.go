@@ -2,14 +2,14 @@ package queue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/queue/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/queue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/queue cloudflare_queue}.
 type Queue interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type Queue interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_Queue) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Queue) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Queue) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_Queue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *QueueConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_Queue)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Queue)SetCount(val *float64) {
+func (j *jsiiProxy_Queue)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

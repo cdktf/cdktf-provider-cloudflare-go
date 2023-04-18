@@ -44,19 +44,19 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value *RulesetRulesActionParameters) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value *RulesetRulesExposedCredentialCheck) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value *RulesetRulesLogging) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value *RulesetRulesRatelimit) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value interface{}) error {
 	return nil
 }
 
@@ -88,6 +88,10 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetExpressionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -96,11 +100,19 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetLastUpdatedParameters
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetRefParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetVersionParameters(val *string) error {
 	return nil
 }
 

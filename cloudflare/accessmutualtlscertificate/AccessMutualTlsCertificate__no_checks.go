@@ -80,6 +80,10 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

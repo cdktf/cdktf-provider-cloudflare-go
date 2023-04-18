@@ -2,14 +2,17 @@ package deviceposturerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/deviceposturerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/deviceposturerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DevicePostureRuleInputOutputReference interface {
 	cdktf.ComplexObject
+	CheckDisks() *[]*string
+	SetCheckDisks(val *[]*string)
+	CheckDisksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -118,6 +121,7 @@ type DevicePostureRuleInputOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCheckDisks()
 	ResetComplianceStatus()
 	ResetConnectionId()
 	ResetDomain()
@@ -150,6 +154,26 @@ type DevicePostureRuleInputOutputReference interface {
 // The jsii proxy struct for DevicePostureRuleInputOutputReference
 type jsiiProxy_DevicePostureRuleInputOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checkDisksInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ComplexObjectIndex() interface{} {
@@ -630,6 +654,17 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*string) {
+	if err := j.validateSetCheckDisksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checkDisks",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1078,6 +1113,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCheckDisks() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCheckDisks",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetComplianceStatus() {

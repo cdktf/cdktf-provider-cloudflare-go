@@ -2,14 +2,14 @@ package ratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ratelimit/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/rate_limit cloudflare_rate_limit}.
 type RateLimit interface {
 	cdktf.TerraformResource
 	Action() RateLimitActionOutputReference
@@ -28,9 +28,9 @@ type RateLimit interface {
 	Correlate() RateLimitCorrelateOutputReference
 	CorrelateInput() *RateLimitCorrelate
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -227,8 +227,8 @@ func (j *jsiiProxy_RateLimit) CorrelateInput() *RateLimitCorrelate {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimit) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RateLimit) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_RateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfig) RateLimit {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, config *RateLimitConfig) {
 	_init_.Initialize()
 
@@ -549,7 +549,10 @@ func (j *jsiiProxy_RateLimit)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RateLimit)SetCount(val *float64) {
+func (j *jsiiProxy_RateLimit)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

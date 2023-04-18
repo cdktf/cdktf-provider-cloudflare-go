@@ -2,9 +2,9 @@ package teamsrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/teamsrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/teamsrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,6 +13,11 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	AddHeaders() *map[string]*string
 	SetAddHeaders(val *map[string]*string)
 	AddHeadersInput() *map[string]*string
+	AllowChildBypass() interface{}
+	SetAllowChildBypass(val interface{})
+	AllowChildBypassInput() interface{}
+	AuditSsh() TeamsRuleRuleSettingsAuditSshOutputReference
+	AuditSshInput() *TeamsRuleRuleSettingsAuditSsh
 	BisoAdminControls() TeamsRuleRuleSettingsBisoAdminControlsOutputReference
 	BisoAdminControlsInput() *TeamsRuleRuleSettingsBisoAdminControls
 	BlockPageEnabled() interface{}
@@ -21,6 +26,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	BlockPageReason() *string
 	SetBlockPageReason(val *string)
 	BlockPageReasonInput() *string
+	BypassParentRule() interface{}
+	SetBypassParentRule(val interface{})
+	BypassParentRuleInput() interface{}
 	CheckSession() TeamsRuleRuleSettingsCheckSessionOutputReference
 	CheckSessionInput() *TeamsRuleRuleSettingsCheckSession
 	// the index of the complex object in a list.
@@ -47,6 +55,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	InsecureDisableDnssecValidationInput() interface{}
 	InternalValue() *TeamsRuleRuleSettings
 	SetInternalValue(val *TeamsRuleRuleSettings)
+	IpCategories() interface{}
+	SetIpCategories(val interface{})
+	IpCategoriesInput() interface{}
 	L4Override() TeamsRuleRuleSettingsL4OverrideOutputReference
 	L4OverrideInput() *TeamsRuleRuleSettingsL4Override
 	OverrideHost() *string
@@ -55,6 +66,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	OverrideIps() *[]*string
 	SetOverrideIps(val *[]*string)
 	OverrideIpsInput() *[]*string
+	PayloadLog() TeamsRuleRuleSettingsPayloadLogOutputReference
+	PayloadLogInput() *TeamsRuleRuleSettingsPayloadLog
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,6 +76,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UntrustedCert() TeamsRuleRuleSettingsUntrustedCertOutputReference
+	UntrustedCertInput() *TeamsRuleRuleSettingsUntrustedCert
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -87,20 +102,29 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuditSsh(value *TeamsRuleRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls)
 	PutCheckSession(value *TeamsRuleRuleSettingsCheckSession)
 	PutEgress(value *TeamsRuleRuleSettingsEgress)
 	PutL4Override(value *TeamsRuleRuleSettingsL4Override)
+	PutPayloadLog(value *TeamsRuleRuleSettingsPayloadLog)
+	PutUntrustedCert(value *TeamsRuleRuleSettingsUntrustedCert)
 	ResetAddHeaders()
+	ResetAllowChildBypass()
+	ResetAuditSsh()
 	ResetBisoAdminControls()
 	ResetBlockPageEnabled()
 	ResetBlockPageReason()
+	ResetBypassParentRule()
 	ResetCheckSession()
 	ResetEgress()
 	ResetInsecureDisableDnssecValidation()
+	ResetIpCategories()
 	ResetL4Override()
 	ResetOverrideHost()
 	ResetOverrideIps()
+	ResetPayloadLog()
+	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +155,46 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AddHeadersInput() *map[
 	_jsii_.Get(
 		j,
 		"addHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AllowChildBypass() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowChildBypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AllowChildBypassInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowChildBypassInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AuditSsh() TeamsRuleRuleSettingsAuditSshOutputReference {
+	var returns TeamsRuleRuleSettingsAuditSshOutputReference
+	_jsii_.Get(
+		j,
+		"auditSsh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) AuditSshInput() *TeamsRuleRuleSettingsAuditSsh {
+	var returns *TeamsRuleRuleSettingsAuditSsh
+	_jsii_.Get(
+		j,
+		"auditSshInput",
 		&returns,
 	)
 	return returns
@@ -191,6 +255,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) BlockPageReasonInput() 
 	_jsii_.Get(
 		j,
 		"blockPageReasonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) BypassParentRule() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassParentRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) BypassParentRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassParentRuleInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +390,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InternalValue() *TeamsR
 	return returns
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) IpCategories() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipCategories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) IpCategoriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipCategoriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) L4Override() TeamsRuleRuleSettingsL4OverrideOutputReference {
 	var returns TeamsRuleRuleSettingsL4OverrideOutputReference
 	_jsii_.Get(
@@ -366,6 +470,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) OverrideIpsInput() *[]*
 	return returns
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PayloadLog() TeamsRuleRuleSettingsPayloadLogOutputReference {
+	var returns TeamsRuleRuleSettingsPayloadLogOutputReference
+	_jsii_.Get(
+		j,
+		"payloadLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PayloadLogInput() *TeamsRuleRuleSettingsPayloadLog {
+	var returns *TeamsRuleRuleSettingsPayloadLog
+	_jsii_.Get(
+		j,
+		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,6 +505,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) TerraformResource() cdk
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) UntrustedCert() TeamsRuleRuleSettingsUntrustedCertOutputReference {
+	var returns TeamsRuleRuleSettingsUntrustedCertOutputReference
+	_jsii_.Get(
+		j,
+		"untrustedCert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) UntrustedCertInput() *TeamsRuleRuleSettingsUntrustedCert {
+	var returns *TeamsRuleRuleSettingsUntrustedCert
+	_jsii_.Get(
+		j,
+		"untrustedCertInput",
 		&returns,
 	)
 	return returns
@@ -425,6 +569,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetAddHeaders(val *map[s
 	)
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetAllowChildBypass(val interface{}) {
+	if err := j.validateSetAllowChildBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowChildBypass",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetBlockPageEnabled(val interface{}) {
 	if err := j.validateSetBlockPageEnabledParameters(val); err != nil {
 		panic(err)
@@ -443,6 +598,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetBlockPageReason(val *
 	_jsii_.Set(
 		j,
 		"blockPageReason",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetBypassParentRule(val interface{}) {
+	if err := j.validateSetBypassParentRuleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypassParentRule",
 		val,
 	)
 }
@@ -487,6 +653,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetInternalValue(val *Te
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetIpCategories(val interface{}) {
+	if err := j.validateSetIpCategoriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCategories",
 		val,
 	)
 }
@@ -721,6 +898,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutAuditSsh(value *TeamsRuleRuleSettingsAuditSsh) {
+	if err := t.validatePutAuditSshParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putAuditSsh",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls) {
 	if err := t.validatePutBisoAdminControlsParameters(value); err != nil {
 		panic(err)
@@ -765,10 +953,48 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutL4Override(value *Te
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutPayloadLog(value *TeamsRuleRuleSettingsPayloadLog) {
+	if err := t.validatePutPayloadLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putPayloadLog",
+		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutUntrustedCert(value *TeamsRuleRuleSettingsUntrustedCert) {
+	if err := t.validatePutUntrustedCertParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putUntrustedCert",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetAddHeaders() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetAddHeaders",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetAllowChildBypass() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowChildBypass",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetAuditSsh() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAuditSsh",
 		nil, // no parameters
 	)
 }
@@ -797,6 +1023,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetBlockPageReason() 
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetBypassParentRule() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetBypassParentRule",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetCheckSession() {
 	_jsii_.InvokeVoid(
 		t,
@@ -821,6 +1055,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetInsecureDisableDns
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetIpCategories() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetIpCategories",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetL4Override() {
 	_jsii_.InvokeVoid(
 		t,
@@ -841,6 +1083,22 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetOverrideIps() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideIps",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetPayloadLog() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetUntrustedCert() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetUntrustedCert",
 		nil, // no parameters
 	)
 }

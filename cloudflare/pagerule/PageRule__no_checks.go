@@ -72,6 +72,10 @@ func (j *jsiiProxy_PageRule) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_PageRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PageRule) validateSetIdParameters(val *string) error {
 	return nil
 }

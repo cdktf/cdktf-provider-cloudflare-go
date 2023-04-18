@@ -80,10 +80,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) validateSetStatusParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

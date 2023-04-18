@@ -2,14 +2,14 @@ package magicfirewallruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/magicfirewallruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/magicfirewallruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
 type MagicFirewallRuleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type MagicFirewallRuleset interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_MagicFirewallRuleset) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MagicFirewallRuleset) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MagicFirewallRuleset) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_MagicFirewallRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
 func NewMagicFirewallRuleset(scope constructs.Construct, id *string, config *MagicFirewallRulesetConfig) MagicFirewallRuleset {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewMagicFirewallRuleset(scope constructs.Construct, id *string, config *Mag
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
 func NewMagicFirewallRuleset_Override(m MagicFirewallRuleset, scope constructs.Construct, id *string, config *MagicFirewallRulesetConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_MagicFirewallRuleset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MagicFirewallRuleset)SetCount(val *float64) {
+func (j *jsiiProxy_MagicFirewallRuleset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

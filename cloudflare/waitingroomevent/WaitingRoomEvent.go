@@ -2,14 +2,14 @@ package waitingroomevent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/waitingroomevent/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/waitingroomevent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event cloudflare_waiting_room_event}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 type WaitingRoomEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WaitingRoomEvent interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedOn() *string
 	CustomPageHtml() *string
 	SetCustomPageHtml(val *string)
@@ -192,8 +192,8 @@ func (j *jsiiProxy_WaitingRoomEvent) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomEvent) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WaitingRoomEvent) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -663,7 +663,7 @@ func (j *jsiiProxy_WaitingRoomEvent) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *WaitingRoomEventConfig) WaitingRoomEvent {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent_Override(w WaitingRoomEvent, scope constructs.Construct, id *string, config *WaitingRoomEventConfig) {
 	_init_.Initialize()
 
@@ -703,7 +703,10 @@ func (j *jsiiProxy_WaitingRoomEvent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomEvent)SetCount(val *float64) {
+func (j *jsiiProxy_WaitingRoomEvent)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

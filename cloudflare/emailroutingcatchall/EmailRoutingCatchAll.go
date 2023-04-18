@@ -2,14 +2,14 @@ package emailroutingcatchall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/emailroutingcatchall/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/emailroutingcatchall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type EmailRoutingCatchAll interface {
 	cdktf.TerraformResource
 	Action() EmailRoutingCatchAllActionList
@@ -23,9 +23,9 @@ type EmailRoutingCatchAll interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmailRoutingCatchAll) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) EmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll)SetCount(val *float64) {
+func (j *jsiiProxy_EmailRoutingCatchAll)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

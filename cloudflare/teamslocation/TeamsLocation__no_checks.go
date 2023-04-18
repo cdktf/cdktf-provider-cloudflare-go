@@ -80,6 +80,10 @@ func (j *jsiiProxy_TeamsLocation) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_TeamsLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datacloudflarerulesets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarerulesets/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarerulesets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/rulesets cloudflare_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/rulesets cloudflare_rulesets}.
 type DataCloudflareRulesets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -20,9 +20,9 @@ type DataCloudflareRulesets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataCloudflareRulesets) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareRulesets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareRulesets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) DataCloudflareRulesets {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets_Override(d DataCloudflareRulesets, scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) {
 	_init_.Initialize()
 
@@ -405,7 +405,10 @@ func (j *jsiiProxy_DataCloudflareRulesets)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets)SetCount(val *float64) {
+func (j *jsiiProxy_DataCloudflareRulesets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

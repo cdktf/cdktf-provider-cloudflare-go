@@ -48,6 +48,10 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckDisksParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

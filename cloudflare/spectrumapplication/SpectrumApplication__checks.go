@@ -122,6 +122,17 @@ func (s *jsiiProxy_SpectrumApplication) validatePutDnsParameters(value *Spectrum
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validatePutEdgeIpsParameters(value *SpectrumApplicationEdgeIps) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validatePutOriginDnsParameters(value *SpectrumApplicationOriginDns) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -221,17 +232,58 @@ func (j *jsiiProxy_SpectrumApplication) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetEdgeIpConnectivityParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_SpectrumApplication) validateSetEdgeIpsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_SpectrumApplication) validateSetCountParameters(val interface{}) error {
+	switch val.(type) {
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

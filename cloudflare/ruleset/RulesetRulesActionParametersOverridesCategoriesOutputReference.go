@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,9 +38,6 @@ type RulesetRulesActionParametersOverridesCategoriesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +73,6 @@ type RulesetRulesActionParametersOverridesCategoriesOutputReference interface {
 	ResetAction()
 	ResetCategory()
 	ResetEnabled()
-	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -202,26 +198,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -332,17 +308,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -575,14 +540,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

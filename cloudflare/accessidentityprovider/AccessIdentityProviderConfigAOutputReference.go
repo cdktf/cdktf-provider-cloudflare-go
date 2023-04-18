@@ -2,9 +2,9 @@ package accessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	CertsUrl() *string
 	SetCertsUrl(val *string)
 	CertsUrlInput() *string
+	Claims() *[]*string
+	SetClaims(val *[]*string)
+	ClaimsInput() *[]*string
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -80,6 +83,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	RedirectUrl() *string
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	SignRequest() interface{}
 	SetSignRequest(val interface{})
 	SignRequestInput() interface{}
@@ -131,6 +137,7 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetCentrifyAccount()
 	ResetCentrifyAppId()
 	ResetCertsUrl()
+	ResetClaims()
 	ResetClientId()
 	ResetClientSecret()
 	ResetDirectoryId()
@@ -141,6 +148,7 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetOneloginAccount()
 	ResetPkceEnabled()
 	ResetRedirectUrl()
+	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
 	ResetSupportGroups()
@@ -295,6 +303,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) CertsUrlInput()
 	_jsii_.Get(
 		j,
 		"certsUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Claims() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"claims",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ClaimsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"claimsInput",
 		&returns,
 	)
 	return returns
@@ -550,6 +578,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrlInpu
 	return returns
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) SignRequest() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -755,6 +803,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetCertsUrl(val 
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClaims(val *[]*string) {
+	if err := j.validateSetClaimsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"claims",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
@@ -894,6 +953,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(v
 	_jsii_.Set(
 		j,
 		"redirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -1206,6 +1276,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetCertsUrl()
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClaims() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClaims",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClientId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1282,6 +1360,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetRedirectUr
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScopes",
 		nil, // no parameters
 	)
 }

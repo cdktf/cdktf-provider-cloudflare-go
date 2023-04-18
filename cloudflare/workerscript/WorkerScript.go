@@ -2,14 +2,14 @@ package workerscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/workerscript/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/workerscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -19,6 +19,12 @@ type WorkerScript interface {
 	AnalyticsEngineBindingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CompatibilityDate() *string
+	SetCompatibilityDate(val *string)
+	CompatibilityDateInput() *string
+	CompatibilityFlags() *[]*string
+	SetCompatibilityFlags(val *[]*string)
+	CompatibilityFlagsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -29,9 +35,9 @@ type WorkerScript interface {
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +128,9 @@ type WorkerScript interface {
 	PutSecretTextBinding(value interface{})
 	PutServiceBinding(value interface{})
 	PutWebassemblyBinding(value interface{})
-	ResetAccountId()
 	ResetAnalyticsEngineBinding()
+	ResetCompatibilityDate()
+	ResetCompatibilityFlags()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetModule()
@@ -201,6 +208,46 @@ func (j *jsiiProxy_WorkerScript) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerScript) CompatibilityDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compatibilityDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) CompatibilityDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compatibilityDateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) CompatibilityFlags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"compatibilityFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) CompatibilityFlagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"compatibilityFlagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerScript) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -241,8 +288,8 @@ func (j *jsiiProxy_WorkerScript) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkerScript) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -572,7 +619,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -590,7 +637,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 
@@ -608,6 +655,28 @@ func (j *jsiiProxy_WorkerScript)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetCompatibilityDate(val *string) {
+	if err := j.validateSetCompatibilityDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compatibilityDate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetCompatibilityFlags(val *[]*string) {
+	if err := j.validateSetCompatibilityFlagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compatibilityFlags",
 		val,
 	)
 }
@@ -634,7 +703,10 @@ func (j *jsiiProxy_WorkerScript)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetCount(val *float64) {
+func (j *jsiiProxy_WorkerScript)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -1075,18 +1147,26 @@ func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value interface{}) {
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WorkerScript) ResetAnalyticsEngineBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAnalyticsEngineBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetCompatibilityDate() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCompatibilityDate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetCompatibilityFlags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCompatibilityFlags",
 		nil, // no parameters
 	)
 }

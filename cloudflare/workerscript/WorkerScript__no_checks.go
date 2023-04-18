@@ -100,11 +100,23 @@ func (j *jsiiProxy_WorkerScript) validateSetAccountIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_WorkerScript) validateSetCompatibilityDateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerScript) validateSetCompatibilityFlagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerScript) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_WorkerScript) validateSetContentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkerScript) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 

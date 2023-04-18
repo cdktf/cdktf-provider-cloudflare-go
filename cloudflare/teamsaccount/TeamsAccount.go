@@ -2,14 +2,14 @@ package teamsaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/teamsaccount/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/teamsaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -31,9 +31,9 @@ type TeamsAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,6 +59,8 @@ type TeamsAccount interface {
 	LoggingInput() *TeamsAccountLogging
 	// The tree node.
 	Node() constructs.Node
+	PayloadLog() TeamsAccountPayloadLogOutputReference
+	PayloadLogInput() *TeamsAccountPayloadLog
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -112,6 +114,7 @@ type TeamsAccount interface {
 	PutBlockPage(value *TeamsAccountBlockPage)
 	PutFips(value *TeamsAccountFips)
 	PutLogging(value *TeamsAccountLogging)
+	PutPayloadLog(value *TeamsAccountPayloadLog)
 	PutProxy(value *TeamsAccountProxy)
 	ResetActivityLogEnabled()
 	ResetAntivirus()
@@ -122,6 +125,7 @@ type TeamsAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPayloadLog()
 	ResetProxy()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
@@ -250,8 +254,8 @@ func (j *jsiiProxy_TeamsAccount) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TeamsAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,6 +384,26 @@ func (j *jsiiProxy_TeamsAccount) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccount) PayloadLog() TeamsAccountPayloadLogOutputReference {
+	var returns TeamsAccountPayloadLogOutputReference
+	_jsii_.Get(
+		j,
+		"payloadLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) PayloadLogInput() *TeamsAccountPayloadLog {
+	var returns *TeamsAccountPayloadLog
+	_jsii_.Get(
+		j,
+		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsAccount) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -501,7 +525,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -563,7 +587,10 @@ func (j *jsiiProxy_TeamsAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetCount(val *float64) {
+func (j *jsiiProxy_TeamsAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -960,6 +987,17 @@ func (t *jsiiProxy_TeamsAccount) PutLogging(value *TeamsAccountLogging) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutPayloadLog(value *TeamsAccountPayloadLog) {
+	if err := t.validatePutPayloadLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putPayloadLog",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutProxy(value *TeamsAccountProxy) {
 	if err := t.validatePutProxyParameters(value); err != nil {
 		panic(err)
@@ -1023,6 +1061,14 @@ func (t *jsiiProxy_TeamsAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetPayloadLog() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPayloadLog",
 		nil, // no parameters
 	)
 }

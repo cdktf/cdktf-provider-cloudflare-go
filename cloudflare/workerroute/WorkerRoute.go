@@ -2,14 +2,14 @@ package workerroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/workerroute/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/workerroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route cloudflare_worker_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route}.
 type WorkerRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WorkerRoute interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_WorkerRoute) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_WorkerRoute) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkerRoute) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_WorkerRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteConfig) WorkerRoute {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *string, config *WorkerRouteConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_WorkerRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerRoute)SetCount(val *float64) {
+func (j *jsiiProxy_WorkerRoute)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

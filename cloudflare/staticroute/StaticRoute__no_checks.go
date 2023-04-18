@@ -80,6 +80,10 @@ func (j *jsiiProxy_StaticRoute) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_StaticRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StaticRoute) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

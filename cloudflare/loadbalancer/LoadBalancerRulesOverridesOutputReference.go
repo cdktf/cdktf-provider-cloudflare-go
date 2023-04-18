@@ -2,9 +2,9 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -49,9 +49,8 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	RegionPoolsInput() interface{}
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
-	SessionAffinityAttributes() *map[string]*string
-	SetSessionAffinityAttributes(val *map[string]*string)
-	SessionAffinityAttributesInput() *map[string]*string
+	SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesList
+	SessionAffinityAttributesInput() interface{}
 	SessionAffinityInput() *string
 	SessionAffinityTtl() *float64
 	SetSessionAffinityTtl(val *float64)
@@ -100,6 +99,7 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	PutPopPools(value interface{})
 	PutRandomSteering(value interface{})
 	PutRegionPools(value interface{})
+	PutSessionAffinityAttributes(value interface{})
 	ResetAdaptiveRouting()
 	ResetCountryPools()
 	ResetDefaultPools()
@@ -348,8 +348,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinity() 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributes() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesList {
+	var returns LoadBalancerRulesOverridesSessionAffinityAttributesList
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributes",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAtt
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributesInput",
@@ -548,17 +548,6 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetSessionAffinity(
 	_jsii_.Set(
 		j,
 		"sessionAffinity",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetSessionAffinityAttributes(val *map[string]*string) {
-	if err := j.validateSetSessionAffinityAttributesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sessionAffinityAttributes",
 		val,
 	)
 }
@@ -866,6 +855,17 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRegionPools(val
 	_jsii_.InvokeVoid(
 		l,
 		"putRegionPools",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutSessionAffinityAttributes(value interface{}) {
+	if err := l.validatePutSessionAffinityAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSessionAffinityAttributes",
 		[]interface{}{value},
 	)
 }

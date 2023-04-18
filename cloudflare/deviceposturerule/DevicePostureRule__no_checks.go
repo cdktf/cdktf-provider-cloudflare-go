@@ -80,6 +80,10 @@ func (j *jsiiProxy_DevicePostureRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

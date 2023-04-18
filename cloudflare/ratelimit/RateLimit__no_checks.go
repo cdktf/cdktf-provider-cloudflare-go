@@ -84,6 +84,10 @@ func (j *jsiiProxy_RateLimit) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RateLimit) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RateLimit) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

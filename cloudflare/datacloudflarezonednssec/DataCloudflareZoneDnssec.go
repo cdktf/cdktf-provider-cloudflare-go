@@ -2,14 +2,14 @@ package datacloudflarezonednssec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflarezonednssec/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflarezonednssec/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 type DataCloudflareZoneDnssec interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -18,9 +18,9 @@ type DataCloudflareZoneDnssec interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareZoneDnssec) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec)SetCount(val *float64) {
+func (j *jsiiProxy_DataCloudflareZoneDnssec)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

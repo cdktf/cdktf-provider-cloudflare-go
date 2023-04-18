@@ -2,14 +2,14 @@ package accesskeysconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accesskeysconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesskeysconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration cloudflare_access_keys_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration}.
 type AccessKeysConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type AccessKeysConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AccessKeysConfiguration) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_AccessKeysConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessKeysConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_AccessKeysConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration cloudflare_access_keys_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration} Resource.
 func NewAccessKeysConfiguration(scope constructs.Construct, id *string, config *AccessKeysConfigurationConfig) AccessKeysConfiguration {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewAccessKeysConfiguration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_keys_configuration cloudflare_access_keys_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_keys_configuration cloudflare_access_keys_configuration} Resource.
 func NewAccessKeysConfiguration_Override(a AccessKeysConfiguration, scope constructs.Construct, id *string, config *AccessKeysConfigurationConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_AccessKeysConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessKeysConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_AccessKeysConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

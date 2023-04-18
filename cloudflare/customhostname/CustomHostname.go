@@ -2,14 +2,14 @@ package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/customhostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname cloudflare_custom_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
 type CustomHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomHostname interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomMetadata() *map[string]*string
 	SetCustomMetadata(val *map[string]*string)
 	CustomMetadataInput() *map[string]*string
@@ -164,8 +164,8 @@ func (j *jsiiProxy_CustomHostname) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomHostname) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_CustomHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHostnameConfig) CustomHostname {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id *string, config *CustomHostnameConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_CustomHostname)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetCount(val *float64) {
+func (j *jsiiProxy_CustomHostname)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

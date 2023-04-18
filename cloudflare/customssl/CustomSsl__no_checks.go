@@ -76,6 +76,10 @@ func (j *jsiiProxy_CustomSsl) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_CustomSsl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomSsl) validateSetIdParameters(val *string) error {
 	return nil
 }

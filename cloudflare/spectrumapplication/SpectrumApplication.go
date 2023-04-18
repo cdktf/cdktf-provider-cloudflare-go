@@ -2,14 +2,14 @@ package spectrumapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/spectrumapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/spectrumapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktf.TerraformResource
 	ArgoSmartRouting() interface{}
@@ -24,21 +24,17 @@ type SpectrumApplication interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Dns() SpectrumApplicationDnsOutputReference
 	DnsInput() *SpectrumApplicationDns
-	EdgeIpConnectivity() *string
-	SetEdgeIpConnectivity(val *string)
-	EdgeIpConnectivityInput() *string
-	EdgeIps() *[]*string
-	SetEdgeIps(val *[]*string)
-	EdgeIpsInput() *[]*string
+	EdgeIps() SpectrumApplicationEdgeIpsOutputReference
+	EdgeIpsInput() *SpectrumApplicationEdgeIps
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,10 +122,10 @@ type SpectrumApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDns(value *SpectrumApplicationDns)
+	PutEdgeIps(value *SpectrumApplicationEdgeIps)
 	PutOriginDns(value *SpectrumApplicationOriginDns)
 	PutOriginPortRange(value *SpectrumApplicationOriginPortRange)
 	ResetArgoSmartRouting()
-	ResetEdgeIpConnectivity()
 	ResetEdgeIps()
 	ResetId()
 	ResetIpFirewall()
@@ -208,8 +204,8 @@ func (j *jsiiProxy_SpectrumApplication) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpectrumApplication) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -248,28 +244,8 @@ func (j *jsiiProxy_SpectrumApplication) DnsInput() *SpectrumApplicationDns {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) EdgeIpConnectivity() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"edgeIpConnectivity",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) EdgeIpConnectivityInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"edgeIpConnectivityInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) EdgeIps() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_SpectrumApplication) EdgeIps() SpectrumApplicationEdgeIpsOutputReference {
+	var returns SpectrumApplicationEdgeIpsOutputReference
 	_jsii_.Get(
 		j,
 		"edgeIps",
@@ -278,8 +254,8 @@ func (j *jsiiProxy_SpectrumApplication) EdgeIps() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() *SpectrumApplicationEdgeIps {
+	var returns *SpectrumApplicationEdgeIps
 	_jsii_.Get(
 		j,
 		"edgeIpsInput",
@@ -619,7 +595,7 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
@@ -637,7 +613,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Construct, id *string, config *SpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -670,7 +646,10 @@ func (j *jsiiProxy_SpectrumApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetCount(val *float64) {
+func (j *jsiiProxy_SpectrumApplication)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -682,28 +661,6 @@ func (j *jsiiProxy_SpectrumApplication)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SpectrumApplication)SetEdgeIpConnectivity(val *string) {
-	if err := j.validateSetEdgeIpConnectivityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"edgeIpConnectivity",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SpectrumApplication)SetEdgeIps(val *[]*string) {
-	if err := j.validateSetEdgeIpsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"edgeIps",
 		val,
 	)
 }
@@ -1122,6 +1079,17 @@ func (s *jsiiProxy_SpectrumApplication) PutDns(value *SpectrumApplicationDns) {
 	)
 }
 
+func (s *jsiiProxy_SpectrumApplication) PutEdgeIps(value *SpectrumApplicationEdgeIps) {
+	if err := s.validatePutEdgeIpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEdgeIps",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationOriginDns) {
 	if err := s.validatePutOriginDnsParameters(value); err != nil {
 		panic(err)
@@ -1148,14 +1116,6 @@ func (s *jsiiProxy_SpectrumApplication) ResetArgoSmartRouting() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetArgoSmartRouting",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpectrumApplication) ResetEdgeIpConnectivity() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEdgeIpConnectivity",
 		nil, // no parameters
 	)
 }

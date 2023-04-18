@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,8 +36,8 @@ type RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference interfac
 	Include() *[]*string
 	SetInclude(val *[]*string)
 	IncludeInput() *[]*string
-	InternalValue() *RulesetRulesActionParametersCacheKeyCustomKeyHeader
-	SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKeyHeader)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) InternalValue() *RulesetRulesActionParametersCacheKeyCustomKeyHeader {
-	var returns *RulesetRulesActionParametersCacheKeyCustomKeyHeader
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -301,7 +301,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference)SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKeyHeader) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

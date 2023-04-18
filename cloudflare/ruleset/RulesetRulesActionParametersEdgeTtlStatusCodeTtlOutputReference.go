@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,7 @@ type RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference interface {
 	PutStatusCodeRange(value interface{})
 	ResetStatusCode()
 	ResetStatusCodeRange()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -531,6 +532,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatusCodeRange",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetValue",
 		nil, // no parameters
 	)
 }

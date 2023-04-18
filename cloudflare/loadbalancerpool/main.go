@@ -69,7 +69,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOrigins", GoMethod: "PutOrigins"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginSteering", GoMethod: "PutOriginSteering"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckRegions", GoMethod: "ResetCheckRegions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},

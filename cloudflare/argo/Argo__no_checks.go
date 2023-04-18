@@ -68,6 +68,10 @@ func (j *jsiiProxy_Argo) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_Argo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Argo) validateSetIdParameters(val *string) error {
 	return nil
 }

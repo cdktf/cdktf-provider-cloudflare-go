@@ -72,6 +72,10 @@ func (j *jsiiProxy_UserAgentBlockingRule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_UserAgentBlockingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserAgentBlockingRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

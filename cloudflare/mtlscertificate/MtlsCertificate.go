@@ -2,14 +2,14 @@ package mtlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/mtlscertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/mtlscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/mtls_certificate cloudflare_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 type MtlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,9 +30,9 @@ type MtlsCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -217,8 +217,8 @@ func (j *jsiiProxy_MtlsCertificate) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_MtlsCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MtlsCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -458,7 +458,7 @@ func (j *jsiiProxy_MtlsCertificate) UploadedOn() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCertificateConfig) MtlsCertificate {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate_Override(m MtlsCertificate, scope constructs.Construct, id *string, config *MtlsCertificateConfig) {
 	_init_.Initialize()
 
@@ -531,7 +531,10 @@ func (j *jsiiProxy_MtlsCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MtlsCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_MtlsCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer cloudflare_load_balancer}.
 type LoadBalancer interface {
 	cdktf.TerraformResource
 	AdaptiveRouting() LoadBalancerAdaptiveRoutingList
@@ -23,9 +23,9 @@ type LoadBalancer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CountryPools() LoadBalancerCountryPoolsList
 	CountryPoolsInput() interface{}
 	CreatedOn() *string
@@ -91,9 +91,8 @@ type LoadBalancer interface {
 	RulesInput() interface{}
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
-	SessionAffinityAttributes() *map[string]*string
-	SetSessionAffinityAttributes(val *map[string]*string)
-	SessionAffinityAttributesInput() *map[string]*string
+	SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesList
+	SessionAffinityAttributesInput() interface{}
 	SessionAffinityInput() *string
 	SessionAffinityTtl() *float64
 	SetSessionAffinityTtl(val *float64)
@@ -145,6 +144,7 @@ type LoadBalancer interface {
 	PutRandomSteering(value interface{})
 	PutRegionPools(value interface{})
 	PutRules(value interface{})
+	PutSessionAffinityAttributes(value interface{})
 	ResetAdaptiveRouting()
 	ResetCountryPools()
 	ResetDescription()
@@ -229,8 +229,8 @@ func (j *jsiiProxy_LoadBalancer) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LoadBalancer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_LoadBalancer) SessionAffinity() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributes() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesList {
+	var returns LoadBalancerSessionAffinityAttributesList
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributes",
@@ -629,8 +629,8 @@ func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributes() *map[string]*string
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributesInput",
@@ -760,7 +760,7 @@ func (j *jsiiProxy_LoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalancerConfig) LoadBalancer {
 	_init_.Initialize()
 
@@ -778,7 +778,7 @@ func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalance
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer_Override(l LoadBalancer, scope constructs.Construct, id *string, config *LoadBalancerConfig) {
 	_init_.Initialize()
 
@@ -800,7 +800,10 @@ func (j *jsiiProxy_LoadBalancer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancer)SetCount(val *float64) {
+func (j *jsiiProxy_LoadBalancer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -938,17 +941,6 @@ func (j *jsiiProxy_LoadBalancer)SetSessionAffinity(val *string) {
 	_jsii_.Set(
 		j,
 		"sessionAffinity",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LoadBalancer)SetSessionAffinityAttributes(val *map[string]*string) {
-	if err := j.validateSetSessionAffinityAttributesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sessionAffinityAttributes",
 		val,
 	)
 }
@@ -1336,6 +1328,17 @@ func (l *jsiiProxy_LoadBalancer) PutRules(value interface{}) {
 	_jsii_.InvokeVoid(
 		l,
 		"putRules",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancer) PutSessionAffinityAttributes(value interface{}) {
+	if err := l.validatePutSessionAffinityAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSessionAffinityAttributes",
 		[]interface{}{value},
 	)
 }

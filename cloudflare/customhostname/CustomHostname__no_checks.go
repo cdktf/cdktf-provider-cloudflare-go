@@ -72,6 +72,10 @@ func (j *jsiiProxy_CustomHostname) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CustomHostname) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomHostname) validateSetCustomMetadataParameters(val *map[string]*string) error {
 	return nil
 }

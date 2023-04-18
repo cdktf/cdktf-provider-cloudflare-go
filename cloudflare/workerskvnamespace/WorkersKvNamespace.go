@@ -2,14 +2,14 @@ package workerskvnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/workerskvnamespace/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/workerskvnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type WorkersKvNamespace interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -92,7 +92,6 @@ type WorkersKvNamespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -162,8 +161,8 @@ func (j *jsiiProxy_WorkersKvNamespace) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_WorkersKvNamespace) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkersKvNamespace) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +332,7 @@ func (j *jsiiProxy_WorkersKvNamespace) TitleInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) WorkersKvNamespace {
 	_init_.Initialize()
 
@@ -351,7 +350,7 @@ func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) {
 	_init_.Initialize()
 
@@ -384,7 +383,10 @@ func (j *jsiiProxy_WorkersKvNamespace)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersKvNamespace)SetCount(val *float64) {
+func (j *jsiiProxy_WorkersKvNamespace)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -723,14 +725,6 @@ func (w *jsiiProxy_WorkersKvNamespace) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (w *jsiiProxy_WorkersKvNamespace) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -64,6 +64,10 @@ func validateDataCloudflareZoneDnssec_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZoneDnssec) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZoneDnssec) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ZoneSettingsOverride) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverride) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverride) validateSetIdParameters(val *string) error {
 	return nil
 }

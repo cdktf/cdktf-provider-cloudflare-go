@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataCloudflareRulesets) validateSetAccountIdParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareRulesets) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareRulesets) validateSetIdParameters(val *string) error {
 	return nil
 }

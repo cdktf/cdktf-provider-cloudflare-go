@@ -44,7 +44,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validatePutCustomKeyParameters(value *RulesetRulesActionParametersCacheKeyCustomKey) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validatePutCustomKeyParameters(value interface{}) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersCacheKey) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyOutputReference) validate
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesActionParametersCacheKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

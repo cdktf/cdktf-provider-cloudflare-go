@@ -2,14 +2,14 @@ package accessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider cloudflare_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}.
 type AccessIdentityProvider interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,9 +26,9 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,6 +63,8 @@ type AccessIdentityProvider interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScimConfig() AccessIdentityProviderScimConfigList
+	ScimConfigInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,12 +103,14 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value interface{})
+	PutScimConfig(value interface{})
 	ResetAccountId()
 	ResetConfig()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScimConfig()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,8 +197,8 @@ func (j *jsiiProxy_AccessIdentityProvider) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessIdentityProvider) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,6 +337,26 @@ func (j *jsiiProxy_AccessIdentityProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessIdentityProvider) ScimConfig() AccessIdentityProviderScimConfigList {
+	var returns AccessIdentityProviderScimConfigList
+	_jsii_.Get(
+		j,
+		"scimConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProvider) ScimConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scimConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessIdentityProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_AccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) AccessIdentityProvider {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider_Override(a AccessIdentityProvider, scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -455,7 +479,10 @@ func (j *jsiiProxy_AccessIdentityProvider)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetCount(val *float64) {
+func (j *jsiiProxy_AccessIdentityProvider)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -830,6 +857,17 @@ func (a *jsiiProxy_AccessIdentityProvider) PutConfig(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessIdentityProvider) PutScimConfig(value interface{}) {
+	if err := a.validatePutScimConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putScimConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessIdentityProvider) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -858,6 +896,14 @@ func (a *jsiiProxy_AccessIdentityProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProvider) ResetScimConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScimConfig",
 		nil, // no parameters
 	)
 }

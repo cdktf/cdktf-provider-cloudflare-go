@@ -2,14 +2,14 @@ package accessservicetoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accessservicetoken/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accessservicetoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token cloudflare_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token}.
 type AccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,9 +26,9 @@ type AccessServiceToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_AccessServiceToken) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_AccessServiceToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessServiceToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_AccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken(scope constructs.Construct, id *string, config *AccessServiceTokenConfig) AccessServiceToken {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewAccessServiceToken(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken_Override(a AccessServiceToken, scope constructs.Construct, id *string, config *AccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_AccessServiceToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessServiceToken)SetCount(val *float64) {
+func (j *jsiiProxy_AccessServiceToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

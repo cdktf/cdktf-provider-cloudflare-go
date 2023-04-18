@@ -80,6 +80,10 @@ func (j *jsiiProxy_DlpProfile) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DlpProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlpProfile) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package origincacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/origincacertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/origincacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type OriginCaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -22,9 +22,9 @@ type OriginCaCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Csr() *string
 	SetCsr(val *string)
 	CsrInput() *string
@@ -165,8 +165,8 @@ func (j *jsiiProxy_OriginCaCertificate) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OriginCaCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Construct, id *string, config *OriginCaCertificateConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_OriginCaCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_OriginCaCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

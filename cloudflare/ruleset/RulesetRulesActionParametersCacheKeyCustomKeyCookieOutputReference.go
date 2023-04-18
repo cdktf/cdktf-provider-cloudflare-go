@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference interfac
 	Include() *[]*string
 	SetInclude(val *[]*string)
 	IncludeInput() *[]*string
-	InternalValue() *RulesetRulesActionParametersCacheKeyCustomKeyCookie
-	SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKeyCookie)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference) InternalValue() *RulesetRulesActionParametersCacheKeyCustomKeyCookie {
-	var returns *RulesetRulesActionParametersCacheKeyCustomKeyCookie
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputRefe
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -266,7 +266,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputRefe
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference)SetInternalValue(val *RulesetRulesActionParametersCacheKeyCustomKeyCookie) {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

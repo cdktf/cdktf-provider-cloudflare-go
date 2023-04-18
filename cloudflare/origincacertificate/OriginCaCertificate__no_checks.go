@@ -68,6 +68,10 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_OriginCaCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OriginCaCertificate) validateSetCsrParameters(val *string) error {
 	return nil
 }

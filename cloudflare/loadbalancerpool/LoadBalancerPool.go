@@ -2,14 +2,14 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/loadbalancerpool/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool cloudflare_load_balancer_pool}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool}.
 type LoadBalancerPool interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type LoadBalancerPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -127,7 +127,6 @@ type LoadBalancerPool interface {
 	PutLoadShedding(value interface{})
 	PutOrigins(value interface{})
 	PutOriginSteering(value interface{})
-	ResetAccountId()
 	ResetCheckRegions()
 	ResetDescription()
 	ResetEnabled()
@@ -227,8 +226,8 @@ func (j *jsiiProxy_LoadBalancerPool) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LoadBalancerPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_LoadBalancerPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) LoadBalancerPool {
 	_init_.Initialize()
 
@@ -636,7 +635,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_pool cloudflare_load_balancer_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_pool cloudflare_load_balancer_pool} Resource.
 func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct, id *string, config *LoadBalancerPoolConfig) {
 	_init_.Initialize()
 
@@ -680,7 +679,10 @@ func (j *jsiiProxy_LoadBalancerPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPool)SetCount(val *float64) {
+func (j *jsiiProxy_LoadBalancerPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -1129,14 +1131,6 @@ func (l *jsiiProxy_LoadBalancerPool) PutOriginSteering(value interface{}) {
 		l,
 		"putOriginSteering",
 		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerPool) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_LogpushJob) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LogpushJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogpushJob) validateSetDatasetParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dlpprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/dlpprofile/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/dlpprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile cloudflare_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 type DlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type DlpProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DlpProfile) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DlpProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DlpProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileConfig) DlpProfile {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string, config *DlpProfileConfig) {
 	_init_.Initialize()
 
@@ -487,7 +487,10 @@ func (j *jsiiProxy_DlpProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DlpProfile)SetCount(val *float64) {
+func (j *jsiiProxy_DlpProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

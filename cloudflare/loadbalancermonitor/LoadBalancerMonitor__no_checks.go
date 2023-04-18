@@ -80,6 +80,10 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerMonitor) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

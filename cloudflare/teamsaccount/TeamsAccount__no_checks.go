@@ -68,6 +68,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutLoggingParameters(value *TeamsAccoun
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutPayloadLogParameters(value *TeamsAccountPayloadLog) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutProxyParameters(value *TeamsAccountProxy) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (j *jsiiProxy_TeamsAccount) validateSetActivityLogEnabledParameters(val int
 }
 
 func (j *jsiiProxy_TeamsAccount) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsAccount) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 

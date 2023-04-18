@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesRatelimit
-	SetInternalValue(val *RulesetRulesRatelimit)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MitigationTimeout() *float64
 	SetMitigationTimeout(val *float64)
 	MitigationTimeoutInput() *float64
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() *RulesetRulesRatelimit {
-	var returns *RulesetRulesRatelimit
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -339,29 +339,29 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformResource() cdk
 }
 
 
-func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesRatelimitOutputReference {
+func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesRatelimitOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesRatelimitOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -410,7 +410,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCountingExpression(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val *RulesetRulesRatelimit) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

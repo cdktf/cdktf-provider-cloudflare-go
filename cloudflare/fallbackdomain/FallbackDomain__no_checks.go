@@ -76,6 +76,10 @@ func (j *jsiiProxy_FallbackDomain) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_FallbackDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FallbackDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_TieredCache) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_TieredCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TieredCache) validateSetIdParameters(val *string) error {
 	return nil
 }

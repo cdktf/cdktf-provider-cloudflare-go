@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataCloudflareDevices) validateSetAccountIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareDevices) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareDevices) validateSetIdParameters(val *string) error {
 	return nil
 }

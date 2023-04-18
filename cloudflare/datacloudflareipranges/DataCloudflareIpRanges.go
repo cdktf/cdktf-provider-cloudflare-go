@@ -2,14 +2,14 @@ package datacloudflareipranges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/datacloudflareipranges/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/datacloudflareipranges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/d/ip_ranges cloudflare_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges}.
 type DataCloudflareIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataCloudflareIpRanges interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareIpRanges) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareIpRanges) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataCloudflareIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) DataCloudflareIpRanges {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataCloudflareIpRanges(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/d/ip_ranges cloudflare_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/ip_ranges cloudflare_ip_ranges} Data Source.
 func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope constructs.Construct, id *string, config *DataCloudflareIpRangesConfig) {
 	_init_.Initialize()
 
@@ -342,7 +342,10 @@ func NewDataCloudflareIpRanges_Override(d DataCloudflareIpRanges, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareIpRanges)SetCount(val *float64) {
+func (j *jsiiProxy_DataCloudflareIpRanges)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

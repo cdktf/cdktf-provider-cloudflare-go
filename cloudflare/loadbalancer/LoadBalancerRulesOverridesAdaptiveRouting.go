@@ -2,9 +2,11 @@ package loadbalancer
 
 
 type LoadBalancerRulesOverridesAdaptiveRouting struct {
-	// See [`failover_across_pools`](#failover_across_pools).
+	// Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+	// When set `false`, zero-downtime failover will only occur between origins within the same pool.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 	FailoverAcrossPools interface{} `field:"optional" json:"failoverAcrossPools" yaml:"failoverAcrossPools"`
 }
 

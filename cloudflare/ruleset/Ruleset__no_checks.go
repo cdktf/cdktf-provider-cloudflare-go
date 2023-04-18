@@ -76,11 +76,11 @@ func (j *jsiiProxy_Ruleset) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_Ruleset) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_Ruleset) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Ruleset) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_Ruleset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

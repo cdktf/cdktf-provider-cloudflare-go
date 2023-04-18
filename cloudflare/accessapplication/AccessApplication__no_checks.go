@@ -92,6 +92,10 @@ func (j *jsiiProxy_AccessApplication) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetCustomDenyMessageParameters(val *string) error {
 	return nil
 }

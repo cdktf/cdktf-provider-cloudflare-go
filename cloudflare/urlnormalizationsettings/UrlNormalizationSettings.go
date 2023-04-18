@@ -2,14 +2,14 @@ package urlnormalizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/urlnormalizationsettings/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/urlnormalizationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/url_normalization_settings cloudflare_url_normalization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
 type UrlNormalizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type UrlNormalizationSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_UrlNormalizationSettings) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UrlNormalizationSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_UrlNormalizationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/url_normalization_settings cloudflare_url_normalization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
 func NewUrlNormalizationSettings(scope constructs.Construct, id *string, config *UrlNormalizationSettingsConfig) UrlNormalizationSettings {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewUrlNormalizationSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/url_normalization_settings cloudflare_url_normalization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
 func NewUrlNormalizationSettings_Override(u UrlNormalizationSettings, scope constructs.Construct, id *string, config *UrlNormalizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_UrlNormalizationSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings)SetCount(val *float64) {
+func (j *jsiiProxy_UrlNormalizationSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

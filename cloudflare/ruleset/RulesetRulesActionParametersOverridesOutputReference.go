@@ -2,9 +2,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,16 +35,13 @@ type RulesetRulesActionParametersOverridesOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RulesetRulesActionParametersOverrides
-	SetInternalValue(val *RulesetRulesActionParametersOverrides)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Rules() RulesetRulesActionParametersOverridesRulesList
 	RulesInput() interface{}
 	SensitivityLevel() *string
 	SetSensitivityLevel(val *string)
 	SensitivityLevelInput() *string
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,7 +81,6 @@ type RulesetRulesActionParametersOverridesOutputReference interface {
 	ResetEnabled()
 	ResetRules()
 	ResetSensitivityLevel()
-	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -200,8 +196,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) InternalValue() *RulesetRulesActionParametersOverrides {
-	var returns *RulesetRulesActionParametersOverrides
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -250,26 +246,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) Sensiti
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -291,29 +267,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) Terrafo
 }
 
 
-func NewRulesetRulesActionParametersOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersOverridesOutputReference {
+func NewRulesetRulesActionParametersOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersOverridesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersOverridesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersOverridesOutputReference_Override(r RulesetRulesActionParametersOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRulesetRulesActionParametersOverridesOutputReference_Override(r RulesetRulesActionParametersOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -362,7 +338,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetInternalValue(val *RulesetRulesActionParametersOverrides) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,17 +356,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetSensi
 	_jsii_.Set(
 		j,
 		"sensitivityLevel",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -661,14 +626,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) ResetSe
 	_jsii_.InvokeVoid(
 		r,
 		"resetSensitivityLevel",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) ResetStatus() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatus",
 		nil, // no parameters
 	)
 }

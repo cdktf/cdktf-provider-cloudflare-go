@@ -64,6 +64,10 @@ func validateDataCloudflareAccounts_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAccounts) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAccounts) validateSetIdParameters(val *string) error {
 	return nil
 }

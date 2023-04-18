@@ -2,14 +2,14 @@ package loadbalancermonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/loadbalancermonitor/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/loadbalancermonitor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -133,7 +133,6 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutHeader(value interface{})
-	ResetAccountId()
 	ResetAllowInsecure()
 	ResetDescription()
 	ResetExpectedBody()
@@ -237,8 +236,8 @@ func (j *jsiiProxy_LoadBalancerMonitor) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LoadBalancerMonitor) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) LoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -686,7 +685,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) {
 	_init_.Initialize()
 
@@ -730,7 +729,10 @@ func (j *jsiiProxy_LoadBalancerMonitor)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor)SetCount(val *float64) {
+func (j *jsiiProxy_LoadBalancerMonitor)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -1201,14 +1203,6 @@ func (l *jsiiProxy_LoadBalancerMonitor) PutHeader(value interface{}) {
 		l,
 		"putHeader",
 		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerMonitor) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

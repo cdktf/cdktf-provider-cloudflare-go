@@ -2,14 +2,14 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset}.
 type Ruleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type Ruleset interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,8 +43,6 @@ type Ruleset interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -112,7 +110,6 @@ type Ruleset interface {
 	PutRules(value interface{})
 	ResetAccountId()
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -184,8 +181,8 @@ func (j *jsiiProxy_Ruleset) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ruleset) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ruleset) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -259,16 +256,6 @@ func (j *jsiiProxy_Ruleset) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Ruleset) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +462,7 @@ func (j *jsiiProxy_Ruleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) Ruleset {
 	_init_.Initialize()
 
@@ -493,7 +480,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, config *RulesetConfig) {
 	_init_.Initialize()
 
@@ -526,7 +513,10 @@ func (j *jsiiProxy_Ruleset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ruleset)SetCount(val *float64) {
+func (j *jsiiProxy_Ruleset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -557,17 +547,6 @@ func (j *jsiiProxy_Ruleset)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Ruleset)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -946,14 +925,6 @@ func (r *jsiiProxy_Ruleset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Ruleset) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -8,7 +8,7 @@ type TotalTlsConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,17 +21,17 @@ type TotalTlsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Enable Total TLS for the zone.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls#enabled TotalTls#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls#enabled TotalTls#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls#zone_id TotalTls#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// The Certificate Authority that Total TLS certificates will be issued through. Available values: `google`, `lets_encrypt`.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls#certificate_authority TotalTls#certificate_authority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
 	CertificateAuthority *string `field:"optional" json:"certificateAuthority" yaml:"certificateAuthority"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/cloudflare/r/total_tls#id TotalTls#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/total_tls#id TotalTls#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

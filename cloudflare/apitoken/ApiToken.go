@@ -2,14 +2,14 @@ package apitoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/apitoken/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/apitoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token cloudflare_api_token}.
 type ApiToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ApiToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ApiToken) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_ApiToken) Value() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig) ApiToken {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken_Override(a ApiToken, scope constructs.Construct, id *string, config *ApiTokenConfig) {
 	_init_.Initialize()
 
@@ -488,7 +488,10 @@ func (j *jsiiProxy_ApiToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetCount(val *float64) {
+func (j *jsiiProxy_ApiToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

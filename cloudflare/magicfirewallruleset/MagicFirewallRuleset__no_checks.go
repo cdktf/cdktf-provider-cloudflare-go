@@ -72,6 +72,10 @@ func (j *jsiiProxy_MagicFirewallRuleset) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_MagicFirewallRuleset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicFirewallRuleset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

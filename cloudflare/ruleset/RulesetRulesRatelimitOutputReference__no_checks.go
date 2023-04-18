@@ -64,7 +64,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetCountingExpr
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValueParameters(val *RulesetRulesRatelimit) error {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRulesetRulesRatelimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

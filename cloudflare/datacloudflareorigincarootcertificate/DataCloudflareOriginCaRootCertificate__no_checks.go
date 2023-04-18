@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetAlgorithmPa
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareOriginCaRootCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

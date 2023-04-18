@@ -2,14 +2,14 @@ package ipsectunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/ipsectunnel/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/ipsectunnel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/ipsec_tunnel cloudflare_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
 type IpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,9 +30,9 @@ type IpsecTunnel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerEndpoint() *string
 	SetCustomerEndpoint(val *string)
 	CustomerEndpointInput() *string
@@ -251,8 +251,8 @@ func (j *jsiiProxy_IpsecTunnel) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IpsecTunnel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -642,7 +642,7 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *string, config *IpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -715,7 +715,10 @@ func (j *jsiiProxy_IpsecTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetCount(val *float64) {
+func (j *jsiiProxy_IpsecTunnel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

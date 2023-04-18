@@ -2,14 +2,14 @@ package filter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/filter/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/filter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Filter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_Filter) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Filter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Filter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_Filter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Filter)SetCount(val *float64) {
+func (j *jsiiProxy_Filter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

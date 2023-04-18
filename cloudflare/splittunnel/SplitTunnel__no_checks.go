@@ -76,6 +76,10 @@ func (j *jsiiProxy_SplitTunnel) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SplitTunnel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SplitTunnel) validateSetIdParameters(val *string) error {
 	return nil
 }

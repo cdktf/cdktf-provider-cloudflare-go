@@ -2,14 +2,14 @@ package firewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/firewallrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/firewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -24,9 +24,9 @@ type FirewallRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FirewallRule) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FirewallRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_FirewallRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetCount(val *float64) {
+func (j *jsiiProxy_FirewallRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

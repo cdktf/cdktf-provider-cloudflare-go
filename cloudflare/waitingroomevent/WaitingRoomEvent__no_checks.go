@@ -68,6 +68,10 @@ func (j *jsiiProxy_WaitingRoomEvent) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoomEvent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoomEvent) validateSetCustomPageHtmlParameters(val *string) error {
 	return nil
 }

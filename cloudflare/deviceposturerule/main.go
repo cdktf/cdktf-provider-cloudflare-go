@@ -111,6 +111,8 @@ func init() {
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
 		reflect.TypeOf((*DevicePostureRuleInputOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checkDisks", GoGetter: "CheckDisks"},
+			_jsii_.MemberProperty{JsiiProperty: "checkDisksInput", GoGetter: "CheckDisksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberProperty{JsiiProperty: "complianceStatus", GoGetter: "ComplianceStatus"},
@@ -154,6 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requireAll", GoGetter: "RequireAll"},
 			_jsii_.MemberProperty{JsiiProperty: "requireAllInput", GoGetter: "RequireAllInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCheckDisks", GoMethod: "ResetCheckDisks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComplianceStatus", GoMethod: "ResetComplianceStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},

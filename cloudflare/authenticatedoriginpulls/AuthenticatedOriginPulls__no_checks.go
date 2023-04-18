@@ -72,6 +72,10 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

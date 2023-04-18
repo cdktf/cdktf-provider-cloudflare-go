@@ -2,14 +2,14 @@ package customssl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/customssl/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customssl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
 type CustomSsl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomSsl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomSslOptions() CustomSslCustomSslOptionsOutputReference
 	CustomSslOptionsInput() *CustomSslCustomSslOptions
 	CustomSslPriority() CustomSslCustomSslPriorityList
@@ -154,8 +154,8 @@ func (j *jsiiProxy_CustomSsl) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomSsl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomSsl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -445,7 +445,7 @@ func (j *jsiiProxy_CustomSsl) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfig) CustomSsl {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewCustomSsl(scope constructs.Construct, id *string, config *CustomSslConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_ssl cloudflare_custom_ssl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource.
 func NewCustomSsl_Override(c CustomSsl, scope constructs.Construct, id *string, config *CustomSslConfig) {
 	_init_.Initialize()
 
@@ -485,7 +485,10 @@ func (j *jsiiProxy_CustomSsl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomSsl)SetCount(val *float64) {
+func (j *jsiiProxy_CustomSsl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

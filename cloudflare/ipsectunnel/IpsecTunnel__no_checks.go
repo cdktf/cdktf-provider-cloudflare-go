@@ -80,6 +80,10 @@ func (j *jsiiProxy_IpsecTunnel) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_IpsecTunnel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpsecTunnel) validateSetCustomerEndpointParameters(val *string) error {
 	return nil
 }

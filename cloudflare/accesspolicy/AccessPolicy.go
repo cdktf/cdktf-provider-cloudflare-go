@@ -2,14 +2,14 @@ package accesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy cloudflare_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy}.
 type AccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,9 +32,9 @@ type AccessPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Decision() *string
 	SetDecision(val *string)
 	DecisionInput() *string
@@ -262,8 +262,8 @@ func (j *jsiiProxy_AccessPolicy) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -593,7 +593,7 @@ func (j *jsiiProxy_AccessPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolicyConfig) AccessPolicy {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolic
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy_Override(a AccessPolicy, scope constructs.Construct, id *string, config *AccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -666,7 +666,10 @@ func (j *jsiiProxy_AccessPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_AccessPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

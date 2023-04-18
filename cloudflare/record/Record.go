@@ -2,14 +2,14 @@ package record
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/record/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/record/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/record cloudflare_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record cloudflare_record}.
 type Record interface {
 	cdktf.TerraformResource
 	AllowOverwrite() interface{}
@@ -27,9 +27,9 @@ type Record interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedOn() *string
 	Data() RecordDataOutputReference
 	DataInput() *RecordData
@@ -225,8 +225,8 @@ func (j *jsiiProxy_Record) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Record) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Record) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -626,7 +626,7 @@ func (j *jsiiProxy_Record) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/record cloudflare_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record cloudflare_record} Resource.
 func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Record {
 	_init_.Initialize()
 
@@ -644,7 +644,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/record cloudflare_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/record cloudflare_record} Resource.
 func NewRecord_Override(r Record, scope constructs.Construct, id *string, config *RecordConfig) {
 	_init_.Initialize()
 
@@ -688,7 +688,10 @@ func (j *jsiiProxy_Record)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Record)SetCount(val *float64) {
+func (j *jsiiProxy_Record)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package pagesdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/pagesdomain/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/pagesdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain cloudflare_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain}.
 type PagesDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type PagesDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_PagesDomain) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_PagesDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PagesDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_PagesDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainConfig) PagesDomain {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *string, config *PagesDomainConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_PagesDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PagesDomain)SetCount(val *float64) {
+func (j *jsiiProxy_PagesDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

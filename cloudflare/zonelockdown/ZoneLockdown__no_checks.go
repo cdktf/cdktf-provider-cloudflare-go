@@ -72,6 +72,10 @@ func (j *jsiiProxy_ZoneLockdown) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ZoneLockdown) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneLockdown) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

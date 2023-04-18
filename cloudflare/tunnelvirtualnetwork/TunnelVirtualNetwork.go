@@ -2,14 +2,14 @@ package tunnelvirtualnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/tunnelvirtualnetwork/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/tunnelvirtualnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
 type TunnelVirtualNetwork interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type TunnelVirtualNetwork interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_TunnelVirtualNetwork) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TunnelVirtualNetwork) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
 func NewTunnelVirtualNetwork(scope constructs.Construct, id *string, config *TunnelVirtualNetworkConfig) TunnelVirtualNetwork {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewTunnelVirtualNetwork(scope constructs.Construct, id *string, config *Tun
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
 func NewTunnelVirtualNetwork_Override(t TunnelVirtualNetwork, scope constructs.Construct, id *string, config *TunnelVirtualNetworkConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_TunnelVirtualNetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TunnelVirtualNetwork)SetCount(val *float64) {
+func (j *jsiiProxy_TunnelVirtualNetwork)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

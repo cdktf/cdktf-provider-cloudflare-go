@@ -2,14 +2,14 @@ package teamsproxyendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/teamsproxyendpoint/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/teamsproxyendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
 type TeamsProxyEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type TeamsProxyEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_TeamsProxyEndpoint) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_TeamsProxyEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TeamsProxyEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_TeamsProxyEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) TeamsProxyEndpoint {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *Teams
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint_Override(t TeamsProxyEndpoint, scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_TeamsProxyEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsProxyEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_TeamsProxyEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

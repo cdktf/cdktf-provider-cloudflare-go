@@ -2,14 +2,14 @@ package customhostnamefallbackorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/customhostnamefallbackorigin/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/customhostnamefallbackorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 type CustomHostnameFallbackOrigin interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CustomHostnameFallbackOrigin interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) CustomHostnameFallbackOrigin {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin_Override(c CustomHostnameFallbackOrigin, scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetCount(val *float64) {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

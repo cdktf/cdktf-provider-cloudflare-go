@@ -68,6 +68,10 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionP
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -93,10 +97,6 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInterna
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetSessionAffinityParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetSessionAffinityAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 

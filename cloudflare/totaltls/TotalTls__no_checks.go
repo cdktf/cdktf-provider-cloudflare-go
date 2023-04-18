@@ -72,6 +72,10 @@ func (j *jsiiProxy_TotalTls) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_TotalTls) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TotalTls) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

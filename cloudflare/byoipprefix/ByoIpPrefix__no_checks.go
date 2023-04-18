@@ -76,6 +76,10 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ByoIpPrefix) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ByoIpPrefix) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

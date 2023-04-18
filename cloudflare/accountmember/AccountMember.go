@@ -2,14 +2,14 @@ package accountmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/accountmember/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/accountmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,9 +24,9 @@ type AccountMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -98,7 +98,6 @@ type AccountMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -169,8 +168,8 @@ func (j *jsiiProxy_AccountMember) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccountMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +379,7 @@ func (j *jsiiProxy_AccountMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember(scope constructs.Construct, id *string, config *AccountMemberConfig) AccountMember {
 	_init_.Initialize()
 
@@ -398,7 +397,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *string, config *AccountMemberConfig) {
 	_init_.Initialize()
 
@@ -431,7 +430,10 @@ func (j *jsiiProxy_AccountMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountMember)SetCount(val *float64) {
+func (j *jsiiProxy_AccountMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -792,14 +794,6 @@ func (a *jsiiProxy_AccountMember) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_AccountMember) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAccountId",
-		nil, // no parameters
 	)
 }
 

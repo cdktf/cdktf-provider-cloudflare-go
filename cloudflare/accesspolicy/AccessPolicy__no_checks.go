@@ -96,6 +96,10 @@ func (j *jsiiProxy_AccessPolicy) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicy) validateSetDecisionParameters(val *string) error {
 	return nil
 }

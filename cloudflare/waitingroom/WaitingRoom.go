@@ -2,14 +2,14 @@ package waitingroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v5/waitingroom/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v6/waitingroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WaitingRoom interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomPageHtml() *string
 	SetCustomPageHtml(val *string)
 	CustomPageHtmlInput() *string
@@ -194,8 +194,8 @@ func (j *jsiiProxy_WaitingRoom) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoom) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WaitingRoom) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -665,7 +665,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -683,7 +683,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/cloudflare/r/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -705,7 +705,10 @@ func (j *jsiiProxy_WaitingRoom)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoom)SetCount(val *float64) {
+func (j *jsiiProxy_WaitingRoom)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

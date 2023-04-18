@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApiToken) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ApiToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiToken) validateSetExpiresOnParameters(val *string) error {
 	return nil
 }

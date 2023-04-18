@@ -80,6 +80,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetNameParameters(val *string) er
 }
 
 func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessOrganization) validateSetUiReadOnlyToggleReasonParameters(val *string) error {
 	return nil
 }
 
