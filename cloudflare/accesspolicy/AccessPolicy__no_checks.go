@@ -108,6 +108,10 @@ func (j *jsiiProxy_AccessPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicy) validateSetIsolationRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

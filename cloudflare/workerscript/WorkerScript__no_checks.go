@@ -128,6 +128,10 @@ func (j *jsiiProxy_WorkerScript) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_WorkerScript) validateSetLogpushParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkerScript) validateSetModuleParameters(val interface{}) error {
 	return nil
 }

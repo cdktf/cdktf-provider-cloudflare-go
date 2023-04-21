@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_shield cloudflare_api_shield}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/api_shield cloudflare_api_shield}.
 type ApiShield interface {
 	cdktf.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_shield cloudflare_api_shield} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, config *ApiShieldConfig) {
 	_init_.Initialize()
 

@@ -76,6 +76,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetAuthDomainParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

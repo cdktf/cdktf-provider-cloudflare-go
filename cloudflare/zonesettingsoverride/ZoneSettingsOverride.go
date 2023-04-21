@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_settings_override cloudflare_zone_settings_override}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_settings_override cloudflare_zone_settings_override}.
 type ZoneSettingsOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) ZoneType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
 func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) ZoneSettingsOverride {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *Zon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
 func NewZoneSettingsOverride_Override(z ZoneSettingsOverride, scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) {
 	_init_.Initialize()
 

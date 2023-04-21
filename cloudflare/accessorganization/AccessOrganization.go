@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -18,6 +18,9 @@ type AccessOrganization interface {
 	AuthDomain() *string
 	SetAuthDomain(val *string)
 	AuthDomainInput() *string
+	AutoRedirectToIdentity() interface{}
+	SetAutoRedirectToIdentity(val interface{})
+	AutoRedirectToIdentityInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -111,6 +114,7 @@ type AccessOrganization interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLoginDesign(value interface{})
 	ResetAccountId()
+	ResetAutoRedirectToIdentity()
 	ResetId()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
@@ -171,6 +175,26 @@ func (j *jsiiProxy_AccessOrganization) AuthDomainInput() *string {
 	_jsii_.Get(
 		j,
 		"authDomainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) AutoRedirectToIdentity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRedirectToIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessOrganization) AutoRedirectToIdentityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRedirectToIdentityInput",
 		&returns,
 	)
 	return returns
@@ -477,7 +501,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 
@@ -524,6 +548,17 @@ func (j *jsiiProxy_AccessOrganization)SetAuthDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"authDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessOrganization)SetAutoRedirectToIdentity(val interface{}) {
+	if err := j.validateSetAutoRedirectToIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRedirectToIdentity",
 		val,
 	)
 }
@@ -943,6 +978,14 @@ func (a *jsiiProxy_AccessOrganization) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessOrganization) ResetAutoRedirectToIdentity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoRedirectToIdentity",
 		nil, // no parameters
 	)
 }
