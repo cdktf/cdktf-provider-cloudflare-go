@@ -84,6 +84,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLimitPar
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetMegabitsPerSecondParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewHealthParameters(val *[]*string) error {
 	return nil
 }

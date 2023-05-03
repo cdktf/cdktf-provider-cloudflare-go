@@ -87,6 +87,65 @@ func init() {
 		reflect.TypeOf((*RulesetRulesActionParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithms",
+		reflect.TypeOf((*RulesetRulesActionParametersAlgorithms)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsList",
+		reflect.TypeOf((*RulesetRulesActionParametersAlgorithmsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RulesetRulesActionParametersAlgorithmsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAlgorithmsOutputReference",
+		reflect.TypeOf((*RulesetRulesActionParametersAlgorithmsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RulesetRulesActionParametersAlgorithmsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominify",
 		reflect.TypeOf((*RulesetRulesActionParametersAutominify)(nil)).Elem(),
 	)
@@ -1287,6 +1346,8 @@ func init() {
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "algorithms", GoGetter: "Algorithms"},
+			_jsii_.MemberProperty{JsiiProperty: "algorithmsInput", GoGetter: "AlgorithmsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewritesInput", GoGetter: "AutomaticHttpsRewritesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autominify", GoGetter: "Autominify"},
@@ -1364,6 +1425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "polishInput", GoGetter: "PolishInput"},
 			_jsii_.MemberProperty{JsiiProperty: "products", GoGetter: "Products"},
 			_jsii_.MemberProperty{JsiiProperty: "productsInput", GoGetter: "ProductsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAlgorithms", GoMethod: "PutAlgorithms"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutominify", GoMethod: "PutAutominify"},
 			_jsii_.MemberMethod{JsiiMethod: "putBrowserTtl", GoMethod: "PutBrowserTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "putCacheKey", GoMethod: "PutCacheKey"},
@@ -1380,6 +1442,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putUri", GoMethod: "PutUri"},
 			_jsii_.MemberProperty{JsiiProperty: "requestFields", GoGetter: "RequestFields"},
 			_jsii_.MemberProperty{JsiiProperty: "requestFieldsInput", GoGetter: "RequestFieldsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlgorithms", GoMethod: "ResetAlgorithms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticHttpsRewrites", GoMethod: "ResetAutomaticHttpsRewrites"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutominify", GoMethod: "ResetAutominify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBic", GoMethod: "ResetBic"},

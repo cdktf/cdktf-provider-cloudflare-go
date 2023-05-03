@@ -10,6 +10,8 @@ import (
 
 type RulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	Algorithms() RulesetRulesActionParametersAlgorithmsList
+	AlgorithmsInput() interface{}
 	AutomaticHttpsRewrites() interface{}
 	SetAutomaticHttpsRewrites(val interface{})
 	AutomaticHttpsRewritesInput() interface{}
@@ -188,6 +190,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAlgorithms(value interface{})
 	PutAutominify(value interface{})
 	PutBrowserTtl(value interface{})
 	PutCacheKey(value interface{})
@@ -202,6 +205,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutServeStale(value interface{})
 	PutSni(value interface{})
 	PutUri(value interface{})
+	ResetAlgorithms()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
 	ResetBic()
@@ -262,6 +266,26 @@ type RulesetRulesActionParametersOutputReference interface {
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Algorithms() RulesetRulesActionParametersAlgorithmsList {
+	var returns RulesetRulesActionParametersAlgorithmsList
+	_jsii_.Get(
+		j,
+		"algorithms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AlgorithmsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"algorithmsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AutomaticHttpsRewrites() interface{} {
@@ -1906,6 +1930,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) InterpolationFor
 	return returns
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutAlgorithms(value interface{}) {
+	if err := r.validatePutAlgorithmsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putAlgorithms",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutAutominify(value interface{}) {
 	if err := r.validatePutAutominifyParameters(value); err != nil {
 		panic(err)
@@ -2057,6 +2092,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value int
 		r,
 		"putUri",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAlgorithms() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAlgorithms",
+		nil, // no parameters
 	)
 }
 

@@ -56,6 +56,9 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	R2Buckets() *map[string]*string
 	SetR2Buckets(val *map[string]*string)
 	R2BucketsInput() *map[string]*string
+	Secrets() *map[string]*string
+	SetSecrets(val *map[string]*string)
+	SecretsInput() *map[string]*string
 	ServiceBinding() PagesProjectDeploymentConfigsPreviewServiceBindingList
 	ServiceBindingInput() interface{}
 	// Experimental.
@@ -103,6 +106,7 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	ResetFailOpen()
 	ResetKvNamespaces()
 	ResetR2Buckets()
+	ResetSecrets()
 	ResetServiceBinding()
 	ResetUsageModel()
 	// Produce the Token's value at resolution time.
@@ -350,6 +354,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2Bucket
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Secrets() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secrets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) SecretsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"secretsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ServiceBinding() PagesProjectDeploymentConfigsPreviewServiceBindingList {
 	var returns PagesProjectDeploymentConfigsPreviewServiceBindingList
 	_jsii_.Get(
@@ -566,6 +590,17 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetR2Buck
 	_jsii_.Set(
 		j,
 		"r2Buckets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetSecrets(val *map[string]*string) {
+	if err := j.validateSetSecretsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secrets",
 		val,
 	)
 }
@@ -868,6 +903,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetR2B
 	_jsii_.InvokeVoid(
 		p,
 		"resetR2Buckets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetSecrets() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSecrets",
 		nil, // no parameters
 	)
 }

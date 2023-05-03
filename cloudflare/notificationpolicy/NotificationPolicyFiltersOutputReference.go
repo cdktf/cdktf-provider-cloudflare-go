@@ -47,6 +47,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Limit() *[]*string
 	SetLimit(val *[]*string)
 	LimitInput() *[]*string
+	MegabitsPerSecond() *[]*string
+	SetMegabitsPerSecond(val *[]*string)
+	MegabitsPerSecondInput() *[]*string
 	NewHealth() *[]*string
 	SetNewHealth(val *[]*string)
 	NewHealthInput() *[]*string
@@ -121,6 +124,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetHealthCheckId()
 	ResetInputId()
 	ResetLimit()
+	ResetMegabitsPerSecond()
 	ResetNewHealth()
 	ResetPacketsPerSecond()
 	ResetPoolId()
@@ -313,6 +317,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) LimitInput() *[]*st
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecond() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecond",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) MegabitsPerSecondInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"megabitsPerSecondInput",
 		&returns,
 	)
 	return returns
@@ -705,6 +729,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetLimit(val *[]*str
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetMegabitsPerSecond(val *[]*string) {
+	if err := j.validateSetMegabitsPerSecondParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"megabitsPerSecond",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]*string) {
 	if err := j.validateSetNewHealthParameters(val); err != nil {
 		panic(err)
@@ -1089,6 +1124,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetLimit() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetMegabitsPerSecond() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMegabitsPerSecond",
 		nil, // no parameters
 	)
 }

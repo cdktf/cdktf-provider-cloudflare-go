@@ -44,6 +44,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateInterpol
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAlgorithmsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutAutominifyParameters(value interface{}) error {
 	return nil
 }

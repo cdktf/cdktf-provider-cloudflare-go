@@ -100,6 +100,10 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetSecretsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
 type DevicePostureIntegration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DevicePostureIntegration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
 func NewDevicePostureIntegration(scope constructs.Construct, id *string, config *DevicePostureIntegrationConfig) DevicePostureIntegration {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDevicePostureIntegration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.4.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
 func NewDevicePostureIntegration_Override(d DevicePostureIntegration, scope constructs.Construct, id *string, config *DevicePostureIntegrationConfig) {
 	_init_.Initialize()
 
