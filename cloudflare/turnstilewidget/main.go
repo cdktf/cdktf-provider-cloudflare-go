@@ -54,7 +54,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBotFightMode", GoMethod: "ResetBotFightMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOfflabel", GoMethod: "ResetOfflabel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},

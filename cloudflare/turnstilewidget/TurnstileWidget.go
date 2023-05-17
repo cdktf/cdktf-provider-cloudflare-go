@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -110,7 +110,6 @@ type TurnstileWidget interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetBotFightMode()
 	ResetId()
-	ResetMode()
 	ResetOfflabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -462,7 +461,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -480,7 +479,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.5.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.6.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -925,14 +924,6 @@ func (t *jsiiProxy_TurnstileWidget) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TurnstileWidget) ResetMode() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetMode",
 		nil, // no parameters
 	)
 }

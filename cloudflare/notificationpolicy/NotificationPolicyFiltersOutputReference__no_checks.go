@@ -124,7 +124,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetStatusPa
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostParameters(val *[]*string) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostnameParameters(val *[]*string) error {
 	return nil
 }
 

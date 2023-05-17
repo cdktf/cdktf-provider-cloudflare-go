@@ -77,9 +77,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Status() *[]*string
 	SetStatus(val *[]*string)
 	StatusInput() *[]*string
-	TargetHost() *[]*string
-	SetTargetHost(val *[]*string)
-	TargetHostInput() *[]*string
+	TargetHostname() *[]*string
+	SetTargetHostname(val *[]*string)
+	TargetHostnameInput() *[]*string
 	TargetZoneName() *[]*string
 	SetTargetZoneName(val *[]*string)
 	TargetZoneNameInput() *[]*string
@@ -134,7 +134,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetServices()
 	ResetSlo()
 	ResetStatus()
-	ResetTargetHost()
+	ResetTargetHostname()
 	ResetTargetZoneName()
 	ResetZones()
 	// Produce the Token's value at resolution time.
@@ -522,21 +522,21 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) StatusInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHost() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostname() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHost",
+		"targetHostname",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostInput() *[]*string {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostnameInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"targetHostInput",
+		"targetHostnameInput",
 		&returns,
 	)
 	return returns
@@ -839,13 +839,13 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetStatus(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHost(val *[]*string) {
-	if err := j.validateSetTargetHostParameters(val); err != nil {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHostname(val *[]*string) {
+	if err := j.validateSetTargetHostnameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"targetHost",
+		"targetHostname",
 		val,
 	)
 }
@@ -1208,10 +1208,10 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetStatus() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHost() {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHostname() {
 	_jsii_.InvokeVoid(
 		n,
-		"resetTargetHost",
+		"resetTargetHostname",
 		nil, // no parameters
 	)
 }

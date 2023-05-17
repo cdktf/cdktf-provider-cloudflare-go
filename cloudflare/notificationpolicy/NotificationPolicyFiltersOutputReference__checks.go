@@ -299,7 +299,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetStatusPa
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostParameters(val *[]*string) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHostnameParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
