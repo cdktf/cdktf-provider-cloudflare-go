@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention cloudflare_logpull_retention}.
 type LogpullRetention interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_LogpullRetention) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention(scope constructs.Construct, id *string, config *LogpullRetentionConfig) LogpullRetention {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewLogpullRetention(scope constructs.Construct, id *string, config *Logpull
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention_Override(l LogpullRetention, scope constructs.Construct, id *string, config *LogpullRetentionConfig) {
 	_init_.Initialize()
 
