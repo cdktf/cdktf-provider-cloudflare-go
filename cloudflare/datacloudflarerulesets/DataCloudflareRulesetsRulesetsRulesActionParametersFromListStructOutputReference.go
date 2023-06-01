@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference interface {
+type DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -27,8 +27,8 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataCloudflareRulesetsRulesetsRulesActionParametersFromList
-	SetInternalValue(val *DataCloudflareRulesetsRulesetsRulesActionParametersFromList)
+	InternalValue() *DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct
+	SetInternalValue(val *DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct)
 	Key() *string
 	Name() *string
 	// Experimental.
@@ -73,12 +73,12 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference 
 	ToString() *string
 }
 
-// The jsii proxy struct for DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference
-type jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference struct {
+// The jsii proxy struct for DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference
+type jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,7 +98,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -108,7 +108,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) InternalValue() *DataCloudflareRulesetsRulesetsRulesActionParametersFromList {
-	var returns *DataCloudflareRulesetsRulesetsRulesActionParametersFromList
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) InternalValue() *DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct {
+	var returns *DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -128,7 +128,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) Key() *string {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) Key() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -138,7 +138,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) Name() *string {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -148,7 +148,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -169,16 +169,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 }
 
 
-func NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference {
+func NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference{}
+	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,17 +186,17 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReferen
 	return &j
 }
 
-func NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference_Override(d DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference_Override(d DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference)SetInternalValue(val *DataCloudflareRulesetsRulesetsRulesActionParametersFromList) {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)SetInternalValue(val *DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -264,7 +264,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -280,7 +280,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -296,7 +296,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -312,7 +312,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +328,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +344,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +360,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +392,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,7 +421,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -437,7 +437,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -453,7 +453,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListOutputReference) ToString() *string {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

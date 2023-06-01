@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,15 +163,15 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *RulesetRulesActionParametersFromList:
-		val := val.(*RulesetRulesActionParametersFromList)
+	case *RulesetRulesActionParametersFromListStruct:
+		val := val.(*RulesetRulesActionParametersFromListStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case RulesetRulesActionParametersFromList:
-		val_ := val.(RulesetRulesActionParametersFromList)
+	case RulesetRulesActionParametersFromListStruct:
+		val_ := val.(RulesetRulesActionParametersFromListStruct)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -180,14 +180,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesActionParametersFromList, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesActionParametersFromListStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetKeyParameters(val *string) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) validate
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersFromListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersFromListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

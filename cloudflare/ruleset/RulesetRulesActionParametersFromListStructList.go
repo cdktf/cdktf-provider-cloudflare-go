@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type RulesetRulesActionParametersFromListList interface {
+type RulesetRulesActionParametersFromListStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type RulesetRulesActionParametersFromListList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) RulesetRulesActionParametersFromListOutputReference
+	Get(index *float64) RulesetRulesActionParametersFromListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type RulesetRulesActionParametersFromListList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for RulesetRulesActionParametersFromListList
-type jsiiProxy_RulesetRulesActionParametersFromListList struct {
+// The jsii proxy struct for RulesetRulesActionParametersFromListStructList
+type jsiiProxy_RulesetRulesActionParametersFromListStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) CreationStack() *[]*string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) Fqn() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) InternalValue() interface{} {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) InternalValue() int
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) TerraformAttribute() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) TerraformResource()
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList) WrapsSet() *bool {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList) WrapsSet() *bool {
 }
 
 
-func NewRulesetRulesActionParametersFromListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersFromListList {
+func NewRulesetRulesActionParametersFromListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersFromListStructList {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersFromListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersFromListStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_RulesetRulesActionParametersFromListList{}
+	j := jsiiProxy_RulesetRulesActionParametersFromListStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewRulesetRulesActionParametersFromListList(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewRulesetRulesActionParametersFromListList_Override(r RulesetRulesActionParametersFromListList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewRulesetRulesActionParametersFromListStructList_Override(r RulesetRulesActionParametersFromListStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,7 +178,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListList)SetWrapsSet(val *boo
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListList) ComputeFqn() *string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -191,11 +191,11 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListList) ComputeFqn() *strin
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListList) Get(index *float64) RulesetRulesActionParametersFromListOutputReference {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructList) Get(index *float64) RulesetRulesActionParametersFromListStructOutputReference {
 	if err := r.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns RulesetRulesActionParametersFromListOutputReference
+	var returns RulesetRulesActionParametersFromListStructOutputReference
 
 	_jsii_.Invoke(
 		r,
@@ -207,7 +207,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListList) Get(index *float64)
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -223,7 +223,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListList) Resolve(_context cd
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListList) ToString() *string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

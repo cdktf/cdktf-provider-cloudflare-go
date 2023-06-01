@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type RulesetRulesActionParametersFromListOutputReference interface {
+type RulesetRulesActionParametersFromListStructOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -79,12 +79,12 @@ type RulesetRulesActionParametersFromListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for RulesetRulesActionParametersFromListOutputReference
-type jsiiProxy_RulesetRulesActionParametersFromListOutputReference struct {
+// The jsii proxy struct for RulesetRulesActionParametersFromListStructOutputReference
+type jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -94,7 +94,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -104,7 +104,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -114,7 +114,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Fqn() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -124,7 +124,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) InternalValue() interface{} {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -134,7 +134,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Key() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) Key() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -144,7 +144,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Key() *s
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) KeyInput() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) KeyInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -154,7 +154,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) KeyInput
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Name() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -164,7 +164,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Name() *
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) NameInput() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -174,7 +174,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) NameInpu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -184,7 +184,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -195,16 +195,16 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Terrafor
 }
 
 
-func NewRulesetRulesActionParametersFromListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersFromListOutputReference {
+func NewRulesetRulesActionParametersFromListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersFromListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersFromListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersFromListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_RulesetRulesActionParametersFromListOutputReference{}
+	j := jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,17 +212,17 @@ func NewRulesetRulesActionParametersFromListOutputReference(terraformResource cd
 	return &j
 }
 
-func NewRulesetRulesActionParametersFromListOutputReference_Override(r RulesetRulesActionParametersFromListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersFromListStructOutputReference_Override(r RulesetRulesActionParametersFromListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +255,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +266,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetKey(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetName(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +277,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetName(v
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +288,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromListOutputReference)SetTerraf
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComputeFqn() *string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -312,7 +312,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ComputeF
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +328,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetAnyMa
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +344,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetBoole
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +360,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetBoole
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetListA
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +392,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumbe
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumbe
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -424,7 +424,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetNumbe
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -440,7 +440,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetStrin
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -456,7 +456,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) GetStrin
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -469,7 +469,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Interpol
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -485,7 +485,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Interpol
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetKey() {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ResetKey() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetKey",
@@ -493,7 +493,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetKey
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetName() {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetName",
@@ -501,7 +501,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ResetNam
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -517,7 +517,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) Resolve(
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromListOutputReference) ToString() *string {
+func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

@@ -1,7 +1,7 @@
 package ruleset
 
 
-type RulesetRulesActionParametersFromList struct {
+type RulesetRulesActionParametersFromListStruct struct {
 	// Expression to use for the list lookup.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/ruleset#key Ruleset#key}

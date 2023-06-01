@@ -935,12 +935,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromList",
-		reflect.TypeOf((*RulesetRulesActionParametersFromList)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct",
+		reflect.TypeOf((*RulesetRulesActionParametersFromListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListList",
-		reflect.TypeOf((*RulesetRulesActionParametersFromListList)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructList",
+		reflect.TypeOf((*RulesetRulesActionParametersFromListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -954,14 +954,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_RulesetRulesActionParametersFromListList{}
+			j := jsiiProxy_RulesetRulesActionParametersFromListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListOutputReference",
-		reflect.TypeOf((*RulesetRulesActionParametersFromListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference",
+		reflect.TypeOf((*RulesetRulesActionParametersFromListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -992,7 +992,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_RulesetRulesActionParametersFromListOutputReference{}
+			j := jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
