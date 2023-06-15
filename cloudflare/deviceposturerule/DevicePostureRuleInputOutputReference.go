@@ -29,6 +29,9 @@ type DevicePostureRuleInputOutputReference interface {
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
+	CountOperator() *string
+	SetCountOperator(val *string)
+	CountOperatorInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -50,6 +53,9 @@ type DevicePostureRuleInputOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IssueCount() *string
+	SetIssueCount(val *string)
+	IssueCountInput() *string
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -124,10 +130,12 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetCheckDisks()
 	ResetComplianceStatus()
 	ResetConnectionId()
+	ResetCountOperator()
 	ResetDomain()
 	ResetEnabled()
 	ResetExists()
 	ResetId()
+	ResetIssueCount()
 	ResetOperator()
 	ResetOs()
 	ResetOsDistroName()
@@ -231,6 +239,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ConnectionIdInput() *s
 	_jsii_.Get(
 		j,
 		"connectionIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CountOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CountOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"countOperatorInput",
 		&returns,
 	)
 	return returns
@@ -341,6 +369,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) InternalValue() interf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issueCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issueCountInput",
 		&returns,
 	)
 	return returns
@@ -709,6 +757,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetConnectionId(val *st
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCountOperator(val *string) {
+	if err := j.validateSetCountOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"countOperator",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
@@ -760,6 +819,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val in
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetIssueCount(val *string) {
+	if err := j.validateSetIssueCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issueCount",
 		val,
 	)
 }
@@ -1139,6 +1209,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetConnectionId() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetCountOperator() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCountOperator",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetDomain() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1167,6 +1245,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetIssueCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIssueCount",
 		nil, // no parameters
 	)
 }

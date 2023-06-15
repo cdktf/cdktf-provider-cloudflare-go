@@ -68,6 +68,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetConnectionI
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCountOperatorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetDomainParameters(val *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIdParameter
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIssueCountParameters(val *string) error {
 	return nil
 }
 

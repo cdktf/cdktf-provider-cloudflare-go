@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -96,6 +96,9 @@ type AccessApplication interface {
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
+	SelfHostedDomains() *[]*string
+	SetSelfHostedDomains(val *[]*string)
+	SelfHostedDomainsInput() *[]*string
 	ServiceAuth401Redirect() interface{}
 	SetServiceAuth401Redirect(val interface{})
 	ServiceAuth401RedirectInput() interface{}
@@ -161,6 +164,7 @@ type AccessApplication interface {
 	ResetOverrideLogicalId()
 	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
+	ResetSelfHostedDomains()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
 	ResetSkipInterstitial()
@@ -621,6 +625,26 @@ func (j *jsiiProxy_AccessApplication) SameSiteCookieAttributeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) SelfHostedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selfHostedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SelfHostedDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selfHostedDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) ServiceAuth401Redirect() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -752,7 +776,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -770,7 +794,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.7.1/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -988,6 +1012,17 @@ func (j *jsiiProxy_AccessApplication)SetSameSiteCookieAttribute(val *string) {
 	_jsii_.Set(
 		j,
 		"sameSiteCookieAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetSelfHostedDomains(val *[]*string) {
+	if err := j.validateSetSelfHostedDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfHostedDomains",
 		val,
 	)
 }
@@ -1451,6 +1486,14 @@ func (a *jsiiProxy_AccessApplication) ResetSameSiteCookieAttribute() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSameSiteCookieAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetSelfHostedDomains() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSelfHostedDomains",
 		nil, // no parameters
 	)
 }

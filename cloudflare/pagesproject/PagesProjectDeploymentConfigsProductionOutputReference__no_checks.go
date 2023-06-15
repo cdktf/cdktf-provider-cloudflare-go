@@ -44,6 +44,10 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) valid
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutPlacementParameters(value *PagesProjectDeploymentConfigsProductionPlacement) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) validatePutServiceBindingParameters(value interface{}) error {
 	return nil
 }

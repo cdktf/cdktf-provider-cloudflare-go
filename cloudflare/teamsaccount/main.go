@@ -504,6 +504,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rootCa", GoGetter: "RootCa"},
+			_jsii_.MemberProperty{JsiiProperty: "rootCaInput", GoGetter: "RootCaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tcp", GoGetter: "Tcp"},
 			_jsii_.MemberProperty{JsiiProperty: "tcpInput", GoGetter: "TcpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -53,6 +53,8 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	KvNamespaces() *map[string]*string
 	SetKvNamespaces(val *map[string]*string)
 	KvNamespacesInput() *map[string]*string
+	Placement() PagesProjectDeploymentConfigsPreviewPlacementOutputReference
+	PlacementInput() *PagesProjectDeploymentConfigsPreviewPlacement
 	R2Buckets() *map[string]*string
 	SetR2Buckets(val *map[string]*string)
 	R2BucketsInput() *map[string]*string
@@ -96,6 +98,7 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPlacement(value *PagesProjectDeploymentConfigsPreviewPlacement)
 	PutServiceBinding(value interface{})
 	ResetAlwaysUseLatestCompatibilityDate()
 	ResetCompatibilityDate()
@@ -105,6 +108,7 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	ResetEnvironmentVariables()
 	ResetFailOpen()
 	ResetKvNamespaces()
+	ResetPlacement()
 	ResetR2Buckets()
 	ResetSecrets()
 	ResetServiceBinding()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamesp
 	_jsii_.Get(
 		j,
 		"kvNamespacesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Placement() PagesProjectDeploymentConfigsPreviewPlacementOutputReference {
+	var returns PagesProjectDeploymentConfigsPreviewPlacementOutputReference
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PlacementInput() *PagesProjectDeploymentConfigsPreviewPlacement {
+	var returns *PagesProjectDeploymentConfigsPreviewPlacement
+	_jsii_.Get(
+		j,
+		"placementInput",
 		&returns,
 	)
 	return returns
@@ -824,6 +848,17 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Interpol
 	return returns
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutPlacement(value *PagesProjectDeploymentConfigsPreviewPlacement) {
+	if err := p.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putPlacement",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutServiceBinding(value interface{}) {
 	if err := p.validatePutServiceBindingParameters(value); err != nil {
 		panic(err)
@@ -895,6 +930,14 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetKvN
 	_jsii_.InvokeVoid(
 		p,
 		"resetKvNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetPlacement() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPlacement",
 		nil, // no parameters
 	)
 }

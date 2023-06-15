@@ -140,6 +140,10 @@ func (j *jsiiProxy_AccessApplication) validateSetSameSiteCookieAttributeParamete
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetSelfHostedDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetServiceAuth401RedirectParameters(val interface{}) error {
 	return nil
 }
