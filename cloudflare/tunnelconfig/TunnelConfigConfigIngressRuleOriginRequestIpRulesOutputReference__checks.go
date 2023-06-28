@@ -185,6 +185,8 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputRefere
 
 func (j *jsiiProxy_TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *TunnelConfigConfigIngressRuleOriginRequestIpRules:
 		val := val.(*TunnelConfigConfigIngressRuleOriginRequestIpRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -196,11 +198,9 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleOriginRequestIpRulesOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *TunnelConfigConfigIngressRuleOriginRequestIpRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *TunnelConfigConfigIngressRuleOriginRequestIpRules; received %#v (a %T)", val, val)
 		}
 	}
 

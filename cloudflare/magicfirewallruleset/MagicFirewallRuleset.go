@@ -2,14 +2,14 @@ package magicfirewallruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/magicfirewallruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/magicfirewallruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset}.
 type MagicFirewallRuleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_MagicFirewallRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
 func NewMagicFirewallRuleset(scope constructs.Construct, id *string, config *MagicFirewallRulesetConfig) MagicFirewallRuleset {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewMagicFirewallRuleset(scope constructs.Construct, id *string, config *Mag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/magic_firewall_ruleset cloudflare_magic_firewall_ruleset} Resource.
 func NewMagicFirewallRuleset_Override(m MagicFirewallRuleset, scope constructs.Construct, id *string, config *MagicFirewallRulesetConfig) {
 	_init_.Initialize()
 

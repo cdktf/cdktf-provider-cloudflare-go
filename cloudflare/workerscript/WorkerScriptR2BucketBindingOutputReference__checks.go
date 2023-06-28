@@ -173,6 +173,8 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) validateSetComple
 
 func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WorkerScriptR2BucketBinding:
 		val := val.(*WorkerScriptR2BucketBinding)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WorkerScriptR2BucketBinding, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WorkerScriptR2BucketBinding; received %#v (a %T)", val, val)
 		}
 	}
 

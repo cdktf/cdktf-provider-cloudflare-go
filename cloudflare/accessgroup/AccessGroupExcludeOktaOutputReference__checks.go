@@ -173,6 +173,8 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) validateSetIdentityPro
 
 func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AccessGroupExcludeOkta:
 		val := val.(*AccessGroupExcludeOkta)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AccessGroupExcludeOkta, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessGroupExcludeOkta; received %#v (a %T)", val, val)
 		}
 	}
 

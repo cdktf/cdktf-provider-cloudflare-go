@@ -2,9 +2,9 @@ package listitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/listitem/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/listitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

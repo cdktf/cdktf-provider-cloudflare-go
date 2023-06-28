@@ -189,6 +189,8 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetHead
 
 func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AccessOrganizationLoginDesign:
 		val := val.(*AccessOrganizationLoginDesign)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AccessOrganizationLoginDesign, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessOrganizationLoginDesign; received %#v (a %T)", val, val)
 		}
 	}
 

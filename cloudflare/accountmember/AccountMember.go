@@ -2,14 +2,14 @@ package accountmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/accountmember/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accountmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AccountMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember(scope constructs.Construct, id *string, config *AccountMemberConfig) AccountMember {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *string, config *AccountMemberConfig) {
 	_init_.Initialize()
 

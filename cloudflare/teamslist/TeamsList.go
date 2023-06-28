@@ -2,14 +2,14 @@ package teamslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/teamslist/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/teamslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/teams_list cloudflare_teams_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_list cloudflare_teams_list}.
 type TeamsList interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_TeamsList) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/teams_list cloudflare_teams_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_list cloudflare_teams_list} Resource.
 func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfig) TeamsList {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/teams_list cloudflare_teams_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_list cloudflare_teams_list} Resource.
 func NewTeamsList_Override(t TeamsList, scope constructs.Construct, id *string, config *TeamsListConfig) {
 	_init_.Initialize()
 

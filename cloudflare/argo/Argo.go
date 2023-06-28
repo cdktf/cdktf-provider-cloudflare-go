@@ -2,14 +2,14 @@ package argo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/argo/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/argo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/argo cloudflare_argo}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/argo cloudflare_argo}.
 type Argo interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_Argo) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/argo cloudflare_argo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/argo cloudflare_argo} Resource.
 func NewArgo(scope constructs.Construct, id *string, config *ArgoConfig) Argo {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewArgo(scope constructs.Construct, id *string, config *ArgoConfig) Argo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/argo cloudflare_argo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/argo cloudflare_argo} Resource.
 func NewArgo_Override(a Argo, scope constructs.Construct, id *string, config *ArgoConfig) {
 	_init_.Initialize()
 

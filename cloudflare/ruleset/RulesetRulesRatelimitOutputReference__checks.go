@@ -181,6 +181,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetCountingExpr
 
 func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RulesetRulesRatelimit:
 		val := val.(*RulesetRulesRatelimit)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesRatelimit, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RulesetRulesRatelimit; received %#v (a %T)", val, val)
 		}
 	}
 

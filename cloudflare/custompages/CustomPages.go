@@ -2,14 +2,14 @@ package custompages
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/custompages/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/custompages/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/custom_pages cloudflare_custom_pages}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/custom_pages cloudflare_custom_pages}.
 type CustomPages interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CustomPages) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesConfig) CustomPages {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/custom_pages cloudflare_custom_pages} Resource.
 func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *string, config *CustomPagesConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datacloudflarerulesets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflarerulesets/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarerulesets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/rulesets cloudflare_rulesets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/rulesets cloudflare_rulesets}.
 type DataCloudflareRulesets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareRulesets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) DataCloudflareRulesets {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/rulesets cloudflare_rulesets} Data Source.
 func NewDataCloudflareRulesets_Override(d DataCloudflareRulesets, scope constructs.Construct, id *string, config *DataCloudflareRulesetsConfig) {
 	_init_.Initialize()
 

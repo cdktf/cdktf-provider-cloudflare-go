@@ -2,14 +2,14 @@ package datacloudflareaccountroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccountroles/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareaccountroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/account_roles cloudflare_account_roles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/account_roles cloudflare_account_roles}.
 type DataCloudflareAccountRoles interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) {
 	_init_.Initialize()
 

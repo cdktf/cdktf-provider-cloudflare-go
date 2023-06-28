@@ -52,6 +52,10 @@ func (w *jsiiProxy_WaitingRoom) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoom) validatePutAdditionalRoutesParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoom) validatePutTimeoutsParameters(value *WaitingRoomTimeouts) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func validateWaitingRoom_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_WaitingRoom) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetCookieSuffixParameters(val *string) error {
 	return nil
 }
 

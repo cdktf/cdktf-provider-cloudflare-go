@@ -2,14 +2,17 @@ package notificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/notificationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/notificationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type NotificationPolicyFiltersOutputReference interface {
 	cdktf.ComplexObject
+	AlertTriggerPreferences() *[]*string
+	SetAlertTriggerPreferences(val *[]*string)
+	AlertTriggerPreferencesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -118,6 +121,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlertTriggerPreferences()
 	ResetEnabled()
 	ResetEventSource()
 	ResetEventType()
@@ -150,6 +154,26 @@ type NotificationPolicyFiltersOutputReference interface {
 // The jsii proxy struct for NotificationPolicyFiltersOutputReference
 type jsiiProxy_NotificationPolicyFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alertTriggerPreferencesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -630,6 +654,17 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAlertTriggerPreferences(val *[]*string) {
+	if err := j.validateSetAlertTriggerPreferencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alertTriggerPreferences",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1078,6 +1113,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAlertTriggerPreferences() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAlertTriggerPreferences",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnabled() {

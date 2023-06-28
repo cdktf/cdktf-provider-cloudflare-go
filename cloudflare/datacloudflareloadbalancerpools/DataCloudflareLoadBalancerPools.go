@@ -2,14 +2,14 @@ package datacloudflareloadbalancerpools
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareloadbalancerpools/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareloadbalancerpools/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools}.
 type DataCloudflareLoadBalancerPools interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -329,7 +329,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPools) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
 func NewDataCloudflareLoadBalancerPools(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolsConfig) DataCloudflareLoadBalancerPools {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataCloudflareLoadBalancerPools(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/load_balancer_pools cloudflare_load_balancer_pools} Data Source.
 func NewDataCloudflareLoadBalancerPools_Override(d DataCloudflareLoadBalancerPools, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerPoolsConfig) {
 	_init_.Initialize()
 

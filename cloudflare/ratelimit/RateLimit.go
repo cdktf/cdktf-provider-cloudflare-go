@@ -2,14 +2,14 @@ package ratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/ratelimit/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/ratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/rate_limit cloudflare_rate_limit}.
 type RateLimit interface {
 	cdktf.TerraformResource
 	Action() RateLimitActionOutputReference
@@ -498,7 +498,7 @@ func (j *jsiiProxy_RateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfig) RateLimit {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, config *RateLimitConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package devicepostureintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/devicepostureintegration/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/devicepostureintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_integration cloudflare_device_posture_integration}.
 type DevicePostureIntegration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DevicePostureIntegration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
 func NewDevicePostureIntegration(scope constructs.Construct, id *string, config *DevicePostureIntegrationConfig) DevicePostureIntegration {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDevicePostureIntegration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_integration cloudflare_device_posture_integration} Resource.
 func NewDevicePostureIntegration_Override(d DevicePostureIntegration, scope constructs.Construct, id *string, config *DevicePostureIntegrationConfig) {
 	_init_.Initialize()
 

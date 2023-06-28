@@ -181,6 +181,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputRefe
 
 func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RulesetRulesActionParametersCacheKeyCustomKeyCookie:
 		val := val.(*RulesetRulesActionParametersCacheKeyCustomKeyCookie)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputRefe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RulesetRulesActionParametersCacheKeyCustomKeyCookie, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RulesetRulesActionParametersCacheKeyCustomKeyCookie; received %#v (a %T)", val, val)
 		}
 	}
 

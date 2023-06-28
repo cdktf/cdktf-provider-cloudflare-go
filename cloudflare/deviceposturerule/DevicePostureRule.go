@@ -2,14 +2,14 @@ package deviceposturerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/deviceposturerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/deviceposturerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_rule cloudflare_device_posture_rule}.
 type DevicePostureRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -476,7 +476,7 @@ func (j *jsiiProxy_DevicePostureRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
 func NewDevicePostureRule(scope constructs.Construct, id *string, config *DevicePostureRuleConfig) DevicePostureRule {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewDevicePostureRule(scope constructs.Construct, id *string, config *Device
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
 func NewDevicePostureRule_Override(d DevicePostureRule, scope constructs.Construct, id *string, config *DevicePostureRuleConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datacloudflareaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v7/datacloudflareaccounts/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareaccounts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/accounts cloudflare_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/accounts cloudflare_accounts}.
 type DataCloudflareAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataCloudflareAccountsAccountsList
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataCloudflareAccounts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) DataCloudflareAccounts {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.8.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts_Override(d DataCloudflareAccounts, scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) {
 	_init_.Initialize()
 

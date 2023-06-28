@@ -213,6 +213,8 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetCu
 
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DevicePostureIntegrationConfigA:
 		val := val.(*DevicePostureIntegrationConfigA)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -224,11 +226,9 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DevicePostureIntegrationConfigA, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DevicePostureIntegrationConfigA; received %#v (a %T)", val, val)
 		}
 	}
 
