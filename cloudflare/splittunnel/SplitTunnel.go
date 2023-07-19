@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/split_tunnel cloudflare_split_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/split_tunnel cloudflare_split_tunnel}.
 type SplitTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SplitTunnel) TunnelsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
 func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelConfig) SplitTunnel {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
 func NewSplitTunnel_Override(s SplitTunnel, scope constructs.Construct, id *string, config *SplitTunnelConfig) {
 	_init_.Initialize()
 

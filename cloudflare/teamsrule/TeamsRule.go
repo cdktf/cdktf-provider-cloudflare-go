@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_rule cloudflare_teams_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_rule cloudflare_teams_rule}.
 type TeamsRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_TeamsRule) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_rule cloudflare_teams_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_rule cloudflare_teams_rule} Resource.
 func NewTeamsRule(scope constructs.Construct, id *string, config *TeamsRuleConfig) TeamsRule {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewTeamsRule(scope constructs.Construct, id *string, config *TeamsRuleConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/teams_rule cloudflare_teams_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/teams_rule cloudflare_teams_rule} Resource.
 func NewTeamsRule_Override(t TeamsRule, scope constructs.Construct, id *string, config *TeamsRuleConfig) {
 	_init_.Initialize()
 

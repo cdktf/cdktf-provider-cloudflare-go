@@ -21,15 +21,15 @@ type R2BucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the R2 bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/r2_bucket#name R2Bucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/r2_bucket#name R2Bucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The location hint of the R2 bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.9.0/docs/resources/r2_bucket#location R2Bucket#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/r2_bucket#location R2Bucket#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 }
 
