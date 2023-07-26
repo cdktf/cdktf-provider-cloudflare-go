@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
 type DeviceManagedNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) DeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks_Override(d DeviceManagedNetworks, scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) {
 	_init_.Initialize()
 

@@ -48,7 +48,19 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetActiveThreatsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCertificateIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckDisksParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCnParameters(val *string) error {
 	return nil
 }
 
@@ -88,11 +100,23 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInfectedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIsActiveParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIssueCountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetNetworkStatusParameters(val *string) error {
 	return nil
 }
 

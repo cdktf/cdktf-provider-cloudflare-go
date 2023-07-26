@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -643,7 +643,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 

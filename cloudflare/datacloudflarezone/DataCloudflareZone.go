@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/data-sources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/data-sources/zone cloudflare_zone}.
 type DataCloudflareZone interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataCloudflareZone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) DataCloudflareZone {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone_Override(d DataCloudflareZone, scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) {
 	_init_.Initialize()
 

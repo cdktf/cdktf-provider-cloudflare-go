@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}.
 type AccessIdentityProvider interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_AccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) AccessIdentityProvider {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.10.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider_Override(a AccessIdentityProvider, scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) {
 	_init_.Initialize()
 
