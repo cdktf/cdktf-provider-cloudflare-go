@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 type DlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileConfig) DlpProfile {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string, config *DlpProfileConfig) {
 	_init_.Initialize()
 

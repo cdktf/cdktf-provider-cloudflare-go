@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,6 +61,9 @@ type TeamsAccount interface {
 	Node() constructs.Node
 	PayloadLog() TeamsAccountPayloadLogOutputReference
 	PayloadLogInput() *TeamsAccountPayloadLog
+	ProtocolDetectionEnabled() interface{}
+	SetProtocolDetectionEnabled(val interface{})
+	ProtocolDetectionEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -126,6 +129,7 @@ type TeamsAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPayloadLog()
+	ResetProtocolDetectionEnabled()
 	ResetProxy()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
@@ -404,6 +408,26 @@ func (j *jsiiProxy_TeamsAccount) PayloadLogInput() *TeamsAccountPayloadLog {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccount) ProtocolDetectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protocolDetectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) ProtocolDetectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"protocolDetectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsAccount) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -525,7 +549,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -632,6 +656,17 @@ func (j *jsiiProxy_TeamsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccount)SetProtocolDetectionEnabled(val interface{}) {
+	if err := j.validateSetProtocolDetectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocolDetectionEnabled",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (t *jsiiProxy_TeamsAccount) ResetPayloadLog() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetProtocolDetectionEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetProtocolDetectionEnabled",
 		nil, // no parameters
 	)
 }

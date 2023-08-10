@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
 type WaitingRoomSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WaitingRoomSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
 func NewWaitingRoomSettings(scope constructs.Construct, id *string, config *WaitingRoomSettingsConfig) WaitingRoomSettings {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewWaitingRoomSettings(scope constructs.Construct, id *string, config *Wait
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
 func NewWaitingRoomSettings_Override(w WaitingRoomSettings, scope constructs.Construct, id *string, config *WaitingRoomSettingsConfig) {
 	_init_.Initialize()
 

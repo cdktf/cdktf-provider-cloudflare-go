@@ -161,6 +161,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "productionInput", GoGetter: "ProductionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putPreview", GoMethod: "PutPreview"},
 			_jsii_.MemberMethod{JsiiMethod: "putProduction", GoMethod: "PutProduction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreview", GoMethod: "ResetPreview"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProduction", GoMethod: "ResetProduction"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

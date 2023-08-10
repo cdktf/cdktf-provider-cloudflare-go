@@ -52,6 +52,10 @@ func (a *jsiiProxy_AccessOrganization) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (a *jsiiProxy_AccessOrganization) validatePutCustomPagesParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessOrganization) validatePutLoginDesignParameters(value interface{}) error {
 	return nil
 }

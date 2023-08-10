@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,6 +45,9 @@ type AccessApplication interface {
 	CustomDenyUrl() *string
 	SetCustomDenyUrl(val *string)
 	CustomDenyUrlInput() *string
+	CustomPages() *[]*string
+	SetCustomPages(val *[]*string)
+	CustomPagesInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,6 +157,7 @@ type AccessApplication interface {
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
+	ResetCustomPages()
 	ResetDomain()
 	ResetEnableBindingCookie()
 	ResetHttpOnlyCookieAttribute()
@@ -370,6 +374,26 @@ func (j *jsiiProxy_AccessApplication) CustomDenyUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"customDenyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomPages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customPages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomPagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customPagesInput",
 		&returns,
 	)
 	return returns
@@ -776,7 +800,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -794,7 +818,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.11.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -889,6 +913,17 @@ func (j *jsiiProxy_AccessApplication)SetCustomDenyUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"customDenyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetCustomPages(val *[]*string) {
+	if err := j.validateSetCustomPagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customPages",
 		val,
 	)
 }
@@ -1422,6 +1457,14 @@ func (a *jsiiProxy_AccessApplication) ResetCustomDenyUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomDenyUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetCustomPages() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomPages",
 		nil, // no parameters
 	)
 }
