@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -50,6 +53,9 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConditionalAccessEnabled() interface{}
+	SetConditionalAccessEnabled(val interface{})
+	ConditionalAccessEnabledInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -140,6 +146,7 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetClaims()
 	ResetClientId()
 	ResetClientSecret()
+	ResetConditionalAccessEnabled()
 	ResetDirectoryId()
 	ResetEmailAttributeName()
 	ResetIdpPublicCert()
@@ -383,6 +390,26 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ComplexObjectIs
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ConditionalAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ConditionalAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -858,6 +885,17 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetConditionalAccessEnabled(val interface{}) {
+	if err := j.validateSetConditionalAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"conditionalAccessEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetDirectoryId(val *string) {
 	if err := j.validateSetDirectoryIdParameters(val); err != nil {
 		panic(err)
@@ -1296,6 +1334,14 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetClientSecr
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetConditionalAccessEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConditionalAccessEnabled",
 		nil, // no parameters
 	)
 }

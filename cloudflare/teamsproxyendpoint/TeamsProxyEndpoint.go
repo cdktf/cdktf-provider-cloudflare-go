@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package teamsproxyendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/teamsproxyendpoint/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/teamsproxyendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint}.
 type TeamsProxyEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -366,7 +369,7 @@ func (j *jsiiProxy_TeamsProxyEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) TeamsProxyEndpoint {
 	_init_.Initialize()
 
@@ -384,7 +387,7 @@ func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *Teams
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/teams_proxy_endpoint cloudflare_teams_proxy_endpoint} Resource.
 func NewTeamsProxyEndpoint_Override(t TeamsProxyEndpoint, scope constructs.Construct, id *string, config *TeamsProxyEndpointConfig) {
 	_init_.Initialize()
 

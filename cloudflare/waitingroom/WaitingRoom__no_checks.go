@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package waitingroom
@@ -137,6 +140,10 @@ func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_WaitingRoom) validateSetQueueingMethodParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetQueueingStatusCodeParameters(val *float64) error {
 	return nil
 }
 

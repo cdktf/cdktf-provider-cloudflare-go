@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package waitingroom
 
 import (
@@ -65,6 +68,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queueAllInput", GoGetter: "QueueAllInput"},
 			_jsii_.MemberProperty{JsiiProperty: "queueingMethod", GoGetter: "QueueingMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "queueingMethodInput", GoGetter: "QueueingMethodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queueingStatusCode", GoGetter: "QueueingStatusCode"},
+			_jsii_.MemberProperty{JsiiProperty: "queueingStatusCodeInput", GoGetter: "QueueingStatusCodeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalRoutes", GoMethod: "ResetAdditionalRoutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCookieSuffix", GoMethod: "ResetCookieSuffix"},
@@ -78,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueueAll", GoMethod: "ResetQueueAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueueingMethod", GoMethod: "ResetQueueingMethod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueueingStatusCode", GoMethod: "ResetQueueingStatusCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSuspended", GoMethod: "ResetSuspended"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},

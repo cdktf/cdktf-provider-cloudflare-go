@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datacloudflareapitokenpermissiongroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareapitokenpermissiongroups/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareapitokenpermissiongroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups}.
 type DataCloudflareApiTokenPermissionGroups interface {
 	cdktf.TerraformDataSource
 	Account() cdktf.StringMap
@@ -34,8 +37,6 @@ type DataCloudflareApiTokenPermissionGroups interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -47,6 +48,7 @@ type DataCloudflareApiTokenPermissionGroups interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	R2() cdktf.StringMap
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -82,7 +84,6 @@ type DataCloudflareApiTokenPermissionGroups interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -191,16 +192,6 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -236,6 +227,16 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Provider() cdktf.Terr
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) R2() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"r2",
 		&returns,
 	)
 	return returns
@@ -302,7 +303,7 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) Zone() cdktf.StringMa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
 func NewDataCloudflareApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsConfig) DataCloudflareApiTokenPermissionGroups {
 	_init_.Initialize()
 
@@ -320,7 +321,7 @@ func NewDataCloudflareApiTokenPermissionGroups(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/api_token_permission_groups cloudflare_api_token_permission_groups} Data Source.
 func NewDataCloudflareApiTokenPermissionGroups_Override(d DataCloudflareApiTokenPermissionGroups, scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsConfig) {
 	_init_.Initialize()
 
@@ -354,17 +355,6 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups)SetForEach(val cdktf.I
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -651,14 +641,6 @@ func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroups) OverrideLogicalId(new
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroups) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

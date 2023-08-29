@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package regionaltieredcache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionaltieredcache/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionaltieredcache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 type RegionalTieredCache interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +335,7 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
 
@@ -350,7 +353,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package origincacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/origincacertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/origincacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}.
 type OriginCaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +428,7 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
 
@@ -443,7 +446,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Construct, id *string, config *OriginCaCertificateConfig) {
 	_init_.Initialize()
 

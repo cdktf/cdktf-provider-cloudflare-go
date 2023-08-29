@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package notificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/notificationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/notificationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/notification_policy cloudflare_notification_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/notification_policy cloudflare_notification_policy}.
 type NotificationPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -520,7 +523,7 @@ func (j *jsiiProxy_NotificationPolicy) WebhooksIntegrationInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy(scope constructs.Construct, id *string, config *NotificationPolicyConfig) NotificationPolicy {
 	_init_.Initialize()
 
@@ -538,7 +541,7 @@ func NewNotificationPolicy(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/notification_policy cloudflare_notification_policy} Resource.
 func NewNotificationPolicy_Override(n NotificationPolicy, scope constructs.Construct, id *string, config *NotificationPolicyConfig) {
 	_init_.Initialize()
 

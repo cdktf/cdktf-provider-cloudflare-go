@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package accessidentityprovider
@@ -93,6 +96,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetComp
 }
 
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetConditionalAccessEnabledParameters(val interface{}) error {
 	return nil
 }
 

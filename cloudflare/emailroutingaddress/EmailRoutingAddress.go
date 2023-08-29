@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package emailroutingaddress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/emailroutingaddress/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/emailroutingaddress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/email_routing_address cloudflare_email_routing_address}.
 type EmailRoutingAddress interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -376,7 +379,7 @@ func (j *jsiiProxy_EmailRoutingAddress) Verified() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) EmailRoutingAddress {
 	_init_.Initialize()
 
@@ -394,7 +397,7 @@ func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *Emai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/email_routing_address cloudflare_email_routing_address} Resource.
 func NewEmailRoutingAddress_Override(e EmailRoutingAddress, scope constructs.Construct, id *string, config *EmailRoutingAddressConfig) {
 	_init_.Initialize()
 

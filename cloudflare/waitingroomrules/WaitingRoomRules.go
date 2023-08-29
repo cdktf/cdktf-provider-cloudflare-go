@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package waitingroomrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/waitingroomrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroomrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
 type WaitingRoomRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +359,7 @@ func (j *jsiiProxy_WaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules(scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) WaitingRoomRules {
 	_init_.Initialize()
 
@@ -374,7 +377,7 @@ func NewWaitingRoomRules(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules_Override(w WaitingRoomRules, scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) {
 	_init_.Initialize()
 

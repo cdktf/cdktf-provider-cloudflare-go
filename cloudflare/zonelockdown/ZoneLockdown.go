@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package zonelockdown
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/zonelockdown/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/zonelockdown/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 type ZoneLockdown interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +430,7 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
 
@@ -445,7 +448,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *string, config *ZoneLockdownConfig) {
 	_init_.Initialize()
 

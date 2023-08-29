@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package workerskv
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/workerskv/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/workerskv/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv cloudflare_workers_kv}.
 type WorkersKv interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -378,7 +381,7 @@ func (j *jsiiProxy_WorkersKv) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfig) WorkersKv {
 	_init_.Initialize()
 
@@ -396,7 +399,7 @@ func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, config *WorkersKvConfig) {
 	_init_.Initialize()
 

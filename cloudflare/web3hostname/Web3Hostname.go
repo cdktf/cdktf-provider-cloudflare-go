@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package web3hostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/web3hostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/web3hostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 type Web3Hostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +439,7 @@ func (j *jsiiProxy_Web3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3HostnameConfig) Web3Hostname {
 	_init_.Initialize()
 
@@ -454,7 +457,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *string, config *Web3HostnameConfig) {
 	_init_.Initialize()
 

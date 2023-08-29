@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package account
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/account/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/account/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +360,7 @@ func (j *jsiiProxy_Account) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -375,7 +378,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 

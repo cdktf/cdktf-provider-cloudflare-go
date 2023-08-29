@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package zonesettingsoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/zonesettingsoverride/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/zonesettingsoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_settings_override cloudflare_zone_settings_override}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_settings_override cloudflare_zone_settings_override}.
 type ZoneSettingsOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +391,7 @@ func (j *jsiiProxy_ZoneSettingsOverride) ZoneType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
 func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) ZoneSettingsOverride {
 	_init_.Initialize()
 
@@ -406,7 +409,7 @@ func NewZoneSettingsOverride(scope constructs.Construct, id *string, config *Zon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/zone_settings_override cloudflare_zone_settings_override} Resource.
 func NewZoneSettingsOverride_Override(z ZoneSettingsOverride, scope constructs.Construct, id *string, config *ZoneSettingsOverrideConfig) {
 	_init_.Initialize()
 

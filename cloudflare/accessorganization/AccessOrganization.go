@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessorganization/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -525,7 +528,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -543,7 +546,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 

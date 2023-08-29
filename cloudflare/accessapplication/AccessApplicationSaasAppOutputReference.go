@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +31,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomAttribute() AccessApplicationSaasAppCustomAttributeList
+	CustomAttributeInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AccessApplicationSaasApp
@@ -70,6 +75,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomAttribute(value interface{})
+	ResetCustomAttribute()
 	ResetNameIdFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -131,6 +138,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CreationStack() *[]*
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttribute() AccessApplicationSaasAppCustomAttributeList {
+	var returns AccessApplicationSaasAppCustomAttributeList
+	_jsii_.Get(
+		j,
+		"customAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttributeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customAttributeInput",
 		&returns,
 	)
 	return returns
@@ -516,6 +543,25 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomAttribute(value interface{}) {
+	if err := a.validatePutCustomAttributeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomAttribute",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomAttribute",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() {

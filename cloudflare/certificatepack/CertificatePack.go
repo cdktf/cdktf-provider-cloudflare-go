@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package certificatepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/certificatepack/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/certificatepack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -520,7 +523,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -538,7 +541,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package workerdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/workerdomain/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/workerdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_domain cloudflare_worker_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/worker_domain cloudflare_worker_domain}.
 type WorkerDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -402,7 +405,7 @@ func (j *jsiiProxy_WorkerDomain) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_domain cloudflare_worker_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/worker_domain cloudflare_worker_domain} Resource.
 func NewWorkerDomain(scope constructs.Construct, id *string, config *WorkerDomainConfig) WorkerDomain {
 	_init_.Initialize()
 
@@ -420,7 +423,7 @@ func NewWorkerDomain(scope constructs.Construct, id *string, config *WorkerDomai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/worker_domain cloudflare_worker_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/worker_domain cloudflare_worker_domain} Resource.
 func NewWorkerDomain_Override(w WorkerDomain, scope constructs.Construct, id *string, config *WorkerDomainConfig) {
 	_init_.Initialize()
 

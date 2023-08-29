@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package devicedextest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/devicedextest/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/devicedextest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/device_dex_test cloudflare_device_dex_test}.
 type DeviceDexTest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -446,7 +449,7 @@ func (j *jsiiProxy_DeviceDexTest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
 func NewDeviceDexTest(scope constructs.Construct, id *string, config *DeviceDexTestConfig) DeviceDexTest {
 	_init_.Initialize()
 
@@ -464,7 +467,7 @@ func NewDeviceDexTest(scope constructs.Construct, id *string, config *DeviceDexT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/device_dex_test cloudflare_device_dex_test} Resource.
 func NewDeviceDexTest_Override(d DeviceDexTest, scope constructs.Construct, id *string, config *DeviceDexTestConfig) {
 	_init_.Initialize()
 

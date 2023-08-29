@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package waitingroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/waitingroom/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -91,6 +94,9 @@ type WaitingRoom interface {
 	QueueingMethod() *string
 	SetQueueingMethod(val *string)
 	QueueingMethodInput() *string
+	QueueingStatusCode() *float64
+	SetQueueingStatusCode(val *float64)
+	QueueingStatusCodeInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	SessionDuration() *float64
@@ -154,6 +160,7 @@ type WaitingRoom interface {
 	ResetPath()
 	ResetQueueAll()
 	ResetQueueingMethod()
+	ResetQueueingStatusCode()
 	ResetSessionDuration()
 	ResetSuspended()
 	ResetTimeouts()
@@ -572,6 +579,26 @@ func (j *jsiiProxy_WaitingRoom) QueueingMethodInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) QueueingStatusCodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queueingStatusCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoom) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -713,7 +740,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -731,7 +758,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -949,6 +976,17 @@ func (j *jsiiProxy_WaitingRoom)SetQueueingMethod(val *string) {
 	_jsii_.Set(
 		j,
 		"queueingMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetQueueingStatusCode(val *float64) {
+	if err := j.validateSetQueueingStatusCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueingStatusCode",
 		val,
 	)
 }
@@ -1377,6 +1415,14 @@ func (w *jsiiProxy_WaitingRoom) ResetQueueingMethod() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetQueueingMethod",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetQueueingStatusCode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetQueueingStatusCode",
 		nil, // no parameters
 	)
 }

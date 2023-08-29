@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package workerskvnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/workerskvnamespace/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/workerskvnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type WorkersKvNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -332,7 +335,7 @@ func (j *jsiiProxy_WorkersKvNamespace) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) WorkersKvNamespace {
 	_init_.Initialize()
 
@@ -350,7 +353,7 @@ func NewWorkersKvNamespace(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace} Resource.
 func NewWorkersKvNamespace_Override(w WorkersKvNamespace, scope constructs.Construct, id *string, config *WorkersKvNamespaceConfig) {
 	_init_.Initialize()
 

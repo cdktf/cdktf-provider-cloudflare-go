@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package waitingroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/waitingroom/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/waitingroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

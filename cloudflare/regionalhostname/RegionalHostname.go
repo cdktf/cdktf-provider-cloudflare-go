@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package regionalhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/regionalhostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/regionalhostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +393,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -408,7 +411,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 

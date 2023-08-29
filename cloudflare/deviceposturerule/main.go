@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package deviceposturerule
 
 import (
@@ -131,6 +134,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "domain", GoGetter: "Domain"},
 			_jsii_.MemberProperty{JsiiProperty: "domainInput", GoGetter: "DomainInput"},
+			_jsii_.MemberProperty{JsiiProperty: "eidLastSeen", GoGetter: "EidLastSeen"},
+			_jsii_.MemberProperty{JsiiProperty: "eidLastSeenInput", GoGetter: "EidLastSeenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
 			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "exists", GoGetter: "Exists"},
@@ -180,6 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCountOperator", GoMethod: "ResetCountOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEidLastSeen", GoMethod: "ResetEidLastSeen"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExists", GoMethod: "ResetExists"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -194,13 +200,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverall", GoMethod: "ResetOverall"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireAll", GoMethod: "ResetRequireAll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRiskLevel", GoMethod: "ResetRiskLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunning", GoMethod: "ResetRunning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSensorConfig", GoMethod: "ResetSensorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSha256", GoMethod: "ResetSha256"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThumbprint", GoMethod: "ResetThumbprint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTotalScore", GoMethod: "ResetTotalScore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersionOperator", GoMethod: "ResetVersionOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "riskLevel", GoGetter: "RiskLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "riskLevelInput", GoGetter: "RiskLevelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "running", GoGetter: "Running"},
 			_jsii_.MemberProperty{JsiiProperty: "runningInput", GoGetter: "RunningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sensorConfig", GoGetter: "SensorConfig"},
@@ -212,6 +222,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thumbprint", GoGetter: "Thumbprint"},
 			_jsii_.MemberProperty{JsiiProperty: "thumbprintInput", GoGetter: "ThumbprintInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "totalScore", GoGetter: "TotalScore"},
+			_jsii_.MemberProperty{JsiiProperty: "totalScoreInput", GoGetter: "TotalScoreInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "versionOperator", GoGetter: "VersionOperator"},

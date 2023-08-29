@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package r2bucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/r2bucket/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/r2bucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 type R2Bucket interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -343,7 +346,7 @@ func (j *jsiiProxy_R2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig) R2Bucket {
 	_init_.Initialize()
 
@@ -361,7 +364,7 @@ func NewR2Bucket(scope constructs.Construct, id *string, config *R2BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource.
 func NewR2Bucket_Override(r R2Bucket, scope constructs.Construct, id *string, config *R2BucketConfig) {
 	_init_.Initialize()
 

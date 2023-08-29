@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package logpushownershipchallenge
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/logpushownershipchallenge/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/logpushownershipchallenge/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
 type LogpushOwnershipChallenge interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -368,7 +371,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge {
 	_init_.Initialize()
 
@@ -386,7 +389,7 @@ func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) {
 	_init_.Initialize()
 

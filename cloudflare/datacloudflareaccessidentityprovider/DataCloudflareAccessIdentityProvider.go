@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datacloudflareaccessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflareaccessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareaccessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider}.
 type DataCloudflareAccessIdentityProvider interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -340,7 +343,7 @@ func (j *jsiiProxy_DataCloudflareAccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
 func NewDataCloudflareAccessIdentityProvider(scope constructs.Construct, id *string, config *DataCloudflareAccessIdentityProviderConfig) DataCloudflareAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -358,7 +361,7 @@ func NewDataCloudflareAccessIdentityProvider(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/access_identity_provider cloudflare_access_identity_provider} Data Source.
 func NewDataCloudflareAccessIdentityProvider_Override(d DataCloudflareAccessIdentityProvider, scope constructs.Construct, id *string, config *DataCloudflareAccessIdentityProviderConfig) {
 	_init_.Initialize()
 

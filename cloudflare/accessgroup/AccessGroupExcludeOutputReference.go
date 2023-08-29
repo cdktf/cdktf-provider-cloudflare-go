@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessgroup/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,6 +16,8 @@ type AccessGroupExcludeOutputReference interface {
 	AnyValidServiceToken() interface{}
 	SetAnyValidServiceToken(val interface{})
 	AnyValidServiceTokenInput() interface{}
+	AuthContext() AccessGroupExcludeAuthContextList
+	AuthContextInput() interface{}
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
@@ -115,6 +120,7 @@ type AccessGroupExcludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthContext(value interface{})
 	PutAzure(value interface{})
 	PutExternalEvaluation(value *AccessGroupExcludeExternalEvaluation)
 	PutGithub(value interface{})
@@ -122,6 +128,7 @@ type AccessGroupExcludeOutputReference interface {
 	PutOkta(value interface{})
 	PutSaml(value interface{})
 	ResetAnyValidServiceToken()
+	ResetAuthContext()
 	ResetAuthMethod()
 	ResetAzure()
 	ResetCertificate()
@@ -171,6 +178,26 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) AnyValidServiceTokenInput(
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) AuthContext() AccessGroupExcludeAuthContextList {
+	var returns AccessGroupExcludeAuthContextList
+	_jsii_.Get(
+		j,
+		"authContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) AuthContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authContextInput",
 		&returns,
 	)
 	return returns
@@ -1049,6 +1076,17 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationForAttribute(
 	return returns
 }
 
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) PutAuthContext(value interface{}) {
+	if err := a.validatePutAuthContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAuthContext",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessGroupExcludeOutputReference) PutAzure(value interface{}) {
 	if err := a.validatePutAzureParameters(value); err != nil {
 		panic(err)
@@ -1119,6 +1157,14 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) ResetAnyValidServiceToken(
 	_jsii_.InvokeVoid(
 		a,
 		"resetAnyValidServiceToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) ResetAuthContext() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthContext",
 		nil, // no parameters
 	)
 }

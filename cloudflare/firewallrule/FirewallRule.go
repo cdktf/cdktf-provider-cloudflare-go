@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package firewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/firewallrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/firewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -451,7 +454,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -469,7 +472,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 

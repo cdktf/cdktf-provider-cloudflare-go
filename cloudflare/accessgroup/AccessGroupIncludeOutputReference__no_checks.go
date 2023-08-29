@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package accessgroup
@@ -41,6 +44,10 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validateGetStringMapAttrib
 }
 
 func (a *jsiiProxy_AccessGroupIncludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
 	return nil
 }
 

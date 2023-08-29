@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/pagesproject/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/pagesproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -460,7 +463,7 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -478,7 +481,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 

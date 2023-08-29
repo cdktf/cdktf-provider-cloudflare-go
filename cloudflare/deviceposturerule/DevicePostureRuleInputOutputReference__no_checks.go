@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package deviceposturerule
@@ -88,6 +91,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetDomainParam
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEidLastSeenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -148,6 +155,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRequireAllP
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRiskLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetRunningParameters(val interface{}) error {
 	return nil
 }
@@ -169,6 +180,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTerraformRe
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetThumbprintParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTotalScoreParameters(val *float64) error {
 	return nil
 }
 

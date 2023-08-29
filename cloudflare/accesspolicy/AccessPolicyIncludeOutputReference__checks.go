@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package accesspolicy
@@ -85,6 +88,37 @@ func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validateGetStringMapAttri
 func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccessPolicyIncludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccessPolicyIncludeAuthContext:
+		value := value.(*[]*AccessPolicyIncludeAuthContext)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccessPolicyIncludeAuthContext:
+		value_ := value.([]*AccessPolicyIncludeAuthContext)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyIncludeAuthContext; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

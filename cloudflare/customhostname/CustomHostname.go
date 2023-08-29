@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/customhostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/customhostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/custom_hostname cloudflare_custom_hostname}.
 type CustomHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +488,7 @@ func (j *jsiiProxy_CustomHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHostnameConfig) CustomHostname {
 	_init_.Initialize()
 
@@ -503,7 +506,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id *string, config *CustomHostnameConfig) {
 	_init_.Initialize()
 

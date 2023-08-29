@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package logpullretention
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/logpullretention/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/logpullretention/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpull_retention cloudflare_logpull_retention}.
 type LogpullRetention interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +335,7 @@ func (j *jsiiProxy_LogpullRetention) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention(scope constructs.Construct, id *string, config *LogpullRetentionConfig) LogpullRetention {
 	_init_.Initialize()
 
@@ -350,7 +353,7 @@ func NewLogpullRetention(scope constructs.Construct, id *string, config *Logpull
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/logpull_retention cloudflare_logpull_retention} Resource.
 func NewLogpullRetention_Override(l LogpullRetention, scope constructs.Construct, id *string, config *LogpullRetentionConfig) {
 	_init_.Initialize()
 

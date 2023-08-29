@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessidentityprovider
 
 import (
@@ -128,6 +131,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "conditionalAccessEnabled", GoGetter: "ConditionalAccessEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "conditionalAccessEnabledInput", GoGetter: "ConditionalAccessEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "directoryId", GoGetter: "DirectoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "directoryIdInput", GoGetter: "DirectoryIdInput"},
@@ -168,6 +173,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetClaims", GoMethod: "ResetClaims"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConditionalAccessEnabled", GoMethod: "ResetConditionalAccessEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryId", GoMethod: "ResetDirectoryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailAttributeName", GoMethod: "ResetEmailAttributeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdpPublicCert", GoMethod: "ResetIdpPublicCert"},

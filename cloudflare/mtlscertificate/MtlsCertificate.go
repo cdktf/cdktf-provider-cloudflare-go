@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package mtlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/mtlscertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/mtlscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}.
 type MtlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -458,7 +461,7 @@ func (j *jsiiProxy_MtlsCertificate) UploadedOn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCertificateConfig) MtlsCertificate {
 	_init_.Initialize()
 
@@ -476,7 +479,7 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource.
 func NewMtlsCertificate_Override(m MtlsCertificate, scope constructs.Construct, id *string, config *MtlsCertificateConfig) {
 	_init_.Initialize()
 

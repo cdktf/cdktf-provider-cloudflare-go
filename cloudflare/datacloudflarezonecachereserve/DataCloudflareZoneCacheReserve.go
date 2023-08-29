@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datacloudflarezonecachereserve
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/datacloudflarezonecachereserve/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflarezonecachereserve/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type DataCloudflareZoneCacheReserve interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +295,7 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) DataCloudflareZoneCacheReserve {
 	_init_.Initialize()
 
@@ -310,7 +313,7 @@ func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve_Override(d DataCloudflareZoneCacheReserve, scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) {
 	_init_.Initialize()
 

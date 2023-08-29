@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package accessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/accessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/accessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_identity_provider cloudflare_access_identity_provider}.
 type AccessIdentityProvider interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -428,7 +431,7 @@ func (j *jsiiProxy_AccessIdentityProvider) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) AccessIdentityProvider {
 	_init_.Initialize()
 
@@ -446,7 +449,7 @@ func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider_Override(a AccessIdentityProvider, scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) {
 	_init_.Initialize()
 

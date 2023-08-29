@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package notificationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/notificationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/notificationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +34,12 @@ type NotificationPolicyFiltersOutputReference interface {
 	Enabled() *[]*string
 	SetEnabled(val *[]*string)
 	EnabledInput() *[]*string
+	Environment() *[]*string
+	SetEnvironment(val *[]*string)
+	EnvironmentInput() *[]*string
+	Event() *[]*string
+	SetEvent(val *[]*string)
+	EventInput() *[]*string
 	EventSource() *[]*string
 	SetEventSource(val *[]*string)
 	EventSourceInput() *[]*string
@@ -65,6 +74,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Product() *[]*string
 	SetProduct(val *[]*string)
 	ProductInput() *[]*string
+	ProjectId() *[]*string
+	SetProjectId(val *[]*string)
+	ProjectIdInput() *[]*string
 	Protocol() *[]*string
 	SetProtocol(val *[]*string)
 	ProtocolInput() *[]*string
@@ -123,6 +135,8 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertTriggerPreferences()
 	ResetEnabled()
+	ResetEnvironment()
+	ResetEvent()
 	ResetEventSource()
 	ResetEventType()
 	ResetHealthCheckId()
@@ -133,6 +147,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetPacketsPerSecond()
 	ResetPoolId()
 	ResetProduct()
+	ResetProjectId()
 	ResetProtocol()
 	ResetRequestsPerSecond()
 	ResetServices()
@@ -221,6 +236,46 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EnabledInput() *[]*
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Environment() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"environment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EnvironmentInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"environmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Event() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"event",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) EventInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"eventInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +496,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProductInput() *[]*
 	_jsii_.Get(
 		j,
 		"productInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProjectId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ProjectIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -698,6 +773,28 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnabled(val *[]*s
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnvironment(val *[]*string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"environment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEvent(val *[]*string) {
+	if err := j.validateSetEventParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"event",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventSource(val *[]*string) {
 	if err := j.validateSetEventSourceParameters(val); err != nil {
 		panic(err)
@@ -815,6 +912,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProduct(val *[]*s
 	_jsii_.Set(
 		j,
 		"product",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProjectId(val *[]*string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1131,6 +1239,22 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnabled() {
 	)
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEnvironment() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEvent() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEvent",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEventSource() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1207,6 +1331,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetProduct() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProduct",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package notificationpolicy
 
 import (
@@ -165,6 +168,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
 			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "environment", GoGetter: "Environment"},
+			_jsii_.MemberProperty{JsiiProperty: "environmentInput", GoGetter: "EnvironmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "event", GoGetter: "Event"},
+			_jsii_.MemberProperty{JsiiProperty: "eventInput", GoGetter: "EventInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventSource", GoGetter: "EventSource"},
 			_jsii_.MemberProperty{JsiiProperty: "eventSourceInput", GoGetter: "EventSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventType", GoGetter: "EventType"},
@@ -198,12 +205,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "poolIdInput", GoGetter: "PoolIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "product", GoGetter: "Product"},
 			_jsii_.MemberProperty{JsiiProperty: "productInput", GoGetter: "ProductInput"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
 			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestsPerSecond", GoGetter: "RequestsPerSecond"},
 			_jsii_.MemberProperty{JsiiProperty: "requestsPerSecondInput", GoGetter: "RequestsPerSecondInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertTriggerPreferences", GoMethod: "ResetAlertTriggerPreferences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEvent", GoMethod: "ResetEvent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventSource", GoMethod: "ResetEventSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventType", GoMethod: "ResetEventType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheckId", GoMethod: "ResetHealthCheckId"},
@@ -214,6 +225,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPacketsPerSecond", GoMethod: "ResetPacketsPerSecond"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPoolId", GoMethod: "ResetPoolId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProduct", GoMethod: "ResetProduct"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestsPerSecond", GoMethod: "ResetRequestsPerSecond"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServices", GoMethod: "ResetServices"},

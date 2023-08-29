@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package accessservicetoken
@@ -73,6 +76,10 @@ func (j *jsiiProxy_AccessServiceToken) validateSetConnectionParameters(val inter
 }
 
 func (j *jsiiProxy_AccessServiceToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessServiceToken) validateSetDurationParameters(val *string) error {
 	return nil
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dlpprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/dlpprofile/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/dlpprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 type DlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -425,7 +428,7 @@ func (j *jsiiProxy_DlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileConfig) DlpProfile {
 	_init_.Initialize()
 
@@ -443,7 +446,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.12.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string, config *DlpProfileConfig) {
 	_init_.Initialize()
 

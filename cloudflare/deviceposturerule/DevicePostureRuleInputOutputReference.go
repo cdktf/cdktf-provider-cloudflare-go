@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package deviceposturerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v8/deviceposturerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/deviceposturerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -49,6 +52,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	EidLastSeen() *string
+	SetEidLastSeen(val *string)
+	EidLastSeenInput() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -95,6 +101,9 @@ type DevicePostureRuleInputOutputReference interface {
 	RequireAll() interface{}
 	SetRequireAll(val interface{})
 	RequireAllInput() interface{}
+	RiskLevel() *string
+	SetRiskLevel(val *string)
+	RiskLevelInput() *string
 	Running() interface{}
 	SetRunning(val interface{})
 	RunningInput() interface{}
@@ -115,6 +124,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Thumbprint() *string
 	SetThumbprint(val *string)
 	ThumbprintInput() *string
+	TotalScore() *float64
+	SetTotalScore(val *float64)
+	TotalScoreInput() *float64
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -153,6 +165,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetConnectionId()
 	ResetCountOperator()
 	ResetDomain()
+	ResetEidLastSeen()
 	ResetEnabled()
 	ResetExists()
 	ResetId()
@@ -167,10 +180,12 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetOverall()
 	ResetPath()
 	ResetRequireAll()
+	ResetRiskLevel()
 	ResetRunning()
 	ResetSensorConfig()
 	ResetSha256()
 	ResetThumbprint()
+	ResetTotalScore()
 	ResetVersion()
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
@@ -373,6 +388,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) DomainInput() *string 
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EidLastSeen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eidLastSeen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EidLastSeenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eidLastSeenInput",
 		&returns,
 	)
 	return returns
@@ -678,6 +713,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAllInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RiskLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RiskLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"riskLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Running() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -773,6 +828,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ThumbprintInput() *str
 	_jsii_.Get(
 		j,
 		"thumbprintInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TotalScore() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) TotalScoreInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalScoreInput",
 		&returns,
 	)
 	return returns
@@ -956,6 +1031,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) 
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEidLastSeen(val *string) {
+	if err := j.validateSetEidLastSeenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eidLastSeen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEnabled(val interface{}) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
@@ -1121,6 +1207,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRequireAll(val inter
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRiskLevel(val *string) {
+	if err := j.validateSetRiskLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"riskLevel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interface{}) {
 	if err := j.validateSetRunningParameters(val); err != nil {
 		panic(err)
@@ -1183,6 +1280,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetThumbprint(val *stri
 	_jsii_.Set(
 		j,
 		"thumbprint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTotalScore(val *float64) {
+	if err := j.validateSetTotalScoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalScore",
 		val,
 	)
 }
@@ -1459,6 +1567,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetDomain() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetEidLastSeen() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEidLastSeen",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1571,6 +1687,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRequireAll() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRiskLevel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRiskLevel",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRunning() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1599,6 +1723,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetThumbprint() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetThumbprint",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetTotalScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTotalScore",
 		nil, // no parameters
 	)
 }

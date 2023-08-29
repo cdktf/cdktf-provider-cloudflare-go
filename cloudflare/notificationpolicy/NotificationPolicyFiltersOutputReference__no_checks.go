@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package notificationpolicy
@@ -64,6 +67,14 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEnabledP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEnvironmentParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventSourceParameters(val *[]*string) error {
 	return nil
 }
@@ -105,6 +116,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPoolIdPa
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProductParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProjectIdParameters(val *[]*string) error {
 	return nil
 }
 
