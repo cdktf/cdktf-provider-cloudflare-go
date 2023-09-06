@@ -358,14 +358,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkce
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetRedirectUrlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

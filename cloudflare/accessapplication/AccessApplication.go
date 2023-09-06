@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -48,6 +48,9 @@ type AccessApplication interface {
 	CustomDenyUrl() *string
 	SetCustomDenyUrl(val *string)
 	CustomDenyUrlInput() *string
+	CustomNonIdentityDenyUrl() *string
+	SetCustomNonIdentityDenyUrl(val *string)
+	CustomNonIdentityDenyUrlInput() *string
 	CustomPages() *[]*string
 	SetCustomPages(val *[]*string)
 	CustomPagesInput() *[]*string
@@ -160,6 +163,7 @@ type AccessApplication interface {
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
+	ResetCustomNonIdentityDenyUrl()
 	ResetCustomPages()
 	ResetDomain()
 	ResetEnableBindingCookie()
@@ -377,6 +381,26 @@ func (j *jsiiProxy_AccessApplication) CustomDenyUrlInput() *string {
 	_jsii_.Get(
 		j,
 		"customDenyUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) CustomNonIdentityDenyUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customNonIdentityDenyUrlInput",
 		&returns,
 	)
 	return returns
@@ -803,7 +827,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -821,7 +845,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.13.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func (j *jsiiProxy_AccessApplication)SetCustomDenyUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"customDenyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetCustomNonIdentityDenyUrl(val *string) {
+	if err := j.validateSetCustomNonIdentityDenyUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customNonIdentityDenyUrl",
 		val,
 	)
 }
@@ -1460,6 +1495,14 @@ func (a *jsiiProxy_AccessApplication) ResetCustomDenyUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomDenyUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetCustomNonIdentityDenyUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomNonIdentityDenyUrl",
 		nil, // no parameters
 	)
 }

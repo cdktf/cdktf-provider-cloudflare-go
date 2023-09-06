@@ -107,6 +107,10 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomDenyUrlParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetCustomNonIdentityDenyUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*string) error {
 	return nil
 }

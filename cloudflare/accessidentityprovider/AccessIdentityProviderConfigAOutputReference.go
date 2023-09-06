@@ -87,8 +87,6 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	SetPkceEnabled(val interface{})
 	PkceEnabledInput() interface{}
 	RedirectUrl() *string
-	SetRedirectUrl(val *string)
-	RedirectUrlInput() *string
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -154,7 +152,6 @@ type AccessIdentityProviderConfigAOutputReference interface {
 	ResetOktaAccount()
 	ResetOneloginAccount()
 	ResetPkceEnabled()
-	ResetRedirectUrl()
 	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
@@ -595,16 +592,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrl() *
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) RedirectUrlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"redirectUrlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) Scopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -980,17 +967,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetPkceEnabled(v
 	_jsii_.Set(
 		j,
 		"pkceEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference)SetRedirectUrl(val *string) {
-	if err := j.validateSetRedirectUrlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"redirectUrl",
 		val,
 	)
 }
@@ -1398,14 +1374,6 @@ func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetPkceEnable
 	_jsii_.InvokeVoid(
 		a,
 		"resetPkceEnabled",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccessIdentityProviderConfigAOutputReference) ResetRedirectUrl() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetRedirectUrl",
 		nil, // no parameters
 	)
 }

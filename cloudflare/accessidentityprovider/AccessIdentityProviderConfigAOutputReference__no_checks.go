@@ -135,10 +135,6 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkce
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetRedirectUrlParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
