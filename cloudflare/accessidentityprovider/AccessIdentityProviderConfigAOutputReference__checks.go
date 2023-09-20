@@ -125,6 +125,14 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAttr
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthorizationServerIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -282,6 +290,14 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmai
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmailClaimNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -331,6 +347,14 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOkta
 }
 
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOneloginAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPingEnvIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

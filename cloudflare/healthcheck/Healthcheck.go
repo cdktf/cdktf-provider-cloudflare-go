@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/healthcheck cloudflare_healthcheck}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/healthcheck cloudflare_healthcheck}.
 type Healthcheck interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -811,7 +811,7 @@ func (j *jsiiProxy_Healthcheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckConfig) Healthcheck {
 	_init_.Initialize()
 
@@ -829,7 +829,7 @@ func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.14.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *string, config *HealthcheckConfig) {
 	_init_.Initialize()
 

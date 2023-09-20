@@ -63,6 +63,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAttr
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthorizationServerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetAuthUrlParameters(val *string) error {
 	return nil
 }
@@ -111,6 +115,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmai
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetEmailClaimNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetIdpPublicCertParameters(val *string) error {
 	return nil
 }
@@ -128,6 +136,10 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOkta
 }
 
 func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOneloginAccountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPingEnvIdParameters(val *string) error {
 	return nil
 }
 

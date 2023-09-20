@@ -187,6 +187,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOppor
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginCacheControlParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginErrorPagePassthruParameters(val interface{}) error {
 	return nil
 }
@@ -200,6 +204,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPolis
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetProductsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetReadTimeoutParameters(val *float64) error {
 	return nil
 }
 
