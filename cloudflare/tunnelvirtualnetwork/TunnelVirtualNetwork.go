@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network}.
 type TunnelVirtualNetwork interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_TunnelVirtualNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
 func NewTunnelVirtualNetwork(scope constructs.Construct, id *string, config *TunnelVirtualNetworkConfig) TunnelVirtualNetwork {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewTunnelVirtualNetwork(scope constructs.Construct, id *string, config *Tun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/tunnel_virtual_network cloudflare_tunnel_virtual_network} Resource.
 func NewTunnelVirtualNetwork_Override(t TunnelVirtualNetwork, scope constructs.Construct, id *string, config *TunnelVirtualNetworkConfig) {
 	_init_.Initialize()
 

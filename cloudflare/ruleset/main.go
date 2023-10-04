@@ -2401,7 +2401,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMitigationTimeout", GoMethod: "ResetMitigationTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPeriod", GoMethod: "ResetPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestsPerPeriod", GoMethod: "ResetRequestsPerPeriod"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRequestsToOrigin", GoMethod: "ResetRequestsToOrigin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScorePerPeriod", GoMethod: "ResetScorePerPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScoreResponseHeaderName", GoMethod: "ResetScoreResponseHeaderName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

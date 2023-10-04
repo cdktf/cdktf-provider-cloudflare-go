@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/load_balancer cloudflare_load_balancer}.
 type LoadBalancer interface {
 	cdktf.TerraformResource
 	AdaptiveRouting() LoadBalancerAdaptiveRoutingList
@@ -763,7 +763,7 @@ func (j *jsiiProxy_LoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalancerConfig) LoadBalancer {
 	_init_.Initialize()
 
@@ -781,7 +781,7 @@ func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer_Override(l LoadBalancer, scope constructs.Construct, id *string, config *LoadBalancerConfig) {
 	_init_.Initialize()
 

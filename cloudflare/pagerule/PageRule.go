@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/page_rule cloudflare_page_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/page_rule cloudflare_page_rule}.
 type PageRule interface {
 	cdktf.TerraformResource
 	Actions() PageRuleActionsOutputReference
@@ -406,7 +406,7 @@ func (j *jsiiProxy_PageRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig) PageRule {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, config *PageRuleConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,9 @@ import (
 
 type NotificationPolicyFiltersOutputReference interface {
 	cdktf.ComplexObject
+	Actions() *[]*string
+	SetActions(val *[]*string)
+	ActionsInput() *[]*string
 	AlertTriggerPreferences() *[]*string
 	SetAlertTriggerPreferences(val *[]*string)
 	AlertTriggerPreferencesInput() *[]*string
@@ -48,6 +51,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	EventTypeInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	GroupBy() *[]*string
+	SetGroupBy(val *[]*string)
+	GroupByInput() *[]*string
 	HealthCheckId() *[]*string
 	SetHealthCheckId(val *[]*string)
 	HealthCheckIdInput() *[]*string
@@ -106,6 +112,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Where() *[]*string
+	SetWhere(val *[]*string)
+	WhereInput() *[]*string
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -133,12 +142,14 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetActions()
 	ResetAlertTriggerPreferences()
 	ResetEnabled()
 	ResetEnvironment()
 	ResetEvent()
 	ResetEventSource()
 	ResetEventType()
+	ResetGroupBy()
 	ResetHealthCheckId()
 	ResetInputId()
 	ResetLimit()
@@ -155,6 +166,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetStatus()
 	ResetTargetHostname()
 	ResetTargetZoneName()
+	ResetWhere()
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -169,6 +181,26 @@ type NotificationPolicyFiltersOutputReference interface {
 // The jsii proxy struct for NotificationPolicyFiltersOutputReference
 type jsiiProxy_NotificationPolicyFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Actions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AlertTriggerPreferences() *[]*string {
@@ -326,6 +358,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) GroupBy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) GroupByInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"groupByInput",
 		&returns,
 	)
 	return returns
@@ -681,6 +733,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Where() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"where",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) WhereInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whereInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Zones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -726,6 +798,17 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetActions(val *[]*string) {
+	if err := j.validateSetActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actions",
+		val,
 	)
 }
 
@@ -813,6 +896,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventType(val *[]
 	_jsii_.Set(
 		j,
 		"eventType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetGroupBy(val *[]*string) {
+	if err := j.validateSetGroupByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupBy",
 		val,
 	)
 }
@@ -1026,6 +1120,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetWhere(val *[]*string) {
+	if err := j.validateSetWhereParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"where",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetZones(val *[]*string) {
 	if err := j.validateSetZonesParameters(val); err != nil {
 		panic(err)
@@ -1223,6 +1328,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetActions() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetActions",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAlertTriggerPreferences() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1267,6 +1380,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetEventType() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetEventType",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetGroupBy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGroupBy",
 		nil, // no parameters
 	)
 }
@@ -1395,6 +1516,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetZoneName
 	_jsii_.InvokeVoid(
 		n,
 		"resetTargetZoneName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetWhere() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetWhere",
 		nil, // no parameters
 	)
 }

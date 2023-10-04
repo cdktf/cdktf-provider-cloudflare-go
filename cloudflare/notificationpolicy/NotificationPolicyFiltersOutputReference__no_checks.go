@@ -51,6 +51,10 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetActionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventSou
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetEventTypeParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetGroupByParameters(val *[]*string) error {
 	return nil
 }
 
@@ -156,6 +164,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetWhereParameters(val *[]*string) error {
 	return nil
 }
 

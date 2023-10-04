@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/argo cloudflare_argo}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/argo cloudflare_argo}.
 type Argo interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_Argo) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/argo cloudflare_argo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/argo cloudflare_argo} Resource.
 func NewArgo(scope constructs.Construct, id *string, config *ArgoConfig) Argo {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewArgo(scope constructs.Construct, id *string, config *ArgoConfig) Argo {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.15.0/docs/resources/argo cloudflare_argo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/argo cloudflare_argo} Resource.
 func NewArgo_Override(a Argo, scope constructs.Construct, id *string, config *ArgoConfig) {
 	_init_.Initialize()
 
