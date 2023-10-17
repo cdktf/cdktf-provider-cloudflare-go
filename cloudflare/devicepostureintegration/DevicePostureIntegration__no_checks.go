@@ -7,6 +7,10 @@ package devicepostureintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevicePostureIntegration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevicePostureIntegration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DevicePostureIntegration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureIntegration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicePostureIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DevicePostureIntegration) validateOverrideLogicalIdParameters
 }
 
 func (d *jsiiProxy_DevicePostureIntegration) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateDevicePostureIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

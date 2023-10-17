@@ -7,6 +7,10 @@ package loadbalancer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoadBalancer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LoadBalancer) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (l *jsiiProxy_LoadBalancer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadBalancer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (l *jsiiProxy_LoadBalancer) validatePutRulesParameters(value interface{}) e
 }
 
 func (l *jsiiProxy_LoadBalancer) validatePutSessionAffinityAttributesParameters(value interface{}) error {
+	return nil
+}
+
+func validateLoadBalancer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

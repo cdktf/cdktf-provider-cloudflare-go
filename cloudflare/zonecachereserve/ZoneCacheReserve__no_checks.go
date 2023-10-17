@@ -7,6 +7,10 @@ package zonecachereserve
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (z *jsiiProxy_ZoneCacheReserve) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneCacheReserve) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (z *jsiiProxy_ZoneCacheReserve) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (z *jsiiProxy_ZoneCacheReserve) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneCacheReserve) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (z *jsiiProxy_ZoneCacheReserve) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneCacheReserve) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateZoneCacheReserve_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

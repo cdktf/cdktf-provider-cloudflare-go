@@ -7,6 +7,10 @@ package ipsectunnel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IpsecTunnel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpsecTunnel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IpsecTunnel) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (i *jsiiProxy_IpsecTunnel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpsecTunnel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IpsecTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpsecTunnel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIpsecTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

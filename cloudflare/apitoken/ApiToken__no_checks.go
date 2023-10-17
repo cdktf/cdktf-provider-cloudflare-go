@@ -7,6 +7,10 @@ package apitoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiToken) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (a *jsiiProxy_ApiToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApiToken) validatePutConditionParameters(value *ApiTokenCondi
 }
 
 func (a *jsiiProxy_ApiToken) validatePutPolicyParameters(value interface{}) error {
+	return nil
+}
+
+func validateApiToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

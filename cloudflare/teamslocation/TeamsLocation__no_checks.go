@@ -7,6 +7,10 @@ package teamslocation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamsLocation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsLocation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TeamsLocation) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TeamsLocation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsLocation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (t *jsiiProxy_TeamsLocation) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (t *jsiiProxy_TeamsLocation) validatePutNetworksParameters(value interface{}) error {
+	return nil
+}
+
+func validateTeamsLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

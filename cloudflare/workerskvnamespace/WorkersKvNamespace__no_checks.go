@@ -7,6 +7,10 @@ package workerskvnamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkersKvNamespace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKvNamespace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (w *jsiiProxy_WorkersKvNamespace) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (w *jsiiProxy_WorkersKvNamespace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKvNamespace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_WorkersKvNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKvNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWorkersKvNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

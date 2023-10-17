@@ -7,6 +7,10 @@ package workerscript
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkerScript) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WorkerScript) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerScript) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (w *jsiiProxy_WorkerScript) validatePutServiceBindingParameters(value inter
 }
 
 func (w *jsiiProxy_WorkerScript) validatePutWebassemblyBindingParameters(value interface{}) error {
+	return nil
+}
+
+func validateWorkerScript_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareAccessApplication) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataCloudflareAccessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataCloudflareAccessApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package hostnametlssetting
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostnameTlsSetting) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostnameTlsSetting) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostnameTlsSetting) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (h *jsiiProxy_HostnameTlsSetting) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostnameTlsSetting) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostnameTlsSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostnameTlsSetting) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostnameTlsSetting_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

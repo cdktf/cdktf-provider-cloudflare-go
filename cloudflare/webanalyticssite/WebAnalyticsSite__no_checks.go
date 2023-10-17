@@ -7,6 +7,10 @@ package webanalyticssite
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebAnalyticsSite) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAnalyticsSite) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebAnalyticsSite) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_WebAnalyticsSite) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAnalyticsSite) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebAnalyticsSite) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebAnalyticsSite) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (w *jsiiProxy_WebAnalyticsSite) validatePutTimeoutsParameters(value *WebAnalyticsSiteTimeouts) error {
+	return nil
+}
+
+func validateWebAnalyticsSite_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

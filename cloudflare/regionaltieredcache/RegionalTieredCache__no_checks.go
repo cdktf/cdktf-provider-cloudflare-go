@@ -7,6 +7,10 @@ package regionaltieredcache
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RegionalTieredCache) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalTieredCache) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RegionalTieredCache) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RegionalTieredCache) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalTieredCache) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RegionalTieredCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalTieredCache) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRegionalTieredCache_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

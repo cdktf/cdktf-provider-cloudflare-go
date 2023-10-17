@@ -7,6 +7,10 @@ package listitem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_ListItemA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_ListItemA) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (l *jsiiProxy_ListItemA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_ListItemA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value *ListItemHostn
 }
 
 func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
+	return nil
+}
+
+func validateListItemA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

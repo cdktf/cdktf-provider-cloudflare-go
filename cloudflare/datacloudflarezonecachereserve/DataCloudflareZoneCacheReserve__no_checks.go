@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZoneCacheReserve) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataCloudflareZoneCacheReserve_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataCloudflareZoneCacheReserve_IsConstructParameters(x interface{}) error {
 	return nil
 }

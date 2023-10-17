@@ -7,6 +7,10 @@ package waitingroomrules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WaitingRoomRules) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoomRules) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WaitingRoomRules) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoomRules) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoomRules) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WaitingRoomRules) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WaitingRoomRules) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (w *jsiiProxy_WaitingRoomRules) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWaitingRoomRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

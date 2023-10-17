@@ -5,10 +5,10 @@ package emailroutingcatchall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/emailroutingcatchall/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/emailroutingcatchall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,9 @@ type EmailRoutingCatchAll interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,12 @@ type EmailRoutingCatchAll interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,6 +565,25 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetZoneId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a EmailRoutingCatchAll resource upon running "cdktf plan <stack-name>".
+func EmailRoutingCatchAll_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateEmailRoutingCatchAll_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -639,6 +666,17 @@ func EmailRoutingCatchAll_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAll) AddOverride(path *string, value interface{}) {
@@ -796,6 +834,17 @@ func (e *jsiiProxy_EmailRoutingCatchAll) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (e *jsiiProxy_EmailRoutingCatchAll) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_EmailRoutingCatchAll) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -810,6 +859,17 @@ func (e *jsiiProxy_EmailRoutingCatchAll) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAll) OverrideLogicalId(newLogicalId *string) {

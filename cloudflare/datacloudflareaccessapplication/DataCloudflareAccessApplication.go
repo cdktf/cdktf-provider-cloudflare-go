@@ -5,10 +5,10 @@ package datacloudflareaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/datacloudflareaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/datacloudflareaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -496,6 +496,25 @@ func (j *jsiiProxy_DataCloudflareAccessApplication)SetZoneId(val *string) {
 		"zoneId",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataCloudflareAccessApplication resource upon running "cdktf plan <stack-name>".
+func DataCloudflareAccessApplication_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataCloudflareAccessApplication_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-cloudflare.dataCloudflareAccessApplication.DataCloudflareAccessApplication",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

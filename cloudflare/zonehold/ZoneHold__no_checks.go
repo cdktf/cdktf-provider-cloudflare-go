@@ -7,6 +7,10 @@ package zonehold
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (z *jsiiProxy_ZoneHold) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneHold) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (z *jsiiProxy_ZoneHold) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (z *jsiiProxy_ZoneHold) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneHold) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (z *jsiiProxy_ZoneHold) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneHold) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateZoneHold_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

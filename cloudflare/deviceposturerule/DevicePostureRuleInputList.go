@@ -5,9 +5,9 @@ package deviceposturerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v9/deviceposturerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/deviceposturerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

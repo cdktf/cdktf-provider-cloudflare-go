@@ -7,6 +7,10 @@ package botmanagement
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BotManagement) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotManagement) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BotManagement) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BotManagement) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotManagement) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BotManagement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BotManagement) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBotManagement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

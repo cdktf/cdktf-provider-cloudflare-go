@@ -7,6 +7,10 @@ package deviceposturerule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevicePostureRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevicePostureRule) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DevicePostureRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicePostureRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DevicePostureRule) validatePutInputParameters(value interface
 }
 
 func (d *jsiiProxy_DevicePostureRule) validatePutMatchParameters(value interface{}) error {
+	return nil
+}
+
+func validateDevicePostureRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

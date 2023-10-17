@@ -7,6 +7,10 @@ package webanalyticsrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WebAnalyticsRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAnalyticsRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WebAnalyticsRule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_WebAnalyticsRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WebAnalyticsRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WebAnalyticsRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WebAnalyticsRule) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (w *jsiiProxy_WebAnalyticsRule) validatePutTimeoutsParameters(value *WebAnalyticsRuleTimeouts) error {
+	return nil
+}
+
+func validateWebAnalyticsRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

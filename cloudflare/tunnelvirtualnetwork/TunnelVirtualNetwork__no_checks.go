@@ -7,6 +7,10 @@ package tunnelvirtualnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TunnelVirtualNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelVirtualNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TunnelVirtualNetwork) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (t *jsiiProxy_TunnelVirtualNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelVirtualNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TunnelVirtualNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TunnelVirtualNetwork) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTunnelVirtualNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

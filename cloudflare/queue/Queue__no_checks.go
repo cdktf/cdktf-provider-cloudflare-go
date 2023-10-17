@@ -7,6 +7,10 @@ package queue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_Queue) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_Queue) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (q *jsiiProxy_Queue) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (q *jsiiProxy_Queue) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_Queue) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (q *jsiiProxy_Queue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_Queue) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

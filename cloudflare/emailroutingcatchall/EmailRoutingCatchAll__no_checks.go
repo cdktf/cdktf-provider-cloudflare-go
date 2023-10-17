@@ -7,6 +7,10 @@ package emailroutingcatchall
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailRoutingCatchAll) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingCatchAll) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingCatchAll) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingCatchAll) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingCatchAll) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validatePutActionParameters(value inter
 }
 
 func (e *jsiiProxy_EmailRoutingCatchAll) validatePutMatcherParameters(value interface{}) error {
+	return nil
+}
+
+func validateEmailRoutingCatchAll_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
