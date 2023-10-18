@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetries", GoMethod: "ResetRetries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRps", GoMethod: "ResetRps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserAgentOperatorSuffix", GoMethod: "ResetUserAgentOperatorSuffix"},
 			_jsii_.MemberProperty{JsiiProperty: "retries", GoGetter: "Retries"},
 			_jsii_.MemberProperty{JsiiProperty: "retriesInput", GoGetter: "RetriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rps", GoGetter: "Rps"},
@@ -67,6 +68,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "userAgentOperatorSuffix", GoGetter: "UserAgentOperatorSuffix"},
+			_jsii_.MemberProperty{JsiiProperty: "userAgentOperatorSuffixInput", GoGetter: "UserAgentOperatorSuffixInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudflareProvider{}

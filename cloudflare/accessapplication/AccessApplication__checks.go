@@ -641,6 +641,14 @@ func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetTagsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

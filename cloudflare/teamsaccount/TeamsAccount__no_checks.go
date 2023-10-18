@@ -91,6 +91,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutProxyParameters(value *TeamsAccountP
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutSshSessionLogParameters(value *TeamsAccountSshSessionLog) error {
+	return nil
+}
+
 func validateTeamsAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

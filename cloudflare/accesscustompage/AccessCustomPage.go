@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/access_custom_page cloudflare_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page cloudflare_access_custom_page}.
 type AccessCustomPage interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_AccessCustomPage) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource.
 func NewAccessCustomPage(scope constructs.Construct, id *string, config *AccessCustomPageConfig) AccessCustomPage {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewAccessCustomPage(scope constructs.Construct, id *string, config *AccessC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/access_custom_page cloudflare_access_custom_page} Resource.
 func NewAccessCustomPage_Override(a AccessCustomPage, scope constructs.Construct, id *string, config *AccessCustomPageConfig) {
 	_init_.Initialize()
 

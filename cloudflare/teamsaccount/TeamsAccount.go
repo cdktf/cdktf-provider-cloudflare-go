@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -79,6 +79,8 @@ type TeamsAccount interface {
 	ProxyInput() *TeamsAccountProxy
 	// Experimental.
 	RawOverrides() interface{}
+	SshSessionLog() TeamsAccountSshSessionLogOutputReference
+	SshSessionLogInput() *TeamsAccountSshSessionLog
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +132,7 @@ type TeamsAccount interface {
 	PutLogging(value *TeamsAccountLogging)
 	PutPayloadLog(value *TeamsAccountPayloadLog)
 	PutProxy(value *TeamsAccountProxy)
+	PutSshSessionLog(value *TeamsAccountSshSessionLog)
 	ResetActivityLogEnabled()
 	ResetAntivirus()
 	ResetBlockPage()
@@ -142,6 +145,7 @@ type TeamsAccount interface {
 	ResetPayloadLog()
 	ResetProtocolDetectionEnabled()
 	ResetProxy()
+	ResetSshSessionLog()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
 	SynthesizeAttributes() *map[string]interface{}
@@ -489,6 +493,26 @@ func (j *jsiiProxy_TeamsAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccount) SshSessionLog() TeamsAccountSshSessionLogOutputReference {
+	var returns TeamsAccountSshSessionLogOutputReference
+	_jsii_.Get(
+		j,
+		"sshSessionLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) SshSessionLogInput() *TeamsAccountSshSessionLog {
+	var returns *TeamsAccountSshSessionLog
+	_jsii_.Get(
+		j,
+		"sshSessionLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -560,7 +584,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -1107,6 +1131,17 @@ func (t *jsiiProxy_TeamsAccount) PutProxy(value *TeamsAccountProxy) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutSshSessionLog(value *TeamsAccountSshSessionLog) {
+	if err := t.validatePutSshSessionLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putSshSessionLog",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) ResetActivityLogEnabled() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1183,6 +1218,14 @@ func (t *jsiiProxy_TeamsAccount) ResetProxy() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetProxy",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetSshSessionLog() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSshSessionLog",
 		nil, // no parameters
 	)
 }

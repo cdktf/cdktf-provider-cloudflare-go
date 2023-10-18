@@ -13,6 +13,9 @@ import (
 
 type RulesetRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalCacheablePorts() *[]*float64
+	SetAdditionalCacheablePorts(val *[]*float64)
+	AdditionalCacheablePortsInput() *[]*float64
 	Algorithms() RulesetRulesActionParametersAlgorithmsList
 	AlgorithmsInput() interface{}
 	AutomaticHttpsRewrites() interface{}
@@ -214,6 +217,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutServeStale(value interface{})
 	PutSni(value interface{})
 	PutUri(value interface{})
+	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
@@ -277,6 +281,26 @@ type RulesetRulesActionParametersOutputReference interface {
 // The jsii proxy struct for RulesetRulesActionParametersOutputReference
 type jsiiProxy_RulesetRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePorts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AdditionalCacheablePortsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePortsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Algorithms() RulesetRulesActionParametersAlgorithmsList {
@@ -1377,6 +1401,17 @@ func NewRulesetRulesActionParametersOutputReference_Override(r RulesetRulesActio
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAdditionalCacheablePorts(val *[]*float64) {
+	if err := j.validateSetAdditionalCacheablePortsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalCacheablePorts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAutomaticHttpsRewrites(val interface{}) {
 	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
 		panic(err)
@@ -2165,6 +2200,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutUri(value int
 		r,
 		"putUri",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAdditionalCacheablePorts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdditionalCacheablePorts",
+		nil, // no parameters
 	)
 }
 

@@ -183,6 +183,10 @@ func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetTypeParameters(val *string) error {
 	return nil
 }

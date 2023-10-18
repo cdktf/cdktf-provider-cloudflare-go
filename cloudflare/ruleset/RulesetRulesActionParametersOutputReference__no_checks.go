@@ -111,6 +111,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAdditionalCacheablePortsParameters(val *[]*float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAutomaticHttpsRewritesParameters(val interface{}) error {
 	return nil
 }

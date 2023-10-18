@@ -1347,6 +1347,8 @@ func init() {
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference",
 		reflect.TypeOf((*RulesetRulesActionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalCacheablePorts", GoGetter: "AdditionalCacheablePorts"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalCacheablePortsInput", GoGetter: "AdditionalCacheablePortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithms", GoGetter: "Algorithms"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmsInput", GoGetter: "AlgorithmsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
@@ -1447,6 +1449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readTimeoutInput", GoGetter: "ReadTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestFields", GoGetter: "RequestFields"},
 			_jsii_.MemberProperty{JsiiProperty: "requestFieldsInput", GoGetter: "RequestFieldsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalCacheablePorts", GoMethod: "ResetAdditionalCacheablePorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlgorithms", GoMethod: "ResetAlgorithms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticHttpsRewrites", GoMethod: "ResetAutomaticHttpsRewrites"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutominify", GoMethod: "ResetAutominify"},

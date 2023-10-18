@@ -1274,6 +1274,7 @@ func init() {
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference",
 		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalCacheablePorts", GoGetter: "AdditionalCacheablePorts"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
 			_jsii_.MemberProperty{JsiiProperty: "autominify", GoGetter: "Autominify"},
 			_jsii_.MemberProperty{JsiiProperty: "bic", GoGetter: "Bic"},

@@ -155,6 +155,10 @@ func (j *jsiiProxy_AccessPolicy) validateSetPurposeJustificationRequiredParamete
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicy) validateSetSessionDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicy) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

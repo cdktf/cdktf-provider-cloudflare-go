@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalCacheablePorts() *[]*float64
 	AutomaticHttpsRewrites() cdktf.IResolvable
 	Autominify() DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList
 	Bic() cdktf.IResolvable
@@ -126,6 +127,16 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interfac
 // The jsii proxy struct for DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference
 type jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) AdditionalCacheablePorts() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"additionalCacheablePorts",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) AutomaticHttpsRewrites() cdktf.IResolvable {

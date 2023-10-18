@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs cloudflare}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs cloudflare}.
 type CloudflareProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -71,6 +71,9 @@ type CloudflareProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
+	UserAgentOperatorSuffix() *string
+	SetUserAgentOperatorSuffix(val *string)
+	UserAgentOperatorSuffixInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -91,6 +94,7 @@ type CloudflareProvider interface {
 	ResetOverrideLogicalId()
 	ResetRetries()
 	ResetRps()
+	ResetUserAgentOperatorSuffix()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -446,8 +450,28 @@ func (j *jsiiProxy_CloudflareProvider) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudflareProvider) UserAgentOperatorSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAgentOperatorSuffix",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs cloudflare} Resource.
+func (j *jsiiProxy_CloudflareProvider) UserAgentOperatorSuffixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userAgentOperatorSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs cloudflare} Resource.
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
 
@@ -465,7 +489,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.16.0/docs cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs cloudflare} Resource.
 func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Construct, id *string, config *CloudflareProviderConfig) {
 	_init_.Initialize()
 
@@ -571,6 +595,14 @@ func (j *jsiiProxy_CloudflareProvider)SetRps(val *float64) {
 	_jsii_.Set(
 		j,
 		"rps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudflareProvider)SetUserAgentOperatorSuffix(val *string) {
+	_jsii_.Set(
+		j,
+		"userAgentOperatorSuffix",
 		val,
 	)
 }
@@ -800,6 +832,14 @@ func (c *jsiiProxy_CloudflareProvider) ResetRps() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudflareProvider) ResetUserAgentOperatorSuffix() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserAgentOperatorSuffix",
 		nil, // no parameters
 	)
 }

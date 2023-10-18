@@ -131,6 +131,10 @@ func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AccessOrganization) validateSetSessionDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessOrganization) validateSetUiReadOnlyToggleReasonParameters(val *string) error {
 	return nil
 }

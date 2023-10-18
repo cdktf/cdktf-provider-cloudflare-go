@@ -43,6 +43,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	EarlyHints() *string
 	EmailObfuscation() *string
 	FilterLogsToCloudflare() *string
+	Fonts() *string
 	// Experimental.
 	Fqn() *string
 	H2Prioritization() *string
@@ -309,6 +310,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) FilterLog
 	_jsii_.Get(
 		j,
 		"filterLogsToCloudflare",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Fonts() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fonts",
 		&returns,
 	)
 	return returns

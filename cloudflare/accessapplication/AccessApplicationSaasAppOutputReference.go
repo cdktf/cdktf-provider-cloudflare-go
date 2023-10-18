@@ -35,14 +35,17 @@ type AccessApplicationSaasAppOutputReference interface {
 	CustomAttributeInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IdpEntityId() *string
 	InternalValue() *AccessApplicationSaasApp
 	SetInternalValue(val *AccessApplicationSaasApp)
 	NameIdFormat() *string
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
+	PublicKey() *string
 	SpEntityId() *string
 	SetSpEntityId(val *string)
 	SpEntityIdInput() *string
+	SsoEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -173,6 +176,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) IdpEntityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idpEntityId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) InternalValue() *AccessApplicationSaasApp {
 	var returns *AccessApplicationSaasApp
 	_jsii_.Get(
@@ -203,6 +216,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdFormatInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) PublicKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -218,6 +241,16 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SpEntityIdInput() *s
 	_jsii_.Get(
 		j,
 		"spEntityIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SsoEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ssoEndpoint",
 		&returns,
 	)
 	return returns
