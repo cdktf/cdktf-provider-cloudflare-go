@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -25,6 +25,8 @@ type TeamsAccount interface {
 	AntivirusInput() *TeamsAccountAntivirus
 	BlockPage() TeamsAccountBlockPageOutputReference
 	BlockPageInput() *TeamsAccountBlockPage
+	BodyScanning() TeamsAccountBodyScanningOutputReference
+	BodyScanningInput() *TeamsAccountBodyScanning
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -62,6 +64,9 @@ type TeamsAccount interface {
 	LoggingInput() *TeamsAccountLogging
 	// The tree node.
 	Node() constructs.Node
+	NonIdentityBrowserIsolationEnabled() interface{}
+	SetNonIdentityBrowserIsolationEnabled(val interface{})
+	NonIdentityBrowserIsolationEnabledInput() interface{}
 	PayloadLog() TeamsAccountPayloadLogOutputReference
 	PayloadLogInput() *TeamsAccountPayloadLog
 	ProtocolDetectionEnabled() interface{}
@@ -128,6 +133,7 @@ type TeamsAccount interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAntivirus(value *TeamsAccountAntivirus)
 	PutBlockPage(value *TeamsAccountBlockPage)
+	PutBodyScanning(value *TeamsAccountBodyScanning)
 	PutFips(value *TeamsAccountFips)
 	PutLogging(value *TeamsAccountLogging)
 	PutPayloadLog(value *TeamsAccountPayloadLog)
@@ -136,9 +142,11 @@ type TeamsAccount interface {
 	ResetActivityLogEnabled()
 	ResetAntivirus()
 	ResetBlockPage()
+	ResetBodyScanning()
 	ResetFips()
 	ResetId()
 	ResetLogging()
+	ResetNonIdentityBrowserIsolationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,6 +246,26 @@ func (j *jsiiProxy_TeamsAccount) BlockPageInput() *TeamsAccountBlockPage {
 	_jsii_.Get(
 		j,
 		"blockPageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) BodyScanning() TeamsAccountBodyScanningOutputReference {
+	var returns TeamsAccountBodyScanningOutputReference
+	_jsii_.Get(
+		j,
+		"bodyScanning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) BodyScanningInput() *TeamsAccountBodyScanning {
+	var returns *TeamsAccountBodyScanning
+	_jsii_.Get(
+		j,
+		"bodyScanningInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +426,26 @@ func (j *jsiiProxy_TeamsAccount) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) NonIdentityBrowserIsolationEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonIdentityBrowserIsolationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) NonIdentityBrowserIsolationEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nonIdentityBrowserIsolationEnabledInput",
 		&returns,
 	)
 	return returns
@@ -584,7 +632,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -602,7 +650,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.17.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -691,6 +739,17 @@ func (j *jsiiProxy_TeamsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccount)SetNonIdentityBrowserIsolationEnabled(val interface{}) {
+	if err := j.validateSetNonIdentityBrowserIsolationEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nonIdentityBrowserIsolationEnabled",
 		val,
 	)
 }
@@ -1087,6 +1146,17 @@ func (t *jsiiProxy_TeamsAccount) PutBlockPage(value *TeamsAccountBlockPage) {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutBodyScanning(value *TeamsAccountBodyScanning) {
+	if err := t.validatePutBodyScanningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putBodyScanning",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutFips(value *TeamsAccountFips) {
 	if err := t.validatePutFipsParameters(value); err != nil {
 		panic(err)
@@ -1166,6 +1236,14 @@ func (t *jsiiProxy_TeamsAccount) ResetBlockPage() {
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) ResetBodyScanning() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetBodyScanning",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) ResetFips() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1186,6 +1264,14 @@ func (t *jsiiProxy_TeamsAccount) ResetLogging() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetLogging",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetNonIdentityBrowserIsolationEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNonIdentityBrowserIsolationEnabled",
 		nil, // no parameters
 	)
 }

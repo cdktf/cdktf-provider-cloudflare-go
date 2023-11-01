@@ -75,6 +75,10 @@ func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value i
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutPlacementParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutPlainTextBindingParameters(value interface{}) error {
 	return nil
 }

@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "antivirusInput", GoGetter: "AntivirusInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPage", GoGetter: "BlockPage"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageInput", GoGetter: "BlockPageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyScanning", GoGetter: "BodyScanning"},
+			_jsii_.MemberProperty{JsiiProperty: "bodyScanningInput", GoGetter: "BodyScanningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -52,6 +54,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "nonIdentityBrowserIsolationEnabled", GoGetter: "NonIdentityBrowserIsolationEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "nonIdentityBrowserIsolationEnabledInput", GoGetter: "NonIdentityBrowserIsolationEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "payloadLog", GoGetter: "PayloadLog"},
 			_jsii_.MemberProperty{JsiiProperty: "payloadLogInput", GoGetter: "PayloadLogInput"},
@@ -63,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxyInput", GoGetter: "ProxyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAntivirus", GoMethod: "PutAntivirus"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
+			_jsii_.MemberMethod{JsiiMethod: "putBodyScanning", GoMethod: "PutBodyScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "putFips", GoMethod: "PutFips"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
@@ -72,9 +77,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetActivityLogEnabled", GoMethod: "ResetActivityLogEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAntivirus", GoMethod: "ResetAntivirus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBodyScanning", GoMethod: "ResetBodyScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFips", GoMethod: "ResetFips"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogging", GoMethod: "ResetLogging"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNonIdentityBrowserIsolationEnabled", GoMethod: "ResetNonIdentityBrowserIsolationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPayloadLog", GoMethod: "ResetPayloadLog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocolDetectionEnabled", GoMethod: "ResetProtocolDetectionEnabled"},
@@ -200,6 +207,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountBlockPageOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBodyScanning",
+		reflect.TypeOf((*TeamsAccountBodyScanning)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBodyScanningOutputReference",
+		reflect.TypeOf((*TeamsAccountBodyScanningOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "inspectionMode", GoGetter: "InspectionMode"},
+			_jsii_.MemberProperty{JsiiProperty: "inspectionModeInput", GoGetter: "InspectionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsAccountBodyScanningOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

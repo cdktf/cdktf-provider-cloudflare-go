@@ -75,6 +75,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutBlockPageParameters(value *TeamsAcco
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutBodyScanningParameters(value *TeamsAccountBodyScanning) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutFipsParameters(value *TeamsAccountFips) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_TeamsAccount) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_TeamsAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsAccount) validateSetNonIdentityBrowserIsolationEnabledParameters(val interface{}) error {
 	return nil
 }
 
