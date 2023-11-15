@@ -95,6 +95,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetHealthCh
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetIncidentImpactParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInputIdParameters(val *[]*string) error {
 	return nil
 }

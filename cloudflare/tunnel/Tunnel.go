@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel cloudflare_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel cloudflare_tunnel}.
 type Tunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_Tunnel) TunnelToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel cloudflare_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel cloudflare_tunnel} Resource.
 func NewTunnel(scope constructs.Construct, id *string, config *TunnelConfig) Tunnel {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewTunnel(scope constructs.Construct, id *string, config *TunnelConfig) Tun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/tunnel cloudflare_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/tunnel cloudflare_tunnel} Resource.
 func NewTunnel_Override(t Tunnel, scope constructs.Construct, id *string, config *TunnelConfig) {
 	_init_.Initialize()
 

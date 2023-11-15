@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/record cloudflare_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/record cloudflare_record}.
 type Record interface {
 	cdktf.TerraformResource
 	AllowOverwrite() interface{}
@@ -637,7 +637,7 @@ func (j *jsiiProxy_Record) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/record cloudflare_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/record cloudflare_record} Resource.
 func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Record {
 	_init_.Initialize()
 
@@ -655,7 +655,7 @@ func NewRecord(scope constructs.Construct, id *string, config *RecordConfig) Rec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/record cloudflare_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/record cloudflare_record} Resource.
 func NewRecord_Override(r Record, scope constructs.Construct, id *string, config *RecordConfig) {
 	_init_.Initialize()
 

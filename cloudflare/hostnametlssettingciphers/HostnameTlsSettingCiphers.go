@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers}.
 type HostnameTlsSettingCiphers interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_HostnameTlsSettingCiphers) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource.
 func NewHostnameTlsSettingCiphers(scope constructs.Construct, id *string, config *HostnameTlsSettingCiphersConfig) HostnameTlsSettingCiphers {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewHostnameTlsSettingCiphers(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.18.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/hostname_tls_setting_ciphers cloudflare_hostname_tls_setting_ciphers} Resource.
 func NewHostnameTlsSettingCiphers_Override(h HostnameTlsSettingCiphers, scope constructs.Construct, id *string, config *HostnameTlsSettingCiphersConfig) {
 	_init_.Initialize()
 

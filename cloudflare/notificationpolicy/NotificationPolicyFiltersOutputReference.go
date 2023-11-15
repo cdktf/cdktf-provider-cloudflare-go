@@ -57,6 +57,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	HealthCheckId() *[]*string
 	SetHealthCheckId(val *[]*string)
 	HealthCheckIdInput() *[]*string
+	IncidentImpact() *[]*string
+	SetIncidentImpact(val *[]*string)
+	IncidentImpactInput() *[]*string
 	InputId() *[]*string
 	SetInputId(val *[]*string)
 	InputIdInput() *[]*string
@@ -151,6 +154,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetEventType()
 	ResetGroupBy()
 	ResetHealthCheckId()
+	ResetIncidentImpact()
 	ResetInputId()
 	ResetLimit()
 	ResetMegabitsPerSecond()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) HealthCheckIdInput(
 	_jsii_.Get(
 		j,
 		"healthCheckIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) IncidentImpact() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"incidentImpact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) IncidentImpactInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"incidentImpactInput",
 		&returns,
 	)
 	return returns
@@ -922,6 +946,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetHealthCheckId(val
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetIncidentImpact(val *[]*string) {
+	if err := j.validateSetIncidentImpactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"incidentImpact",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetInputId(val *[]*string) {
 	if err := j.validateSetInputIdParameters(val); err != nil {
 		panic(err)
@@ -1396,6 +1431,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetHealthCheckId(
 	_jsii_.InvokeVoid(
 		n,
 		"resetHealthCheckId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetIncidentImpact() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncidentImpact",
 		nil, // no parameters
 	)
 }
