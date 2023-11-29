@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type ZoneCacheReserve interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_ZoneCacheReserve) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) ZoneCacheReserve {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve_Override(z ZoneCacheReserve, scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) {
 	_init_.Initialize()
 

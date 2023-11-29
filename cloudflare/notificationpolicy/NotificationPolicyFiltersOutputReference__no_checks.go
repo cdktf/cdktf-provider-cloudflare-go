@@ -119,6 +119,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewHealt
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetNewStatusParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPacketsPerSecondParameters(val *[]*string) error {
 	return nil
 }

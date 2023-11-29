@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 type DeviceSettingsPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -726,7 +726,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) DeviceSettingsPolicy {
 	_init_.Initialize()
 
@@ -744,7 +744,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.19.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) {
 	_init_.Initialize()
 

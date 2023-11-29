@@ -93,6 +93,7 @@ type RulesetRulesRatelimitOutputReference interface {
 	ResetMitigationTimeout()
 	ResetPeriod()
 	ResetRequestsPerPeriod()
+	ResetRequestsToOrigin()
 	ResetScorePerPeriod()
 	ResetScoreResponseHeaderName()
 	// Produce the Token's value at resolution time.
@@ -733,6 +734,14 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetRequestsPerPeriod(
 	_jsii_.InvokeVoid(
 		r,
 		"resetRequestsPerPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetRequestsToOrigin() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRequestsToOrigin",
 		nil, // no parameters
 	)
 }

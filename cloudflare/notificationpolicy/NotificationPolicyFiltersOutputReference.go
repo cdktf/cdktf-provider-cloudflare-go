@@ -74,6 +74,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	NewHealth() *[]*string
 	SetNewHealth(val *[]*string)
 	NewHealthInput() *[]*string
+	NewStatus() *[]*string
+	SetNewStatus(val *[]*string)
+	NewStatusInput() *[]*string
 	PacketsPerSecond() *[]*string
 	SetPacketsPerSecond(val *[]*string)
 	PacketsPerSecondInput() *[]*string
@@ -159,6 +162,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetLimit()
 	ResetMegabitsPerSecond()
 	ResetNewHealth()
+	ResetNewStatus()
 	ResetPacketsPerSecond()
 	ResetPoolId()
 	ResetProduct()
@@ -512,6 +516,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewHealthInput() *[
 	_jsii_.Get(
 		j,
 		"newHealthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewStatus() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"newStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) NewStatusInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"newStatusInput",
 		&returns,
 	)
 	return returns
@@ -1012,6 +1036,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewStatus(val *[]*string) {
+	if err := j.validateSetNewStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newStatus",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetPacketsPerSecond(val *[]*string) {
 	if err := j.validateSetPacketsPerSecondParameters(val); err != nil {
 		panic(err)
@@ -1471,6 +1506,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetNewHealth() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetNewHealth",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetNewStatus() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNewStatus",
 		nil, // no parameters
 	)
 }
