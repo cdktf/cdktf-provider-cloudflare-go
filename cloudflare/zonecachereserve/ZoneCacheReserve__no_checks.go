@@ -59,7 +59,15 @@ func (z *jsiiProxy_ZoneCacheReserve) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (z *jsiiProxy_ZoneCacheReserve) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneCacheReserve) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneCacheReserve) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

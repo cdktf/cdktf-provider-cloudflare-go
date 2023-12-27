@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 type ZoneLockdown interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type ZoneLockdown interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -438,7 +448,7 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
 
@@ -456,7 +466,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *string, config *ZoneLockdownConfig) {
 	_init_.Initialize()
 
@@ -870,6 +880,19 @@ func (z *jsiiProxy_ZoneLockdown) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (z *jsiiProxy_ZoneLockdown) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (z *jsiiProxy_ZoneLockdown) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -897,6 +920,17 @@ func (z *jsiiProxy_ZoneLockdown) InterpolationForAttribute(terraformAttribute *s
 	return returns
 }
 
+func (z *jsiiProxy_ZoneLockdown) MoveFromId(id *string) {
+	if err := z.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (z *jsiiProxy_ZoneLockdown) MoveTo(moveTarget *string, index interface{}) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -905,6 +939,17 @@ func (z *jsiiProxy_ZoneLockdown) MoveTo(moveTarget *string, index interface{}) {
 		z,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (z *jsiiProxy_ZoneLockdown) MoveToId(id *string) {
+	if err := z.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

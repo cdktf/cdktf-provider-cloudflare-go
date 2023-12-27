@@ -59,7 +59,15 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) validateInterpolationForAttribute
 	return nil
 }
 
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationPolicyWebhooks) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

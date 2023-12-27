@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_service_token cloudflare_access_service_token}.
 type AccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -106,12 +106,22 @@ type AccessServiceToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_AccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken(scope constructs.Construct, id *string, config *AccessServiceTokenConfig) AccessServiceToken {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewAccessServiceToken(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_service_token cloudflare_access_service_token} Resource.
 func NewAccessServiceToken_Override(a AccessServiceToken, scope constructs.Construct, id *string, config *AccessServiceTokenConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (a *jsiiProxy_AccessServiceToken) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (a *jsiiProxy_AccessServiceToken) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AccessServiceToken) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (a *jsiiProxy_AccessServiceToken) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (a *jsiiProxy_AccessServiceToken) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AccessServiceToken) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (a *jsiiProxy_AccessServiceToken) MoveTo(moveTarget *string, index interfac
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AccessServiceToken) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

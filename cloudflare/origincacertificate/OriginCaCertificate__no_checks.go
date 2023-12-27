@@ -59,7 +59,15 @@ func (o *jsiiProxy_OriginCaCertificate) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OriginCaCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OriginCaCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OriginCaCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

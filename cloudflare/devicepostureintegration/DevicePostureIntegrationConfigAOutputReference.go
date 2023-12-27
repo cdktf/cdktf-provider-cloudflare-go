@@ -13,6 +13,12 @@ import (
 
 type DevicePostureIntegrationConfigAOutputReference interface {
 	cdktf.ComplexObject
+	AccessClientId() *string
+	SetAccessClientId(val *string)
+	AccessClientIdInput() *string
+	AccessClientSecret() *string
+	SetAccessClientSecret(val *string)
+	AccessClientSecretInput() *string
 	ApiUrl() *string
 	SetApiUrl(val *string)
 	ApiUrlInput() *string
@@ -82,6 +88,8 @@ type DevicePostureIntegrationConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccessClientId()
+	ResetAccessClientSecret()
 	ResetApiUrl()
 	ResetAuthUrl()
 	ResetClientId()
@@ -101,6 +109,46 @@ type DevicePostureIntegrationConfigAOutputReference interface {
 // The jsii proxy struct for DevicePostureIntegrationConfigAOutputReference
 type jsiiProxy_DevicePostureIntegrationConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) AccessClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) AccessClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) AccessClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) AccessClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientSecretInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ApiUrl() *string {
@@ -318,6 +366,28 @@ func NewDevicePostureIntegrationConfigAOutputReference_Override(d DevicePostureI
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetAccessClientId(val *string) {
+	if err := j.validateSetAccessClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessClientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference)SetAccessClientSecret(val *string) {
+	if err := j.validateSetAccessClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessClientSecret",
+		val,
 	)
 }
 
@@ -626,6 +696,22 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetAccessClientId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccessClientId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetAccessClientSecret() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccessClientSecret",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) ResetApiUrl() {

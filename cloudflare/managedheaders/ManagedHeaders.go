@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/managed_headers cloudflare_managed_headers}.
 type ManagedHeaders interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type ManagedHeaders interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -368,7 +378,7 @@ func (j *jsiiProxy_ManagedHeaders) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHeadersConfig) ManagedHeaders {
 	_init_.Initialize()
 
@@ -386,7 +396,7 @@ func NewManagedHeaders(scope constructs.Construct, id *string, config *ManagedHe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/managed_headers cloudflare_managed_headers} Resource.
 func NewManagedHeaders_Override(m ManagedHeaders, scope constructs.Construct, id *string, config *ManagedHeadersConfig) {
 	_init_.Initialize()
 
@@ -756,6 +766,19 @@ func (m *jsiiProxy_ManagedHeaders) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (m *jsiiProxy_ManagedHeaders) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_ManagedHeaders) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -783,6 +806,17 @@ func (m *jsiiProxy_ManagedHeaders) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (m *jsiiProxy_ManagedHeaders) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_ManagedHeaders) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -791,6 +825,17 @@ func (m *jsiiProxy_ManagedHeaders) MoveTo(moveTarget *string, index interface{})
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_ManagedHeaders) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

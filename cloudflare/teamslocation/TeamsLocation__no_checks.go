@@ -59,7 +59,15 @@ func (t *jsiiProxy_TeamsLocation) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (t *jsiiProxy_TeamsLocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamsLocation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GreTunnel) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GreTunnel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GreTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GreTunnel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

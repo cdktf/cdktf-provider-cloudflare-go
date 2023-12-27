@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -111,12 +111,22 @@ type Zone interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -494,7 +504,7 @@ func (j *jsiiProxy_Zone) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -512,7 +522,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 
@@ -937,6 +947,19 @@ func (z *jsiiProxy_Zone) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
+func (z *jsiiProxy_Zone) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (z *jsiiProxy_Zone) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -964,6 +987,17 @@ func (z *jsiiProxy_Zone) InterpolationForAttribute(terraformAttribute *string) c
 	return returns
 }
 
+func (z *jsiiProxy_Zone) MoveFromId(id *string) {
+	if err := z.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (z *jsiiProxy_Zone) MoveTo(moveTarget *string, index interface{}) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -972,6 +1006,17 @@ func (z *jsiiProxy_Zone) MoveTo(moveTarget *string, index interface{}) {
 		z,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (z *jsiiProxy_Zone) MoveToId(id *string) {
+	if err := z.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

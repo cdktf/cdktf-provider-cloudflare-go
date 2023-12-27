@@ -59,7 +59,15 @@ func (u *jsiiProxy_UserAgentBlockingRule) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (u *jsiiProxy_UserAgentBlockingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserAgentBlockingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserAgentBlockingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

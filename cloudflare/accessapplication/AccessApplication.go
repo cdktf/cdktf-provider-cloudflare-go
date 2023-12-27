@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,6 +21,9 @@ type AccessApplication interface {
 	AllowedIdps() *[]*string
 	SetAllowedIdps(val *[]*string)
 	AllowedIdpsInput() *[]*string
+	AppLauncherLogoUrl() *string
+	SetAppLauncherLogoUrl(val *string)
+	AppLauncherLogoUrlInput() *string
 	AppLauncherVisible() interface{}
 	SetAppLauncherVisible(val interface{})
 	AppLauncherVisibleInput() interface{}
@@ -28,6 +31,9 @@ type AccessApplication interface {
 	AutoRedirectToIdentity() interface{}
 	SetAutoRedirectToIdentity(val interface{})
 	AutoRedirectToIdentityInput() interface{}
+	BgColor() *string
+	SetBgColor(val *string)
+	BgColorInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -64,6 +70,8 @@ type AccessApplication interface {
 	EnableBindingCookie() interface{}
 	SetEnableBindingCookie(val interface{})
 	EnableBindingCookieInput() interface{}
+	FooterLinks() AccessApplicationFooterLinksList
+	FooterLinksInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,12 +80,17 @@ type AccessApplication interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HeaderBgColor() *string
+	SetHeaderBgColor(val *string)
+	HeaderBgColorInput() *string
 	HttpOnlyCookieAttribute() interface{}
 	SetHttpOnlyCookieAttribute(val interface{})
 	HttpOnlyCookieAttributeInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LandingPageDesign() AccessApplicationLandingPageDesignOutputReference
+	LandingPageDesignInput() *AccessApplicationLandingPageDesign
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -156,21 +169,35 @@ type AccessApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsHeaders(value interface{})
+	PutFooterLinks(value interface{})
+	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
 	ResetAccountId()
 	ResetAllowedIdps()
+	ResetAppLauncherLogoUrl()
 	ResetAppLauncherVisible()
 	ResetAutoRedirectToIdentity()
+	ResetBgColor()
 	ResetCorsHeaders()
 	ResetCustomDenyMessage()
 	ResetCustomDenyUrl()
@@ -178,9 +205,13 @@ type AccessApplication interface {
 	ResetCustomPages()
 	ResetDomain()
 	ResetEnableBindingCookie()
+	ResetFooterLinks()
+	ResetHeaderBgColor()
 	ResetHttpOnlyCookieAttribute()
 	ResetId()
+	ResetLandingPageDesign()
 	ResetLogoUrl()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -248,6 +279,26 @@ func (j *jsiiProxy_AccessApplication) AllowedIdpsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) AppLauncherLogoUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherLogoUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AppLauncherLogoUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherLogoUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) AppLauncherVisible() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -293,6 +344,26 @@ func (j *jsiiProxy_AccessApplication) AutoRedirectToIdentityInput() interface{} 
 	_jsii_.Get(
 		j,
 		"autoRedirectToIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) BgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgColor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) BgColorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgColorInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +559,26 @@ func (j *jsiiProxy_AccessApplication) EnableBindingCookieInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) FooterLinks() AccessApplicationFooterLinksList {
+	var returns AccessApplicationFooterLinksList
+	_jsii_.Get(
+		j,
+		"footerLinks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) FooterLinksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"footerLinksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -513,6 +604,26 @@ func (j *jsiiProxy_AccessApplication) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) HeaderBgColor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerBgColor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) HeaderBgColorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headerBgColorInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +664,26 @@ func (j *jsiiProxy_AccessApplication) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) LandingPageDesign() AccessApplicationLandingPageDesignOutputReference {
+	var returns AccessApplicationLandingPageDesignOutputReference
+	_jsii_.Get(
+		j,
+		"landingPageDesign",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) LandingPageDesignInput() *AccessApplicationLandingPageDesign {
+	var returns *AccessApplicationLandingPageDesign
+	_jsii_.Get(
+		j,
+		"landingPageDesignInput",
 		&returns,
 	)
 	return returns
@@ -859,7 +990,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -877,7 +1008,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -910,6 +1041,17 @@ func (j *jsiiProxy_AccessApplication)SetAllowedIdps(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_AccessApplication)SetAppLauncherLogoUrl(val *string) {
+	if err := j.validateSetAppLauncherLogoUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appLauncherLogoUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplication)SetAppLauncherVisible(val interface{}) {
 	if err := j.validateSetAppLauncherVisibleParameters(val); err != nil {
 		panic(err)
@@ -928,6 +1070,17 @@ func (j *jsiiProxy_AccessApplication)SetAutoRedirectToIdentity(val interface{}) 
 	_jsii_.Set(
 		j,
 		"autoRedirectToIdentity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetBgColor(val *string) {
+	if err := j.validateSetBgColorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgColor",
 		val,
 	)
 }
@@ -1032,6 +1185,17 @@ func (j *jsiiProxy_AccessApplication)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetHeaderBgColor(val *string) {
+	if err := j.validateSetHeaderBgColorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headerBgColor",
 		val,
 	)
 }
@@ -1467,6 +1631,19 @@ func (a *jsiiProxy_AccessApplication) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_AccessApplication) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AccessApplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1494,6 +1671,17 @@ func (a *jsiiProxy_AccessApplication) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (a *jsiiProxy_AccessApplication) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1502,6 +1690,17 @@ func (a *jsiiProxy_AccessApplication) MoveTo(moveTarget *string, index interface
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1523,6 +1722,28 @@ func (a *jsiiProxy_AccessApplication) PutCorsHeaders(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
 		"putCorsHeaders",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutFooterLinks(value interface{}) {
+	if err := a.validatePutFooterLinksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFooterLinks",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) PutLandingPageDesign(value *AccessApplicationLandingPageDesign) {
+	if err := a.validatePutLandingPageDesignParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putLandingPageDesign",
 		[]interface{}{value},
 	)
 }
@@ -1554,6 +1775,14 @@ func (a *jsiiProxy_AccessApplication) ResetAllowedIdps() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetAppLauncherLogoUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppLauncherLogoUrl",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetAppLauncherVisible() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1566,6 +1795,14 @@ func (a *jsiiProxy_AccessApplication) ResetAutoRedirectToIdentity() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutoRedirectToIdentity",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetBgColor() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBgColor",
 		nil, // no parameters
 	)
 }
@@ -1626,6 +1863,22 @@ func (a *jsiiProxy_AccessApplication) ResetEnableBindingCookie() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetFooterLinks() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFooterLinks",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetHeaderBgColor() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHeaderBgColor",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetHttpOnlyCookieAttribute() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1642,10 +1895,26 @@ func (a *jsiiProxy_AccessApplication) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetLandingPageDesign() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLandingPageDesign",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetLogoUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLogoUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
 		nil, // no parameters
 	)
 }

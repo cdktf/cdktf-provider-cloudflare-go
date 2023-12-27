@@ -59,7 +59,15 @@ func (o *jsiiProxy_ObservatoryScheduledTest) validateInterpolationForAttributePa
 	return nil
 }
 
+func (o *jsiiProxy_ObservatoryScheduledTest) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObservatoryScheduledTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObservatoryScheduledTest) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (b *jsiiProxy_ByoIpPrefix) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_ByoIpPrefix) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_ByoIpPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_ByoIpPrefix) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

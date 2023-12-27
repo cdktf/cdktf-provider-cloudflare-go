@@ -59,7 +59,15 @@ func (w *jsiiProxy_Web3Hostname) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_Web3Hostname) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Web3Hostname) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Web3Hostname) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

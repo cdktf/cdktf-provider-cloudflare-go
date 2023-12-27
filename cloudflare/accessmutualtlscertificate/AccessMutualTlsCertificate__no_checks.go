@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_AccessMutualTlsCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessMutualTlsCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessMutualTlsCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

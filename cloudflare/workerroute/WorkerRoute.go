@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_route cloudflare_worker_route}.
 type WorkerRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type WorkerRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_WorkerRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteConfig) WorkerRoute {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/worker_route cloudflare_worker_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_route cloudflare_worker_route} Resource.
 func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *string, config *WorkerRouteConfig) {
 	_init_.Initialize()
 
@@ -777,6 +787,19 @@ func (w *jsiiProxy_WorkerRoute) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (w *jsiiProxy_WorkerRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (w *jsiiProxy_WorkerRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -804,6 +827,17 @@ func (w *jsiiProxy_WorkerRoute) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (w *jsiiProxy_WorkerRoute) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (w *jsiiProxy_WorkerRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -812,6 +846,17 @@ func (w *jsiiProxy_WorkerRoute) MoveTo(moveTarget *string, index interface{}) {
 		w,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_WorkerRoute) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

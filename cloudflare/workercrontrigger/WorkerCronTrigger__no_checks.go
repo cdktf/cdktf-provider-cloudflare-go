@@ -59,7 +59,15 @@ func (w *jsiiProxy_WorkerCronTrigger) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WorkerCronTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerCronTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerCronTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

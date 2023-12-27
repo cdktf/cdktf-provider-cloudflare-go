@@ -95,6 +95,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	RequestsPerSecond() *[]*string
 	SetRequestsPerSecond(val *[]*string)
 	RequestsPerSecondInput() *[]*string
+	Selectors() *[]*string
+	SetSelectors(val *[]*string)
+	SelectorsInput() *[]*string
 	Services() *[]*string
 	SetServices(val *[]*string)
 	ServicesInput() *[]*string
@@ -169,6 +172,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetProjectId()
 	ResetProtocol()
 	ResetRequestsPerSecond()
+	ResetSelectors()
 	ResetServices()
 	ResetSlo()
 	ResetStatus()
@@ -661,6 +665,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) RequestsPerSecondIn
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Selectors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SelectorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Services() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1109,6 +1133,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetRequestsPerSecond
 	_jsii_.Set(
 		j,
 		"requestsPerSecond",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetSelectors(val *[]*string) {
+	if err := j.validateSetSelectorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selectors",
 		val,
 	)
 }
@@ -1562,6 +1597,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetRequestsPerSec
 	_jsii_.InvokeVoid(
 		n,
 		"resetRequestsPerSecond",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetSelectors() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSelectors",
 		nil, // no parameters
 	)
 }

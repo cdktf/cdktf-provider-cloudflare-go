@@ -59,7 +59,15 @@ func (w *jsiiProxy_WorkerRoute) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (w *jsiiProxy_WorkerRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

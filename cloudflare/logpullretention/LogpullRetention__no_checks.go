@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogpullRetention) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (l *jsiiProxy_LogpullRetention) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpullRetention) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpullRetention) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

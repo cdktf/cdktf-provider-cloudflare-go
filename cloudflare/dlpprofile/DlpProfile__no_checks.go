@@ -59,7 +59,15 @@ func (d *jsiiProxy_DlpProfile) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DlpProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlpProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DlpProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

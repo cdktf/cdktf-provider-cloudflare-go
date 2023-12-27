@@ -148,6 +148,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverridePa
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutNotificationSettingsParameters(value *TeamsRuleRuleSettingsNotificationSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutPayloadLogParameters(value *TeamsRuleRuleSettingsPayloadLog) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

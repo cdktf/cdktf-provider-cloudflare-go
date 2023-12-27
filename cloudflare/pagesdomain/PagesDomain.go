@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/pages_domain cloudflare_pages_domain}.
 type PagesDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -98,12 +98,22 @@ type PagesDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -377,7 +387,7 @@ func (j *jsiiProxy_PagesDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainConfig) PagesDomain {
 	_init_.Initialize()
 
@@ -395,7 +405,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *string, config *PagesDomainConfig) {
 	_init_.Initialize()
 
@@ -787,6 +797,19 @@ func (p *jsiiProxy_PagesDomain) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (p *jsiiProxy_PagesDomain) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (p *jsiiProxy_PagesDomain) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := p.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -814,6 +837,17 @@ func (p *jsiiProxy_PagesDomain) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (p *jsiiProxy_PagesDomain) MoveFromId(id *string) {
+	if err := p.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (p *jsiiProxy_PagesDomain) MoveTo(moveTarget *string, index interface{}) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -822,6 +856,17 @@ func (p *jsiiProxy_PagesDomain) MoveTo(moveTarget *string, index interface{}) {
 		p,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (p *jsiiProxy_PagesDomain) MoveToId(id *string) {
+	if err := p.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

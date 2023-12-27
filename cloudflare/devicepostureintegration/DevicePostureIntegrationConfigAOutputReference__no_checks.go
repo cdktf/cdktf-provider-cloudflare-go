@@ -51,6 +51,14 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetAccessClientIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetAccessClientSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureIntegrationConfigAOutputReference) validateSetApiUrlParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_managed_networks cloudflare_device_managed_networks}.
 type DeviceManagedNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -99,12 +99,22 @@ type DeviceManagedNetworks interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -389,7 +399,7 @@ func (j *jsiiProxy_DeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) DeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -407,7 +417,7 @@ func NewDeviceManagedNetworks(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_managed_networks cloudflare_device_managed_networks} Resource.
 func NewDeviceManagedNetworks_Override(d DeviceManagedNetworks, scope constructs.Construct, id *string, config *DeviceManagedNetworksConfig) {
 	_init_.Initialize()
 
@@ -799,6 +809,19 @@ func (d *jsiiProxy_DeviceManagedNetworks) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DeviceManagedNetworks) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DeviceManagedNetworks) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -826,6 +849,17 @@ func (d *jsiiProxy_DeviceManagedNetworks) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (d *jsiiProxy_DeviceManagedNetworks) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DeviceManagedNetworks) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -834,6 +868,17 @@ func (d *jsiiProxy_DeviceManagedNetworks) MoveTo(moveTarget *string, index inter
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DeviceManagedNetworks) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

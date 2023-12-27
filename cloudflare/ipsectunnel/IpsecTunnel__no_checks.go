@@ -59,7 +59,15 @@ func (i *jsiiProxy_IpsecTunnel) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IpsecTunnel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IpsecTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IpsecTunnel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

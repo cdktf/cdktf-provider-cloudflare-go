@@ -59,7 +59,15 @@ func (t *jsiiProxy_TurnstileWidget) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (t *jsiiProxy_TurnstileWidget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TurnstileWidget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TurnstileWidget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

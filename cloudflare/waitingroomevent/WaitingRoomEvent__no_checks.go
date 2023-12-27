@@ -59,7 +59,15 @@ func (w *jsiiProxy_WaitingRoomEvent) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoomEvent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoomEvent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

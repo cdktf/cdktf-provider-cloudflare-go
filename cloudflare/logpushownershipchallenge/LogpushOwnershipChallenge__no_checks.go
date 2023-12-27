@@ -59,7 +59,15 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateInterpolationForAttributeP
 	return nil
 }
 
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

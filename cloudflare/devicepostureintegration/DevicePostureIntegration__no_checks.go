@@ -59,7 +59,15 @@ func (d *jsiiProxy_DevicePostureIntegration) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DevicePostureIntegration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicePostureIntegration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

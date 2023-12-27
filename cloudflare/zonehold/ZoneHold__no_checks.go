@@ -59,7 +59,15 @@ func (z *jsiiProxy_ZoneHold) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (z *jsiiProxy_ZoneHold) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneHold) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneHold) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

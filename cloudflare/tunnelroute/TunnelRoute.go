@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/tunnel_route cloudflare_tunnel_route}.
 type TunnelRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -103,12 +103,22 @@ type TunnelRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_TunnelRoute) VirtualNetworkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
 func NewTunnelRoute(scope constructs.Construct, id *string, config *TunnelRouteConfig) TunnelRoute {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewTunnelRoute(scope constructs.Construct, id *string, config *TunnelRouteC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/tunnel_route cloudflare_tunnel_route} Resource.
 func NewTunnelRoute_Override(t TunnelRoute, scope constructs.Construct, id *string, config *TunnelRouteConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (t *jsiiProxy_TunnelRoute) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (t *jsiiProxy_TunnelRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TunnelRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (t *jsiiProxy_TunnelRoute) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (t *jsiiProxy_TunnelRoute) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TunnelRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (t *jsiiProxy_TunnelRoute) MoveTo(moveTarget *string, index interface{}) {
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TunnelRoute) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

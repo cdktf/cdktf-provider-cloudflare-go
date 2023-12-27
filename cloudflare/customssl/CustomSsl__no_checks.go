@@ -59,7 +59,15 @@ func (c *jsiiProxy_CustomSsl) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CustomSsl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomSsl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomSsl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

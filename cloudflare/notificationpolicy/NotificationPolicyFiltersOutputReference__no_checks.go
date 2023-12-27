@@ -147,6 +147,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetRequests
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetSelectorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetServicesParameters(val *[]*string) error {
 	return nil
 }

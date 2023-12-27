@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiShieldSchemaValidationSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

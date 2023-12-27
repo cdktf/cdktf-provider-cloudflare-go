@@ -59,7 +59,15 @@ func (w *jsiiProxy_WorkersKvNamespace) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (w *jsiiProxy_WorkersKvNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersKvNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkersKvNamespace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

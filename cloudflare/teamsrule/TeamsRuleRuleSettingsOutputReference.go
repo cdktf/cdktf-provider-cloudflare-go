@@ -63,6 +63,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	IpCategoriesInput() interface{}
 	L4Override() TeamsRuleRuleSettingsL4OverrideOutputReference
 	L4OverrideInput() *TeamsRuleRuleSettingsL4Override
+	NotificationSettings() TeamsRuleRuleSettingsNotificationSettingsOutputReference
+	NotificationSettingsInput() *TeamsRuleRuleSettingsNotificationSettings
 	OverrideHost() *string
 	SetOverrideHost(val *string)
 	OverrideHostInput() *string
@@ -110,6 +112,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	PutCheckSession(value *TeamsRuleRuleSettingsCheckSession)
 	PutEgress(value *TeamsRuleRuleSettingsEgress)
 	PutL4Override(value *TeamsRuleRuleSettingsL4Override)
+	PutNotificationSettings(value *TeamsRuleRuleSettingsNotificationSettings)
 	PutPayloadLog(value *TeamsRuleRuleSettingsPayloadLog)
 	PutUntrustedCert(value *TeamsRuleRuleSettingsUntrustedCert)
 	ResetAddHeaders()
@@ -124,6 +127,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
 	ResetL4Override()
+	ResetNotificationSettings()
 	ResetOverrideHost()
 	ResetOverrideIps()
 	ResetPayloadLog()
@@ -428,6 +432,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) L4OverrideInput() *Team
 	_jsii_.Get(
 		j,
 		"l4OverrideInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) NotificationSettings() TeamsRuleRuleSettingsNotificationSettingsOutputReference {
+	var returns TeamsRuleRuleSettingsNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) NotificationSettingsInput() *TeamsRuleRuleSettingsNotificationSettings {
+	var returns *TeamsRuleRuleSettingsNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -956,6 +980,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutL4Override(value *Te
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutNotificationSettings(value *TeamsRuleRuleSettingsNotificationSettings) {
+	if err := t.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutPayloadLog(value *TeamsRuleRuleSettingsPayloadLog) {
 	if err := t.validatePutPayloadLogParameters(value); err != nil {
 		panic(err)
@@ -1070,6 +1105,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetL4Override() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetL4Override",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

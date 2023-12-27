@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}.
 type LoadBalancerMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -140,12 +140,22 @@ type LoadBalancerMonitor interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -726,7 +736,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) LoadBalancerMonitor {
 	_init_.Initialize()
 
@@ -744,7 +754,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource.
 func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Construct, id *string, config *LoadBalancerMonitorConfig) {
 	_init_.Initialize()
 
@@ -1279,6 +1289,19 @@ func (l *jsiiProxy_LoadBalancerMonitor) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LoadBalancerMonitor) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LoadBalancerMonitor) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1306,6 +1329,17 @@ func (l *jsiiProxy_LoadBalancerMonitor) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (l *jsiiProxy_LoadBalancerMonitor) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LoadBalancerMonitor) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1314,6 +1348,17 @@ func (l *jsiiProxy_LoadBalancerMonitor) MoveTo(moveTarget *string, index interfa
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerMonitor) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

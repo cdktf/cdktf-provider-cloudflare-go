@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmailRoutingRule) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EmailRoutingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailRoutingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmailRoutingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

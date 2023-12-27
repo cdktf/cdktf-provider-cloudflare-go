@@ -59,7 +59,15 @@ func (r *jsiiProxy_RegionalTieredCache) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RegionalTieredCache) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegionalTieredCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegionalTieredCache) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

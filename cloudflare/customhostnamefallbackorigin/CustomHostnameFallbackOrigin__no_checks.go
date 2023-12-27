@@ -59,7 +59,15 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

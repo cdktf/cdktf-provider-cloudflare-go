@@ -59,7 +59,15 @@ func (z *jsiiProxy_ZoneLockdown) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (z *jsiiProxy_ZoneLockdown) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneLockdown) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZoneLockdown) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

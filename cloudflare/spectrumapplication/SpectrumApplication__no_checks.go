@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpectrumApplication) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SpectrumApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpectrumApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpectrumApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

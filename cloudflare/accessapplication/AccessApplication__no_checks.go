@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessApplication) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -68,6 +76,14 @@ func (a *jsiiProxy_AccessApplication) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutFooterLinksParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutLandingPageDesignParameters(value *AccessApplicationLandingPageDesign) error {
 	return nil
 }
 
@@ -99,11 +115,19 @@ func (j *jsiiProxy_AccessApplication) validateSetAllowedIdpsParameters(val *[]*s
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetAppLauncherLogoUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetBgColorParameters(val *string) error {
 	return nil
 }
 
@@ -136,6 +160,10 @@ func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) e
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetHeaderBgColorParameters(val *string) error {
 	return nil
 }
 

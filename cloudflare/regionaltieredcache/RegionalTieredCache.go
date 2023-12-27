@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}.
 type RegionalTieredCache interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type RegionalTieredCache interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_RegionalTieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache(scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) RegionalTieredCache {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewRegionalTieredCache(scope constructs.Construct, id *string, config *Regi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource.
 func NewRegionalTieredCache_Override(r RegionalTieredCache, scope constructs.Construct, id *string, config *RegionalTieredCacheConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (r *jsiiProxy_RegionalTieredCache) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (r *jsiiProxy_RegionalTieredCache) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RegionalTieredCache) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (r *jsiiProxy_RegionalTieredCache) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (r *jsiiProxy_RegionalTieredCache) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RegionalTieredCache) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (r *jsiiProxy_RegionalTieredCache) MoveTo(moveTarget *string, index interfa
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RegionalTieredCache) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

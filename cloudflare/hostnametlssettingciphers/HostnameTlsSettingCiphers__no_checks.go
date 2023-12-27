@@ -59,7 +59,15 @@ func (h *jsiiProxy_HostnameTlsSettingCiphers) validateInterpolationForAttributeP
 	return nil
 }
 
+func (h *jsiiProxy_HostnameTlsSettingCiphers) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostnameTlsSettingCiphers) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HostnameTlsSettingCiphers) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

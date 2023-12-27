@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 type DeviceSettingsPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -142,12 +142,22 @@ type DeviceSettingsPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -726,7 +736,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) DeviceSettingsPolicy {
 	_init_.Initialize()
 
@@ -744,7 +754,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) {
 	_init_.Initialize()
 
@@ -1301,6 +1311,19 @@ func (d *jsiiProxy_DeviceSettingsPolicy) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DeviceSettingsPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DeviceSettingsPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1328,6 +1351,17 @@ func (d *jsiiProxy_DeviceSettingsPolicy) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (d *jsiiProxy_DeviceSettingsPolicy) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DeviceSettingsPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1336,6 +1370,17 @@ func (d *jsiiProxy_DeviceSettingsPolicy) MoveTo(moveTarget *string, index interf
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DeviceSettingsPolicy) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

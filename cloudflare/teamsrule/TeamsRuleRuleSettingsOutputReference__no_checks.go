@@ -67,6 +67,10 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutL4OverridePa
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutNotificationSettingsParameters(value *TeamsRuleRuleSettingsNotificationSettings) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutPayloadLogParameters(value *TeamsRuleRuleSettingsPayloadLog) error {
 	return nil
 }

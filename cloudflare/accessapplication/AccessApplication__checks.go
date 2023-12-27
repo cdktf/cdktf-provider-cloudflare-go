@@ -122,6 +122,14 @@ func (a *jsiiProxy_AccessApplication) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -183,6 +191,14 @@ func (a *jsiiProxy_AccessApplication) validateMoveToParameters(moveTarget *strin
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplication) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
@@ -217,6 +233,48 @@ func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value int
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessApplicationCorsHeaders; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutFooterLinksParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccessApplicationFooterLinks:
+		value := value.(*[]*AccessApplicationFooterLinks)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccessApplicationFooterLinks:
+		value_ := value.([]*AccessApplicationFooterLinks)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessApplicationFooterLinks; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplication) validatePutLandingPageDesignParameters(value *AccessApplicationLandingPageDesign) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -289,6 +347,14 @@ func (j *jsiiProxy_AccessApplication) validateSetAllowedIdpsParameters(val *[]*s
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetAppLauncherLogoUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetAppLauncherVisibleParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -324,6 +390,14 @@ func (j *jsiiProxy_AccessApplication) validateSetAutoRedirectToIdentityParameter
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetBgColorParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -474,6 +548,14 @@ func (j *jsiiProxy_AccessApplication) validateSetEnableBindingCookieParameters(v
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetHeaderBgColorParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -674,9 +756,6 @@ func validateNewAccessApplicationParameters(scope constructs.Construct, id *stri
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 type ApiShieldOperation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type ApiShieldOperation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -389,7 +399,7 @@ func (j *jsiiProxy_ApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiShieldOperationConfig) ApiShieldOperation {
 	_init_.Initialize()
 
@@ -407,7 +417,7 @@ func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiSh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation_Override(a ApiShieldOperation, scope constructs.Construct, id *string, config *ApiShieldOperationConfig) {
 	_init_.Initialize()
 
@@ -810,6 +820,19 @@ func (a *jsiiProxy_ApiShieldOperation) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (a *jsiiProxy_ApiShieldOperation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApiShieldOperation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -837,6 +860,17 @@ func (a *jsiiProxy_ApiShieldOperation) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (a *jsiiProxy_ApiShieldOperation) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApiShieldOperation) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -845,6 +879,17 @@ func (a *jsiiProxy_ApiShieldOperation) MoveTo(moveTarget *string, index interfac
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApiShieldOperation) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
