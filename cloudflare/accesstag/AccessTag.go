@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_tag cloudflare_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_tag cloudflare_access_tag}.
 type AccessTag interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_AccessTag) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_tag cloudflare_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_tag cloudflare_access_tag} Resource.
 func NewAccessTag(scope constructs.Construct, id *string, config *AccessTagConfig) AccessTag {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewAccessTag(scope constructs.Construct, id *string, config *AccessTagConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_tag cloudflare_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_tag cloudflare_access_tag} Resource.
 func NewAccessTag_Override(a AccessTag, scope constructs.Construct, id *string, config *AccessTagConfig) {
 	_init_.Initialize()
 

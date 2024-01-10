@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list cloudflare_list}.
 type List interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_List) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list cloudflare_list} Resource.
 func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/list cloudflare_list} Resource.
 func NewList_Override(l List, scope constructs.Construct, id *string, config *ListConfig) {
 	_init_.Initialize()
 

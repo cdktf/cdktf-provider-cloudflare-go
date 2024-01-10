@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/gre_tunnel cloudflare_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/gre_tunnel cloudflare_gre_tunnel}.
 type GreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_GreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/gre_tunnel cloudflare_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/gre_tunnel cloudflare_gre_tunnel} Resource.
 func NewGreTunnel(scope constructs.Construct, id *string, config *GreTunnelConfig) GreTunnel {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewGreTunnel(scope constructs.Construct, id *string, config *GreTunnelConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/gre_tunnel cloudflare_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/gre_tunnel cloudflare_gre_tunnel} Resource.
 func NewGreTunnel_Override(g GreTunnel, scope constructs.Construct, id *string, config *GreTunnelConfig) {
 	_init_.Initialize()
 

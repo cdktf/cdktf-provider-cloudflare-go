@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger}.
 type WorkerCronTrigger interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_WorkerCronTrigger) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger} Resource.
 func NewWorkerCronTrigger(scope constructs.Construct, id *string, config *WorkerCronTriggerConfig) WorkerCronTrigger {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewWorkerCronTrigger(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_cron_trigger cloudflare_worker_cron_trigger} Resource.
 func NewWorkerCronTrigger_Override(w WorkerCronTrigger, scope constructs.Construct, id *string, config *WorkerCronTriggerConfig) {
 	_init_.Initialize()
 

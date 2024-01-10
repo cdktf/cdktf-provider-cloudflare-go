@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
 type IpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -663,7 +663,7 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *string, config *IpsecTunnelConfig) {
 	_init_.Initialize()
 

@@ -26,21 +26,21 @@ type ApiShieldOperationConfig struct {
 	//
 	// This will then be [Cloudflare-normalized](https://developers.cloudflare.com/rules/normalization/how-it-works/). **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 	// RFC3986-compliant host. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
 	// The HTTP method used to access the endpoint. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 	Method *string `field:"required" json:"method" yaml:"method"`
 	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/api_shield_operation#id ApiShieldOperation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/api_shield_operation#id ApiShieldOperation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AutoUpdateModel() interface{}
@@ -557,7 +557,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 

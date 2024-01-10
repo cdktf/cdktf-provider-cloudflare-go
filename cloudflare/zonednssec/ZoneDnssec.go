@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 type ZoneDnssec interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_ZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecConfig) ZoneDnssec {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string, config *ZoneDnssecConfig) {
 	_init_.Initialize()
 

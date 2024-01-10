@@ -121,6 +121,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TunnelId() *[]*string
+	SetTunnelId(val *[]*string)
+	TunnelIdInput() *[]*string
 	Where() *[]*string
 	SetWhere(val *[]*string)
 	WhereInput() *[]*string
@@ -178,6 +181,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetStatus()
 	ResetTargetHostname()
 	ResetTargetZoneName()
+	ResetTunnelId()
 	ResetWhere()
 	ResetZones()
 	// Produce the Token's value at resolution time.
@@ -805,6 +809,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TunnelId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tunnelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TunnelIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tunnelIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) Where() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1221,6 +1245,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTunnelId(val *[]*string) {
+	if err := j.validateSetTunnelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelId",
 		val,
 	)
 }
@@ -1645,6 +1680,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetZoneName
 	_jsii_.InvokeVoid(
 		n,
 		"resetTargetZoneName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTunnelId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTunnelId",
 		nil, // no parameters
 	)
 }

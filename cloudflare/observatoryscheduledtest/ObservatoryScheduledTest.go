@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 type ObservatoryScheduledTest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ObservatoryScheduledTest) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) ObservatoryScheduledTest {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewObservatoryScheduledTest(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource.
 func NewObservatoryScheduledTest_Override(o ObservatoryScheduledTest, scope constructs.Construct, id *string, config *ObservatoryScheduledTestConfig) {
 	_init_.Initialize()
 

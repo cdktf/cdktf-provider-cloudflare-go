@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_rule cloudflare_access_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_rule cloudflare_access_rule}.
 type AccessRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AccessRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_rule cloudflare_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_rule cloudflare_access_rule} Resource.
 func NewAccessRule(scope constructs.Construct, id *string, config *AccessRuleConfig) AccessRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAccessRule(scope constructs.Construct, id *string, config *AccessRuleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/access_rule cloudflare_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/access_rule cloudflare_access_rule} Resource.
 func NewAccessRule_Override(a AccessRule, scope constructs.Construct, id *string, config *AccessRuleConfig) {
 	_init_.Initialize()
 

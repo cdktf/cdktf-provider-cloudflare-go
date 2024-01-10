@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -41,6 +41,8 @@ type WorkerScript interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	D1DatabaseBinding() WorkerScriptD1DatabaseBindingList
+	D1DatabaseBindingInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,6 +149,7 @@ type WorkerScript interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnalyticsEngineBinding(value interface{})
+	PutD1DatabaseBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
 	PutPlacement(value interface{})
 	PutPlainTextBinding(value interface{})
@@ -158,6 +161,7 @@ type WorkerScript interface {
 	ResetAnalyticsEngineBinding()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
+	ResetD1DatabaseBinding()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetLogpush()
@@ -322,6 +326,26 @@ func (j *jsiiProxy_WorkerScript) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) D1DatabaseBinding() WorkerScriptD1DatabaseBindingList {
+	var returns WorkerScriptD1DatabaseBindingList
+	_jsii_.Get(
+		j,
+		"d1DatabaseBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) D1DatabaseBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"d1DatabaseBindingInput",
 		&returns,
 	)
 	return returns
@@ -688,7 +712,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.21.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 
@@ -1237,6 +1261,17 @@ func (w *jsiiProxy_WorkerScript) PutAnalyticsEngineBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) PutD1DatabaseBinding(value interface{}) {
+	if err := w.validatePutD1DatabaseBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putD1DatabaseBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
 	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
 		panic(err)
@@ -1345,6 +1380,14 @@ func (w *jsiiProxy_WorkerScript) ResetCompatibilityFlags() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCompatibilityFlags",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetD1DatabaseBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetD1DatabaseBinding",
 		nil, // no parameters
 	)
 }

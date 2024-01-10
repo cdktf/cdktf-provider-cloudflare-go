@@ -71,7 +71,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) validateSetSupportUrlParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) validateSetSupportUrlParameters(val *string) error {
 	return nil
 }
 

@@ -38,9 +38,9 @@ type TeamsRuleRuleSettingsNotificationSettingsOutputReference interface {
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
-	SupportUrl() interface{}
-	SetSupportUrl(val interface{})
-	SupportUrlInput() interface{}
+	SupportUrl() *string
+	SetSupportUrl(val *string)
+	SupportUrlInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) Mes
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) SupportUrl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) SupportUrl() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"supportUrl",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) Sup
 	return returns
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) SupportUrlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference) SupportUrlInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"supportUrlInput",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference)SetSupportUrl(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsNotificationSettingsOutputReference)SetSupportUrl(val *string) {
 	if err := j.validateSetSupportUrlParameters(val); err != nil {
 		panic(err)
 	}

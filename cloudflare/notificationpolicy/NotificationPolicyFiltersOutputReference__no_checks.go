@@ -179,6 +179,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTunnelIdParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetWhereParameters(val *[]*string) error {
 	return nil
 }

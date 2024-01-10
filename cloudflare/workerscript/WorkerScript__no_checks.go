@@ -79,6 +79,10 @@ func (w *jsiiProxy_WorkerScript) validatePutAnalyticsEngineBindingParameters(val
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutD1DatabaseBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
 	return nil
 }
