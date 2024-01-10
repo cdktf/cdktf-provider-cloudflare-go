@@ -7,6 +7,10 @@ package datacloudflareaccountroles
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCloudflareAccountRolesRolesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareAccountRolesRolesList) validateGetParameters(index *float64) error {
 	return nil
 }

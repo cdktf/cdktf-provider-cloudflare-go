@@ -7,6 +7,10 @@ package ruleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RulesetRulesActionParametersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersList) validateGetParameters(index *float64) error {
 	return nil
 }

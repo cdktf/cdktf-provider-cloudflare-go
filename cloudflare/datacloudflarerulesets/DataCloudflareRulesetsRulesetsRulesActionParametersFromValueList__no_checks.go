@@ -7,6 +7,10 @@ package datacloudflarerulesets
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList) validateGetParameters(index *float64) error {
 	return nil
 }

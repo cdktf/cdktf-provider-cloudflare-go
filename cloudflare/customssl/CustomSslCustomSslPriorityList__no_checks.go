@@ -7,6 +7,10 @@ package customssl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v10/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type LoadBalancerCountryPoolsList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) LoadBalancerCountryPoolsOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_LoadBalancerCountryPoolsList)SetWrapsSet(val *bool) {
 		"wrapsSet",
 		val,
 	)
+}
+
+func (l *jsiiProxy_LoadBalancerCountryPoolsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := l.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		l,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (l *jsiiProxy_LoadBalancerCountryPoolsList) ComputeFqn() *string {

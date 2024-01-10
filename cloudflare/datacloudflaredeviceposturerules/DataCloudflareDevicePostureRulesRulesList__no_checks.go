@@ -7,6 +7,10 @@ package datacloudflaredeviceposturerules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCloudflareDevicePostureRulesRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCloudflareDevicePostureRulesRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

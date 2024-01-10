@@ -7,6 +7,10 @@ package list
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_ListItemList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_ListItemList) validateGetParameters(index *float64) error {
 	return nil
 }
