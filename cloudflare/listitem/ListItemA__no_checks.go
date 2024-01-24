@@ -75,11 +75,11 @@ func (l *jsiiProxy_ListItemA) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value *ListItemHostname) error {
+func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value interface{}) error {
 	return nil
 }
 
-func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
+func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value interface{}) error {
 	return nil
 }
 
@@ -116,10 +116,6 @@ func (j *jsiiProxy_ListItemA) validateSetConnectionParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_ListItemA) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ListItemA) validateSetIdParameters(val *string) error {
 	return nil
 }
 

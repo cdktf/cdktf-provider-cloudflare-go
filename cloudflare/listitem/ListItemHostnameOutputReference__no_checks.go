@@ -59,7 +59,7 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetInternalValueParameters(val *ListItemHostname) error {
+func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetUrlHostnameParame
 	return nil
 }
 
-func validateNewListItemHostnameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewListItemHostnameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

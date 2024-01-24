@@ -207,23 +207,63 @@ func (l *jsiiProxy_ListItemA) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value *ListItemHostname) error {
+func (l *jsiiProxy_ListItemA) validatePutHostnameParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ListItemHostname:
+		value := value.(*[]*ListItemHostname)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ListItemHostname:
+		value_ := value.([]*ListItemHostname)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ListItemHostname; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value *ListItemRedirect) error {
+func (l *jsiiProxy_ListItemA) validatePutRedirectParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ListItemRedirect:
+		value := value.(*[]*ListItemRedirect)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ListItemRedirect:
+		value_ := value.([]*ListItemRedirect)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ListItemRedirect; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -378,14 +418,6 @@ func (j *jsiiProxy_ListItemA) validateSetCountParameters(val interface{}) error 
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ListItemA) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

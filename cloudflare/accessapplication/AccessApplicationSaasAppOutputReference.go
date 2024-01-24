@@ -33,6 +33,9 @@ type AccessApplicationSaasAppOutputReference interface {
 	CreationStack() *[]*string
 	CustomAttribute() AccessApplicationSaasAppCustomAttributeList
 	CustomAttributeInput() interface{}
+	DefaultRelayState() *string
+	SetDefaultRelayState(val *string)
+	DefaultRelayStateInput() *string
 	// Experimental.
 	Fqn() *string
 	IdpEntityId() *string
@@ -80,6 +83,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomAttribute(value interface{})
 	ResetCustomAttribute()
+	ResetDefaultRelayState()
 	ResetNameIdFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -161,6 +165,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttributeInput
 	_jsii_.Get(
 		j,
 		"customAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) DefaultRelayState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRelayState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) DefaultRelayStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRelayStateInput",
 		&returns,
 	)
 	return returns
@@ -333,6 +357,17 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetConsumerServiceUrl
 	_jsii_.Set(
 		j,
 		"consumerServiceUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetDefaultRelayState(val *string) {
+	if err := j.validateSetDefaultRelayStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultRelayState",
 		val,
 	)
 }
@@ -593,6 +628,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetDefaultRelayState() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultRelayState",
 		nil, // no parameters
 	)
 }

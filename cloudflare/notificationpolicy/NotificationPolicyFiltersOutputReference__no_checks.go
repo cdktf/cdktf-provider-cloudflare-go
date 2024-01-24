@@ -55,6 +55,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetActionsP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffectedComponentsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
 	return nil
 }

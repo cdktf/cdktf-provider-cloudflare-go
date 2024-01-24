@@ -171,6 +171,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "affectedComponents", GoGetter: "AffectedComponents"},
+			_jsii_.MemberProperty{JsiiProperty: "affectedComponentsInput", GoGetter: "AffectedComponentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alertTriggerPreferences", GoGetter: "AlertTriggerPreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "alertTriggerPreferencesInput", GoGetter: "AlertTriggerPreferencesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,6 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestsPerSecond", GoGetter: "RequestsPerSecond"},
 			_jsii_.MemberProperty{JsiiProperty: "requestsPerSecondInput", GoGetter: "RequestsPerSecondInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActions", GoMethod: "ResetActions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAffectedComponents", GoMethod: "ResetAffectedComponents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertTriggerPreferences", GoMethod: "ResetAlertTriggerPreferences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironment", GoMethod: "ResetEnvironment"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/tunnel cloudflare_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel cloudflare_tunnel}.
 type DataCloudflareTunnel interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareTunnel) TunnelType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
 func NewDataCloudflareTunnel(scope constructs.Construct, id *string, config *DataCloudflareTunnelConfig) DataCloudflareTunnel {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataCloudflareTunnel(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
 func NewDataCloudflareTunnel_Override(d DataCloudflareTunnel, scope constructs.Construct, id *string, config *DataCloudflareTunnelConfig) {
 	_init_.Initialize()
 

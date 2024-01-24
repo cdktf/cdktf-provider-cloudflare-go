@@ -67,6 +67,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetConsumerS
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetDefaultRelayStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *AccessApplicationSaasApp) error {
 	return nil
 }

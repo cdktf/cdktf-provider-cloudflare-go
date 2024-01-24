@@ -30,26 +30,26 @@ type ListItemRedirectOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeSubdomains() *string
-	SetIncludeSubdomains(val *string)
-	IncludeSubdomainsInput() *string
-	InternalValue() *ListItemRedirect
-	SetInternalValue(val *ListItemRedirect)
-	PreservePathSuffix() *string
-	SetPreservePathSuffix(val *string)
-	PreservePathSuffixInput() *string
-	PreserveQueryString() *string
-	SetPreserveQueryString(val *string)
-	PreserveQueryStringInput() *string
+	IncludeSubdomains() interface{}
+	SetIncludeSubdomains(val interface{})
+	IncludeSubdomainsInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	PreservePathSuffix() interface{}
+	SetPreservePathSuffix(val interface{})
+	PreservePathSuffixInput() interface{}
+	PreserveQueryString() interface{}
+	SetPreserveQueryString(val interface{})
+	PreserveQueryStringInput() interface{}
 	SourceUrl() *string
 	SetSourceUrl(val *string)
 	SourceUrlInput() *string
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
-	SubpathMatching() *string
-	SetSubpathMatching(val *string)
-	SubpathMatchingInput() *string
+	SubpathMatching() interface{}
+	SetSubpathMatching(val interface{})
+	SubpathMatchingInput() interface{}
 	TargetUrl() *string
 	SetTargetUrl(val *string)
 	TargetUrlInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomains() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomains() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"includeSubdomains",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomains() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomainsInput() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomainsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"includeSubdomainsInput",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) IncludeSubdomainsInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) InternalValue() *ListItemRedirect {
-	var returns *ListItemRedirect
+func (j *jsiiProxy_ListItemRedirectOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) InternalValue() *ListItemRed
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffix() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffix() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"preservePathSuffix",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffix() *string
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffixInput() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffixInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"preservePathSuffixInput",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) PreservePathSuffixInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) PreserveQueryString() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) PreserveQueryString() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"preserveQueryString",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) PreserveQueryString() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) PreserveQueryStringInput() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) PreserveQueryStringInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"preserveQueryStringInput",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) StatusCodeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) SubpathMatching() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) SubpathMatching() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"subpathMatching",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) SubpathMatching() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) SubpathMatchingInput() *string {
-	var returns *string
+func (j *jsiiProxy_ListItemRedirectOutputReference) SubpathMatchingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"subpathMatchingInput",
@@ -316,29 +316,29 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) TerraformResource() cdktf.II
 }
 
 
-func NewListItemRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemRedirectOutputReference {
+func NewListItemRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ListItemRedirectOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewListItemRedirectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewListItemRedirectOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ListItemRedirectOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewListItemRedirectOutputReference_Override(l ListItemRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewListItemRedirectOutputReference_Override(l ListItemRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
@@ -365,7 +365,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference)SetIncludeSubdomains(val *string) {
+func (j *jsiiProxy_ListItemRedirectOutputReference)SetIncludeSubdomains(val interface{}) {
 	if err := j.validateSetIncludeSubdomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference)SetIncludeSubdomains(val *str
 	)
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference)SetInternalValue(val *ListItemRedirect) {
+func (j *jsiiProxy_ListItemRedirectOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +387,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference)SetInternalValue(val *ListIte
 	)
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference)SetPreservePathSuffix(val *string) {
+func (j *jsiiProxy_ListItemRedirectOutputReference)SetPreservePathSuffix(val interface{}) {
 	if err := j.validateSetPreservePathSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +398,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference)SetPreservePathSuffix(val *st
 	)
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference)SetPreserveQueryString(val *string) {
+func (j *jsiiProxy_ListItemRedirectOutputReference)SetPreserveQueryString(val interface{}) {
 	if err := j.validateSetPreserveQueryStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference)SetStatusCode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference)SetSubpathMatching(val *string) {
+func (j *jsiiProxy_ListItemRedirectOutputReference)SetSubpathMatching(val interface{}) {
 	if err := j.validateSetSubpathMatchingParameters(val); err != nil {
 		panic(err)
 	}

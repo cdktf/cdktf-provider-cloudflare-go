@@ -16,6 +16,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	Actions() *[]*string
 	SetActions(val *[]*string)
 	ActionsInput() *[]*string
+	AffectedComponents() *[]*string
+	SetAffectedComponents(val *[]*string)
+	AffectedComponentsInput() *[]*string
 	AlertTriggerPreferences() *[]*string
 	SetAlertTriggerPreferences(val *[]*string)
 	AlertTriggerPreferencesInput() *[]*string
@@ -155,6 +158,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetActions()
+	ResetAffectedComponents()
 	ResetAlertTriggerPreferences()
 	ResetEnabled()
 	ResetEnvironment()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ActionsInput() *[]*
 	_jsii_.Get(
 		j,
 		"actionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AffectedComponents() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"affectedComponents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AffectedComponentsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"affectedComponentsInput",
 		&returns,
 	)
 	return returns
@@ -908,6 +932,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetActions(val *[]*s
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAffectedComponents(val *[]*string) {
+	if err := j.validateSetAffectedComponentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"affectedComponents",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAlertTriggerPreferences(val *[]*string) {
 	if err := j.validateSetAlertTriggerPreferencesParameters(val); err != nil {
 		panic(err)
@@ -1472,6 +1507,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetActions() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetActions",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAffectedComponents() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAffectedComponents",
 		nil, // no parameters
 	)
 }

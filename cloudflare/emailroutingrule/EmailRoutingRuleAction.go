@@ -5,13 +5,13 @@ package emailroutingrule
 
 
 type EmailRoutingRuleAction struct {
-	// Type of supported action. Available values: `forward`, `worker`, `drop`.
+	// Type of action. Available values: `forward`, `worker`, `drop`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// An array with items in the following form. Only required when `type` is `forward` or `worker`.
+	// Value to match on. Required for `type` of `literal`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.22.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.23.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 	Value *[]*string `field:"optional" json:"value" yaml:"value"`
 }
 
