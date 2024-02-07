@@ -71,6 +71,10 @@ func validateDataCloudflareRecord_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareRecord) validateSetContentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareRecord) validateSetCountParameters(val interface{}) error {
 	return nil
 }
