@@ -51,6 +51,10 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateResolveParame
 	return nil
 }
 
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetBuildCachingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetBuildCommandParameters(val *string) error {
 	return nil
 }

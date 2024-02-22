@@ -47,6 +47,10 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) validatePutNotificationSettingsParameters(value *TeamsAccountAntivirusNotificationSettings) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

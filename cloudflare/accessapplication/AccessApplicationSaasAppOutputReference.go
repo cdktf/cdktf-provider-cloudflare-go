@@ -13,6 +13,14 @@ import (
 
 type AccessApplicationSaasAppOutputReference interface {
 	cdktf.ComplexObject
+	AppLauncherUrl() *string
+	SetAppLauncherUrl(val *string)
+	AppLauncherUrlInput() *string
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
+	ClientId() *string
+	ClientSecret() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +46,12 @@ type AccessApplicationSaasAppOutputReference interface {
 	DefaultRelayStateInput() *string
 	// Experimental.
 	Fqn() *string
+	GrantTypes() *[]*string
+	SetGrantTypes(val *[]*string)
+	GrantTypesInput() *[]*string
+	GroupFilterRegex() *string
+	SetGroupFilterRegex(val *string)
+	GroupFilterRegexInput() *string
 	IdpEntityId() *string
 	InternalValue() *AccessApplicationSaasApp
 	SetInternalValue(val *AccessApplicationSaasApp)
@@ -45,6 +59,12 @@ type AccessApplicationSaasAppOutputReference interface {
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
 	PublicKey() *string
+	RedirectUris() *[]*string
+	SetRedirectUris(val *[]*string)
+	RedirectUrisInput() *[]*string
+	Scopes() *[]*string
+	SetScopes(val *[]*string)
+	ScopesInput() *[]*string
 	SpEntityId() *string
 	SetSpEntityId(val *string)
 	SpEntityIdInput() *string
@@ -82,9 +102,17 @@ type AccessApplicationSaasAppOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomAttribute(value interface{})
+	ResetAppLauncherUrl()
+	ResetAuthType()
+	ResetConsumerServiceUrl()
 	ResetCustomAttribute()
 	ResetDefaultRelayState()
+	ResetGrantTypes()
+	ResetGroupFilterRegex()
 	ResetNameIdFormat()
+	ResetRedirectUris()
+	ResetScopes()
+	ResetSpEntityId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +126,66 @@ type AccessApplicationSaasAppOutputReference interface {
 // The jsii proxy struct for AccessApplicationSaasAppOutputReference
 type jsiiProxy_AccessApplicationSaasAppOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AppLauncherUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AppLauncherUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appLauncherUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ComplexObjectIndex() interface{} {
@@ -200,6 +288,46 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GrantTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GrantTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GroupFilterRegex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupFilterRegex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GroupFilterRegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupFilterRegexInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) IdpEntityId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -245,6 +373,46 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) PublicKey() *string 
 	_jsii_.Get(
 		j,
 		"publicKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUris() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"redirectUris",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUrisInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"redirectUrisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) ScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopesInput",
 		&returns,
 	)
 	return returns
@@ -328,6 +496,28 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAppLauncherUrl(val *string) {
+	if err := j.validateSetAppLauncherUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appLauncherUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -372,6 +562,28 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetDefaultRelayState(
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetGrantTypes(val *[]*string) {
+	if err := j.validateSetGrantTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grantTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetGroupFilterRegex(val *string) {
+	if err := j.validateSetGroupFilterRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupFilterRegex",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetInternalValue(val *AccessApplicationSaasApp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -390,6 +602,28 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdFormat(val *
 	_jsii_.Set(
 		j,
 		"nameIdFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetRedirectUris(val *[]*string) {
+	if err := j.validateSetRedirectUrisParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirectUris",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetScopes(val *[]*string) {
+	if err := j.validateSetScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scopes",
 		val,
 	)
 }
@@ -624,6 +858,30 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomAttribute(v
 	)
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAppLauncherUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppLauncherUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetConsumerServiceUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConsumerServiceUrl",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute() {
 	_jsii_.InvokeVoid(
 		a,
@@ -640,10 +898,50 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetDefaultRelaySta
 	)
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetGrantTypes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGrantTypes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetGroupFilterRegex() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGroupFilterRegex",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetNameIdFormat",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRedirectUris() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRedirectUris",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetScopes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScopes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetSpEntityId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSpEntityId",
 		nil, // no parameters
 	)
 }

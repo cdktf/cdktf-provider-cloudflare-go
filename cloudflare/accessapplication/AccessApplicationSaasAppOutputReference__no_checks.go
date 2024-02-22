@@ -55,6 +55,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAppLauncherUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -71,11 +79,27 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetDefaultRe
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGrantTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGroupFilterRegexParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *AccessApplicationSaasApp) error {
 	return nil
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdFormatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectUrisParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
 

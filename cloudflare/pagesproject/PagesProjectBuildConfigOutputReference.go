@@ -13,6 +13,9 @@ import (
 
 type PagesProjectBuildConfigOutputReference interface {
 	cdktf.ComplexObject
+	BuildCaching() interface{}
+	SetBuildCaching(val interface{})
+	BuildCachingInput() interface{}
 	BuildCommand() *string
 	SetBuildCommand(val *string)
 	BuildCommandInput() *string
@@ -79,6 +82,7 @@ type PagesProjectBuildConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBuildCaching()
 	ResetBuildCommand()
 	ResetDestinationDir()
 	ResetRootDir()
@@ -97,6 +101,26 @@ type PagesProjectBuildConfigOutputReference interface {
 // The jsii proxy struct for PagesProjectBuildConfigOutputReference
 type jsiiProxy_PagesProjectBuildConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) BuildCaching() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"buildCaching",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) BuildCachingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"buildCachingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) BuildCommand() *string {
@@ -294,6 +318,17 @@ func NewPagesProjectBuildConfigOutputReference_Override(p PagesProjectBuildConfi
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetBuildCaching(val interface{}) {
+	if err := j.validateSetBuildCachingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"buildCaching",
+		val,
 	)
 }
 
@@ -591,6 +626,14 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) ResetBuildCaching() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBuildCaching",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) ResetBuildCommand() {

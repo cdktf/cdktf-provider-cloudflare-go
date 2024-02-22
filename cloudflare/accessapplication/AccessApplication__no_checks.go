@@ -111,6 +111,10 @@ func (j *jsiiProxy_AccessApplication) validateSetAccountIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetAllowAuthenticateViaWarpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetAllowedIdpsParameters(val *[]*string) error {
 	return nil
 }

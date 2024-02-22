@@ -132,6 +132,22 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAppLauncherUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -213,6 +229,22 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetDefaultRe
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGrantTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetGroupFilterRegexParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *AccessApplicationSaasApp) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -222,6 +254,22 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetInternalV
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdFormatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectUrisParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

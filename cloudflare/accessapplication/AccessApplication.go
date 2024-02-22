@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowAuthenticateViaWarp() interface{}
+	SetAllowAuthenticateViaWarp(val interface{})
+	AllowAuthenticateViaWarpInput() interface{}
 	AllowedIdps() *[]*string
 	SetAllowedIdps(val *[]*string)
 	AllowedIdpsInput() *[]*string
@@ -193,6 +196,7 @@ type AccessApplication interface {
 	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
 	ResetAccountId()
+	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
 	ResetAppLauncherLogoUrl()
 	ResetAppLauncherVisible()
@@ -257,6 +261,26 @@ func (j *jsiiProxy_AccessApplication) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AllowAuthenticateViaWarp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) AllowAuthenticateViaWarpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAuthenticateViaWarpInput",
 		&returns,
 	)
 	return returns
@@ -993,7 +1017,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1011,7 +1035,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1029,6 +1053,17 @@ func (j *jsiiProxy_AccessApplication)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetAllowAuthenticateViaWarp(val interface{}) {
+	if err := j.validateSetAllowAuthenticateViaWarpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAuthenticateViaWarp",
 		val,
 	)
 }
@@ -1766,6 +1801,14 @@ func (a *jsiiProxy_AccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetAllowAuthenticateViaWarp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowAuthenticateViaWarp",
 		nil, // no parameters
 	)
 }

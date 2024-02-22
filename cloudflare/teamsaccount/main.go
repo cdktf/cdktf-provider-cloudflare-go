@@ -31,6 +31,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "extendedEmailMatching", GoGetter: "ExtendedEmailMatching"},
+			_jsii_.MemberProperty{JsiiProperty: "extendedEmailMatchingInput", GoGetter: "ExtendedEmailMatchingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fips", GoGetter: "Fips"},
 			_jsii_.MemberProperty{JsiiProperty: "fipsInput", GoGetter: "FipsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -71,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAntivirus", GoMethod: "PutAntivirus"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "putBodyScanning", GoMethod: "PutBodyScanning"},
+			_jsii_.MemberMethod{JsiiMethod: "putExtendedEmailMatching", GoMethod: "PutExtendedEmailMatching"},
 			_jsii_.MemberMethod{JsiiMethod: "putFips", GoMethod: "PutFips"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
@@ -81,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAntivirus", GoMethod: "ResetAntivirus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBodyScanning", GoMethod: "ResetBodyScanning"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExtendedEmailMatching", GoMethod: "ResetExtendedEmailMatching"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFips", GoMethod: "ResetFips"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogging", GoMethod: "ResetLogging"},
@@ -118,6 +122,51 @@ func init() {
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus",
 		reflect.TypeOf((*TeamsAccountAntivirus)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusNotificationSettings",
+		reflect.TypeOf((*TeamsAccountAntivirusNotificationSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusNotificationSettingsOutputReference",
+		reflect.TypeOf((*TeamsAccountAntivirusNotificationSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "message", GoGetter: "Message"},
+			_jsii_.MemberProperty{JsiiProperty: "messageInput", GoGetter: "MessageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessage", GoMethod: "ResetMessage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSupportUrl", GoMethod: "ResetSupportUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "supportUrl", GoGetter: "SupportUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "supportUrlInput", GoGetter: "SupportUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsAccountAntivirusNotificationSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
 		reflect.TypeOf((*TeamsAccountAntivirusOutputReference)(nil)).Elem(),
@@ -145,6 +194,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationSettings", GoGetter: "NotificationSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationSettingsInput", GoGetter: "NotificationSettingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putNotificationSettings", GoMethod: "PutNotificationSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotificationSettings", GoMethod: "ResetNotificationSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -257,6 +310,44 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig",
 		reflect.TypeOf((*TeamsAccountConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountExtendedEmailMatching",
+		reflect.TypeOf((*TeamsAccountExtendedEmailMatching)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountExtendedEmailMatchingOutputReference",
+		reflect.TypeOf((*TeamsAccountExtendedEmailMatchingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_TeamsAccountExtendedEmailMatchingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips",

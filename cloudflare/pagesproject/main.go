@@ -94,6 +94,8 @@ func init() {
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference",
 		reflect.TypeOf((*PagesProjectBuildConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "buildCaching", GoGetter: "BuildCaching"},
+			_jsii_.MemberProperty{JsiiProperty: "buildCachingInput", GoGetter: "BuildCachingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommand", GoGetter: "BuildCommand"},
 			_jsii_.MemberProperty{JsiiProperty: "buildCommandInput", GoGetter: "BuildCommandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,6 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuildCaching", GoMethod: "ResetBuildCaching"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildCommand", GoMethod: "ResetBuildCommand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationDir", GoMethod: "ResetDestinationDir"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRootDir", GoMethod: "ResetRootDir"},

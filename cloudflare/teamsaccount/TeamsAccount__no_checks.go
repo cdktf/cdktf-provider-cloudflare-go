@@ -87,6 +87,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutBodyScanningParameters(value *TeamsA
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutExtendedEmailMatchingParameters(value *TeamsAccountExtendedEmailMatching) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutFipsParameters(value *TeamsAccountFips) error {
 	return nil
 }

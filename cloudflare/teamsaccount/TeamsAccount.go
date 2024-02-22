@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -43,6 +43,8 @@ type TeamsAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExtendedEmailMatching() TeamsAccountExtendedEmailMatchingOutputReference
+	ExtendedEmailMatchingInput() *TeamsAccountExtendedEmailMatching
 	Fips() TeamsAccountFipsOutputReference
 	FipsInput() *TeamsAccountFips
 	// Experimental.
@@ -144,6 +146,7 @@ type TeamsAccount interface {
 	PutAntivirus(value *TeamsAccountAntivirus)
 	PutBlockPage(value *TeamsAccountBlockPage)
 	PutBodyScanning(value *TeamsAccountBodyScanning)
+	PutExtendedEmailMatching(value *TeamsAccountExtendedEmailMatching)
 	PutFips(value *TeamsAccountFips)
 	PutLogging(value *TeamsAccountLogging)
 	PutPayloadLog(value *TeamsAccountPayloadLog)
@@ -153,6 +156,7 @@ type TeamsAccount interface {
 	ResetAntivirus()
 	ResetBlockPage()
 	ResetBodyScanning()
+	ResetExtendedEmailMatching()
 	ResetFips()
 	ResetId()
 	ResetLogging()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_TeamsAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) ExtendedEmailMatching() TeamsAccountExtendedEmailMatchingOutputReference {
+	var returns TeamsAccountExtendedEmailMatchingOutputReference
+	_jsii_.Get(
+		j,
+		"extendedEmailMatching",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) ExtendedEmailMatchingInput() *TeamsAccountExtendedEmailMatching {
+	var returns *TeamsAccountExtendedEmailMatching
+	_jsii_.Get(
+		j,
+		"extendedEmailMatchingInput",
 		&returns,
 	)
 	return returns
@@ -645,7 +669,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -663,7 +687,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.24.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -1205,6 +1229,17 @@ func (t *jsiiProxy_TeamsAccount) PutBodyScanning(value *TeamsAccountBodyScanning
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutExtendedEmailMatching(value *TeamsAccountExtendedEmailMatching) {
+	if err := t.validatePutExtendedEmailMatchingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putExtendedEmailMatching",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutFips(value *TeamsAccountFips) {
 	if err := t.validatePutFipsParameters(value); err != nil {
 		panic(err)
@@ -1288,6 +1323,14 @@ func (t *jsiiProxy_TeamsAccount) ResetBodyScanning() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetBodyScanning",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetExtendedEmailMatching() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetExtendedEmailMatching",
 		nil, // no parameters
 	)
 }

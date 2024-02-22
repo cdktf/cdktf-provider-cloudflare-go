@@ -41,6 +41,8 @@ type TeamsAccountAntivirusOutputReference interface {
 	Fqn() *string
 	InternalValue() *TeamsAccountAntivirus
 	SetInternalValue(val *TeamsAccountAntivirus)
+	NotificationSettings() TeamsAccountAntivirusNotificationSettingsOutputReference
+	NotificationSettingsInput() *TeamsAccountAntivirusNotificationSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +75,8 @@ type TeamsAccountAntivirusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNotificationSettings(value *TeamsAccountAntivirusNotificationSettings)
+	ResetNotificationSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) InternalValue() *TeamsA
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) NotificationSettings() TeamsAccountAntivirusNotificationSettingsOutputReference {
+	var returns TeamsAccountAntivirusNotificationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) NotificationSettingsInput() *TeamsAccountAntivirusNotificationSettings {
+	var returns *TeamsAccountAntivirusNotificationSettings
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +542,25 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) PutNotificationSettings(value *TeamsAccountAntivirusNotificationSettings) {
+	if err := t.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNotificationSettings",
+		nil, // no parameters
+	)
 }
 
 func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
