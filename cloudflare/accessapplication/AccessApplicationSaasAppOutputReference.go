@@ -58,6 +58,9 @@ type AccessApplicationSaasAppOutputReference interface {
 	NameIdFormat() *string
 	SetNameIdFormat(val *string)
 	NameIdFormatInput() *string
+	NameIdTransformJsonata() *string
+	SetNameIdTransformJsonata(val *string)
+	NameIdTransformJsonataInput() *string
 	PublicKey() *string
 	RedirectUris() *[]*string
 	SetRedirectUris(val *[]*string)
@@ -110,6 +113,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	ResetGrantTypes()
 	ResetGroupFilterRegex()
 	ResetNameIdFormat()
+	ResetNameIdTransformJsonata()
 	ResetRedirectUris()
 	ResetScopes()
 	ResetSpEntityId()
@@ -368,6 +372,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdFormatInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdTransformJsonata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameIdTransformJsonata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) NameIdTransformJsonataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameIdTransformJsonataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) PublicKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -602,6 +626,17 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdFormat(val *
 	_jsii_.Set(
 		j,
 		"nameIdFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetNameIdTransformJsonata(val *string) {
+	if err := j.validateSetNameIdTransformJsonataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameIdTransformJsonata",
 		val,
 	)
 }
@@ -918,6 +953,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdFormat() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetNameIdFormat",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetNameIdTransformJsonata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNameIdTransformJsonata",
 		nil, // no parameters
 	)
 }

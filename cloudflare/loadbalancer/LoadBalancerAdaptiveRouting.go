@@ -9,7 +9,7 @@ type LoadBalancerAdaptiveRouting struct {
 	//
 	// When set `false`, zero-downtime failover will only occur between origins within the same pool. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
 	FailoverAcrossPools interface{} `field:"optional" json:"failoverAcrossPools" yaml:"failoverAcrossPools"`
 }
 

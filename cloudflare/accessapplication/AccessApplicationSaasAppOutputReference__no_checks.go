@@ -95,6 +95,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdFor
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetNameIdTransformJsonataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectUrisParameters(val *[]*string) error {
 	return nil
 }

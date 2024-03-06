@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate}.
 type AccessCaCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_AccessCaCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource.
 func NewAccessCaCertificate(scope constructs.Construct, id *string, config *AccessCaCertificateConfig) AccessCaCertificate {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewAccessCaCertificate(scope constructs.Construct, id *string, config *Acce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.25.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/access_ca_certificate cloudflare_access_ca_certificate} Resource.
 func NewAccessCaCertificate_Override(a AccessCaCertificate, scope constructs.Construct, id *string, config *AccessCaCertificateConfig) {
 	_init_.Initialize()
 
