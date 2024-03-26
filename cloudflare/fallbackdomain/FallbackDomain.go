@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/fallback_domain cloudflare_fallback_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/fallback_domain cloudflare_fallback_domain}.
 type FallbackDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_FallbackDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource.
 func NewFallbackDomain(scope constructs.Construct, id *string, config *FallbackDomainConfig) FallbackDomain {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewFallbackDomain(scope constructs.Construct, id *string, config *FallbackD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource.
 func NewFallbackDomain_Override(f FallbackDomain, scope constructs.Construct, id *string, config *FallbackDomainConfig) {
 	_init_.Initialize()
 

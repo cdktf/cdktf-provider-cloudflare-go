@@ -75,6 +75,10 @@ func (l *jsiiProxy_LogpushJob) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (l *jsiiProxy_LogpushJob) validatePutOutputOptionsParameters(value *LogpushJobOutputOptions) error {
+	return nil
+}
+
 func validateLogpushJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 type DlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -29,6 +29,8 @@ type DlpProfile interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContextAwareness() DlpProfileContextAwarenessOutputReference
+	ContextAwarenessInput() *DlpProfileContextAwareness
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -124,7 +126,9 @@ type DlpProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutContextAwareness(value *DlpProfileContextAwareness)
 	PutEntry(value interface{})
+	ResetContextAwareness()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -213,6 +217,26 @@ func (j *jsiiProxy_DlpProfile) ConstructNodeMetadata() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlpProfile) ContextAwareness() DlpProfileContextAwarenessOutputReference {
+	var returns DlpProfileContextAwarenessOutputReference
+	_jsii_.Get(
+		j,
+		"contextAwareness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlpProfile) ContextAwarenessInput() *DlpProfileContextAwareness {
+	var returns *DlpProfileContextAwareness
+	_jsii_.Get(
+		j,
+		"contextAwarenessInput",
 		&returns,
 	)
 	return returns
@@ -449,7 +473,7 @@ func (j *jsiiProxy_DlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileConfig) DlpProfile {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string, config *DlpProfileConfig) {
 	_init_.Initialize()
 
@@ -965,6 +989,17 @@ func (d *jsiiProxy_DlpProfile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DlpProfile) PutContextAwareness(value *DlpProfileContextAwareness) {
+	if err := d.validatePutContextAwarenessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putContextAwareness",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DlpProfile) PutEntry(value interface{}) {
 	if err := d.validatePutEntryParameters(value); err != nil {
 		panic(err)
@@ -973,6 +1008,14 @@ func (d *jsiiProxy_DlpProfile) PutEntry(value interface{}) {
 		d,
 		"putEntry",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DlpProfile) ResetContextAwareness() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContextAwareness",
+		nil, // no parameters
 	)
 }
 

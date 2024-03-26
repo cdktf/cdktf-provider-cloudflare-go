@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_script cloudflare_worker_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_script cloudflare_worker_script}.
 type WorkerScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -47,6 +47,9 @@ type WorkerScript interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DispatchNamespace() *string
+	SetDispatchNamespace(val *string)
+	DispatchNamespaceInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -97,6 +100,9 @@ type WorkerScript interface {
 	SecretTextBindingInput() interface{}
 	ServiceBinding() WorkerScriptServiceBindingList
 	ServiceBindingInput() interface{}
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -162,6 +168,7 @@ type WorkerScript interface {
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetD1DatabaseBinding()
+	ResetDispatchNamespace()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetLogpush()
@@ -175,6 +182,7 @@ type WorkerScript interface {
 	ResetR2BucketBinding()
 	ResetSecretTextBinding()
 	ResetServiceBinding()
+	ResetTags()
 	ResetWebassemblyBinding()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -359,6 +367,26 @@ func (j *jsiiProxy_WorkerScript) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) DispatchNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) DispatchNamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespaceInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +692,26 @@ func (j *jsiiProxy_WorkerScript) ServiceBindingInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkerScript) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkerScript) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkerScript) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -715,7 +763,7 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
 	_init_.Initialize()
 
@@ -733,7 +781,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.26.0/docs/resources/worker_script cloudflare_worker_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.27.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *string, config *WorkerScriptConfig) {
 	_init_.Initialize()
 
@@ -818,6 +866,17 @@ func (j *jsiiProxy_WorkerScript)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_WorkerScript)SetDispatchNamespace(val *string) {
+	if err := j.validateSetDispatchNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dispatchNamespace",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkerScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -896,6 +955,17 @@ func (j *jsiiProxy_WorkerScript)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkerScript)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1395,6 +1465,14 @@ func (w *jsiiProxy_WorkerScript) ResetD1DatabaseBinding() {
 	)
 }
 
+func (w *jsiiProxy_WorkerScript) ResetDispatchNamespace() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDispatchNamespace",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkerScript) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1479,6 +1557,14 @@ func (w *jsiiProxy_WorkerScript) ResetServiceBinding() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetServiceBinding",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkerScript) ResetTags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTags",
 		nil, // no parameters
 	)
 }

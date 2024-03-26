@@ -75,6 +75,10 @@ func (d *jsiiProxy_DlpProfile) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (d *jsiiProxy_DlpProfile) validatePutContextAwarenessParameters(value *DlpProfileContextAwareness) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlpProfile) validatePutEntryParameters(value interface{}) error {
 	return nil
 }

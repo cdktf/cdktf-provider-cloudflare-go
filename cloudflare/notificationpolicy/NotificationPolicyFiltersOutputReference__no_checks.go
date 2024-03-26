@@ -59,6 +59,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffected
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAirportCodeParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
 	return nil
 }

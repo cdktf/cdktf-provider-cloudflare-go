@@ -19,6 +19,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	AffectedComponents() *[]*string
 	SetAffectedComponents(val *[]*string)
 	AffectedComponentsInput() *[]*string
+	AirportCode() *[]*string
+	SetAirportCode(val *[]*string)
+	AirportCodeInput() *[]*string
 	AlertTriggerPreferences() *[]*string
 	SetAlertTriggerPreferences(val *[]*string)
 	AlertTriggerPreferencesInput() *[]*string
@@ -159,6 +162,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetActions()
 	ResetAffectedComponents()
+	ResetAirportCode()
 	ResetAlertTriggerPreferences()
 	ResetEnabled()
 	ResetEnvironment()
@@ -238,6 +242,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AffectedComponentsI
 	_jsii_.Get(
 		j,
 		"affectedComponentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AirportCode() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"airportCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) AirportCodeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"airportCodeInput",
 		&returns,
 	)
 	return returns
@@ -943,6 +967,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAffectedComponent
 	)
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAirportCode(val *[]*string) {
+	if err := j.validateSetAirportCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"airportCode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetAlertTriggerPreferences(val *[]*string) {
 	if err := j.validateSetAlertTriggerPreferencesParameters(val); err != nil {
 		panic(err)
@@ -1515,6 +1550,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAffectedCompon
 	_jsii_.InvokeVoid(
 		n,
 		"resetAffectedComponents",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetAirportCode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAirportCode",
 		nil, // no parameters
 	)
 }
