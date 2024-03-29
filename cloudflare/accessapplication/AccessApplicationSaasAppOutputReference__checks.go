@@ -277,6 +277,14 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectU
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetSamlAttributeTransformJsonataParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetScopesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

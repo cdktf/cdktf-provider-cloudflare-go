@@ -358,6 +358,14 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIssueCountP
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetLastSeenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetNetworkStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -471,6 +479,14 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetSensorConfi
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetSha256Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetStateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

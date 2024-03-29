@@ -123,6 +123,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetIssueCountP
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetLastSeenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetNetworkStatusParameters(val *string) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetSensorConfi
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetSha256Parameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetStateParameters(val *string) error {
 	return nil
 }
 

@@ -77,6 +77,9 @@ type DevicePostureRuleInputOutputReference interface {
 	IssueCount() *string
 	SetIssueCount(val *string)
 	IssueCountInput() *string
+	LastSeen() *string
+	SetLastSeen(val *string)
+	LastSeenInput() *string
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
@@ -113,6 +116,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Sha256() *string
 	SetSha256(val *string)
 	Sha256Input() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -172,6 +178,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetInfected()
 	ResetIsActive()
 	ResetIssueCount()
+	ResetLastSeen()
 	ResetNetworkStatus()
 	ResetOperator()
 	ResetOs()
@@ -184,6 +191,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetRunning()
 	ResetSensorConfig()
 	ResetSha256()
+	ResetState()
 	ResetThumbprint()
 	ResetTotalScore()
 	ResetVersion()
@@ -553,6 +561,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IssueCountInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) LastSeen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSeen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) LastSeenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSeenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -788,6 +816,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Sha256Input() *string 
 	_jsii_.Get(
 		j,
 		"sha256Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
 		&returns,
 	)
 	return returns
@@ -1119,6 +1167,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetIssueCount(val *stri
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetLastSeen(val *string) {
+	if err := j.validateSetLastSeenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastSeen",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetNetworkStatus(val *string) {
 	if err := j.validateSetNetworkStatusParameters(val); err != nil {
 		panic(err)
@@ -1247,6 +1306,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSha256(val *string) 
 	_jsii_.Set(
 		j,
 		"sha256",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"state",
 		val,
 	)
 }
@@ -1623,6 +1693,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetIssueCount() {
 	)
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetLastSeen() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLastSeen",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetNetworkStatus() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1715,6 +1793,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetSha256() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSha256",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetState",
 		nil, // no parameters
 	)
 }

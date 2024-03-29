@@ -65,6 +65,9 @@ type AccessApplicationSaasAppOutputReference interface {
 	RedirectUris() *[]*string
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
+	SamlAttributeTransformJsonata() *string
+	SetSamlAttributeTransformJsonata(val *string)
+	SamlAttributeTransformJsonataInput() *string
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -115,6 +118,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	ResetNameIdFormat()
 	ResetNameIdTransformJsonata()
 	ResetRedirectUris()
+	ResetSamlAttributeTransformJsonata()
 	ResetScopes()
 	ResetSpEntityId()
 	// Produce the Token's value at resolution time.
@@ -422,6 +426,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUrisInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SamlAttributeTransformJsonata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlAttributeTransformJsonata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SamlAttributeTransformJsonataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"samlAttributeTransformJsonataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) Scopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -648,6 +672,17 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetRedirectUris(val *
 	_jsii_.Set(
 		j,
 		"redirectUris",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetSamlAttributeTransformJsonata(val *string) {
+	if err := j.validateSetSamlAttributeTransformJsonataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"samlAttributeTransformJsonata",
 		val,
 	)
 }
@@ -969,6 +1004,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRedirectUris() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUris",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetSamlAttributeTransformJsonata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSamlAttributeTransformJsonata",
 		nil, // no parameters
 	)
 }

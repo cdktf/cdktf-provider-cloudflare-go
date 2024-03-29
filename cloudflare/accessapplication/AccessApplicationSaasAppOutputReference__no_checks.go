@@ -103,6 +103,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetRedirectU
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetSamlAttributeTransformJsonataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetScopesParameters(val *[]*string) error {
 	return nil
 }
