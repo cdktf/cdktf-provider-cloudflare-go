@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/record cloudflare_record}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/record cloudflare_record}.
 type DataCloudflareRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,7 +48,6 @@ type DataCloudflareRecord interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Locked() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
 	Priority() *float64
@@ -268,16 +267,6 @@ func (j *jsiiProxy_DataCloudflareRecord) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRecord) Locked() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"locked",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareRecord) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -449,7 +438,7 @@ func (j *jsiiProxy_DataCloudflareRecord) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) DataCloudflareRecord {
 	_init_.Initialize()
 
@@ -467,7 +456,7 @@ func NewDataCloudflareRecord(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/record cloudflare_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/record cloudflare_record} Data Source.
 func NewDataCloudflareRecord_Override(d DataCloudflareRecord, scope constructs.Construct, id *string, config *DataCloudflareRecordConfig) {
 	_init_.Initialize()
 

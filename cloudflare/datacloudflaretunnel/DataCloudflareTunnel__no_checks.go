@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataCloudflareTunnel) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareTunnel) validateSetIsDeletedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutCheckSession
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutDnsResolversParameters(value *TeamsRuleRuleSettingsDnsResolvers) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutEgressParameters(value *TeamsRuleRuleSettingsEgress) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetOverrideHost
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetOverrideIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetResolveDnsThroughCloudflareParameters(val interface{}) error {
 	return nil
 }
 

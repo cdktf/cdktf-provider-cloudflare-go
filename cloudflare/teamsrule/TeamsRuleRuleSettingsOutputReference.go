@@ -49,6 +49,8 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DnsResolvers() TeamsRuleRuleSettingsDnsResolversOutputReference
+	DnsResolversInput() *TeamsRuleRuleSettingsDnsResolvers
 	Egress() TeamsRuleRuleSettingsEgressOutputReference
 	EgressInput() *TeamsRuleRuleSettingsEgress
 	// Experimental.
@@ -73,6 +75,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	OverrideIpsInput() *[]*string
 	PayloadLog() TeamsRuleRuleSettingsPayloadLogOutputReference
 	PayloadLogInput() *TeamsRuleRuleSettingsPayloadLog
+	ResolveDnsThroughCloudflare() interface{}
+	SetResolveDnsThroughCloudflare(val interface{})
+	ResolveDnsThroughCloudflareInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -110,6 +115,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	PutAuditSsh(value *TeamsRuleRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *TeamsRuleRuleSettingsBisoAdminControls)
 	PutCheckSession(value *TeamsRuleRuleSettingsCheckSession)
+	PutDnsResolvers(value *TeamsRuleRuleSettingsDnsResolvers)
 	PutEgress(value *TeamsRuleRuleSettingsEgress)
 	PutL4Override(value *TeamsRuleRuleSettingsL4Override)
 	PutNotificationSettings(value *TeamsRuleRuleSettingsNotificationSettings)
@@ -123,6 +129,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetBlockPageReason()
 	ResetBypassParentRule()
 	ResetCheckSession()
+	ResetDnsResolvers()
 	ResetEgress()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
@@ -131,6 +138,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetOverrideHost()
 	ResetOverrideIps()
 	ResetPayloadLog()
+	ResetResolveDnsThroughCloudflare()
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -337,6 +345,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) CreationStack() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) DnsResolvers() TeamsRuleRuleSettingsDnsResolversOutputReference {
+	var returns TeamsRuleRuleSettingsDnsResolversOutputReference
+	_jsii_.Get(
+		j,
+		"dnsResolvers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) DnsResolversInput() *TeamsRuleRuleSettingsDnsResolvers {
+	var returns *TeamsRuleRuleSettingsDnsResolvers
+	_jsii_.Get(
+		j,
+		"dnsResolversInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Egress() TeamsRuleRuleSettingsEgressOutputReference {
 	var returns TeamsRuleRuleSettingsEgressOutputReference
 	_jsii_.Get(
@@ -512,6 +540,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PayloadLogInput() *Team
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResolveDnsThroughCloudflare() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resolveDnsThroughCloudflare",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResolveDnsThroughCloudflareInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resolveDnsThroughCloudflareInput",
 		&returns,
 	)
 	return returns
@@ -713,6 +761,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetOverrideIps(val *[]*s
 	_jsii_.Set(
 		j,
 		"overrideIps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetResolveDnsThroughCloudflare(val interface{}) {
+	if err := j.validateSetResolveDnsThroughCloudflareParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolveDnsThroughCloudflare",
 		val,
 	)
 }
@@ -958,6 +1017,17 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutCheckSession(value *
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutDnsResolvers(value *TeamsRuleRuleSettingsDnsResolvers) {
+	if err := t.validatePutDnsResolversParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putDnsResolvers",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) PutEgress(value *TeamsRuleRuleSettingsEgress) {
 	if err := t.validatePutEgressParameters(value); err != nil {
 		panic(err)
@@ -1077,6 +1147,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetCheckSession() {
 	)
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetDnsResolvers() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDnsResolvers",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetEgress() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1137,6 +1215,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetPayloadLog() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetResolveDnsThroughCloudflare() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetResolveDnsThroughCloudflare",
 		nil, // no parameters
 	)
 }

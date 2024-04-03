@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel cloudflare_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel cloudflare_tunnel}.
 type DataCloudflareTunnel interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -39,6 +39,9 @@ type DataCloudflareTunnel interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IsDeleted() interface{}
+	SetIsDeleted(val interface{})
+	IsDeletedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -88,6 +91,7 @@ type DataCloudflareTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIsDeleted()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_DataCloudflareTunnel) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTunnel) IsDeleted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDeleted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareTunnel) IsDeletedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDeletedInput",
 		&returns,
 	)
 	return returns
@@ -331,7 +355,7 @@ func (j *jsiiProxy_DataCloudflareTunnel) TunnelType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
 func NewDataCloudflareTunnel(scope constructs.Construct, id *string, config *DataCloudflareTunnelConfig) DataCloudflareTunnel {
 	_init_.Initialize()
 
@@ -349,7 +373,7 @@ func NewDataCloudflareTunnel(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.28.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/tunnel cloudflare_tunnel} Data Source.
 func NewDataCloudflareTunnel_Override(d DataCloudflareTunnel, scope constructs.Construct, id *string, config *DataCloudflareTunnelConfig) {
 	_init_.Initialize()
 
@@ -394,6 +418,17 @@ func (j *jsiiProxy_DataCloudflareTunnel)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareTunnel)SetIsDeleted(val interface{}) {
+	if err := j.validateSetIsDeletedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDeleted",
 		val,
 	)
 }
@@ -710,6 +745,14 @@ func (d *jsiiProxy_DataCloudflareTunnel) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareTunnel) ResetIsDeleted() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsDeleted",
+		nil, // no parameters
 	)
 }
 
