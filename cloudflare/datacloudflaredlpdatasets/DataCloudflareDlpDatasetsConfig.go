@@ -24,7 +24,7 @@ type DataCloudflareDlpDatasetsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account ID to fetch DLP Datasets from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/data-sources/dlp_datasets#account_id DataCloudflareDlpDatasets#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 

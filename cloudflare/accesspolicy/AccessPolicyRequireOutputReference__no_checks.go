@@ -95,6 +95,10 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCommonNamePara
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCommonNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

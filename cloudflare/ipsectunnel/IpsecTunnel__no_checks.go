@@ -175,6 +175,10 @@ func (j *jsiiProxy_IpsecTunnel) validateSetRemoteIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_IpsecTunnel) validateSetReplayProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IpsecTunnel) validateSetUserIdParameters(val *string) error {
 	return nil
 }

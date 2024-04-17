@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel}.
 type IpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -106,6 +106,9 @@ type IpsecTunnel interface {
 	RemoteId() *string
 	SetRemoteId(val *string)
 	RemoteIdInput() *string
+	ReplayProtection() interface{}
+	SetReplayProtection(val interface{})
+	ReplayProtectionInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -174,6 +177,7 @@ type IpsecTunnel interface {
 	ResetOverrideLogicalId()
 	ResetPsk()
 	ResetRemoteId()
+	ResetReplayProtection()
 	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -663,6 +667,26 @@ func (j *jsiiProxy_IpsecTunnel) RemoteIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IpsecTunnel) ReplayProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replayProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IpsecTunnel) ReplayProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replayProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IpsecTunnel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -714,7 +738,7 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
 
@@ -732,7 +756,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.29.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *string, config *IpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -994,6 +1018,17 @@ func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
 	_jsii_.Set(
 		j,
 		"remoteId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IpsecTunnel)SetReplayProtection(val interface{}) {
+	if err := j.validateSetReplayProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replayProtection",
 		val,
 	)
 }
@@ -1470,6 +1505,14 @@ func (i *jsiiProxy_IpsecTunnel) ResetRemoteId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRemoteId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IpsecTunnel) ResetReplayProtection() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetReplayProtection",
 		nil, // no parameters
 	)
 }

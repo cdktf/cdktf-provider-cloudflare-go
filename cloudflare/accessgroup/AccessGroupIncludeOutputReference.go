@@ -29,6 +29,9 @@ type AccessGroupIncludeOutputReference interface {
 	CommonName() *string
 	SetCommonName(val *string)
 	CommonNameInput() *string
+	CommonNames() *[]*string
+	SetCommonNames(val *[]*string)
+	CommonNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -133,6 +136,7 @@ type AccessGroupIncludeOutputReference interface {
 	ResetAzure()
 	ResetCertificate()
 	ResetCommonName()
+	ResetCommonNames()
 	ResetDevicePosture()
 	ResetEmail()
 	ResetEmailDomain()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNameInput() *string 
 	_jsii_.Get(
 		j,
 		"commonNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) CommonNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"commonNamesInput",
 		&returns,
 	)
 	return returns
@@ -721,6 +745,17 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCommonName(val *string) 
 	_jsii_.Set(
 		j,
 		"commonName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessGroupIncludeOutputReference)SetCommonNames(val *[]*string) {
+	if err := j.validateSetCommonNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"commonNames",
 		val,
 	)
 }
@@ -1197,6 +1232,14 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetCommonName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCommonName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) ResetCommonNames() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCommonNames",
 		nil, // no parameters
 	)
 }
