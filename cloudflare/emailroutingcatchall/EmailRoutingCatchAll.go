@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type EmailRoutingCatchAll interface {
 	cdktf.TerraformResource
 	Action() EmailRoutingCatchAllActionList
@@ -437,7 +437,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) EmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 

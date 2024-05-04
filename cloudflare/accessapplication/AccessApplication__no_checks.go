@@ -191,6 +191,10 @@ func (j *jsiiProxy_AccessApplication) validateSetNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetOptionsPreflightBypassParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

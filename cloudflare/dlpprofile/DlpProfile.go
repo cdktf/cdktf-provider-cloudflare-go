@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/dlp_profile cloudflare_dlp_profile}.
 type DlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -64,6 +64,9 @@ type DlpProfile interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OcrEnabled() interface{}
+	SetOcrEnabled(val interface{})
+	OcrEnabledInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +134,7 @@ type DlpProfile interface {
 	ResetContextAwareness()
 	ResetDescription()
 	ResetId()
+	ResetOcrEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -392,6 +396,26 @@ func (j *jsiiProxy_DlpProfile) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DlpProfile) OcrEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocrEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlpProfile) OcrEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocrEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DlpProfile) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_DlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileConfig) DlpProfile {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewDlpProfile(scope constructs.Construct, id *string, config *DlpProfileCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/dlp_profile cloudflare_dlp_profile} Resource.
 func NewDlpProfile_Override(d DlpProfile, scope constructs.Construct, id *string, config *DlpProfileConfig) {
 	_init_.Initialize()
 
@@ -602,6 +626,17 @@ func (j *jsiiProxy_DlpProfile)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlpProfile)SetOcrEnabled(val interface{}) {
+	if err := j.validateSetOcrEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocrEnabled",
 		val,
 	)
 }
@@ -1031,6 +1066,14 @@ func (d *jsiiProxy_DlpProfile) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlpProfile) ResetOcrEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOcrEnabled",
 		nil, // no parameters
 	)
 }

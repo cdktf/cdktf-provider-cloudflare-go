@@ -116,6 +116,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	TargetHostname() *[]*string
 	SetTargetHostname(val *[]*string)
 	TargetHostnameInput() *[]*string
+	TargetIp() *[]*string
+	SetTargetIp(val *[]*string)
+	TargetIpInput() *[]*string
 	TargetZoneName() *[]*string
 	SetTargetZoneName(val *[]*string)
 	TargetZoneNameInput() *[]*string
@@ -188,6 +191,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetSlo()
 	ResetStatus()
 	ResetTargetHostname()
+	ResetTargetIp()
 	ResetTargetZoneName()
 	ResetTunnelId()
 	ResetWhere()
@@ -817,6 +821,26 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetHostnameInput
 	return returns
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetIp() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetIpInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) TargetZoneName() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1282,6 +1306,17 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHostname(va
 	_jsii_.Set(
 		j,
 		"targetHostname",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetIp(val *[]*string) {
+	if err := j.validateSetTargetIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetIp",
 		val,
 	)
 }
@@ -1758,6 +1793,14 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetHostname
 	_jsii_.InvokeVoid(
 		n,
 		"resetTargetHostname",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetTargetIp() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTargetIp",
 		nil, // no parameters
 	)
 }

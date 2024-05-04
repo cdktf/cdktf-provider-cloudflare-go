@@ -111,6 +111,10 @@ func (j *jsiiProxy_TeamsLocation) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_TeamsLocation) validateSetEcsSupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

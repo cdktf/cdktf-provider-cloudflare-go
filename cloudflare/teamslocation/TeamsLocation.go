@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/teams_location cloudflare_teams_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/teams_location cloudflare_teams_location}.
 type TeamsLocation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -39,6 +39,9 @@ type TeamsLocation interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DohSubdomain() *string
+	EcsSupport() interface{}
+	SetEcsSupport(val interface{})
+	EcsSupportInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -125,6 +128,7 @@ type TeamsLocation interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutNetworks(value interface{})
 	ResetClientDefault()
+	ResetEcsSupport()
 	ResetId()
 	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -253,6 +257,26 @@ func (j *jsiiProxy_TeamsLocation) DohSubdomain() *string {
 	_jsii_.Get(
 		j,
 		"dohSubdomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) EcsSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ecsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) EcsSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ecsSupportInput",
 		&returns,
 	)
 	return returns
@@ -459,7 +483,7 @@ func (j *jsiiProxy_TeamsLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocationConfig) TeamsLocation {
 	_init_.Initialize()
 
@@ -477,7 +501,7 @@ func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation_Override(t TeamsLocation, scope constructs.Construct, id *string, config *TeamsLocationConfig) {
 	_init_.Initialize()
 
@@ -536,6 +560,17 @@ func (j *jsiiProxy_TeamsLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsLocation)SetEcsSupport(val interface{}) {
+	if err := j.validateSetEcsSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ecsSupport",
 		val,
 	)
 }
@@ -968,6 +1003,14 @@ func (t *jsiiProxy_TeamsLocation) ResetClientDefault() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetClientDefault",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsLocation) ResetEcsSupport() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEcsSupport",
 		nil, // no parameters
 	)
 }

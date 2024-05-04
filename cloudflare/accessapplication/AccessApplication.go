@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -106,6 +106,9 @@ type AccessApplication interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OptionsPreflightBypass() interface{}
+	SetOptionsPreflightBypass(val interface{})
+	OptionsPreflightBypassInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -216,6 +219,7 @@ type AccessApplication interface {
 	ResetLandingPageDesign()
 	ResetLogoUrl()
 	ResetName()
+	ResetOptionsPreflightBypass()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -776,6 +780,26 @@ func (j *jsiiProxy_AccessApplication) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) OptionsPreflightBypass() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionsPreflightBypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) OptionsPreflightBypassInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionsPreflightBypassInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -1017,7 +1041,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1035,7 +1059,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.30.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1289,6 +1313,17 @@ func (j *jsiiProxy_AccessApplication)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetOptionsPreflightBypass(val interface{}) {
+	if err := j.validateSetOptionsPreflightBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionsPreflightBypass",
 		val,
 	)
 }
@@ -1961,6 +1996,14 @@ func (a *jsiiProxy_AccessApplication) ResetName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetOptionsPreflightBypass() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOptionsPreflightBypass",
 		nil, // no parameters
 	)
 }

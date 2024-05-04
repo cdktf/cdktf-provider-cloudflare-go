@@ -131,6 +131,10 @@ func (j *jsiiProxy_DlpProfile) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DlpProfile) validateSetOcrEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlpProfile) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

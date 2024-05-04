@@ -175,6 +175,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetHo
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetIpParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTargetZoneNameParameters(val *[]*string) error {
 	return nil
 }
