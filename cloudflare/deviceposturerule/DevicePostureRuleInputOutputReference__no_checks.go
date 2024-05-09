@@ -147,6 +147,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsDistroRev
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOsVersionExtraParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOverallParameters(val *string) error {
 	return nil
 }

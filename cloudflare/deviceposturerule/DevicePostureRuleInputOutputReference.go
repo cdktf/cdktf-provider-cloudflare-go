@@ -95,6 +95,9 @@ type DevicePostureRuleInputOutputReference interface {
 	SetOsDistroRevision(val *string)
 	OsDistroRevisionInput() *string
 	OsInput() *string
+	OsVersionExtra() *string
+	SetOsVersionExtra(val *string)
+	OsVersionExtraInput() *string
 	Overall() *string
 	SetOverall(val *string)
 	OverallInput() *string
@@ -184,6 +187,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetOs()
 	ResetOsDistroName()
 	ResetOsDistroRevision()
+	ResetOsVersionExtra()
 	ResetOverall()
 	ResetPath()
 	ResetRequireAll()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsInput() *string {
 	_jsii_.Get(
 		j,
 		"osInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsVersionExtra() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionExtra",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OsVersionExtraInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionExtraInput",
 		&returns,
 	)
 	return returns
@@ -1233,6 +1257,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsVersionExtra(val *string) {
+	if err := j.validateSetOsVersionExtraParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osVersionExtra",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOverall(val *string) {
 	if err := j.validateSetOverallParameters(val); err != nil {
 		panic(err)
@@ -1737,6 +1772,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsDistroRevision(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOsDistroRevision",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOsVersionExtra() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOsVersionExtra",
 		nil, // no parameters
 	)
 }

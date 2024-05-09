@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -124,6 +124,8 @@ type AccessApplication interface {
 	SameSiteCookieAttribute() *string
 	SetSameSiteCookieAttribute(val *string)
 	SameSiteCookieAttributeInput() *string
+	ScimConfig() AccessApplicationScimConfigOutputReference
+	ScimConfigInput() *AccessApplicationScimConfig
 	SelfHostedDomains() *[]*string
 	SetSelfHostedDomains(val *[]*string)
 	SelfHostedDomainsInput() *[]*string
@@ -198,6 +200,7 @@ type AccessApplication interface {
 	PutFooterLinks(value interface{})
 	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
+	PutScimConfig(value *AccessApplicationScimConfig)
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
@@ -225,6 +228,7 @@ type AccessApplication interface {
 	ResetOverrideLogicalId()
 	ResetSaasApp()
 	ResetSameSiteCookieAttribute()
+	ResetScimConfig()
 	ResetSelfHostedDomains()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
@@ -870,6 +874,26 @@ func (j *jsiiProxy_AccessApplication) SameSiteCookieAttributeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) ScimConfig() AccessApplicationScimConfigOutputReference {
+	var returns AccessApplicationScimConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scimConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) ScimConfigInput() *AccessApplicationScimConfig {
+	var returns *AccessApplicationScimConfig
+	_jsii_.Get(
+		j,
+		"scimConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) SelfHostedDomains() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1041,7 +1065,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1059,7 +1083,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.31.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1832,6 +1856,17 @@ func (a *jsiiProxy_AccessApplication) PutSaasApp(value *AccessApplicationSaasApp
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) PutScimConfig(value *AccessApplicationScimConfig) {
+	if err := a.validatePutScimConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putScimConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2028,6 +2063,14 @@ func (a *jsiiProxy_AccessApplication) ResetSameSiteCookieAttribute() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSameSiteCookieAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetScimConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScimConfig",
 		nil, // no parameters
 	)
 }

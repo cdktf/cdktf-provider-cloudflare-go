@@ -119,6 +119,10 @@ func (j *jsiiProxy_AccessPolicyExcludeOutputReference) validateSetEmailDomainPar
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicyExcludeOutputReference) validateSetEmailListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicyExcludeOutputReference) validateSetEveryoneParameters(val interface{}) error {
 	return nil
 }

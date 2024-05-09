@@ -56,6 +56,9 @@ type AccessPolicyIncludeOutputReference interface {
 	SetEmailDomain(val *[]*string)
 	EmailDomainInput() *[]*string
 	EmailInput() *[]*string
+	EmailList() *[]*string
+	SetEmailList(val *[]*string)
+	EmailListInput() *[]*string
 	Everyone() interface{}
 	SetEveryone(val interface{})
 	EveryoneInput() interface{}
@@ -140,6 +143,7 @@ type AccessPolicyIncludeOutputReference interface {
 	ResetDevicePosture()
 	ResetEmail()
 	ResetEmailDomain()
+	ResetEmailList()
 	ResetEveryone()
 	ResetExternalEvaluation()
 	ResetGeo()
@@ -392,6 +396,26 @@ func (j *jsiiProxy_AccessPolicyIncludeOutputReference) EmailInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"emailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyIncludeOutputReference) EmailList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyIncludeOutputReference) EmailListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emailListInput",
 		&returns,
 	)
 	return returns
@@ -811,6 +835,17 @@ func (j *jsiiProxy_AccessPolicyIncludeOutputReference)SetEmailDomain(val *[]*str
 	_jsii_.Set(
 		j,
 		"emailDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessPolicyIncludeOutputReference)SetEmailList(val *[]*string) {
+	if err := j.validateSetEmailListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"emailList",
 		val,
 	)
 }
@@ -1264,6 +1299,14 @@ func (a *jsiiProxy_AccessPolicyIncludeOutputReference) ResetEmailDomain() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEmailDomain",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicyIncludeOutputReference) ResetEmailList() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEmailList",
 		nil, // no parameters
 	)
 }

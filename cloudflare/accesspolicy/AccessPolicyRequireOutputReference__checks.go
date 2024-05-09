@@ -451,6 +451,14 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEmailDomainPar
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEmailListParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEveryoneParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

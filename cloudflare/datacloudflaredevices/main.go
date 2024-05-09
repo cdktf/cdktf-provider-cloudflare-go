@@ -124,6 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "osDistroName", GoGetter: "OsDistroName"},
 			_jsii_.MemberProperty{JsiiProperty: "osDistroRevision", GoGetter: "OsDistroRevision"},
 			_jsii_.MemberProperty{JsiiProperty: "osVersion", GoGetter: "OsVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "osVersionExtra", GoGetter: "OsVersionExtra"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "revokedAt", GoGetter: "RevokedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
