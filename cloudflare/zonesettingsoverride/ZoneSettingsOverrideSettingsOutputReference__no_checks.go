@@ -55,6 +55,10 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMobil
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutNelParameters(value *ZoneSettingsOverrideSettingsNel) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutSecurityHeaderParameters(value *ZoneSettingsOverrideSettingsSecurityHeader) error {
 	return nil
 }

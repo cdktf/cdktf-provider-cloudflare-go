@@ -117,6 +117,8 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	MirageInput() *string
 	MobileRedirect() ZoneSettingsOverrideSettingsMobileRedirectOutputReference
 	MobileRedirectInput() *ZoneSettingsOverrideSettingsMobileRedirect
+	Nel() ZoneSettingsOverrideSettingsNelOutputReference
+	NelInput() *ZoneSettingsOverrideSettingsNel
 	OpportunisticEncryption() *string
 	SetOpportunisticEncryption(val *string)
 	OpportunisticEncryptionInput() *string
@@ -231,6 +233,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMinify(value *ZoneSettingsOverrideSettingsMinify)
 	PutMobileRedirect(value *ZoneSettingsOverrideSettingsMobileRedirect)
+	PutNel(value *ZoneSettingsOverrideSettingsNel)
 	PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader)
 	ResetAlwaysOnline()
 	ResetAlwaysUseHttps()
@@ -261,6 +264,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetMinTlsVersion()
 	ResetMirage()
 	ResetMobileRedirect()
+	ResetNel()
 	ResetOpportunisticEncryption()
 	ResetOpportunisticOnion()
 	ResetOrangeToOrange()
@@ -928,6 +932,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) MobileRedirectIn
 	_jsii_.Get(
 		j,
 		"mobileRedirectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Nel() ZoneSettingsOverrideSettingsNelOutputReference {
+	var returns ZoneSettingsOverrideSettingsNelOutputReference
+	_jsii_.Get(
+		j,
+		"nel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) NelInput() *ZoneSettingsOverrideSettingsNel {
+	var returns *ZoneSettingsOverrideSettingsNel
+	_jsii_.Get(
+		j,
+		"nelInput",
 		&returns,
 	)
 	return returns
@@ -2367,6 +2391,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMobileRedirec
 	)
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutNel(value *ZoneSettingsOverrideSettingsNel) {
+	if err := z.validatePutNelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putNel",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader) {
 	if err := z.validatePutSecurityHeaderParameters(value); err != nil {
 		panic(err)
@@ -2606,6 +2641,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetMobileRedir
 	_jsii_.InvokeVoid(
 		z,
 		"resetMobileRedirect",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetNel() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetNel",
 		nil, // no parameters
 	)
 }

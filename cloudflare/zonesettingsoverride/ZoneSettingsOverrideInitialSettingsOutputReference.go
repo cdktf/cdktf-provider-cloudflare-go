@@ -61,6 +61,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	MinTlsVersion() *string
 	Mirage() *string
 	MobileRedirect() ZoneSettingsOverrideInitialSettingsMobileRedirectList
+	Nel() ZoneSettingsOverrideInitialSettingsNelList
 	OpportunisticEncryption() *string
 	OpportunisticOnion() *string
 	OrangeToOrange() *string
@@ -470,6 +471,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) MobileRed
 	_jsii_.Get(
 		j,
 		"mobileRedirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Nel() ZoneSettingsOverrideInitialSettingsNelList {
+	var returns ZoneSettingsOverrideInitialSettingsNelList
+	_jsii_.Get(
+		j,
+		"nel",
 		&returns,
 	)
 	return returns

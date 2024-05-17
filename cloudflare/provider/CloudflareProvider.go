@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs cloudflare}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs cloudflare}.
 type CloudflareProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_CloudflareProvider) UserAgentOperatorSuffixInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs cloudflare} Resource.
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.32.0/docs cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs cloudflare} Resource.
 func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Construct, id *string, config *CloudflareProviderConfig) {
 	_init_.Initialize()
 
