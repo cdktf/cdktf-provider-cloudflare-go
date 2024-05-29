@@ -51,7 +51,19 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomAtt
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomClaimParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAllowPkceWithoutClientSecretParameters(val interface{}) error {
 	return nil
 }
 

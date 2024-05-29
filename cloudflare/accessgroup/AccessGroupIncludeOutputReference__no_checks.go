@@ -55,7 +55,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutAzureParameters
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutExternalEvaluationParameters(value *AccessGroupIncludeExternalEvaluation) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
 	return nil
 }
 

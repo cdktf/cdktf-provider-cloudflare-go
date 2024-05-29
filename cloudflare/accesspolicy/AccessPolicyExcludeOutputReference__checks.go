@@ -155,12 +155,32 @@ func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutAzureParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutExternalEvaluationParameters(value *AccessPolicyExcludeExternalEvaluation) error {
+func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccessPolicyExcludeExternalEvaluation:
+		value := value.(*[]*AccessPolicyExcludeExternalEvaluation)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccessPolicyExcludeExternalEvaluation:
+		value_ := value.([]*AccessPolicyExcludeExternalEvaluation)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccessPolicyExcludeExternalEvaluation; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

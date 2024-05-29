@@ -33,8 +33,8 @@ type AccessPolicyExcludeExternalEvaluationOutputReference interface {
 	EvaluateUrlInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AccessPolicyExcludeExternalEvaluation
-	SetInternalValue(val *AccessPolicyExcludeExternalEvaluation)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeysUrl() *string
 	SetKeysUrl(val *string)
 	KeysUrlInput() *string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) InternalValue() *AccessPolicyExcludeExternalEvaluation {
-	var returns *AccessPolicyExcludeExternalEvaluation
+func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference) Terrafo
 }
 
 
-func NewAccessPolicyExcludeExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessPolicyExcludeExternalEvaluationOutputReference {
+func NewAccessPolicyExcludeExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessPolicyExcludeExternalEvaluationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAccessPolicyExcludeExternalEvaluationOutputReference_Override(a AccessPolicyExcludeExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAccessPolicyExcludeExternalEvaluationOutputReference_Override(a AccessPolicyExcludeExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -258,7 +258,7 @@ func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference)SetEvalu
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference)SetInternalValue(val *AccessPolicyExcludeExternalEvaluation) {
+func (j *jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

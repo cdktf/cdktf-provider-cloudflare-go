@@ -24,11 +24,11 @@ type EmailRoutingAddressConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/email_routing_address#account_id EmailRoutingAddress#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The contact email address of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.33.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/email_routing_address#email EmailRoutingAddress#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 }
 

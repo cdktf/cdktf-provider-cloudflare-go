@@ -34,6 +34,9 @@ type AccessApplicationSaasAppCustomAttributeSourceOutputReference interface {
 	SetInternalValue(val *AccessApplicationSaasAppCustomAttributeSource)
 	Name() *string
 	SetName(val *string)
+	NameByIdp() *map[string]*string
+	SetNameByIdp(val *map[string]*string)
+	NameByIdpInput() *map[string]*string
 	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -67,6 +70,7 @@ type AccessApplicationSaasAppCustomAttributeSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNameByIdp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +141,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference)
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) NameByIdp() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nameByIdp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) NameByIdpInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nameByIdpInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference)
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference)SetNameByIdp(val *map[string]*string) {
+	if err := j.validateSetNameByIdpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nameByIdp",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference)
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) ResetNameByIdp() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNameByIdp",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

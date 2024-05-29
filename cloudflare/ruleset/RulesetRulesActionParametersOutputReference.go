@@ -63,6 +63,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	DisableRailgun() interface{}
 	SetDisableRailgun(val interface{})
 	DisableRailgunInput() interface{}
+	DisableRum() interface{}
+	SetDisableRum(val interface{})
+	DisableRumInput() interface{}
 	DisableZaraz() interface{}
 	SetDisableZaraz(val interface{})
 	DisableZarazInput() interface{}
@@ -71,6 +74,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	EmailObfuscation() interface{}
 	SetEmailObfuscation(val interface{})
 	EmailObfuscationInput() interface{}
+	Fonts() interface{}
+	SetFonts(val interface{})
+	FontsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	FromList() RulesetRulesActionParametersFromListStructList
@@ -230,9 +236,11 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetCookieFields()
 	ResetDisableApps()
 	ResetDisableRailgun()
+	ResetDisableRum()
 	ResetDisableZaraz()
 	ResetEdgeTtl()
 	ResetEmailObfuscation()
+	ResetFonts()
 	ResetFromList()
 	ResetFromValue()
 	ResetHeaders()
@@ -573,6 +581,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRailgunIn
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRum() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableRumInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRumInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) DisableZaraz() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -628,6 +656,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) EmailObfuscation
 	_jsii_.Get(
 		j,
 		"emailObfuscationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Fonts() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fonts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) FontsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fontsInput",
 		&returns,
 	)
 	return returns
@@ -1522,6 +1570,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableRailgun
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableRum(val interface{}) {
+	if err := j.validateSetDisableRumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRum",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetDisableZaraz(val interface{}) {
 	if err := j.validateSetDisableZarazParameters(val); err != nil {
 		panic(err)
@@ -1540,6 +1599,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetEmailObfuscati
 	_jsii_.Set(
 		j,
 		"emailObfuscation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetFonts(val interface{}) {
+	if err := j.validateSetFontsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fonts",
 		val,
 	)
 }
@@ -2307,6 +2377,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableRail
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableRum() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableRum",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetDisableZaraz() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2327,6 +2405,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetEmailObfusc
 	_jsii_.InvokeVoid(
 		r,
 		"resetEmailObfuscation",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetFonts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFonts",
 		nil, // no parameters
 	)
 }

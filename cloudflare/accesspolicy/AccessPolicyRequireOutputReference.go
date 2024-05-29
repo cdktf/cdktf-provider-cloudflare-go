@@ -62,8 +62,8 @@ type AccessPolicyRequireOutputReference interface {
 	Everyone() interface{}
 	SetEveryone(val interface{})
 	EveryoneInput() interface{}
-	ExternalEvaluation() AccessPolicyRequireExternalEvaluationOutputReference
-	ExternalEvaluationInput() *AccessPolicyRequireExternalEvaluation
+	ExternalEvaluation() AccessPolicyRequireExternalEvaluationList
+	ExternalEvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() *[]*string
@@ -128,7 +128,7 @@ type AccessPolicyRequireOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthContext(value interface{})
 	PutAzure(value interface{})
-	PutExternalEvaluation(value *AccessPolicyRequireExternalEvaluation)
+	PutExternalEvaluation(value interface{})
 	PutGithub(value interface{})
 	PutGsuite(value interface{})
 	PutOkta(value interface{})
@@ -441,8 +441,8 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) EveryoneInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() AccessPolicyRequireExternalEvaluationOutputReference {
-	var returns AccessPolicyRequireExternalEvaluationOutputReference
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() AccessPolicyRequireExternalEvaluationList {
+	var returns AccessPolicyRequireExternalEvaluationList
 	_jsii_.Get(
 		j,
 		"externalEvaluation",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluation() Acce
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluationInput() *AccessPolicyRequireExternalEvaluation {
-	var returns *AccessPolicyRequireExternalEvaluation
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) ExternalEvaluationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"externalEvaluationInput",
@@ -1168,7 +1168,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutAzure(value interface{
 	)
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutExternalEvaluation(value *AccessPolicyRequireExternalEvaluation) {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) PutExternalEvaluation(value interface{}) {
 	if err := a.validatePutExternalEvaluationParameters(value); err != nil {
 		panic(err)
 	}

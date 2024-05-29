@@ -55,7 +55,7 @@ func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutAzureParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutExternalEvaluationParameters(value *AccessPolicyExcludeExternalEvaluation) error {
+func (a *jsiiProxy_AccessPolicyExcludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
 	return nil
 }
 

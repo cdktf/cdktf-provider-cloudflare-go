@@ -67,6 +67,10 @@ func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) validateSetNameByIdpParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppCustomAttributeSourceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

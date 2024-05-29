@@ -155,11 +155,19 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisab
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisableRumParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetDisableZarazParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetEmailObfuscationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetFontsParameters(val interface{}) error {
 	return nil
 }
 

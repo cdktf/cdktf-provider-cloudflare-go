@@ -13,6 +13,9 @@ import (
 
 type AccessApplicationSaasAppOutputReference interface {
 	cdktf.ComplexObject
+	AllowPkceWithoutClientSecret() interface{}
+	SetAllowPkceWithoutClientSecret(val interface{})
+	AllowPkceWithoutClientSecretInput() interface{}
 	AppLauncherUrl() *string
 	SetAppLauncherUrl(val *string)
 	AppLauncherUrlInput() *string
@@ -41,6 +44,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	CreationStack() *[]*string
 	CustomAttribute() AccessApplicationSaasAppCustomAttributeList
 	CustomAttributeInput() interface{}
+	CustomClaim() AccessApplicationSaasAppCustomClaimList
+	CustomClaimInput() interface{}
 	DefaultRelayState() *string
 	SetDefaultRelayState(val *string)
 	DefaultRelayStateInput() *string
@@ -65,6 +70,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	RedirectUris() *[]*string
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
+	RefreshTokenOptions() AccessApplicationSaasAppRefreshTokenOptionsList
+	RefreshTokenOptionsInput() interface{}
 	SamlAttributeTransformJsonata() *string
 	SetSamlAttributeTransformJsonata(val *string)
 	SamlAttributeTransformJsonataInput() *string
@@ -108,16 +115,21 @@ type AccessApplicationSaasAppOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomAttribute(value interface{})
+	PutCustomClaim(value interface{})
+	PutRefreshTokenOptions(value interface{})
+	ResetAllowPkceWithoutClientSecret()
 	ResetAppLauncherUrl()
 	ResetAuthType()
 	ResetConsumerServiceUrl()
 	ResetCustomAttribute()
+	ResetCustomClaim()
 	ResetDefaultRelayState()
 	ResetGrantTypes()
 	ResetGroupFilterRegex()
 	ResetNameIdFormat()
 	ResetNameIdTransformJsonata()
 	ResetRedirectUris()
+	ResetRefreshTokenOptions()
 	ResetSamlAttributeTransformJsonata()
 	ResetScopes()
 	ResetSpEntityId()
@@ -134,6 +146,26 @@ type AccessApplicationSaasAppOutputReference interface {
 // The jsii proxy struct for AccessApplicationSaasAppOutputReference
 type jsiiProxy_AccessApplicationSaasAppOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecret() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPkceWithoutClientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecretInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPkceWithoutClientSecretInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AppLauncherUrl() *string {
@@ -261,6 +293,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomAttributeInput
 	_jsii_.Get(
 		j,
 		"customAttributeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomClaim() AccessApplicationSaasAppCustomClaimList {
+	var returns AccessApplicationSaasAppCustomClaimList
+	_jsii_.Get(
+		j,
+		"customClaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) CustomClaimInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customClaimInput",
 		&returns,
 	)
 	return returns
@@ -426,6 +478,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RedirectUrisInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RefreshTokenOptions() AccessApplicationSaasAppRefreshTokenOptionsList {
+	var returns AccessApplicationSaasAppRefreshTokenOptionsList
+	_jsii_.Get(
+		j,
+		"refreshTokenOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) RefreshTokenOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"refreshTokenOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) SamlAttributeTransformJsonata() *string {
 	var returns *string
 	_jsii_.Get(
@@ -541,6 +613,17 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAllowPkceWithoutClientSecret(val interface{}) {
+	if err := j.validateSetAllowPkceWithoutClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowPkceWithoutClientSecret",
+		val,
 	)
 }
 
@@ -928,6 +1011,36 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomAttribute(v
 	)
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomClaim(value interface{}) {
+	if err := a.validatePutCustomClaimParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCustomClaim",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutRefreshTokenOptions(value interface{}) {
+	if err := a.validatePutRefreshTokenOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRefreshTokenOptions",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAllowPkceWithoutClientSecret() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowPkceWithoutClientSecret",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAppLauncherUrl() {
 	_jsii_.InvokeVoid(
 		a,
@@ -956,6 +1069,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomAttribute
 	_jsii_.InvokeVoid(
 		a,
 		"resetCustomAttribute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetCustomClaim() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomClaim",
 		nil, // no parameters
 	)
 }
@@ -1004,6 +1125,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRedirectUris() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUris",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetRefreshTokenOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRefreshTokenOptions",
 		nil, // no parameters
 	)
 }

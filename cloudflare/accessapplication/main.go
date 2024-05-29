@@ -471,7 +471,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameByIdp", GoGetter: "NameByIdp"},
+			_jsii_.MemberProperty{JsiiProperty: "nameByIdpInput", GoGetter: "NameByIdpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNameByIdp", GoMethod: "ResetNameByIdp"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -483,10 +486,123 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaim",
+		reflect.TypeOf((*AccessApplicationSaasAppCustomClaim)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimList",
+		reflect.TypeOf((*AccessApplicationSaasAppCustomClaimList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppCustomClaimList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimOutputReference",
+		reflect.TypeOf((*AccessApplicationSaasAppCustomClaimOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
+			_jsii_.MemberProperty{JsiiProperty: "required", GoGetter: "Required"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequired", GoMethod: "ResetRequired"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScope", GoMethod: "ResetScope"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
+			_jsii_.MemberProperty{JsiiProperty: "scopeInput", GoGetter: "ScopeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppCustomClaimOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSource",
+		reflect.TypeOf((*AccessApplicationSaasAppCustomClaimSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppCustomClaimSourceOutputReference",
+		reflect.TypeOf((*AccessApplicationSaasAppCustomClaimSourceOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameByIdp", GoGetter: "NameByIdp"},
+			_jsii_.MemberProperty{JsiiProperty: "nameByIdpInput", GoGetter: "NameByIdpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNameByIdp", GoMethod: "ResetNameByIdp"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppCustomClaimSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowPkceWithoutClientSecret", GoGetter: "AllowPkceWithoutClientSecret"},
+			_jsii_.MemberProperty{JsiiProperty: "allowPkceWithoutClientSecretInput", GoGetter: "AllowPkceWithoutClientSecretInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherUrl", GoGetter: "AppLauncherUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherUrlInput", GoGetter: "AppLauncherUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -501,6 +617,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "customAttribute", GoGetter: "CustomAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "customAttributeInput", GoGetter: "CustomAttributeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customClaim", GoGetter: "CustomClaim"},
+			_jsii_.MemberProperty{JsiiProperty: "customClaimInput", GoGetter: "CustomClaimInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultRelayState", GoGetter: "DefaultRelayState"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultRelayStateInput", GoGetter: "DefaultRelayStateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -527,18 +645,25 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameIdTransformJsonataInput", GoGetter: "NameIdTransformJsonataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKey", GoGetter: "PublicKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomAttribute", GoMethod: "PutCustomAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomClaim", GoMethod: "PutCustomClaim"},
+			_jsii_.MemberMethod{JsiiMethod: "putRefreshTokenOptions", GoMethod: "PutRefreshTokenOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectUris", GoGetter: "RedirectUris"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectUrisInput", GoGetter: "RedirectUrisInput"},
+			_jsii_.MemberProperty{JsiiProperty: "refreshTokenOptions", GoGetter: "RefreshTokenOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "refreshTokenOptionsInput", GoGetter: "RefreshTokenOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowPkceWithoutClientSecret", GoMethod: "ResetAllowPkceWithoutClientSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppLauncherUrl", GoMethod: "ResetAppLauncherUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthType", GoMethod: "ResetAuthType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConsumerServiceUrl", GoMethod: "ResetConsumerServiceUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomAttribute", GoMethod: "ResetCustomAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomClaim", GoMethod: "ResetCustomClaim"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRelayState", GoMethod: "ResetDefaultRelayState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrantTypes", GoMethod: "ResetGrantTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupFilterRegex", GoMethod: "ResetGroupFilterRegex"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNameIdFormat", GoMethod: "ResetNameIdFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNameIdTransformJsonata", GoMethod: "ResetNameIdTransformJsonata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedirectUris", GoMethod: "ResetRedirectUris"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRefreshTokenOptions", GoMethod: "ResetRefreshTokenOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSamlAttributeTransformJsonata", GoMethod: "ResetSamlAttributeTransformJsonata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpEntityId", GoMethod: "ResetSpEntityId"},
@@ -556,6 +681,67 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptions",
+		reflect.TypeOf((*AccessApplicationSaasAppRefreshTokenOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsList",
+		reflect.TypeOf((*AccessApplicationSaasAppRefreshTokenOptionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppRefreshTokenOptionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppRefreshTokenOptionsOutputReference",
+		reflect.TypeOf((*AccessApplicationSaasAppRefreshTokenOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetime", GoGetter: "Lifetime"},
+			_jsii_.MemberProperty{JsiiProperty: "lifetimeInput", GoGetter: "LifetimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifetime", GoMethod: "ResetLifetime"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppRefreshTokenOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

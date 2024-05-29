@@ -62,8 +62,8 @@ type AccessGroupIncludeOutputReference interface {
 	Everyone() interface{}
 	SetEveryone(val interface{})
 	EveryoneInput() interface{}
-	ExternalEvaluation() AccessGroupIncludeExternalEvaluationOutputReference
-	ExternalEvaluationInput() *AccessGroupIncludeExternalEvaluation
+	ExternalEvaluation() AccessGroupIncludeExternalEvaluationList
+	ExternalEvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() *[]*string
@@ -128,7 +128,7 @@ type AccessGroupIncludeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthContext(value interface{})
 	PutAzure(value interface{})
-	PutExternalEvaluation(value *AccessGroupIncludeExternalEvaluation)
+	PutExternalEvaluation(value interface{})
 	PutGithub(value interface{})
 	PutGsuite(value interface{})
 	PutOkta(value interface{})
@@ -441,8 +441,8 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) EveryoneInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() AccessGroupIncludeExternalEvaluationOutputReference {
-	var returns AccessGroupIncludeExternalEvaluationOutputReference
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() AccessGroupIncludeExternalEvaluationList {
+	var returns AccessGroupIncludeExternalEvaluationList
 	_jsii_.Get(
 		j,
 		"externalEvaluation",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluation() Acces
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluationInput() *AccessGroupIncludeExternalEvaluation {
-	var returns *AccessGroupIncludeExternalEvaluation
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) ExternalEvaluationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"externalEvaluationInput",
@@ -1168,7 +1168,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutAzure(value interface{}
 	)
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(value *AccessGroupIncludeExternalEvaluation) {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) PutExternalEvaluation(value interface{}) {
 	if err := a.validatePutExternalEvaluationParameters(value); err != nil {
 		panic(err)
 	}
