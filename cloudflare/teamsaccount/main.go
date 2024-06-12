@@ -713,6 +713,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "udp", GoGetter: "Udp"},
 			_jsii_.MemberProperty{JsiiProperty: "udpInput", GoGetter: "UdpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualIp", GoGetter: "VirtualIp"},
+			_jsii_.MemberProperty{JsiiProperty: "virtualIpInput", GoGetter: "VirtualIpInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountProxyOutputReference{}

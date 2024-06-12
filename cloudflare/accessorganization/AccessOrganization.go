@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_organization cloudflare_access_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_organization cloudflare_access_organization}.
 type AccessOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -153,7 +153,6 @@ type AccessOrganization interface {
 	ResetId()
 	ResetIsUiReadOnly()
 	ResetLoginDesign()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -621,7 +620,7 @@ func (j *jsiiProxy_AccessOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization(scope constructs.Construct, id *string, config *AccessOrganizationConfig) AccessOrganization {
 	_init_.Initialize()
 
@@ -639,7 +638,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/access_organization cloudflare_access_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/access_organization cloudflare_access_organization} Resource.
 func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Construct, id *string, config *AccessOrganizationConfig) {
 	_init_.Initialize()
 
@@ -1277,14 +1276,6 @@ func (a *jsiiProxy_AccessOrganization) ResetLoginDesign() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLoginDesign",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccessOrganization) ResetName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetName",
 		nil, // no parameters
 	)
 }

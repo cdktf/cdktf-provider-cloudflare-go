@@ -51,6 +51,9 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VirtualNetworkId() *string
+	SetVirtualNetworkId(val *string)
+	VirtualNetworkIdInput() *string
 	Weight() *float64
 	SetWeight(val *float64)
 	WeightInput() *float64
@@ -81,6 +84,7 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	PutHeader(value interface{})
 	ResetEnabled()
 	ResetHeader()
+	ResetVirtualNetworkId()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) TerraformResource() c
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) VirtualNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Weight() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetTerraformResource(v
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetVirtualNetworkId(val *string) {
+	if err := j.validateSetVirtualNetworkIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualNetworkId",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetHeader() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetHeader",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetVirtualNetworkId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVirtualNetworkId",
 		nil, // no parameters
 	)
 }

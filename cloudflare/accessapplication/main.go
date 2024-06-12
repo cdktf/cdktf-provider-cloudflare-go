@@ -597,6 +597,48 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptions",
+		reflect.TypeOf((*AccessApplicationSaasAppHybridAndImplicitOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference",
+		reflect.TypeOf((*AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReturnAccessTokenFromAuthorizationEndpoint", GoMethod: "ResetReturnAccessTokenFromAuthorizationEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReturnIdTokenFromAuthorizationEndpoint", GoMethod: "ResetReturnIdTokenFromAuthorizationEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "returnAccessTokenFromAuthorizationEndpoint", GoGetter: "ReturnAccessTokenFromAuthorizationEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "returnAccessTokenFromAuthorizationEndpointInput", GoGetter: "ReturnAccessTokenFromAuthorizationEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "returnIdTokenFromAuthorizationEndpoint", GoGetter: "ReturnIdTokenFromAuthorizationEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "returnIdTokenFromAuthorizationEndpointInput", GoGetter: "ReturnIdTokenFromAuthorizationEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
@@ -635,6 +677,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grantTypesInput", GoGetter: "GrantTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "groupFilterRegex", GoGetter: "GroupFilterRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "groupFilterRegexInput", GoGetter: "GroupFilterRegexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hybridAndImplicitOptions", GoGetter: "HybridAndImplicitOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "hybridAndImplicitOptionsInput", GoGetter: "HybridAndImplicitOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idpEntityId", GoGetter: "IdpEntityId"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
@@ -646,6 +690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicKey", GoGetter: "PublicKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomAttribute", GoMethod: "PutCustomAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomClaim", GoMethod: "PutCustomClaim"},
+			_jsii_.MemberMethod{JsiiMethod: "putHybridAndImplicitOptions", GoMethod: "PutHybridAndImplicitOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRefreshTokenOptions", GoMethod: "PutRefreshTokenOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectUris", GoGetter: "RedirectUris"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectUrisInput", GoGetter: "RedirectUrisInput"},
@@ -660,6 +705,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRelayState", GoMethod: "ResetDefaultRelayState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrantTypes", GoMethod: "ResetGrantTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupFilterRegex", GoMethod: "ResetGroupFilterRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHybridAndImplicitOptions", GoMethod: "ResetHybridAndImplicitOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNameIdFormat", GoMethod: "ResetNameIdFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNameIdTransformJsonata", GoMethod: "ResetNameIdTransformJsonata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedirectUris", GoMethod: "ResetRedirectUris"},

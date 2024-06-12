@@ -72,7 +72,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsUiReadOnly", GoMethod: "ResetIsUiReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoginDesign", GoMethod: "ResetLoginDesign"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionDuration", GoMethod: "ResetSessionDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUiReadOnlyToggleReason", GoMethod: "ResetUiReadOnlyToggleReason"},

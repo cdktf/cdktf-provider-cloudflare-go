@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -83,6 +83,8 @@ type Zone interface {
 	SetType(val *string)
 	TypeInput() *string
 	VanityNameServers() *[]*string
+	SetVanityNameServers(val *[]*string)
+	VanityNameServersInput() *[]*string
 	VerificationKey() *string
 	Zone() *string
 	SetZone(val *string)
@@ -138,6 +140,7 @@ type Zone interface {
 	ResetPaused()
 	ResetPlan()
 	ResetType()
+	ResetVanityNameServers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -476,6 +479,16 @@ func (j *jsiiProxy_Zone) VanityNameServers() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Zone) VanityNameServersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vanityNameServersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Zone) VerificationKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -507,7 +520,7 @@ func (j *jsiiProxy_Zone) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -525,7 +538,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 
@@ -666,6 +679,17 @@ func (j *jsiiProxy_Zone)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Zone)SetVanityNameServers(val *[]*string) {
+	if err := j.validateSetVanityNameServersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vanityNameServers",
 		val,
 	)
 }
@@ -1078,6 +1102,14 @@ func (z *jsiiProxy_Zone) ResetType() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_Zone) ResetVanityNameServers() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetVanityNameServers",
 		nil, // no parameters
 	)
 }

@@ -463,6 +463,14 @@ func (j *jsiiProxy_Zone) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Zone) validateSetVanityNameServersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Zone) validateSetZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

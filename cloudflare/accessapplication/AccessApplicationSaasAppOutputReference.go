@@ -57,6 +57,8 @@ type AccessApplicationSaasAppOutputReference interface {
 	GroupFilterRegex() *string
 	SetGroupFilterRegex(val *string)
 	GroupFilterRegexInput() *string
+	HybridAndImplicitOptions() AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+	HybridAndImplicitOptionsInput() *AccessApplicationSaasAppHybridAndImplicitOptions
 	IdpEntityId() *string
 	InternalValue() *AccessApplicationSaasApp
 	SetInternalValue(val *AccessApplicationSaasApp)
@@ -116,6 +118,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomAttribute(value interface{})
 	PutCustomClaim(value interface{})
+	PutHybridAndImplicitOptions(value *AccessApplicationSaasAppHybridAndImplicitOptions)
 	PutRefreshTokenOptions(value interface{})
 	ResetAllowPkceWithoutClientSecret()
 	ResetAppLauncherUrl()
@@ -126,6 +129,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	ResetDefaultRelayState()
 	ResetGrantTypes()
 	ResetGroupFilterRegex()
+	ResetHybridAndImplicitOptions()
 	ResetNameIdFormat()
 	ResetNameIdTransformJsonata()
 	ResetRedirectUris()
@@ -383,6 +387,26 @@ func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) GroupFilterRegexInpu
 	_jsii_.Get(
 		j,
 		"groupFilterRegexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) HybridAndImplicitOptions() AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference {
+	var returns AccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"hybridAndImplicitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) HybridAndImplicitOptionsInput() *AccessApplicationSaasAppHybridAndImplicitOptions {
+	var returns *AccessApplicationSaasAppHybridAndImplicitOptions
+	_jsii_.Get(
+		j,
+		"hybridAndImplicitOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1022,6 +1046,17 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutCustomClaim(value
 	)
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutHybridAndImplicitOptions(value *AccessApplicationSaasAppHybridAndImplicitOptions) {
+	if err := a.validatePutHybridAndImplicitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHybridAndImplicitOptions",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutRefreshTokenOptions(value interface{}) {
 	if err := a.validatePutRefreshTokenOptionsParameters(value); err != nil {
 		panic(err)
@@ -1101,6 +1136,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetGroupFilterRege
 	_jsii_.InvokeVoid(
 		a,
 		"resetGroupFilterRegex",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetHybridAndImplicitOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHybridAndImplicitOptions",
 		nil, // no parameters
 	)
 }

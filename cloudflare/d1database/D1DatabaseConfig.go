@@ -24,11 +24,11 @@ type D1DatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/d1_database#account_id D1Database#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/d1_database#account_id D1Database#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the D1 Database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/d1_database#name D1Database#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/d1_database#name D1Database#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

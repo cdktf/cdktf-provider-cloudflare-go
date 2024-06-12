@@ -55,6 +55,10 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutCustomCla
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutHybridAndImplicitOptionsParameters(value *AccessApplicationSaasAppHybridAndImplicitOptions) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value interface{}) error {
 	return nil
 }

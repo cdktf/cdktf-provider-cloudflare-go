@@ -49,6 +49,9 @@ type TeamsAccountProxyOutputReference interface {
 	Udp() interface{}
 	SetUdp(val interface{})
 	UdpInput() interface{}
+	VirtualIp() interface{}
+	SetVirtualIp(val interface{})
+	VirtualIpInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -218,6 +221,26 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) UdpInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) VirtualIp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) VirtualIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"virtualIpInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountProxyOutputReference {
 	_init_.Initialize()
@@ -330,6 +353,17 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetUdp(val interface{}) {
 	_jsii_.Set(
 		j,
 		"udp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsAccountProxyOutputReference)SetVirtualIp(val interface{}) {
+	if err := j.validateSetVirtualIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"virtualIp",
 		val,
 	)
 }

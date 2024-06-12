@@ -87,6 +87,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetTerraformR
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetVirtualNetworkIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetWeightParameters(val *float64) error {
 	return nil
 }

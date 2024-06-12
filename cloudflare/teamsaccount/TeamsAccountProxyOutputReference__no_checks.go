@@ -83,6 +83,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetUdpParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetVirtualIpParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

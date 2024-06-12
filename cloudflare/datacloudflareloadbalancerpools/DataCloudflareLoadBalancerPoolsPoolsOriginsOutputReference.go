@@ -44,6 +44,7 @@ type DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VirtualNetworkId() *string
 	Weight() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -189,6 +190,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference) VirtualNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"virtualNetworkId",
 		&returns,
 	)
 	return returns

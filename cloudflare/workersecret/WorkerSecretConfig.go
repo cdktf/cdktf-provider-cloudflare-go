@@ -24,23 +24,23 @@ type WorkerSecretConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/worker_secret#account_id WorkerSecret#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/worker_secret#account_id WorkerSecret#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/worker_secret#name WorkerSecret#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/worker_secret#name WorkerSecret#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the Worker script to associate the secret with.
 	//
 	// **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/worker_secret#script_name WorkerSecret#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/worker_secret#script_name WorkerSecret#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
 	// The text of the Worker secret. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/worker_secret#secret_text WorkerSecret#secret_text}
 	SecretText *string `field:"required" json:"secretText" yaml:"secretText"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.34.0/docs/resources/worker_secret#id WorkerSecret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.35.0/docs/resources/worker_secret#id WorkerSecret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
