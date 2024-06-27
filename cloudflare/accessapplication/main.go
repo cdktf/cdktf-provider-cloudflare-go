@@ -643,6 +643,8 @@ func init() {
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetime", GoGetter: "AccessTokenLifetime"},
+			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeInput", GoGetter: "AccessTokenLifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPkceWithoutClientSecret", GoGetter: "AllowPkceWithoutClientSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPkceWithoutClientSecretInput", GoGetter: "AllowPkceWithoutClientSecretInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherUrl", GoGetter: "AppLauncherUrl"},
@@ -696,6 +698,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redirectUrisInput", GoGetter: "RedirectUrisInput"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenOptions", GoGetter: "RefreshTokenOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenOptionsInput", GoGetter: "RefreshTokenOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessTokenLifetime", GoMethod: "ResetAccessTokenLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowPkceWithoutClientSecret", GoMethod: "ResetAllowPkceWithoutClientSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppLauncherUrl", GoMethod: "ResetAppLauncherUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthType", GoMethod: "ResetAuthType"},

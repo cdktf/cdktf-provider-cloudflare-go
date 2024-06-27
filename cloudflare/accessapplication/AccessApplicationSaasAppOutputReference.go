@@ -13,6 +13,9 @@ import (
 
 type AccessApplicationSaasAppOutputReference interface {
 	cdktf.ComplexObject
+	AccessTokenLifetime() *string
+	SetAccessTokenLifetime(val *string)
+	AccessTokenLifetimeInput() *string
 	AllowPkceWithoutClientSecret() interface{}
 	SetAllowPkceWithoutClientSecret(val interface{})
 	AllowPkceWithoutClientSecretInput() interface{}
@@ -120,6 +123,7 @@ type AccessApplicationSaasAppOutputReference interface {
 	PutCustomClaim(value interface{})
 	PutHybridAndImplicitOptions(value *AccessApplicationSaasAppHybridAndImplicitOptions)
 	PutRefreshTokenOptions(value interface{})
+	ResetAccessTokenLifetime()
 	ResetAllowPkceWithoutClientSecret()
 	ResetAppLauncherUrl()
 	ResetAuthType()
@@ -150,6 +154,26 @@ type AccessApplicationSaasAppOutputReference interface {
 // The jsii proxy struct for AccessApplicationSaasAppOutputReference
 type jsiiProxy_AccessApplicationSaasAppOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AccessTokenLifetime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenLifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AccessTokenLifetimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenLifetimeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) AllowPkceWithoutClientSecret() interface{} {
@@ -640,6 +664,17 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAccessTokenLifetime(val *string) {
+	if err := j.validateSetAccessTokenLifetimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessTokenLifetime",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference)SetAllowPkceWithoutClientSecret(val interface{}) {
 	if err := j.validateSetAllowPkceWithoutClientSecretParameters(val); err != nil {
 		panic(err)
@@ -1065,6 +1100,14 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) PutRefreshTokenOptio
 		a,
 		"putRefreshTokenOptions",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) ResetAccessTokenLifetime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessTokenLifetime",
+		nil, // no parameters
 	)
 }
 

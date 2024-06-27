@@ -67,6 +67,10 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAccessTokenLifetimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetAllowPkceWithoutClientSecretParameters(val interface{}) error {
 	return nil
 }
