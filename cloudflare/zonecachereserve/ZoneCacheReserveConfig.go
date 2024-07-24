@@ -24,13 +24,13 @@ type ZoneCacheReserveConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether to enable or disable Cache Reserve support for a given zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/zone_cache_reserve#enabled ZoneCacheReserve#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/zone_cache_reserve#enabled ZoneCacheReserve#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/zone_cache_reserve#id ZoneCacheReserve#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -115,6 +115,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetIgnoreCnameCategoryMatchesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validateSetInsecureDisableDnssecValidationParameters(val interface{}) error {
 	return nil
 }

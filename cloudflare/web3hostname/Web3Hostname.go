@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 type Web3Hostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_Web3Hostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3HostnameConfig) Web3Hostname {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/web3_hostname cloudflare_web3_hostname} Resource.
 func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *string, config *Web3HostnameConfig) {
 	_init_.Initialize()
 

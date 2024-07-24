@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list cloudflare_teams_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list cloudflare_teams_list}.
 type TeamsList interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -51,6 +51,8 @@ type TeamsList interface {
 	Items() *[]*string
 	SetItems(val *[]*string)
 	ItemsInput() *[]*string
+	ItemsWithDescription() TeamsListItemsWithDescriptionList
+	ItemsWithDescriptionInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -122,9 +124,11 @@ type TeamsList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutItemsWithDescription(value interface{})
 	ResetDescription()
 	ResetId()
 	ResetItems()
+	ResetItemsWithDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -306,6 +310,26 @@ func (j *jsiiProxy_TeamsList) ItemsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsList) ItemsWithDescription() TeamsListItemsWithDescriptionList {
+	var returns TeamsListItemsWithDescriptionList
+	_jsii_.Get(
+		j,
+		"itemsWithDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsList) ItemsWithDescriptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"itemsWithDescriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsList) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_TeamsList) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list cloudflare_teams_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list cloudflare_teams_list} Resource.
 func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfig) TeamsList {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.37.0/docs/resources/teams_list cloudflare_teams_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/teams_list cloudflare_teams_list} Resource.
 func NewTeamsList_Override(t TeamsList, scope constructs.Construct, id *string, config *TeamsListConfig) {
 	_init_.Initialize()
 
@@ -943,6 +967,17 @@ func (t *jsiiProxy_TeamsList) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_TeamsList) PutItemsWithDescription(value interface{}) {
+	if err := t.validatePutItemsWithDescriptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putItemsWithDescription",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsList) ResetDescription() {
 	_jsii_.InvokeVoid(
 		t,
@@ -963,6 +998,14 @@ func (t *jsiiProxy_TeamsList) ResetItems() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetItems",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsList) ResetItemsWithDescription() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetItemsWithDescription",
 		nil, // no parameters
 	)
 }

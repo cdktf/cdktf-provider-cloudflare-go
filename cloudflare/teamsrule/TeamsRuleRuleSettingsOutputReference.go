@@ -55,6 +55,9 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	EgressInput() *TeamsRuleRuleSettingsEgress
 	// Experimental.
 	Fqn() *string
+	IgnoreCnameCategoryMatches() interface{}
+	SetIgnoreCnameCategoryMatches(val interface{})
+	IgnoreCnameCategoryMatchesInput() interface{}
 	InsecureDisableDnssecValidation() interface{}
 	SetInsecureDisableDnssecValidation(val interface{})
 	InsecureDisableDnssecValidationInput() interface{}
@@ -131,6 +134,7 @@ type TeamsRuleRuleSettingsOutputReference interface {
 	ResetCheckSession()
 	ResetDnsResolvers()
 	ResetEgress()
+	ResetIgnoreCnameCategoryMatches()
 	ResetInsecureDisableDnssecValidation()
 	ResetIpCategories()
 	ResetL4Override()
@@ -390,6 +394,26 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) IgnoreCnameCategoryMatches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCnameCategoryMatches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference) IgnoreCnameCategoryMatchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreCnameCategoryMatchesInput",
 		&returns,
 	)
 	return returns
@@ -706,6 +730,17 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetComplexObjectIsFromSe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsOutputReference)SetIgnoreCnameCategoryMatches(val interface{}) {
+	if err := j.validateSetIgnoreCnameCategoryMatchesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreCnameCategoryMatches",
 		val,
 	)
 }
@@ -1159,6 +1194,14 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetEgress() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetEgress",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) ResetIgnoreCnameCategoryMatches() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetIgnoreCnameCategoryMatches",
 		nil, // no parameters
 	)
 }
