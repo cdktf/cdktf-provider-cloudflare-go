@@ -51,6 +51,14 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) validateResolveParamet
 	return nil
 }
 
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetAccessClientIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetAccessClientSecretParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

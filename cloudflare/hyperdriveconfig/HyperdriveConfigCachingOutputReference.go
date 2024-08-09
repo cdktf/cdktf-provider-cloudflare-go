@@ -35,6 +35,12 @@ type HyperdriveConfigCachingOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxAge() *float64
+	SetMaxAge(val *float64)
+	MaxAgeInput() *float64
+	StaleWhileRevalidate() *float64
+	SetStaleWhileRevalidate(val *float64)
+	StaleWhileRevalidateInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +74,8 @@ type HyperdriveConfigCachingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisabled()
+	ResetMaxAge()
+	ResetStaleWhileRevalidate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +156,46 @@ func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) InternalValue() inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) MaxAge() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) MaxAgeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxAgeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) StaleWhileRevalidate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"staleWhileRevalidate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) StaleWhileRevalidateInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"staleWhileRevalidateInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +289,28 @@ func (j *jsiiProxy_HyperdriveConfigCachingOutputReference)SetInternalValue(val i
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference)SetMaxAge(val *float64) {
+	if err := j.validateSetMaxAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxAge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference)SetStaleWhileRevalidate(val *float64) {
+	if err := j.validateSetStaleWhileRevalidateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staleWhileRevalidate",
 		val,
 	)
 }
@@ -457,6 +527,22 @@ func (h *jsiiProxy_HyperdriveConfigCachingOutputReference) ResetDisabled() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetDisabled",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfigCachingOutputReference) ResetMaxAge() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetMaxAge",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfigCachingOutputReference) ResetStaleWhileRevalidate() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetStaleWhileRevalidate",
 		nil, // no parameters
 	)
 }

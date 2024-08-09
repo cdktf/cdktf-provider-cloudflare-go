@@ -210,6 +210,22 @@ func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetMaxAgeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetStaleWhileRevalidateParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

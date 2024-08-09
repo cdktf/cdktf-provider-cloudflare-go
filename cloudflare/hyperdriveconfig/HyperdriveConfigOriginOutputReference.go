@@ -13,6 +13,12 @@ import (
 
 type HyperdriveConfigOriginOutputReference interface {
 	cdktf.ComplexObject
+	AccessClientId() *string
+	SetAccessClientId(val *string)
+	AccessClientIdInput() *string
+	AccessClientSecret() *string
+	SetAccessClientSecret(val *string)
+	AccessClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -82,6 +88,9 @@ type HyperdriveConfigOriginOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccessClientId()
+	ResetAccessClientSecret()
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -95,6 +104,46 @@ type HyperdriveConfigOriginOutputReference interface {
 // The jsii proxy struct for HyperdriveConfigOriginOutputReference
 type jsiiProxy_HyperdriveConfigOriginOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) AccessClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessClientSecretInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_HyperdriveConfigOriginOutputReference) ComplexObjectIndex() interface{} {
@@ -312,6 +361,28 @@ func NewHyperdriveConfigOriginOutputReference_Override(h HyperdriveConfigOriginO
 		"@cdktf/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientId(val *string) {
+	if err := j.validateSetAccessClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessClientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfigOriginOutputReference)SetAccessClientSecret(val *string) {
+	if err := j.validateSetAccessClientSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessClientSecret",
+		val,
 	)
 }
 
@@ -620,6 +691,30 @@ func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetAccessClientId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetAccessClientId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetAccessClientSecret() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetAccessClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetPort",
+		nil, // no parameters
+	)
 }
 
 func (h *jsiiProxy_HyperdriveConfigOriginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

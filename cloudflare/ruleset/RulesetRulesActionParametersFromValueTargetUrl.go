@@ -9,11 +9,11 @@ type RulesetRulesActionParametersFromValueTargetUrl struct {
 	//
 	// Refer to the [Firewall Rules language](https://developers.cloudflare.com/firewall/cf-firewall-language) documentation for all available fields, operators, and functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/ruleset#expression Ruleset#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/ruleset#expression Ruleset#expression}
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
 	// Static value to provide as the HTTP request header value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/ruleset#value Ruleset#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/ruleset#value Ruleset#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

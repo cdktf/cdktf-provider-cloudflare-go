@@ -67,6 +67,14 @@ func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetMaxAgeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetStaleWhileRevalidateParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_HyperdriveConfigCachingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

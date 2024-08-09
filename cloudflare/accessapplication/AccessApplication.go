@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -138,6 +138,9 @@ type AccessApplication interface {
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
+	SkipAppLauncherLoginPage() interface{}
+	SetSkipAppLauncherLoginPage(val interface{})
+	SkipAppLauncherLoginPageInput() interface{}
 	SkipInterstitial() interface{}
 	SetSkipInterstitial(val interface{})
 	SkipInterstitialInput() interface{}
@@ -236,6 +239,7 @@ type AccessApplication interface {
 	ResetSelfHostedDomains()
 	ResetServiceAuth401Redirect()
 	ResetSessionDuration()
+	ResetSkipAppLauncherLoginPage()
 	ResetSkipInterstitial()
 	ResetTags()
 	ResetType()
@@ -978,6 +982,26 @@ func (j *jsiiProxy_AccessApplication) SessionDurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) SkipAppLauncherLoginPage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAppLauncherLoginPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) SkipAppLauncherLoginPageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAppLauncherLoginPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) SkipInterstitial() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1089,7 +1113,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1107,7 +1131,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.38.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1446,6 +1470,17 @@ func (j *jsiiProxy_AccessApplication)SetSessionDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"sessionDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetSkipAppLauncherLoginPage(val interface{}) {
+	if err := j.validateSetSkipAppLauncherLoginPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipAppLauncherLoginPage",
 		val,
 	)
 }
@@ -2138,6 +2173,14 @@ func (a *jsiiProxy_AccessApplication) ResetSessionDuration() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSessionDuration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetSkipAppLauncherLoginPage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSkipAppLauncherLoginPage",
 		nil, // no parameters
 	)
 }

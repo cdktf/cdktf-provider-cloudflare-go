@@ -223,6 +223,10 @@ func (j *jsiiProxy_AccessApplication) validateSetSessionDurationParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplication) validateSetSkipAppLauncherLoginPageParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplication) validateSetSkipInterstitialParameters(val interface{}) error {
 	return nil
 }
