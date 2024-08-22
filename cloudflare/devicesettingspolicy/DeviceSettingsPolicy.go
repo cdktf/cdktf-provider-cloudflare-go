@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_settings_policy cloudflare_device_settings_policy}.
 type DeviceSettingsPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -118,6 +118,9 @@ type DeviceSettingsPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TunnelProtocol() *string
+	SetTunnelProtocol(val *string)
+	TunnelProtocolInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -180,6 +183,7 @@ type DeviceSettingsPolicy interface {
 	ResetServiceModeV2Port()
 	ResetSupportUrl()
 	ResetSwitchLocked()
+	ResetTunnelProtocol()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -738,8 +742,28 @@ func (j *jsiiProxy_DeviceSettingsPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DeviceSettingsPolicy) TunnelProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelProtocol",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+func (j *jsiiProxy_DeviceSettingsPolicy) TunnelProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) DeviceSettingsPolicy {
 	_init_.Initialize()
 
@@ -757,7 +781,7 @@ func NewDeviceSettingsPolicy(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.39.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/device_settings_policy cloudflare_device_settings_policy} Resource.
 func NewDeviceSettingsPolicy_Override(d DeviceSettingsPolicy, scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1065,17 @@ func (j *jsiiProxy_DeviceSettingsPolicy)SetSwitchLocked(val interface{}) {
 	_jsii_.Set(
 		j,
 		"switchLocked",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DeviceSettingsPolicy)SetTunnelProtocol(val *string) {
+	if err := j.validateSetTunnelProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelProtocol",
 		val,
 	)
 }
@@ -1530,6 +1565,14 @@ func (d *jsiiProxy_DeviceSettingsPolicy) ResetSwitchLocked() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSwitchLocked",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeviceSettingsPolicy) ResetTunnelProtocol() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTunnelProtocol",
 		nil, // no parameters
 	)
 }

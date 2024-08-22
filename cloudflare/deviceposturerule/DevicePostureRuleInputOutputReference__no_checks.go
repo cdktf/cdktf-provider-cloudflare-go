@@ -47,6 +47,10 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateInterpolationF
 	return nil
 }
 
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validatePutLocationsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -60,6 +64,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCertificate
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckDisksParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetCheckPrivateKeyParameters(val interface{}) error {
 	return nil
 }
 
@@ -100,6 +108,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetEnabledPara
 }
 
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetExistsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetExtendedKeyUsageParameters(val *[]*string) error {
 	return nil
 }
 

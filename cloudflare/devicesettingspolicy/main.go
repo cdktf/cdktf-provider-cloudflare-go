@@ -92,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceModeV2Port", GoMethod: "ResetServiceModeV2Port"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportUrl", GoMethod: "ResetSupportUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSwitchLocked", GoMethod: "ResetSwitchLocked"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTunnelProtocol", GoMethod: "ResetTunnelProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceModeV2Mode", GoGetter: "ServiceModeV2Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceModeV2ModeInput", GoGetter: "ServiceModeV2ModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceModeV2Port", GoGetter: "ServiceModeV2Port"},
@@ -109,6 +110,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnelProtocol", GoGetter: "TunnelProtocol"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnelProtocolInput", GoGetter: "TunnelProtocolInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DeviceSettingsPolicy{}

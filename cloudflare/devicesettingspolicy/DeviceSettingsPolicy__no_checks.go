@@ -183,6 +183,10 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetSwitchLockedParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetTunnelProtocolParameters(val *string) error {
+	return nil
+}
+
 func validateNewDeviceSettingsPolicyParameters(scope constructs.Construct, id *string, config *DeviceSettingsPolicyConfig) error {
 	return nil
 }
