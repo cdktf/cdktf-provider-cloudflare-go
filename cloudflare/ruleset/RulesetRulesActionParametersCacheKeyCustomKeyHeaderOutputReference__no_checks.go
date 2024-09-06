@@ -63,6 +63,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateSetContainsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) validateSetExcludeOriginParameters(val interface{}) error {
 	return nil
 }

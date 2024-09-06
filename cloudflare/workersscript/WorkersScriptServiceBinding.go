@@ -7,15 +7,15 @@ package workersscript
 type WorkersScriptServiceBinding struct {
 	// The global variable for the binding in your Worker code.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#name WorkersScript#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script#name WorkersScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the Worker to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#service WorkersScript#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script#service WorkersScript#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// The name of the Worker environment to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/workers_script#environment WorkersScript#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script#environment WorkersScript#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 }
 

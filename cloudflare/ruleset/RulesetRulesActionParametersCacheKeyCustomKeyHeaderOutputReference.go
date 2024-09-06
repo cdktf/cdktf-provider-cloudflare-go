@@ -26,6 +26,9 @@ type RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference interfac
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Contains() interface{}
+	SetContains(val interface{})
+	ContainsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -74,6 +77,7 @@ type RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCheckPresence()
+	ResetContains()
 	ResetExcludeOrigin()
 	ResetInclude()
 	// Produce the Token's value at resolution time.
@@ -126,6 +130,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) Contains() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"contains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) ContainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"containsInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +302,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference)SetContains(val interface{}) {
+	if err := j.validateSetContainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contains",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputRefe
 	_jsii_.InvokeVoid(
 		r,
 		"resetCheckPresence",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference) ResetContains() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetContains",
 		nil, // no parameters
 	)
 }

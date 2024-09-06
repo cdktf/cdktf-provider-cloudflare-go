@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -48,6 +48,9 @@ type WaitingRoom interface {
 	DisableSessionRenewal() interface{}
 	SetDisableSessionRenewal(val interface{})
 	DisableSessionRenewalInput() interface{}
+	EnabledOriginCommands() *[]*string
+	SetEnabledOriginCommands(val *[]*string)
+	EnabledOriginCommandsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -170,6 +173,7 @@ type WaitingRoom interface {
 	ResetDefaultTemplateLanguage()
 	ResetDescription()
 	ResetDisableSessionRenewal()
+	ResetEnabledOriginCommands()
 	ResetId()
 	ResetJsonResponseEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -365,6 +369,26 @@ func (j *jsiiProxy_WaitingRoom) DisableSessionRenewalInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableSessionRenewalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) EnabledOriginCommands() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledOriginCommands",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) EnabledOriginCommandsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledOriginCommandsInput",
 		&returns,
 	)
 	return returns
@@ -761,7 +785,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -779,7 +803,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.40.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -871,6 +895,17 @@ func (j *jsiiProxy_WaitingRoom)SetDisableSessionRenewal(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableSessionRenewal",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetEnabledOriginCommands(val *[]*string) {
+	if err := j.validateSetEnabledOriginCommandsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledOriginCommands",
 		val,
 	)
 }
@@ -1475,6 +1510,14 @@ func (w *jsiiProxy_WaitingRoom) ResetDisableSessionRenewal() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDisableSessionRenewal",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetEnabledOriginCommands() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnabledOriginCommands",
 		nil, // no parameters
 	)
 }

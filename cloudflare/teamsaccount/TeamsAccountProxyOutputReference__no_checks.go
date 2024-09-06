@@ -59,6 +59,10 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetDisableForTimeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetInternalValueParameters(val *TeamsAccountProxy) error {
 	return nil
 }

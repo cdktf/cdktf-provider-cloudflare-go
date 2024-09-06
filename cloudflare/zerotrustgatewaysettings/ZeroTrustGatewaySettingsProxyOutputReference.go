@@ -28,6 +28,9 @@ type ZeroTrustGatewaySettingsProxyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableForTime() *float64
+	SetDisableForTime(val *float64)
+	DisableForTimeInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ZeroTrustGatewaySettingsProxy
@@ -116,6 +119,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) DisableForTime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"disableForTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) DisableForTimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"disableForTimeInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +310,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference)SetDisableForTime(val *float64) {
+	if err := j.validateSetDisableForTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableForTime",
 		val,
 	)
 }

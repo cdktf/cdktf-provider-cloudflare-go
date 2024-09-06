@@ -59,6 +59,10 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) validateSetDisableForTimeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsProxyOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewaySettingsProxy) error {
 	return nil
 }
