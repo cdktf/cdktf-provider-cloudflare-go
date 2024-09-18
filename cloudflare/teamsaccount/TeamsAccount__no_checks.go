@@ -87,6 +87,10 @@ func (t *jsiiProxy_TeamsAccount) validatePutBodyScanningParameters(value *TeamsA
 	return nil
 }
 
+func (t *jsiiProxy_TeamsAccount) validatePutCertificateParameters(value *TeamsAccountCertificate) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsAccount) validatePutCustomCertificateParameters(value *TeamsAccountCustomCertificate) error {
 	return nil
 }

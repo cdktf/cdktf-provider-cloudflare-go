@@ -91,6 +91,10 @@ func validateBotManagement_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetAiBotsProtectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val interface{}) error {
 	return nil
 }

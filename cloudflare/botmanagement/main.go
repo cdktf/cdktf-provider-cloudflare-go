@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aiBotsProtection", GoGetter: "AiBotsProtection"},
+			_jsii_.MemberProperty{JsiiProperty: "aiBotsProtectionInput", GoGetter: "AiBotsProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoUpdateModel", GoGetter: "AutoUpdateModel"},
 			_jsii_.MemberProperty{JsiiProperty: "autoUpdateModelInput", GoGetter: "AutoUpdateModelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAiBotsProtection", GoMethod: "ResetAiBotsProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoUpdateModel", GoMethod: "ResetAutoUpdateModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableJs", GoMethod: "ResetEnableJs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFightMode", GoMethod: "ResetFightMode"},

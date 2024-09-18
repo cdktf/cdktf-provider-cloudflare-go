@@ -240,6 +240,17 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBodyScanningParameters(v
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCertificateParameters(value *ZeroTrustGatewaySettingsCertificate) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCustomCertificateParameters(value *ZeroTrustGatewaySettingsCustomCertificate) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

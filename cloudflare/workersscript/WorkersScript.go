@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -58,6 +58,8 @@ type WorkersScript interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HyperdriveConfigBinding() WorkersScriptHyperdriveConfigBindingList
+	HyperdriveConfigBindingInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -156,6 +158,7 @@ type WorkersScript interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAnalyticsEngineBinding(value interface{})
 	PutD1DatabaseBinding(value interface{})
+	PutHyperdriveConfigBinding(value interface{})
 	PutKvNamespaceBinding(value interface{})
 	PutPlacement(value interface{})
 	PutPlainTextBinding(value interface{})
@@ -169,6 +172,7 @@ type WorkersScript interface {
 	ResetCompatibilityFlags()
 	ResetD1DatabaseBinding()
 	ResetDispatchNamespace()
+	ResetHyperdriveConfigBinding()
 	ResetId()
 	ResetKvNamespaceBinding()
 	ResetLogpush()
@@ -417,6 +421,26 @@ func (j *jsiiProxy_WorkersScript) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) HyperdriveConfigBinding() WorkersScriptHyperdriveConfigBindingList {
+	var returns WorkersScriptHyperdriveConfigBindingList
+	_jsii_.Get(
+		j,
+		"hyperdriveConfigBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) HyperdriveConfigBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hyperdriveConfigBindingInput",
 		&returns,
 	)
 	return returns
@@ -763,7 +787,7 @@ func (j *jsiiProxy_WorkersScript) WebassemblyBindingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -781,7 +805,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1345,6 +1369,17 @@ func (w *jsiiProxy_WorkersScript) PutD1DatabaseBinding(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutHyperdriveConfigBinding(value interface{}) {
+	if err := w.validatePutHyperdriveConfigBindingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putHyperdriveConfigBinding",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutKvNamespaceBinding(value interface{}) {
 	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
 		panic(err)
@@ -1469,6 +1504,14 @@ func (w *jsiiProxy_WorkersScript) ResetDispatchNamespace() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDispatchNamespace",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetHyperdriveConfigBinding() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHyperdriveConfigBinding",
 		nil, // no parameters
 	)
 }

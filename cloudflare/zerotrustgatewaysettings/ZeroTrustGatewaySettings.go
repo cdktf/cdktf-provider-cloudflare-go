@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}.
 type ZeroTrustGatewaySettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -29,6 +29,8 @@ type ZeroTrustGatewaySettings interface {
 	BodyScanningInput() *ZeroTrustGatewaySettingsBodyScanning
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Certificate() ZeroTrustGatewaySettingsCertificateOutputReference
+	CertificateInput() *ZeroTrustGatewaySettingsCertificate
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -148,6 +150,7 @@ type ZeroTrustGatewaySettings interface {
 	PutAntivirus(value *ZeroTrustGatewaySettingsAntivirus)
 	PutBlockPage(value *ZeroTrustGatewaySettingsBlockPage)
 	PutBodyScanning(value *ZeroTrustGatewaySettingsBodyScanning)
+	PutCertificate(value *ZeroTrustGatewaySettingsCertificate)
 	PutCustomCertificate(value *ZeroTrustGatewaySettingsCustomCertificate)
 	PutExtendedEmailMatching(value *ZeroTrustGatewaySettingsExtendedEmailMatching)
 	PutFips(value *ZeroTrustGatewaySettingsFips)
@@ -159,6 +162,7 @@ type ZeroTrustGatewaySettings interface {
 	ResetAntivirus()
 	ResetBlockPage()
 	ResetBodyScanning()
+	ResetCertificate()
 	ResetCustomCertificate()
 	ResetExtendedEmailMatching()
 	ResetFips()
@@ -297,6 +301,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettings) Certificate() ZeroTrustGatewaySettingsCertificateOutputReference {
+	var returns ZeroTrustGatewaySettingsCertificateOutputReference
+	_jsii_.Get(
+		j,
+		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettings) CertificateInput() *ZeroTrustGatewaySettingsCertificate {
+	var returns *ZeroTrustGatewaySettingsCertificate
+	_jsii_.Get(
+		j,
+		"certificateInput",
 		&returns,
 	)
 	return returns
@@ -693,7 +717,7 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) UrlBrowserIsolationEnabledInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
 func NewZeroTrustGatewaySettings(scope constructs.Construct, id *string, config *ZeroTrustGatewaySettingsConfig) ZeroTrustGatewaySettings {
 	_init_.Initialize()
 
@@ -711,7 +735,7 @@ func NewZeroTrustGatewaySettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource.
 func NewZeroTrustGatewaySettings_Override(z ZeroTrustGatewaySettings, scope constructs.Construct, id *string, config *ZeroTrustGatewaySettingsConfig) {
 	_init_.Initialize()
 
@@ -1253,6 +1277,17 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) PutBodyScanning(value *ZeroTrustGat
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettings) PutCertificate(value *ZeroTrustGatewaySettingsCertificate) {
+	if err := z.validatePutCertificateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putCertificate",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettings) PutCustomCertificate(value *ZeroTrustGatewaySettingsCustomCertificate) {
 	if err := z.validatePutCustomCertificateParameters(value); err != nil {
 		panic(err)
@@ -1358,6 +1393,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetBodyScanning() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetBodyScanning",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettings) ResetCertificate() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCertificate",
 		nil, // no parameters
 	)
 }

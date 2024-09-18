@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
 type ZeroTrustRiskBehavior interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ZeroTrustRiskBehavior) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) ZeroTrustRiskBehavior {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Resource.
 func NewZeroTrustRiskBehavior_Override(z ZeroTrustRiskBehavior, scope constructs.Construct, id *string, config *ZeroTrustRiskBehaviorConfig) {
 	_init_.Initialize()
 

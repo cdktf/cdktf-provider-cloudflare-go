@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
+	AiBotsProtection() *string
+	SetAiBotsProtection(val *string)
+	AiBotsProtectionInput() *string
 	AutoUpdateModel() interface{}
 	SetAutoUpdateModel(val interface{})
 	AutoUpdateModelInput() interface{}
@@ -138,6 +141,7 @@ type BotManagement interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
 	ResetEnableJs()
 	ResetFightMode()
@@ -167,6 +171,26 @@ type BotManagement interface {
 // The jsii proxy struct for BotManagement
 type jsiiProxy_BotManagement struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BotManagement) AiBotsProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiBotsProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) AiBotsProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aiBotsProtectionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BotManagement) AutoUpdateModel() interface{} {
@@ -560,7 +584,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *
 		"@cdktf/provider-cloudflare.botManagement.BotManagement",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetAiBotsProtection(val *string) {
+	if err := j.validateSetAiBotsProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiBotsProtection",
+		val,
 	)
 }
 
@@ -1128,6 +1163,14 @@ func (b *jsiiProxy_BotManagement) OverrideLogicalId(newLogicalId *string) {
 		b,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetAiBotsProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAiBotsProtection",
+		nil, // no parameters
 	)
 }
 

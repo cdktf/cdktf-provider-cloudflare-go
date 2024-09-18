@@ -83,6 +83,10 @@ func (w *jsiiProxy_WorkerScript) validatePutD1DatabaseBindingParameters(value in
 	return nil
 }
 
+func (w *jsiiProxy_WorkerScript) validatePutHyperdriveConfigBindingParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
 	return nil
 }

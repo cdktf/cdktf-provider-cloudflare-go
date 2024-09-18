@@ -87,6 +87,10 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBodyScanningParameters(v
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCertificateParameters(value *ZeroTrustGatewaySettingsCertificate) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCustomCertificateParameters(value *ZeroTrustGatewaySettingsCustomCertificate) error {
 	return nil
 }

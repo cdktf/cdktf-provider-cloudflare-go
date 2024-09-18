@@ -63,6 +63,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCache
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutCacheReserveParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutEdgeTtlParameters(value interface{}) error {
 	return nil
 }

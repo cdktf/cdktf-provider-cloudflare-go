@@ -227,6 +227,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetPseud
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetReplaceInsecureJsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetResponseBufferingParameters(val *string) error {
 	return nil
 }

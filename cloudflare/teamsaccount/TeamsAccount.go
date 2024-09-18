@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/teams_account cloudflare_teams_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/teams_account cloudflare_teams_account}.
 type TeamsAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -29,6 +29,8 @@ type TeamsAccount interface {
 	BodyScanningInput() *TeamsAccountBodyScanning
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Certificate() TeamsAccountCertificateOutputReference
+	CertificateInput() *TeamsAccountCertificate
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -148,6 +150,7 @@ type TeamsAccount interface {
 	PutAntivirus(value *TeamsAccountAntivirus)
 	PutBlockPage(value *TeamsAccountBlockPage)
 	PutBodyScanning(value *TeamsAccountBodyScanning)
+	PutCertificate(value *TeamsAccountCertificate)
 	PutCustomCertificate(value *TeamsAccountCustomCertificate)
 	PutExtendedEmailMatching(value *TeamsAccountExtendedEmailMatching)
 	PutFips(value *TeamsAccountFips)
@@ -159,6 +162,7 @@ type TeamsAccount interface {
 	ResetAntivirus()
 	ResetBlockPage()
 	ResetBodyScanning()
+	ResetCertificate()
 	ResetCustomCertificate()
 	ResetExtendedEmailMatching()
 	ResetFips()
@@ -297,6 +301,26 @@ func (j *jsiiProxy_TeamsAccount) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) Certificate() TeamsAccountCertificateOutputReference {
+	var returns TeamsAccountCertificateOutputReference
+	_jsii_.Get(
+		j,
+		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsAccount) CertificateInput() *TeamsAccountCertificate {
+	var returns *TeamsAccountCertificate
+	_jsii_.Get(
+		j,
+		"certificateInput",
 		&returns,
 	)
 	return returns
@@ -693,7 +717,7 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
 	_init_.Initialize()
 
@@ -711,7 +735,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/teams_account cloudflare_teams_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *string, config *TeamsAccountConfig) {
 	_init_.Initialize()
 
@@ -1253,6 +1277,17 @@ func (t *jsiiProxy_TeamsAccount) PutBodyScanning(value *TeamsAccountBodyScanning
 	)
 }
 
+func (t *jsiiProxy_TeamsAccount) PutCertificate(value *TeamsAccountCertificate) {
+	if err := t.validatePutCertificateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putCertificate",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsAccount) PutCustomCertificate(value *TeamsAccountCustomCertificate) {
 	if err := t.validatePutCustomCertificateParameters(value); err != nil {
 		panic(err)
@@ -1358,6 +1393,14 @@ func (t *jsiiProxy_TeamsAccount) ResetBodyScanning() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetBodyScanning",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsAccount) ResetCertificate() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetCertificate",
 		nil, // no parameters
 	)
 }

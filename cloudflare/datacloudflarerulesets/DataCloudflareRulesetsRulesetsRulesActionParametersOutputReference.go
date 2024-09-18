@@ -20,6 +20,7 @@ type DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference interfac
 	BrowserTtl() DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList
 	Cache() cdktf.IResolvable
 	CacheKey() DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList
+	CacheReserve() DataCloudflareRulesetsRulesetsRulesActionParametersCacheReserveList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputRefe
 	_jsii_.Get(
 		j,
 		"cacheKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference) CacheReserve() DataCloudflareRulesetsRulesetsRulesActionParametersCacheReserveList {
+	var returns DataCloudflareRulesetsRulesetsRulesActionParametersCacheReserveList
+	_jsii_.Get(
+		j,
+		"cacheReserve",
 		&returns,
 	)
 	return returns

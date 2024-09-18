@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.41.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 

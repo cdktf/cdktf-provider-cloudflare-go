@@ -149,6 +149,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	PseudoIpv4() *string
 	SetPseudoIpv4(val *string)
 	PseudoIpv4Input() *string
+	ReplaceInsecureJs() *string
+	SetReplaceInsecureJs(val *string)
+	ReplaceInsecureJsInput() *string
 	ResponseBuffering() *string
 	SetResponseBuffering(val *string)
 	ResponseBufferingInput() *string
@@ -275,6 +278,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetPrivacyPass()
 	ResetProxyReadTimeout()
 	ResetPseudoIpv4()
+	ResetReplaceInsecureJs()
 	ResetResponseBuffering()
 	ResetRocketLoader()
 	ResetSecurityHeader()
@@ -1157,6 +1161,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PseudoIpv4Input(
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ReplaceInsecureJs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ReplaceInsecureJsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResponseBuffering() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1985,6 +2009,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetPseudoIpv4(val
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetReplaceInsecureJs(val *string) {
+	if err := j.validateSetReplaceInsecureJsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceInsecureJs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetResponseBuffering(val *string) {
 	if err := j.validateSetResponseBufferingParameters(val); err != nil {
 		panic(err)
@@ -2729,6 +2764,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetPseudoIpv4(
 	_jsii_.InvokeVoid(
 		z,
 		"resetPseudoIpv4",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetReplaceInsecureJs() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetReplaceInsecureJs",
 		nil, // no parameters
 	)
 }

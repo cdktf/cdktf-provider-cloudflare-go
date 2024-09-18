@@ -72,6 +72,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	PrivacyPass() *string
 	ProxyReadTimeout() *string
 	PseudoIpv4() *string
+	ReplaceInsecureJs() *string
 	ResponseBuffering() *string
 	RocketLoader() *string
 	SecurityHeader() ZoneSettingsOverrideInitialSettingsSecurityHeaderList
@@ -581,6 +582,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) PseudoIpv
 	_jsii_.Get(
 		j,
 		"pseudoIpv4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) ReplaceInsecureJs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replaceInsecureJs",
 		&returns,
 	)
 	return returns

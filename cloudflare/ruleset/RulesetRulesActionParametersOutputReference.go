@@ -33,6 +33,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	CacheInput() interface{}
 	CacheKey() RulesetRulesActionParametersCacheKeyList
 	CacheKeyInput() interface{}
+	CacheReserve() RulesetRulesActionParametersCacheReserveList
+	CacheReserveInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -212,6 +214,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutAutominify(value interface{})
 	PutBrowserTtl(value interface{})
 	PutCacheKey(value interface{})
+	PutCacheReserve(value interface{})
 	PutEdgeTtl(value interface{})
 	PutFromList(value interface{})
 	PutFromValue(value interface{})
@@ -231,6 +234,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetBrowserTtl()
 	ResetCache()
 	ResetCacheKey()
+	ResetCacheReserve()
 	ResetContent()
 	ResetContentType()
 	ResetCookieFields()
@@ -446,6 +450,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheKeyInput() 
 	_jsii_.Get(
 		j,
 		"cacheKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheReserve() RulesetRulesActionParametersCacheReserveList {
+	var returns RulesetRulesActionParametersCacheReserveList
+	_jsii_.Get(
+		j,
+		"cacheReserve",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) CacheReserveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheReserveInput",
 		&returns,
 	)
 	return returns
@@ -2152,6 +2176,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutCacheKey(valu
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutCacheReserve(value interface{}) {
+	if err := r.validatePutCacheReserveParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putCacheReserve",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutEdgeTtl(value interface{}) {
 	if err := r.validatePutEdgeTtlParameters(value); err != nil {
 		panic(err)
@@ -2333,6 +2368,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetCacheKey() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetCacheKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetCacheReserve() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCacheReserve",
 		nil, // no parameters
 	)
 }
