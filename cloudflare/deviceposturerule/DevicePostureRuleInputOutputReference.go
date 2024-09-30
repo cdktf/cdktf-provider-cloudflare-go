@@ -121,6 +121,9 @@ type DevicePostureRuleInputOutputReference interface {
 	Running() interface{}
 	SetRunning(val interface{})
 	RunningInput() interface{}
+	Score() *float64
+	SetScore(val *float64)
+	ScoreInput() *float64
 	SensorConfig() *string
 	SetSensorConfig(val *string)
 	SensorConfigInput() *string
@@ -205,6 +208,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetRequireAll()
 	ResetRiskLevel()
 	ResetRunning()
+	ResetScore()
 	ResetSensorConfig()
 	ResetSha256()
 	ResetState()
@@ -877,6 +881,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RunningInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Score() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"score",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ScoreInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SensorConfig() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1417,6 +1441,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interfac
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetScore(val *float64) {
+	if err := j.validateSetScoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"score",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSensorConfig(val *string) {
 	if err := j.validateSetSensorConfigParameters(val); err != nil {
 		panic(err)
@@ -1949,6 +1984,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetRunning() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRunning",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScore",
 		nil, // no parameters
 	)
 }

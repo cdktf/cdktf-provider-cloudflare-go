@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain}.
 type ZeroTrustLocalFallbackDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ZeroTrustLocalFallbackDomain) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain} Resource.
 func NewZeroTrustLocalFallbackDomain(scope constructs.Construct, id *string, config *ZeroTrustLocalFallbackDomainConfig) ZeroTrustLocalFallbackDomain {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewZeroTrustLocalFallbackDomain(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_local_fallback_domain cloudflare_zero_trust_local_fallback_domain} Resource.
 func NewZeroTrustLocalFallbackDomain_Override(z ZeroTrustLocalFallbackDomain, scope constructs.Construct, id *string, config *ZeroTrustLocalFallbackDomainConfig) {
 	_init_.Initialize()
 

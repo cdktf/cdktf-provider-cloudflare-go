@@ -79,6 +79,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	SecurityLevel() *string
 	ServerSideExclude() *string
 	SortQueryStringForCache() *string
+	SpeedBrain() *string
 	Ssl() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -652,6 +653,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SortQuery
 	_jsii_.Get(
 		j,
 		"sortQueryStringForCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SpeedBrain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrain",
 		&returns,
 	)
 	return returns

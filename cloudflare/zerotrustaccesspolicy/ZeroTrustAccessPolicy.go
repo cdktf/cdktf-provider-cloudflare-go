@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,6 +32,8 @@ type ZeroTrustAccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference
+	ConnectionRulesInput() *ZeroTrustAccessPolicyConnectionRules
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -149,6 +151,7 @@ type ZeroTrustAccessPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalGroup(value interface{})
+	PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
 	PutRequire(value interface{})
@@ -156,6 +159,7 @@ type ZeroTrustAccessPolicy interface {
 	ResetApplicationId()
 	ResetApprovalGroup()
 	ResetApprovalRequired()
+	ResetConnectionRules()
 	ResetExclude()
 	ResetId()
 	ResetIsolationRequired()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRules() ZeroTrustAccessPolicyConnectionRulesOutputReference {
+	var returns ZeroTrustAccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicy) ConnectionRulesInput() *ZeroTrustAccessPolicyConnectionRules {
+	var returns *ZeroTrustAccessPolicyConnectionRules
+	_jsii_.Get(
+		j,
+		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -667,7 +691,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -1260,6 +1284,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) PutApprovalGroup(value interface{}) {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) PutConnectionRules(value *ZeroTrustAccessPolicyConnectionRules) {
+	if err := z.validatePutConnectionRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putConnectionRules",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) PutExclude(value interface{}) {
 	if err := z.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1321,6 +1356,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetApprovalRequired() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetApprovalRequired",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetConnectionRules() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetConnectionRules",
 		nil, // no parameters
 	)
 }

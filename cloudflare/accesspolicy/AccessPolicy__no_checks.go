@@ -79,6 +79,10 @@ func (a *jsiiProxy_AccessPolicy) validatePutApprovalGroupParameters(value interf
 	return nil
 }
 
+func (a *jsiiProxy_AccessPolicy) validatePutConnectionRulesParameters(value *AccessPolicyConnectionRules) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessPolicy) validatePutExcludeParameters(value interface{}) error {
 	return nil
 }

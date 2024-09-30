@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories cloudflare_gateway_categories}.
 type DataCloudflareGatewayCategories interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataCloudflareGatewayCategories) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source.
 func NewDataCloudflareGatewayCategories(scope constructs.Construct, id *string, config *DataCloudflareGatewayCategoriesConfig) DataCloudflareGatewayCategories {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataCloudflareGatewayCategories(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/data-sources/gateway_categories cloudflare_gateway_categories} Data Source.
 func NewDataCloudflareGatewayCategories_Override(d DataCloudflareGatewayCategories, scope constructs.Construct, id *string, config *DataCloudflareGatewayCategoriesConfig) {
 	_init_.Initialize()
 

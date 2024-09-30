@@ -79,6 +79,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupParameters(val
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutConnectionRulesParameters(value *ZeroTrustAccessPolicyConnectionRules) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutExcludeParameters(value interface{}) error {
 	return nil
 }

@@ -95,6 +95,10 @@ func (a *jsiiProxy_AccessApplication) validatePutScimConfigParameters(value *Acc
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validatePutTargetCriteriaParameters(value interface{}) error {
+	return nil
+}
+
 func validateAccessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

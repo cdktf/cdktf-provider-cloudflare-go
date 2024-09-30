@@ -562,6 +562,14 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSortQ
 	return nil
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSpeedBrainParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy cloudflare_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy cloudflare_access_policy}.
 type AccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,6 +32,8 @@ type AccessPolicy interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionRules() AccessPolicyConnectionRulesOutputReference
+	ConnectionRulesInput() *AccessPolicyConnectionRules
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -149,6 +151,7 @@ type AccessPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalGroup(value interface{})
+	PutConnectionRules(value *AccessPolicyConnectionRules)
 	PutExclude(value interface{})
 	PutInclude(value interface{})
 	PutRequire(value interface{})
@@ -156,6 +159,7 @@ type AccessPolicy interface {
 	ResetApplicationId()
 	ResetApprovalGroup()
 	ResetApprovalRequired()
+	ResetConnectionRules()
 	ResetExclude()
 	ResetId()
 	ResetIsolationRequired()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_AccessPolicy) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) ConnectionRules() AccessPolicyConnectionRulesOutputReference {
+	var returns AccessPolicyConnectionRulesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicy) ConnectionRulesInput() *AccessPolicyConnectionRules {
+	var returns *AccessPolicyConnectionRules
+	_jsii_.Get(
+		j,
+		"connectionRulesInput",
 		&returns,
 	)
 	return returns
@@ -667,7 +691,7 @@ func (j *jsiiProxy_AccessPolicy) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolicyConfig) AccessPolicy {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewAccessPolicy(scope constructs.Construct, id *string, config *AccessPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_policy cloudflare_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_policy cloudflare_access_policy} Resource.
 func NewAccessPolicy_Override(a AccessPolicy, scope constructs.Construct, id *string, config *AccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -1260,6 +1284,17 @@ func (a *jsiiProxy_AccessPolicy) PutApprovalGroup(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessPolicy) PutConnectionRules(value *AccessPolicyConnectionRules) {
+	if err := a.validatePutConnectionRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConnectionRules",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessPolicy) PutExclude(value interface{}) {
 	if err := a.validatePutExcludeParameters(value); err != nil {
 		panic(err)
@@ -1321,6 +1356,14 @@ func (a *jsiiProxy_AccessPolicy) ResetApprovalRequired() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetApprovalRequired",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessPolicy) ResetConnectionRules() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionRules",
 		nil, // no parameters
 	)
 }

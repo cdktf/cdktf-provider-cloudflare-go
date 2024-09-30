@@ -169,6 +169,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	SortQueryStringForCache() *string
 	SetSortQueryStringForCache(val *string)
 	SortQueryStringForCacheInput() *string
+	SpeedBrain() *string
+	SetSpeedBrain(val *string)
+	SpeedBrainInput() *string
 	Ssl() *string
 	SetSsl(val *string)
 	SslInput() *string
@@ -285,6 +288,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetSecurityLevel()
 	ResetServerSideExclude()
 	ResetSortQueryStringForCache()
+	ResetSpeedBrain()
 	ResetSsl()
 	ResetTls12Only()
 	ResetTls13()
@@ -1301,6 +1305,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SortQueryStringF
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SpeedBrain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SpeedBrainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"speedBrainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Ssl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2075,6 +2099,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSortQueryStrin
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSpeedBrain(val *string) {
+	if err := j.validateSetSpeedBrainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"speedBrain",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSsl(val *string) {
 	if err := j.validateSetSslParameters(val); err != nil {
 		panic(err)
@@ -2820,6 +2855,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSortQuerySt
 	_jsii_.InvokeVoid(
 		z,
 		"resetSortQueryStringForCache",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSpeedBrain() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSpeedBrain",
 		nil, // no parameters
 	)
 }

@@ -121,6 +121,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	Running() interface{}
 	SetRunning(val interface{})
 	RunningInput() interface{}
+	Score() *float64
+	SetScore(val *float64)
+	ScoreInput() *float64
 	SensorConfig() *string
 	SetSensorConfig(val *string)
 	SensorConfigInput() *string
@@ -205,6 +208,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetRequireAll()
 	ResetRiskLevel()
 	ResetRunning()
+	ResetScore()
 	ResetSensorConfig()
 	ResetSha256()
 	ResetState()
@@ -877,6 +881,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) RunningInput(
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) Score() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"score",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ScoreInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scoreInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SensorConfig() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1417,6 +1441,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetRunning(val
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetScore(val *float64) {
+	if err := j.validateSetScoreParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"score",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSensorConfig(val *string) {
 	if err := j.validateSetSensorConfigParameters(val); err != nil {
 		panic(err)
@@ -1949,6 +1984,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetRunning(
 	_jsii_.InvokeVoid(
 		z,
 		"resetRunning",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetScore() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetScore",
 		nil, // no parameters
 	)
 }

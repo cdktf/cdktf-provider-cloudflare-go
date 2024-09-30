@@ -183,6 +183,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetRu
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetScoreParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetSensorConfigParameters(val *string) error {
 	return nil
 }

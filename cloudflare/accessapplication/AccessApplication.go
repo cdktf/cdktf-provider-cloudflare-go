@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -147,6 +147,8 @@ type AccessApplication interface {
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
+	TargetCriteria() AccessApplicationTargetCriteriaList
+	TargetCriteriaInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -207,6 +209,7 @@ type AccessApplication interface {
 	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
 	PutScimConfig(value *AccessApplicationScimConfig)
+	PutTargetCriteria(value interface{})
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
@@ -242,6 +245,7 @@ type AccessApplication interface {
 	ResetSkipAppLauncherLoginPage()
 	ResetSkipInterstitial()
 	ResetTags()
+	ResetTargetCriteria()
 	ResetType()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1042,6 +1046,26 @@ func (j *jsiiProxy_AccessApplication) TagsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) TargetCriteria() AccessApplicationTargetCriteriaList {
+	var returns AccessApplicationTargetCriteriaList
+	_jsii_.Get(
+		j,
+		"targetCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) TargetCriteriaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetCriteriaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1113,7 +1137,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1131,7 +1155,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1937,6 +1961,17 @@ func (a *jsiiProxy_AccessApplication) PutScimConfig(value *AccessApplicationScim
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) PutTargetCriteria(value interface{}) {
+	if err := a.validatePutTargetCriteriaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTargetCriteria",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2197,6 +2232,14 @@ func (a *jsiiProxy_AccessApplication) ResetTags() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetTargetCriteria() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetCriteria",
 		nil, // no parameters
 	)
 }

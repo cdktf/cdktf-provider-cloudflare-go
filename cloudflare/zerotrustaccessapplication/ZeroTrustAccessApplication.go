@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type ZeroTrustAccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -147,6 +147,8 @@ type ZeroTrustAccessApplication interface {
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
+	TargetCriteria() ZeroTrustAccessApplicationTargetCriteriaList
+	TargetCriteriaInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -207,6 +209,7 @@ type ZeroTrustAccessApplication interface {
 	PutLandingPageDesign(value *ZeroTrustAccessApplicationLandingPageDesign)
 	PutSaasApp(value *ZeroTrustAccessApplicationSaasApp)
 	PutScimConfig(value *ZeroTrustAccessApplicationScimConfig)
+	PutTargetCriteria(value interface{})
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
@@ -242,6 +245,7 @@ type ZeroTrustAccessApplication interface {
 	ResetSkipAppLauncherLoginPage()
 	ResetSkipInterstitial()
 	ResetTags()
+	ResetTargetCriteria()
 	ResetType()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1042,6 +1046,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) TagsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) TargetCriteria() ZeroTrustAccessApplicationTargetCriteriaList {
+	var returns ZeroTrustAccessApplicationTargetCriteriaList
+	_jsii_.Get(
+		j,
+		"targetCriteria",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) TargetCriteriaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetCriteriaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1113,7 +1137,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -1131,7 +1155,7 @@ func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.42.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication_Override(z ZeroTrustAccessApplication, scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1937,6 +1961,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) PutScimConfig(value *ZeroTrustAcc
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutTargetCriteria(value interface{}) {
+	if err := z.validatePutTargetCriteriaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putTargetCriteria",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		z,
@@ -2197,6 +2232,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetTags() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetTargetCriteria() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTargetCriteria",
 		nil, // no parameters
 	)
 }

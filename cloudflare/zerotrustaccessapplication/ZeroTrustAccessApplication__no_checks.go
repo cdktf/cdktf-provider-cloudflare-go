@@ -95,6 +95,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutScimConfigParameters(v
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutTargetCriteriaParameters(value interface{}) error {
+	return nil
+}
+
 func validateZeroTrustAccessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
