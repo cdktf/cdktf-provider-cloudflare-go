@@ -71,7 +71,7 @@ func (j *jsiiProxy_ListItemValueOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference) validateSetInternalValueParameters(val *ListItemValue) error {
+func (j *jsiiProxy_ListItemValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_ListItemValueOutputReference) validateSetTerraformResourcePar
 	return nil
 }
 
-func validateNewListItemValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewListItemValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

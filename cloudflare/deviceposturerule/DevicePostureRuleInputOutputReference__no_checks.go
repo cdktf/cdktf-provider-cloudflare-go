@@ -143,6 +143,10 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetNetworkStat
 	return nil
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOperationalStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetOperatorParameters(val *string) error {
 	return nil
 }

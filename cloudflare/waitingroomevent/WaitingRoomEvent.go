@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 type WaitingRoomEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -687,7 +687,7 @@ func (j *jsiiProxy_WaitingRoomEvent) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *WaitingRoomEventConfig) WaitingRoomEvent {
 	_init_.Initialize()
 
@@ -705,7 +705,7 @@ func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent_Override(w WaitingRoomEvent, scope constructs.Construct, id *string, config *WaitingRoomEventConfig) {
 	_init_.Initialize()
 

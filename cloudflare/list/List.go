@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list cloudflare_list}.
 type List interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -46,8 +46,6 @@ type List interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Item() ListItemList
 	ItemInput() interface{}
 	Kind() *string
@@ -123,7 +121,6 @@ type List interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutItem(value interface{})
 	ResetDescription()
-	ResetId()
 	ResetItem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -276,16 +273,6 @@ func (j *jsiiProxy_List) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_List) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_List) Item() ListItemList {
 	var returns ListItemList
 	_jsii_.Get(
@@ -427,7 +414,7 @@ func (j *jsiiProxy_List) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list cloudflare_list} Resource.
 func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	_init_.Initialize()
 
@@ -445,7 +432,7 @@ func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.43.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/resources/list cloudflare_list} Resource.
 func NewList_Override(l List, scope constructs.Construct, id *string, config *ListConfig) {
 	_init_.Initialize()
 
@@ -512,17 +499,6 @@ func (j *jsiiProxy_List)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_List)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -947,14 +923,6 @@ func (l *jsiiProxy_List) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_List) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

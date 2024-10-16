@@ -35,8 +35,8 @@ type ListItemValueOutputReference interface {
 	Fqn() *string
 	Hostname() ListItemValueHostnameList
 	HostnameInput() interface{}
-	InternalValue() *ListItemValue
-	SetInternalValue(val *ListItemValue)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ListItemValueOutputReference) HostnameInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference) InternalValue() *ListItemValue {
-	var returns *ListItemValue
+func (j *jsiiProxy_ListItemValueOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -246,29 +246,29 @@ func (j *jsiiProxy_ListItemValueOutputReference) TerraformResource() cdktf.IInte
 }
 
 
-func NewListItemValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemValueOutputReference {
+func NewListItemValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ListItemValueOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewListItemValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewListItemValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ListItemValueOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewListItemValueOutputReference_Override(l ListItemValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewListItemValueOutputReference_Override(l ListItemValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
@@ -306,7 +306,7 @@ func (j *jsiiProxy_ListItemValueOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_ListItemValueOutputReference)SetInternalValue(val *ListItemValue) {
+func (j *jsiiProxy_ListItemValueOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

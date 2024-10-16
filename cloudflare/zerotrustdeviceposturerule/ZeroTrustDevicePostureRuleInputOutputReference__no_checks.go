@@ -143,6 +143,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetNe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetOperationalStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetOperatorParameters(val *string) error {
 	return nil
 }

@@ -111,10 +111,6 @@ func (j *jsiiProxy_List) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_List) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_List) validateSetKindParameters(val *string) error {
 	return nil
 }

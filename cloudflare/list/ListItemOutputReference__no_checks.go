@@ -47,7 +47,7 @@ func (l *jsiiProxy_ListItemOutputReference) validateInterpolationForAttributePar
 	return nil
 }
 
-func (l *jsiiProxy_ListItemOutputReference) validatePutValueParameters(value *ListItemValue) error {
+func (l *jsiiProxy_ListItemOutputReference) validatePutValueParameters(value interface{}) error {
 	return nil
 }
 

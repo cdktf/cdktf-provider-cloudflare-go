@@ -91,6 +91,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
+	OperationalState() *string
+	SetOperationalState(val *string)
+	OperationalStateInput() *string
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -198,6 +201,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetLastSeen()
 	ResetLocations()
 	ResetNetworkStatus()
+	ResetOperationalState()
 	ResetOperator()
 	ResetOs()
 	ResetOsDistroName()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) NetworkStatus
 	_jsii_.Get(
 		j,
 		"networkStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) OperationalState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) OperationalStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalStateInput",
 		&returns,
 	)
 	return returns
@@ -1331,6 +1355,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetNetworkStat
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperationalState(val *string) {
+	if err := j.validateSetOperationalStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationalState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetOperator(val *string) {
 	if err := j.validateSetOperatorParameters(val); err != nil {
 		panic(err)
@@ -1904,6 +1939,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetNetworkS
 	_jsii_.InvokeVoid(
 		z,
 		"resetNetworkStatus",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetOperationalState() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOperationalState",
 		nil, // no parameters
 	)
 }

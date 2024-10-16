@@ -91,6 +91,9 @@ type DevicePostureRuleInputOutputReference interface {
 	NetworkStatus() *string
 	SetNetworkStatus(val *string)
 	NetworkStatusInput() *string
+	OperationalState() *string
+	SetOperationalState(val *string)
+	OperationalStateInput() *string
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -198,6 +201,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetLastSeen()
 	ResetLocations()
 	ResetNetworkStatus()
+	ResetOperationalState()
 	ResetOperator()
 	ResetOs()
 	ResetOsDistroName()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) NetworkStatusInput() *
 	_jsii_.Get(
 		j,
 		"networkStatusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperationalState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) OperationalStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationalStateInput",
 		&returns,
 	)
 	return returns
@@ -1331,6 +1355,17 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetNetworkStatus(val *s
 	)
 }
 
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperationalState(val *string) {
+	if err := j.validateSetOperationalStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"operationalState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string) {
 	if err := j.validateSetOperatorParameters(val); err != nil {
 		panic(err)
@@ -1904,6 +1939,14 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetNetworkStatus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNetworkStatus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetOperationalState() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOperationalState",
 		nil, // no parameters
 	)
 }
