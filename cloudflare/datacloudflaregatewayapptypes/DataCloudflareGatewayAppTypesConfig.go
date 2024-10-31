@@ -24,7 +24,7 @@ type DataCloudflareGatewayAppTypesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account ID to fetch Gateway App Types from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.44.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/data-sources/gateway_app_types#account_id DataCloudflareGatewayAppTypes#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 
