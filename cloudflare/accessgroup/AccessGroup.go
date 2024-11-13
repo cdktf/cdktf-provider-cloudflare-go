@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_group cloudflare_access_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_group cloudflare_access_group}.
 type AccessGroup interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_AccessGroup) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_group cloudflare_access_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_group cloudflare_access_group} Resource.
 func NewAccessGroup(scope constructs.Construct, id *string, config *AccessGroupConfig) AccessGroup {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewAccessGroup(scope constructs.Construct, id *string, config *AccessGroupC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_group cloudflare_access_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_group cloudflare_access_group} Resource.
 func NewAccessGroup_Override(a AccessGroup, scope constructs.Construct, id *string, config *AccessGroupConfig) {
 	_init_.Initialize()
 

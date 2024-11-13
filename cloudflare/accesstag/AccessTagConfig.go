@@ -24,19 +24,19 @@ type AccessTagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Friendly name of the Access Tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_tag#name AccessTag#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_tag#name AccessTag#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The account identifier to target for the resource.
 	//
 	// Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_tag#account_id AccessTag#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_tag#account_id AccessTag#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// Number of apps associated with the tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_tag#app_count AccessTag#app_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_tag#app_count AccessTag#app_count}
 	AppCount *float64 `field:"optional" json:"appCount" yaml:"appCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_tag#id AccessTag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_tag#id AccessTag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,7 +45,7 @@ type AccessTagConfig struct {
 	//
 	// Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.45.0/docs/resources/access_tag#zone_id AccessTag#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/access_tag#zone_id AccessTag#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 
