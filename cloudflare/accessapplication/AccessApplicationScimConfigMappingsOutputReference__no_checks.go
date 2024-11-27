@@ -79,6 +79,10 @@ func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) validateSetStrictnessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

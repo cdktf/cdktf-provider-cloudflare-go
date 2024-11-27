@@ -67,6 +67,10 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetG
 	return nil
 }
 
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetIdentityUpdateBehaviorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -24,11 +24,11 @@ type RiskBehaviorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/risk_behavior#account_id RiskBehavior#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// behavior block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.46.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/risk_behavior#behavior RiskBehavior#behavior}
 	Behavior interface{} `field:"optional" json:"behavior" yaml:"behavior"`
 }
 

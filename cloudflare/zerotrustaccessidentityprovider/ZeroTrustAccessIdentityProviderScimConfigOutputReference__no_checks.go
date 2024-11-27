@@ -67,6 +67,10 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetIdentityUpdateBehaviorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

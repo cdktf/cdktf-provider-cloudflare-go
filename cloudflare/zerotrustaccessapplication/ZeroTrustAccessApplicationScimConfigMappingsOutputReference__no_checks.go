@@ -79,6 +79,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateSetStrictnessParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

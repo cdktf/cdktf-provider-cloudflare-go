@@ -36,6 +36,9 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	GroupMemberDeprovision() interface{}
 	SetGroupMemberDeprovision(val interface{})
 	GroupMemberDeprovisionInput() interface{}
+	IdentityUpdateBehavior() *string
+	SetIdentityUpdateBehavior(val *string)
+	IdentityUpdateBehaviorInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	SeatDeprovision() interface{}
@@ -81,6 +84,7 @@ type ZeroTrustAccessIdentityProviderScimConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
 	ResetGroupMemberDeprovision()
+	ResetIdentityUpdateBehavior()
 	ResetSeatDeprovision()
 	ResetSecret()
 	ResetUserDeprovision()
@@ -174,6 +178,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Gro
 	_jsii_.Get(
 		j,
 		"groupMemberDeprovisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) IdentityUpdateBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityUpdateBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) IdentityUpdateBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityUpdateBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -337,6 +361,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetG
 	_jsii_.Set(
 		j,
 		"groupMemberDeprovision",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference)SetIdentityUpdateBehavior(val *string) {
+	if err := j.validateSetIdentityUpdateBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityUpdateBehavior",
 		val,
 	)
 }
@@ -605,6 +640,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		z,
 		"resetGroupMemberDeprovision",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) ResetIdentityUpdateBehavior() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIdentityUpdateBehavior",
 		nil, // no parameters
 	)
 }

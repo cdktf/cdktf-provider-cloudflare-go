@@ -43,6 +43,9 @@ type AccessApplicationScimConfigMappingsOutputReference interface {
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	Strictness() *string
+	SetStrictness(val *string)
+	StrictnessInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,6 +85,7 @@ type AccessApplicationScimConfigMappingsOutputReference interface {
 	ResetEnabled()
 	ResetFilter()
 	ResetOperations()
+	ResetStrictness()
 	ResetTransformJsonata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -228,6 +232,26 @@ func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) SchemaInp
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) Strictness() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strictness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) StrictnessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strictnessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -358,6 +382,17 @@ func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference)SetSchema(
 	_jsii_.Set(
 		j,
 		"schema",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference)SetStrictness(val *string) {
+	if err := j.validateSetStrictnessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strictness",
 		val,
 	)
 }
@@ -612,6 +647,14 @@ func (a *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) ResetOper
 	_jsii_.InvokeVoid(
 		a,
 		"resetOperations",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationScimConfigMappingsOutputReference) ResetStrictness() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStrictness",
 		nil, // no parameters
 	)
 }

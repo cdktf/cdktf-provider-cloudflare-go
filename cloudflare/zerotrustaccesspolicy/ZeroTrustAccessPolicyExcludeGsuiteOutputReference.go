@@ -70,8 +70,6 @@ type ZeroTrustAccessPolicyExcludeGsuiteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEmail()
-	ResetIdentityProviderId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) Interpolat
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) ResetEmail() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetEmail",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) ResetIdentityProviderId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIdentityProviderId",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeGsuiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
