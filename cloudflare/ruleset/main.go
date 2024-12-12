@@ -1600,7 +1600,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStatusCode", GoMethod: "ResetStatusCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSxg", GoMethod: "ResetSxg"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUri", GoMethod: "ResetUri"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "respectStrongEtags", GoGetter: "RespectStrongEtags"},
 			_jsii_.MemberProperty{JsiiProperty: "respectStrongEtagsInput", GoGetter: "RespectStrongEtagsInput"},
@@ -1635,8 +1634,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
-			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesActionParametersOutputReference{}
@@ -2426,7 +2423,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastUpdated", GoGetter: "LastUpdated"},
 			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putActionParameters", GoMethod: "PutActionParameters"},
@@ -2449,7 +2445,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RulesetRulesOutputReference{}

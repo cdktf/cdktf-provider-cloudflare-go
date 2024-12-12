@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_application cloudflare_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/access_application cloudflare_access_application}.
 type AccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -67,9 +67,14 @@ type AccessApplication interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destinations() AccessApplicationDestinationsList
+	DestinationsInput() interface{}
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	DomainType() *string
+	SetDomainType(val *string)
+	DomainTypeInput() *string
 	EnableBindingCookie() interface{}
 	SetEnableBindingCookie(val interface{})
 	EnableBindingCookieInput() interface{}
@@ -205,6 +210,7 @@ type AccessApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsHeaders(value interface{})
+	PutDestinations(value interface{})
 	PutFooterLinks(value interface{})
 	PutLandingPageDesign(value *AccessApplicationLandingPageDesign)
 	PutSaasApp(value *AccessApplicationSaasApp)
@@ -222,7 +228,9 @@ type AccessApplication interface {
 	ResetCustomDenyUrl()
 	ResetCustomNonIdentityDenyUrl()
 	ResetCustomPages()
+	ResetDestinations()
 	ResetDomain()
+	ResetDomainType()
 	ResetEnableBindingCookie()
 	ResetFooterLinks()
 	ResetHeaderBgColor()
@@ -566,6 +574,26 @@ func (j *jsiiProxy_AccessApplication) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplication) Destinations() AccessApplicationDestinationsList {
+	var returns AccessApplicationDestinationsList
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) DestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplication) Domain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,6 +609,26 @@ func (j *jsiiProxy_AccessApplication) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) DomainType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplication) DomainTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainTypeInput",
 		&returns,
 	)
 	return returns
@@ -1137,7 +1185,7 @@ func (j *jsiiProxy_AccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication(scope constructs.Construct, id *string, config *AccessApplicationConfig) AccessApplication {
 	_init_.Initialize()
 
@@ -1155,7 +1203,7 @@ func NewAccessApplication(scope constructs.Construct, id *string, config *Access
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/access_application cloudflare_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/access_application cloudflare_access_application} Resource.
 func NewAccessApplication_Override(a AccessApplication, scope constructs.Construct, id *string, config *AccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1324,6 +1372,17 @@ func (j *jsiiProxy_AccessApplication)SetDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplication)SetDomainType(val *string) {
+	if err := j.validateSetDomainTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainType",
 		val,
 	)
 }
@@ -1917,6 +1976,17 @@ func (a *jsiiProxy_AccessApplication) PutCorsHeaders(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) PutDestinations(value interface{}) {
+	if err := a.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) PutFooterLinks(value interface{}) {
 	if err := a.validatePutFooterLinksParameters(value); err != nil {
 		panic(err)
@@ -2068,10 +2138,26 @@ func (a *jsiiProxy_AccessApplication) ResetCustomPages() {
 	)
 }
 
+func (a *jsiiProxy_AccessApplication) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestinations",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplication) ResetDomain() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplication) ResetDomainType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDomainType",
 		nil, // no parameters
 	)
 }

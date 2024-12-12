@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type ZeroTrustAccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -67,9 +67,14 @@ type ZeroTrustAccessApplication interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destinations() ZeroTrustAccessApplicationDestinationsList
+	DestinationsInput() interface{}
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	DomainType() *string
+	SetDomainType(val *string)
+	DomainTypeInput() *string
 	EnableBindingCookie() interface{}
 	SetEnableBindingCookie(val interface{})
 	EnableBindingCookieInput() interface{}
@@ -205,6 +210,7 @@ type ZeroTrustAccessApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsHeaders(value interface{})
+	PutDestinations(value interface{})
 	PutFooterLinks(value interface{})
 	PutLandingPageDesign(value *ZeroTrustAccessApplicationLandingPageDesign)
 	PutSaasApp(value *ZeroTrustAccessApplicationSaasApp)
@@ -222,7 +228,9 @@ type ZeroTrustAccessApplication interface {
 	ResetCustomDenyUrl()
 	ResetCustomNonIdentityDenyUrl()
 	ResetCustomPages()
+	ResetDestinations()
 	ResetDomain()
+	ResetDomainType()
 	ResetEnableBindingCookie()
 	ResetFooterLinks()
 	ResetHeaderBgColor()
@@ -566,6 +574,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) Destinations() ZeroTrustAccessApplicationDestinationsList {
+	var returns ZeroTrustAccessApplicationDestinationsList
+	_jsii_.Get(
+		j,
+		"destinations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) DestinationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) Domain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,6 +609,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) DomainType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) DomainTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainTypeInput",
 		&returns,
 	)
 	return returns
@@ -1137,7 +1185,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -1155,7 +1203,7 @@ func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication_Override(z ZeroTrustAccessApplication, scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1324,6 +1372,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication)SetDomainType(val *string) {
+	if err := j.validateSetDomainTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainType",
 		val,
 	)
 }
@@ -1917,6 +1976,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) PutCorsHeaders(value interface{})
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) PutDestinations(value interface{}) {
+	if err := z.validatePutDestinationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putDestinations",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) PutFooterLinks(value interface{}) {
 	if err := z.validatePutFooterLinksParameters(value); err != nil {
 		panic(err)
@@ -2068,10 +2138,26 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetCustomPages() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetDestinations() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDestinations",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplication) ResetDomain() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetDomainType() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDomainType",
 		nil, // no parameters
 	)
 }

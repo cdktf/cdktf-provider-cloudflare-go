@@ -13,6 +13,9 @@ import (
 
 type ZeroTrustAccessPolicyConnectionRulesSshOutputReference interface {
 	cdktf.ComplexObject
+	AllowEmailAlias() interface{}
+	SetAllowEmailAlias(val interface{})
+	AllowEmailAliasInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,7 @@ type ZeroTrustAccessPolicyConnectionRulesSshOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowEmailAlias()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type ZeroTrustAccessPolicyConnectionRulesSshOutputReference interface {
 // The jsii proxy struct for ZeroTrustAccessPolicyConnectionRulesSshOutputReference
 type jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) AllowEmailAlias() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmailAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) AllowEmailAliasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmailAliasInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) ComplexObjectIndex() interface{} {
@@ -197,6 +221,17 @@ func NewZeroTrustAccessPolicyConnectionRulesSshOutputReference_Override(z ZeroTr
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyConnectionRulesSshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference)SetAllowEmailAlias(val interface{}) {
+	if err := j.validateSetAllowEmailAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowEmailAlias",
+		val,
 	)
 }
 
@@ -450,6 +485,14 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) ResetAllowEmailAlias() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAllowEmailAlias",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

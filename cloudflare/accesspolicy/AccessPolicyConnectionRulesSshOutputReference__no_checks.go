@@ -51,6 +51,10 @@ func (a *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) validateSetAllowEmailAliasParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

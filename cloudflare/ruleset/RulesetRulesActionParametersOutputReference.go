@@ -183,9 +183,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Uri() RulesetRulesActionParametersUriList
 	UriInput() interface{}
-	Version() *string
-	SetVersion(val *string)
-	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -279,7 +276,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetStatusCode()
 	ResetSxg()
 	ResetUri()
-	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -1425,26 +1421,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) UriInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Version() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"version",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) VersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"versionInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewRulesetRulesActionParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersOutputReference {
 	_init_.Initialize()
@@ -1931,17 +1907,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetVersion(val *string) {
-	if err := j.validateSetVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"version",
 		val,
 	)
 }
@@ -2728,14 +2693,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetUri() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetUri",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetVersion() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetVersion",
 		nil, // no parameters
 	)
 }

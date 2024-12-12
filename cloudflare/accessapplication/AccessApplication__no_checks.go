@@ -79,6 +79,10 @@ func (a *jsiiProxy_AccessApplication) validatePutCorsHeadersParameters(value int
 	return nil
 }
 
+func (a *jsiiProxy_AccessApplication) validatePutDestinationsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessApplication) validatePutFooterLinksParameters(value interface{}) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (j *jsiiProxy_AccessApplication) validateSetCustomPagesParameters(val *[]*s
 }
 
 func (j *jsiiProxy_AccessApplication) validateSetDomainParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AccessApplication) validateSetDomainTypeParameters(val *string) error {
 	return nil
 }
 

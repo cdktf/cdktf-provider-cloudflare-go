@@ -13,6 +13,9 @@ import (
 
 type AccessPolicyConnectionRulesSshOutputReference interface {
 	cdktf.ComplexObject
+	AllowEmailAlias() interface{}
+	SetAllowEmailAlias(val interface{})
+	AllowEmailAliasInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,7 @@ type AccessPolicyConnectionRulesSshOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowEmailAlias()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type AccessPolicyConnectionRulesSshOutputReference interface {
 // The jsii proxy struct for AccessPolicyConnectionRulesSshOutputReference
 type jsiiProxy_AccessPolicyConnectionRulesSshOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) AllowEmailAlias() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmailAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) AllowEmailAliasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmailAliasInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) ComplexObjectIndex() interface{} {
@@ -197,6 +221,17 @@ func NewAccessPolicyConnectionRulesSshOutputReference_Override(a AccessPolicyCon
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyConnectionRulesSshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference)SetAllowEmailAlias(val interface{}) {
+	if err := j.validateSetAllowEmailAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowEmailAlias",
+		val,
 	)
 }
 
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) ResetAllowEmailAlias() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowEmailAlias",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessPolicyConnectionRulesSshOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

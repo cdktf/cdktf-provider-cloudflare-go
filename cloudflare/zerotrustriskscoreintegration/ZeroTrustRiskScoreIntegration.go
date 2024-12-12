@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration}.
 type ZeroTrustRiskScoreIntegration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ZeroTrustRiskScoreIntegration) WellKnownUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration} Resource.
 func NewZeroTrustRiskScoreIntegration(scope constructs.Construct, id *string, config *ZeroTrustRiskScoreIntegrationConfig) ZeroTrustRiskScoreIntegration {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewZeroTrustRiskScoreIntegration(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_risk_score_integration cloudflare_zero_trust_risk_score_integration} Resource.
 func NewZeroTrustRiskScoreIntegration_Override(z ZeroTrustRiskScoreIntegration, scope constructs.Construct, id *string, config *ZeroTrustRiskScoreIntegrationConfig) {
 	_init_.Initialize()
 

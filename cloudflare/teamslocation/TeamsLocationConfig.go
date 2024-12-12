@@ -24,28 +24,28 @@ type TeamsLocationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the teams location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#name TeamsLocation#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#name TeamsLocation#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Indicator that this is the default location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
 	ClientDefault interface{} `field:"optional" json:"clientDefault" yaml:"clientDefault"`
 	// Indicator that this location needs to resolve EDNS queries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#ecs_support TeamsLocation#ecs_support}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#ecs_support TeamsLocation#ecs_support}
 	EcsSupport interface{} `field:"optional" json:"ecsSupport" yaml:"ecsSupport"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#id TeamsLocation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#id TeamsLocation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// networks block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.47.0/docs/resources/teams_location#networks TeamsLocation#networks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/teams_location#networks TeamsLocation#networks}
 	Networks interface{} `field:"optional" json:"networks" yaml:"networks"`
 }
 

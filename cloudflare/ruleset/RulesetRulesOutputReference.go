@@ -49,7 +49,6 @@ type RulesetRulesOutputReference interface {
 	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	LastUpdated() *string
 	Logging() RulesetRulesLoggingList
 	LoggingInput() interface{}
 	Ratelimit() RulesetRulesRatelimitList
@@ -65,7 +64,6 @@ type RulesetRulesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Version() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -297,16 +295,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) LastUpdated() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastUpdated",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesOutputReference) Logging() RulesetRulesLoggingList {
 	var returns RulesetRulesLoggingList
 	_jsii_.Get(
@@ -382,16 +370,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) TerraformResource() cdktf.IInter
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) Version() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"version",
 		&returns,
 	)
 	return returns

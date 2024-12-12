@@ -51,6 +51,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) validateSetAllowEmailAliasParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessPolicyConnectionRulesSshOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
