@@ -13,8 +13,8 @@ import (
 
 type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	cdktf.ComplexObject
-	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
-	AuthenticationInput() *ZeroTrustAccessApplicationScimConfigAuthentication
+	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationList
+	AuthenticationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,7 +80,7 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication)
+	PutAuthentication(value interface{})
 	PutMappings(value interface{})
 	ResetAuthentication()
 	ResetDeactivateOnDelete()
@@ -101,8 +101,8 @@ type jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference {
-	var returns ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationList {
+	var returns ZeroTrustAccessApplicationScimConfigAuthenticationList
 	_jsii_.Get(
 		j,
 		"authentication",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authenti
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) AuthenticationInput() *ZeroTrustAccessApplicationScimConfigAuthentication {
-	var returns *ZeroTrustAccessApplicationScimConfigAuthentication
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) AuthenticationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authenticationInput",
@@ -604,7 +604,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Interpol
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication) {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutAuthentication(value interface{}) {
 	if err := z.validatePutAuthenticationParameters(value); err != nil {
 		panic(err)
 	}

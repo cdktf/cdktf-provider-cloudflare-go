@@ -24,17 +24,17 @@ type DataCloudflareTunnelConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/tunnel#account_id DataCloudflareTunnel#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the tunnel. **Modifying this attribute will force creation of a new resource.**.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/tunnel#name DataCloudflareTunnel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// If true, only include deleted tunnels.
 	//
 	// If false, exclude deleted tunnels. If empty, all tunnels will be included. **Modifying this attribute will force creation of a new resource.**
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/data-sources/tunnel#is_deleted DataCloudflareTunnel#is_deleted}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/tunnel#is_deleted DataCloudflareTunnel#is_deleted}
 	IsDeleted interface{} `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 }
 

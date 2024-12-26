@@ -13,8 +13,8 @@ import (
 
 type AccessApplicationScimConfigOutputReference interface {
 	cdktf.ComplexObject
-	Authentication() AccessApplicationScimConfigAuthenticationOutputReference
-	AuthenticationInput() *AccessApplicationScimConfigAuthentication
+	Authentication() AccessApplicationScimConfigAuthenticationList
+	AuthenticationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,7 +80,7 @@ type AccessApplicationScimConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthentication(value *AccessApplicationScimConfigAuthentication)
+	PutAuthentication(value interface{})
 	PutMappings(value interface{})
 	ResetAuthentication()
 	ResetDeactivateOnDelete()
@@ -101,8 +101,8 @@ type jsiiProxy_AccessApplicationScimConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessApplicationScimConfigOutputReference) Authentication() AccessApplicationScimConfigAuthenticationOutputReference {
-	var returns AccessApplicationScimConfigAuthenticationOutputReference
+func (j *jsiiProxy_AccessApplicationScimConfigOutputReference) Authentication() AccessApplicationScimConfigAuthenticationList {
+	var returns AccessApplicationScimConfigAuthenticationList
 	_jsii_.Get(
 		j,
 		"authentication",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_AccessApplicationScimConfigOutputReference) Authentication() 
 	return returns
 }
 
-func (j *jsiiProxy_AccessApplicationScimConfigOutputReference) AuthenticationInput() *AccessApplicationScimConfigAuthentication {
-	var returns *AccessApplicationScimConfigAuthentication
+func (j *jsiiProxy_AccessApplicationScimConfigOutputReference) AuthenticationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authenticationInput",
@@ -604,7 +604,7 @@ func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) InterpolationForA
 	return returns
 }
 
-func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) PutAuthentication(value *AccessApplicationScimConfigAuthentication) {
+func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) PutAuthentication(value interface{}) {
 	if err := a.validatePutAuthenticationParameters(value); err != nil {
 		panic(err)
 	}

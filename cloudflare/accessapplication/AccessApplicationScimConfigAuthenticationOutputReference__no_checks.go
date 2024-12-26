@@ -71,7 +71,7 @@ func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) validateSetInternalValueParameters(val *AccessApplicationScimConfigAuthentication) error {
+func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -107,7 +107,7 @@ func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) val
 	return nil
 }
 
-func validateNewAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

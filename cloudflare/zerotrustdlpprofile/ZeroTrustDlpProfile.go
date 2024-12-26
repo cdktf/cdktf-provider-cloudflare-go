@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile}.
 type ZeroTrustDlpProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ZeroTrustDlpProfile) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile} Resource.
 func NewZeroTrustDlpProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpProfileConfig) ZeroTrustDlpProfile {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewZeroTrustDlpProfile(scope constructs.Construct, id *string, config *Zero
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.48.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_dlp_profile cloudflare_zero_trust_dlp_profile} Resource.
 func NewZeroTrustDlpProfile_Override(z ZeroTrustDlpProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpProfileConfig) {
 	_init_.Initialize()
 

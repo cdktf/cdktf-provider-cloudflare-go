@@ -47,7 +47,7 @@ func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) validateInterpola
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) validatePutAuthenticationParameters(value *AccessApplicationScimConfigAuthentication) error {
+func (a *jsiiProxy_AccessApplicationScimConfigOutputReference) validatePutAuthenticationParameters(value interface{}) error {
 	return nil
 }
 

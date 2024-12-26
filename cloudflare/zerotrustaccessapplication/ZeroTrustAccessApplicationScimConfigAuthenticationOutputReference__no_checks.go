@@ -71,7 +71,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationScimConfigAuthentication) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -107,7 +107,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	return nil
 }
 
-func validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

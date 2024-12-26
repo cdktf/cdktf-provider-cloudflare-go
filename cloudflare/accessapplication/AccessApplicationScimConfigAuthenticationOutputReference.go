@@ -39,8 +39,8 @@ type AccessApplicationScimConfigAuthenticationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AccessApplicationScimConfigAuthentication
-	SetInternalValue(val *AccessApplicationScimConfigAuthentication)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) InternalValue() *AccessApplicationScimConfigAuthentication {
-	var returns *AccessApplicationScimConfigAuthentication
+func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -365,29 +365,29 @@ func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference) Use
 }
 
 
-func NewAccessApplicationScimConfigAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessApplicationScimConfigAuthenticationOutputReference {
+func NewAccessApplicationScimConfigAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessApplicationScimConfigAuthenticationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAccessApplicationScimConfigAuthenticationOutputReference_Override(a AccessApplicationScimConfigAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAccessApplicationScimConfigAuthenticationOutputReference_Override(a AccessApplicationScimConfigAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationScimConfigAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -447,7 +447,7 @@ func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference)SetInternalValue(val *AccessApplicationScimConfigAuthentication) {
+func (j *jsiiProxy_AccessApplicationScimConfigAuthenticationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
