@@ -24,15 +24,15 @@ type InfrastructureAccessTargetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#account_id InfrastructureAccessTarget#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A non-unique field that refers to a target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#hostname InfrastructureAccessTarget#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// The IPv4/IPv6 address that identifies where to reach a target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/infrastructure_access_target#ip InfrastructureAccessTarget#ip}
 	Ip *InfrastructureAccessTargetIp `field:"required" json:"ip" yaml:"ip"`
 }
 

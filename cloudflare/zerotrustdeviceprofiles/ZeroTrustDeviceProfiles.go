@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles}.
 type ZeroTrustDeviceProfiles interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -763,7 +763,7 @@ func (j *jsiiProxy_ZeroTrustDeviceProfiles) TunnelProtocolInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles} Resource.
 func NewZeroTrustDeviceProfiles(scope constructs.Construct, id *string, config *ZeroTrustDeviceProfilesConfig) ZeroTrustDeviceProfiles {
 	_init_.Initialize()
 
@@ -781,7 +781,7 @@ func NewZeroTrustDeviceProfiles(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_device_profiles cloudflare_zero_trust_device_profiles} Resource.
 func NewZeroTrustDeviceProfiles_Override(z ZeroTrustDeviceProfiles, scope constructs.Construct, id *string, config *ZeroTrustDeviceProfilesConfig) {
 	_init_.Initialize()
 

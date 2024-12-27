@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets}.
 type DataCloudflareInfrastructureAccessTargets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareInfrastructureAccessTargets) VirtualNetworkIdIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets} Data Source.
 func NewDataCloudflareInfrastructureAccessTargets(scope constructs.Construct, id *string, config *DataCloudflareInfrastructureAccessTargetsConfig) DataCloudflareInfrastructureAccessTargets {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataCloudflareInfrastructureAccessTargets(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/infrastructure_access_targets cloudflare_infrastructure_access_targets} Data Source.
 func NewDataCloudflareInfrastructureAccessTargets_Override(d DataCloudflareInfrastructureAccessTargets, scope constructs.Construct, id *string, config *DataCloudflareInfrastructureAccessTargetsConfig) {
 	_init_.Initialize()
 

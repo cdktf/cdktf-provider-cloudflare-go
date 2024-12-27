@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/snippet_rules cloudflare_snippet_rules}.
 type SnippetRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_SnippetRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRulesConfig) SnippetRules {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewSnippetRules(scope constructs.Construct, id *string, config *SnippetRule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/snippet_rules cloudflare_snippet_rules} Resource.
 func NewSnippetRules_Override(s SnippetRules, scope constructs.Construct, id *string, config *SnippetRulesConfig) {
 	_init_.Initialize()
 

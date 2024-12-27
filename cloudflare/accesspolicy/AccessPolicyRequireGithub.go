@@ -7,15 +7,15 @@ package accesspolicy
 type AccessPolicyRequireGithub struct {
 	// The ID of your Github identity provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/access_policy#identity_provider_id AccessPolicy#identity_provider_id}
 	IdentityProviderId *string `field:"optional" json:"identityProviderId" yaml:"identityProviderId"`
 	// The name of the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/access_policy#name AccessPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/access_policy#name AccessPolicy#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The teams that should be matched.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.0/docs/resources/access_policy#teams AccessPolicy#teams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/access_policy#teams AccessPolicy#teams}
 	Teams *[]*string `field:"optional" json:"teams" yaml:"teams"`
 }
 
