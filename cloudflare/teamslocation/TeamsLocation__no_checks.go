@@ -75,6 +75,10 @@ func (t *jsiiProxy_TeamsLocation) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (t *jsiiProxy_TeamsLocation) validatePutEndpointsParameters(value *TeamsLocationEndpoints) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsLocation) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }
@@ -108,6 +112,14 @@ func (j *jsiiProxy_TeamsLocation) validateSetConnectionParameters(val interface{
 }
 
 func (j *jsiiProxy_TeamsLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsLocation) validateSetDnsDestinationIpsIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsLocation) validateSetDnsDestinationIpv6BlockIdParameters(val *string) error {
 	return nil
 }
 

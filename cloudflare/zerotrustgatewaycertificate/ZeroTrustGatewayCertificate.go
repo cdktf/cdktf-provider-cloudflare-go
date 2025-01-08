@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 type ZeroTrustGatewayCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) ValidityPeriodDaysInput() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) ZeroTrustGatewayCertificate {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate_Override(z ZeroTrustGatewayCertificate, scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) {
 	_init_.Initialize()
 

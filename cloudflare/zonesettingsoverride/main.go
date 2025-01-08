@@ -84,6 +84,65 @@ func init() {
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettings)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsAegis",
+		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsAegis)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsAegisList",
+		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsAegisList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsAegisList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsAegisOutputReference",
+		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsAegisOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "poolId", GoGetter: "PoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZoneSettingsOverrideInitialSettingsAegisOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsList)(nil)).Elem(),
@@ -287,6 +346,7 @@ func init() {
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aegis", GoGetter: "Aegis"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
@@ -354,6 +414,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sortQueryStringForCache", GoGetter: "SortQueryStringForCache"},
 			_jsii_.MemberProperty{JsiiProperty: "speedBrain", GoGetter: "SpeedBrain"},
 			_jsii_.MemberProperty{JsiiProperty: "ssl", GoGetter: "Ssl"},
+			_jsii_.MemberProperty{JsiiProperty: "sslAutomaticMode", GoGetter: "SslAutomaticMode"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "tls12Only", GoGetter: "Tls12Only"},
@@ -439,6 +500,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings",
 		reflect.TypeOf((*ZoneSettingsOverrideSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsAegis",
+		reflect.TypeOf((*ZoneSettingsOverrideSettingsAegis)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsAegisOutputReference",
+		reflect.TypeOf((*ZoneSettingsOverrideSettingsAegisOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "poolId", GoGetter: "PoolId"},
+			_jsii_.MemberProperty{JsiiProperty: "poolIdInput", GoGetter: "PoolIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPoolId", GoMethod: "ResetPoolId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZoneSettingsOverrideSettingsAegisOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify",
@@ -566,6 +669,8 @@ func init() {
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aegis", GoGetter: "Aegis"},
+			_jsii_.MemberProperty{JsiiProperty: "aegisInput", GoGetter: "AegisInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnlineInput", GoGetter: "AlwaysOnlineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
@@ -663,12 +768,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxyReadTimeoutInput", GoGetter: "ProxyReadTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pseudoIpv4", GoGetter: "PseudoIpv4"},
 			_jsii_.MemberProperty{JsiiProperty: "pseudoIpv4Input", GoGetter: "PseudoIpv4Input"},
+			_jsii_.MemberMethod{JsiiMethod: "putAegis", GoMethod: "PutAegis"},
 			_jsii_.MemberMethod{JsiiMethod: "putMinify", GoMethod: "PutMinify"},
 			_jsii_.MemberMethod{JsiiMethod: "putMobileRedirect", GoMethod: "PutMobileRedirect"},
 			_jsii_.MemberMethod{JsiiMethod: "putNel", GoMethod: "PutNel"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecurityHeader", GoMethod: "PutSecurityHeader"},
 			_jsii_.MemberProperty{JsiiProperty: "replaceInsecureJs", GoGetter: "ReplaceInsecureJs"},
 			_jsii_.MemberProperty{JsiiProperty: "replaceInsecureJsInput", GoGetter: "ReplaceInsecureJsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAegis", GoMethod: "ResetAegis"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysOnline", GoMethod: "ResetAlwaysOnline"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlwaysUseHttps", GoMethod: "ResetAlwaysUseHttps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticHttpsRewrites", GoMethod: "ResetAutomaticHttpsRewrites"},
@@ -718,6 +825,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSortQueryStringForCache", GoMethod: "ResetSortQueryStringForCache"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpeedBrain", GoMethod: "ResetSpeedBrain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsl", GoMethod: "ResetSsl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSslAutomaticMode", GoMethod: "ResetSslAutomaticMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTls12Only", GoMethod: "ResetTls12Only"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTls13", GoMethod: "ResetTls13"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsClientAuth", GoMethod: "ResetTlsClientAuth"},
@@ -744,6 +852,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "speedBrain", GoGetter: "SpeedBrain"},
 			_jsii_.MemberProperty{JsiiProperty: "speedBrainInput", GoGetter: "SpeedBrainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ssl", GoGetter: "Ssl"},
+			_jsii_.MemberProperty{JsiiProperty: "sslAutomaticMode", GoGetter: "SslAutomaticMode"},
+			_jsii_.MemberProperty{JsiiProperty: "sslAutomaticModeInput", GoGetter: "SslAutomaticModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sslInput", GoGetter: "SslInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

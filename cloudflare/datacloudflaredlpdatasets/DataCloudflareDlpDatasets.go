@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets}.
 type DataCloudflareDlpDatasets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataCloudflareDlpDatasets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source.
 func NewDataCloudflareDlpDatasets(scope constructs.Construct, id *string, config *DataCloudflareDlpDatasetsConfig) DataCloudflareDlpDatasets {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataCloudflareDlpDatasets(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/data-sources/dlp_datasets cloudflare_dlp_datasets} Data Source.
 func NewDataCloudflareDlpDatasets_Override(d DataCloudflareDlpDatasets, scope constructs.Construct, id *string, config *DataCloudflareDlpDatasetsConfig) {
 	_init_.Initialize()
 

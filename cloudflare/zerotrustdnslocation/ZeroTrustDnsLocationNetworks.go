@@ -5,9 +5,7 @@ package zerotrustdnslocation
 
 
 type ZeroTrustDnsLocationNetworks struct {
-	// CIDR notation representation of the network IP.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
-	Network *string `field:"required" json:"network" yaml:"network"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}.
+	Network *string `field:"optional" json:"network" yaml:"network"`
 }
 

@@ -30,7 +30,6 @@ type TeamsLocationNetworksOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Network() *string
@@ -68,6 +67,7 @@ type TeamsLocationNetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,16 +118,6 @@ func (j *jsiiProxy_TeamsLocationNetworksOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TeamsLocationNetworksOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
 		&returns,
 	)
 	return returns
@@ -461,6 +451,14 @@ func (t *jsiiProxy_TeamsLocationNetworksOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TeamsLocationNetworksOutputReference) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNetwork",
+		nil, // no parameters
+	)
 }
 
 func (t *jsiiProxy_TeamsLocationNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -7,11 +7,11 @@ package workersscript
 type WorkersScriptPlainTextBinding struct {
 	// The global variable for the binding in your Worker code.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_script#name WorkersScript#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_script#name WorkersScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The plain text you want to store.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/workers_script#text WorkersScript#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/workers_script#text WorkersScript#text}
 	Text *string `field:"required" json:"text" yaml:"text"`
 }
 

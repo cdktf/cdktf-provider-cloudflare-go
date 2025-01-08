@@ -47,6 +47,10 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateInterpol
 	return nil
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutAegisParameters(value *ZoneSettingsOverrideSettingsAegis) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validatePutMinifyParameters(value *ZoneSettingsOverrideSettingsMinify) error {
 	return nil
 }
@@ -256,6 +260,10 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSpeed
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetSslAutomaticModeParameters(val *string) error {
 	return nil
 }
 

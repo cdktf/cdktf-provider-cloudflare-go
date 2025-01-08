@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/teams_location cloudflare_teams_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location}.
 type TeamsLocation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -38,10 +38,18 @@ type TeamsLocation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsDestinationIpsId() *string
+	SetDnsDestinationIpsId(val *string)
+	DnsDestinationIpsIdInput() *string
+	DnsDestinationIpv6BlockId() *string
+	SetDnsDestinationIpv6BlockId(val *string)
+	DnsDestinationIpv6BlockIdInput() *string
 	DohSubdomain() *string
 	EcsSupport() interface{}
 	SetEcsSupport(val interface{})
 	EcsSupportInput() interface{}
+	Endpoints() TeamsLocationEndpointsOutputReference
+	EndpointsInput() *TeamsLocationEndpoints
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,6 +63,7 @@ type TeamsLocation interface {
 	IdInput() *string
 	Ip() *string
 	Ipv4Destination() *string
+	Ipv4DestinationBackup() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,9 +134,13 @@ type TeamsLocation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEndpoints(value *TeamsLocationEndpoints)
 	PutNetworks(value interface{})
 	ResetClientDefault()
+	ResetDnsDestinationIpsId()
+	ResetDnsDestinationIpv6BlockId()
 	ResetEcsSupport()
+	ResetEndpoints()
 	ResetId()
 	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -251,6 +264,46 @@ func (j *jsiiProxy_TeamsLocation) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_TeamsLocation) DnsDestinationIpsId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsDestinationIpsId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) DnsDestinationIpsIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsDestinationIpsIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) DnsDestinationIpv6BlockId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsDestinationIpv6BlockId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) DnsDestinationIpv6BlockIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsDestinationIpv6BlockIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TeamsLocation) DohSubdomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +329,26 @@ func (j *jsiiProxy_TeamsLocation) EcsSupportInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ecsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) Endpoints() TeamsLocationEndpointsOutputReference {
+	var returns TeamsLocationEndpointsOutputReference
+	_jsii_.Get(
+		j,
+		"endpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) EndpointsInput() *TeamsLocationEndpoints {
+	var returns *TeamsLocationEndpoints
+	_jsii_.Get(
+		j,
+		"endpointsInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +419,16 @@ func (j *jsiiProxy_TeamsLocation) Ipv4Destination() *string {
 	_jsii_.Get(
 		j,
 		"ipv4Destination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TeamsLocation) Ipv4DestinationBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4DestinationBackup",
 		&returns,
 	)
 	return returns
@@ -472,7 +555,7 @@ func (j *jsiiProxy_TeamsLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocationConfig) TeamsLocation {
 	_init_.Initialize()
 
@@ -490,7 +573,7 @@ func NewTeamsLocation(scope constructs.Construct, id *string, config *TeamsLocat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.49.1/docs/resources/teams_location cloudflare_teams_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/teams_location cloudflare_teams_location} Resource.
 func NewTeamsLocation_Override(t TeamsLocation, scope constructs.Construct, id *string, config *TeamsLocationConfig) {
 	_init_.Initialize()
 
@@ -549,6 +632,28 @@ func (j *jsiiProxy_TeamsLocation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsLocation)SetDnsDestinationIpsId(val *string) {
+	if err := j.validateSetDnsDestinationIpsIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsDestinationIpsId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TeamsLocation)SetDnsDestinationIpv6BlockId(val *string) {
+	if err := j.validateSetDnsDestinationIpv6BlockIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsDestinationIpv6BlockId",
 		val,
 	)
 }
@@ -977,6 +1082,17 @@ func (t *jsiiProxy_TeamsLocation) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_TeamsLocation) PutEndpoints(value *TeamsLocationEndpoints) {
+	if err := t.validatePutEndpointsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putEndpoints",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TeamsLocation) PutNetworks(value interface{}) {
 	if err := t.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -996,10 +1112,34 @@ func (t *jsiiProxy_TeamsLocation) ResetClientDefault() {
 	)
 }
 
+func (t *jsiiProxy_TeamsLocation) ResetDnsDestinationIpsId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDnsDestinationIpsId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsLocation) ResetDnsDestinationIpv6BlockId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDnsDestinationIpv6BlockId",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TeamsLocation) ResetEcsSupport() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetEcsSupport",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TeamsLocation) ResetEndpoints() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEndpoints",
 		nil, // no parameters
 	)
 }

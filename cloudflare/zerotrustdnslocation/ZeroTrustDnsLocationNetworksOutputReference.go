@@ -30,7 +30,6 @@ type ZeroTrustDnsLocationNetworksOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Network() *string
@@ -68,6 +67,7 @@ type ZeroTrustDnsLocationNetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,16 +118,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
 		&returns,
 	)
 	return returns
@@ -461,6 +451,14 @@ func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetNetwork",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

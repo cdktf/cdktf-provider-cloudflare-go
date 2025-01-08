@@ -13,6 +13,8 @@ import (
 
 type ZoneSettingsOverrideSettingsOutputReference interface {
 	cdktf.ComplexObject
+	Aegis() ZoneSettingsOverrideSettingsAegisOutputReference
+	AegisInput() *ZoneSettingsOverrideSettingsAegis
 	AlwaysOnline() *string
 	SetAlwaysOnline(val *string)
 	AlwaysOnlineInput() *string
@@ -174,6 +176,9 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	SpeedBrainInput() *string
 	Ssl() *string
 	SetSsl(val *string)
+	SslAutomaticMode() *string
+	SetSslAutomaticMode(val *string)
+	SslAutomaticModeInput() *string
 	SslInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -237,10 +242,12 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAegis(value *ZoneSettingsOverrideSettingsAegis)
 	PutMinify(value *ZoneSettingsOverrideSettingsMinify)
 	PutMobileRedirect(value *ZoneSettingsOverrideSettingsMobileRedirect)
 	PutNel(value *ZoneSettingsOverrideSettingsNel)
 	PutSecurityHeader(value *ZoneSettingsOverrideSettingsSecurityHeader)
+	ResetAegis()
 	ResetAlwaysOnline()
 	ResetAlwaysUseHttps()
 	ResetAutomaticHttpsRewrites()
@@ -290,6 +297,7 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 	ResetSortQueryStringForCache()
 	ResetSpeedBrain()
 	ResetSsl()
+	ResetSslAutomaticMode()
 	ResetTls12Only()
 	ResetTls13()
 	ResetTlsClientAuth()
@@ -313,6 +321,26 @@ type ZoneSettingsOverrideSettingsOutputReference interface {
 // The jsii proxy struct for ZoneSettingsOverrideSettingsOutputReference
 type jsiiProxy_ZoneSettingsOverrideSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Aegis() ZoneSettingsOverrideSettingsAegisOutputReference {
+	var returns ZoneSettingsOverrideSettingsAegisOutputReference
+	_jsii_.Get(
+		j,
+		"aegis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) AegisInput() *ZoneSettingsOverrideSettingsAegis {
+	var returns *ZoneSettingsOverrideSettingsAegis
+	_jsii_.Get(
+		j,
+		"aegisInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) AlwaysOnline() *string {
@@ -1335,6 +1363,26 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) Ssl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SslAutomaticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SslAutomaticModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) SslInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2121,6 +2169,17 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSsl(val *strin
 	)
 }
 
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetSslAutomaticMode(val *string) {
+	if err := j.validateSetSslAutomaticModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslAutomaticMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -2439,6 +2498,17 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) InterpolationFor
 	return returns
 }
 
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutAegis(value *ZoneSettingsOverrideSettingsAegis) {
+	if err := z.validatePutAegisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putAegis",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutMinify(value *ZoneSettingsOverrideSettingsMinify) {
 	if err := z.validatePutMinifyParameters(value); err != nil {
 		panic(err)
@@ -2480,6 +2550,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) PutSecurityHeade
 		z,
 		"putSecurityHeader",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetAegis() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAegis",
+		nil, // no parameters
 	)
 }
 
@@ -2871,6 +2949,14 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) ResetSslAutomaticMode() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSslAutomaticMode",
 		nil, // no parameters
 	)
 }

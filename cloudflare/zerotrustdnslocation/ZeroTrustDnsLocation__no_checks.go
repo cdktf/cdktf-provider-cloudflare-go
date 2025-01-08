@@ -75,6 +75,10 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutEndpointsParameters(value *ZeroTrustDnsLocationEndpoints) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDnsLocation) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }
@@ -108,6 +112,14 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetConnectionParameters(val int
 }
 
 func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpsIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpv6BlockIdParameters(val *string) error {
 	return nil
 }
 

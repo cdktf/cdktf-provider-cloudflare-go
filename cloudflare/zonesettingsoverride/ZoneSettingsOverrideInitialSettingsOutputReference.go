@@ -13,6 +13,7 @@ import (
 
 type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	cdktf.ComplexObject
+	Aegis() ZoneSettingsOverrideInitialSettingsAegisList
 	AlwaysOnline() *string
 	AlwaysUseHttps() *string
 	AutomaticHttpsRewrites() *string
@@ -81,6 +82,7 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 	SortQueryStringForCache() *string
 	SpeedBrain() *string
 	Ssl() *string
+	SslAutomaticMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +138,16 @@ type ZoneSettingsOverrideInitialSettingsOutputReference interface {
 // The jsii proxy struct for ZoneSettingsOverrideInitialSettingsOutputReference
 type jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Aegis() ZoneSettingsOverrideInitialSettingsAegisList {
+	var returns ZoneSettingsOverrideInitialSettingsAegisList
+	_jsii_.Get(
+		j,
+		"aegis",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) AlwaysOnline() *string {
@@ -673,6 +685,16 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) Ssl() *st
 	_jsii_.Get(
 		j,
 		"ssl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsOutputReference) SslAutomaticMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslAutomaticMode",
 		&returns,
 	)
 	return returns
