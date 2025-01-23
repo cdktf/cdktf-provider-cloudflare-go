@@ -610,6 +610,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putL4Override", GoMethod: "PutL4Override"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationSettings", GoMethod: "PutNotificationSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
+			_jsii_.MemberMethod{JsiiMethod: "putResolveDnsInternally", GoMethod: "PutResolveDnsInternally"},
 			_jsii_.MemberMethod{JsiiMethod: "putUntrustedCert", GoMethod: "PutUntrustedCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddHeaders", GoMethod: "ResetAddHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowChildBypass", GoMethod: "ResetAllowChildBypass"},
@@ -629,9 +630,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideHost", GoMethod: "ResetOverrideHost"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideIps", GoMethod: "ResetOverrideIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPayloadLog", GoMethod: "ResetPayloadLog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResolveDnsInternally", GoMethod: "ResetResolveDnsInternally"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResolveDnsThroughCloudflare", GoMethod: "ResetResolveDnsThroughCloudflare"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUntrustedCert", GoMethod: "ResetUntrustedCert"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resolveDnsInternally", GoGetter: "ResolveDnsInternally"},
+			_jsii_.MemberProperty{JsiiProperty: "resolveDnsInternallyInput", GoGetter: "ResolveDnsInternallyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "resolveDnsThroughCloudflare", GoGetter: "ResolveDnsThroughCloudflare"},
 			_jsii_.MemberProperty{JsiiProperty: "resolveDnsThroughCloudflareInput", GoGetter: "ResolveDnsThroughCloudflareInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -680,6 +684,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally",
+		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustGatewayPolicy.ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference",
+		reflect.TypeOf((*ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fallback", GoGetter: "Fallback"},
+			_jsii_.MemberProperty{JsiiProperty: "fallbackInput", GoGetter: "FallbackInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFallback", GoMethod: "ResetFallback"},
+			_jsii_.MemberMethod{JsiiMethod: "resetViewId", GoMethod: "ResetViewId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "viewId", GoGetter: "ViewId"},
+			_jsii_.MemberProperty{JsiiProperty: "viewIdInput", GoGetter: "ViewIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

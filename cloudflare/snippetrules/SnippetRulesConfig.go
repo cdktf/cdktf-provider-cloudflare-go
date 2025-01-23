@@ -24,11 +24,11 @@ type SnippetRulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The zone identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 

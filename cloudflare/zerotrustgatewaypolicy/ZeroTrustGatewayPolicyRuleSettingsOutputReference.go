@@ -78,6 +78,8 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	OverrideIpsInput() *[]*string
 	PayloadLog() ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference
 	PayloadLogInput() *ZeroTrustGatewayPolicyRuleSettingsPayloadLog
+	ResolveDnsInternally() ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
+	ResolveDnsInternallyInput() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
 	ResolveDnsThroughCloudflare() interface{}
 	SetResolveDnsThroughCloudflare(val interface{})
 	ResolveDnsThroughCloudflareInput() interface{}
@@ -123,6 +125,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	PutL4Override(value *ZeroTrustGatewayPolicyRuleSettingsL4Override)
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
+	PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
 	PutUntrustedCert(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert)
 	ResetAddHeaders()
 	ResetAllowChildBypass()
@@ -142,6 +145,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetOverrideHost()
 	ResetOverrideIps()
 	ResetPayloadLog()
+	ResetResolveDnsInternally()
 	ResetResolveDnsThroughCloudflare()
 	ResetUntrustedCert()
 	// Produce the Token's value at resolution time.
@@ -564,6 +568,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PayloadLog
 	_jsii_.Get(
 		j,
 		"payloadLogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternally() ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
+	_jsii_.Get(
+		j,
+		"resolveDnsInternally",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResolveDnsInternallyInput() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
+	var returns *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
+	_jsii_.Get(
+		j,
+		"resolveDnsInternallyInput",
 		&returns,
 	)
 	return returns
@@ -1107,6 +1131,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutPayload
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) {
+	if err := z.validatePutResolveDnsInternallyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putResolveDnsInternally",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutUntrustedCert(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert) {
 	if err := z.validatePutUntrustedCertParameters(value); err != nil {
 		panic(err)
@@ -1258,6 +1293,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetPaylo
 	_jsii_.InvokeVoid(
 		z,
 		"resetPayloadLog",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetResolveDnsInternally() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetResolveDnsInternally",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetCidrParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -59,7 +63,19 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetL4ProtocolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetPortRangeParameters(val *string) error {
 	return nil
 }
 
@@ -76,6 +92,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetUriParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetVnetIdParameters(val *string) error {
 	return nil
 }
 

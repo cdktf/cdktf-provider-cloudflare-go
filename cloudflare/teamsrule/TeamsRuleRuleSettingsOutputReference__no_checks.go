@@ -79,6 +79,10 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutPayloadLogPa
 	return nil
 }
 
+func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutResolveDnsInternallyParameters(value *TeamsRuleRuleSettingsResolveDnsInternally) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamsRuleRuleSettingsOutputReference) validatePutUntrustedCertParameters(value *TeamsRuleRuleSettingsUntrustedCert) error {
 	return nil
 }

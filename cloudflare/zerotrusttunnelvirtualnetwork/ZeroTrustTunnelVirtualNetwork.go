@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network}.
 type ZeroTrustTunnelVirtualNetwork interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ZeroTrustTunnelVirtualNetwork) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource.
 func NewZeroTrustTunnelVirtualNetwork(scope constructs.Construct, id *string, config *ZeroTrustTunnelVirtualNetworkConfig) ZeroTrustTunnelVirtualNetwork {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewZeroTrustTunnelVirtualNetwork(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_tunnel_virtual_network cloudflare_zero_trust_tunnel_virtual_network} Resource.
 func NewZeroTrustTunnelVirtualNetwork_Override(z ZeroTrustTunnelVirtualNetwork, scope constructs.Construct, id *string, config *ZeroTrustTunnelVirtualNetworkConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration}.
 type ZeroTrustKeyAccessKeyConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ZeroTrustKeyAccessKeyConfiguration) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration} Resource.
 func NewZeroTrustKeyAccessKeyConfiguration(scope constructs.Construct, id *string, config *ZeroTrustKeyAccessKeyConfigurationConfig) ZeroTrustKeyAccessKeyConfiguration {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewZeroTrustKeyAccessKeyConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.50.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/zero_trust_key_access_key_configuration cloudflare_zero_trust_key_access_key_configuration} Resource.
 func NewZeroTrustKeyAccessKeyConfiguration_Override(z ZeroTrustKeyAccessKeyConfiguration, scope constructs.Construct, id *string, config *ZeroTrustKeyAccessKeyConfigurationConfig) {
 	_init_.Initialize()
 

@@ -101,6 +101,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetCidrParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,6 +174,14 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetHostnameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -185,6 +201,22 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustAccessApplicationDestinations; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetL4ProtocolParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetPortRangeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -215,6 +247,14 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) valida
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) validateSetVnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

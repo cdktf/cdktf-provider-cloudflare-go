@@ -13,6 +13,9 @@ import (
 
 type AccessApplicationDestinationsOutputReference interface {
 	cdktf.ComplexObject
+	Cidr() *string
+	SetCidr(val *string)
+	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,8 +33,17 @@ type AccessApplicationDestinationsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	L4Protocol() *string
+	SetL4Protocol(val *string)
+	L4ProtocolInput() *string
+	PortRange() *string
+	SetPortRange(val *string)
+	PortRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,6 +58,9 @@ type AccessApplicationDestinationsOutputReference interface {
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
+	VnetId() *string
+	SetVnetId(val *string)
+	VnetIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +85,13 @@ type AccessApplicationDestinationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCidr()
+	ResetHostname()
+	ResetL4Protocol()
+	ResetPortRange()
 	ResetType()
+	ResetUri()
+	ResetVnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -84,6 +105,26 @@ type AccessApplicationDestinationsOutputReference interface {
 // The jsii proxy struct for AccessApplicationDestinationsOutputReference
 type jsiiProxy_AccessApplicationDestinationsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) CidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) ComplexObjectIndex() interface{} {
@@ -126,11 +167,71 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) L4Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"l4Protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) L4ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"l4ProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) PortRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) PortRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portRangeInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +297,26 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) UriInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) VnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference) VnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAccessApplicationDestinationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessApplicationDestinationsOutputReference {
 	_init_.Initialize()
@@ -224,6 +345,17 @@ func NewAccessApplicationDestinationsOutputReference_Override(a AccessApplicatio
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidr",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -246,6 +378,17 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -253,6 +396,28 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetL4Protocol(val *string) {
+	if err := j.validateSetL4ProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"l4Protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetPortRange(val *string) {
+	if err := j.validateSetPortRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"portRange",
 		val,
 	)
 }
@@ -297,6 +462,17 @@ func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetUri(val *stri
 	_jsii_.Set(
 		j,
 		"uri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessApplicationDestinationsOutputReference)SetVnetId(val *string) {
+	if err := j.validateSetVnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetId",
 		val,
 	)
 }
@@ -487,10 +663,58 @@ func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) InterpolationFo
 	return returns
 }
 
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetCidr() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCidr",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetHostname() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetL4Protocol() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetL4Protocol",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetPortRange() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPortRange",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetUri() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUri",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessApplicationDestinationsOutputReference) ResetVnetId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVnetId",
 		nil, // no parameters
 	)
 }

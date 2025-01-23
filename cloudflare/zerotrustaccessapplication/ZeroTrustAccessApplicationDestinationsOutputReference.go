@@ -13,6 +13,9 @@ import (
 
 type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	cdktf.ComplexObject
+	Cidr() *string
+	SetCidr(val *string)
+	CidrInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,8 +33,17 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	L4Protocol() *string
+	SetL4Protocol(val *string)
+	L4ProtocolInput() *string
+	PortRange() *string
+	SetPortRange(val *string)
+	PortRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,6 +58,9 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
+	VnetId() *string
+	SetVnetId(val *string)
+	VnetIdInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +85,13 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCidr()
+	ResetHostname()
+	ResetL4Protocol()
+	ResetPortRange()
 	ResetType()
+	ResetUri()
+	ResetVnetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -84,6 +105,26 @@ type ZeroTrustAccessApplicationDestinationsOutputReference interface {
 // The jsii proxy struct for ZeroTrustAccessApplicationDestinationsOutputReference
 type jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) CidrInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ComplexObjectIndex() interface{} {
@@ -126,11 +167,71 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) Fqn() 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) L4Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"l4Protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) L4ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"l4ProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) PortRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) PortRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portRangeInput",
 		&returns,
 	)
 	return returns
@@ -196,6 +297,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) UriInp
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) VnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) VnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustAccessApplicationDestinationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationDestinationsOutputReference {
 	_init_.Initialize()
@@ -224,6 +345,17 @@ func NewZeroTrustAccessApplicationDestinationsOutputReference_Override(z ZeroTru
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidr",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -246,6 +378,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetComp
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -253,6 +396,28 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetL4Protocol(val *string) {
+	if err := j.validateSetL4ProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"l4Protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetPortRange(val *string) {
+	if err := j.validateSetPortRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"portRange",
 		val,
 	)
 }
@@ -297,6 +462,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetUri(
 	_jsii_.Set(
 		j,
 		"uri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference)SetVnetId(val *string) {
+	if err := j.validateSetVnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetId",
 		val,
 	)
 }
@@ -487,10 +663,58 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) Interp
 	return returns
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetCidr() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCidr",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetHostname() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetL4Protocol() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetL4Protocol",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetPortRange() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPortRange",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetType() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetUri() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUri",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationDestinationsOutputReference) ResetVnetId() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetVnetId",
 		nil, // no parameters
 	)
 }

@@ -107,10 +107,6 @@ func (j *jsiiProxy_ApiShieldOperation) validateSetHostParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldOperation) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApiShieldOperation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
