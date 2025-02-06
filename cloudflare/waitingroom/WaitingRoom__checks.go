@@ -625,6 +625,22 @@ func (j *jsiiProxy_WaitingRoom) validateSetTotalActiveUsersParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoom) validateSetTurnstileActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoom) validateSetTurnstileModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoom) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -119,6 +119,12 @@ type WaitingRoom interface {
 	TotalActiveUsers() *float64
 	SetTotalActiveUsers(val *float64)
 	TotalActiveUsersInput() *float64
+	TurnstileAction() *string
+	SetTurnstileAction(val *string)
+	TurnstileActionInput() *string
+	TurnstileMode() *string
+	SetTurnstileMode(val *string)
+	TurnstileModeInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -186,6 +192,8 @@ type WaitingRoom interface {
 	ResetSessionDuration()
 	ResetSuspended()
 	ResetTimeouts()
+	ResetTurnstileAction()
+	ResetTurnstileMode()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -764,6 +772,46 @@ func (j *jsiiProxy_WaitingRoom) TotalActiveUsersInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoom) TurnstileAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) TurnstileActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) TurnstileMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) TurnstileModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoom) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -785,7 +833,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -803,7 +851,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -1076,6 +1124,28 @@ func (j *jsiiProxy_WaitingRoom)SetTotalActiveUsers(val *float64) {
 	_jsii_.Set(
 		j,
 		"totalActiveUsers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetTurnstileAction(val *string) {
+	if err := j.validateSetTurnstileActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoom)SetTurnstileMode(val *string) {
+	if err := j.validateSetTurnstileModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileMode",
 		val,
 	)
 }
@@ -1598,6 +1668,22 @@ func (w *jsiiProxy_WaitingRoom) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetTurnstileAction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileAction",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetTurnstileMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileMode",
 		nil, // no parameters
 	)
 }

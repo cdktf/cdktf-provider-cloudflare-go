@@ -166,6 +166,14 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetCopyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableClipboardRedirectionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -286,9 +294,41 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDownloadParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetInternalValueParameters(val *TeamsRuleRuleSettingsBisoAdminControls) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetKeyboardParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetPasteParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetPrintingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -303,6 +343,22 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetUploadParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

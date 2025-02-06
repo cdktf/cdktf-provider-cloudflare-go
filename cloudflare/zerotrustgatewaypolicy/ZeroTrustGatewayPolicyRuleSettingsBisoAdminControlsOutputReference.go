@@ -23,6 +23,9 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Copy() *string
+	SetCopy(val *string)
+	CopyInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -46,10 +49,22 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	DisableUpload() interface{}
 	SetDisableUpload(val interface{})
 	DisableUploadInput() interface{}
+	Download() *string
+	SetDownload(val *string)
+	DownloadInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls
 	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
+	Keyboard() *string
+	SetKeyboard(val *string)
+	KeyboardInput() *string
+	Paste() *string
+	SetPaste(val *string)
+	PasteInput() *string
+	Printing() *string
+	SetPrinting(val *string)
+	PrintingInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,6 +73,12 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Upload() *string
+	SetUpload(val *string)
+	UploadInput() *string
+	Version() *string
+	SetVersion(val *string)
+	VersionInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,12 +103,19 @@ type ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCopy()
 	ResetDisableClipboardRedirection()
 	ResetDisableCopyPaste()
 	ResetDisableDownload()
 	ResetDisableKeyboard()
 	ResetDisablePrinting()
 	ResetDisableUpload()
+	ResetDownload()
+	ResetKeyboard()
+	ResetPaste()
+	ResetPrinting()
+	ResetUpload()
+	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -118,6 +146,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Copy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"copy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) CopyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"copyInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +301,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Download() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"download",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) DownloadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"downloadInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +341,66 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Keyboard() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyboard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) KeyboardInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyboardInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Paste() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"paste",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) PasteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pasteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Printing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"printing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) PrintingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"printingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -288,6 +416,46 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Upload() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"upload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) UploadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) VersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +507,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetCopy(val *string) {
+	if err := j.validateSetCopyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copy",
 		val,
 	)
 }
@@ -409,6 +588,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetDownload(val *string) {
+	if err := j.validateSetDownloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"download",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -416,6 +606,39 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetKeyboard(val *string) {
+	if err := j.validateSetKeyboardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyboard",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetPaste(val *string) {
+	if err := j.validateSetPasteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paste",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetPrinting(val *string) {
+	if err := j.validateSetPrintingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"printing",
 		val,
 	)
 }
@@ -438,6 +661,28 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetUpload(val *string) {
+	if err := j.validateSetUploadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"upload",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"version",
 		val,
 	)
 }
@@ -628,6 +873,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return returns
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetCopy() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCopy",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDisableClipboardRedirection() {
 	_jsii_.InvokeVoid(
 		z,
@@ -672,6 +925,54 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	_jsii_.InvokeVoid(
 		z,
 		"resetDisableUpload",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetDownload() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDownload",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetKeyboard() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetKeyboard",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetPaste() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPaste",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetPrinting() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPrinting",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetUpload() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUpload",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) ResetVersion() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetVersion",
 		nil, // no parameters
 	)
 }

@@ -7,11 +7,11 @@ package datacloudflarezerotrustinfrastructureaccesstargets
 type DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIp struct {
 	// The target's IPv4 address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv4 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv4}
 	Ipv4 *DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv4 `field:"optional" json:"ipv4" yaml:"ipv4"`
 	// The target's IPv6 address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_infrastructure_access_targets#ipv6 DataCloudflareZeroTrustInfrastructureAccessTargets#ipv6}
 	Ipv6 *DataCloudflareZeroTrustInfrastructureAccessTargetsTargetsIpIpv6 `field:"optional" json:"ipv6" yaml:"ipv6"`
 }
 

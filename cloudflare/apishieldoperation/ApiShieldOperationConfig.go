@@ -26,19 +26,19 @@ type ApiShieldOperationConfig struct {
 	//
 	// This will then be [Cloudflare-normalized](https://developers.cloudflare.com/rules/normalization/how-it-works/)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 	// RFC3986-compliant host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
 	// The HTTP method used to access the endpoint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 	Method *string `field:"required" json:"method" yaml:"method"`
 	// The zone identifier to target for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.51.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetCopyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableClipboardRedirectionParameters(val interface{}) error {
 	return nil
 }
@@ -83,7 +87,23 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDownloadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetInternalValueParameters(val *TeamsRuleRuleSettingsBisoAdminControls) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetKeyboardParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetPasteParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetPrintingParameters(val *string) error {
 	return nil
 }
 
@@ -92,6 +112,14 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 }
 
 func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetUploadParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetVersionParameters(val *string) error {
 	return nil
 }
 

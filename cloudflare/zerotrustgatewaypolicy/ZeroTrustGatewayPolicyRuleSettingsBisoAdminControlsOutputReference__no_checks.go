@@ -59,6 +59,10 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetCopyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDisableClipboardRedirectionParameters(val interface{}) error {
 	return nil
 }
@@ -83,7 +87,23 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetDownloadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetKeyboardParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetPasteParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetPrintingParameters(val *string) error {
 	return nil
 }
 
@@ -92,6 +112,14 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputRefe
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetUploadParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference) validateSetVersionParameters(val *string) error {
 	return nil
 }
 
