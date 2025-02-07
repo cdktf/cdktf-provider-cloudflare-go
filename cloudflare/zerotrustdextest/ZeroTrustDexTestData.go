@@ -5,17 +5,17 @@ package zerotrustdextest
 
 
 type ZeroTrustDexTestData struct {
-	// The host URL for `http` test `kind`. For `traceroute`, it must be a valid hostname or IP address.
+	// The desired endpoint to test.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
-	Host *string `field:"required" json:"host" yaml:"host"`
-	// The type of Device Dex Test. Available values: `http`, `traceroute`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
+	Host *string `field:"optional" json:"host" yaml:"host"`
+	// The type of test.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
-	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// The http request method. Available values: `GET`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
+	Kind *string `field:"optional" json:"kind" yaml:"kind"`
+	// The HTTP request method type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
 	Method *string `field:"optional" json:"method" yaml:"method"`
 }
 

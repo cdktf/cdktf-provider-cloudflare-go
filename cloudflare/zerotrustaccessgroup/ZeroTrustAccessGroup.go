@@ -5,14 +5,14 @@ package zerotrustaccessgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessgroup/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}.
 type ZeroTrustAccessGroup interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,7 @@ type ZeroTrustAccessGroup interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,10 +46,11 @@ type ZeroTrustAccessGroup interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Include() ZeroTrustAccessGroupIncludeList
 	IncludeInput() interface{}
+	IsDefault() interface{}
+	SetIsDefault(val interface{})
+	IsDefaultInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,6 +78,7 @@ type ZeroTrustAccessGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -127,7 +130,7 @@ type ZeroTrustAccessGroup interface {
 	PutRequire(value interface{})
 	ResetAccountId()
 	ResetExclude()
-	ResetId()
+	ResetIsDefault()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -211,6 +214,16 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessGroup) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessGroup) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -281,16 +294,6 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessGroup) Include() ZeroTrustAccessGroupIncludeList {
 	var returns ZeroTrustAccessGroupIncludeList
 	_jsii_.Get(
@@ -306,6 +309,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) IncludeInput() interface{} {
 	_jsii_.Get(
 		j,
 		"includeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroup) IsDefault() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefault",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroup) IsDefaultInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +454,16 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessGroup) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessGroup) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -452,7 +485,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource.
 func NewZeroTrustAccessGroup(scope constructs.Construct, id *string, config *ZeroTrustAccessGroupConfig) ZeroTrustAccessGroup {
 	_init_.Initialize()
 
@@ -470,7 +503,7 @@ func NewZeroTrustAccessGroup(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource.
 func NewZeroTrustAccessGroup_Override(z ZeroTrustAccessGroup, scope constructs.Construct, id *string, config *ZeroTrustAccessGroupConfig) {
 	_init_.Initialize()
 
@@ -530,13 +563,13 @@ func (j *jsiiProxy_ZeroTrustAccessGroup)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustAccessGroup)SetIsDefault(val interface{}) {
+	if err := j.validateSetIsDefaultParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"isDefault",
 		val,
 	)
 }
@@ -995,10 +1028,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroup) ResetExclude() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroup) ResetId() {
+func (z *jsiiProxy_ZeroTrustAccessGroup) ResetIsDefault() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"resetIsDefault",
 		nil, // no parameters
 	)
 }

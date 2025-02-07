@@ -5,15 +5,15 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type LoadBalancerRulesOverridesOutputReference interface {
 	cdktf.ComplexObject
-	AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingList
+	AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 	AdaptiveRoutingInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -25,7 +25,8 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CountryPools() LoadBalancerRulesOverridesCountryPoolsList
+	CountryPools() interface{}
+	SetCountryPools(val interface{})
 	CountryPoolsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -42,17 +43,19 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	LocationStrategy() LoadBalancerRulesOverridesLocationStrategyList
+	LocationStrategy() LoadBalancerRulesOverridesLocationStrategyOutputReference
 	LocationStrategyInput() interface{}
-	PopPools() LoadBalancerRulesOverridesPopPoolsList
+	PopPools() interface{}
+	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
-	RandomSteering() LoadBalancerRulesOverridesRandomSteeringList
+	RandomSteering() LoadBalancerRulesOverridesRandomSteeringOutputReference
 	RandomSteeringInput() interface{}
-	RegionPools() LoadBalancerRulesOverridesRegionPoolsList
+	RegionPools() interface{}
+	SetRegionPools(val interface{})
 	RegionPoolsInput() interface{}
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
-	SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesList
+	SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference
 	SessionAffinityAttributesInput() interface{}
 	SessionAffinityInput() *string
 	SessionAffinityTtl() *float64
@@ -96,13 +99,10 @@ type LoadBalancerRulesOverridesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdaptiveRouting(value interface{})
-	PutCountryPools(value interface{})
-	PutLocationStrategy(value interface{})
-	PutPopPools(value interface{})
-	PutRandomSteering(value interface{})
-	PutRegionPools(value interface{})
-	PutSessionAffinityAttributes(value interface{})
+	PutAdaptiveRouting(value *LoadBalancerRulesOverridesAdaptiveRouting)
+	PutLocationStrategy(value *LoadBalancerRulesOverridesLocationStrategy)
+	PutRandomSteering(value *LoadBalancerRulesOverridesRandomSteering)
+	PutSessionAffinityAttributes(value *LoadBalancerRulesOverridesSessionAffinityAttributes)
 	ResetAdaptiveRouting()
 	ResetCountryPools()
 	ResetDefaultPools()
@@ -131,8 +131,8 @@ type jsiiProxy_LoadBalancerRulesOverridesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingList {
-	var returns LoadBalancerRulesOverridesAdaptiveRoutingList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) AdaptiveRouting() LoadBalancerRulesOverridesAdaptiveRoutingOutputReference {
+	var returns LoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 	_jsii_.Get(
 		j,
 		"adaptiveRouting",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) ComplexObjectIsFro
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) CountryPools() LoadBalancerRulesOverridesCountryPoolsList {
-	var returns LoadBalancerRulesOverridesCountryPoolsList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) CountryPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"countryPools",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) InternalValue() in
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) LocationStrategy() LoadBalancerRulesOverridesLocationStrategyList {
-	var returns LoadBalancerRulesOverridesLocationStrategyList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) LocationStrategy() LoadBalancerRulesOverridesLocationStrategyOutputReference {
+	var returns LoadBalancerRulesOverridesLocationStrategyOutputReference
 	_jsii_.Get(
 		j,
 		"locationStrategy",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) LocationStrategyIn
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PopPools() LoadBalancerRulesOverridesPopPoolsList {
-	var returns LoadBalancerRulesOverridesPopPoolsList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PopPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"popPools",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PopPoolsInput() in
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RandomSteering() LoadBalancerRulesOverridesRandomSteeringList {
-	var returns LoadBalancerRulesOverridesRandomSteeringList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RandomSteering() LoadBalancerRulesOverridesRandomSteeringOutputReference {
+	var returns LoadBalancerRulesOverridesRandomSteeringOutputReference
 	_jsii_.Get(
 		j,
 		"randomSteering",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RandomSteeringInpu
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RegionPools() LoadBalancerRulesOverridesRegionPoolsList {
-	var returns LoadBalancerRulesOverridesRegionPoolsList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) RegionPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"regionPools",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinity() 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesList {
-	var returns LoadBalancerRulesOverridesSessionAffinityAttributesList
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) SessionAffinityAttributes() LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference {
+	var returns LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributes",
@@ -462,29 +462,29 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) TtlInput() *float6
 }
 
 
-func NewLoadBalancerRulesOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOverridesOutputReference {
+func NewLoadBalancerRulesOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerRulesOverridesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerRulesOverridesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerRulesOverridesOutputReference_Override(l LoadBalancerRulesOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerRulesOverridesOutputReference_Override(l LoadBalancerRulesOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }
@@ -507,6 +507,17 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetCountryPools(val interface{}) {
+	if err := j.validateSetCountryPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"countryPools",
 		val,
 	)
 }
@@ -540,6 +551,28 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetPopPools(val interface{}) {
+	if err := j.validateSetPopPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"popPools",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference)SetRegionPools(val interface{}) {
+	if err := j.validateSetRegionPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regionPools",
 		val,
 	)
 }
@@ -796,7 +829,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) InterpolationForAt
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutAdaptiveRouting(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutAdaptiveRouting(value *LoadBalancerRulesOverridesAdaptiveRouting) {
 	if err := l.validatePutAdaptiveRoutingParameters(value); err != nil {
 		panic(err)
 	}
@@ -807,18 +840,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutAdaptiveRouting
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutCountryPools(value interface{}) {
-	if err := l.validatePutCountryPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putCountryPools",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutLocationStrategy(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutLocationStrategy(value *LoadBalancerRulesOverridesLocationStrategy) {
 	if err := l.validatePutLocationStrategyParameters(value); err != nil {
 		panic(err)
 	}
@@ -829,18 +851,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutLocationStrateg
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutPopPools(value interface{}) {
-	if err := l.validatePutPopPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putPopPools",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRandomSteering(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRandomSteering(value *LoadBalancerRulesOverridesRandomSteering) {
 	if err := l.validatePutRandomSteeringParameters(value); err != nil {
 		panic(err)
 	}
@@ -851,18 +862,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRandomSteering(
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutRegionPools(value interface{}) {
-	if err := l.validatePutRegionPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putRegionPools",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutSessionAffinityAttributes(value interface{}) {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) PutSessionAffinityAttributes(value *LoadBalancerRulesOverridesSessionAffinityAttributes) {
 	if err := l.validatePutSessionAffinityAttributesParameters(value); err != nil {
 		panic(err)
 	}

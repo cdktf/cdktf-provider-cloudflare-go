@@ -5,14 +5,14 @@ package zerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrusttunnelcloudflaredconfig/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
 type ZeroTrustTunnelCloudflaredConfigA interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,7 +21,7 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() ZeroTrustTunnelCloudflaredConfigConfigOutputReference
-	ConfigInput() *ZeroTrustTunnelCloudflaredConfigConfig
+	ConfigInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,6 +32,7 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,8 +46,6 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -63,6 +62,9 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Source() *string
+	SetSource(val *string)
+	SourceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -72,6 +74,7 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	TunnelId() *string
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
+	Version() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,10 +119,11 @@ type ZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ZeroTrustTunnelCloudflaredConfigConfig)
-	ResetId()
+	ResetConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -178,8 +182,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Config() ZeroTrustTunnelCl
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ConfigInput() *ZeroTrustTunnelCloudflaredConfigConfig {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfig
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"configInput",
@@ -213,6 +217,16 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -268,16 +282,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -323,6 +327,26 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) RawOverrides() interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Source() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"source",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) SourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInput",
 		&returns,
 	)
 	return returns
@@ -378,8 +402,18 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) TunnelIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) Version() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) ZeroTrustTunnelCloudflaredConfigA {
 	_init_.Initialize()
 
@@ -397,7 +431,7 @@ func NewZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource.
 func NewZeroTrustTunnelCloudflaredConfigA_Override(z ZeroTrustTunnelCloudflaredConfigA, scope constructs.Construct, id *string, config *ZeroTrustTunnelCloudflaredConfigAConfig) {
 	_init_.Initialize()
 
@@ -457,17 +491,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -494,6 +517,17 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"source",
 		val,
 	)
 }
@@ -873,10 +907,10 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) PutConfig(value *ZeroTrust
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetId() {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetConfig() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"resetConfig",
 		nil, // no parameters
 	)
 }
@@ -885,6 +919,14 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) ResetSource() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSource",
 		nil, // no parameters
 	)
 }

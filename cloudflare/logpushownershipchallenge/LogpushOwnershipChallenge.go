@@ -5,14 +5,14 @@ package logpushownershipchallenge
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpushownershipchallenge/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushownershipchallenge/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
 type LogpushOwnershipChallenge interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -37,6 +37,7 @@ type LogpushOwnershipChallenge interface {
 	DestinationConf() *string
 	SetDestinationConf(val *string)
 	DestinationConfInput() *string
+	Filename() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,16 +46,13 @@ type LogpushOwnershipChallenge interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Message() *string
 	// The tree node.
 	Node() constructs.Node
-	OwnershipChallengeFilename() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -71,6 +69,7 @@ type LogpushOwnershipChallenge interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Valid() cdktf.IResolvable
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -118,7 +117,6 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -231,6 +229,16 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) DestinationConfInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogpushOwnershipChallenge) Filename() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filename",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogpushOwnershipChallenge) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -261,26 +269,6 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogpushOwnershipChallenge) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LogpushOwnershipChallenge) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -291,21 +279,21 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) Node() constructs.Node {
-	var returns constructs.Node
+func (j *jsiiProxy_LogpushOwnershipChallenge) Message() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"node",
+		"message",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) OwnershipChallengeFilename() *string {
-	var returns *string
+func (j *jsiiProxy_LogpushOwnershipChallenge) Node() constructs.Node {
+	var returns constructs.Node
 	_jsii_.Get(
 		j,
-		"ownershipChallengeFilename",
+		"node",
 		&returns,
 	)
 	return returns
@@ -371,6 +359,16 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogpushOwnershipChallenge) Valid() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"valid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -392,7 +390,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge {
 	_init_.Initialize()
 
@@ -410,7 +408,7 @@ func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) {
 	_init_.Initialize()
 
@@ -477,17 +475,6 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -890,14 +877,6 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LogpushOwnershipChallenge) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

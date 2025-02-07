@@ -22,26 +22,19 @@ type RegionalHostnameConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The hostname to regionalize.
+	// DNS hostname to be regionalized, must be a subdomain of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+	// Wildcards are supported for one level, e.g `*.example.com`
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// The region key. See [the full region list](https://developers.cloudflare.com/data-localization/regional-services/get-started/).
+	// Identifying key for the region.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
 	RegionKey *string `field:"required" json:"regionKey" yaml:"regionKey"`
-	// The zone identifier to target for the resource.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname#id RegionalHostname#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// timeouts block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname#timeouts RegionalHostname#timeouts}
-	Timeouts *RegionalHostnameTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

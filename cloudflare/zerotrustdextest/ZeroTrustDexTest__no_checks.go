@@ -79,6 +79,10 @@ func (z *jsiiProxy_ZeroTrustDexTest) validatePutDataParameters(value *ZeroTrustD
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDexTest) validatePutTargetPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func validateZeroTrustDexTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -115,10 +119,6 @@ func (j *jsiiProxy_ZeroTrustDexTest) validateSetEnabledParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustDexTest) validateSetIntervalParameters(val *string) error {
 	return nil
 }
@@ -132,6 +132,10 @@ func (j *jsiiProxy_ZeroTrustDexTest) validateSetNameParameters(val *string) erro
 }
 
 func (j *jsiiProxy_ZeroTrustDexTest) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest) validateSetTargetedParameters(val interface{}) error {
 	return nil
 }
 

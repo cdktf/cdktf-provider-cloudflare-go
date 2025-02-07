@@ -5,14 +5,14 @@ package d1database
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/d1database/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/d1database/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database}.
 type D1Database interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,10 +30,12 @@ type D1Database interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FileSize() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,6 +54,10 @@ type D1Database interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumTables() *float64
+	PrimaryLocationHint() *string
+	SetPrimaryLocationHint(val *string)
+	PrimaryLocationHintInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,6 +74,7 @@ type D1Database interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uuid() *string
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -115,6 +122,7 @@ type D1Database interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrimaryLocationHint()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,11 +201,31 @@ func (j *jsiiProxy_D1Database) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) FileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fileSize",
 		&returns,
 	)
 	return returns
@@ -283,6 +311,36 @@ func (j *jsiiProxy_D1Database) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) NumTables() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) PrimaryLocationHint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLocationHint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_D1Database) PrimaryLocationHintInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLocationHintInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -343,6 +401,16 @@ func (j *jsiiProxy_D1Database) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_D1Database) Uuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uuid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_D1Database) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -354,7 +422,7 @@ func (j *jsiiProxy_D1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseConfig) D1Database {
 	_init_.Initialize()
 
@@ -372,7 +440,7 @@ func NewD1Database(scope constructs.Construct, id *string, config *D1DatabaseCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/d1_database cloudflare_d1_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database cloudflare_d1_database} Resource.
 func NewD1Database_Override(d D1Database, scope constructs.Construct, id *string, config *D1DatabaseConfig) {
 	_init_.Initialize()
 
@@ -450,6 +518,17 @@ func (j *jsiiProxy_D1Database)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_D1Database)SetPrimaryLocationHint(val *string) {
+	if err := j.validateSetPrimaryLocationHintParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryLocationHint",
 		val,
 	)
 }
@@ -830,6 +909,14 @@ func (d *jsiiProxy_D1Database) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_D1Database) ResetPrimaryLocationHint() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrimaryLocationHint",
 		nil, // no parameters
 	)
 }

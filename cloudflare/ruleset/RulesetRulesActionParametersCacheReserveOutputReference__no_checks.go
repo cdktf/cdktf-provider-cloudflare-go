@@ -79,7 +79,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) vali
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheReserveOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersCacheReserveOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

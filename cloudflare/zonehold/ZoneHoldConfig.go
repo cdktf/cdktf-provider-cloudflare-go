@@ -22,26 +22,25 @@ type ZoneHoldConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Enablement status of the zone hold.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold ZoneHold#hold}
-	Hold interface{} `field:"required" json:"hold" yaml:"hold"`
-	// The zone identifier to target for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// The RFC3339 compatible timestamp when to automatically re-enable the zone hold.
+	// If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+	// A past-dated `hold_after` value will have
+	// no effect on an existing, enabled hold. Providing an empty string will set its value
+	// to the current time.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 	HoldAfter *string `field:"optional" json:"holdAfter" yaml:"holdAfter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#id ZoneHold#id}.
+	// If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Whether to extend to block any subdomain of the given zone.
+	// For example, a zone hold on a zone with the hostname
+	// 'example.com' and include_subdomains=true will block 'example.com',
+	// 'staging.example.com', 'api.staging.example.com', etc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 	IncludeSubdomains interface{} `field:"optional" json:"includeSubdomains" yaml:"includeSubdomains"`
 }
 

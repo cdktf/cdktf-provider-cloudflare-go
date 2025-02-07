@@ -5,9 +5,9 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -198,29 +198,29 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) TerraformResourc
 }
 
 
-func NewLoadBalancerLocationStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerLocationStrategyOutputReference {
+func NewLoadBalancerLocationStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerLocationStrategyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerLocationStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerLocationStrategyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerLocationStrategyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerLocationStrategyOutputReference_Override(l LoadBalancerLocationStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerLocationStrategyOutputReference_Override(l LoadBalancerLocationStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

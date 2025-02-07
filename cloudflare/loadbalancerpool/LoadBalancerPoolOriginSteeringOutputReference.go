@@ -5,9 +5,9 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancerpool/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -174,29 +174,29 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) TerraformResou
 }
 
 
-func NewLoadBalancerPoolOriginSteeringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPoolOriginSteeringOutputReference {
+func NewLoadBalancerPoolOriginSteeringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoadBalancerPoolOriginSteeringOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewLoadBalancerPoolOriginSteeringOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewLoadBalancerPoolOriginSteeringOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewLoadBalancerPoolOriginSteeringOutputReference_Override(l LoadBalancerPoolOriginSteeringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerPoolOriginSteeringOutputReference_Override(l LoadBalancerPoolOriginSteeringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

@@ -166,9 +166,25 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetInternalValueParameters(val *SpectrumApplicationOriginDns) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *SpectrumApplicationOriginDns:
+		val := val.(*SpectrumApplicationOriginDns)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case SpectrumApplicationOriginDns:
+		val_ := val.(SpectrumApplicationOriginDns)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SpectrumApplicationOriginDns; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -191,6 +207,22 @@ func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpectrumApplicationOriginDnsOutputReference) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

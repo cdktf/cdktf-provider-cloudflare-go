@@ -75,7 +75,7 @@ func (z *jsiiProxy_ZeroTrustList) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustList) validatePutItemsWithDescriptionParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustList) validatePutItemsParameters(value interface{}) error {
 	return nil
 }
 
@@ -108,14 +108,6 @@ func (j *jsiiProxy_ZeroTrustList) validateSetCountParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_ZeroTrustList) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustList) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustList) validateSetItemsParameters(val *[]*string) error {
 	return nil
 }
 

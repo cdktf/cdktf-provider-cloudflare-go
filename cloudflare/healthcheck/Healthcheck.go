@@ -5,22 +5,19 @@ package healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/healthcheck/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/healthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/healthcheck cloudflare_healthcheck}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/healthcheck cloudflare_healthcheck}.
 type Healthcheck interface {
 	cdktf.TerraformResource
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
-	AllowInsecure() interface{}
-	SetAllowInsecure(val interface{})
-	AllowInsecureInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CheckRegions() *[]*string
@@ -50,15 +47,7 @@ type Healthcheck interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	ExpectedBody() *string
-	SetExpectedBody(val *string)
-	ExpectedBodyInput() *string
-	ExpectedCodes() *[]*string
-	SetExpectedCodes(val *[]*string)
-	ExpectedCodesInput() *[]*string
-	FollowRedirects() interface{}
-	SetFollowRedirects(val interface{})
-	FollowRedirectsInput() interface{}
+	FailureReason() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,11 +56,9 @@ type Healthcheck interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Header() HealthcheckHeaderList
-	HeaderInput() interface{}
+	HttpConfig() HealthcheckHttpConfigOutputReference
+	HttpConfigInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Interval() *float64
 	SetInterval(val *float64)
 	IntervalInput() *float64
@@ -79,21 +66,12 @@ type Healthcheck interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Method() *string
-	SetMethod(val *string)
-	MethodInput() *string
 	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Path() *string
-	SetPath(val *string)
-	PathInput() *string
-	Port() *float64
-	SetPort(val *float64)
-	PortInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -107,9 +85,12 @@ type Healthcheck interface {
 	Retries() *float64
 	SetRetries(val *float64)
 	RetriesInput() *float64
+	Status() *string
 	Suspended() interface{}
 	SetSuspended(val interface{})
 	SuspendedInput() interface{}
+	TcpConfig() HealthcheckTcpConfigOutputReference
+	TcpConfigInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,8 +100,6 @@ type Healthcheck interface {
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
-	Timeouts() HealthcheckTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -170,29 +149,22 @@ type Healthcheck interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutHeader(value interface{})
-	PutTimeouts(value *HealthcheckTimeouts)
-	ResetAllowInsecure()
+	PutHttpConfig(value *HealthcheckHttpConfig)
+	PutTcpConfig(value *HealthcheckTcpConfig)
 	ResetCheckRegions()
 	ResetConsecutiveFails()
 	ResetConsecutiveSuccesses()
 	ResetDescription()
-	ResetExpectedBody()
-	ResetExpectedCodes()
-	ResetFollowRedirects()
-	ResetHeader()
-	ResetId()
+	ResetHttpConfig()
 	ResetInterval()
-	ResetMethod()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPath()
-	ResetPort()
 	ResetRetries()
 	ResetSuspended()
+	ResetTcpConfig()
 	ResetTimeout()
-	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -226,26 +198,6 @@ func (j *jsiiProxy_Healthcheck) AddressInput() *string {
 	_jsii_.Get(
 		j,
 		"addressInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) AllowInsecure() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowInsecure",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) AllowInsecureInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowInsecureInput",
 		&returns,
 	)
 	return returns
@@ -391,61 +343,11 @@ func (j *jsiiProxy_Healthcheck) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Healthcheck) ExpectedBody() *string {
+func (j *jsiiProxy_Healthcheck) FailureReason() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"expectedBody",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) ExpectedBodyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"expectedBodyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) ExpectedCodes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"expectedCodes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) ExpectedCodesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"expectedCodesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) FollowRedirects() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"followRedirects",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) FollowRedirectsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"followRedirectsInput",
+		"failureReason",
 		&returns,
 	)
 	return returns
@@ -481,21 +383,21 @@ func (j *jsiiProxy_Healthcheck) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Healthcheck) Header() HealthcheckHeaderList {
-	var returns HealthcheckHeaderList
+func (j *jsiiProxy_Healthcheck) HttpConfig() HealthcheckHttpConfigOutputReference {
+	var returns HealthcheckHttpConfigOutputReference
 	_jsii_.Get(
 		j,
-		"header",
+		"httpConfig",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Healthcheck) HeaderInput() interface{} {
+func (j *jsiiProxy_Healthcheck) HttpConfigInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"headerInput",
+		"httpConfigInput",
 		&returns,
 	)
 	return returns
@@ -506,16 +408,6 @@ func (j *jsiiProxy_Healthcheck) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -546,26 +438,6 @@ func (j *jsiiProxy_Healthcheck) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) Method() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"method",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) MethodInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"methodInput",
 		&returns,
 	)
 	return returns
@@ -606,46 +478,6 @@ func (j *jsiiProxy_Healthcheck) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) Path() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"path",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) Port() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"port",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) PortInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"portInput",
 		&returns,
 	)
 	return returns
@@ -701,6 +533,16 @@ func (j *jsiiProxy_Healthcheck) RetriesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Healthcheck) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Healthcheck) Suspended() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -716,6 +558,26 @@ func (j *jsiiProxy_Healthcheck) SuspendedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"suspendedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TcpConfig() HealthcheckTcpConfigOutputReference {
+	var returns HealthcheckTcpConfigOutputReference
+	_jsii_.Get(
+		j,
+		"tcpConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Healthcheck) TcpConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpConfigInput",
 		&returns,
 	)
 	return returns
@@ -771,26 +633,6 @@ func (j *jsiiProxy_Healthcheck) TimeoutInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Healthcheck) Timeouts() HealthcheckTimeoutsOutputReference {
-	var returns HealthcheckTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Healthcheck) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Healthcheck) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -832,7 +674,7 @@ func (j *jsiiProxy_Healthcheck) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckConfig) Healthcheck {
 	_init_.Initialize()
 
@@ -850,7 +692,7 @@ func NewHealthcheck(scope constructs.Construct, id *string, config *HealthcheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/healthcheck cloudflare_healthcheck} Resource.
 func NewHealthcheck_Override(h Healthcheck, scope constructs.Construct, id *string, config *HealthcheckConfig) {
 	_init_.Initialize()
 
@@ -868,17 +710,6 @@ func (j *jsiiProxy_Healthcheck)SetAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"address",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetAllowInsecure(val interface{}) {
-	if err := j.validateSetAllowInsecureParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowInsecure",
 		val,
 	)
 }
@@ -957,54 +788,10 @@ func (j *jsiiProxy_Healthcheck)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Healthcheck)SetExpectedBody(val *string) {
-	if err := j.validateSetExpectedBodyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"expectedBody",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetExpectedCodes(val *[]*string) {
-	if err := j.validateSetExpectedCodesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"expectedCodes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetFollowRedirects(val interface{}) {
-	if err := j.validateSetFollowRedirectsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"followRedirects",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Healthcheck)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1031,17 +818,6 @@ func (j *jsiiProxy_Healthcheck)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_Healthcheck)SetMethod(val *string) {
-	if err := j.validateSetMethodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"method",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Healthcheck)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -1049,28 +825,6 @@ func (j *jsiiProxy_Healthcheck)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Healthcheck)SetPort(val *float64) {
-	if err := j.validateSetPortParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"port",
 		val,
 	)
 }
@@ -1502,33 +1256,25 @@ func (h *jsiiProxy_Healthcheck) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (h *jsiiProxy_Healthcheck) PutHeader(value interface{}) {
-	if err := h.validatePutHeaderParameters(value); err != nil {
+func (h *jsiiProxy_Healthcheck) PutHttpConfig(value *HealthcheckHttpConfig) {
+	if err := h.validatePutHttpConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
-		"putHeader",
+		"putHttpConfig",
 		[]interface{}{value},
 	)
 }
 
-func (h *jsiiProxy_Healthcheck) PutTimeouts(value *HealthcheckTimeouts) {
-	if err := h.validatePutTimeoutsParameters(value); err != nil {
+func (h *jsiiProxy_Healthcheck) PutTcpConfig(value *HealthcheckTcpConfig) {
+	if err := h.validatePutTcpConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
-		"putTimeouts",
+		"putTcpConfig",
 		[]interface{}{value},
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetAllowInsecure() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetAllowInsecure",
-		nil, // no parameters
 	)
 }
 
@@ -1564,42 +1310,10 @@ func (h *jsiiProxy_Healthcheck) ResetDescription() {
 	)
 }
 
-func (h *jsiiProxy_Healthcheck) ResetExpectedBody() {
+func (h *jsiiProxy_Healthcheck) ResetHttpConfig() {
 	_jsii_.InvokeVoid(
 		h,
-		"resetExpectedBody",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetExpectedCodes() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetExpectedCodes",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetFollowRedirects() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetFollowRedirects",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetHeader() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetHeader",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetId() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetId",
+		"resetHttpConfig",
 		nil, // no parameters
 	)
 }
@@ -1612,34 +1326,10 @@ func (h *jsiiProxy_Healthcheck) ResetInterval() {
 	)
 }
 
-func (h *jsiiProxy_Healthcheck) ResetMethod() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetMethod",
-		nil, // no parameters
-	)
-}
-
 func (h *jsiiProxy_Healthcheck) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetPath() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetPath",
-		nil, // no parameters
-	)
-}
-
-func (h *jsiiProxy_Healthcheck) ResetPort() {
-	_jsii_.InvokeVoid(
-		h,
-		"resetPort",
 		nil, // no parameters
 	)
 }
@@ -1660,6 +1350,14 @@ func (h *jsiiProxy_Healthcheck) ResetSuspended() {
 	)
 }
 
+func (h *jsiiProxy_Healthcheck) ResetTcpConfig() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetTcpConfig",
+		nil, // no parameters
+	)
+}
+
 func (h *jsiiProxy_Healthcheck) ResetTimeout() {
 	_jsii_.InvokeVoid(
 		h,
@@ -1668,10 +1366,10 @@ func (h *jsiiProxy_Healthcheck) ResetTimeout() {
 	)
 }
 
-func (h *jsiiProxy_Healthcheck) ResetTimeouts() {
+func (h *jsiiProxy_Healthcheck) ResetType() {
 	_jsii_.InvokeVoid(
 		h,
-		"resetTimeouts",
+		"resetType",
 		nil, // no parameters
 	)
 }

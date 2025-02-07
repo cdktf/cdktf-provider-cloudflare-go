@@ -83,7 +83,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateS
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

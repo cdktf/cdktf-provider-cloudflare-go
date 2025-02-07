@@ -59,7 +59,7 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetInternalValueParameters(val *RateLimitMatchRequest) error {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetUrlPatternParameters(val *string) error {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetUrlParameters(val *string) error {
 	return nil
 }
 

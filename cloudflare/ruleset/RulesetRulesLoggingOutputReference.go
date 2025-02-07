@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,7 +67,6 @@ type RulesetRulesLoggingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,29 +173,29 @@ func (j *jsiiProxy_RulesetRulesLoggingOutputReference) TerraformResource() cdktf
 }
 
 
-func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesLoggingOutputReference {
+func NewRulesetRulesLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesLoggingOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesLoggingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesLoggingOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesLoggingOutputReference_Override(r RulesetRulesLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -451,14 +450,6 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) InterpolationForAttribute
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetEnabled",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

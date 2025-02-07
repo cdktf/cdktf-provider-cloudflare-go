@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,8 +70,6 @@ type ZeroTrustAccessApplicationFooterLinksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetName()
-	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) Interpo
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) ResetUrl() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetUrl",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplicationFooterLinksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

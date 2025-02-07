@@ -5,14 +5,14 @@ package waitingroomrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/waitingroomrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules}.
 type WaitingRoomRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,9 +39,6 @@ type WaitingRoomRules interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,6 +55,9 @@ type WaitingRoomRules interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RuleId() *string
+	SetRuleId(val *string)
+	RuleIdInput() *string
 	Rules() WaitingRoomRulesRulesList
 	RulesInput() interface{}
 	// Experimental.
@@ -116,11 +116,10 @@ type WaitingRoomRules interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRules()
+	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -219,26 +218,6 @@ func (j *jsiiProxy_WaitingRoomRules) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomRules) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WaitingRoomRules) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -284,6 +263,26 @@ func (j *jsiiProxy_WaitingRoomRules) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomRules) RuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomRules) RuleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleIdInput",
 		&returns,
 	)
 	return returns
@@ -380,7 +379,7 @@ func (j *jsiiProxy_WaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules(scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) WaitingRoomRules {
 	_init_.Initialize()
 
@@ -398,7 +397,7 @@ func NewWaitingRoomRules(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules_Override(w WaitingRoomRules, scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) {
 	_init_.Initialize()
 
@@ -447,17 +446,6 @@ func (j *jsiiProxy_WaitingRoomRules)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WaitingRoomRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -484,6 +472,17 @@ func (j *jsiiProxy_WaitingRoomRules)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoomRules)SetRuleId(val *string) {
+	if err := j.validateSetRuleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ruleId",
 		val,
 	)
 }
@@ -874,14 +873,6 @@ func (w *jsiiProxy_WaitingRoomRules) PutRules(value interface{}) {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WaitingRoomRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -890,10 +881,10 @@ func (w *jsiiProxy_WaitingRoomRules) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) ResetRules() {
+func (w *jsiiProxy_WaitingRoomRules) ResetRuleId() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetRules",
+		"resetRuleId",
 		nil, // no parameters
 	)
 }

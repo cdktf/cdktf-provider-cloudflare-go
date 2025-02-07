@@ -5,9 +5,9 @@ package cloudconnectorrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/cloudconnectorrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudconnectorrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,6 +67,7 @@ type CloudConnectorRulesRulesParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (c *jsiiProxy_CloudConnectorRulesRulesParametersOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudConnectorRulesRulesParametersOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHost",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudConnectorRulesRulesParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

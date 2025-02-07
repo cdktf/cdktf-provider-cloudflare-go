@@ -5,23 +5,24 @@ package accessrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_rule cloudflare_access_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/access_rule cloudflare_access_rule}.
 type AccessRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowedModes() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configuration() AccessRuleConfigurationOutputReference
-	ConfigurationInput() *AccessRuleConfiguration
+	ConfigurationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,6 +33,7 @@ type AccessRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,8 +47,6 @@ type AccessRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -54,6 +54,7 @@ type AccessRule interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	Notes() *string
@@ -69,6 +70,7 @@ type AccessRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scope() AccessRuleScopeOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,7 +125,6 @@ type AccessRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *AccessRuleConfiguration)
 	ResetAccountId()
-	ResetId()
 	ResetNotes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -167,6 +168,16 @@ func (j *jsiiProxy_AccessRule) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccessRule) AllowedModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedModes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessRule) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -187,8 +198,8 @@ func (j *jsiiProxy_AccessRule) Configuration() AccessRuleConfigurationOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_AccessRule) ConfigurationInput() *AccessRuleConfiguration {
-	var returns *AccessRuleConfiguration
+func (j *jsiiProxy_AccessRule) ConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"configurationInput",
@@ -222,6 +233,16 @@ func (j *jsiiProxy_AccessRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessRule) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -277,16 +298,6 @@ func (j *jsiiProxy_AccessRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccessRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -312,6 +323,16 @@ func (j *jsiiProxy_AccessRule) ModeInput() *string {
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessRule) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -377,6 +398,16 @@ func (j *jsiiProxy_AccessRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccessRule) Scope() AccessRuleScopeOutputReference {
+	var returns AccessRuleScopeOutputReference
+	_jsii_.Get(
+		j,
+		"scope",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -428,7 +459,7 @@ func (j *jsiiProxy_AccessRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_rule cloudflare_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/access_rule cloudflare_access_rule} Resource.
 func NewAccessRule(scope constructs.Construct, id *string, config *AccessRuleConfig) AccessRule {
 	_init_.Initialize()
 
@@ -446,7 +477,7 @@ func NewAccessRule(scope constructs.Construct, id *string, config *AccessRuleCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_rule cloudflare_access_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/access_rule cloudflare_access_rule} Resource.
 func NewAccessRule_Override(a AccessRule, scope constructs.Construct, id *string, config *AccessRuleConfig) {
 	_init_.Initialize()
 
@@ -502,17 +533,6 @@ func (j *jsiiProxy_AccessRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccessRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -948,14 +968,6 @@ func (a *jsiiProxy_AccessRule) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccessRule) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
 		nil, // no parameters
 	)
 }

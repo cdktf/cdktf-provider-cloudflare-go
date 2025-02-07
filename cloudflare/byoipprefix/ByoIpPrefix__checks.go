@@ -255,7 +255,15 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetAdvertisementParameters(val *string) error {
+func (j *jsiiProxy_ByoIpPrefix) validateSetAsnParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ByoIpPrefix) validateSetCidrParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -361,14 +369,6 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ByoIpPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetPrefixIdParameters(val *string) error {
+func (j *jsiiProxy_ByoIpPrefix) validateSetLoaDocumentIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

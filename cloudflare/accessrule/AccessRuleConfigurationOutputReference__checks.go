@@ -166,9 +166,25 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val *AccessRuleConfiguration) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case *AccessRuleConfiguration:
+		val := val.(*AccessRuleConfiguration)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case AccessRuleConfiguration:
+		val_ := val.(AccessRuleConfiguration)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *AccessRuleConfiguration, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

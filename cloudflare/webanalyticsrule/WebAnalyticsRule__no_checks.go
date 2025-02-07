@@ -75,10 +75,6 @@ func (w *jsiiProxy_WebAnalyticsRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) validatePutTimeoutsParameters(value *WebAnalyticsRuleTimeouts) error {
-	return nil
-}
-
 func validateWebAnalyticsRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -108,10 +104,6 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetCountParameters(val interface{})
 }
 
 func (j *jsiiProxy_WebAnalyticsRule) validateSetHostParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_WebAnalyticsRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 

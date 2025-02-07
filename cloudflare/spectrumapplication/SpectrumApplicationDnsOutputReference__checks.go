@@ -166,9 +166,25 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val *SpectrumApplicationDns) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *SpectrumApplicationDns:
+		val := val.(*SpectrumApplicationDns)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case SpectrumApplicationDns:
+		val_ := val.(SpectrumApplicationDns)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SpectrumApplicationDns; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

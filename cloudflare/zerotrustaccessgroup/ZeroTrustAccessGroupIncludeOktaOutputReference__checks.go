@@ -198,7 +198,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateSetNameParameters(val *[]*string) error {
+func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,21 +222,13 @@ func (j *jsiiProxy_ZeroTrustAccessGroupIncludeOktaOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewZeroTrustAccessGroupIncludeOktaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessGroupIncludeOktaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

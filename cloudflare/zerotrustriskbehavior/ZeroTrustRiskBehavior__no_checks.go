@@ -75,7 +75,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) validatePutBehaviorParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) validatePutBehaviorsParameters(value interface{}) error {
 	return nil
 }
 

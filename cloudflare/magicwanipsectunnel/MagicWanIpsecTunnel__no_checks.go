@@ -75,6 +75,10 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanIpsecTunnel) validatePutHealthCheckParameters(value *MagicWanIpsecTunnelHealthCheck) error {
+	return nil
+}
+
 func validateMagicWanIpsecTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,10 +96,6 @@ func validateMagicWanIpsecTunnel_IsTerraformResourceParameters(x interface{}) er
 }
 
 func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetAccountIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetAllowNullCipherParameters(val interface{}) error {
 	return nil
 }
 
@@ -119,39 +119,11 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetDescriptionParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetFqdnIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHealthCheckDirectionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHealthCheckEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHealthCheckRateParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHealthCheckTargetParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHealthCheckTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetHexIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetInterfaceAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetIpsecTunnelIdParameters(val *string) error {
 	return nil
 }
 
@@ -171,15 +143,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetPskParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetRemoteIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetReplayProtectionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) validateSetUserIdParameters(val *string) error {
 	return nil
 }
 

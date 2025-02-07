@@ -5,9 +5,9 @@ package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersscript/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,7 @@ type WorkersScriptPlacementOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +68,7 @@ type WorkersScriptPlacementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -152,6 +154,16 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) ModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -173,29 +185,29 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) TerraformResource() cd
 }
 
 
-func NewWorkersScriptPlacementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptPlacementOutputReference {
+func NewWorkersScriptPlacementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkersScriptPlacementOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewWorkersScriptPlacementOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewWorkersScriptPlacementOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_WorkersScriptPlacementOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewWorkersScriptPlacementOutputReference_Override(w WorkersScriptPlacementOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkersScriptPlacementOutputReference_Override(w WorkersScriptPlacementOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptPlacementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
 }
@@ -450,6 +462,14 @@ func (w *jsiiProxy_WorkersScriptPlacementOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkersScriptPlacementOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetMode",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkersScriptPlacementOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

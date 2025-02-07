@@ -5,23 +5,21 @@ package waitingroomrules
 
 
 type WaitingRoomRulesRules struct {
-	// Action to perform in the ruleset rule. Available values: `bypass_waiting_room`.
+	// The action to take when the expression matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#action WaitingRoomRules#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
-	// Criteria for an HTTP request to trigger the waiting room rule action.
+	// Criteria defining when there is a match for the current rule.
 	//
-	// Uses the Firewall Rules expression language based on Wireshark display filters. Refer to the [Waiting Room Rules Docs](https://developers.cloudflare.com/waiting-room/additional-options/waiting-room-rules/bypass-rules/).
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#expression WaitingRoomRules#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Brief summary of the waiting room rule and its intended use.
+	// The description of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#description WaitingRoomRules#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Whether the rule is enabled or disabled. Available values: `enabled`, `disabled`.
+	// When set to true, the rule is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_rules#status WaitingRoomRules#status}
-	Status *string `field:"optional" json:"status" yaml:"status"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_rules#enabled WaitingRoomRules#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

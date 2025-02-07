@@ -5,15 +5,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersUri struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#origin Ruleset#origin}.
-	Origin interface{} `field:"optional" json:"origin" yaml:"origin"`
-	// path block.
+	// Path portion rewrite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#path Ruleset#path}
-	Path interface{} `field:"optional" json:"path" yaml:"path"`
-	// query block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#path Ruleset#path}
+	Path *RulesetRulesActionParametersUriPath `field:"optional" json:"path" yaml:"path"`
+	// Query portion rewrite.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#query Ruleset#query}
-	Query interface{} `field:"optional" json:"query" yaml:"query"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#query Ruleset#query}
+	Query *RulesetRulesActionParametersUriQuery `field:"optional" json:"query" yaml:"query"`
 }
 

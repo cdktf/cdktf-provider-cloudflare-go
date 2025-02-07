@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPools) validateOverrideLogicalIdPar
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerPools) validatePutFilterParameters(value *DataCloudflareLoadBalancerPoolsFilter) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancerPools) validatePutPoolsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataCloudflareLoadBalancerPools_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -87,11 +79,15 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetCountParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPools) validateSetMonitorParameters(val *string) error {
 	return nil
 }
 

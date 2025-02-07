@@ -5,14 +5,14 @@ package zonednssec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonednssec/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonednssec/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 type ZoneDnssec interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -35,6 +35,12 @@ type ZoneDnssec interface {
 	Digest() *string
 	DigestAlgorithm() *string
 	DigestType() *string
+	DnssecMultiSigner() interface{}
+	SetDnssecMultiSigner(val interface{})
+	DnssecMultiSignerInput() interface{}
+	DnssecPresigned() interface{}
+	SetDnssecPresigned(val interface{})
+	DnssecPresignedInput() interface{}
 	Ds() *string
 	Flags() *float64
 	// Experimental.
@@ -46,8 +52,6 @@ type ZoneDnssec interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	KeyTag() *float64
 	KeyType() *string
 	// Experimental.
@@ -55,8 +59,6 @@ type ZoneDnssec interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ModifiedOn() *string
-	SetModifiedOn(val *string)
-	ModifiedOnInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -71,6 +73,8 @@ type ZoneDnssec interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,11 +127,12 @@ type ZoneDnssec interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
-	ResetModifiedOn()
+	ResetDnssecMultiSigner()
+	ResetDnssecPresigned()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -236,6 +241,46 @@ func (j *jsiiProxy_ZoneDnssec) DigestType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneDnssec) DnssecMultiSigner() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecMultiSigner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnssec) DnssecMultiSignerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecMultiSignerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnssec) DnssecPresigned() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecPresigned",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnssec) DnssecPresignedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecPresignedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneDnssec) Ds() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,16 +341,6 @@ func (j *jsiiProxy_ZoneDnssec) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneDnssec) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZoneDnssec) KeyTag() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -341,16 +376,6 @@ func (j *jsiiProxy_ZoneDnssec) ModifiedOn() *string {
 	_jsii_.Get(
 		j,
 		"modifiedOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneDnssec) ModifiedOnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"modifiedOnInput",
 		&returns,
 	)
 	return returns
@@ -416,6 +441,16 @@ func (j *jsiiProxy_ZoneDnssec) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneDnssec) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneDnssec) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -467,7 +502,7 @@ func (j *jsiiProxy_ZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecConfig) ZoneDnssec {
 	_init_.Initialize()
 
@@ -485,7 +520,7 @@ func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string, config *ZoneDnssecConfig) {
 	_init_.Initialize()
 
@@ -526,21 +561,32 @@ func (j *jsiiProxy_ZoneDnssec)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneDnssec)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneDnssec)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_ZoneDnssec)SetDnssecMultiSigner(val interface{}) {
+	if err := j.validateSetDnssecMultiSignerParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"dnssecMultiSigner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneDnssec)SetDnssecPresigned(val interface{}) {
+	if err := j.validateSetDnssecPresignedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnssecPresigned",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneDnssec)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -552,17 +598,6 @@ func (j *jsiiProxy_ZoneDnssec)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneDnssec)SetModifiedOn(val *string) {
-	if err := j.validateSetModifiedOnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"modifiedOn",
 		val,
 	)
 }
@@ -582,6 +617,17 @@ func (j *jsiiProxy_ZoneDnssec)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneDnssec)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -950,18 +996,18 @@ func (z *jsiiProxy_ZoneDnssec) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZoneDnssec) ResetId() {
+func (z *jsiiProxy_ZoneDnssec) ResetDnssecMultiSigner() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"resetDnssecMultiSigner",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZoneDnssec) ResetModifiedOn() {
+func (z *jsiiProxy_ZoneDnssec) ResetDnssecPresigned() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetModifiedOn",
+		"resetDnssecPresigned",
 		nil, // no parameters
 	)
 }
@@ -970,6 +1016,14 @@ func (z *jsiiProxy_ZoneDnssec) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnssec) ResetStatus() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

@@ -93,218 +93,232 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateInterpola
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAnyValidServiceTokenParameters(value *ZeroTrustAccessGroupExcludeAnyValidServiceToken) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeAuthContext:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeAuthContext)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeAuthContext:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeAuthContext)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeAuthContext; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAzureParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthContextParameters(value *ZeroTrustAccessGroupExcludeAuthContext) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeAzure:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeAzure)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeAzure:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeAzure)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeAzure; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthMethodParameters(value *ZeroTrustAccessGroupExcludeAuthMethod) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeExternalEvaluation:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeExternalEvaluation)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeExternalEvaluation:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeExternalEvaluation)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeExternalEvaluation; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGithubParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAzureAdParameters(value *ZeroTrustAccessGroupExcludeAzureAd) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeGithub:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeGithub)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeGithub:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeGithub)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeGithub; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGsuiteParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutCertificateParameters(value *ZeroTrustAccessGroupExcludeCertificate) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeGsuite:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeGsuite)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeGsuite:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeGsuite)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeGsuite; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutCommonNameParameters(value *ZeroTrustAccessGroupExcludeCommonName) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeOkta:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeOkta)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeOkta:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeOkta)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeOkta; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutSamlParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutDevicePostureParameters(value *ZeroTrustAccessGroupExcludeDevicePosture) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessGroupExcludeSaml:
-		value := value.(*[]*ZeroTrustAccessGroupExcludeSaml)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessGroupExcludeSaml:
-		value_ := value.([]*ZeroTrustAccessGroupExcludeSaml)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessGroupExcludeSaml; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailParameters(value *ZeroTrustAccessGroupExcludeEmail) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailDomainParameters(value *ZeroTrustAccessGroupExcludeEmailDomain) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailListParameters(value *ZeroTrustAccessGroupExcludeEmailListStruct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEveryoneParameters(value *ZeroTrustAccessGroupExcludeEveryone) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value *ZeroTrustAccessGroupExcludeExternalEvaluation) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGeoParameters(value *ZeroTrustAccessGroupExcludeGeo) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGithubOrganizationParameters(value *ZeroTrustAccessGroupExcludeGithubOrganization) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGroupParameters(value *ZeroTrustAccessGroupExcludeGroup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGsuiteParameters(value *ZeroTrustAccessGroupExcludeGsuite) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpParameters(value *ZeroTrustAccessGroupExcludeIp) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpListParameters(value *ZeroTrustAccessGroupExcludeIpListStruct) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessGroupExcludeOkta) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutSamlParameters(value *ZeroTrustAccessGroupExcludeSaml) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutServiceTokenParameters(value *ZeroTrustAccessGroupExcludeServiceToken) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -313,70 +327,6 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutSamlPa
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetAnyValidServiceTokenParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetAuthMethodParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCertificateParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCommonNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCommonNamesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -447,74 +397,6 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetDevicePostureParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailDomainParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailListParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEveryoneParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetGeoParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetGroupParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -534,38 +416,6 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetIntern
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustAccessGroupExclude; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetIpParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetIpListParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetLoginMethodParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetServiceTokenParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

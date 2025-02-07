@@ -75,11 +75,11 @@ func (e *jsiiProxy_EmailRoutingCatchAll) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAll) validatePutActionParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingCatchAll) validatePutActionsParameters(value interface{}) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAll) validatePutMatcherParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingCatchAll) validatePutMatchersParameters(value interface{}) error {
 	return nil
 }
 
@@ -108,10 +108,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll) validateSetCountParameters(val interfac
 }
 
 func (j *jsiiProxy_EmailRoutingCatchAll) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAll) validateSetIdParameters(val *string) error {
 	return nil
 }
 

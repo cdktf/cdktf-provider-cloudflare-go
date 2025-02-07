@@ -22,34 +22,33 @@ type AddressMapConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Identifier of a Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#account_id AddressMap#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#account_id AddressMap#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Whether the Address Map is enabled or not.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#enabled AddressMap#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#default_sni AddressMap#default_sni}
+	// If Cloudflare receives a TLS handshake from a client without an SNI, it will respond with the default SNI on those IPs. The default SNI can be any valid zone or subdomain owned by the account.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#default_sni AddressMap#default_sni}
 	DefaultSni *string `field:"optional" json:"defaultSni" yaml:"defaultSni"`
-	// Description of the address map.
+	// An optional description field which may be used to describe the types of IPs or zones on the map.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#description AddressMap#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#description AddressMap#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#id AddressMap#id}.
+	// Whether the Address Map is enabled or not.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// ips block.
+	// Cloudflare's DNS will not respond with IP addresses on an Address Map until the map is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#ips AddressMap#ips}
-	Ips interface{} `field:"optional" json:"ips" yaml:"ips"`
-	// memberships block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#enabled AddressMap#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#ips AddressMap#ips}.
+	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
+	// Zones and Accounts which will be assigned IPs on this Address Map.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#memberships AddressMap#memberships}
+	// A zone membership will take priority over an account membership.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#memberships AddressMap#memberships}
 	Memberships interface{} `field:"optional" json:"memberships" yaml:"memberships"`
 }
 

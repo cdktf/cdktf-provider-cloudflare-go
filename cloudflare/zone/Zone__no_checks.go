@@ -75,6 +75,10 @@ func (z *jsiiProxy_Zone) validateOverrideLogicalIdParameters(newLogicalId *strin
 	return nil
 }
 
+func (z *jsiiProxy_Zone) validatePutAccountParameters(value *ZoneAccount) error {
+	return nil
+}
+
 func validateZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -91,10 +95,6 @@ func validateZone_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Zone) validateSetAccountIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Zone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -103,23 +103,11 @@ func (j *jsiiProxy_Zone) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Zone) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Zone) validateSetJumpStartParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Zone) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_Zone) validateSetPausedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Zone) validateSetPlanParameters(val *string) error {
+func (j *jsiiProxy_Zone) validateSetNameParameters(val *string) error {
 	return nil
 }
 
@@ -132,10 +120,6 @@ func (j *jsiiProxy_Zone) validateSetTypeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Zone) validateSetVanityNameServersParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Zone) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

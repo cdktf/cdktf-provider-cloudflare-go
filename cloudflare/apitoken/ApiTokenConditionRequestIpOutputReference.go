@@ -5,9 +5,9 @@ package apitoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apitoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ApiTokenConditionRequestIpOutputReference interface {
 	In() *[]*string
 	SetIn(val *[]*string)
 	InInput() *[]*string
-	InternalValue() *ApiTokenConditionRequestIp
-	SetInternalValue(val *ApiTokenConditionRequestIp)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	NotIn() *[]*string
 	SetNotIn(val *[]*string)
 	NotInInput() *[]*string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) InInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) InternalValue() *ApiTokenConditionRequestIp {
-	var returns *ApiTokenConditionRequestIp
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -258,7 +258,7 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetIn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetInternalValue(val *ApiTokenConditionRequestIp) {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

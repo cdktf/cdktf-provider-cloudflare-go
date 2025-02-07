@@ -22,22 +22,23 @@ type AccountConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The name of the account that is displayed in the Cloudflare dashboard.
+	// Account name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account#name Account#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#name Account#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Whether 2FA is enforced on the account. Defaults to `false`.
+	// the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
-	EnforceTwofactor interface{} `field:"optional" json:"enforceTwofactor" yaml:"enforceTwofactor"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account#id Account#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#type Account#type}
+	Type *string `field:"required" json:"type" yaml:"type"`
+	// Account settings.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Account type. Available values: `enterprise`, `standard`. Defaults to `standard`. **Modifying this attribute will force creation of a new resource.**.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#settings Account#settings}
+	Settings *AccountSettings `field:"optional" json:"settings" yaml:"settings"`
+	// information related to the tenant unit, and optionally, an id of the unit to create the account on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account#type Account#type}
-	Type *string `field:"optional" json:"type" yaml:"type"`
+	// see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account#unit Account#unit}
+	Unit *AccountUnit `field:"optional" json:"unit" yaml:"unit"`
 }
 

@@ -218,22 +218,22 @@ func (a *jsiiProxy_ApiToken) validatePutConditionParameters(value *ApiTokenCondi
 	return nil
 }
 
-func (a *jsiiProxy_ApiToken) validatePutPolicyParameters(value interface{}) error {
+func (a *jsiiProxy_ApiToken) validatePutPoliciesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ApiTokenPolicy:
-		value := value.(*[]*ApiTokenPolicy)
+	case *[]*ApiTokenPolicies:
+		value := value.(*[]*ApiTokenPolicies)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ApiTokenPolicy:
-		value_ := value.([]*ApiTokenPolicy)
+	case []*ApiTokenPolicies:
+		value_ := value.([]*ApiTokenPolicies)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -242,7 +242,7 @@ func (a *jsiiProxy_ApiToken) validatePutPolicyParameters(value interface{}) erro
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ApiTokenPolicy; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ApiTokenPolicies; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -387,14 +387,6 @@ func (j *jsiiProxy_ApiToken) validateSetExpiresOnParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiToken) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ApiToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -460,6 +452,14 @@ func (j *jsiiProxy_ApiToken) validateSetProvisionersParameters(val *[]interface{
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApiToken) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

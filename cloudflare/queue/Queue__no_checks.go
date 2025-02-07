@@ -75,6 +75,10 @@ func (q *jsiiProxy_Queue) validateOverrideLogicalIdParameters(newLogicalId *stri
 	return nil
 }
 
+func (q *jsiiProxy_Queue) validatePutSettingsParameters(value *QueueSettings) error {
+	return nil
+}
+
 func validateQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,19 +107,15 @@ func (j *jsiiProxy_Queue) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Queue) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Queue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_Queue) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_Queue) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Queue) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Queue) validateSetQueueNameParameters(val *string) error {
 	return nil
 }
 

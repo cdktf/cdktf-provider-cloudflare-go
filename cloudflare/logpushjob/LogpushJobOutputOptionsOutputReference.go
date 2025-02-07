@@ -5,9 +5,9 @@ package logpushjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpushjob/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -45,8 +45,8 @@ type LogpushJobOutputOptionsOutputReference interface {
 	FieldNamesInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *LogpushJobOutputOptions
-	SetInternalValue(val *LogpushJobOutputOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	OutputType() *string
 	SetOutputType(val *string)
 	OutputTypeInput() *string
@@ -267,8 +267,8 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) InternalValue() *LogpushJobOutputOptions {
-	var returns *LogpushJobOutputOptions
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -542,7 +542,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetFieldNames(val *[]*
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetInternalValue(val *LogpushJobOutputOptions) {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

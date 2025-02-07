@@ -59,7 +59,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

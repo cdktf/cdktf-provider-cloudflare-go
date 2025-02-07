@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificate) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOriginCaCertificate) validatePutFilterParameters(value *DataCloudflareOriginCaCertificateFilter) error {
+	return nil
+}
+
 func validateDataCloudflareOriginCaCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -71,11 +75,11 @@ func validateDataCloudflareOriginCaCertificate_IsTerraformElementParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetCertificateIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 

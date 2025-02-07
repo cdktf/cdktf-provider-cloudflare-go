@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsAuditSsh
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsAuditSsh)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +67,7 @@ type ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCommandLogging()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -142,8 +143,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) Fq
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsAuditSsh {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsAuditSsh
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -233,7 +234,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsAuditSsh) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,6 +451,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) In
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) ResetCommandLogging() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCommandLogging",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

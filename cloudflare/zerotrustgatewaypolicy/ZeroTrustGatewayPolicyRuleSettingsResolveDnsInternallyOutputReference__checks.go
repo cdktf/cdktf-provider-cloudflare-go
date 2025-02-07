@@ -174,9 +174,25 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally:
+		val := val.(*ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally:
+		val_ := val.(ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

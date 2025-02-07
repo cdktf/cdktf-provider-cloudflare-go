@@ -5,19 +5,19 @@ package zone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zone/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
+	Account() ZoneAccountOutputReference
+	AccountInput() interface{}
+	ActivatedOn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -30,10 +30,12 @@ type Zone interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DevelopmentMode() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,25 +45,23 @@ type Zone interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	JumpStart() interface{}
-	SetJumpStart(val interface{})
-	JumpStartInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Meta() cdktf.BooleanMap
+	Meta() ZoneMetaOutputReference
+	ModifiedOn() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	NameServers() *[]*string
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
-	Plan() *string
-	SetPlan(val *string)
-	PlanInput() *string
+	OriginalDnshost() *string
+	OriginalNameServers() *[]*string
+	OriginalRegistrar() *string
+	Owner() ZoneOwnerOutputReference
+	Paused() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -85,10 +85,6 @@ type Zone interface {
 	VanityNameServers() *[]*string
 	SetVanityNameServers(val *[]*string)
 	VanityNameServersInput() *[]*string
-	VerificationKey() *string
-	Zone() *string
-	SetZone(val *string)
-	ZoneInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,13 +128,10 @@ type Zone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
-	ResetJumpStart()
+	PutAccount(value *ZoneAccount)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPaused()
-	ResetPlan()
 	ResetType()
 	ResetVanityNameServers()
 	SynthesizeAttributes() *map[string]interface{}
@@ -159,21 +152,31 @@ type jsiiProxy_Zone struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Zone) AccountId() *string {
-	var returns *string
+func (j *jsiiProxy_Zone) Account() ZoneAccountOutputReference {
+	var returns ZoneAccountOutputReference
 	_jsii_.Get(
 		j,
-		"accountId",
+		"account",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Zone) AccountIdInput() *string {
+func (j *jsiiProxy_Zone) AccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) ActivatedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdInput",
+		"activatedOn",
 		&returns,
 	)
 	return returns
@@ -219,11 +222,31 @@ func (j *jsiiProxy_Zone) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Zone) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Zone) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) DevelopmentMode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"developmentMode",
 		&returns,
 	)
 	return returns
@@ -269,36 +292,6 @@ func (j *jsiiProxy_Zone) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Zone) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) JumpStart() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"jumpStart",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) JumpStartInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"jumpStartInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Zone) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -309,11 +302,41 @@ func (j *jsiiProxy_Zone) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Zone) Meta() cdktf.BooleanMap {
-	var returns cdktf.BooleanMap
+func (j *jsiiProxy_Zone) Meta() ZoneMetaOutputReference {
+	var returns ZoneMetaOutputReference
 	_jsii_.Get(
 		j,
 		"meta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -339,41 +362,51 @@ func (j *jsiiProxy_Zone) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Zone) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Zone) OriginalDnshost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalDnshost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) OriginalNameServers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"originalNameServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) OriginalRegistrar() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalRegistrar",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) Owner() ZoneOwnerOutputReference {
+	var returns ZoneOwnerOutputReference
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) Paused() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"paused",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) PausedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pausedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) Plan() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"plan",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) PlanInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"planInput",
 		&returns,
 	)
 	return returns
@@ -489,38 +522,8 @@ func (j *jsiiProxy_Zone) VanityNameServersInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Zone) VerificationKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"verificationKey",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Zone) Zone() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zone",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Zone) ZoneInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -538,7 +541,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 
@@ -546,17 +549,6 @@ func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *Zo
 		"@cdktf/provider-cloudflare.zone.Zone",
 		[]interface{}{scope, id, config},
 		z,
-	)
-}
-
-func (j *jsiiProxy_Zone)SetAccountId(val *string) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
 	)
 }
 
@@ -598,28 +590,6 @@ func (j *jsiiProxy_Zone)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Zone)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Zone)SetJumpStart(val interface{}) {
-	if err := j.validateSetJumpStartParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jumpStart",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Zone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -631,24 +601,13 @@ func (j *jsiiProxy_Zone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Zone)SetPaused(val interface{}) {
-	if err := j.validateSetPausedParameters(val); err != nil {
+func (j *jsiiProxy_Zone)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"paused",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Zone)SetPlan(val *string) {
-	if err := j.validateSetPlanParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"plan",
+		"name",
 		val,
 	)
 }
@@ -690,17 +649,6 @@ func (j *jsiiProxy_Zone)SetVanityNameServers(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"vanityNameServers",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Zone)SetZone(val *string) {
-	if err := j.validateSetZoneParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zone",
 		val,
 	)
 }
@@ -1058,19 +1006,14 @@ func (z *jsiiProxy_Zone) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_Zone) ResetId() {
+func (z *jsiiProxy_Zone) PutAccount(value *ZoneAccount) {
+	if err := z.validatePutAccountParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_Zone) ResetJumpStart() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetJumpStart",
-		nil, // no parameters
+		"putAccount",
+		[]interface{}{value},
 	)
 }
 
@@ -1078,22 +1021,6 @@ func (z *jsiiProxy_Zone) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_Zone) ResetPaused() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPaused",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_Zone) ResetPlan() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPlan",
 		nil, // no parameters
 	)
 }

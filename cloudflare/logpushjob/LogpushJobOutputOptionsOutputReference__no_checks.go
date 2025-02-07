@@ -79,7 +79,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetFieldNames
 	return nil
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetInternalValueParameters(val *LogpushJobOutputOptions) error {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

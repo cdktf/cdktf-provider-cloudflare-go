@@ -5,15 +5,13 @@ package apitoken
 
 
 type ApiTokenConditionRequestIp struct {
-	// List of IP addresses or CIDR notation where the token may be used from.
+	// List of IPv4/IPv6 CIDR addresses.
 	//
-	// If not specified, the token will be valid for all IP addresses.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_token#in ApiToken#in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#in ApiToken#in}
 	In *[]*string `field:"optional" json:"in" yaml:"in"`
-	// List of IP addresses or CIDR notation where the token should not be used from.
+	// List of IPv4/IPv6 CIDR addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_token#not_in ApiToken#not_in}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#not_in ApiToken#not_in}
 	NotIn *[]*string `field:"optional" json:"notIn" yaml:"notIn"`
 }
 

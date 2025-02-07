@@ -22,28 +22,27 @@ type WorkersKvConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Name of the KV pair. **Modifying this attribute will force creation of a new resource.**.
+	// A key's name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#key WorkersKv#key}
-	Key *string `field:"required" json:"key" yaml:"key"`
-	// The ID of the Workers KV namespace in which you want to create the KV pair.
+	// The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 	//
-	// **Modifying this attribute will force creation of a new resource.**
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+	KeyName *string `field:"required" json:"keyName" yaml:"keyName"`
+	// Namespace identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 	NamespaceId *string `field:"required" json:"namespaceId" yaml:"namespaceId"`
-	// Value of the KV pair.
+	// A byte sequence to be stored, up to 25 MiB in length.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#value WorkersKv#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#value WorkersKv#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv#id WorkersKv#id}.
+	// Arbitrary JSON to be associated with a key/value pair.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+	Metadata *string `field:"optional" json:"metadata" yaml:"metadata"`
 }
 

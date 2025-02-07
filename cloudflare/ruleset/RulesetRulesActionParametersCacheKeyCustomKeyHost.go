@@ -5,9 +5,11 @@ package ruleset
 
 
 type RulesetRulesActionParametersCacheKeyCustomKeyHost struct {
-	// Resolve hostname to IP address.
+	// Use the resolved host in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#resolved Ruleset#resolved}
+	// A value of true will use the resolved host, while a value or false will use the original host.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#resolved Ruleset#resolved}
 	Resolved interface{} `field:"optional" json:"resolved" yaml:"resolved"`
 }
 

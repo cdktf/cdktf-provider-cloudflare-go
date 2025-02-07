@@ -75,47 +75,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutAntivirusParameters(value *ZeroTrustGatewaySettingsAntivirus) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBlockPageParameters(value *ZeroTrustGatewaySettingsBlockPage) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBodyScanningParameters(value *ZeroTrustGatewaySettingsBodyScanning) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCertificateParameters(value *ZeroTrustGatewaySettingsCertificate) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCustomCertificateParameters(value *ZeroTrustGatewaySettingsCustomCertificate) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutExtendedEmailMatchingParameters(value *ZeroTrustGatewaySettingsExtendedEmailMatching) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutFipsParameters(value *ZeroTrustGatewaySettingsFips) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutLoggingParameters(value *ZeroTrustGatewaySettingsLogging) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutPayloadLogParameters(value *ZeroTrustGatewaySettingsPayloadLog) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutProxyParameters(value *ZeroTrustGatewaySettingsProxy) error {
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutSshSessionLogParameters(value *ZeroTrustGatewaySettingsSshSessionLog) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutSettingsParameters(value *ZeroTrustGatewaySettingsSettings) error {
 	return nil
 }
 
@@ -139,10 +99,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetAccountIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetActivityLogEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -151,31 +107,11 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetNonIdentityBrowserIsolationEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetProtocolDetectionEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetTlsDecryptEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetUrlBrowserIsolationEnabledParameters(val interface{}) error {
 	return nil
 }
 

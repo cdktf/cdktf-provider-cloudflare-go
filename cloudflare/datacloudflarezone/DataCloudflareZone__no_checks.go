@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZone) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZone) validatePutFilterParameters(value *DataCloudflareZoneFilter) error {
+	return nil
+}
+
 func validateDataCloudflareZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -71,23 +75,11 @@ func validateDataCloudflareZone_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZone) validateSetAccountIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareZone) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZone) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareZone) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZone) validateSetNameParameters(val *string) error {
 	return nil
 }
 

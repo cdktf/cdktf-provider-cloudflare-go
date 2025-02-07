@@ -75,19 +75,11 @@ func (n *jsiiProxy_NotificationPolicy) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicy) validatePutEmailIntegrationParameters(value interface{}) error {
-	return nil
-}
-
 func (n *jsiiProxy_NotificationPolicy) validatePutFiltersParameters(value *NotificationPolicyFilters) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicy) validatePutPagerdutyIntegrationParameters(value interface{}) error {
-	return nil
-}
-
-func (n *jsiiProxy_NotificationPolicy) validatePutWebhooksIntegrationParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicy) validatePutMechanismsParameters(value *NotificationPolicyMechanisms) error {
 	return nil
 }
 
@@ -111,6 +103,10 @@ func (j *jsiiProxy_NotificationPolicy) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicy) validateSetAlertIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicy) validateSetAlertTypeParameters(val *string) error {
 	return nil
 }
@@ -128,10 +124,6 @@ func (j *jsiiProxy_NotificationPolicy) validateSetDescriptionParameters(val *str
 }
 
 func (j *jsiiProxy_NotificationPolicy) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_NotificationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 

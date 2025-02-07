@@ -67,7 +67,7 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetContentTyp
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetInternalValueParameters(val *RateLimitActionResponse) error {
+func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

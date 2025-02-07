@@ -22,34 +22,37 @@ type ZeroTrustAccessGroupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// include block.
+	// Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
 	Include interface{} `field:"required" json:"include" yaml:"include"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}.
+	// The name of the Access group.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource.
+	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// exclude block.
+	// Rules evaluated with a NOT logical operator.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
+	// To match a policy, a user cannot meet any of the Exclude rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
 	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}.
+	// Whether this is the default group.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// require block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#is_default ZeroTrustAccessGroup#is_default}
+	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
+	// Rules evaluated with an AND logical operator.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
+	// To match a policy, a user must meet all of the Require rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
 	Require interface{} `field:"optional" json:"require" yaml:"require"`
-	// The zone identifier to target for the resource. Conflicts with `account_id`.
+	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

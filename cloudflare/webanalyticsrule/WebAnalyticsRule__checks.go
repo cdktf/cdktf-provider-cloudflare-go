@@ -207,17 +207,6 @@ func (w *jsiiProxy_WebAnalyticsRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) validatePutTimeoutsParameters(value *WebAnalyticsRuleTimeouts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func validateWebAnalyticsRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -357,14 +346,6 @@ func (j *jsiiProxy_WebAnalyticsRule) validateSetCountParameters(val interface{})
 }
 
 func (j *jsiiProxy_WebAnalyticsRule) validateSetHostParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WebAnalyticsRule) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -206,9 +206,25 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationScimConfigMappingsOperations) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustAccessApplicationScimConfigMappingsOperations:
+		val := val.(*ZeroTrustAccessApplicationScimConfigMappingsOperations)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustAccessApplicationScimConfigMappingsOperations:
+		val_ := val.(ZeroTrustAccessApplicationScimConfigMappingsOperations)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustAccessApplicationScimConfigMappingsOperations; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

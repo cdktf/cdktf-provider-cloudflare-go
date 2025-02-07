@@ -22,22 +22,39 @@ type CustomSslConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The zone identifier to target for the resource.
+	// The zone's SSL certificate or certificate and the intermediate(s).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
+	Certificate *string `field:"required" json:"certificate" yaml:"certificate"`
+	// The zone's private key.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
+	PrivateKey *string `field:"required" json:"privateKey" yaml:"privateKey"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// custom_ssl_options block.
+	// A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl#custom_ssl_options CustomSsl#custom_ssl_options}
-	CustomSslOptions *CustomSslCustomSslOptions `field:"optional" json:"customSslOptions" yaml:"customSslOptions"`
-	// custom_ssl_priority block.
+	// An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl#custom_ssl_priority CustomSsl#custom_ssl_priority}
-	CustomSslPriority interface{} `field:"optional" json:"customSslPriority" yaml:"customSslPriority"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_ssl#id CustomSsl#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+	BundleMethod *string `field:"optional" json:"bundleMethod" yaml:"bundleMethod"`
+	// Specify the region where your private key can be held locally for optimal TLS performance.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Options allow distribution to only to U.S. data centers, only to E.U. data centers, or only to highest security data centers. Default distribution is to all Cloudflare datacenters, for optimal performance.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
+	GeoRestrictions *CustomSslGeoRestrictions `field:"optional" json:"geoRestrictions" yaml:"geoRestrictions"`
+	// Specify the policy that determines the region where your private key will be held locally.
+	//
+	// HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Any combination of countries, specified by their two letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) can be chosen, such as 'country: IN', as well as 'region: EU' which refers to the EU region. If there are too few data centers satisfying the policy, it will be rejected.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#policy CustomSsl#policy}
+	Policy *string `field:"optional" json:"policy" yaml:"policy"`
+	// The type 'legacy_custom' enables support for legacy clients which do not include SNI in the TLS handshake.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_ssl#type CustomSsl#type}
+	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

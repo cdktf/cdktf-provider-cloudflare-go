@@ -5,20 +5,19 @@ package zerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdnslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}.
 type ZeroTrustDnsLocation interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AnonymizedLogsEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientDefault() interface{}
@@ -34,6 +33,7 @@ type ZeroTrustDnsLocation interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,14 +42,12 @@ type ZeroTrustDnsLocation interface {
 	SetDnsDestinationIpsId(val *string)
 	DnsDestinationIpsIdInput() *string
 	DnsDestinationIpv6BlockId() *string
-	SetDnsDestinationIpv6BlockId(val *string)
-	DnsDestinationIpv6BlockIdInput() *string
 	DohSubdomain() *string
 	EcsSupport() interface{}
 	SetEcsSupport(val interface{})
 	EcsSupportInput() interface{}
 	Endpoints() ZeroTrustDnsLocationEndpointsOutputReference
-	EndpointsInput() *ZeroTrustDnsLocationEndpoints
+	EndpointsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,8 +57,6 @@ type ZeroTrustDnsLocation interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Ip() *string
 	Ipv4Destination() *string
 	Ipv4DestinationBackup() *string
@@ -91,6 +87,7 @@ type ZeroTrustDnsLocation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,10 +135,8 @@ type ZeroTrustDnsLocation interface {
 	PutNetworks(value interface{})
 	ResetClientDefault()
 	ResetDnsDestinationIpsId()
-	ResetDnsDestinationIpv6BlockId()
 	ResetEcsSupport()
 	ResetEndpoints()
-	ResetId()
 	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -179,16 +174,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation) AnonymizedLogsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"anonymizedLogsEnabled",
 		&returns,
 	)
 	return returns
@@ -254,6 +239,16 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDnsLocation) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDnsLocation) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -289,16 +284,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) DnsDestinationIpv6BlockId() *string {
 	_jsii_.Get(
 		j,
 		"dnsDestinationIpv6BlockId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation) DnsDestinationIpv6BlockIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dnsDestinationIpv6BlockIdInput",
 		&returns,
 	)
 	return returns
@@ -344,8 +329,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) Endpoints() ZeroTrustDnsLocationEndpoin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) EndpointsInput() *ZeroTrustDnsLocationEndpoints {
-	var returns *ZeroTrustDnsLocationEndpoints
+func (j *jsiiProxy_ZeroTrustDnsLocation) EndpointsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"endpointsInput",
@@ -389,16 +374,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -554,8 +529,18 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDnsLocation) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) ZeroTrustDnsLocation {
 	_init_.Initialize()
 
@@ -573,7 +558,7 @@ func NewZeroTrustDnsLocation(scope constructs.Construct, id *string, config *Zer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource.
 func NewZeroTrustDnsLocation_Override(z ZeroTrustDnsLocation, scope constructs.Construct, id *string, config *ZeroTrustDnsLocationConfig) {
 	_init_.Initialize()
 
@@ -647,17 +632,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation)SetDnsDestinationIpsId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation)SetDnsDestinationIpv6BlockId(val *string) {
-	if err := j.validateSetDnsDestinationIpv6BlockIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dnsDestinationIpv6BlockId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustDnsLocation)SetEcsSupport(val interface{}) {
 	if err := j.validateSetEcsSupportParameters(val); err != nil {
 		panic(err)
@@ -673,17 +647,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1120,14 +1083,6 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) ResetDnsDestinationIpsId() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDnsLocation) ResetDnsDestinationIpv6BlockId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDnsDestinationIpv6BlockId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustDnsLocation) ResetEcsSupport() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1140,14 +1095,6 @@ func (z *jsiiProxy_ZeroTrustDnsLocation) ResetEndpoints() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetEndpoints",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocation) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }

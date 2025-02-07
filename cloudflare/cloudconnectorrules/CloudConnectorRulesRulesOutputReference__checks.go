@@ -112,6 +112,14 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetCloudProviderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -213,6 +221,14 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetExpressio
 	return nil
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -232,14 +248,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalV
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudConnectorRulesRules; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetProviderParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

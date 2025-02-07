@@ -63,15 +63,11 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) validateSetIgnoreParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) validateSetIncludeParameters(val *[]*string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) validateSetInternalValueParameters(val *PageRuleActionsCacheKeyFieldsQueryString) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

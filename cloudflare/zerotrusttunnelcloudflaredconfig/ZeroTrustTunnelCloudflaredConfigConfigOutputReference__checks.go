@@ -93,22 +93,22 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressRuleParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validatePutIngressParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustTunnelCloudflaredConfigConfigIngressRule:
-		value := value.(*[]*ZeroTrustTunnelCloudflaredConfigConfigIngressRule)
+	case *[]*ZeroTrustTunnelCloudflaredConfigConfigIngress:
+		value := value.(*[]*ZeroTrustTunnelCloudflaredConfigConfigIngress)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustTunnelCloudflaredConfigConfigIngressRule:
-		value_ := value.([]*ZeroTrustTunnelCloudflaredConfigConfigIngressRule)
+	case []*ZeroTrustTunnelCloudflaredConfigConfigIngress:
+		value_ := value.([]*ZeroTrustTunnelCloudflaredConfigConfigIngress)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -117,7 +117,7 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustTunnelCloudflaredConfigConfigIngressRule; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustTunnelCloudflaredConfigConfigIngress; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -219,9 +219,25 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val *ZeroTrustTunnelCloudflaredConfigConfig) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustTunnelCloudflaredConfigConfig:
+		val := val.(*ZeroTrustTunnelCloudflaredConfigConfig)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustTunnelCloudflaredConfigConfig:
+		val_ := val.(ZeroTrustTunnelCloudflaredConfigConfig)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustTunnelCloudflaredConfigConfig; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

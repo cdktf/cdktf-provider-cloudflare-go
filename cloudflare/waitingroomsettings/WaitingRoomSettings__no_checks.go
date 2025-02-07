@@ -99,10 +99,6 @@ func (j *jsiiProxy_WaitingRoomSettings) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomSettings) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

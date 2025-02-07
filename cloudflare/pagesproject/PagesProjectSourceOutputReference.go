@@ -5,9 +5,9 @@ package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagesproject/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagesproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -24,7 +24,6 @@ type PagesProjectSourceOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Config() PagesProjectSourceConfigOutputReference
-	ConfigInput() *PagesProjectSourceConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -43,8 +42,6 @@ type PagesProjectSourceOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,9 +66,6 @@ type PagesProjectSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConfig(value *PagesProjectSourceConfig)
-	ResetConfig()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -112,16 +106,6 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) Config() PagesProjectSourc
 	_jsii_.Get(
 		j,
 		"config",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectSourceOutputReference) ConfigInput() *PagesProjectSourceConfig {
-	var returns *PagesProjectSourceConfig
-	_jsii_.Get(
-		j,
-		"configInput",
 		&returns,
 	)
 	return returns
@@ -182,16 +166,6 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) Type() *string {
 	_jsii_.Get(
 		j,
 		"type",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectSourceOutputReference) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
 		&returns,
 	)
 	return returns
@@ -276,17 +250,6 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference)SetTerraformResource(val cd
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectSourceOutputReference)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -475,33 +438,6 @@ func (p *jsiiProxy_PagesProjectSourceOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectSourceOutputReference) PutConfig(value *PagesProjectSourceConfig) {
-	if err := p.validatePutConfigParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putConfig",
-		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PagesProjectSourceOutputReference) ResetConfig() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetConfig",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectSourceOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

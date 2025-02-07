@@ -107,15 +107,15 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigA) validateSetSourceParameters(val *string) error {
 	return nil
 }
 

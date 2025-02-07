@@ -5,18 +5,18 @@ package pagerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/page_rule cloudflare_page_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/page_rule cloudflare_page_rule}.
 type PageRule interface {
 	cdktf.TerraformResource
 	Actions() PageRuleActionsOutputReference
-	ActionsInput() *PageRuleActions
+	ActionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -29,6 +29,7 @@ type PageRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,12 +43,11 @@ type PageRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	Priority() *float64
@@ -122,7 +122,6 @@ type PageRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutActions(value *PageRuleActions)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -156,8 +155,8 @@ func (j *jsiiProxy_PageRule) Actions() PageRuleActionsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) ActionsInput() *PageRuleActions {
-	var returns *PageRuleActions
+func (j *jsiiProxy_PageRule) ActionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"actionsInput",
@@ -201,6 +200,16 @@ func (j *jsiiProxy_PageRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PageRule) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -256,21 +265,21 @@ func (j *jsiiProxy_PageRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PageRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PageRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PageRule) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -427,7 +436,7 @@ func (j *jsiiProxy_PageRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig) PageRule {
 	_init_.Initialize()
 
@@ -445,7 +454,7 @@ func NewPageRule(scope constructs.Construct, id *string, config *PageRuleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/page_rule cloudflare_page_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/page_rule cloudflare_page_rule} Resource.
 func NewPageRule_Override(p PageRule, scope constructs.Construct, id *string, config *PageRuleConfig) {
 	_init_.Initialize()
 
@@ -490,17 +499,6 @@ func (j *jsiiProxy_PageRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PageRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -940,14 +938,6 @@ func (p *jsiiProxy_PageRule) PutActions(value *PageRuleActions) {
 		p,
 		"putActions",
 		[]interface{}{value},
-	)
-}
-
-func (p *jsiiProxy_PageRule) ResetId() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -207,6 +207,37 @@ func (a *jsiiProxy_AccountMember) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (a *jsiiProxy_AccountMember) validatePutPoliciesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AccountMemberPolicies:
+		value := value.(*[]*AccountMemberPolicies)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AccountMemberPolicies:
+		value_ := value.([]*AccountMemberPolicies)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AccountMemberPolicies; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateAccountMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -345,15 +376,7 @@ func (j *jsiiProxy_AccountMember) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_AccountMember) validateSetEmailAddressParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AccountMember) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_AccountMember) validateSetEmailParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -415,7 +438,7 @@ func (j *jsiiProxy_AccountMember) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_AccountMember) validateSetRoleIdsParameters(val *[]*string) error {
+func (j *jsiiProxy_AccountMember) validateSetRolesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,20 +5,20 @@ package apitoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apitoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_token cloudflare_api_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token cloudflare_api_token}.
 type ApiToken interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() ApiTokenConditionOutputReference
-	ConditionInput() *ApiTokenCondition
+	ConditionInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,9 +45,8 @@ type ApiToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IssuedOn() *string
+	LastUsedOn() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,8 +60,8 @@ type ApiToken interface {
 	NotBefore() *string
 	SetNotBefore(val *string)
 	NotBeforeInput() *string
-	Policy() ApiTokenPolicyList
-	PolicyInput() interface{}
+	Policies() ApiTokenPoliciesList
+	PoliciesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,6 +73,8 @@ type ApiToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,14 +126,14 @@ type ApiToken interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCondition(value *ApiTokenCondition)
-	PutPolicy(value interface{})
+	PutPolicies(value interface{})
 	ResetCondition()
 	ResetExpiresOn()
-	ResetId()
 	ResetNotBefore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -171,8 +172,8 @@ func (j *jsiiProxy_ApiToken) Condition() ApiTokenConditionOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) ConditionInput() *ApiTokenCondition {
-	var returns *ApiTokenCondition
+func (j *jsiiProxy_ApiToken) ConditionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"conditionInput",
@@ -281,21 +282,21 @@ func (j *jsiiProxy_ApiToken) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiToken) IssuedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"issuedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) LastUsedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUsedOn",
 		&returns,
 	)
 	return returns
@@ -371,21 +372,21 @@ func (j *jsiiProxy_ApiToken) NotBeforeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) Policy() ApiTokenPolicyList {
-	var returns ApiTokenPolicyList
+func (j *jsiiProxy_ApiToken) Policies() ApiTokenPoliciesList {
+	var returns ApiTokenPoliciesList
 	_jsii_.Get(
 		j,
-		"policy",
+		"policies",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ApiToken) PolicyInput() interface{} {
+func (j *jsiiProxy_ApiToken) PoliciesInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"policyInput",
+		"policiesInput",
 		&returns,
 	)
 	return returns
@@ -426,6 +427,16 @@ func (j *jsiiProxy_ApiToken) Status() *string {
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiToken) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
 		&returns,
 	)
 	return returns
@@ -472,7 +483,7 @@ func (j *jsiiProxy_ApiToken) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig) ApiToken {
 	_init_.Initialize()
 
@@ -490,7 +501,7 @@ func NewApiToken(scope constructs.Construct, id *string, config *ApiTokenConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_token cloudflare_api_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token cloudflare_api_token} Resource.
 func NewApiToken_Override(a ApiToken, scope constructs.Construct, id *string, config *ApiTokenConfig) {
 	_init_.Initialize()
 
@@ -550,17 +561,6 @@ func (j *jsiiProxy_ApiToken)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiToken)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ApiToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -609,6 +609,17 @@ func (j *jsiiProxy_ApiToken)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiToken)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -977,13 +988,13 @@ func (a *jsiiProxy_ApiToken) PutCondition(value *ApiTokenCondition) {
 	)
 }
 
-func (a *jsiiProxy_ApiToken) PutPolicy(value interface{}) {
-	if err := a.validatePutPolicyParameters(value); err != nil {
+func (a *jsiiProxy_ApiToken) PutPolicies(value interface{}) {
+	if err := a.validatePutPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
-		"putPolicy",
+		"putPolicies",
 		[]interface{}{value},
 	)
 }
@@ -1004,14 +1015,6 @@ func (a *jsiiProxy_ApiToken) ResetExpiresOn() {
 	)
 }
 
-func (a *jsiiProxy_ApiToken) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_ApiToken) ResetNotBefore() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1024,6 +1027,14 @@ func (a *jsiiProxy_ApiToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiToken) ResetStatus() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

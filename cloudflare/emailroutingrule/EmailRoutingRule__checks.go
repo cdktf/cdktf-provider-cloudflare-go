@@ -207,22 +207,22 @@ func (e *jsiiProxy_EmailRoutingRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutActionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*EmailRoutingRuleAction:
-		value := value.(*[]*EmailRoutingRuleAction)
+	case *[]*EmailRoutingRuleActions:
+		value := value.(*[]*EmailRoutingRuleActions)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*EmailRoutingRuleAction:
-		value_ := value.([]*EmailRoutingRuleAction)
+	case []*EmailRoutingRuleActions:
+		value_ := value.([]*EmailRoutingRuleActions)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -231,29 +231,29 @@ func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value interface
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EmailRoutingRuleAction; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EmailRoutingRuleActions; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutMatcherParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutMatchersParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*EmailRoutingRuleMatcher:
-		value := value.(*[]*EmailRoutingRuleMatcher)
+	case *[]*EmailRoutingRuleMatchers:
+		value := value.(*[]*EmailRoutingRuleMatchers)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*EmailRoutingRuleMatcher:
-		value_ := value.([]*EmailRoutingRuleMatcher)
+	case []*EmailRoutingRuleMatchers:
+		value_ := value.([]*EmailRoutingRuleMatchers)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -262,7 +262,7 @@ func (e *jsiiProxy_EmailRoutingRule) validatePutMatcherParameters(value interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EmailRoutingRuleMatcher; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EmailRoutingRuleMatchers; received %#v (a %T)", value, value)
 		}
 	}
 

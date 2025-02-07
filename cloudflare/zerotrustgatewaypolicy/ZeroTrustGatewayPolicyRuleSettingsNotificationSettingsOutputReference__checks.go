@@ -186,15 +186,31 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings:
+		val := val.(*ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustGatewayPolicyRuleSettingsNotificationSettings:
+		val_ := val.(ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetMessageParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetMsgParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -114,6 +114,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validatePutFilterParameters(value *DataCloudflareZeroTrustAccessApplicationFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -155,6 +166,14 @@ func validateDataCloudflareZeroTrustAccessApplication_IsTerraformElementParamete
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetAppIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,33 +238,9 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetDomainParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

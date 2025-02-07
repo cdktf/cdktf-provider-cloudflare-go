@@ -75,6 +75,10 @@ func (k *jsiiProxy_KeylessCertificate) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (k *jsiiProxy_KeylessCertificate) validatePutTunnelParameters(value *KeylessCertificateTunnel) error {
+	return nil
+}
+
 func validateKeylessCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,10 +116,6 @@ func (j *jsiiProxy_KeylessCertificate) validateSetEnabledParameters(val interfac
 }
 
 func (j *jsiiProxy_KeylessCertificate) validateSetHostParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_KeylessCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 

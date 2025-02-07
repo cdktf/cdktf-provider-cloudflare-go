@@ -83,7 +83,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupIncludeSamlOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewZeroTrustAccessGroupIncludeSamlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessGroupIncludeSamlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

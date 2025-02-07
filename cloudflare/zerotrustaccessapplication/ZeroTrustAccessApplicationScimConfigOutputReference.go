@@ -5,15 +5,15 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	cdktf.ComplexObject
-	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationList
+	Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
 	AuthenticationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -41,8 +41,8 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	IdpUid() *string
 	SetIdpUid(val *string)
 	IdpUidInput() *string
-	InternalValue() *ZeroTrustAccessApplicationScimConfig
-	SetInternalValue(val *ZeroTrustAccessApplicationScimConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Mappings() ZeroTrustAccessApplicationScimConfigMappingsList
 	MappingsInput() interface{}
 	RemoteUri() *string
@@ -80,7 +80,7 @@ type ZeroTrustAccessApplicationScimConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthentication(value interface{})
+	PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication)
 	PutMappings(value interface{})
 	ResetAuthentication()
 	ResetDeactivateOnDelete()
@@ -101,8 +101,8 @@ type jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationList {
-	var returns ZeroTrustAccessApplicationScimConfigAuthenticationList
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Authentication() ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference {
+	var returns ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
 	_jsii_.Get(
 		j,
 		"authentication",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) IdpUidIn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InternalValue() *ZeroTrustAccessApplicationScimConfig {
-	var returns *ZeroTrustAccessApplicationScimConfig
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetIdpUid
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationScimConfig) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +604,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) Interpol
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutAuthentication(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) PutAuthentication(value *ZeroTrustAccessApplicationScimConfigAuthentication) {
 	if err := z.validatePutAuthenticationParameters(value); err != nil {
 		panic(err)
 	}

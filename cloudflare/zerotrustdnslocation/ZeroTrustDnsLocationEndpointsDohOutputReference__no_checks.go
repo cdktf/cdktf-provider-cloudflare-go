@@ -67,7 +67,11 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val *ZeroTrustDnsLocationEndpointsDoh) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetRequireTokenParameters(val interface{}) error {
 	return nil
 }
 

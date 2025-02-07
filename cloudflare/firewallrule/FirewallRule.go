@@ -5,19 +5,18 @@ package firewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/firewallrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/firewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktf.TerraformResource
-	Action() *string
-	SetAction(val *string)
-	ActionInput() *string
+	Action() FirewallRuleActionOutputReference
+	ActionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -35,11 +34,8 @@ type FirewallRule interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
-	FilterId() *string
-	SetFilterId(val *string)
-	FilterIdInput() *string
+	Filter() FirewallRuleFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,23 +45,15 @@ type FirewallRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
+	Paused() cdktf.IResolvable
 	Priority() *float64
-	SetPriority(val *float64)
-	PriorityInput() *float64
 	Products() *[]*string
-	SetProducts(val *[]*string)
-	ProductsInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -76,6 +64,10 @@ type FirewallRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Ref() *string
+	RuleId() *string
+	SetRuleId(val *string)
+	RuleIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,14 +120,12 @@ type FirewallRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetDescription()
-	ResetId()
+	PutAction(value *FirewallRuleAction)
+	PutFilter(value *FirewallRuleFilter)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPaused()
-	ResetPriority()
-	ResetProducts()
+	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -154,8 +144,8 @@ type jsiiProxy_FirewallRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_FirewallRule) Action() *string {
-	var returns *string
+func (j *jsiiProxy_FirewallRule) Action() FirewallRuleActionOutputReference {
+	var returns FirewallRuleActionOutputReference
 	_jsii_.Get(
 		j,
 		"action",
@@ -164,8 +154,8 @@ func (j *jsiiProxy_FirewallRule) Action() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) ActionInput() *string {
-	var returns *string
+func (j *jsiiProxy_FirewallRule) ActionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -234,31 +224,21 @@ func (j *jsiiProxy_FirewallRule) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) DescriptionInput() *string {
-	var returns *string
+func (j *jsiiProxy_FirewallRule) Filter() FirewallRuleFilterOutputReference {
+	var returns FirewallRuleFilterOutputReference
 	_jsii_.Get(
 		j,
-		"descriptionInput",
+		"filter",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) FilterId() *string {
-	var returns *string
+func (j *jsiiProxy_FirewallRule) FilterInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"filterId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FirewallRule) FilterIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterIdInput",
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -304,16 +284,6 @@ func (j *jsiiProxy_FirewallRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FirewallRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -334,21 +304,11 @@ func (j *jsiiProxy_FirewallRule) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirewallRule) Paused() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"paused",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FirewallRule) PausedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pausedInput",
 		&returns,
 	)
 	return returns
@@ -364,31 +324,11 @@ func (j *jsiiProxy_FirewallRule) Priority() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) PriorityInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priorityInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FirewallRule) Products() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"products",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FirewallRule) ProductsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"productsInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +359,36 @@ func (j *jsiiProxy_FirewallRule) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallRule) Ref() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallRule) RuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirewallRule) RuleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleIdInput",
 		&returns,
 	)
 	return returns
@@ -475,7 +445,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -493,7 +463,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -501,17 +471,6 @@ func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *st
 		"@cdktf/provider-cloudflare.firewallRule.FirewallRule",
 		[]interface{}{scope, id, config},
 		f,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetAction(val *string) {
-	if err := j.validateSetActionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"action",
-		val,
 	)
 }
 
@@ -545,43 +504,10 @@ func (j *jsiiProxy_FirewallRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirewallRule)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetFilterId(val *string) {
-	if err := j.validateSetFilterIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"filterId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_FirewallRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -593,39 +519,6 @@ func (j *jsiiProxy_FirewallRule)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetPaused(val interface{}) {
-	if err := j.validateSetPausedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"paused",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetPriority(val *float64) {
-	if err := j.validateSetPriorityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"priority",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetProducts(val *[]*string) {
-	if err := j.validateSetProductsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"products",
 		val,
 	)
 }
@@ -645,6 +538,17 @@ func (j *jsiiProxy_FirewallRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirewallRule)SetRuleId(val *string) {
+	if err := j.validateSetRuleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ruleId",
 		val,
 	)
 }
@@ -1013,19 +917,25 @@ func (f *jsiiProxy_FirewallRule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) ResetDescription() {
+func (f *jsiiProxy_FirewallRule) PutAction(value *FirewallRuleAction) {
+	if err := f.validatePutActionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
-		"resetDescription",
-		nil, // no parameters
+		"putAction",
+		[]interface{}{value},
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) ResetId() {
+func (f *jsiiProxy_FirewallRule) PutFilter(value *FirewallRuleFilter) {
+	if err := f.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		f,
-		"resetId",
-		nil, // no parameters
+		"putFilter",
+		[]interface{}{value},
 	)
 }
 
@@ -1037,26 +947,10 @@ func (f *jsiiProxy_FirewallRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (f *jsiiProxy_FirewallRule) ResetPaused() {
+func (f *jsiiProxy_FirewallRule) ResetRuleId() {
 	_jsii_.InvokeVoid(
 		f,
-		"resetPaused",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FirewallRule) ResetPriority() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetPriority",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FirewallRule) ResetProducts() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetProducts",
+		"resetRuleId",
 		nil, // no parameters
 	)
 }

@@ -5,17 +5,21 @@ package ratelimit
 
 
 type RateLimitMatchRequest struct {
-	// HTTP Methods to match traffic on. Available values: `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`, `_ALL_`.
+	// The HTTP methods to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#methods RateLimit#methods}
+	// You can specify a subset (for example, `['POST','PUT']`) or all methods (`['_ALL_']`). This field is optional when creating a rate limit.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#methods RateLimit#methods}
 	Methods *[]*string `field:"optional" json:"methods" yaml:"methods"`
-	// HTTP schemes to match traffic on. Available values: `HTTP`, `HTTPS`, `_ALL_`.
+	// The HTTP schemes to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#schemes RateLimit#schemes}
+	// You can specify one scheme (`['HTTPS']`), both schemes (`['HTTP','HTTPS']`), or all schemes (`['_ALL_']`). This field is optional.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#schemes RateLimit#schemes}
 	Schemes *[]*string `field:"optional" json:"schemes" yaml:"schemes"`
-	// The URL pattern to match comprised of the host and path, i.e. example.org/path. Wildcard are expanded to match applicable traffic, query strings are not matched. Use _ for all traffic to your zone.
+	// The URL pattern to match, composed of a host and a path such as `example.org/path*`. Normalization is applied before the pattern is matched. `*` wildcards are expanded to match applicable traffic. Query strings are not matched. Set the value to `*` to match all traffic to your zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#url_pattern RateLimit#url_pattern}
-	UrlPattern *string `field:"optional" json:"urlPattern" yaml:"urlPattern"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#url RateLimit#url}
+	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

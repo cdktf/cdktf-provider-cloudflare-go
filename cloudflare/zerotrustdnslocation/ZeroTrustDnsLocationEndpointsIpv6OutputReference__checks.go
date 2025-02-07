@@ -217,9 +217,25 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) validateSetInternalValueParameters(val *ZeroTrustDnsLocationEndpointsIpv6) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv6OutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustDnsLocationEndpointsIpv6:
+		val := val.(*ZeroTrustDnsLocationEndpointsIpv6)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustDnsLocationEndpointsIpv6:
+		val_ := val.(ZeroTrustDnsLocationEndpointsIpv6)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustDnsLocationEndpointsIpv6; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

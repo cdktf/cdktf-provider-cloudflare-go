@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions
-	SetInternalValue(val *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	ReturnAccessTokenFromAuthorizationEndpoint() interface{}
 	SetReturnAccessTokenFromAuthorizationEndpoint(val interface{})
 	ReturnAccessTokenFromAuthorizationEndpointInput() interface{}
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions {
-	var returns *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

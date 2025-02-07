@@ -99,11 +99,7 @@ func (j *jsiiProxy_LogpullRetention) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_LogpullRetention) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_LogpullRetention) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_LogpullRetention) validateSetFlagParameters(val interface{}) error {
 	return nil
 }
 

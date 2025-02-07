@@ -95,7 +95,7 @@ func (j *jsiiProxy_LoadBalancerSessionAffinityAttributesOutputReference) validat
 	return nil
 }
 
-func validateNewLoadBalancerSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

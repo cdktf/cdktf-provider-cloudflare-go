@@ -186,26 +186,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetGroupMemberDeprovisionParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetIdentityUpdateBehaviorParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -258,14 +238,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetSecretParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -302,21 +274,13 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,7 +35,7 @@ type RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference interface {
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
-	StatusCodeRange() RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList
+	StatusCodeRange() RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
 	StatusCodeRangeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -72,10 +72,9 @@ type RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStatusCodeRange(value interface{})
+	PutStatusCodeRange(value *RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange)
 	ResetStatusCode()
 	ResetStatusCodeRange()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -161,8 +160,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCodeRange() RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList {
-	var returns RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCodeRange() RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference {
+	var returns RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
 	_jsii_.Get(
 		j,
 		"statusCodeRange",
@@ -512,7 +511,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) PutStatusCodeRange(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) PutStatusCodeRange(value *RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange) {
 	if err := r.validatePutStatusCodeRangeParameters(value); err != nil {
 		panic(err)
 	}
@@ -535,14 +534,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatusCodeRange",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetValue",
 		nil, // no parameters
 	)
 }

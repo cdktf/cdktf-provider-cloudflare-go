@@ -99,19 +99,15 @@ func (j *jsiiProxy_ZoneCacheReserve) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheReserve) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneCacheReserve) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZoneCacheReserve) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneCacheReserve) validateSetValueParameters(val *string) error {
 	return nil
 }
 

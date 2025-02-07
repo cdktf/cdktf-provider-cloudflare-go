@@ -5,14 +5,14 @@ package spectrumapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/spectrumapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/spectrumapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktf.TerraformResource
 	ArgoSmartRouting() interface{}
@@ -30,14 +30,15 @@ type SpectrumApplication interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Dns() SpectrumApplicationDnsOutputReference
-	DnsInput() *SpectrumApplicationDns
+	DnsInput() interface{}
 	EdgeIps() SpectrumApplicationEdgeIpsOutputReference
-	EdgeIpsInput() *SpectrumApplicationEdgeIps
+	EdgeIpsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,18 +57,17 @@ type SpectrumApplication interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	OriginDirect() *[]*string
 	SetOriginDirect(val *[]*string)
 	OriginDirectInput() *[]*string
 	OriginDns() SpectrumApplicationOriginDnsOutputReference
-	OriginDnsInput() *SpectrumApplicationOriginDns
-	OriginPort() *float64
-	SetOriginPort(val *float64)
-	OriginPortInput() *float64
-	OriginPortRange() SpectrumApplicationOriginPortRangeOutputReference
-	OriginPortRangeInput() *SpectrumApplicationOriginPortRange
+	OriginDnsInput() interface{}
+	OriginPort() *map[string]interface{}
+	SetOriginPort(val *map[string]interface{})
+	OriginPortInput() *map[string]interface{}
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -145,15 +145,12 @@ type SpectrumApplication interface {
 	PutDns(value *SpectrumApplicationDns)
 	PutEdgeIps(value *SpectrumApplicationEdgeIps)
 	PutOriginDns(value *SpectrumApplicationOriginDns)
-	PutOriginPortRange(value *SpectrumApplicationOriginPortRange)
 	ResetArgoSmartRouting()
 	ResetEdgeIps()
-	ResetId()
 	ResetIpFirewall()
 	ResetOriginDirect()
 	ResetOriginDns()
 	ResetOriginPort()
-	ResetOriginPortRange()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,6 +235,16 @@ func (j *jsiiProxy_SpectrumApplication) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SpectrumApplication) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpectrumApplication) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -258,8 +265,8 @@ func (j *jsiiProxy_SpectrumApplication) Dns() SpectrumApplicationDnsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) DnsInput() *SpectrumApplicationDns {
-	var returns *SpectrumApplicationDns
+func (j *jsiiProxy_SpectrumApplication) DnsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dnsInput",
@@ -278,8 +285,8 @@ func (j *jsiiProxy_SpectrumApplication) EdgeIps() SpectrumApplicationEdgeIpsOutp
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() *SpectrumApplicationEdgeIps {
-	var returns *SpectrumApplicationEdgeIps
+func (j *jsiiProxy_SpectrumApplication) EdgeIpsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"edgeIpsInput",
@@ -368,6 +375,16 @@ func (j *jsiiProxy_SpectrumApplication) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
+func (j *jsiiProxy_SpectrumApplication) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpectrumApplication) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -408,8 +425,8 @@ func (j *jsiiProxy_SpectrumApplication) OriginDns() SpectrumApplicationOriginDns
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) OriginDnsInput() *SpectrumApplicationOriginDns {
-	var returns *SpectrumApplicationOriginDns
+func (j *jsiiProxy_SpectrumApplication) OriginDnsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"originDnsInput",
@@ -418,8 +435,8 @@ func (j *jsiiProxy_SpectrumApplication) OriginDnsInput() *SpectrumApplicationOri
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) OriginPort() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpectrumApplication) OriginPort() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"originPort",
@@ -428,31 +445,11 @@ func (j *jsiiProxy_SpectrumApplication) OriginPort() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) OriginPortInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpectrumApplication) OriginPortInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"originPortInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) OriginPortRange() SpectrumApplicationOriginPortRangeOutputReference {
-	var returns SpectrumApplicationOriginPortRangeOutputReference
-	_jsii_.Get(
-		j,
-		"originPortRange",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpectrumApplication) OriginPortRangeInput() *SpectrumApplicationOriginPortRange {
-	var returns *SpectrumApplicationOriginPortRange
-	_jsii_.Get(
-		j,
-		"originPortRangeInput",
 		&returns,
 	)
 	return returns
@@ -619,7 +616,7 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
 
@@ -637,7 +634,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Construct, id *string, config *SpectrumApplicationConfig) {
 	_init_.Initialize()
 
@@ -741,7 +738,7 @@ func (j *jsiiProxy_SpectrumApplication)SetOriginDirect(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *float64) {
+func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *map[string]interface{}) {
 	if err := j.validateSetOriginPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,17 +1209,6 @@ func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationO
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplication) PutOriginPortRange(value *SpectrumApplicationOriginPortRange) {
-	if err := s.validatePutOriginPortRangeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putOriginPortRange",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SpectrumApplication) ResetArgoSmartRouting() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1235,14 +1221,6 @@ func (s *jsiiProxy_SpectrumApplication) ResetEdgeIps() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEdgeIps",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpectrumApplication) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -1275,14 +1253,6 @@ func (s *jsiiProxy_SpectrumApplication) ResetOriginPort() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOriginPort",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpectrumApplication) ResetOriginPortRange() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetOriginPortRange",
 		nil, // no parameters
 	)
 }

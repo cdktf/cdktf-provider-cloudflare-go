@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,7 +38,8 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
-	TargetAttributes() ZeroTrustAccessApplicationTargetCriteriaTargetAttributesList
+	TargetAttributes() interface{}
+	SetTargetAttributes(val interface{})
 	TargetAttributesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -72,7 +73,6 @@ type ZeroTrustAccessApplicationTargetCriteriaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTargetAttributes(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Prot
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributes() ZeroTrustAccessApplicationTargetCriteriaTargetAttributesList {
-	var returns ZeroTrustAccessApplicationTargetCriteriaTargetAttributesList
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) TargetAttributes() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"targetAttributes",
@@ -297,6 +297,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetPr
 	_jsii_.Set(
 		j,
 		"protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference)SetTargetAttributes(val interface{}) {
+	if err := j.validateSetTargetAttributesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetAttributes",
 		val,
 	)
 }
@@ -507,17 +518,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Inte
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) PutTargetAttributes(value interface{}) {
-	if err := z.validatePutTargetAttributesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putTargetAttributes",
-		[]interface{}{value},
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

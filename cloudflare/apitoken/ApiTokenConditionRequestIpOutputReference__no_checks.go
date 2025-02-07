@@ -63,7 +63,7 @@ func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInParam
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val *ApiTokenConditionRequestIp) error {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -41,6 +41,9 @@ type RulesetRulesActionParametersOverridesCategoriesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SensitivityLevel() *string
+	SetSensitivityLevel(val *string)
+	SensitivityLevelInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,8 +77,8 @@ type RulesetRulesActionParametersOverridesCategoriesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAction()
-	ResetCategory()
 	ResetEnabled()
+	ResetSensitivityLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +204,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) SensitivityLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensitivityLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) SensitivityLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sensitivityLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +334,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference)SetSensitivityLevel(val *string) {
+	if err := j.validateSetSensitivityLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sensitivityLevel",
 		val,
 	)
 }
@@ -531,18 +565,18 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) ResetCategory() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCategory",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) ResetSensitivityLevel() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSensitivityLevel",
 		nil, // no parameters
 	)
 }

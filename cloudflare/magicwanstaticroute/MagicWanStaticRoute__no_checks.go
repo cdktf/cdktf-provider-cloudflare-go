@@ -75,6 +75,10 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanStaticRoute) validatePutScopeParameters(value *MagicWanStaticRouteScope) error {
+	return nil
+}
+
 func validateMagicWanStaticRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -95,14 +99,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetColoNamesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetColoRegionsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MagicWanStaticRoute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -112,10 +108,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_MagicWanStaticRoute) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -136,6 +128,10 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetPriorityParameters(val *float
 }
 
 func (j *jsiiProxy_MagicWanStaticRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRoute) validateSetRouteIdParameters(val *string) error {
 	return nil
 }
 

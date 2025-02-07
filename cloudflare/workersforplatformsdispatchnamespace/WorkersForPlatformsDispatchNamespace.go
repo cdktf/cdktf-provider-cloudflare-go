@@ -5,14 +5,14 @@ package workersforplatformsdispatchnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersforplatformsdispatchnamespace/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersforplatformsdispatchnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 type WorkersForPlatformsDispatchNamespace interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,8 @@ type WorkersForPlatformsDispatchNamespace interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedBy() *string
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,9 +49,13 @@ type WorkersForPlatformsDispatchNamespace interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedBy() *string
+	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamespaceId() *string
+	NamespaceName() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -62,6 +68,7 @@ type WorkersForPlatformsDispatchNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScriptCount() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +118,7 @@ type WorkersForPlatformsDispatchNamespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -192,6 +200,26 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -252,6 +280,26 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Lifecycle() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ModifiedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -267,6 +315,26 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) NamespaceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) NamespaceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceName",
 		&returns,
 	)
 	return returns
@@ -312,6 +380,16 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) ScriptCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scriptCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -343,7 +421,7 @@ func (j *jsiiProxy_WorkersForPlatformsDispatchNamespace) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) WorkersForPlatformsDispatchNamespace {
 	_init_.Initialize()
 
@@ -361,7 +439,7 @@ func NewWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Resource.
 func NewWorkersForPlatformsDispatchNamespace_Override(w WorkersForPlatformsDispatchNamespace, scope constructs.Construct, id *string, config *WorkersForPlatformsDispatchNamespaceConfig) {
 	_init_.Initialize()
 
@@ -812,6 +890,14 @@ func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) OverrideLogicalId(newLo
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WorkersForPlatformsDispatchNamespace) ResetName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetName",
+		nil, // no parameters
 	)
 }
 

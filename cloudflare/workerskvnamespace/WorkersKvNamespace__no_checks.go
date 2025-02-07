@@ -103,10 +103,6 @@ func (j *jsiiProxy_WorkersKvNamespace) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_WorkersKvNamespace) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WorkersKvNamespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

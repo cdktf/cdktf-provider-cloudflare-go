@@ -415,14 +415,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpsIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpv6BlockIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetEcsSupportParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -438,14 +430,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetEcsSupportParameters(val int
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

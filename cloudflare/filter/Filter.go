@@ -5,14 +5,14 @@ package filter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/filter/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/filter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,11 +32,12 @@ type Filter interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
+	FilterId() *string
+	SetFilterId(val *string)
+	FilterIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,17 +47,13 @@ type Filter interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
+	Paused() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,8 +65,6 @@ type Filter interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Ref() *string
-	SetRef(val *string)
-	RefInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,13 +117,10 @@ type Filter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetDescription()
-	ResetId()
+	ResetFilterId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPaused()
-	ResetRef()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -207,16 +199,6 @@ func (j *jsiiProxy_Filter) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Filter) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Filter) Expression() *string {
 	var returns *string
 	_jsii_.Get(
@@ -232,6 +214,26 @@ func (j *jsiiProxy_Filter) ExpressionInput() *string {
 	_jsii_.Get(
 		j,
 		"expressionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) FilterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Filter) FilterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterIdInput",
 		&returns,
 	)
 	return returns
@@ -277,16 +279,6 @@ func (j *jsiiProxy_Filter) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Filter) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Filter) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -307,21 +299,11 @@ func (j *jsiiProxy_Filter) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Filter) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Filter) Paused() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"paused",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Filter) PausedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pausedInput",
 		&returns,
 	)
 	return returns
@@ -362,16 +344,6 @@ func (j *jsiiProxy_Filter) Ref() *string {
 	_jsii_.Get(
 		j,
 		"ref",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Filter) RefInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"refInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +400,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -446,7 +418,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 
@@ -487,17 +459,6 @@ func (j *jsiiProxy_Filter)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Filter)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Filter)SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
@@ -505,6 +466,17 @@ func (j *jsiiProxy_Filter)SetExpression(val *string) {
 	_jsii_.Set(
 		j,
 		"expression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Filter)SetFilterId(val *string) {
+	if err := j.validateSetFilterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterId",
 		val,
 	)
 }
@@ -517,17 +489,6 @@ func (j *jsiiProxy_Filter)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Filter)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Filter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -535,17 +496,6 @@ func (j *jsiiProxy_Filter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Filter)SetPaused(val interface{}) {
-	if err := j.validateSetPausedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"paused",
 		val,
 	)
 }
@@ -565,17 +515,6 @@ func (j *jsiiProxy_Filter)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Filter)SetRef(val *string) {
-	if err := j.validateSetRefParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ref",
 		val,
 	)
 }
@@ -944,18 +883,10 @@ func (f *jsiiProxy_Filter) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (f *jsiiProxy_Filter) ResetDescription() {
+func (f *jsiiProxy_Filter) ResetFilterId() {
 	_jsii_.InvokeVoid(
 		f,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_Filter) ResetId() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetId",
+		"resetFilterId",
 		nil, // no parameters
 	)
 }
@@ -964,22 +895,6 @@ func (f *jsiiProxy_Filter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_Filter) ResetPaused() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetPaused",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_Filter) ResetRef() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetRef",
 		nil, // no parameters
 	)
 }

@@ -79,7 +79,7 @@ func (a *jsiiProxy_ApiToken) validatePutConditionParameters(value *ApiTokenCondi
 	return nil
 }
 
-func (a *jsiiProxy_ApiToken) validatePutPolicyParameters(value interface{}) error {
+func (a *jsiiProxy_ApiToken) validatePutPoliciesParameters(value interface{}) error {
 	return nil
 }
 
@@ -111,10 +111,6 @@ func (j *jsiiProxy_ApiToken) validateSetExpiresOnParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiToken) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApiToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -128,6 +124,10 @@ func (j *jsiiProxy_ApiToken) validateSetNotBeforeParameters(val *string) error {
 }
 
 func (j *jsiiProxy_ApiToken) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiToken) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

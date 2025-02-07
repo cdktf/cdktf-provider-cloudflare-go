@@ -99,7 +99,7 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetTerraformResource
 	return nil
 }
 
-func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

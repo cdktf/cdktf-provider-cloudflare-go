@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -81,7 +81,6 @@ type RulesetRulesActionParametersOverridesRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAction()
 	ResetEnabled()
-	ResetId()
 	ResetScoreThreshold()
 	ResetSensitivityLevel()
 	// Produce the Token's value at resolution time.
@@ -605,14 +604,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) Re
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnabled",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
 		nil, // no parameters
 	)
 }

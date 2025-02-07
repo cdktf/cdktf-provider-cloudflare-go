@@ -79,7 +79,7 @@ func (j *jsiiProxy_LoadBalancerRandomSteeringOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewLoadBalancerRandomSteeringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRandomSteeringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

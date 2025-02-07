@@ -22,30 +22,25 @@ type EmailRoutingCatchAllConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// action block.
+	// List actions for the catch-all routing rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#action EmailRoutingCatchAll#action}
-	Action interface{} `field:"required" json:"action" yaml:"action"`
-	// matcher block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+	Actions interface{} `field:"required" json:"actions" yaml:"actions"`
+	// List of matchers for the catch-all routing rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#matcher EmailRoutingCatchAll#matcher}
-	Matcher interface{} `field:"required" json:"matcher" yaml:"matcher"`
-	// Routing rule name.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+	Matchers interface{} `field:"required" json:"matchers" yaml:"matchers"`
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// The zone identifier to target for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Routing rule status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all#id EmailRoutingCatchAll#id}.
+	// Routing rule name.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

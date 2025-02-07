@@ -22,40 +22,44 @@ type TurnstileWidgetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Domains where the widget is deployed.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 	Domains *[]*string `field:"required" json:"domains" yaml:"domains"`
-	// Widget Mode. Available values: `non-interactive`, `invisible`, `managed`.
+	// Widget Mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 	// Human readable widget name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+	// Not unique. Cloudflare suggests that you
+	// set this to a meaningful string to make it easier to identify your
+	// widget, and where it is used.
+	//
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// If bot_fight_mode is set to true, Cloudflare issues computationally expensive challenges in response to malicious bots (Enterprise only).
+	// If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 	BotFightMode interface{} `field:"optional" json:"botFightMode" yaml:"botFightMode"`
-	// The identifier of this resource. This is the site key value.
+	// If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#id TurnstileWidget#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+	ClearanceLevel *string `field:"optional" json:"clearanceLevel" yaml:"clearanceLevel"`
+	// Return the Ephemeral ID in /siteverify (ENT only).
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Do not show any Cloudflare branding on the widget (Enterprise only).
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+	EphemeralId interface{} `field:"optional" json:"ephemeralId" yaml:"ephemeralId"`
+	// Do not show any Cloudflare branding on the widget (ENT only).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 	Offlabel interface{} `field:"optional" json:"offlabel" yaml:"offlabel"`
 	// Region where this widget can be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

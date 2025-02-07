@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "createdAt", GoGetter: "CreatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -39,7 +40,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -52,8 +52,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfig", GoMethod: "ResetConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
+			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -65,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigA{}
@@ -81,12 +85,12 @@ func init() {
 		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRule",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRule)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngress",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressList",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,22 +105,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleList{}
+			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequest",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequest)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestAccess",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestAccess)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestAccessOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestAccessOutputReference)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audTag", GoGetter: "AudTag"},
 			_jsii_.MemberProperty{JsiiProperty: "audTagInput", GoGetter: "AudTagInput"},
@@ -139,7 +143,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "required", GoGetter: "Required"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAudTag", GoMethod: "ResetAudTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequired", GoMethod: "ResetRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamName", GoMethod: "ResetTeamName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -150,86 +153,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestAccessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRules",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRules)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesList",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
-			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ports", GoGetter: "Ports"},
-			_jsii_.MemberProperty{JsiiProperty: "portsInput", GoGetter: "PortsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "prefix", GoGetter: "Prefix"},
-			_jsii_.MemberProperty{JsiiProperty: "prefixInput", GoGetter: "PrefixInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPorts", GoMethod: "ResetPorts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrefix", GoMethod: "ResetPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestIpRulesOutputReference{}
+			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestOutputReference)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bastionMode", GoGetter: "BastionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "bastionModeInput", GoGetter: "BastionModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caPool", GoGetter: "CaPool"},
 			_jsii_.MemberProperty{JsiiProperty: "caPoolInput", GoGetter: "CaPoolInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,8 +191,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipRules", GoGetter: "IpRules"},
-			_jsii_.MemberProperty{JsiiProperty: "ipRulesInput", GoGetter: "IpRulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnections", GoGetter: "KeepAliveConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnectionsInput", GoGetter: "KeepAliveConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
@@ -269,29 +201,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerifyInput", GoGetter: "NoTlsVerifyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerName", GoGetter: "OriginServerName"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerNameInput", GoGetter: "OriginServerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyAddress", GoGetter: "ProxyAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyAddressInput", GoGetter: "ProxyAddressInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyPort", GoGetter: "ProxyPort"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyPortInput", GoGetter: "ProxyPortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyType", GoGetter: "ProxyType"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyTypeInput", GoGetter: "ProxyTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAccess", GoMethod: "PutAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "putIpRules", GoMethod: "PutIpRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBastionMode", GoMethod: "ResetBastionMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaPool", GoMethod: "ResetCaPool"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectTimeout", GoMethod: "ResetConnectTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableChunkedEncoding", GoMethod: "ResetDisableChunkedEncoding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttp2Origin", GoMethod: "ResetHttp2Origin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHostHeader", GoMethod: "ResetHttpHostHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpRules", GoMethod: "ResetIpRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveConnections", GoMethod: "ResetKeepAliveConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveTimeout", GoMethod: "ResetKeepAliveTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoHappyEyeballs", GoMethod: "ResetNoHappyEyeballs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoTlsVerify", GoMethod: "ResetNoTlsVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginServerName", GoMethod: "ResetOriginServerName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyAddress", GoMethod: "ResetProxyAddress"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyPort", GoMethod: "ResetProxyPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxyType", GoMethod: "ResetProxyType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpKeepAlive", GoMethod: "ResetTcpKeepAlive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsTimeout", GoMethod: "ResetTlsTimeout"},
@@ -305,14 +228,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOriginRequestOutputReference{}
+			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOutputReference)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference",
+		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressRuleOutputReference{}
+			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -387,7 +310,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "required", GoGetter: "Required"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredInput", GoGetter: "RequiredInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAudTag", GoMethod: "ResetAudTag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequired", GoMethod: "ResetRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamName", GoMethod: "ResetTeamName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -403,81 +325,12 @@ func init() {
 			return &j
 		},
 	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRules",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRules)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesOutputReference",
-		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
-			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ports", GoGetter: "Ports"},
-			_jsii_.MemberProperty{JsiiProperty: "portsInput", GoGetter: "PortsInput"},
-			_jsii_.MemberProperty{JsiiProperty: "prefix", GoGetter: "Prefix"},
-			_jsii_.MemberProperty{JsiiProperty: "prefixInput", GoGetter: "PrefixInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPorts", GoMethod: "ResetPorts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPrefix", GoMethod: "ResetPrefix"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference",
 		reflect.TypeOf((*ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
-			_jsii_.MemberProperty{JsiiProperty: "bastionMode", GoGetter: "BastionMode"},
-			_jsii_.MemberProperty{JsiiProperty: "bastionModeInput", GoGetter: "BastionModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caPool", GoGetter: "CaPool"},
 			_jsii_.MemberProperty{JsiiProperty: "caPoolInput", GoGetter: "CaPoolInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -505,8 +358,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipRules", GoGetter: "IpRules"},
-			_jsii_.MemberProperty{JsiiProperty: "ipRulesInput", GoGetter: "IpRulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnections", GoGetter: "KeepAliveConnections"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveConnectionsInput", GoGetter: "KeepAliveConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keepAliveTimeout", GoGetter: "KeepAliveTimeout"},
@@ -517,29 +368,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noTlsVerifyInput", GoGetter: "NoTlsVerifyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerName", GoGetter: "OriginServerName"},
 			_jsii_.MemberProperty{JsiiProperty: "originServerNameInput", GoGetter: "OriginServerNameInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyAddress", GoGetter: "ProxyAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyAddressInput", GoGetter: "ProxyAddressInput"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyPort", GoGetter: "ProxyPort"},
-			_jsii_.MemberProperty{JsiiProperty: "proxyPortInput", GoGetter: "ProxyPortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyType", GoGetter: "ProxyType"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyTypeInput", GoGetter: "ProxyTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAccess", GoMethod: "PutAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "putIpRules", GoMethod: "PutIpRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
-			_jsii_.MemberMethod{JsiiMethod: "resetBastionMode", GoMethod: "ResetBastionMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaPool", GoMethod: "ResetCaPool"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectTimeout", GoMethod: "ResetConnectTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableChunkedEncoding", GoMethod: "ResetDisableChunkedEncoding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttp2Origin", GoMethod: "ResetHttp2Origin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHostHeader", GoMethod: "ResetHttpHostHeader"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpRules", GoMethod: "ResetIpRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveConnections", GoMethod: "ResetKeepAliveConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeepAliveTimeout", GoMethod: "ResetKeepAliveTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoHappyEyeballs", GoMethod: "ResetNoHappyEyeballs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNoTlsVerify", GoMethod: "ResetNoTlsVerify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginServerName", GoMethod: "ResetOriginServerName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyAddress", GoMethod: "ResetProxyAddress"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProxyPort", GoMethod: "ResetProxyPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProxyType", GoMethod: "ResetProxyType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpKeepAlive", GoMethod: "ResetTcpKeepAlive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsTimeout", GoMethod: "ResetTlsTimeout"},
@@ -576,16 +418,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ingressRule", GoGetter: "IngressRule"},
-			_jsii_.MemberProperty{JsiiProperty: "ingressRuleInput", GoGetter: "IngressRuleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ingress", GoGetter: "Ingress"},
+			_jsii_.MemberProperty{JsiiProperty: "ingressInput", GoGetter: "IngressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "originRequest", GoGetter: "OriginRequest"},
 			_jsii_.MemberProperty{JsiiProperty: "originRequestInput", GoGetter: "OriginRequestInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putIngressRule", GoMethod: "PutIngressRule"},
+			_jsii_.MemberMethod{JsiiMethod: "putIngress", GoMethod: "PutIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginRequest", GoMethod: "PutOriginRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "putWarpRouting", GoMethod: "PutWarpRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginRequest", GoMethod: "ResetOriginRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWarpRouting", GoMethod: "ResetWarpRouting"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

@@ -107,10 +107,6 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetDestinationConfParamete
 	return nil
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

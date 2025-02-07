@@ -63,7 +63,7 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetInternalValueParameters(val *ApiTokenCondition) error {
+func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

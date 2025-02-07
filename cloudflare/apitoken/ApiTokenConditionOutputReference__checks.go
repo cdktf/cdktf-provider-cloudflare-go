@@ -177,9 +177,25 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetInternalValueParameters(val *ApiTokenCondition) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ApiTokenConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ApiTokenCondition:
+		val := val.(*ApiTokenCondition)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ApiTokenCondition:
+		val_ := val.(ApiTokenCondition)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ApiTokenCondition; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -47,10 +47,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) vali
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validatePutTargetAttributesParameters(value interface{}) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -72,6 +68,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) vali
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationTargetCriteriaOutputReference) validateSetTargetAttributesParameters(val interface{}) error {
 	return nil
 }
 

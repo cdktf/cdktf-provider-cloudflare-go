@@ -95,27 +95,11 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetAccountIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetActivateParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetCustomParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetGatewayManagedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 

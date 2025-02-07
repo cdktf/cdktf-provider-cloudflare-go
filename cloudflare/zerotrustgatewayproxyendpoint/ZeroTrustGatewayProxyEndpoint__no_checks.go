@@ -103,10 +103,6 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetCountParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) validateSetIpsParameters(val *[]*string) error {
 	return nil
 }

@@ -75,10 +75,6 @@ func (o *jsiiProxy_ObservatoryScheduledTest) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (o *jsiiProxy_ObservatoryScheduledTest) validatePutTimeoutsParameters(value *ObservatoryScheduledTestTimeouts) error {
-	return nil
-}
-
 func validateObservatoryScheduledTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,23 +99,11 @@ func (j *jsiiProxy_ObservatoryScheduledTest) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ObservatoryScheduledTest) validateSetFrequencyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ObservatoryScheduledTest) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ObservatoryScheduledTest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ObservatoryScheduledTest) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ObservatoryScheduledTest) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

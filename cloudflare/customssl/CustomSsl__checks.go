@@ -207,43 +207,12 @@ func (c *jsiiProxy_CustomSsl) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (c *jsiiProxy_CustomSsl) validatePutCustomSslOptionsParameters(value *CustomSslCustomSslOptions) error {
+func (c *jsiiProxy_CustomSsl) validatePutGeoRestrictionsParameters(value *CustomSslGeoRestrictions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (c *jsiiProxy_CustomSsl) validatePutCustomSslPriorityParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*CustomSslCustomSslPriority:
-		value := value.(*[]*CustomSslCustomSslPriority)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*CustomSslCustomSslPriority:
-		value_ := value.([]*CustomSslCustomSslPriority)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomSslCustomSslPriority; received %#v (a %T)", value, value)
-		}
 	}
 
 	return nil
@@ -284,6 +253,22 @@ func validateCustomSsl_IsTerraformElementParameters(x interface{}) error {
 func validateCustomSsl_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetBundleMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetCertificateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -379,7 +364,15 @@ func (j *jsiiProxy_CustomSsl) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_CustomSsl) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -387,9 +380,9 @@ func (j *jsiiProxy_CustomSsl) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_CustomSsl) validateSetPrivateKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -436,6 +429,14 @@ func (j *jsiiProxy_CustomSsl) validateSetProvisionersParameters(val *[]interface
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

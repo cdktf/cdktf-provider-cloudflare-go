@@ -5,16 +5,18 @@ package contentscanningexpression
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/contentscanningexpression/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/contentscanningexpression/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 type ContentScanningExpression interface {
 	cdktf.TerraformResource
+	Body() ContentScanningExpressionBodyList
+	BodyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,6 +33,9 @@ type ContentScanningExpression interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpressionId() *string
+	SetExpressionId(val *string)
+	ExpressionIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,16 +44,12 @@ type ContentScanningExpression interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Payload() *string
-	SetPayload(val *string)
-	PayloadInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -111,6 +112,8 @@ type ContentScanningExpression interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBody(value interface{})
+	ResetExpressionId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -130,6 +133,26 @@ type ContentScanningExpression interface {
 // The jsii proxy struct for ContentScanningExpression
 type jsiiProxy_ContentScanningExpression struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ContentScanningExpression) Body() ContentScanningExpressionBodyList {
+	var returns ContentScanningExpressionBodyList
+	_jsii_.Get(
+		j,
+		"body",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContentScanningExpression) BodyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bodyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContentScanningExpression) CdktfStack() cdktf.TerraformStack {
@@ -182,6 +205,26 @@ func (j *jsiiProxy_ContentScanningExpression) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ContentScanningExpression) ExpressionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expressionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContentScanningExpression) ExpressionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expressionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContentScanningExpression) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -212,16 +255,6 @@ func (j *jsiiProxy_ContentScanningExpression) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ContentScanningExpression) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ContentScanningExpression) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -237,26 +270,6 @@ func (j *jsiiProxy_ContentScanningExpression) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContentScanningExpression) Payload() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"payload",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContentScanningExpression) PayloadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"payloadInput",
 		&returns,
 	)
 	return returns
@@ -343,7 +356,7 @@ func (j *jsiiProxy_ContentScanningExpression) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression(scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) ContentScanningExpression {
 	_init_.Initialize()
 
@@ -361,7 +374,7 @@ func NewContentScanningExpression(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource.
 func NewContentScanningExpression_Override(c ContentScanningExpression, scope constructs.Construct, id *string, config *ContentScanningExpressionConfig) {
 	_init_.Initialize()
 
@@ -402,6 +415,17 @@ func (j *jsiiProxy_ContentScanningExpression)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ContentScanningExpression)SetExpressionId(val *string) {
+	if err := j.validateSetExpressionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expressionId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContentScanningExpression)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -417,17 +441,6 @@ func (j *jsiiProxy_ContentScanningExpression)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContentScanningExpression)SetPayload(val *string) {
-	if err := j.validateSetPayloadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"payload",
 		val,
 	)
 }
@@ -812,6 +825,25 @@ func (c *jsiiProxy_ContentScanningExpression) OverrideLogicalId(newLogicalId *st
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ContentScanningExpression) PutBody(value interface{}) {
+	if err := c.validatePutBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBody",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContentScanningExpression) ResetExpressionId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpressionId",
+		nil, // no parameters
 	)
 }
 

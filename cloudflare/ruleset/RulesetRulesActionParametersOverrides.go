@@ -5,27 +5,27 @@ package ruleset
 
 
 type RulesetRulesActionParametersOverrides struct {
-	// Action to perform in the rule-level override.
+	// An action to override all rules with. This option has lower precedence than rule and category overrides.
 	//
-	// Available values: `block`, `challenge`, `compress_response`, `ddos_dynamic`, `ddos_mitigation`, `execute`, `force_connection_close`, `js_challenge`, `log`, `log_custom_field`, `managed_challenge`, `redirect`, `rewrite`, `route`, `score`, `serve_error`, `set_cache_settings`, `set_config`, `skip`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#action Ruleset#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#action Ruleset#action}
 	Action *string `field:"optional" json:"action" yaml:"action"`
-	// categories block.
+	// A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#categories Ruleset#categories}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#categories Ruleset#categories}
 	Categories interface{} `field:"optional" json:"categories" yaml:"categories"`
-	// Defines if the current ruleset-level override enables or disables the ruleset.
+	// Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#enabled Ruleset#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#enabled Ruleset#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// rules block.
+	// A list of rule-level overrides. This option has the highest precedence.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#rules Ruleset#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#rules Ruleset#rules}
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
-	// Sensitivity level to override for all ruleset rules. Available values: `default`, `medium`, `low`, `eoff`.
+	// A sensitivity level to set for all rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+	// This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 	SensitivityLevel *string `field:"optional" json:"sensitivityLevel" yaml:"sensitivityLevel"`
 }
 

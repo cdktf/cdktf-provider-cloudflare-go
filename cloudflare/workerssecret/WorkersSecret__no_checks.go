@@ -103,7 +103,7 @@ func (j *jsiiProxy_WorkersSecret) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WorkersSecret) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_WorkersSecret) validateSetDispatchNamespaceParameters(val *string) error {
 	return nil
 }
 
@@ -123,7 +123,11 @@ func (j *jsiiProxy_WorkersSecret) validateSetScriptNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_WorkersSecret) validateSetSecretTextParameters(val *string) error {
+func (j *jsiiProxy_WorkersSecret) validateSetTextParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersSecret) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

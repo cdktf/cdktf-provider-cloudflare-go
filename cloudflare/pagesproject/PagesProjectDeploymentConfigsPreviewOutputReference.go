@@ -5,17 +5,20 @@ package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagesproject/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagesproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	cdktf.ComplexObject
-	AlwaysUseLatestCompatibilityDate() interface{}
-	SetAlwaysUseLatestCompatibilityDate(val interface{})
-	AlwaysUseLatestCompatibilityDateInput() interface{}
+	AiBindings() PagesProjectDeploymentConfigsPreviewAiBindingsMap
+	AiBindingsInput() interface{}
+	AnalyticsEngineDatasets() PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap
+	AnalyticsEngineDatasetsInput() interface{}
+	Browsers() PagesProjectDeploymentConfigsPreviewBrowsersMap
+	BrowsersInput() interface{}
 	CompatibilityDate() *string
 	SetCompatibilityDate(val *string)
 	CompatibilityDateInput() *string
@@ -37,35 +40,30 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	D1Databases() *map[string]*string
-	SetD1Databases(val *map[string]*string)
-	D1DatabasesInput() *map[string]*string
-	DurableObjectNamespaces() *map[string]*string
-	SetDurableObjectNamespaces(val *map[string]*string)
-	DurableObjectNamespacesInput() *map[string]*string
-	EnvironmentVariables() *map[string]*string
-	SetEnvironmentVariables(val *map[string]*string)
-	EnvironmentVariablesInput() *map[string]*string
-	FailOpen() interface{}
-	SetFailOpen(val interface{})
-	FailOpenInput() interface{}
+	D1Databases() PagesProjectDeploymentConfigsPreviewD1DatabasesMap
+	D1DatabasesInput() interface{}
+	DurableObjectNamespaces() PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap
+	DurableObjectNamespacesInput() interface{}
+	EnvVars() PagesProjectDeploymentConfigsPreviewEnvVarsMap
+	EnvVarsInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectDeploymentConfigsPreview
-	SetInternalValue(val *PagesProjectDeploymentConfigsPreview)
-	KvNamespaces() *map[string]*string
-	SetKvNamespaces(val *map[string]*string)
-	KvNamespacesInput() *map[string]*string
+	HyperdriveBindings() PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap
+	HyperdriveBindingsInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	KvNamespaces() PagesProjectDeploymentConfigsPreviewKvNamespacesMap
+	KvNamespacesInput() interface{}
+	MtlsCertificates() PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap
+	MtlsCertificatesInput() interface{}
 	Placement() PagesProjectDeploymentConfigsPreviewPlacementOutputReference
-	PlacementInput() *PagesProjectDeploymentConfigsPreviewPlacement
-	R2Buckets() *map[string]*string
-	SetR2Buckets(val *map[string]*string)
-	R2BucketsInput() *map[string]*string
-	Secrets() *map[string]*string
-	SetSecrets(val *map[string]*string)
-	SecretsInput() *map[string]*string
-	ServiceBinding() PagesProjectDeploymentConfigsPreviewServiceBindingList
-	ServiceBindingInput() interface{}
+	PlacementInput() interface{}
+	QueueProducers() PagesProjectDeploymentConfigsPreviewQueueProducersMap
+	QueueProducersInput() interface{}
+	R2Buckets() PagesProjectDeploymentConfigsPreviewR2BucketsMap
+	R2BucketsInput() interface{}
+	Services() PagesProjectDeploymentConfigsPreviewServicesMap
+	ServicesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,9 +72,8 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UsageModel() *string
-	SetUsageModel(val *string)
-	UsageModelInput() *string
+	VectorizeBindings() PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap
+	VectorizeBindingsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -101,21 +98,36 @@ type PagesProjectDeploymentConfigsPreviewOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAiBindings(value interface{})
+	PutAnalyticsEngineDatasets(value interface{})
+	PutBrowsers(value interface{})
+	PutD1Databases(value interface{})
+	PutDurableObjectNamespaces(value interface{})
+	PutEnvVars(value interface{})
+	PutHyperdriveBindings(value interface{})
+	PutKvNamespaces(value interface{})
+	PutMtlsCertificates(value interface{})
 	PutPlacement(value *PagesProjectDeploymentConfigsPreviewPlacement)
-	PutServiceBinding(value interface{})
-	ResetAlwaysUseLatestCompatibilityDate()
+	PutQueueProducers(value interface{})
+	PutR2Buckets(value interface{})
+	PutServices(value interface{})
+	PutVectorizeBindings(value interface{})
+	ResetAiBindings()
+	ResetAnalyticsEngineDatasets()
+	ResetBrowsers()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
 	ResetD1Databases()
 	ResetDurableObjectNamespaces()
-	ResetEnvironmentVariables()
-	ResetFailOpen()
+	ResetEnvVars()
+	ResetHyperdriveBindings()
 	ResetKvNamespaces()
+	ResetMtlsCertificates()
 	ResetPlacement()
+	ResetQueueProducers()
 	ResetR2Buckets()
-	ResetSecrets()
-	ResetServiceBinding()
-	ResetUsageModel()
+	ResetServices()
+	ResetVectorizeBindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,21 +143,61 @@ type jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AlwaysUseLatestCompatibilityDate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AiBindings() PagesProjectDeploymentConfigsPreviewAiBindingsMap {
+	var returns PagesProjectDeploymentConfigsPreviewAiBindingsMap
 	_jsii_.Get(
 		j,
-		"alwaysUseLatestCompatibilityDate",
+		"aiBindings",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AlwaysUseLatestCompatibilityDateInput() interface{} {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AiBindingsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"alwaysUseLatestCompatibilityDateInput",
+		"aiBindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AnalyticsEngineDatasets() PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap {
+	var returns PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap
+	_jsii_.Get(
+		j,
+		"analyticsEngineDatasets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) AnalyticsEngineDatasetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"analyticsEngineDatasetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Browsers() PagesProjectDeploymentConfigsPreviewBrowsersMap {
+	var returns PagesProjectDeploymentConfigsPreviewBrowsersMap
+	_jsii_.Get(
+		j,
+		"browsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) BrowsersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"browsersInput",
 		&returns,
 	)
 	return returns
@@ -221,8 +273,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1Databases() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1Databases() PagesProjectDeploymentConfigsPreviewD1DatabasesMap {
+	var returns PagesProjectDeploymentConfigsPreviewD1DatabasesMap
 	_jsii_.Get(
 		j,
 		"d1Databases",
@@ -231,8 +283,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1Databa
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1DatabasesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1DatabasesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"d1DatabasesInput",
@@ -241,8 +293,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) D1Databa
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableObjectNamespaces() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableObjectNamespaces() PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap {
+	var returns PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap
 	_jsii_.Get(
 		j,
 		"durableObjectNamespaces",
@@ -251,8 +303,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableO
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableObjectNamespacesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableObjectNamespacesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"durableObjectNamespacesInput",
@@ -261,41 +313,21 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) DurableO
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) EnvironmentVariables() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) EnvVars() PagesProjectDeploymentConfigsPreviewEnvVarsMap {
+	var returns PagesProjectDeploymentConfigsPreviewEnvVarsMap
 	_jsii_.Get(
 		j,
-		"environmentVariables",
+		"envVars",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) EnvironmentVariablesInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"environmentVariablesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) FailOpen() interface{} {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) EnvVarsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"failOpen",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) FailOpenInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"failOpenInput",
+		"envVarsInput",
 		&returns,
 	)
 	return returns
@@ -311,8 +343,28 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) InternalValue() *PagesProjectDeploymentConfigsPreview {
-	var returns *PagesProjectDeploymentConfigsPreview
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) HyperdriveBindings() PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap {
+	var returns PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap
+	_jsii_.Get(
+		j,
+		"hyperdriveBindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) HyperdriveBindingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hyperdriveBindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -321,8 +373,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamespaces() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamespaces() PagesProjectDeploymentConfigsPreviewKvNamespacesMap {
+	var returns PagesProjectDeploymentConfigsPreviewKvNamespacesMap
 	_jsii_.Get(
 		j,
 		"kvNamespaces",
@@ -331,11 +383,31 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamesp
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamespacesInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) KvNamespacesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"kvNamespacesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) MtlsCertificates() PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap {
+	var returns PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap
+	_jsii_.Get(
+		j,
+		"mtlsCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) MtlsCertificatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mtlsCertificatesInput",
 		&returns,
 	)
 	return returns
@@ -351,8 +423,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Placemen
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PlacementInput() *PagesProjectDeploymentConfigsPreviewPlacement {
-	var returns *PagesProjectDeploymentConfigsPreviewPlacement
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PlacementInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"placementInput",
@@ -361,8 +433,28 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Placemen
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2Buckets() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) QueueProducers() PagesProjectDeploymentConfigsPreviewQueueProducersMap {
+	var returns PagesProjectDeploymentConfigsPreviewQueueProducersMap
+	_jsii_.Get(
+		j,
+		"queueProducers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) QueueProducersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queueProducersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2Buckets() PagesProjectDeploymentConfigsPreviewR2BucketsMap {
+	var returns PagesProjectDeploymentConfigsPreviewR2BucketsMap
 	_jsii_.Get(
 		j,
 		"r2Buckets",
@@ -371,8 +463,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2Bucket
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2BucketsInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2BucketsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"r2BucketsInput",
@@ -381,41 +473,21 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) R2Bucket
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Secrets() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Services() PagesProjectDeploymentConfigsPreviewServicesMap {
+	var returns PagesProjectDeploymentConfigsPreviewServicesMap
 	_jsii_.Get(
 		j,
-		"secrets",
+		"services",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) SecretsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"secretsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ServiceBinding() PagesProjectDeploymentConfigsPreviewServiceBindingList {
-	var returns PagesProjectDeploymentConfigsPreviewServiceBindingList
-	_jsii_.Get(
-		j,
-		"serviceBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ServiceBindingInput() interface{} {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ServicesInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"serviceBindingInput",
+		"servicesInput",
 		&returns,
 	)
 	return returns
@@ -441,21 +513,21 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) UsageModel() *string {
-	var returns *string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) VectorizeBindings() PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap {
+	var returns PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap
 	_jsii_.Get(
 		j,
-		"usageModel",
+		"vectorizeBindings",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) UsageModelInput() *string {
-	var returns *string
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) VectorizeBindingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"usageModelInput",
+		"vectorizeBindingsInput",
 		&returns,
 	)
 	return returns
@@ -486,17 +558,6 @@ func NewPagesProjectDeploymentConfigsPreviewOutputReference_Override(p PagesProj
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsPreviewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetAlwaysUseLatestCompatibilityDate(val interface{}) {
-	if err := j.validateSetAlwaysUseLatestCompatibilityDateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"alwaysUseLatestCompatibilityDate",
-		val,
 	)
 }
 
@@ -544,90 +605,13 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetD1Databases(val *map[string]*string) {
-	if err := j.validateSetD1DatabasesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"d1Databases",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetDurableObjectNamespaces(val *map[string]*string) {
-	if err := j.validateSetDurableObjectNamespacesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"durableObjectNamespaces",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetEnvironmentVariables(val *map[string]*string) {
-	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"environmentVariables",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetFailOpen(val interface{}) {
-	if err := j.validateSetFailOpenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"failOpen",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetInternalValue(val *PagesProjectDeploymentConfigsPreview) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetKvNamespaces(val *map[string]*string) {
-	if err := j.validateSetKvNamespacesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"kvNamespaces",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetR2Buckets(val *map[string]*string) {
-	if err := j.validateSetR2BucketsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"r2Buckets",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetSecrets(val *map[string]*string) {
-	if err := j.validateSetSecretsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"secrets",
 		val,
 	)
 }
@@ -650,17 +634,6 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetTerraf
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference)SetUsageModel(val *string) {
-	if err := j.validateSetUsageModelParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"usageModel",
 		val,
 	)
 }
@@ -851,6 +824,105 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) Interpol
 	return returns
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutAiBindings(value interface{}) {
+	if err := p.validatePutAiBindingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAiBindings",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutAnalyticsEngineDatasets(value interface{}) {
+	if err := p.validatePutAnalyticsEngineDatasetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAnalyticsEngineDatasets",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutBrowsers(value interface{}) {
+	if err := p.validatePutBrowsersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putBrowsers",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutD1Databases(value interface{}) {
+	if err := p.validatePutD1DatabasesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putD1Databases",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutDurableObjectNamespaces(value interface{}) {
+	if err := p.validatePutDurableObjectNamespacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDurableObjectNamespaces",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutEnvVars(value interface{}) {
+	if err := p.validatePutEnvVarsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEnvVars",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutHyperdriveBindings(value interface{}) {
+	if err := p.validatePutHyperdriveBindingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putHyperdriveBindings",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutKvNamespaces(value interface{}) {
+	if err := p.validatePutKvNamespacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putKvNamespaces",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutMtlsCertificates(value interface{}) {
+	if err := p.validatePutMtlsCertificatesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMtlsCertificates",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutPlacement(value *PagesProjectDeploymentConfigsPreviewPlacement) {
 	if err := p.validatePutPlacementParameters(value); err != nil {
 		panic(err)
@@ -862,21 +934,70 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutPlace
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutServiceBinding(value interface{}) {
-	if err := p.validatePutServiceBindingParameters(value); err != nil {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutQueueProducers(value interface{}) {
+	if err := p.validatePutQueueProducersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
-		"putServiceBinding",
+		"putQueueProducers",
 		[]interface{}{value},
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetAlwaysUseLatestCompatibilityDate() {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutR2Buckets(value interface{}) {
+	if err := p.validatePutR2BucketsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
-		"resetAlwaysUseLatestCompatibilityDate",
+		"putR2Buckets",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutServices(value interface{}) {
+	if err := p.validatePutServicesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putServices",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) PutVectorizeBindings(value interface{}) {
+	if err := p.validatePutVectorizeBindingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putVectorizeBindings",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetAiBindings() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAiBindings",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetAnalyticsEngineDatasets() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAnalyticsEngineDatasets",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetBrowsers() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBrowsers",
 		nil, // no parameters
 	)
 }
@@ -913,18 +1034,18 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetDur
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetEnvironmentVariables() {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetEnvVars() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetEnvironmentVariables",
+		"resetEnvVars",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetFailOpen() {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetHyperdriveBindings() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetFailOpen",
+		"resetHyperdriveBindings",
 		nil, // no parameters
 	)
 }
@@ -937,10 +1058,26 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetKvN
 	)
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetMtlsCertificates() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMtlsCertificates",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetPlacement() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPlacement",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetQueueProducers() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetQueueProducers",
 		nil, // no parameters
 	)
 }
@@ -953,26 +1090,18 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetR2B
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetSecrets() {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetServices() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetSecrets",
+		"resetServices",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetServiceBinding() {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetVectorizeBindings() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetServiceBinding",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) ResetUsageModel() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetUsageModel",
+		"resetVectorizeBindings",
 		nil, // no parameters
 	)
 }

@@ -107,15 +107,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetDurationParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) validateSetMinDaysForRenewalParameters(val *float64) error {
 	return nil
 }
 

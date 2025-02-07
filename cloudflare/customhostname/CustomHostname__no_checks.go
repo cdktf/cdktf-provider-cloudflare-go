@@ -75,7 +75,7 @@ func (c *jsiiProxy_CustomHostname) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value interface{}) error {
+func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value *CustomHostnameSsl) error {
 	return nil
 }
 
@@ -119,19 +119,11 @@ func (j *jsiiProxy_CustomHostname) validateSetHostnameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostname) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_CustomHostname) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CustomHostname) validateSetWaitForSslPendingValidationParameters(val interface{}) error {
 	return nil
 }
 

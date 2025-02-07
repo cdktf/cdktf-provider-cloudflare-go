@@ -59,7 +59,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateSetInternalValueParameters(val *ZeroTrustDeviceManagedNetworksConfigA) error {
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworksConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

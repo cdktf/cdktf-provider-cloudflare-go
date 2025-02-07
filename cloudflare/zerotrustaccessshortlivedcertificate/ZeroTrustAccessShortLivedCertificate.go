@@ -5,22 +5,22 @@ package zerotrustaccessshortlivedcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessshortlivedcertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessshortlivedcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate}.
 type ZeroTrustAccessShortLivedCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	ApplicationId() *string
-	SetApplicationId(val *string)
-	ApplicationIdInput() *string
+	AppId() *string
+	SetAppId(val *string)
+	AppIdInput() *string
 	Aud() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -47,8 +47,6 @@ type ZeroTrustAccessShortLivedCertificate interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -119,7 +117,6 @@ type ZeroTrustAccessShortLivedCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -162,21 +159,21 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) AccountIdInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ApplicationId() *string {
+func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) AppId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"applicationId",
+		"appId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ApplicationIdInput() *string {
+func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) AppIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"applicationIdInput",
+		"appIdInput",
 		&returns,
 	)
 	return returns
@@ -277,16 +274,6 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -403,7 +390,7 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
 func NewZeroTrustAccessShortLivedCertificate(scope constructs.Construct, id *string, config *ZeroTrustAccessShortLivedCertificateConfig) ZeroTrustAccessShortLivedCertificate {
 	_init_.Initialize()
 
@@ -421,7 +408,7 @@ func NewZeroTrustAccessShortLivedCertificate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_short_lived_certificate cloudflare_zero_trust_access_short_lived_certificate} Resource.
 func NewZeroTrustAccessShortLivedCertificate_Override(z ZeroTrustAccessShortLivedCertificate, scope constructs.Construct, id *string, config *ZeroTrustAccessShortLivedCertificateConfig) {
 	_init_.Initialize()
 
@@ -443,13 +430,13 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate)SetAccountId(val *string
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate)SetApplicationId(val *string) {
-	if err := j.validateSetApplicationIdParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate)SetAppId(val *string) {
+	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"applicationId",
+		"appId",
 		val,
 	)
 }
@@ -488,17 +475,6 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate)SetForEach(val cdktf.ITe
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -901,14 +877,6 @@ func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessShortLivedCertificate) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }

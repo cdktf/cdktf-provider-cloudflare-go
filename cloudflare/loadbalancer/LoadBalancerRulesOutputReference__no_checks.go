@@ -51,7 +51,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutFixedResponsePar
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutOverridesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutOverridesParameters(value *LoadBalancerRulesOverrides) error {
 	return nil
 }
 

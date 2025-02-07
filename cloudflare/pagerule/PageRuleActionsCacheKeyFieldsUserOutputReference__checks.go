@@ -206,9 +206,25 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetInternalValueParameters(val *PageRuleActionsCacheKeyFieldsUser) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *PageRuleActionsCacheKeyFieldsUser:
+		val := val.(*PageRuleActionsCacheKeyFieldsUser)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case PageRuleActionsCacheKeyFieldsUser:
+		val_ := val.(PageRuleActionsCacheKeyFieldsUser)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PageRuleActionsCacheKeyFieldsUser; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -5,25 +5,23 @@ package zerotrustgatewaycertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaycertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaycertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 type ZeroTrustGatewayCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Activate() interface{}
-	SetActivate(val interface{})
-	ActivateInput() interface{}
 	BindingStatus() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Certificate() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,14 +33,12 @@ type ZeroTrustGatewayCertificate interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
-	Custom() interface{}
-	SetCustom(val interface{})
-	CustomInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ExpiresOn() *string
+	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,13 +47,10 @@ type ZeroTrustGatewayCertificate interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GatewayManaged() interface{}
-	SetGatewayManaged(val interface{})
-	GatewayManagedInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InUse() cdktf.IResolvable
+	IssuerOrg() *string
+	IssuerRaw() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -72,7 +65,6 @@ type ZeroTrustGatewayCertificate interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	QsPackId() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -81,6 +73,8 @@ type ZeroTrustGatewayCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	UpdatedAt() *string
 	UploadedOn() *string
 	ValidityPeriodDays() *float64
 	SetValidityPeriodDays(val *float64)
@@ -128,10 +122,6 @@ type ZeroTrustGatewayCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetActivate()
-	ResetCustom()
-	ResetGatewayManaged()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -174,26 +164,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) Activate() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) ActivateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activateInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) BindingStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -209,6 +179,16 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) CdktfStack() cdktf.TerraformStac
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) Certificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificate",
 		&returns,
 	)
 	return returns
@@ -254,26 +234,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) CreatedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) Custom() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"custom",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) CustomInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"customInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -289,6 +249,16 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) ExpiresOn() *string {
 	_jsii_.Get(
 		j,
 		"expiresOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) Fingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fingerprint",
 		&returns,
 	)
 	return returns
@@ -324,26 +294,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) GatewayManaged() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"gatewayManaged",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) GatewayManagedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"gatewayManagedInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -354,21 +304,31 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) InUse() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"inUse",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) IssuerOrg() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerOrg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) IssuerRaw() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerRaw",
 		&returns,
 	)
 	return returns
@@ -414,16 +374,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate) QsPackId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"qsPackId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -464,6 +414,26 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayCertificate) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayCertificate) UploadedOn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +465,7 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate) ValidityPeriodDaysInput() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) ZeroTrustGatewayCertificate {
 	_init_.Initialize()
 
@@ -513,7 +483,7 @@ func NewZeroTrustGatewayCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource.
 func NewZeroTrustGatewayCertificate_Override(z ZeroTrustGatewayCertificate, scope constructs.Construct, id *string, config *ZeroTrustGatewayCertificateConfig) {
 	_init_.Initialize()
 
@@ -531,17 +501,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetActivate(val interface{}) {
-	if err := j.validateSetActivateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"activate",
 		val,
 	)
 }
@@ -568,17 +527,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetCustom(val interface{}) {
-	if err := j.validateSetCustomParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"custom",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -591,28 +539,6 @@ func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetForEach(val cdktf.ITerraformIt
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetGatewayManaged(val interface{}) {
-	if err := j.validateSetGatewayManagedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gatewayManaged",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1008,38 +934,6 @@ func (z *jsiiProxy_ZeroTrustGatewayCertificate) OverrideLogicalId(newLogicalId *
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayCertificate) ResetActivate() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetActivate",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayCertificate) ResetCustom() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCustom",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayCertificate) ResetGatewayManaged() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetGatewayManaged",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayCertificate) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -99,7 +99,7 @@ func (j *jsiiProxy_ApiShieldSchema) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchema) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ApiShieldSchema) validateSetFileParameters(val *string) error {
 	return nil
 }
 
@@ -119,11 +119,11 @@ func (j *jsiiProxy_ApiShieldSchema) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchema) validateSetSourceParameters(val *string) error {
+func (j *jsiiProxy_ApiShieldSchema) validateSetSchemaIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldSchema) validateSetValidationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldSchema) validateSetValidationEnabledParameters(val *string) error {
 	return nil
 }
 

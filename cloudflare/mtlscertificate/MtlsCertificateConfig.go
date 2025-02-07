@@ -22,30 +22,25 @@ type MtlsCertificateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Whether this is a CA or leaf certificate. **Modifying this attribute will force creation of a new resource.**.
+	// Indicates whether the certificate is a CA or leaf certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
 	Ca interface{} `field:"required" json:"ca" yaml:"ca"`
-	// Certificate you intend to use with mTLS-enabled services. **Modifying this attribute will force creation of a new resource.**.
+	// The uploaded root CA certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
 	Certificates *string `field:"required" json:"certificates" yaml:"certificates"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#id MtlsCertificate#id}.
+	// Optional unique name for the certificate. Only used for human readability.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Optional unique name for the certificate. **Modifying this attribute will force creation of a new resource.**.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// The certificate's private key. **Modifying this attribute will force creation of a new resource.**.
+	// The private key for the certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
 }
 

@@ -5,9 +5,9 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,8 +70,6 @@ type ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEvaluateUrl()
-	ResetKeysUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,29 +196,29 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference
 }
 
 
-func NewZeroTrustAccessPolicyRequireExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference {
+func NewZeroTrustAccessPolicyRequireExternalEvaluationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessPolicyRequireExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessPolicyRequireExternalEvaluationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessPolicyRequireExternalEvaluationOutputReference_Override(z ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessPolicyRequireExternalEvaluationOutputReference_Override(z ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -486,22 +484,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference) ResetEvaluateUrl() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetEvaluateUrl",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference) ResetKeysUrl() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetKeysUrl",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyRequireExternalEvaluationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -75,6 +75,10 @@ func (w *jsiiProxy_WorkersCronTrigger) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (w *jsiiProxy_WorkersCronTrigger) validatePutSchedulesParameters(value interface{}) error {
+	return nil
+}
+
 func validateWorkersCronTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,19 +107,11 @@ func (j *jsiiProxy_WorkersCronTrigger) validateSetCountParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WorkersCronTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_WorkersCronTrigger) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WorkersCronTrigger) validateSetSchedulesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -75,6 +75,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) validateSetSensitivityLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

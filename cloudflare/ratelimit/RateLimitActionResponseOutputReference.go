@@ -5,9 +5,9 @@ package ratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ratelimit/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,8 +36,8 @@ type RateLimitActionResponseOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RateLimitActionResponse
-	SetInternalValue(val *RateLimitActionResponse)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +70,8 @@ type RateLimitActionResponseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBody()
+	ResetContentType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,8 +167,8 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference) InternalValue() *RateLimitActionResponse {
-	var returns *RateLimitActionResponse
+func (j *jsiiProxy_RateLimitActionResponseOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -267,7 +269,7 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference)SetContentType(val *st
 	)
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference)SetInternalValue(val *RateLimitActionResponse) {
+func (j *jsiiProxy_RateLimitActionResponseOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,6 +486,22 @@ func (r *jsiiProxy_RateLimitActionResponseOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RateLimitActionResponseOutputReference) ResetBody() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RateLimitActionResponseOutputReference) ResetContentType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetContentType",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RateLimitActionResponseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

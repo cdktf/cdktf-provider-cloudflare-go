@@ -114,6 +114,17 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificate) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareOriginCaCertificate) validatePutFilterParameters(value *DataCloudflareOriginCaCertificateFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDataCloudflareOriginCaCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -149,6 +160,14 @@ func validateDataCloudflareOriginCaCertificate_IsTerraformDataSourceParameters(x
 func validateDataCloudflareOriginCaCertificate_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetCertificateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -211,14 +230,6 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareOriginCaCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -236,9 +247,6 @@ func validateNewDataCloudflareOriginCaCertificateParameters(scope constructs.Con
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

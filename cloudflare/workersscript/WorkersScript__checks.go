@@ -207,22 +207,33 @@ func (w *jsiiProxy_WorkersScript) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutAnalyticsEngineBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutAssetsParameters(value *WorkersScriptAssets) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*WorkersScriptAnalyticsEngineBinding:
-		value := value.(*[]*WorkersScriptAnalyticsEngineBinding)
+	case *[]*WorkersScriptBindings:
+		value := value.(*[]*WorkersScriptBindings)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*WorkersScriptAnalyticsEngineBinding:
-		value_ := value.([]*WorkersScriptAnalyticsEngineBinding)
+	case []*WorkersScriptBindings:
+		value_ := value.([]*WorkersScriptBindings)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -231,122 +242,62 @@ func (w *jsiiProxy_WorkersScript) validatePutAnalyticsEngineBindingParameters(va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptAnalyticsEngineBinding; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptBindings; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutD1DatabaseBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutMigrationsParameters(value *WorkersScriptMigrations) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptD1DatabaseBinding:
-		value := value.(*[]*WorkersScriptD1DatabaseBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptD1DatabaseBinding:
-		value_ := value.([]*WorkersScriptD1DatabaseBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptD1DatabaseBinding; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutHyperdriveConfigBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutObservabilityParameters(value *WorkersScriptObservability) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptHyperdriveConfigBinding:
-		value := value.(*[]*WorkersScriptHyperdriveConfigBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptHyperdriveConfigBinding:
-		value_ := value.([]*WorkersScriptHyperdriveConfigBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptHyperdriveConfigBinding; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value *WorkersScriptPlacement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptKvNamespaceBinding:
-		value := value.(*[]*WorkersScriptKvNamespaceBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptKvNamespaceBinding:
-		value_ := value.([]*WorkersScriptKvNamespaceBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptKvNamespaceBinding; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutTailConsumersParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*WorkersScriptPlacement:
-		value := value.(*[]*WorkersScriptPlacement)
+	case *[]*WorkersScriptTailConsumers:
+		value := value.(*[]*WorkersScriptTailConsumers)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*WorkersScriptPlacement:
-		value_ := value.([]*WorkersScriptPlacement)
+	case []*WorkersScriptTailConsumers:
+		value_ := value.([]*WorkersScriptTailConsumers)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -355,193 +306,7 @@ func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value interface
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptPlacement; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutPlainTextBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptPlainTextBinding:
-		value := value.(*[]*WorkersScriptPlainTextBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptPlainTextBinding:
-		value_ := value.([]*WorkersScriptPlainTextBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptPlainTextBinding; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutQueueBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptQueueBinding:
-		value := value.(*[]*WorkersScriptQueueBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptQueueBinding:
-		value_ := value.([]*WorkersScriptQueueBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptQueueBinding; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutR2BucketBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptR2BucketBinding:
-		value := value.(*[]*WorkersScriptR2BucketBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptR2BucketBinding:
-		value_ := value.([]*WorkersScriptR2BucketBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptR2BucketBinding; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutSecretTextBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptSecretTextBinding:
-		value := value.(*[]*WorkersScriptSecretTextBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptSecretTextBinding:
-		value_ := value.([]*WorkersScriptSecretTextBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptSecretTextBinding; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutServiceBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptServiceBinding:
-		value := value.(*[]*WorkersScriptServiceBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptServiceBinding:
-		value_ := value.([]*WorkersScriptServiceBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptServiceBinding; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutWebassemblyBindingParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*WorkersScriptWebassemblyBinding:
-		value := value.(*[]*WorkersScriptWebassemblyBinding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*WorkersScriptWebassemblyBinding:
-		value_ := value.([]*WorkersScriptWebassemblyBinding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptWebassemblyBinding; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkersScriptTailConsumers; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -589,6 +354,14 @@ func validateWorkersScript_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_WorkersScript) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScript) validateSetBodyPartParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -710,15 +483,27 @@ func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetDispatchNamespaceParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetKeepAssetsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetKeepBindingsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -734,47 +519,7 @@ func (j *jsiiProxy_WorkersScript) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetLogpushParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WorkersScript) validateSetModuleParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WorkersScript) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetMainModuleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -828,7 +573,7 @@ func (j *jsiiProxy_WorkersScript) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetTagsParameters(val *[]*string) error {
+func (j *jsiiProxy_WorkersScript) validateSetScriptNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

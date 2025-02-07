@@ -5,9 +5,9 @@ package ruleset
 
 
 type RulesetRulesActionParametersSni struct {
-	// Value to define for SNI.
+	// The SNI override.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#value Ruleset#value}
-	Value *string `field:"optional" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#value Ruleset#value}
+	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

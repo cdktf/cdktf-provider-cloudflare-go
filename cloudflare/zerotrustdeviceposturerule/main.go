@@ -41,7 +41,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
 			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
@@ -63,10 +62,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExpiration", GoMethod: "ResetExpiration"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInput", GoMethod: "ResetInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMatch", GoMethod: "ResetMatch"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedule", GoMethod: "ResetSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "schedule", GoGetter: "Schedule"},
@@ -97,53 +94,9 @@ func init() {
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInput",
 		reflect.TypeOf((*ZeroTrustDevicePostureRuleInput)(nil)).Elem(),
 	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputList",
-		reflect.TypeOf((*ZeroTrustDevicePostureRuleInputList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustDevicePostureRuleInputList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocations",
 		reflect.TypeOf((*ZeroTrustDevicePostureRuleInputLocations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocationsList",
-		reflect.TypeOf((*ZeroTrustDevicePostureRuleInputLocationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustDevicePostureRuleInputLocationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustDevicePostureRule.ZeroTrustDevicePostureRuleInputLocationsOutputReference",
@@ -244,6 +197,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationsInput", GoGetter: "LocationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkStatus", GoGetter: "NetworkStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "networkStatusInput", GoGetter: "NetworkStatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "operatingSystem", GoGetter: "OperatingSystem"},
+			_jsii_.MemberProperty{JsiiProperty: "operatingSystemInput", GoGetter: "OperatingSystemInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operationalState", GoGetter: "OperationalState"},
 			_jsii_.MemberProperty{JsiiProperty: "operationalStateInput", GoGetter: "OperationalStateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
@@ -283,6 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLastSeen", GoMethod: "ResetLastSeen"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocations", GoMethod: "ResetLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkStatus", GoMethod: "ResetNetworkStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOperatingSystem", GoMethod: "ResetOperatingSystem"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperationalState", GoMethod: "ResetOperationalState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOs", GoMethod: "ResetOs"},
@@ -293,8 +249,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireAll", GoMethod: "ResetRequireAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRiskLevel", GoMethod: "ResetRiskLevel"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRunning", GoMethod: "ResetRunning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScore", GoMethod: "ResetScore"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScoreOperator", GoMethod: "ResetScoreOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSensorConfig", GoMethod: "ResetSensorConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSha256", GoMethod: "ResetSha256"},
 			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
@@ -305,10 +261,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "riskLevel", GoGetter: "RiskLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "riskLevelInput", GoGetter: "RiskLevelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "running", GoGetter: "Running"},
-			_jsii_.MemberProperty{JsiiProperty: "runningInput", GoGetter: "RunningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "score", GoGetter: "Score"},
 			_jsii_.MemberProperty{JsiiProperty: "scoreInput", GoGetter: "ScoreInput"},
+			_jsii_.MemberProperty{JsiiProperty: "scoreOperator", GoGetter: "ScoreOperator"},
+			_jsii_.MemberProperty{JsiiProperty: "scoreOperatorInput", GoGetter: "ScoreOperatorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sensorConfig", GoGetter: "SensorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "sensorConfigInput", GoGetter: "SensorConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sha256", GoGetter: "Sha256"},

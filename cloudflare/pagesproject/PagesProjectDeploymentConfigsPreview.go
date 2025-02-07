@@ -5,57 +5,69 @@ package pagesproject
 
 
 type PagesProjectDeploymentConfigsPreview struct {
-	// Use latest compatibility date for Pages Functions. Defaults to `false`.
+	// Constellation bindings used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
-	AlwaysUseLatestCompatibilityDate interface{} `field:"optional" json:"alwaysUseLatestCompatibilityDate" yaml:"alwaysUseLatestCompatibilityDate"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+	AiBindings interface{} `field:"optional" json:"aiBindings" yaml:"aiBindings"`
+	// Analytics Engine bindings used for Pages Functions.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+	AnalyticsEngineDatasets interface{} `field:"optional" json:"analyticsEngineDatasets" yaml:"analyticsEngineDatasets"`
+	// Browser bindings used for Pages Functions.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#browsers PagesProject#browsers}
+	Browsers interface{} `field:"optional" json:"browsers" yaml:"browsers"`
 	// Compatibility date used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
 	CompatibilityDate *string `field:"optional" json:"compatibilityDate" yaml:"compatibilityDate"`
 	// Compatibility flags used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
 	CompatibilityFlags *[]*string `field:"optional" json:"compatibilityFlags" yaml:"compatibilityFlags"`
-	// D1 Databases used for Pages Functions. Defaults to `map[]`.
+	// D1 databases used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
-	D1Databases *map[string]*string `field:"optional" json:"d1Databases" yaml:"d1Databases"`
-	// Durable Object namespaces used for Pages Functions. Defaults to `map[]`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+	D1Databases interface{} `field:"optional" json:"d1Databases" yaml:"d1Databases"`
+	// Durabble Object namespaces used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
-	DurableObjectNamespaces *map[string]*string `field:"optional" json:"durableObjectNamespaces" yaml:"durableObjectNamespaces"`
-	// Environment variables for Pages Functions. Defaults to `map[]`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+	DurableObjectNamespaces interface{} `field:"optional" json:"durableObjectNamespaces" yaml:"durableObjectNamespaces"`
+	// Environment variables for build configs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#environment_variables PagesProject#environment_variables}
-	EnvironmentVariables *map[string]*string `field:"optional" json:"environmentVariables" yaml:"environmentVariables"`
-	// Fail open used for Pages Functions. Defaults to `false`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+	EnvVars interface{} `field:"optional" json:"envVars" yaml:"envVars"`
+	// Hyperdrive bindings used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
-	// KV namespaces used for Pages Functions. Defaults to `map[]`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+	HyperdriveBindings interface{} `field:"optional" json:"hyperdriveBindings" yaml:"hyperdriveBindings"`
+	// KV namespaces used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
-	KvNamespaces *map[string]*string `field:"optional" json:"kvNamespaces" yaml:"kvNamespaces"`
-	// placement block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+	KvNamespaces interface{} `field:"optional" json:"kvNamespaces" yaml:"kvNamespaces"`
+	// mTLS bindings used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#placement PagesProject#placement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+	MtlsCertificates interface{} `field:"optional" json:"mtlsCertificates" yaml:"mtlsCertificates"`
+	// Placement setting used for Pages Functions.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#placement PagesProject#placement}
 	Placement *PagesProjectDeploymentConfigsPreviewPlacement `field:"optional" json:"placement" yaml:"placement"`
-	// R2 Buckets used for Pages Functions. Defaults to `map[]`.
+	// Queue Producer bindings used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
-	R2Buckets *map[string]*string `field:"optional" json:"r2Buckets" yaml:"r2Buckets"`
-	// Encrypted environment variables for Pages Functions. Defaults to `map[]`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+	QueueProducers interface{} `field:"optional" json:"queueProducers" yaml:"queueProducers"`
+	// R2 buckets used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#secrets PagesProject#secrets}
-	Secrets *map[string]*string `field:"optional" json:"secrets" yaml:"secrets"`
-	// service_binding block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+	R2Buckets interface{} `field:"optional" json:"r2Buckets" yaml:"r2Buckets"`
+	// Services used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#service_binding PagesProject#service_binding}
-	ServiceBinding interface{} `field:"optional" json:"serviceBinding" yaml:"serviceBinding"`
-	// Usage model used for Pages Functions. Available values: `unbound`, `bundled`, `standard`. Defaults to `bundled`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#services PagesProject#services}
+	Services interface{} `field:"optional" json:"services" yaml:"services"`
+	// Vectorize bindings used for Pages Functions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
-	UsageModel *string `field:"optional" json:"usageModel" yaml:"usageModel"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+	VectorizeBindings interface{} `field:"optional" json:"vectorizeBindings" yaml:"vectorizeBindings"`
 }
 

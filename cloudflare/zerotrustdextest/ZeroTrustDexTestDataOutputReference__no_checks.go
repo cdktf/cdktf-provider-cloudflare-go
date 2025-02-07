@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) validateSetHostParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) validateSetInternalValueParameters(val *ZeroTrustDexTestData) error {
+func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

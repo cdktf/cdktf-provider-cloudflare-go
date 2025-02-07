@@ -166,7 +166,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetHeaderParameters(val *string) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetHostParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,29 +214,13 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetValuesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

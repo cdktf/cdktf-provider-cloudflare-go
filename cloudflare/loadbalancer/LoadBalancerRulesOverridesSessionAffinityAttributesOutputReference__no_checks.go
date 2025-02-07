@@ -59,6 +59,10 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateSetDrainDurationParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateSetHeadersParameters(val *[]*string) error {
 	return nil
 }
@@ -91,7 +95,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -59,19 +59,11 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetHeadersParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetInternalValueParameters(val *RateLimitMatchResponse) error {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetOriginTrafficParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetStatusesParameters(val *[]*float64) error {
 	return nil
 }
 

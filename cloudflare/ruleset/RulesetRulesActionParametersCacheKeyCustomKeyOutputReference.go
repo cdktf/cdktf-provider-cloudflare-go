@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -23,7 +23,7 @@ type RulesetRulesActionParametersCacheKeyCustomKeyOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Cookie() RulesetRulesActionParametersCacheKeyCustomKeyCookieList
+	Cookie() RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference
 	CookieInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -32,13 +32,13 @@ type RulesetRulesActionParametersCacheKeyCustomKeyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Header() RulesetRulesActionParametersCacheKeyCustomKeyHeaderList
+	Header() RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference
 	HeaderInput() interface{}
-	Host() RulesetRulesActionParametersCacheKeyCustomKeyHostList
+	Host() RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference
 	HostInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	QueryString() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList
+	QueryString() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference
 	QueryStringInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -48,7 +48,7 @@ type RulesetRulesActionParametersCacheKeyCustomKeyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	User() RulesetRulesActionParametersCacheKeyCustomKeyUserList
+	User() RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference
 	UserInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
@@ -74,11 +74,11 @@ type RulesetRulesActionParametersCacheKeyCustomKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCookie(value interface{})
-	PutHeader(value interface{})
-	PutHost(value interface{})
-	PutQueryString(value interface{})
-	PutUser(value interface{})
+	PutCookie(value *RulesetRulesActionParametersCacheKeyCustomKeyCookie)
+	PutHeader(value *RulesetRulesActionParametersCacheKeyCustomKeyHeader)
+	PutHost(value *RulesetRulesActionParametersCacheKeyCustomKeyHost)
+	PutQueryString(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryString)
+	PutUser(value *RulesetRulesActionParametersCacheKeyCustomKeyUser)
 	ResetCookie()
 	ResetHeader()
 	ResetHost()
@@ -119,8 +119,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Cookie() RulesetRulesActionParametersCacheKeyCustomKeyCookieList {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyCookieList
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Cookie() RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyCookieOutputReference
 	_jsii_.Get(
 		j,
 		"cookie",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Header() RulesetRulesActionParametersCacheKeyCustomKeyHeaderList {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyHeaderList
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Header() RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyHeaderOutputReference
 	_jsii_.Get(
 		j,
 		"header",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Host() RulesetRulesActionParametersCacheKeyCustomKeyHostList {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyHostList
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) Host() RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyHostOutputReference
 	_jsii_.Get(
 		j,
 		"host",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) QueryString() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyQueryStringList
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) QueryString() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference
 	_jsii_.Get(
 		j,
 		"queryString",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) User() RulesetRulesActionParametersCacheKeyCustomKeyUserList {
-	var returns RulesetRulesActionParametersCacheKeyCustomKeyUserList
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) User() RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyUserOutputReference
 	_jsii_.Get(
 		j,
 		"user",
@@ -270,29 +270,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyCustomKeyOutputReference {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -538,7 +538,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutCookie(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutCookie(value *RulesetRulesActionParametersCacheKeyCustomKeyCookie) {
 	if err := r.validatePutCookieParameters(value); err != nil {
 		panic(err)
 	}
@@ -549,7 +549,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHeader(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHeader(value *RulesetRulesActionParametersCacheKeyCustomKeyHeader) {
 	if err := r.validatePutHeaderParameters(value); err != nil {
 		panic(err)
 	}
@@ -560,7 +560,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHost(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutHost(value *RulesetRulesActionParametersCacheKeyCustomKeyHost) {
 	if err := r.validatePutHostParameters(value); err != nil {
 		panic(err)
 	}
@@ -571,7 +571,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutQueryString(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutQueryString(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryString) {
 	if err := r.validatePutQueryStringParameters(value); err != nil {
 		panic(err)
 	}
@@ -582,7 +582,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutUser(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) PutUser(value *RulesetRulesActionParametersCacheKeyCustomKeyUser) {
 	if err := r.validatePutUserParameters(value); err != nil {
 		panic(err)
 	}

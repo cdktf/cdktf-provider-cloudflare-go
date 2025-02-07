@@ -111,6 +111,10 @@ func (j *jsiiProxy_D1Database) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_D1Database) validateSetPrimaryLocationHintParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_D1Database) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

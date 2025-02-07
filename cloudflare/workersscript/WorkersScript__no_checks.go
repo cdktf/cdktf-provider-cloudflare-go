@@ -75,47 +75,27 @@ func (w *jsiiProxy_WorkersScript) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutAnalyticsEngineBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutAssetsParameters(value *WorkersScriptAssets) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutD1DatabaseBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{}) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutHyperdriveConfigBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutMigrationsParameters(value *WorkersScriptMigrations) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutKvNamespaceBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutObservabilityParameters(value *WorkersScriptObservability) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutPlacementParameters(value *WorkersScriptPlacement) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkersScript) validatePutPlainTextBindingParameters(value interface{}) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutQueueBindingParameters(value interface{}) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutR2BucketBindingParameters(value interface{}) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutSecretTextBindingParameters(value interface{}) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutServiceBindingParameters(value interface{}) error {
-	return nil
-}
-
-func (w *jsiiProxy_WorkersScript) validatePutWebassemblyBindingParameters(value interface{}) error {
+func (w *jsiiProxy_WorkersScript) validatePutTailConsumersParameters(value interface{}) error {
 	return nil
 }
 
@@ -139,6 +119,10 @@ func (j *jsiiProxy_WorkersScript) validateSetAccountIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetBodyPartParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetCompatibilityDateParameters(val *string) error {
 	return nil
 }
@@ -159,11 +143,11 @@ func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetDispatchNamespaceParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetKeepAssetsParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetKeepBindingsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -171,15 +155,7 @@ func (j *jsiiProxy_WorkersScript) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetLogpushParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WorkersScript) validateSetModuleParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WorkersScript) validateSetNameParameters(val *string) error {
+func (j *jsiiProxy_WorkersScript) validateSetMainModuleParameters(val *string) error {
 	return nil
 }
 
@@ -187,7 +163,7 @@ func (j *jsiiProxy_WorkersScript) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_WorkersScript) validateSetTagsParameters(val *[]*string) error {
+func (j *jsiiProxy_WorkersScript) validateSetScriptNameParameters(val *string) error {
 	return nil
 }
 

@@ -47,7 +47,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateInterpolation
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validatePutHeaderParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validatePutHeaderParameters(value *LoadBalancerPoolOriginsHeader) error {
 	return nil
 }
 

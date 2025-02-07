@@ -59,7 +59,7 @@ func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val *SpectrumApplicationDns) error {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

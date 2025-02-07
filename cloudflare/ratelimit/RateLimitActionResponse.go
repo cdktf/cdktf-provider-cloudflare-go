@@ -5,13 +5,13 @@ package ratelimit
 
 
 type RateLimitActionResponse struct {
-	// The body to return, the content here should conform to the `content_type`.
+	// The response body to return. The value must conform to the configured content type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#body RateLimit#body}
-	Body *string `field:"required" json:"body" yaml:"body"`
-	// The content-type of the body. Available values: `text/plain`, `text/xml`, `application/json`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#body RateLimit#body}
+	Body *string `field:"optional" json:"body" yaml:"body"`
+	// The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/rate_limit#content_type RateLimit#content_type}
-	ContentType *string `field:"required" json:"contentType" yaml:"contentType"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#content_type RateLimit#content_type}
+	ContentType *string `field:"optional" json:"contentType" yaml:"contentType"`
 }
 

@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,6 +67,7 @@ type RulesetRulesActionParametersAlgorithmsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersAlgorithmsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

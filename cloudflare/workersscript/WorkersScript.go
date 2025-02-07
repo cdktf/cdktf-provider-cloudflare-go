@@ -5,21 +5,26 @@ package workersscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workersscript/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workersscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AnalyticsEngineBinding() WorkersScriptAnalyticsEngineBindingList
-	AnalyticsEngineBindingInput() interface{}
+	Assets() WorkersScriptAssetsOutputReference
+	AssetsInput() interface{}
+	Bindings() WorkersScriptBindingsList
+	BindingsInput() interface{}
+	BodyPart() *string
+	SetBodyPart(val *string)
+	BodyPartInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CompatibilityDate() *string
@@ -41,15 +46,12 @@ type WorkersScript interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	D1DatabaseBinding() WorkersScriptD1DatabaseBindingList
-	D1DatabaseBindingInput() interface{}
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DispatchNamespace() *string
-	SetDispatchNamespace(val *string)
-	DispatchNamespaceInput() *string
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,32 +60,32 @@ type WorkersScript interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HyperdriveConfigBinding() WorkersScriptHyperdriveConfigBindingList
-	HyperdriveConfigBindingInput() interface{}
+	HasAssets() cdktf.IResolvable
+	HasModules() cdktf.IResolvable
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	KvNamespaceBinding() WorkersScriptKvNamespaceBindingList
-	KvNamespaceBindingInput() interface{}
+	KeepAssets() interface{}
+	SetKeepAssets(val interface{})
+	KeepAssetsInput() interface{}
+	KeepBindings() *[]*string
+	SetKeepBindings(val *[]*string)
+	KeepBindingsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Logpush() interface{}
-	SetLogpush(val interface{})
-	LogpushInput() interface{}
-	Module() interface{}
-	SetModule(val interface{})
-	ModuleInput() interface{}
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
+	Logpush() cdktf.IResolvable
+	MainModule() *string
+	SetMainModule(val *string)
+	MainModuleInput() *string
+	Migrations() WorkersScriptMigrationsOutputReference
+	MigrationsInput() interface{}
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Placement() WorkersScriptPlacementList
+	Observability() WorkersScriptObservabilityOutputReference
+	ObservabilityInput() interface{}
+	Placement() WorkersScriptPlacementOutputReference
 	PlacementInput() interface{}
-	PlainTextBinding() WorkersScriptPlainTextBindingList
-	PlainTextBindingInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -92,27 +94,21 @@ type WorkersScript interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	QueueBinding() WorkersScriptQueueBindingList
-	QueueBindingInput() interface{}
-	R2BucketBinding() WorkersScriptR2BucketBindingList
-	R2BucketBindingInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
-	SecretTextBinding() WorkersScriptSecretTextBindingList
-	SecretTextBindingInput() interface{}
-	ServiceBinding() WorkersScriptServiceBindingList
-	ServiceBindingInput() interface{}
-	Tags() *[]*string
-	SetTags(val *[]*string)
-	TagsInput() *[]*string
+	ScriptName() *string
+	SetScriptName(val *string)
+	ScriptNameInput() *string
+	StartupTimeMs() *float64
+	TailConsumers() WorkersScriptTailConsumersList
+	TailConsumersInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	WebassemblyBinding() WorkersScriptWebassemblyBindingList
-	WebassemblyBindingInput() interface{}
+	UsageModel() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -156,38 +152,27 @@ type WorkersScript interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAnalyticsEngineBinding(value interface{})
-	PutD1DatabaseBinding(value interface{})
-	PutHyperdriveConfigBinding(value interface{})
-	PutKvNamespaceBinding(value interface{})
-	PutPlacement(value interface{})
-	PutPlainTextBinding(value interface{})
-	PutQueueBinding(value interface{})
-	PutR2BucketBinding(value interface{})
-	PutSecretTextBinding(value interface{})
-	PutServiceBinding(value interface{})
-	PutWebassemblyBinding(value interface{})
-	ResetAnalyticsEngineBinding()
+	PutAssets(value *WorkersScriptAssets)
+	PutBindings(value interface{})
+	PutMigrations(value *WorkersScriptMigrations)
+	PutObservability(value *WorkersScriptObservability)
+	PutPlacement(value *WorkersScriptPlacement)
+	PutTailConsumers(value interface{})
+	ResetAssets()
+	ResetBindings()
+	ResetBodyPart()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
-	ResetD1DatabaseBinding()
-	ResetDispatchNamespace()
-	ResetHyperdriveConfigBinding()
-	ResetId()
-	ResetKvNamespaceBinding()
-	ResetLogpush()
-	ResetModule()
+	ResetKeepAssets()
+	ResetKeepBindings()
+	ResetMainModule()
+	ResetMigrations()
+	ResetObservability()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlacement()
-	ResetPlainTextBinding()
-	ResetQueueBinding()
-	ResetR2BucketBinding()
-	ResetSecretTextBinding()
-	ResetServiceBinding()
-	ResetTags()
-	ResetWebassemblyBinding()
+	ResetTailConsumers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -226,21 +211,61 @@ func (j *jsiiProxy_WorkersScript) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) AnalyticsEngineBinding() WorkersScriptAnalyticsEngineBindingList {
-	var returns WorkersScriptAnalyticsEngineBindingList
+func (j *jsiiProxy_WorkersScript) Assets() WorkersScriptAssetsOutputReference {
+	var returns WorkersScriptAssetsOutputReference
 	_jsii_.Get(
 		j,
-		"analyticsEngineBinding",
+		"assets",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) AnalyticsEngineBindingInput() interface{} {
+func (j *jsiiProxy_WorkersScript) AssetsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"analyticsEngineBindingInput",
+		"assetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Bindings() WorkersScriptBindingsList {
+	var returns WorkersScriptBindingsList
+	_jsii_.Get(
+		j,
+		"bindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) BindingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bindingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) BodyPart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bodyPart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) BodyPartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bodyPartInput",
 		&returns,
 	)
 	return returns
@@ -346,21 +371,11 @@ func (j *jsiiProxy_WorkersScript) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) D1DatabaseBinding() WorkersScriptD1DatabaseBindingList {
-	var returns WorkersScriptD1DatabaseBindingList
+func (j *jsiiProxy_WorkersScript) CreatedOn() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"d1DatabaseBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) D1DatabaseBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"d1DatabaseBindingInput",
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -376,21 +391,11 @@ func (j *jsiiProxy_WorkersScript) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) DispatchNamespace() *string {
+func (j *jsiiProxy_WorkersScript) Etag() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"dispatchNamespace",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) DispatchNamespaceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"dispatchNamespaceInput",
+		"etag",
 		&returns,
 	)
 	return returns
@@ -426,21 +431,21 @@ func (j *jsiiProxy_WorkersScript) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) HyperdriveConfigBinding() WorkersScriptHyperdriveConfigBindingList {
-	var returns WorkersScriptHyperdriveConfigBindingList
+func (j *jsiiProxy_WorkersScript) HasAssets() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"hyperdriveConfigBinding",
+		"hasAssets",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) HyperdriveConfigBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) HasModules() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"hyperdriveConfigBindingInput",
+		"hasModules",
 		&returns,
 	)
 	return returns
@@ -456,31 +461,41 @@ func (j *jsiiProxy_WorkersScript) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) KvNamespaceBinding() WorkersScriptKvNamespaceBindingList {
-	var returns WorkersScriptKvNamespaceBindingList
-	_jsii_.Get(
-		j,
-		"kvNamespaceBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) KvNamespaceBindingInput() interface{} {
+func (j *jsiiProxy_WorkersScript) KeepAssets() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"kvNamespaceBindingInput",
+		"keepAssets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) KeepAssetsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"keepAssetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) KeepBindings() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keepBindings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) KeepBindingsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keepBindingsInput",
 		&returns,
 	)
 	return returns
@@ -496,8 +511,8 @@ func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Logpush() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkersScript) Logpush() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"logpush",
@@ -506,51 +521,51 @@ func (j *jsiiProxy_WorkersScript) Logpush() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) LogpushInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"logpushInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) Module() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"module",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) ModuleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"moduleInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) Name() *string {
+func (j *jsiiProxy_WorkersScript) MainModule() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"mainModule",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) NameInput() *string {
+func (j *jsiiProxy_WorkersScript) MainModuleInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"nameInput",
+		"mainModuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Migrations() WorkersScriptMigrationsOutputReference {
+	var returns WorkersScriptMigrationsOutputReference
+	_jsii_.Get(
+		j,
+		"migrations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) MigrationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"migrationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -566,8 +581,28 @@ func (j *jsiiProxy_WorkersScript) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Placement() WorkersScriptPlacementList {
-	var returns WorkersScriptPlacementList
+func (j *jsiiProxy_WorkersScript) Observability() WorkersScriptObservabilityOutputReference {
+	var returns WorkersScriptObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ObservabilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Placement() WorkersScriptPlacementOutputReference {
+	var returns WorkersScriptPlacementOutputReference
 	_jsii_.Get(
 		j,
 		"placement",
@@ -581,26 +616,6 @@ func (j *jsiiProxy_WorkersScript) PlacementInput() interface{} {
 	_jsii_.Get(
 		j,
 		"placementInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) PlainTextBinding() WorkersScriptPlainTextBindingList {
-	var returns WorkersScriptPlainTextBindingList
-	_jsii_.Get(
-		j,
-		"plainTextBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) PlainTextBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"plainTextBindingInput",
 		&returns,
 	)
 	return returns
@@ -626,46 +641,6 @@ func (j *jsiiProxy_WorkersScript) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) QueueBinding() WorkersScriptQueueBindingList {
-	var returns WorkersScriptQueueBindingList
-	_jsii_.Get(
-		j,
-		"queueBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) QueueBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"queueBindingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) R2BucketBinding() WorkersScriptR2BucketBindingList {
-	var returns WorkersScriptR2BucketBindingList
-	_jsii_.Get(
-		j,
-		"r2BucketBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) R2BucketBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"r2BucketBindingInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersScript) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -676,61 +651,51 @@ func (j *jsiiProxy_WorkersScript) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) SecretTextBinding() WorkersScriptSecretTextBindingList {
-	var returns WorkersScriptSecretTextBindingList
+func (j *jsiiProxy_WorkersScript) ScriptName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"secretTextBinding",
+		"scriptName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) SecretTextBindingInput() interface{} {
+func (j *jsiiProxy_WorkersScript) ScriptNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scriptNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) StartupTimeMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"startupTimeMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) TailConsumers() WorkersScriptTailConsumersList {
+	var returns WorkersScriptTailConsumersList
+	_jsii_.Get(
+		j,
+		"tailConsumers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) TailConsumersInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"secretTextBindingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) ServiceBinding() WorkersScriptServiceBindingList {
-	var returns WorkersScriptServiceBindingList
-	_jsii_.Get(
-		j,
-		"serviceBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) ServiceBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"serviceBindingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) Tags() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) TagsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
+		"tailConsumersInput",
 		&returns,
 	)
 	return returns
@@ -766,28 +731,18 @@ func (j *jsiiProxy_WorkersScript) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) WebassemblyBinding() WorkersScriptWebassemblyBindingList {
-	var returns WorkersScriptWebassemblyBindingList
+func (j *jsiiProxy_WorkersScript) UsageModel() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"webassemblyBinding",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersScript) WebassemblyBindingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"webassemblyBindingInput",
+		"usageModel",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -805,7 +760,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -823,6 +778,17 @@ func (j *jsiiProxy_WorkersScript)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetBodyPart(val *string) {
+	if err := j.validateSetBodyPartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bodyPart",
 		val,
 	)
 }
@@ -890,17 +856,6 @@ func (j *jsiiProxy_WorkersScript)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetDispatchNamespace(val *string) {
-	if err := j.validateSetDispatchNamespaceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dispatchNamespace",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WorkersScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -909,13 +864,24 @@ func (j *jsiiProxy_WorkersScript)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_WorkersScript)SetKeepAssets(val interface{}) {
+	if err := j.validateSetKeepAssetsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"keepAssets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetKeepBindings(val *[]*string) {
+	if err := j.validateSetKeepBindingsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keepBindings",
 		val,
 	)
 }
@@ -931,35 +897,13 @@ func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetLogpush(val interface{}) {
-	if err := j.validateSetLogpushParameters(val); err != nil {
+func (j *jsiiProxy_WorkersScript)SetMainModule(val *string) {
+	if err := j.validateSetMainModuleParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"logpush",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersScript)SetModule(val interface{}) {
-	if err := j.validateSetModuleParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"module",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersScript)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
+		"mainModule",
 		val,
 	)
 }
@@ -983,13 +927,13 @@ func (j *jsiiProxy_WorkersScript)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkersScript)SetTags(val *[]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
+func (j *jsiiProxy_WorkersScript)SetScriptName(val *string) {
+	if err := j.validateSetScriptNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"tags",
+		"scriptName",
 		val,
 	)
 }
@@ -1347,51 +1291,51 @@ func (w *jsiiProxy_WorkersScript) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutAnalyticsEngineBinding(value interface{}) {
-	if err := w.validatePutAnalyticsEngineBindingParameters(value); err != nil {
+func (w *jsiiProxy_WorkersScript) PutAssets(value *WorkersScriptAssets) {
+	if err := w.validatePutAssetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putAnalyticsEngineBinding",
+		"putAssets",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutD1DatabaseBinding(value interface{}) {
-	if err := w.validatePutD1DatabaseBindingParameters(value); err != nil {
+func (w *jsiiProxy_WorkersScript) PutBindings(value interface{}) {
+	if err := w.validatePutBindingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putD1DatabaseBinding",
+		"putBindings",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutHyperdriveConfigBinding(value interface{}) {
-	if err := w.validatePutHyperdriveConfigBindingParameters(value); err != nil {
+func (w *jsiiProxy_WorkersScript) PutMigrations(value *WorkersScriptMigrations) {
+	if err := w.validatePutMigrationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putHyperdriveConfigBinding",
+		"putMigrations",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutKvNamespaceBinding(value interface{}) {
-	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
+func (w *jsiiProxy_WorkersScript) PutObservability(value *WorkersScriptObservability) {
+	if err := w.validatePutObservabilityParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putKvNamespaceBinding",
+		"putObservability",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutPlacement(value interface{}) {
+func (w *jsiiProxy_WorkersScript) PutPlacement(value *WorkersScriptPlacement) {
 	if err := w.validatePutPlacementParameters(value); err != nil {
 		panic(err)
 	}
@@ -1402,76 +1346,37 @@ func (w *jsiiProxy_WorkersScript) PutPlacement(value interface{}) {
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutPlainTextBinding(value interface{}) {
-	if err := w.validatePutPlainTextBindingParameters(value); err != nil {
+func (w *jsiiProxy_WorkersScript) PutTailConsumers(value interface{}) {
+	if err := w.validatePutTailConsumersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putPlainTextBinding",
+		"putTailConsumers",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutQueueBinding(value interface{}) {
-	if err := w.validatePutQueueBindingParameters(value); err != nil {
-		panic(err)
-	}
+func (w *jsiiProxy_WorkersScript) ResetAssets() {
 	_jsii_.InvokeVoid(
 		w,
-		"putQueueBinding",
-		[]interface{}{value},
+		"resetAssets",
+		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutR2BucketBinding(value interface{}) {
-	if err := w.validatePutR2BucketBindingParameters(value); err != nil {
-		panic(err)
-	}
+func (w *jsiiProxy_WorkersScript) ResetBindings() {
 	_jsii_.InvokeVoid(
 		w,
-		"putR2BucketBinding",
-		[]interface{}{value},
+		"resetBindings",
+		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) PutSecretTextBinding(value interface{}) {
-	if err := w.validatePutSecretTextBindingParameters(value); err != nil {
-		panic(err)
-	}
+func (w *jsiiProxy_WorkersScript) ResetBodyPart() {
 	_jsii_.InvokeVoid(
 		w,
-		"putSecretTextBinding",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) PutServiceBinding(value interface{}) {
-	if err := w.validatePutServiceBindingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putServiceBinding",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) PutWebassemblyBinding(value interface{}) {
-	if err := w.validatePutWebassemblyBindingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putWebassemblyBinding",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetAnalyticsEngineBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAnalyticsEngineBinding",
+		"resetBodyPart",
 		nil, // no parameters
 	)
 }
@@ -1492,58 +1397,42 @@ func (w *jsiiProxy_WorkersScript) ResetCompatibilityFlags() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetD1DatabaseBinding() {
+func (w *jsiiProxy_WorkersScript) ResetKeepAssets() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetD1DatabaseBinding",
+		"resetKeepAssets",
 		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetDispatchNamespace() {
+func (w *jsiiProxy_WorkersScript) ResetKeepBindings() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetDispatchNamespace",
+		"resetKeepBindings",
 		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetHyperdriveConfigBinding() {
+func (w *jsiiProxy_WorkersScript) ResetMainModule() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetHyperdriveConfigBinding",
+		"resetMainModule",
 		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetId() {
+func (w *jsiiProxy_WorkersScript) ResetMigrations() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetId",
+		"resetMigrations",
 		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetKvNamespaceBinding() {
+func (w *jsiiProxy_WorkersScript) ResetObservability() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetKvNamespaceBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetLogpush() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetLogpush",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetModule() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetModule",
+		"resetObservability",
 		nil, // no parameters
 	)
 }
@@ -1564,58 +1453,10 @@ func (w *jsiiProxy_WorkersScript) ResetPlacement() {
 	)
 }
 
-func (w *jsiiProxy_WorkersScript) ResetPlainTextBinding() {
+func (w *jsiiProxy_WorkersScript) ResetTailConsumers() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetPlainTextBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetQueueBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetQueueBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetR2BucketBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetR2BucketBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetSecretTextBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetSecretTextBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetServiceBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetServiceBinding",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetTags() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersScript) ResetWebassemblyBinding() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetWebassemblyBinding",
+		"resetTailConsumers",
 		nil, // no parameters
 	)
 }

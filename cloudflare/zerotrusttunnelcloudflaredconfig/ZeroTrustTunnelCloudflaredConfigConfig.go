@@ -5,17 +5,19 @@ package zerotrusttunnelcloudflaredconfig
 
 
 type ZeroTrustTunnelCloudflaredConfigConfig struct {
-	// ingress_rule block.
+	// List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress_rule ZeroTrustTunnelCloudflaredConfigA#ingress_rule}
-	IngressRule interface{} `field:"required" json:"ingressRule" yaml:"ingressRule"`
-	// origin_request block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
+	Ingress interface{} `field:"optional" json:"ingress" yaml:"ingress"`
+	// Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
 	OriginRequest *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest `field:"optional" json:"originRequest" yaml:"originRequest"`
-	// warp_routing block.
+	// Enable private network access from WARP users to private network routes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#warp_routing ZeroTrustTunnelCloudflaredConfigA#warp_routing}
+	// This is enabled if the tunnel has an assigned route.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#warp_routing ZeroTrustTunnelCloudflaredConfigA#warp_routing}
 	WarpRouting *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting `field:"optional" json:"warpRouting" yaml:"warpRouting"`
 }
 

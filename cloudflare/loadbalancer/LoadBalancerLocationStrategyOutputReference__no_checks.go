@@ -79,7 +79,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewLoadBalancerLocationStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerLocationStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -75,11 +75,11 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) validateOverrideLogicalIdPar
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) validatePutConfigParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) validatePutConfigParameters(value *ZeroTrustAccessIdentityProviderConfigA) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) validatePutScimConfigParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProvider) validatePutScimConfigParameters(value *ZeroTrustAccessIdentityProviderScimConfig) error {
 	return nil
 }
 
@@ -108,10 +108,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetConnectionParamet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProvider) validateSetIdParameters(val *string) error {
 	return nil
 }
 

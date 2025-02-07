@@ -5,17 +5,17 @@ package zerotrusttunnelcloudflaredconfig
 
 
 type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess struct {
-	// Audience tags of the access rule.
+	// Access applications that are allowed to reach this hostname for this Tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
-	AudTag *[]*string `field:"optional" json:"audTag" yaml:"audTag"`
-	// Whether the access rule is required.
+	// Audience tags can be identified in the dashboard or via the List Access policies API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
+	AudTag *[]*string `field:"required" json:"audTag" yaml:"audTag"`
+	// Deny traffic that has not fulfilled Access authorization.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
 	Required interface{} `field:"optional" json:"required" yaml:"required"`
-	// Name of the team to which the access rule applies.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}.
 	TeamName *string `field:"optional" json:"teamName" yaml:"teamName"`
 }
 

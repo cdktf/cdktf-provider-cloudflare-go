@@ -107,15 +107,7 @@ func (j *jsiiProxy_OriginCaCertificate) validateSetHostnamesParameters(val *[]*s
 	return nil
 }
 
-func (j *jsiiProxy_OriginCaCertificate) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_OriginCaCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_OriginCaCertificate) validateSetMinDaysForRenewalParameters(val *float64) error {
 	return nil
 }
 

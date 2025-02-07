@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -39,7 +39,7 @@ type ZeroTrustAccessApplicationScimConfigMappingsOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Operations() ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference
-	OperationsInput() *ZeroTrustAccessApplicationScimConfigMappingsOperations
+	OperationsInput() interface{}
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) OperationsInput() *ZeroTrustAccessApplicationScimConfigMappingsOperations {
-	var returns *ZeroTrustAccessApplicationScimConfigMappingsOperations
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOutputReference) OperationsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"operationsInput",

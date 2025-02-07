@@ -5,15 +5,15 @@ package zonelockdown
 
 
 type ZoneLockdownConfigurations struct {
-	// The request property to target. Available values: `ip`, `ip_range`.
+	// The configuration target.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
-	Target *string `field:"required" json:"target" yaml:"target"`
-	// The value to target.
+	// You must set the target to `ip` when specifying an IP address in the Zone Lockdown rule.
 	//
-	// Depends on target's type. IP addresses should just be standard IPv4/IPv6 notation i.e. `192.0.2.1` or `2001:db8::/32` and IP ranges in CIDR format i.e. `192.0.2.0/24`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#target ZoneLockdown#target}
+	Target *string `field:"optional" json:"target" yaml:"target"`
+	// The IP address to match. This address will be compared to the IP address of incoming requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
-	Value *string `field:"required" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#value ZoneLockdown#value}
+	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

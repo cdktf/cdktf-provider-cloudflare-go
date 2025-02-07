@@ -75,6 +75,10 @@ func (c *jsiiProxy_ContentScanningExpression) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (c *jsiiProxy_ContentScanningExpression) validatePutBodyParameters(value interface{}) error {
+	return nil
+}
+
 func validateContentScanningExpression_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -99,11 +103,11 @@ func (j *jsiiProxy_ContentScanningExpression) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContentScanningExpression) validateSetExpressionIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpression) validateSetPayloadParameters(val *string) error {
+func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 

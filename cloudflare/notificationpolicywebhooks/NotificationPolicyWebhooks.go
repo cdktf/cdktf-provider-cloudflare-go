@@ -5,14 +5,14 @@ package notificationpolicywebhooks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/notificationpolicywebhooks/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/notificationpolicywebhooks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
 type NotificationPolicyWebhooks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -44,8 +44,6 @@ type NotificationPolicyWebhooks interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	LastFailure() *string
 	LastSuccess() *string
 	// Experimental.
@@ -123,12 +121,10 @@ type NotificationPolicyWebhooks interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecret()
-	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -262,16 +258,6 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationPolicyWebhooks) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -448,7 +434,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooks) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
 func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, config *NotificationPolicyWebhooksConfig) NotificationPolicyWebhooks {
 	_init_.Initialize()
 
@@ -466,7 +452,7 @@ func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks} Resource.
 func NewNotificationPolicyWebhooks_Override(n NotificationPolicyWebhooks, scope constructs.Construct, id *string, config *NotificationPolicyWebhooksConfig) {
 	_init_.Initialize()
 
@@ -522,17 +508,6 @@ func (j *jsiiProxy_NotificationPolicyWebhooks)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationPolicyWebhooks)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -953,14 +928,6 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooks) ResetId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NotificationPolicyWebhooks) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -973,14 +940,6 @@ func (n *jsiiProxy_NotificationPolicyWebhooks) ResetSecret() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecret",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationPolicyWebhooks) ResetUrl() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetUrl",
 		nil, // no parameters
 	)
 }

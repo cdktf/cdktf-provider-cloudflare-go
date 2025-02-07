@@ -5,19 +5,16 @@ package zerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrusttunnelcloudflaredconfig/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interface {
 	cdktf.ComplexObject
 	Access() ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference
-	AccessInput() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess
-	BastionMode() interface{}
-	SetBastionMode(val interface{})
-	BastionModeInput() interface{}
+	AccessInput() interface{}
 	CaPool() *string
 	SetCaPool(val *string)
 	CaPoolInput() *string
@@ -31,9 +28,9 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConnectTimeout() *string
-	SetConnectTimeout(val *string)
-	ConnectTimeoutInput() *string
+	ConnectTimeout() *float64
+	SetConnectTimeout(val *float64)
+	ConnectTimeoutInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -50,16 +47,14 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	HttpHostHeader() *string
 	SetHttpHostHeader(val *string)
 	HttpHostHeaderInput() *string
-	InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest
-	SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest)
-	IpRules() ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList
-	IpRulesInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	KeepAliveConnections() *float64
 	SetKeepAliveConnections(val *float64)
 	KeepAliveConnectionsInput() *float64
-	KeepAliveTimeout() *string
-	SetKeepAliveTimeout(val *string)
-	KeepAliveTimeoutInput() *string
+	KeepAliveTimeout() *float64
+	SetKeepAliveTimeout(val *float64)
+	KeepAliveTimeoutInput() *float64
 	NoHappyEyeballs() interface{}
 	SetNoHappyEyeballs(val interface{})
 	NoHappyEyeballsInput() interface{}
@@ -69,18 +64,12 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	OriginServerName() *string
 	SetOriginServerName(val *string)
 	OriginServerNameInput() *string
-	ProxyAddress() *string
-	SetProxyAddress(val *string)
-	ProxyAddressInput() *string
-	ProxyPort() *float64
-	SetProxyPort(val *float64)
-	ProxyPortInput() *float64
 	ProxyType() *string
 	SetProxyType(val *string)
 	ProxyTypeInput() *string
-	TcpKeepAlive() *string
-	SetTcpKeepAlive(val *string)
-	TcpKeepAliveInput() *string
+	TcpKeepAlive() *float64
+	SetTcpKeepAlive(val *float64)
+	TcpKeepAliveInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -89,9 +78,9 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TlsTimeout() *string
-	SetTlsTimeout(val *string)
-	TlsTimeoutInput() *string
+	TlsTimeout() *float64
+	SetTlsTimeout(val *float64)
+	TlsTimeoutInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -117,22 +106,17 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAccess(value *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess)
-	PutIpRules(value interface{})
 	ResetAccess()
-	ResetBastionMode()
 	ResetCaPool()
 	ResetConnectTimeout()
 	ResetDisableChunkedEncoding()
 	ResetHttp2Origin()
 	ResetHttpHostHeader()
-	ResetIpRules()
 	ResetKeepAliveConnections()
 	ResetKeepAliveTimeout()
 	ResetNoHappyEyeballs()
 	ResetNoTlsVerify()
 	ResetOriginServerName()
-	ResetProxyAddress()
-	ResetProxyPort()
 	ResetProxyType()
 	ResetTcpKeepAlive()
 	ResetTlsTimeout()
@@ -161,31 +145,11 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) AccessInput() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) AccessInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"accessInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) BastionMode() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"bastionMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) BastionModeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"bastionModeInput",
 		&returns,
 	)
 	return returns
@@ -231,8 +195,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ConnectTimeout() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ConnectTimeout() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"connectTimeout",
@@ -241,8 +205,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ConnectTimeoutInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ConnectTimeoutInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"connectTimeoutInput",
@@ -331,31 +295,11 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) IpRules() ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList {
-	var returns ZeroTrustTunnelCloudflaredConfigConfigOriginRequestIpRulesList
-	_jsii_.Get(
-		j,
-		"ipRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) IpRulesInput() interface{} {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"ipRulesInput",
+		"internalValue",
 		&returns,
 	)
 	return returns
@@ -381,8 +325,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) KeepAliveTimeout() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) KeepAliveTimeout() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"keepAliveTimeout",
@@ -391,8 +335,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) KeepAliveTimeoutInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) KeepAliveTimeoutInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"keepAliveTimeoutInput",
@@ -461,46 +405,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ProxyAddress() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"proxyAddress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ProxyAddressInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"proxyAddressInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ProxyPort() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"proxyPort",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ProxyPortInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"proxyPortInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ProxyType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,8 +425,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TcpKeepAlive() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TcpKeepAlive() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"tcpKeepAlive",
@@ -531,8 +435,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TcpKeepAliveInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TcpKeepAliveInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"tcpKeepAliveInput",
@@ -561,8 +465,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TlsTimeout() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TlsTimeout() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"tlsTimeout",
@@ -571,8 +475,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TlsTimeoutInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) TlsTimeoutInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"tlsTimeoutInput",
@@ -609,17 +513,6 @@ func NewZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference_Overr
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetBastionMode(val interface{}) {
-	if err := j.validateSetBastionModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bastionMode",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetCaPool(val *string) {
 	if err := j.validateSetCaPoolParameters(val); err != nil {
 		panic(err)
@@ -653,7 +546,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetConnectTimeout(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetConnectTimeout(val *float64) {
 	if err := j.validateSetConnectTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +590,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequest) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +612,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetKeepAliveTimeout(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetKeepAliveTimeout(val *float64) {
 	if err := j.validateSetKeepAliveTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,28 +656,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetProxyAddress(val *string) {
-	if err := j.validateSetProxyAddressParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"proxyAddress",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetProxyPort(val *float64) {
-	if err := j.validateSetProxyPortParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"proxyPort",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetProxyType(val *string) {
 	if err := j.validateSetProxyTypeParameters(val); err != nil {
 		panic(err)
@@ -796,7 +667,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetTcpKeepAlive(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetTcpKeepAlive(val *float64) {
 	if err := j.validateSetTcpKeepAliveParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +700,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetTlsTimeout(val *string) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference)SetTlsTimeout(val *float64) {
 	if err := j.validateSetTlsTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1037,29 +908,10 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) PutIpRules(value interface{}) {
-	if err := z.validatePutIpRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putIpRules",
-		[]interface{}{value},
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetAccess() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAccess",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetBastionMode() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetBastionMode",
 		nil, // no parameters
 	)
 }
@@ -1104,14 +956,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetIpRules() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIpRules",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetKeepAliveConnections() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1148,22 +992,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputRefe
 	_jsii_.InvokeVoid(
 		z,
 		"resetOriginServerName",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetProxyAddress() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetProxyAddress",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference) ResetProxyPort() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetProxyPort",
 		nil, // no parameters
 	)
 }

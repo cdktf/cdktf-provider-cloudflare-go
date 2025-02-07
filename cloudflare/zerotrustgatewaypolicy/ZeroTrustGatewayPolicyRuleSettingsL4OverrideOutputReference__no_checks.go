@@ -59,7 +59,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsL4Override) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

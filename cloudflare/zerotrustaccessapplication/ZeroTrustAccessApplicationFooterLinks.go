@@ -5,13 +5,13 @@ package zerotrustaccessapplication
 
 
 type ZeroTrustAccessApplicationFooterLinks struct {
-	// The name of the footer link.
+	// The hypertext in the footer link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
-	Name *string `field:"optional" json:"name" yaml:"name"`
-	// The URL of the footer link.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// the hyperlink in the footer link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
-	Url *string `field:"optional" json:"url" yaml:"url"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#url ZeroTrustAccessApplication#url}
+	Url *string `field:"required" json:"url" yaml:"url"`
 }
 

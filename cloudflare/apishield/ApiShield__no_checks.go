@@ -103,10 +103,6 @@ func (j *jsiiProxy_ApiShield) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_ApiShield) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApiShield) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,9 +73,6 @@ type ZeroTrustAccessPolicyIncludeSamlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAttributeName()
-	ResetAttributeValue()
-	ResetIdentityProviderId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -222,29 +219,29 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) TerraformRes
 }
 
 
-func NewZeroTrustAccessPolicyIncludeSamlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyIncludeSamlOutputReference {
+func NewZeroTrustAccessPolicyIncludeSamlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyIncludeSamlOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessPolicyIncludeSamlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessPolicyIncludeSamlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeSamlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessPolicyIncludeSamlOutputReference_Override(z ZeroTrustAccessPolicyIncludeSamlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessPolicyIncludeSamlOutputReference_Override(z ZeroTrustAccessPolicyIncludeSamlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyIncludeSamlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -521,30 +518,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) Interpolatio
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) ResetAttributeName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAttributeName",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) ResetAttributeValue() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAttributeValue",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) ResetIdentityProviderId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIdentityProviderId",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeSamlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -75,6 +75,10 @@ func (a *jsiiProxy_AccountMember) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (a *jsiiProxy_AccountMember) validatePutPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func validateAccountMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -103,11 +107,7 @@ func (j *jsiiProxy_AccountMember) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_AccountMember) validateSetEmailAddressParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AccountMember) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_AccountMember) validateSetEmailParameters(val *string) error {
 	return nil
 }
 
@@ -119,7 +119,7 @@ func (j *jsiiProxy_AccountMember) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_AccountMember) validateSetRoleIdsParameters(val *[]*string) error {
+func (j *jsiiProxy_AccountMember) validateSetRolesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package zerotrustaccessmtlscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessmtlscertificate/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type ZeroTrustAccessMtlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -36,10 +36,12 @@ type ZeroTrustAccessMtlsCertificate interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresOn() *string
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -50,8 +52,6 @@ type ZeroTrustAccessMtlsCertificate interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -77,6 +77,7 @@ type ZeroTrustAccessMtlsCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -125,8 +126,6 @@ type ZeroTrustAccessMtlsCertificate interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
 	ResetAssociatedHostnames()
-	ResetCertificate()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -249,11 +248,31 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) ExpiresOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiresOn",
 		&returns,
 	)
 	return returns
@@ -304,16 +323,6 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +428,16 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,7 +459,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) ZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -458,7 +477,7 @@ func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate_Override(z ZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 
@@ -536,17 +555,6 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -968,22 +976,6 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsCertificate) ResetAssociatedHostnames() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAssociatedHostnames",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsCertificate) ResetCertificate() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCertificate",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsCertificate) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -95,7 +95,11 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetAccountIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetAdvertisementParameters(val *string) error {
+func (j *jsiiProxy_ByoIpPrefix) validateSetAsnParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ByoIpPrefix) validateSetCidrParameters(val *string) error {
 	return nil
 }
 
@@ -111,15 +115,11 @@ func (j *jsiiProxy_ByoIpPrefix) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ByoIpPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_ByoIpPrefix) validateSetPrefixIdParameters(val *string) error {
+func (j *jsiiProxy_ByoIpPrefix) validateSetLoaDocumentIdParameters(val *string) error {
 	return nil
 }
 

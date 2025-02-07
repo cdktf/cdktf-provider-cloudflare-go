@@ -166,9 +166,25 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReference) validateSetInternalValueParameters(val *PagesProjectDeploymentConfigsProductionPlacement) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionPlacementOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *PagesProjectDeploymentConfigsProductionPlacement:
+		val := val.(*PagesProjectDeploymentConfigsProductionPlacement)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case PagesProjectDeploymentConfigsProductionPlacement:
+		val_ := val.(PagesProjectDeploymentConfigsProductionPlacement)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PagesProjectDeploymentConfigsProductionPlacement; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

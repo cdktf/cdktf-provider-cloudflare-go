@@ -22,28 +22,25 @@ type ByoIpPrefixConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Identifier of a Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The assigned Bring-Your-Own-IP prefix ID. **Modifying this attribute will force creation of a new resource.**.
+	// Autonomous System Number (ASN) the prefix will be advertised under.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#prefix_id ByoIpPrefix#prefix_id}
-	PrefixId *string `field:"required" json:"prefixId" yaml:"prefixId"`
-	// Whether or not the prefix shall be announced.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+	Asn *float64 `field:"required" json:"asn" yaml:"asn"`
+	// IP Prefix in Classless Inter-Domain Routing format.
 	//
-	// A prefix can be activated or deactivated once every 15 minutes (attempting more regular updates will trigger rate limiting). Available values: `on`, `off`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+	Cidr *string `field:"required" json:"cidr" yaml:"cidr"`
+	// Identifier for the uploaded LOA document.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#advertisement ByoIpPrefix#advertisement}
-	Advertisement *string `field:"optional" json:"advertisement" yaml:"advertisement"`
-	// Description of the BYO IP prefix.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+	LoaDocumentId *string `field:"required" json:"loaDocumentId" yaml:"loaDocumentId"`
+	// Description of the prefix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/byo_ip_prefix#id ByoIpPrefix#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 }
 

@@ -5,14 +5,14 @@ package waitingroomsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomsettings/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/waitingroomsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}.
 type WaitingRoomSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type WaitingRoomSettings interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -113,7 +111,6 @@ type WaitingRoomSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -221,16 +218,6 @@ func (j *jsiiProxy_WaitingRoomSettings) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomSettings) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -357,7 +344,7 @@ func (j *jsiiProxy_WaitingRoomSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
 func NewWaitingRoomSettings(scope constructs.Construct, id *string, config *WaitingRoomSettingsConfig) WaitingRoomSettings {
 	_init_.Initialize()
 
@@ -375,7 +362,7 @@ func NewWaitingRoomSettings(scope constructs.Construct, id *string, config *Wait
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource.
 func NewWaitingRoomSettings_Override(w WaitingRoomSettings, scope constructs.Construct, id *string, config *WaitingRoomSettingsConfig) {
 	_init_.Initialize()
 
@@ -420,17 +407,6 @@ func (j *jsiiProxy_WaitingRoomSettings)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WaitingRoomSettings)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -837,14 +813,6 @@ func (w *jsiiProxy_WaitingRoomSettings) OverrideLogicalId(newLogicalId *string) 
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (w *jsiiProxy_WaitingRoomSettings) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

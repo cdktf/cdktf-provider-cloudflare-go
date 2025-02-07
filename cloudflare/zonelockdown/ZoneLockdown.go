@@ -5,14 +5,14 @@ package zonelockdown
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonelockdown/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonelockdown/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown cloudflare_zone_lockdown}.
 type ZoneLockdown interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,13 +29,12 @@ type ZoneLockdown interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	SetDescription(val *string)
-	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,20 +44,14 @@ type ZoneLockdown interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Paused() interface{}
-	SetPaused(val interface{})
-	PausedInput() interface{}
-	Priority() *float64
-	SetPriority(val *float64)
-	PriorityInput() *float64
+	Paused() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -125,13 +118,9 @@ type ZoneLockdown interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigurations(value interface{})
-	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPaused()
-	ResetPriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -210,6 +199,16 @@ func (j *jsiiProxy_ZoneLockdown) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneLockdown) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneLockdown) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -225,16 +224,6 @@ func (j *jsiiProxy_ZoneLockdown) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneLockdown) DescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -280,21 +269,21 @@ func (j *jsiiProxy_ZoneLockdown) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZoneLockdown) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneLockdown) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -310,41 +299,11 @@ func (j *jsiiProxy_ZoneLockdown) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneLockdown) Paused() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneLockdown) Paused() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"paused",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneLockdown) PausedInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"pausedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneLockdown) Priority() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priority",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneLockdown) PriorityInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"priorityInput",
 		&returns,
 	)
 	return returns
@@ -451,7 +410,7 @@ func (j *jsiiProxy_ZoneLockdown) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdownConfig) ZoneLockdown {
 	_init_.Initialize()
 
@@ -469,7 +428,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown cloudflare_zone_lockdown} Resource.
 func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *string, config *ZoneLockdownConfig) {
 	_init_.Initialize()
 
@@ -510,32 +469,10 @@ func (j *jsiiProxy_ZoneLockdown)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneLockdown)SetDescription(val *string) {
-	if err := j.validateSetDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"description",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneLockdown)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneLockdown)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -547,28 +484,6 @@ func (j *jsiiProxy_ZoneLockdown)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneLockdown)SetPaused(val interface{}) {
-	if err := j.validateSetPausedParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"paused",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneLockdown)SetPriority(val *float64) {
-	if err := j.validateSetPriorityParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"priority",
 		val,
 	)
 }
@@ -978,42 +893,10 @@ func (z *jsiiProxy_ZoneLockdown) PutConfigurations(value interface{}) {
 	)
 }
 
-func (z *jsiiProxy_ZoneLockdown) ResetDescription() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneLockdown) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZoneLockdown) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneLockdown) ResetPaused() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPaused",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneLockdown) ResetPriority() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPriority",
 		nil, // no parameters
 	)
 }

@@ -5,28 +5,19 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/provider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs cloudflare}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs cloudflare}.
 type CloudflareProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
-	ApiBasePath() *string
-	SetApiBasePath(val *string)
-	ApiBasePathInput() *string
-	ApiClientLogging() interface{}
-	SetApiClientLogging(val interface{})
-	ApiClientLoggingInput() interface{}
-	ApiHostname() *string
-	SetApiHostname(val *string)
-	ApiHostnameInput() *string
 	ApiKey() *string
 	SetApiKey(val *string)
 	ApiKeyInput() *string
@@ -36,6 +27,9 @@ type CloudflareProvider interface {
 	ApiUserServiceKey() *string
 	SetApiUserServiceKey(val *string)
 	ApiUserServiceKeyInput() *string
+	BaseUrl() *string
+	SetBaseUrl(val *string)
+	BaseUrlInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -47,24 +41,12 @@ type CloudflareProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	MaxBackoff() *float64
-	SetMaxBackoff(val *float64)
-	MaxBackoffInput() *float64
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
-	MinBackoff() *float64
-	SetMinBackoff(val *float64)
-	MinBackoffInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
 	RawOverrides() interface{}
-	Retries() *float64
-	SetRetries(val *float64)
-	RetriesInput() *float64
-	Rps() *float64
-	SetRps(val *float64)
-	RpsInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -80,20 +62,14 @@ type CloudflareProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
-	ResetApiBasePath()
-	ResetApiClientLogging()
-	ResetApiHostname()
 	ResetApiKey()
 	ResetApiToken()
 	ResetApiUserServiceKey()
+	ResetBaseUrl()
 	ResetEmail()
-	ResetMaxBackoff()
-	ResetMinBackoff()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRetries()
-	ResetRps()
 	ResetUserAgentOperatorSuffix()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -128,66 +104,6 @@ func (j *jsiiProxy_CloudflareProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiBasePath() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiBasePath",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiBasePathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiBasePathInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiClientLogging() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"apiClientLogging",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiClientLoggingInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"apiClientLoggingInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiHostname() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiHostname",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) ApiHostnameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiHostnameInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +169,26 @@ func (j *jsiiProxy_CloudflareProvider) ApiUserServiceKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudflareProvider) BaseUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudflareProvider) BaseUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudflareProvider) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -313,51 +249,11 @@ func (j *jsiiProxy_CloudflareProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudflareProvider) MaxBackoff() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"maxBackoff",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) MaxBackoffInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"maxBackoffInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudflareProvider) MetaAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"metaAttributes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) MinBackoff() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minBackoff",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) MinBackoffInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minBackoffInput",
 		&returns,
 	)
 	return returns
@@ -378,46 +274,6 @@ func (j *jsiiProxy_CloudflareProvider) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) Retries() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"retries",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) RetriesInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"retriesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) Rps() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"rps",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudflareProvider) RpsInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"rpsInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +330,7 @@ func (j *jsiiProxy_CloudflareProvider) UserAgentOperatorSuffixInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs cloudflare} Resource.
 func NewCloudflareProvider(scope constructs.Construct, id *string, config *CloudflareProviderConfig) CloudflareProvider {
 	_init_.Initialize()
 
@@ -492,7 +348,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs cloudflare} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs cloudflare} Resource.
 func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Construct, id *string, config *CloudflareProviderConfig) {
 	_init_.Initialize()
 
@@ -507,33 +363,6 @@ func (j *jsiiProxy_CloudflareProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetApiBasePath(val *string) {
-	_jsii_.Set(
-		j,
-		"apiBasePath",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetApiClientLogging(val interface{}) {
-	if err := j.validateSetApiClientLoggingParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"apiClientLogging",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetApiHostname(val *string) {
-	_jsii_.Set(
-		j,
-		"apiHostname",
 		val,
 	)
 }
@@ -562,42 +391,18 @@ func (j *jsiiProxy_CloudflareProvider)SetApiUserServiceKey(val *string) {
 	)
 }
 
+func (j *jsiiProxy_CloudflareProvider)SetBaseUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"baseUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudflareProvider)SetEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"email",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetMaxBackoff(val *float64) {
-	_jsii_.Set(
-		j,
-		"maxBackoff",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetMinBackoff(val *float64) {
-	_jsii_.Set(
-		j,
-		"minBackoff",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetRetries(val *float64) {
-	_jsii_.Set(
-		j,
-		"retries",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudflareProvider)SetRps(val *float64) {
-	_jsii_.Set(
-		j,
-		"rps",
 		val,
 	)
 }
@@ -743,30 +548,6 @@ func (c *jsiiProxy_CloudflareProvider) ResetAlias() {
 	)
 }
 
-func (c *jsiiProxy_CloudflareProvider) ResetApiBasePath() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetApiBasePath",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetApiClientLogging() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetApiClientLogging",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetApiHostname() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetApiHostname",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CloudflareProvider) ResetApiKey() {
 	_jsii_.InvokeVoid(
 		c,
@@ -791,6 +572,14 @@ func (c *jsiiProxy_CloudflareProvider) ResetApiUserServiceKey() {
 	)
 }
 
+func (c *jsiiProxy_CloudflareProvider) ResetBaseUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBaseUrl",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudflareProvider) ResetEmail() {
 	_jsii_.InvokeVoid(
 		c,
@@ -799,42 +588,10 @@ func (c *jsiiProxy_CloudflareProvider) ResetEmail() {
 	)
 }
 
-func (c *jsiiProxy_CloudflareProvider) ResetMaxBackoff() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetMaxBackoff",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetMinBackoff() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetMinBackoff",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CloudflareProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetRetries() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRetries",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudflareProvider) ResetRps() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetRps",
 		nil, // no parameters
 	)
 }

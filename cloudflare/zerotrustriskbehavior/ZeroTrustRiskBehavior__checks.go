@@ -207,22 +207,22 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustRiskBehavior) validatePutBehaviorParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustRiskBehavior) validatePutBehaviorsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustRiskBehaviorBehavior:
-		value := value.(*[]*ZeroTrustRiskBehaviorBehavior)
+	case *map[string]*ZeroTrustRiskBehaviorBehaviors:
+		value := value.(*map[string]*ZeroTrustRiskBehaviorBehaviors)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustRiskBehaviorBehavior:
-		value_ := value.([]*ZeroTrustRiskBehaviorBehavior)
+	case map[string]*ZeroTrustRiskBehaviorBehaviors:
+		value_ := value.(map[string]*ZeroTrustRiskBehaviorBehaviors)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZeroTrustRiskBehavior) validatePutBehaviorParameters(value in
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustRiskBehaviorBehavior; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *map[string]*ZeroTrustRiskBehaviorBehaviors; received %#v (a %T)", value, value)
 		}
 	}
 

@@ -22,62 +22,69 @@ type SpectrumApplicationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// dns block.
+	// The name and type of DNS record for the Spectrum application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
 	Dns *SpectrumApplicationDns `field:"required" json:"dns" yaml:"dns"`
-	// The port configuration at Cloudflare's edge. e.g. `tcp/22`.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
-	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
-	// The zone identifier to target for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
-	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Enables Argo Smart Routing.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
-	ArgoSmartRouting interface{} `field:"optional" json:"argoSmartRouting" yaml:"argoSmartRouting"`
-	// edge_ips block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
-	EdgeIps *SpectrumApplicationEdgeIps `field:"optional" json:"edgeIps" yaml:"edgeIps"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#id SpectrumApplication#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#id SpectrumApplication#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Enables the IP Firewall for this application.
+	Id *string `field:"required" json:"id" yaml:"id"`
+	// The port configuration at Cloudflare's edge.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
+	// May specify a single port, for example `"tcp/1000"`, or a range of ports, for example `"tcp/1000-2000"`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
+	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
+	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// Enables Argo Smart Routing for this application. Notes: Only available for TCP applications with traffic_type set to "direct".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
+	ArgoSmartRouting interface{} `field:"optional" json:"argoSmartRouting" yaml:"argoSmartRouting"`
+	// The anycast edge IP configuration for the hostname of this application.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
+	EdgeIps *SpectrumApplicationEdgeIps `field:"optional" json:"edgeIps" yaml:"edgeIps"`
+	// Enables IP Access Rules for this application. Notes: Only available for TCP applications.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
 	IpFirewall interface{} `field:"optional" json:"ipFirewall" yaml:"ipFirewall"`
-	// A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
+	// List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
 	OriginDirect *[]*string `field:"optional" json:"originDirect" yaml:"originDirect"`
-	// origin_dns block.
+	// The name and type of DNS record for the Spectrum application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
 	OriginDns *SpectrumApplicationOriginDns `field:"optional" json:"originDns" yaml:"originDns"`
-	// Origin port to proxy traffice to. Conflicts with `origin_port_range`.
+	// The destination port at the origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
-	OriginPort *float64 `field:"optional" json:"originPort" yaml:"originPort"`
-	// origin_port_range block.
+	// Only specified in conjunction with origin_dns. May use an integer to specify a single origin port, for example `1000`, or a string to specify a range of origin ports, for example `"1000-2000"`.
+	// Notes: If specifying a port range, the number of ports in the range must match the number of ports specified in the "protocol" field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#origin_port_range SpectrumApplication#origin_port_range}
-	OriginPortRange *SpectrumApplicationOriginPortRange `field:"optional" json:"originPortRange" yaml:"originPortRange"`
-	// Enables a proxy protocol to the origin. Available values: `off`, `v1`, `v2`, `simple`.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
+	OriginPort *map[string]interface{} `field:"optional" json:"originPort" yaml:"originPort"`
+	// Enables Proxy Protocol to the origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
+	// Refer to [Enable Proxy protocol](https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/) for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
 	ProxyProtocol *string `field:"optional" json:"proxyProtocol" yaml:"proxyProtocol"`
-	// TLS configuration option for Cloudflare to connect to your origin. Available values: `off`, `flexible`, `full`, `strict`.
+	// The type of TLS termination associated with the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#tls SpectrumApplication#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#tls SpectrumApplication#tls}
 	Tls *string `field:"optional" json:"tls" yaml:"tls"`
-	// Sets application type. Available values: `direct`, `http`, `https`.
+	// Determines how data travels from the edge to your origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
+	// When set to "direct", Spectrum will send traffic directly to your origin, and the application's type is derived from the `protocol`. When set to "http" or "https", Spectrum will apply Cloudflare's HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
 	TrafficType *string `field:"optional" json:"trafficType" yaml:"trafficType"`
 }
 

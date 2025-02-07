@@ -75,7 +75,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewLoadBalancerPoolOriginSteeringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerPoolOriginSteeringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

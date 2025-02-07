@@ -79,7 +79,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessPolicyExcludeExternalEvaluationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

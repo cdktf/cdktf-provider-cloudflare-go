@@ -207,32 +207,12 @@ func (c *jsiiProxy_CustomHostname) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value interface{}) error {
+func (c *jsiiProxy_CustomHostname) validatePutSslParameters(value *CustomHostnameSsl) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*CustomHostnameSsl:
-		value := value.(*[]*CustomHostnameSsl)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*CustomHostnameSsl:
-		value_ := value.([]*CustomHostnameSsl)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CustomHostnameSsl; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -400,14 +380,6 @@ func (j *jsiiProxy_CustomHostname) validateSetHostnameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostname) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_CustomHostname) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -456,26 +428,6 @@ func (j *jsiiProxy_CustomHostname) validateSetProvisionersParameters(val *[]inte
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CustomHostname) validateSetWaitForSslPendingValidationParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

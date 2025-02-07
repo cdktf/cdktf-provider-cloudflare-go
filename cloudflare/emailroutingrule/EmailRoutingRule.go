@@ -5,18 +5,18 @@ package emailroutingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/emailroutingrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailroutingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 type EmailRoutingRule interface {
 	cdktf.TerraformResource
-	Action() EmailRoutingRuleActionList
-	ActionInput() interface{}
+	Actions() EmailRoutingRuleActionsList
+	ActionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -49,8 +49,8 @@ type EmailRoutingRule interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Matcher() EmailRoutingRuleMatcherList
-	MatcherInput() interface{}
+	Matchers() EmailRoutingRuleMatchersList
+	MatchersInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -122,11 +122,10 @@ type EmailRoutingRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAction(value interface{})
-	PutMatcher(value interface{})
-	ResetAction()
+	PutActions(value interface{})
+	PutMatchers(value interface{})
 	ResetEnabled()
-	ResetMatcher()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -149,21 +148,21 @@ type jsiiProxy_EmailRoutingRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Action() EmailRoutingRuleActionList {
-	var returns EmailRoutingRuleActionList
+func (j *jsiiProxy_EmailRoutingRule) Actions() EmailRoutingRuleActionsList {
+	var returns EmailRoutingRuleActionsList
 	_jsii_.Get(
 		j,
-		"action",
+		"actions",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) ActionInput() interface{} {
+func (j *jsiiProxy_EmailRoutingRule) ActionsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"actionInput",
+		"actionsInput",
 		&returns,
 	)
 	return returns
@@ -289,21 +288,21 @@ func (j *jsiiProxy_EmailRoutingRule) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) Matcher() EmailRoutingRuleMatcherList {
-	var returns EmailRoutingRuleMatcherList
+func (j *jsiiProxy_EmailRoutingRule) Matchers() EmailRoutingRuleMatchersList {
+	var returns EmailRoutingRuleMatchersList
 	_jsii_.Get(
 		j,
-		"matcher",
+		"matchers",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingRule) MatcherInput() interface{} {
+func (j *jsiiProxy_EmailRoutingRule) MatchersInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"matcherInput",
+		"matchersInput",
 		&returns,
 	)
 	return returns
@@ -450,7 +449,7 @@ func (j *jsiiProxy_EmailRoutingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) EmailRoutingRule {
 	_init_.Initialize()
 
@@ -468,7 +467,7 @@ func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_rule cloudflare_email_routing_rule} Resource.
 func NewEmailRoutingRule_Override(e EmailRoutingRule, scope constructs.Construct, id *string, config *EmailRoutingRuleConfig) {
 	_init_.Initialize()
 
@@ -944,33 +943,25 @@ func (e *jsiiProxy_EmailRoutingRule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) PutAction(value interface{}) {
-	if err := e.validatePutActionParameters(value); err != nil {
+func (e *jsiiProxy_EmailRoutingRule) PutActions(value interface{}) {
+	if err := e.validatePutActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
-		"putAction",
+		"putActions",
 		[]interface{}{value},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) PutMatcher(value interface{}) {
-	if err := e.validatePutMatcherParameters(value); err != nil {
+func (e *jsiiProxy_EmailRoutingRule) PutMatchers(value interface{}) {
+	if err := e.validatePutMatchersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
-		"putMatcher",
+		"putMatchers",
 		[]interface{}{value},
-	)
-}
-
-func (e *jsiiProxy_EmailRoutingRule) ResetAction() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAction",
-		nil, // no parameters
 	)
 }
 
@@ -982,10 +973,10 @@ func (e *jsiiProxy_EmailRoutingRule) ResetEnabled() {
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingRule) ResetMatcher() {
+func (e *jsiiProxy_EmailRoutingRule) ResetName() {
 	_jsii_.InvokeVoid(
 		e,
-		"resetMatcher",
+		"resetName",
 		nil, // no parameters
 	)
 }

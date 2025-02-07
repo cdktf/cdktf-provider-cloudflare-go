@@ -63,7 +63,7 @@ func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetCon
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetInternalValueParameters(val *LoadBalancerRulesFixedResponse) error {
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

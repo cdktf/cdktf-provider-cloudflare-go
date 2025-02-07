@@ -22,74 +22,63 @@ type ZeroTrustAccessPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Defines the action Access will take if the policy matches the user. Available values: `allow`, `deny`, `non_identity`, `bypass`.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#decision ZeroTrustAccessPolicy#decision}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#account_id ZeroTrustAccessPolicy#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// The action Access will take if a user matches this policy.
+	//
+	// Infrastructure application policies can only use the Allow action.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#decision ZeroTrustAccessPolicy#decision}
 	Decision *string `field:"required" json:"decision" yaml:"decision"`
-	// include block.
+	// Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#include ZeroTrustAccessPolicy#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#include ZeroTrustAccessPolicy#include}
 	Include interface{} `field:"required" json:"include" yaml:"include"`
-	// Friendly name of the Access Policy.
+	// The name of the Access policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#name ZeroTrustAccessPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource. Conflicts with `zone_id`.
+	// Administrators who can approve a temporary authentication request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#account_id ZeroTrustAccessPolicy#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// The ID of the application the policy is associated with.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#approval_groups ZeroTrustAccessPolicy#approval_groups}
+	ApprovalGroups interface{} `field:"optional" json:"approvalGroups" yaml:"approvalGroups"`
+	// Requires the user to request access from an administrator at the start of each session.
 	//
-	// Required when using `precedence`. **Modifying this attribute will force creation of a new resource.**
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#application_id ZeroTrustAccessPolicy#application_id}
-	ApplicationId *string `field:"optional" json:"applicationId" yaml:"applicationId"`
-	// approval_group block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#approval_group ZeroTrustAccessPolicy#approval_group}
-	ApprovalGroup interface{} `field:"optional" json:"approvalGroup" yaml:"approvalGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#approval_required ZeroTrustAccessPolicy#approval_required}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#approval_required ZeroTrustAccessPolicy#approval_required}
 	ApprovalRequired interface{} `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
-	// connection_rules block.
+	// Rules evaluated with a NOT logical operator.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#connection_rules ZeroTrustAccessPolicy#connection_rules}
-	ConnectionRules *ZeroTrustAccessPolicyConnectionRules `field:"optional" json:"connectionRules" yaml:"connectionRules"`
-	// exclude block.
+	// To match the policy, a user cannot meet any of the Exclude rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#exclude ZeroTrustAccessPolicy#exclude}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#exclude ZeroTrustAccessPolicy#exclude}
 	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#id ZeroTrustAccessPolicy#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Require this application to be served in an isolated browser for users matching this policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#isolation_required ZeroTrustAccessPolicy#isolation_required}
+	// 'Client Web Isolation' must be on for the account in order to use this feature.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#isolation_required ZeroTrustAccessPolicy#isolation_required}
 	IsolationRequired interface{} `field:"optional" json:"isolationRequired" yaml:"isolationRequired"`
-	// The unique precedence for policies on a single application. Required when using `application_id`.
+	// A custom message that will appear on the purpose justification screen.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#precedence ZeroTrustAccessPolicy#precedence}
-	Precedence *float64 `field:"optional" json:"precedence" yaml:"precedence"`
-	// The prompt to display to the user for a justification for accessing the resource. Required when using `purpose_justification_required`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#purpose_justification_prompt ZeroTrustAccessPolicy#purpose_justification_prompt}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#purpose_justification_prompt ZeroTrustAccessPolicy#purpose_justification_prompt}
 	PurposeJustificationPrompt *string `field:"optional" json:"purposeJustificationPrompt" yaml:"purposeJustificationPrompt"`
-	// Whether to prompt the user for a justification for accessing the resource.
+	// Require users to enter a justification when they log in to the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#purpose_justification_required ZeroTrustAccessPolicy#purpose_justification_required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#purpose_justification_required ZeroTrustAccessPolicy#purpose_justification_required}
 	PurposeJustificationRequired interface{} `field:"optional" json:"purposeJustificationRequired" yaml:"purposeJustificationRequired"`
-	// require block.
+	// Rules evaluated with an AND logical operator.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#require ZeroTrustAccessPolicy#require}
+	// To match the policy, a user must meet all of the Require rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#require ZeroTrustAccessPolicy#require}
 	Require interface{} `field:"optional" json:"require" yaml:"require"`
-	// How often a user will be forced to re-authorise. Must be in the format `48h` or `2h45m`.
+	// The amount of time that tokens issued for the application will be valid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#session_duration ZeroTrustAccessPolicy#session_duration}
+	// Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_policy#session_duration ZeroTrustAccessPolicy#session_duration}
 	SessionDuration *string `field:"optional" json:"sessionDuration" yaml:"sessionDuration"`
-	// The zone identifier to target for the resource. Conflicts with `account_id`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_policy#zone_id ZeroTrustAccessPolicy#zone_id}
-	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

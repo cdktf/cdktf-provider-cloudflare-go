@@ -5,9 +5,9 @@ package listitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/listitem/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/listitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -316,29 +316,29 @@ func (j *jsiiProxy_ListItemRedirectOutputReference) TerraformResource() cdktf.II
 }
 
 
-func NewListItemRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ListItemRedirectOutputReference {
+func NewListItemRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ListItemRedirectOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewListItemRedirectOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewListItemRedirectOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ListItemRedirectOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewListItemRedirectOutputReference_Override(l ListItemRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewListItemRedirectOutputReference_Override(l ListItemRedirectOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
 }

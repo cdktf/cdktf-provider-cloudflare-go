@@ -5,9 +5,9 @@ package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagesproject/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagesproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type PagesProjectDeploymentConfigsPreviewPlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectDeploymentConfigsPreviewPlacement
-	SetInternalValue(val *PagesProjectDeploymentConfigsPreviewPlacement)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -123,8 +123,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference) InternalValue() *PagesProjectDeploymentConfigsPreviewPlacement {
-	var returns *PagesProjectDeploymentConfigsPreviewPlacement
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference)
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference)SetInternalValue(val *PagesProjectDeploymentConfigsPreviewPlacement) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewPlacementOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

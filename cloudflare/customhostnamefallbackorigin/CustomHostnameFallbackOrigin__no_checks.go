@@ -99,10 +99,6 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

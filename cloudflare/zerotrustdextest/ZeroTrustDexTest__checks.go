@@ -218,6 +218,37 @@ func (z *jsiiProxy_ZeroTrustDexTest) validatePutDataParameters(value *ZeroTrustD
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDexTest) validatePutTargetPoliciesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustDexTestTargetPolicies:
+		value := value.(*[]*ZeroTrustDexTestTargetPolicies)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustDexTestTargetPolicies:
+		value_ := value.([]*ZeroTrustDexTestTargetPolicies)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustDexTestTargetPolicies; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateZeroTrustDexTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -384,14 +415,6 @@ func (j *jsiiProxy_ZeroTrustDexTest) validateSetEnabledParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustDexTest) validateSetIntervalParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -456,6 +479,26 @@ func (j *jsiiProxy_ZeroTrustDexTest) validateSetProvisionersParameters(val *[]in
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest) validateSetTargetedParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

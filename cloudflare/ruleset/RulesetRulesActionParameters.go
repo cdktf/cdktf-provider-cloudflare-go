@@ -5,222 +5,232 @@ package ruleset
 
 
 type RulesetRulesActionParameters struct {
-	// Specifies uncommon ports to allow cacheable assets to be served from.
+	// List of additional ports that caching can be enabled on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 	AdditionalCacheablePorts *[]*float64 `field:"optional" json:"additionalCacheablePorts" yaml:"additionalCacheablePorts"`
-	// algorithms block.
+	// Custom order for compression algorithms.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
 	Algorithms interface{} `field:"optional" json:"algorithms" yaml:"algorithms"`
-	// Turn on or off Cloudflare Automatic HTTPS rewrites.
+	// Turn on or off Automatic HTTPS Rewrites.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 	AutomaticHttpsRewrites interface{} `field:"optional" json:"automaticHttpsRewrites" yaml:"automaticHttpsRewrites"`
-	// autominify block.
+	// Select which file extensions to minify automatically.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#autominify Ruleset#autominify}
-	Autominify interface{} `field:"optional" json:"autominify" yaml:"autominify"`
-	// Inspect the visitor's browser for headers commonly associated with spammers and certain bots.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#autominify Ruleset#autominify}
+	Autominify *RulesetRulesActionParametersAutominify `field:"optional" json:"autominify" yaml:"autominify"`
+	// Turn on or off Browser Integrity Check.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#bic Ruleset#bic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#bic Ruleset#bic}
 	Bic interface{} `field:"optional" json:"bic" yaml:"bic"`
-	// browser_ttl block.
+	// Specify how long client browsers should cache the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
-	BrowserTtl interface{} `field:"optional" json:"browserTtl" yaml:"browserTtl"`
-	// Whether to cache if expression matches.
+	// Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#cache Ruleset#cache}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+	BrowserTtl *RulesetRulesActionParametersBrowserTtl `field:"optional" json:"browserTtl" yaml:"browserTtl"`
+	// Mark whether the request’s response from origin is eligible for caching.
+	//
+	// Caching itself will still depend on the cache-control header and your other caching configurations.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#cache Ruleset#cache}
 	Cache interface{} `field:"optional" json:"cache" yaml:"cache"`
-	// cache_key block.
+	// Define which components of the request are included or excluded from the cache key Cloudflare uses to store the response in cache.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
-	CacheKey interface{} `field:"optional" json:"cacheKey" yaml:"cacheKey"`
-	// cache_reserve block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
+	CacheKey *RulesetRulesActionParametersCacheKey `field:"optional" json:"cacheKey" yaml:"cacheKey"`
+	// Mark whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
-	CacheReserve interface{} `field:"optional" json:"cacheReserve" yaml:"cacheReserve"`
-	// Content of the custom error response.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+	CacheReserve *RulesetRulesActionParametersCacheReserve `field:"optional" json:"cacheReserve" yaml:"cacheReserve"`
+	// Error response content.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#content Ruleset#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#content Ruleset#content}
 	Content *string `field:"optional" json:"content" yaml:"content"`
-	// Content-Type of the custom error response.
+	// Content-type header to set with the response.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#content_type Ruleset#content_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#content_type Ruleset#content_type}
 	ContentType *string `field:"optional" json:"contentType" yaml:"contentType"`
-	// List of cookie values to include as part of custom fields logging.
+	// The cookie fields to log.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
-	CookieFields *[]*string `field:"optional" json:"cookieFields" yaml:"cookieFields"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+	CookieFields interface{} `field:"optional" json:"cookieFields" yaml:"cookieFields"`
 	// Turn off all active Cloudflare Apps.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 	DisableApps interface{} `field:"optional" json:"disableApps" yaml:"disableApps"`
-	// Turn off railgun feature of the Cloudflare Speed app.
+	// Turn off Real User Monitoring (RUM).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#disable_railgun Ruleset#disable_railgun}
-	DisableRailgun interface{} `field:"optional" json:"disableRailgun" yaml:"disableRailgun"`
-	// Turn off RUM feature.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 	DisableRum interface{} `field:"optional" json:"disableRum" yaml:"disableRum"`
-	// Turn off zaraz feature.
+	// Turn off Zaraz.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 	DisableZaraz interface{} `field:"optional" json:"disableZaraz" yaml:"disableZaraz"`
-	// edge_ttl block.
+	// TTL (Time to Live) specifies the maximum time to cache a resource in the Cloudflare edge network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
-	EdgeTtl interface{} `field:"optional" json:"edgeTtl" yaml:"edgeTtl"`
-	// Turn on or off the Cloudflare Email Obfuscation feature of the Cloudflare Scrape Shield app.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+	EdgeTtl *RulesetRulesActionParametersEdgeTtl `field:"optional" json:"edgeTtl" yaml:"edgeTtl"`
+	// Turn on or off Email Obfuscation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
 	EmailObfuscation interface{} `field:"optional" json:"emailObfuscation" yaml:"emailObfuscation"`
-	// Toggle fonts.
+	// Turn on or off Cloudflare Fonts.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#fonts Ruleset#fonts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#fonts Ruleset#fonts}
 	Fonts interface{} `field:"optional" json:"fonts" yaml:"fonts"`
-	// from_list block.
+	// Serve a redirect based on a bulk list lookup.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#from_list Ruleset#from_list}
-	FromList interface{} `field:"optional" json:"fromList" yaml:"fromList"`
-	// from_value block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#from_list Ruleset#from_list}
+	FromList *RulesetRulesActionParametersFromListStruct `field:"optional" json:"fromList" yaml:"fromList"`
+	// Serve a redirect based on the request properties.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#from_value Ruleset#from_value}
-	FromValue interface{} `field:"optional" json:"fromValue" yaml:"fromValue"`
-	// headers block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#from_value Ruleset#from_value}
+	FromValue *RulesetRulesActionParametersFromValue `field:"optional" json:"fromValue" yaml:"fromValue"`
+	// Map of request headers to modify.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#headers Ruleset#headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#headers Ruleset#headers}
 	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
-	// Host Header that request origin receives.
+	// Rewrite the HTTP Host header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#host_header Ruleset#host_header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#host_header Ruleset#host_header}
 	HostHeader *string `field:"optional" json:"hostHeader" yaml:"hostHeader"`
-	// Turn on or off the hotlink protection feature.
+	// Turn on or off the Hotlink Protection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 	HotlinkProtection interface{} `field:"optional" json:"hotlinkProtection" yaml:"hotlinkProtection"`
-	// Identifier of the action parameter to modify.
+	// The ID of the ruleset to execute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#id Ruleset#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#id Ruleset#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#increment Ruleset#increment}.
+	// Increment contains the delta to change the score and can be either positive or negative.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#increment Ruleset#increment}
 	Increment *float64 `field:"optional" json:"increment" yaml:"increment"`
-	// matched_data block.
+	// The configuration to use for matched data logging.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
-	MatchedData interface{} `field:"optional" json:"matchedData" yaml:"matchedData"`
-	// Turn on or off Cloudflare Mirage of the Cloudflare Speed app.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+	MatchedData *RulesetRulesActionParametersMatchedData `field:"optional" json:"matchedData" yaml:"matchedData"`
+	// Turn on or off Mirage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#mirage Ruleset#mirage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#mirage Ruleset#mirage}
 	Mirage interface{} `field:"optional" json:"mirage" yaml:"mirage"`
-	// Turn on or off the Cloudflare Opportunistic Encryption feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+	// Turn on or off Opportunistic Encryption.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 	OpportunisticEncryption interface{} `field:"optional" json:"opportunisticEncryption" yaml:"opportunisticEncryption"`
-	// origin block.
+	// Override the IP/TCP destination.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#origin Ruleset#origin}
-	Origin interface{} `field:"optional" json:"origin" yaml:"origin"`
-	// Enable or disable the use of a more compliant Cache Control parsing mechanism, enabled by default for most zones.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#origin Ruleset#origin}
+	Origin *RulesetRulesActionParametersOrigin `field:"optional" json:"origin" yaml:"origin"`
+	// When enabled, Cloudflare will aim to strictly adhere to RFC 7234.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 	OriginCacheControl interface{} `field:"optional" json:"originCacheControl" yaml:"originCacheControl"`
-	// Pass-through error page for origin.
+	// Generate Cloudflare error pages from issues sent from the origin server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+	// When on, error pages will trigger for issues from the origin
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
 	OriginErrorPagePassthru interface{} `field:"optional" json:"originErrorPagePassthru" yaml:"originErrorPagePassthru"`
-	// overrides block.
+	// A set of overrides to apply to the target ruleset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#overrides Ruleset#overrides}
-	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
-	// Point in the request/response lifecycle where the ruleset will be created.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#overrides Ruleset#overrides}
+	Overrides *RulesetRulesActionParametersOverrides `field:"optional" json:"overrides" yaml:"overrides"`
+	// A list of phases to skip the execution of. This option is incompatible with the ruleset and rulesets options.
 	//
-	// Available values: `ddos_l4`, `ddos_l7`, `http_config_settings`, `http_custom_errors`, `http_log_custom_fields`, `http_ratelimit`, `http_request_cache_settings`, `http_request_dynamic_redirect`, `http_request_firewall_custom`, `http_request_firewall_managed`, `http_request_late_transform`, `http_request_origin`, `http_request_redirect`, `http_request_sanitize`, `http_request_transform`, `http_response_compression`, `http_response_firewall_managed`, `http_response_headers_transform`, `magic_transit`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#phases Ruleset#phases}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#phases Ruleset#phases}
 	Phases *[]*string `field:"optional" json:"phases" yaml:"phases"`
-	// Apply options from the Polish feature of the Cloudflare Speed app.
+	// Configure the Polish level.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#polish Ruleset#polish}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#polish Ruleset#polish}
 	Polish *string `field:"optional" json:"polish" yaml:"polish"`
-	// Products to target with the actions. Available values: `bic`, `hot`, `ratelimit`, `securityLevel`, `uablock`, `waf`, `zonelockdown`.
+	// A list of legacy security products to skip the execution of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#products Ruleset#products}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#products Ruleset#products}
 	Products *[]*string `field:"optional" json:"products" yaml:"products"`
-	// Specifies a maximum timeout for reading content from an origin server.
+	// Define a timeout value between two successive read operations to your origin server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+	// Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 	ReadTimeout *float64 `field:"optional" json:"readTimeout" yaml:"readTimeout"`
-	// List of request headers to include as part of custom fields logging, in lowercase.
+	// The request fields to log.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
-	RequestFields *[]*string `field:"optional" json:"requestFields" yaml:"requestFields"`
-	// Respect strong ETags.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
+	RequestFields interface{} `field:"optional" json:"requestFields" yaml:"requestFields"`
+	// Specify whether or not Cloudflare should respect strong ETag (entity tag) headers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+	// When off, Cloudflare converts strong ETag headers to weak ETag headers.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 	RespectStrongEtags interface{} `field:"optional" json:"respectStrongEtags" yaml:"respectStrongEtags"`
-	// response block.
+	// The response to show when the block is applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#response Ruleset#response}
-	Response interface{} `field:"optional" json:"response" yaml:"response"`
-	// List of response headers to include as part of custom fields logging, in lowercase.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#response Ruleset#response}
+	Response *RulesetRulesActionParametersResponse `field:"optional" json:"response" yaml:"response"`
+	// The response fields to log.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
-	ResponseFields *[]*string `field:"optional" json:"responseFields" yaml:"responseFields"`
-	// Turn on or off Cloudflare Rocket Loader in the Cloudflare Speed app.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
+	ResponseFields interface{} `field:"optional" json:"responseFields" yaml:"responseFields"`
+	// Turn on or off Rocket Loader.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 	RocketLoader interface{} `field:"optional" json:"rocketLoader" yaml:"rocketLoader"`
-	// Map of managed WAF rule ID to comma-delimited string of ruleset rule IDs.
+	// A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of.
 	//
-	// Example: `rules = { "efb7b8c949ac4650a09736fc376e9aee" = "5de7edfa648c4d6891dc3e7f84534ffa,e3a567afc347477d9702d9047e97d760" }`.
+	// This option is incompatible with the ruleset option.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#rules Ruleset#rules}
-	Rules *map[string]*string `field:"optional" json:"rules" yaml:"rules"`
-	// Which ruleset ID to target.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#rules Ruleset#rules}
+	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	// A ruleset to skip the execution of. This option is incompatible with the rulesets, rules and phases options.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
 	Ruleset *string `field:"optional" json:"ruleset" yaml:"ruleset"`
-	// List of managed WAF rule IDs to target. Only valid when the `"action"` is set to skip.
+	// A list of ruleset IDs to skip the execution of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
+	// This option is incompatible with the ruleset and phases options.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
 	Rulesets *[]*string `field:"optional" json:"rulesets" yaml:"rulesets"`
-	// Control options for the Security Level feature from the Security app.
+	// Configure the Security Level.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#security_level Ruleset#security_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#security_level Ruleset#security_level}
 	SecurityLevel *string `field:"optional" json:"securityLevel" yaml:"securityLevel"`
-	// Turn on or off the Server Side Excludes feature of the Cloudflare Scrape Shield app.
+	// Turn on or off Server Side Excludes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 	ServerSideExcludes interface{} `field:"optional" json:"serverSideExcludes" yaml:"serverSideExcludes"`
-	// serve_stale block.
+	// Define if Cloudflare should serve stale content while getting the latest content from the origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
-	ServeStale interface{} `field:"optional" json:"serveStale" yaml:"serveStale"`
-	// sni block.
+	// If on, Cloudflare will not serve stale content while getting the latest content from the origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#sni Ruleset#sni}
-	Sni interface{} `field:"optional" json:"sni" yaml:"sni"`
-	// Control options for the SSL feature of the Edge Certificates tab in the Cloudflare SSL/TLS app.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+	ServeStale *RulesetRulesActionParametersServeStale `field:"optional" json:"serveStale" yaml:"serveStale"`
+	// Override the Server Name Indication (SNI).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#ssl Ruleset#ssl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#sni Ruleset#sni}
+	Sni *RulesetRulesActionParametersSni `field:"optional" json:"sni" yaml:"sni"`
+	// Configure the SSL level.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#ssl Ruleset#ssl}
 	Ssl *string `field:"optional" json:"ssl" yaml:"ssl"`
-	// HTTP status code of the custom error response.
+	// The status code to use for the error.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#status_code Ruleset#status_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#status_code Ruleset#status_code}
 	StatusCode *float64 `field:"optional" json:"statusCode" yaml:"statusCode"`
-	// Turn on or off the SXG feature.
+	// Turn on or off Signed Exchanges (SXG).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#sxg Ruleset#sxg}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#sxg Ruleset#sxg}
 	Sxg interface{} `field:"optional" json:"sxg" yaml:"sxg"`
-	// uri block.
+	// URI to rewrite the request to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#uri Ruleset#uri}
-	Uri interface{} `field:"optional" json:"uri" yaml:"uri"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#uri Ruleset#uri}
+	Uri *RulesetRulesActionParametersUri `field:"optional" json:"uri" yaml:"uri"`
 }
 

@@ -107,10 +107,6 @@ func (j *jsiiProxy_Web3Hostname) validateSetDnslinkParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_Web3Hostname) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Web3Hostname) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

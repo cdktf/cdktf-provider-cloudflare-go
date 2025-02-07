@@ -111,10 +111,6 @@ func (j *jsiiProxy_HyperdriveConfig) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_HyperdriveConfig) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_HyperdriveConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

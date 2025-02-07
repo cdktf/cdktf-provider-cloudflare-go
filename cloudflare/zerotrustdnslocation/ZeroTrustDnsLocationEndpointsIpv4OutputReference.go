@@ -5,15 +5,14 @@ package zerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdnslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	cdktf.ComplexObject
-	AuthenticationEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,8 +33,8 @@ type ZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDnsLocationEndpointsIpv4
-	SetInternalValue(val *ZeroTrustDnsLocationEndpointsIpv4)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +67,7 @@ type ZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -81,16 +81,6 @@ type ZeroTrustDnsLocationEndpointsIpv4OutputReference interface {
 // The jsii proxy struct for ZeroTrustDnsLocationEndpointsIpv4OutputReference
 type jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) AuthenticationEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"authenticationEnabled",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) ComplexObjectIndex() interface{} {
@@ -153,8 +143,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) InternalValue() *ZeroTrustDnsLocationEndpointsIpv4 {
-	var returns *ZeroTrustDnsLocationEndpointsIpv4
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -244,7 +234,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference)SetInternalValue(val *ZeroTrustDnsLocationEndpointsIpv4) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,6 +451,14 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

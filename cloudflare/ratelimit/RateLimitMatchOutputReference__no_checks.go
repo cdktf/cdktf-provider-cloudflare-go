@@ -47,6 +47,10 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validateInterpolationForAttrib
 	return nil
 }
 
+func (r *jsiiProxy_RateLimitMatchOutputReference) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RateLimitMatchOutputReference) validatePutRequestParameters(value *RateLimitMatchRequest) error {
 	return nil
 }
@@ -67,7 +71,7 @@ func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIsFrom
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetInternalValueParameters(val *RateLimitMatch) error {
+func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

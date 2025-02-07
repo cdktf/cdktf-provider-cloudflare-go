@@ -5,14 +5,14 @@ package zerotrustgatewayproxyendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewayproxyendpoint/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewayproxyendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
 type ZeroTrustGatewayProxyEndpoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,7 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,8 +44,6 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
@@ -74,6 +73,7 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -117,7 +117,6 @@ type ZeroTrustGatewayProxyEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -199,6 +198,16 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -244,16 +253,6 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -389,8 +388,18 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) TerraformResourceType() *strin
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
 func NewZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, config *ZeroTrustGatewayProxyEndpointConfig) ZeroTrustGatewayProxyEndpoint {
 	_init_.Initialize()
 
@@ -408,7 +417,7 @@ func NewZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Resource.
 func NewZeroTrustGatewayProxyEndpoint_Override(z ZeroTrustGatewayProxyEndpoint, scope constructs.Construct, id *string, config *ZeroTrustGatewayProxyEndpointConfig) {
 	_init_.Initialize()
 
@@ -464,17 +473,6 @@ func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint)SetForEach(val cdktf.ITerraform
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayProxyEndpoint)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -881,14 +879,6 @@ func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) OverrideLogicalId(newLogicalId
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayProxyEndpoint) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

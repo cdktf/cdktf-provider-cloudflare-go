@@ -111,10 +111,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetCustomHtmlParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -128,10 +124,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

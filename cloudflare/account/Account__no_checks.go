@@ -75,6 +75,14 @@ func (a *jsiiProxy_Account) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (a *jsiiProxy_Account) validatePutSettingsParameters(value *AccountSettings) error {
+	return nil
+}
+
+func (a *jsiiProxy_Account) validatePutUnitParameters(value *AccountUnit) error {
+	return nil
+}
+
 func validateAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -96,14 +104,6 @@ func (j *jsiiProxy_Account) validateSetConnectionParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_Account) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Account) validateSetEnforceTwofactorParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Account) validateSetIdParameters(val *string) error {
 	return nil
 }
 

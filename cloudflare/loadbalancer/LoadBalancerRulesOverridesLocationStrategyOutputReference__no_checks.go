@@ -79,7 +79,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) va
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesLocationStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesLocationStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

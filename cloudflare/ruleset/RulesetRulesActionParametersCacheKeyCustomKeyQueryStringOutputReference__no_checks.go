@@ -47,6 +47,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validatePutExcludeParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validatePutIncludeParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,14 +64,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetExcludeParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetIncludeParameters(val *[]*string) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

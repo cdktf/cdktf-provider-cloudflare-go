@@ -119,10 +119,6 @@ func (j *jsiiProxy_WaitingRoomEvent) validateSetEventStartTimeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomEvent) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomEvent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

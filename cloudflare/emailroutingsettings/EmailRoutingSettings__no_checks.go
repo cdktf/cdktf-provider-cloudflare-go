@@ -99,23 +99,11 @@ func (j *jsiiProxy_EmailRoutingSettings) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingSettings) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_EmailRoutingSettings) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_EmailRoutingSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_EmailRoutingSettings) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_EmailRoutingSettings) validateSetSkipWizardParameters(val interface{}) error {
 	return nil
 }
 

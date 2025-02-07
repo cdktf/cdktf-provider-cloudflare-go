@@ -95,19 +95,11 @@ func (j *jsiiProxy_ZeroTrustAccessTag) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) validateSetAppCountParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessTag) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustAccessTag) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -120,10 +112,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) validateSetNameParameters(val *string) er
 }
 
 func (j *jsiiProxy_ZeroTrustAccessTag) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

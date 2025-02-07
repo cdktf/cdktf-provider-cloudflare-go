@@ -5,17 +5,17 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer cloudflare_load_balancer}.
 type LoadBalancer interface {
 	cdktf.TerraformResource
-	AdaptiveRouting() LoadBalancerAdaptiveRoutingList
+	AdaptiveRouting() LoadBalancerAdaptiveRoutingOutputReference
 	AdaptiveRoutingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -29,12 +29,13 @@ type LoadBalancer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CountryPools() LoadBalancerCountryPoolsList
+	CountryPools() interface{}
+	SetCountryPools(val interface{})
 	CountryPoolsInput() interface{}
 	CreatedOn() *string
-	DefaultPoolIds() *[]*string
-	SetDefaultPoolIds(val *[]*string)
-	DefaultPoolIdsInput() *[]*string
+	DefaultPools() *[]*string
+	SetDefaultPools(val *[]*string)
+	DefaultPoolsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,9 +46,9 @@ type LoadBalancer interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	FallbackPoolId() *string
-	SetFallbackPoolId(val *string)
-	FallbackPoolIdInput() *string
+	FallbackPool() *string
+	SetFallbackPool(val *string)
+	FallbackPoolInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,21 +58,23 @@ type LoadBalancer interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LocationStrategy() LoadBalancerLocationStrategyList
+	LocationStrategy() LoadBalancerLocationStrategyOutputReference
 	LocationStrategyInput() interface{}
 	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Networks() *[]*string
+	SetNetworks(val *[]*string)
+	NetworksInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
-	PopPools() LoadBalancerPopPoolsList
+	PopPools() interface{}
+	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -84,17 +87,18 @@ type LoadBalancer interface {
 	Proxied() interface{}
 	SetProxied(val interface{})
 	ProxiedInput() interface{}
-	RandomSteering() LoadBalancerRandomSteeringList
+	RandomSteering() LoadBalancerRandomSteeringOutputReference
 	RandomSteeringInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
-	RegionPools() LoadBalancerRegionPoolsList
+	RegionPools() interface{}
+	SetRegionPools(val interface{})
 	RegionPoolsInput() interface{}
 	Rules() LoadBalancerRulesList
 	RulesInput() interface{}
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
-	SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesList
+	SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesOutputReference
 	SessionAffinityAttributesInput() interface{}
 	SessionAffinityInput() *string
 	SessionAffinityTtl() *float64
@@ -158,20 +162,17 @@ type LoadBalancer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdaptiveRouting(value interface{})
-	PutCountryPools(value interface{})
-	PutLocationStrategy(value interface{})
-	PutPopPools(value interface{})
-	PutRandomSteering(value interface{})
-	PutRegionPools(value interface{})
+	PutAdaptiveRouting(value *LoadBalancerAdaptiveRouting)
+	PutLocationStrategy(value *LoadBalancerLocationStrategy)
+	PutRandomSteering(value *LoadBalancerRandomSteering)
 	PutRules(value interface{})
-	PutSessionAffinityAttributes(value interface{})
+	PutSessionAffinityAttributes(value *LoadBalancerSessionAffinityAttributes)
 	ResetAdaptiveRouting()
 	ResetCountryPools()
 	ResetDescription()
 	ResetEnabled()
-	ResetId()
 	ResetLocationStrategy()
+	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -203,8 +204,8 @@ type jsiiProxy_LoadBalancer struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_LoadBalancer) AdaptiveRouting() LoadBalancerAdaptiveRoutingList {
-	var returns LoadBalancerAdaptiveRoutingList
+func (j *jsiiProxy_LoadBalancer) AdaptiveRouting() LoadBalancerAdaptiveRoutingOutputReference {
+	var returns LoadBalancerAdaptiveRoutingOutputReference
 	_jsii_.Get(
 		j,
 		"adaptiveRouting",
@@ -263,8 +264,8 @@ func (j *jsiiProxy_LoadBalancer) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) CountryPools() LoadBalancerCountryPoolsList {
-	var returns LoadBalancerCountryPoolsList
+func (j *jsiiProxy_LoadBalancer) CountryPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"countryPools",
@@ -293,21 +294,21 @@ func (j *jsiiProxy_LoadBalancer) CreatedOn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) DefaultPoolIds() *[]*string {
+func (j *jsiiProxy_LoadBalancer) DefaultPools() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"defaultPoolIds",
+		"defaultPools",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) DefaultPoolIdsInput() *[]*string {
+func (j *jsiiProxy_LoadBalancer) DefaultPoolsInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"defaultPoolIdsInput",
+		"defaultPoolsInput",
 		&returns,
 	)
 	return returns
@@ -363,21 +364,21 @@ func (j *jsiiProxy_LoadBalancer) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) FallbackPoolId() *string {
+func (j *jsiiProxy_LoadBalancer) FallbackPool() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"fallbackPoolId",
+		"fallbackPool",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) FallbackPoolIdInput() *string {
+func (j *jsiiProxy_LoadBalancer) FallbackPoolInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"fallbackPoolIdInput",
+		"fallbackPoolInput",
 		&returns,
 	)
 	return returns
@@ -423,16 +424,6 @@ func (j *jsiiProxy_LoadBalancer) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LoadBalancer) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -443,8 +434,8 @@ func (j *jsiiProxy_LoadBalancer) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) LocationStrategy() LoadBalancerLocationStrategyList {
-	var returns LoadBalancerLocationStrategyList
+func (j *jsiiProxy_LoadBalancer) LocationStrategy() LoadBalancerLocationStrategyOutputReference {
+	var returns LoadBalancerLocationStrategyOutputReference
 	_jsii_.Get(
 		j,
 		"locationStrategy",
@@ -493,6 +484,26 @@ func (j *jsiiProxy_LoadBalancer) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancer) Networks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancer) NetworksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -503,8 +514,8 @@ func (j *jsiiProxy_LoadBalancer) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) PopPools() LoadBalancerPopPoolsList {
-	var returns LoadBalancerPopPoolsList
+func (j *jsiiProxy_LoadBalancer) PopPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"popPools",
@@ -563,8 +574,8 @@ func (j *jsiiProxy_LoadBalancer) ProxiedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) RandomSteering() LoadBalancerRandomSteeringList {
-	var returns LoadBalancerRandomSteeringList
+func (j *jsiiProxy_LoadBalancer) RandomSteering() LoadBalancerRandomSteeringOutputReference {
+	var returns LoadBalancerRandomSteeringOutputReference
 	_jsii_.Get(
 		j,
 		"randomSteering",
@@ -593,8 +604,8 @@ func (j *jsiiProxy_LoadBalancer) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) RegionPools() LoadBalancerRegionPoolsList {
-	var returns LoadBalancerRegionPoolsList
+func (j *jsiiProxy_LoadBalancer) RegionPools() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"regionPools",
@@ -643,8 +654,8 @@ func (j *jsiiProxy_LoadBalancer) SessionAffinity() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesList {
-	var returns LoadBalancerSessionAffinityAttributesList
+func (j *jsiiProxy_LoadBalancer) SessionAffinityAttributes() LoadBalancerSessionAffinityAttributesOutputReference {
+	var returns LoadBalancerSessionAffinityAttributesOutputReference
 	_jsii_.Get(
 		j,
 		"sessionAffinityAttributes",
@@ -784,7 +795,7 @@ func (j *jsiiProxy_LoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalancerConfig) LoadBalancer {
 	_init_.Initialize()
 
@@ -802,7 +813,7 @@ func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer_Override(l LoadBalancer, scope constructs.Construct, id *string, config *LoadBalancerConfig) {
 	_init_.Initialize()
 
@@ -835,13 +846,24 @@ func (j *jsiiProxy_LoadBalancer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancer)SetDefaultPoolIds(val *[]*string) {
-	if err := j.validateSetDefaultPoolIdsParameters(val); err != nil {
+func (j *jsiiProxy_LoadBalancer)SetCountryPools(val interface{}) {
+	if err := j.validateSetCountryPoolsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"defaultPoolIds",
+		"countryPools",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancer)SetDefaultPools(val *[]*string) {
+	if err := j.validateSetDefaultPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultPools",
 		val,
 	)
 }
@@ -876,13 +898,13 @@ func (j *jsiiProxy_LoadBalancer)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancer)SetFallbackPoolId(val *string) {
-	if err := j.validateSetFallbackPoolIdParameters(val); err != nil {
+func (j *jsiiProxy_LoadBalancer)SetFallbackPool(val *string) {
+	if err := j.validateSetFallbackPoolParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"fallbackPoolId",
+		"fallbackPool",
 		val,
 	)
 }
@@ -891,17 +913,6 @@ func (j *jsiiProxy_LoadBalancer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LoadBalancer)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -924,6 +935,28 @@ func (j *jsiiProxy_LoadBalancer)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancer)SetNetworks(val *[]*string) {
+	if err := j.validateSetNetworksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancer)SetPopPools(val interface{}) {
+	if err := j.validateSetPopPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"popPools",
 		val,
 	)
 }
@@ -954,6 +987,17 @@ func (j *jsiiProxy_LoadBalancer)SetProxied(val interface{}) {
 	_jsii_.Set(
 		j,
 		"proxied",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancer)SetRegionPools(val interface{}) {
+	if err := j.validateSetRegionPoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regionPools",
 		val,
 	)
 }
@@ -1366,7 +1410,7 @@ func (l *jsiiProxy_LoadBalancer) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancer) PutAdaptiveRouting(value interface{}) {
+func (l *jsiiProxy_LoadBalancer) PutAdaptiveRouting(value *LoadBalancerAdaptiveRouting) {
 	if err := l.validatePutAdaptiveRoutingParameters(value); err != nil {
 		panic(err)
 	}
@@ -1377,18 +1421,7 @@ func (l *jsiiProxy_LoadBalancer) PutAdaptiveRouting(value interface{}) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancer) PutCountryPools(value interface{}) {
-	if err := l.validatePutCountryPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putCountryPools",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancer) PutLocationStrategy(value interface{}) {
+func (l *jsiiProxy_LoadBalancer) PutLocationStrategy(value *LoadBalancerLocationStrategy) {
 	if err := l.validatePutLocationStrategyParameters(value); err != nil {
 		panic(err)
 	}
@@ -1399,35 +1432,13 @@ func (l *jsiiProxy_LoadBalancer) PutLocationStrategy(value interface{}) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancer) PutPopPools(value interface{}) {
-	if err := l.validatePutPopPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putPopPools",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancer) PutRandomSteering(value interface{}) {
+func (l *jsiiProxy_LoadBalancer) PutRandomSteering(value *LoadBalancerRandomSteering) {
 	if err := l.validatePutRandomSteeringParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putRandomSteering",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LoadBalancer) PutRegionPools(value interface{}) {
-	if err := l.validatePutRegionPoolsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putRegionPools",
 		[]interface{}{value},
 	)
 }
@@ -1443,7 +1454,7 @@ func (l *jsiiProxy_LoadBalancer) PutRules(value interface{}) {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancer) PutSessionAffinityAttributes(value interface{}) {
+func (l *jsiiProxy_LoadBalancer) PutSessionAffinityAttributes(value *LoadBalancerSessionAffinityAttributes) {
 	if err := l.validatePutSessionAffinityAttributesParameters(value); err != nil {
 		panic(err)
 	}
@@ -1486,18 +1497,18 @@ func (l *jsiiProxy_LoadBalancer) ResetEnabled() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancer) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LoadBalancer) ResetLocationStrategy() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLocationStrategy",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancer) ResetNetworks() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetNetworks",
 		nil, // no parameters
 	)
 }

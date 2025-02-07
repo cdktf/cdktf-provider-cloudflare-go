@@ -127,6 +127,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExpression", GoMethod: "ResetExpression"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSnippetName", GoMethod: "ResetSnippetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "snippetName", GoGetter: "SnippetName"},
 			_jsii_.MemberProperty{JsiiProperty: "snippetNameInput", GoGetter: "SnippetNameInput"},

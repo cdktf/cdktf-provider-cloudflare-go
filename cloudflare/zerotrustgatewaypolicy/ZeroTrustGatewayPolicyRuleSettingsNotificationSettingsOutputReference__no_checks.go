@@ -63,11 +63,11 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetMessageParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetMsgParameters(val *string) error {
 	return nil
 }
 

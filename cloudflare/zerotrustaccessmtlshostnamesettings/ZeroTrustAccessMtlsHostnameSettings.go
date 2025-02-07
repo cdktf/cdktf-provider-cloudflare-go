@@ -5,14 +5,14 @@ package zerotrustaccessmtlshostnamesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessmtlshostnamesettings/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlshostnamesettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
 type ZeroTrustAccessMtlsHostnameSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -117,7 +117,6 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSettings()
 	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) ZeroTrustAccessMtlsHostnameSettings {
 	_init_.Initialize()
 
@@ -376,7 +375,7 @@ func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings_Override(z ZeroTrustAccessMtlsHostnameSettings, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) {
 	_init_.Initialize()
 
@@ -853,14 +852,6 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ResetSettings() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetSettings",
 		nil, // no parameters
 	)
 }

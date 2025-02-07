@@ -67,7 +67,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetInternalValueParameters(val *PageRuleActionsCacheKeyFieldsCookie) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

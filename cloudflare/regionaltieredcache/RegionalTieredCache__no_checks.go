@@ -99,10 +99,6 @@ func (j *jsiiProxy_RegionalTieredCache) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_RegionalTieredCache) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RegionalTieredCache) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

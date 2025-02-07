@@ -207,22 +207,22 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustAccessPolicyApprovalGroup:
-		value := value.(*[]*ZeroTrustAccessPolicyApprovalGroup)
+	case *[]*ZeroTrustAccessPolicyApprovalGroups:
+		value := value.(*[]*ZeroTrustAccessPolicyApprovalGroups)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustAccessPolicyApprovalGroup:
-		value_ := value.([]*ZeroTrustAccessPolicyApprovalGroup)
+	case []*ZeroTrustAccessPolicyApprovalGroups:
+		value_ := value.([]*ZeroTrustAccessPolicyApprovalGroups)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -231,19 +231,8 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutApprovalGroupParameters(val
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessPolicyApprovalGroup; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessPolicyApprovalGroups; received %#v (a %T)", value, value)
 		}
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) validatePutConnectionRulesParameters(value *ZeroTrustAccessPolicyConnectionRules) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
 	}
 
 	return nil
@@ -390,14 +379,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetAccountIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApplicationIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetApprovalRequiredParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -516,14 +497,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetDecisionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetIsolationRequiredParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -553,14 +526,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetLifecycleParameters(val *cd
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPrecedenceParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -643,14 +608,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetPurposeJustificationRequire
 }
 
 func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetSessionDurationParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) validateSetZoneIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

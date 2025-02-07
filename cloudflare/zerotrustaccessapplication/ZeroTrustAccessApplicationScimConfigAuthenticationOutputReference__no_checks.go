@@ -107,7 +107,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigAuthenticationOutputRefer
 	return nil
 }
 
-func validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessApplicationScimConfigAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

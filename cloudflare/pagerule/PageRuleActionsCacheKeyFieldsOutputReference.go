@@ -5,9 +5,9 @@ package pagerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -24,7 +24,7 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Cookie() PageRuleActionsCacheKeyFieldsCookieOutputReference
-	CookieInput() *PageRuleActionsCacheKeyFieldsCookie
+	CookieInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,13 +33,13 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Header() PageRuleActionsCacheKeyFieldsHeaderOutputReference
-	HeaderInput() *PageRuleActionsCacheKeyFieldsHeader
+	HeaderInput() interface{}
 	Host() PageRuleActionsCacheKeyFieldsHostOutputReference
-	HostInput() *PageRuleActionsCacheKeyFieldsHost
-	InternalValue() *PageRuleActionsCacheKeyFields
-	SetInternalValue(val *PageRuleActionsCacheKeyFields)
+	HostInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	QueryString() PageRuleActionsCacheKeyFieldsQueryStringOutputReference
-	QueryStringInput() *PageRuleActionsCacheKeyFieldsQueryString
+	QueryStringInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	User() PageRuleActionsCacheKeyFieldsUserOutputReference
-	UserInput() *PageRuleActionsCacheKeyFieldsUser
+	UserInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,6 +81,9 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	PutUser(value *PageRuleActionsCacheKeyFieldsUser)
 	ResetCookie()
 	ResetHeader()
+	ResetHost()
+	ResetQueryString()
+	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -126,8 +129,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) Cookie() PageRu
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) CookieInput() *PageRuleActionsCacheKeyFieldsCookie {
-	var returns *PageRuleActionsCacheKeyFieldsCookie
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) CookieInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cookieInput",
@@ -166,8 +169,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) Header() PageRu
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) HeaderInput() *PageRuleActionsCacheKeyFieldsHeader {
-	var returns *PageRuleActionsCacheKeyFieldsHeader
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) HeaderInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"headerInput",
@@ -186,8 +189,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) Host() PageRule
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) HostInput() *PageRuleActionsCacheKeyFieldsHost {
-	var returns *PageRuleActionsCacheKeyFieldsHost
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) HostInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"hostInput",
@@ -196,8 +199,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) HostInput() *Pa
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) InternalValue() *PageRuleActionsCacheKeyFields {
-	var returns *PageRuleActionsCacheKeyFields
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,8 +219,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) QueryString() P
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) QueryStringInput() *PageRuleActionsCacheKeyFieldsQueryString {
-	var returns *PageRuleActionsCacheKeyFieldsQueryString
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) QueryStringInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"queryStringInput",
@@ -256,8 +259,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) User() PageRule
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) UserInput() *PageRuleActionsCacheKeyFieldsUser {
-	var returns *PageRuleActionsCacheKeyFieldsUser
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) UserInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"userInput",
@@ -316,7 +319,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFields) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,6 +605,30 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetHeader() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetHeader",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetQueryString() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetQueryString",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetUser() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUser",
 		nil, // no parameters
 	)
 }

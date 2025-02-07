@@ -47,7 +47,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validate
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validatePutAuthenticationParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validatePutAuthenticationParameters(value *ZeroTrustAccessApplicationScimConfigAuthentication) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationScimConfig) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

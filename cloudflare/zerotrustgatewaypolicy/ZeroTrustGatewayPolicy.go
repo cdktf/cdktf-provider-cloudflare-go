@@ -5,14 +5,14 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -33,6 +33,8 @@ type ZeroTrustGatewayPolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	DeletedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,6 +48,8 @@ type ZeroTrustGatewayPolicy interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Expiration() ZeroTrustGatewayPolicyExpirationOutputReference
+	ExpirationInput() interface{}
 	Filters() *[]*string
 	SetFilters(val *[]*string)
 	FiltersInput() *[]*string
@@ -58,11 +62,9 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
 	Identity() *string
 	SetIdentity(val *string)
 	IdentityInput() *string
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -86,7 +88,9 @@ type ZeroTrustGatewayPolicy interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RuleSettings() ZeroTrustGatewayPolicyRuleSettingsOutputReference
-	RuleSettingsInput() *ZeroTrustGatewayPolicyRuleSettings
+	RuleSettingsInput() interface{}
+	Schedule() ZeroTrustGatewayPolicyScheduleOutputReference
+	ScheduleInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,6 +100,7 @@ type ZeroTrustGatewayPolicy interface {
 	Traffic() *string
 	SetTraffic(val *string)
 	TrafficInput() *string
+	UpdatedAt() *string
 	Version() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -140,16 +145,21 @@ type ZeroTrustGatewayPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExpiration(value *ZeroTrustGatewayPolicyExpiration)
 	PutRuleSettings(value *ZeroTrustGatewayPolicyRuleSettings)
+	PutSchedule(value *ZeroTrustGatewayPolicySchedule)
+	ResetDescription()
 	ResetDevicePosture()
 	ResetEnabled()
+	ResetExpiration()
 	ResetFilters()
-	ResetId()
 	ResetIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrecedence()
 	ResetRuleSettings()
+	ResetSchedule()
 	ResetTraffic()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -249,6 +259,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) DeletedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicy) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -314,6 +344,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) EnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Expiration() ZeroTrustGatewayPolicyExpirationOutputReference {
+	var returns ZeroTrustGatewayPolicyExpirationOutputReference
+	_jsii_.Get(
+		j,
+		"expiration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) ExpirationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"expirationInput",
 		&returns,
 	)
 	return returns
@@ -394,16 +444,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) IdentityInput() *string {
 	_jsii_.Get(
 		j,
 		"identityInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -509,11 +549,31 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettings() ZeroTrustGatewayPolicy
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettingsInput() *ZeroTrustGatewayPolicyRuleSettings {
-	var returns *ZeroTrustGatewayPolicyRuleSettings
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) RuleSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ruleSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) Schedule() ZeroTrustGatewayPolicyScheduleOutputReference {
+	var returns ZeroTrustGatewayPolicyScheduleOutputReference
+	_jsii_.Get(
+		j,
+		"schedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) ScheduleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scheduleInput",
 		&returns,
 	)
 	return returns
@@ -569,6 +629,16 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) TrafficInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicy) Version() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -580,7 +650,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -598,7 +668,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 
@@ -709,17 +779,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicy)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1151,6 +1210,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutExpiration(value *ZeroTrustGatewayPolicyExpiration) {
+	if err := z.validatePutExpirationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putExpiration",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutRuleSettings(value *ZeroTrustGatewayPolicyRuleSettings) {
 	if err := z.validatePutRuleSettingsParameters(value); err != nil {
 		panic(err)
@@ -1159,6 +1229,25 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutRuleSettings(value *ZeroTrustGatew
 		z,
 		"putRuleSettings",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) PutSchedule(value *ZeroTrustGatewayPolicySchedule) {
+	if err := z.validatePutScheduleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putSchedule",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetDescription() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 
@@ -1178,18 +1267,18 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetEnabled() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetFilters() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetExpiration() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetFilters",
+		"resetExpiration",
 		nil, // no parameters
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetId() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetFilters() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"resetFilters",
 		nil, // no parameters
 	)
 }
@@ -1210,10 +1299,26 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetOverrideLogicalId() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetPrecedence() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPrecedence",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetRuleSettings() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetRuleSettings",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) ResetSchedule() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSchedule",
 		nil, // no parameters
 	)
 }

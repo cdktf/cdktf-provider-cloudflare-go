@@ -5,9 +5,9 @@ package waitingroomrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroomrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/waitingroomrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,17 +34,16 @@ type WaitingRoomRulesRulesOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
-	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Status() *string
-	SetStatus(val *string)
-	StatusInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -53,7 +52,6 @@ type WaitingRoomRulesRulesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Version() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -79,7 +77,7 @@ type WaitingRoomRulesRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
-	ResetStatus()
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +163,26 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) DescriptionInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Expression() *string {
 	var returns *string
 	_jsii_.Get(
@@ -195,41 +213,11 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) StatusInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"statusInput",
 		&returns,
 	)
 	return returns
@@ -250,16 +238,6 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) TerraformResource() cdk
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) Version() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"version",
 		&returns,
 	)
 	return returns
@@ -337,6 +315,17 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference)SetDescription(val *stri
 	)
 }
 
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference)SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
@@ -355,17 +344,6 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference)SetInternalValue(val int
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference)SetStatus(val *string) {
-	if err := j.validateSetStatusParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"status",
 		val,
 	)
 }
@@ -586,10 +564,10 @@ func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) ResetDescription() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) ResetStatus() {
+func (w *jsiiProxy_WaitingRoomRulesRulesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetStatus",
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

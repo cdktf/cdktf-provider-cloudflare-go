@@ -5,14 +5,14 @@ package zerotrustdevicemanagednetworks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdevicemanagednetworks/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdevicemanagednetworks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
 type ZeroTrustDeviceManagedNetworks interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,7 +21,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() ZeroTrustDeviceManagedNetworksConfigAOutputReference
-	ConfigInput() *ZeroTrustDeviceManagedNetworksConfigA
+	ConfigInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,8 +45,6 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -54,6 +52,7 @@ type ZeroTrustDeviceManagedNetworks interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkId() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -119,7 +118,6 @@ type ZeroTrustDeviceManagedNetworks interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfig(value *ZeroTrustDeviceManagedNetworksConfigA)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -181,8 +179,8 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Config() ZeroTrustDeviceManag
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) ConfigInput() *ZeroTrustDeviceManagedNetworksConfigA {
-	var returns *ZeroTrustDeviceManagedNetworksConfigA
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) ConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"configInput",
@@ -271,16 +269,6 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -306,6 +294,16 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) NetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkId",
 		&returns,
 	)
 	return returns
@@ -402,7 +400,7 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) ZeroTrustDeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -420,7 +418,7 @@ func NewZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Resource.
 func NewZeroTrustDeviceManagedNetworks_Override(z ZeroTrustDeviceManagedNetworks, scope constructs.Construct, id *string, config *ZeroTrustDeviceManagedNetworksConfig) {
 	_init_.Initialize()
 
@@ -476,17 +474,6 @@ func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDeviceManagedNetworks)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -904,14 +891,6 @@ func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) PutConfig(value *ZeroTrustDev
 		z,
 		"putConfig",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDeviceManagedNetworks) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

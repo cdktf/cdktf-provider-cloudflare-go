@@ -5,9 +5,9 @@ package zerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrusttunnelcloudflaredconfig/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference interface 
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
-	SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -234,7 +234,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference)SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigWarpRouting) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

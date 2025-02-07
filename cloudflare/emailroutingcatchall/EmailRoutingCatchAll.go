@@ -5,18 +5,18 @@ package emailroutingcatchall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/emailroutingcatchall/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/emailroutingcatchall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all}.
 type EmailRoutingCatchAll interface {
 	cdktf.TerraformResource
-	Action() EmailRoutingCatchAllActionList
-	ActionInput() interface{}
+	Actions() EmailRoutingCatchAllActionsList
+	ActionsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,14 +45,12 @@ type EmailRoutingCatchAll interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Matcher() EmailRoutingCatchAllMatcherList
-	MatcherInput() interface{}
+	Matchers() EmailRoutingCatchAllMatchersList
+	MatchersInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -121,10 +119,10 @@ type EmailRoutingCatchAll interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAction(value interface{})
-	PutMatcher(value interface{})
+	PutActions(value interface{})
+	PutMatchers(value interface{})
 	ResetEnabled()
-	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -146,21 +144,21 @@ type jsiiProxy_EmailRoutingCatchAll struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) Action() EmailRoutingCatchAllActionList {
-	var returns EmailRoutingCatchAllActionList
+func (j *jsiiProxy_EmailRoutingCatchAll) Actions() EmailRoutingCatchAllActionsList {
+	var returns EmailRoutingCatchAllActionsList
 	_jsii_.Get(
 		j,
-		"action",
+		"actions",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) ActionInput() interface{} {
+func (j *jsiiProxy_EmailRoutingCatchAll) ActionsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"actionInput",
+		"actionsInput",
 		&returns,
 	)
 	return returns
@@ -276,16 +274,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_EmailRoutingCatchAll) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -296,21 +284,21 @@ func (j *jsiiProxy_EmailRoutingCatchAll) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) Matcher() EmailRoutingCatchAllMatcherList {
-	var returns EmailRoutingCatchAllMatcherList
+func (j *jsiiProxy_EmailRoutingCatchAll) Matchers() EmailRoutingCatchAllMatchersList {
+	var returns EmailRoutingCatchAllMatchersList
 	_jsii_.Get(
 		j,
-		"matcher",
+		"matchers",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAll) MatcherInput() interface{} {
+func (j *jsiiProxy_EmailRoutingCatchAll) MatchersInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"matcherInput",
+		"matchersInput",
 		&returns,
 	)
 	return returns
@@ -437,7 +425,7 @@ func (j *jsiiProxy_EmailRoutingCatchAll) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) EmailRoutingCatchAll {
 	_init_.Initialize()
 
@@ -455,7 +443,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/email_routing_catch_all cloudflare_email_routing_catch_all} Resource.
 func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.Construct, id *string, config *EmailRoutingCatchAllConfig) {
 	_init_.Initialize()
 
@@ -511,17 +499,6 @@ func (j *jsiiProxy_EmailRoutingCatchAll)SetForEach(val cdktf.ITerraformIterator)
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailRoutingCatchAll)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -931,24 +908,24 @@ func (e *jsiiProxy_EmailRoutingCatchAll) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAll) PutAction(value interface{}) {
-	if err := e.validatePutActionParameters(value); err != nil {
+func (e *jsiiProxy_EmailRoutingCatchAll) PutActions(value interface{}) {
+	if err := e.validatePutActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
-		"putAction",
+		"putActions",
 		[]interface{}{value},
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAll) PutMatcher(value interface{}) {
-	if err := e.validatePutMatcherParameters(value); err != nil {
+func (e *jsiiProxy_EmailRoutingCatchAll) PutMatchers(value interface{}) {
+	if err := e.validatePutMatchersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
-		"putMatcher",
+		"putMatchers",
 		[]interface{}{value},
 	)
 }
@@ -961,10 +938,10 @@ func (e *jsiiProxy_EmailRoutingCatchAll) ResetEnabled() {
 	)
 }
 
-func (e *jsiiProxy_EmailRoutingCatchAll) ResetId() {
+func (e *jsiiProxy_EmailRoutingCatchAll) ResetName() {
 	_jsii_.InvokeVoid(
 		e,
-		"resetId",
+		"resetName",
 		nil, // no parameters
 	)
 }

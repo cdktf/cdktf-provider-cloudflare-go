@@ -22,168 +22,165 @@ type ZeroTrustAccessApplicationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource. Conflicts with `zone_id`.
+	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#account_id ZeroTrustAccessApplication#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#account_id ZeroTrustAccessApplication#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// When set to true, users can authenticate to this application using their WARP session.
 	//
 	// When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#allow_authenticate_via_warp ZeroTrustAccessApplication#allow_authenticate_via_warp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#allow_authenticate_via_warp ZeroTrustAccessApplication#allow_authenticate_via_warp}
 	AllowAuthenticateViaWarp interface{} `field:"optional" json:"allowAuthenticateViaWarp" yaml:"allowAuthenticateViaWarp"`
-	// The identity providers selected for the application.
+	// The identity providers your users can select when connecting to this application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#allowed_idps ZeroTrustAccessApplication#allowed_idps}
+	// Defaults to all IdPs configured in your account.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#allowed_idps ZeroTrustAccessApplication#allowed_idps}
 	AllowedIdps *[]*string `field:"optional" json:"allowedIdps" yaml:"allowedIdps"`
-	// The logo URL of the app launcher.
+	// The image URL of the logo shown in the App Launcher header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#app_launcher_logo_url ZeroTrustAccessApplication#app_launcher_logo_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#app_launcher_logo_url ZeroTrustAccessApplication#app_launcher_logo_url}
 	AppLauncherLogoUrl *string `field:"optional" json:"appLauncherLogoUrl" yaml:"appLauncherLogoUrl"`
-	// Option to show/hide applications in App Launcher. Defaults to `true`.
+	// Displays the application in the App Launcher.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#app_launcher_visible ZeroTrustAccessApplication#app_launcher_visible}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#app_launcher_visible ZeroTrustAccessApplication#app_launcher_visible}
 	AppLauncherVisible interface{} `field:"optional" json:"appLauncherVisible" yaml:"appLauncherVisible"`
-	// Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
+	// When set to `true`, users skip the identity provider selection step during login.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#auto_redirect_to_identity ZeroTrustAccessApplication#auto_redirect_to_identity}
+	// You must specify only one identity provider in allowed_idps.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#auto_redirect_to_identity ZeroTrustAccessApplication#auto_redirect_to_identity}
 	AutoRedirectToIdentity interface{} `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
-	// The background color of the app launcher.
+	// The background color of the App Launcher page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#bg_color ZeroTrustAccessApplication#bg_color}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#bg_color ZeroTrustAccessApplication#bg_color}
 	BgColor *string `field:"optional" json:"bgColor" yaml:"bgColor"`
-	// cors_headers block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#cors_headers ZeroTrustAccessApplication#cors_headers}.
+	CorsHeaders *ZeroTrustAccessApplicationCorsHeaders `field:"optional" json:"corsHeaders" yaml:"corsHeaders"`
+	// The custom error message shown to a user when they are denied access to the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#cors_headers ZeroTrustAccessApplication#cors_headers}
-	CorsHeaders interface{} `field:"optional" json:"corsHeaders" yaml:"corsHeaders"`
-	// Option that returns a custom error message when a user is denied access to the application.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#custom_deny_message ZeroTrustAccessApplication#custom_deny_message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#custom_deny_message ZeroTrustAccessApplication#custom_deny_message}
 	CustomDenyMessage *string `field:"optional" json:"customDenyMessage" yaml:"customDenyMessage"`
-	// Option that redirects to a custom URL when a user is denied access to the application via identity based rules.
+	// The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#custom_deny_url ZeroTrustAccessApplication#custom_deny_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#custom_deny_url ZeroTrustAccessApplication#custom_deny_url}
 	CustomDenyUrl *string `field:"optional" json:"customDenyUrl" yaml:"customDenyUrl"`
-	// Option that redirects to a custom URL when a user is denied access to the application via non identity rules.
+	// The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#custom_non_identity_deny_url ZeroTrustAccessApplication#custom_non_identity_deny_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#custom_non_identity_deny_url ZeroTrustAccessApplication#custom_non_identity_deny_url}
 	CustomNonIdentityDenyUrl *string `field:"optional" json:"customNonIdentityDenyUrl" yaml:"customNonIdentityDenyUrl"`
-	// The custom pages selected for the application.
+	// The custom pages that will be displayed when applicable for this application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#custom_pages ZeroTrustAccessApplication#custom_pages}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#custom_pages ZeroTrustAccessApplication#custom_pages}
 	CustomPages *[]*string `field:"optional" json:"customPages" yaml:"customPages"`
-	// destinations block.
+	// List of destinations secured by Access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#destinations ZeroTrustAccessApplication#destinations}
+	// This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+	//
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#destinations ZeroTrustAccessApplication#destinations}
 	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
-	// The primary hostname and path that Access will secure.
+	// The primary hostname and path secured by Access.
 	//
-	// If the app is visible in the App Launcher dashboard, this is the domain that will be displayed.
+	// This domain will be displayed if the app is visible in the App Launcher.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
 	Domain *string `field:"optional" json:"domain" yaml:"domain"`
-	// The type of the primary domain. Available values: `public`, `private`.
+	// Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#domain_type ZeroTrustAccessApplication#domain_type}
-	DomainType *string `field:"optional" json:"domainType" yaml:"domainType"`
-	// Option to provide increased security against compromised authorization tokens and CSRF attacks by requiring an additional "binding" cookie on requests.
-	//
-	// Defaults to `false`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#enable_binding_cookie ZeroTrustAccessApplication#enable_binding_cookie}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#enable_binding_cookie ZeroTrustAccessApplication#enable_binding_cookie}
 	EnableBindingCookie interface{} `field:"optional" json:"enableBindingCookie" yaml:"enableBindingCookie"`
-	// footer_links block.
+	// The links in the App Launcher footer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#footer_links ZeroTrustAccessApplication#footer_links}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#footer_links ZeroTrustAccessApplication#footer_links}
 	FooterLinks interface{} `field:"optional" json:"footerLinks" yaml:"footerLinks"`
-	// The background color of the header bar in the app launcher.
+	// The background color of the App Launcher header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#header_bg_color ZeroTrustAccessApplication#header_bg_color}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#header_bg_color ZeroTrustAccessApplication#header_bg_color}
 	HeaderBgColor *string `field:"optional" json:"headerBgColor" yaml:"headerBgColor"`
-	// Option to add the `HttpOnly` cookie flag to access tokens.
+	// Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#http_only_cookie_attribute ZeroTrustAccessApplication#http_only_cookie_attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#http_only_cookie_attribute ZeroTrustAccessApplication#http_only_cookie_attribute}
 	HttpOnlyCookieAttribute interface{} `field:"optional" json:"httpOnlyCookieAttribute" yaml:"httpOnlyCookieAttribute"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#id ZeroTrustAccessApplication#id}.
+	// The design of the App Launcher landing page shown to users when they log in.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// landing_page_design block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#landing_page_design ZeroTrustAccessApplication#landing_page_design}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#landing_page_design ZeroTrustAccessApplication#landing_page_design}
 	LandingPageDesign *ZeroTrustAccessApplicationLandingPageDesign `field:"optional" json:"landingPageDesign" yaml:"landingPageDesign"`
-	// Image URL for the logo shown in the app launcher dashboard.
+	// The image URL for the logo shown in the App Launcher dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#logo_url ZeroTrustAccessApplication#logo_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#logo_url ZeroTrustAccessApplication#logo_url}
 	LogoUrl *string `field:"optional" json:"logoUrl" yaml:"logoUrl"`
-	// Friendly name of the Access Application.
+	// The name of the application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#name ZeroTrustAccessApplication#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Allows options preflight requests to bypass Access authentication and go directly to the origin.
 	//
-	// Cannot turn on if cors_headers is set. Defaults to `false`.
+	// Cannot turn on if cors_headers is set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#options_preflight_bypass ZeroTrustAccessApplication#options_preflight_bypass}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#options_preflight_bypass ZeroTrustAccessApplication#options_preflight_bypass}
 	OptionsPreflightBypass interface{} `field:"optional" json:"optionsPreflightBypass" yaml:"optionsPreflightBypass"`
-	// The policies associated with the application, in ascending order of precedence.
+	// Enables cookie paths to scope an application's JWT to the application path.
 	//
-	// Warning: Do not use this field while you still have this application ID referenced as `application_id` in any `cloudflare_access_policy` resource, as it can result in an inconsistent state.
+	// If disabled, the JWT will scope to the hostname by default
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#policies ZeroTrustAccessApplication#policies}
-	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
-	// saas_app block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#path_cookie_attribute ZeroTrustAccessApplication#path_cookie_attribute}
+	PathCookieAttribute interface{} `field:"optional" json:"pathCookieAttribute" yaml:"pathCookieAttribute"`
+	// The policies that Access applies to the application, in ascending order of precedence.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#saas_app ZeroTrustAccessApplication#saas_app}
+	// Items can reference existing policies or create new policies exclusive to the application.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#policies ZeroTrustAccessApplication#policies}
+	Policies interface{} `field:"optional" json:"policies" yaml:"policies"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#saas_app ZeroTrustAccessApplication#saas_app}.
 	SaasApp *ZeroTrustAccessApplicationSaasApp `field:"optional" json:"saasApp" yaml:"saasApp"`
-	// Defines the same-site cookie setting for access tokens. Available values: `none`, `lax`, `strict`.
+	// Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#same_site_cookie_attribute ZeroTrustAccessApplication#same_site_cookie_attribute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#same_site_cookie_attribute ZeroTrustAccessApplication#same_site_cookie_attribute}
 	SameSiteCookieAttribute *string `field:"optional" json:"sameSiteCookieAttribute" yaml:"sameSiteCookieAttribute"`
-	// scim_config block.
+	// Configuration for provisioning to this application via SCIM. This is currently in closed beta.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#scim_config ZeroTrustAccessApplication#scim_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#scim_config ZeroTrustAccessApplication#scim_config}
 	ScimConfig *ZeroTrustAccessApplicationScimConfig `field:"optional" json:"scimConfig" yaml:"scimConfig"`
-	// List of public domains secured by Access.
+	// List of public domains that Access will secure.
 	//
-	// Only present for self_hosted, vnc, and ssh applications. Always includes the value set as `domain`. Deprecated in favor of `destinations` and will be removed in the next major version. Conflicts with `destinations`.
+	// This field is deprecated in favor of `destinations` and will be supported until **November 21, 2025.** If `destinations` are provided, then `self_hosted_domains` will be ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#self_hosted_domains ZeroTrustAccessApplication#self_hosted_domains}
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#self_hosted_domains ZeroTrustAccessApplication#self_hosted_domains}
 	SelfHostedDomains *[]*string `field:"optional" json:"selfHostedDomains" yaml:"selfHostedDomains"`
-	// Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
+	// Returns a 401 status code when the request is blocked by a Service Auth policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#service_auth_401_redirect ZeroTrustAccessApplication#service_auth_401_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#service_auth_401_redirect ZeroTrustAccessApplication#service_auth_401_redirect}
 	ServiceAuth401Redirect interface{} `field:"optional" json:"serviceAuth401Redirect" yaml:"serviceAuth401Redirect"`
-	// How often a user will be forced to re-authorise.
+	// The amount of time that tokens issued for this application will be valid.
 	//
-	// Must be in the format `48h` or `2h45m`. Defaults to `24h`.
+	// Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#session_duration ZeroTrustAccessApplication#session_duration}
 	SessionDuration *string `field:"optional" json:"sessionDuration" yaml:"sessionDuration"`
-	// Option to skip the App Launcher landing page. Defaults to `false`.
+	// Determines when to skip the App Launcher landing page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#skip_app_launcher_login_page ZeroTrustAccessApplication#skip_app_launcher_login_page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#skip_app_launcher_login_page ZeroTrustAccessApplication#skip_app_launcher_login_page}
 	SkipAppLauncherLoginPage interface{} `field:"optional" json:"skipAppLauncherLoginPage" yaml:"skipAppLauncherLoginPage"`
-	// Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
+	// Enables automatic authentication through cloudflared.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#skip_interstitial ZeroTrustAccessApplication#skip_interstitial}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#skip_interstitial ZeroTrustAccessApplication#skip_interstitial}
 	SkipInterstitial interface{} `field:"optional" json:"skipInterstitial" yaml:"skipInterstitial"`
-	// The itags associated with the application.
+	// The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#tags ZeroTrustAccessApplication#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#tags ZeroTrustAccessApplication#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
-	// target_criteria block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#target_criteria ZeroTrustAccessApplication#target_criteria}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#target_criteria ZeroTrustAccessApplication#target_criteria}.
 	TargetCriteria interface{} `field:"optional" json:"targetCriteria" yaml:"targetCriteria"`
-	// The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`, `infrastructure`. Defaults to `self_hosted`.
+	// The application type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#type ZeroTrustAccessApplication#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
-	// The zone identifier to target for the resource. Conflicts with `account_id`.
+	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_application#zone_id ZeroTrustAccessApplication#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#zone_id ZeroTrustAccessApplication#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

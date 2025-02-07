@@ -5,21 +5,19 @@ package spectrumapplication
 
 
 type SpectrumApplicationEdgeIps struct {
-	// The type of edge IP configuration specified. Available values: `dynamic`, `static`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#type SpectrumApplication#type}
-	Type *string `field:"required" json:"type" yaml:"type"`
 	// The IP versions supported for inbound connections on Spectrum anycast IPs.
 	//
-	// Required when `type` is not `static`. Available values: `all`, `ipv4`, `ipv6`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
 	Connectivity *string `field:"optional" json:"connectivity" yaml:"connectivity"`
-	// The collection of customer owned IPs to broadcast via anycast for this hostname and application.
+	// The array of customer owned IPs we broadcast via anycast for this hostname and application.
 	//
-	// Requires [Bring Your Own IP](https://developers.cloudflare.com/spectrum/getting-started/byoip/) provisioned.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/spectrum_application#ips SpectrumApplication#ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#ips SpectrumApplication#ips}
 	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
+	// The type of edge IP configuration specified.
+	//
+	// Dynamically allocated edge IPs use Spectrum anycast IPs in accordance with the connectivity you specify. Only valid with CNAME DNS names.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/spectrum_application#type SpectrumApplication#type}
+	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

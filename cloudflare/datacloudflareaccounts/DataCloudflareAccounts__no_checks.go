@@ -75,11 +75,15 @@ func (j *jsiiProxy_DataCloudflareAccounts) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareAccounts) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareAccounts) validateSetDirectionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareAccounts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts) validateSetMaxItemsParameters(val *float64) error {
 	return nil
 }
 

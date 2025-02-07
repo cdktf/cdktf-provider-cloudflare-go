@@ -63,7 +63,7 @@ func (j *jsiiProxy_RateLimitActionOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) validateSetInternalValueParameters(val *RateLimitAction) error {
+func (j *jsiiProxy_RateLimitActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

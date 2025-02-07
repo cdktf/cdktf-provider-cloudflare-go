@@ -75,7 +75,7 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRule) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDevicePostureRule) validatePutInputParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustDevicePostureRule) validatePutInputParameters(value *ZeroTrustDevicePostureRuleInput) error {
 	return nil
 }
 
@@ -116,10 +116,6 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRule) validateSetDescriptionParameters(
 }
 
 func (j *jsiiProxy_ZeroTrustDevicePostureRule) validateSetExpirationParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDevicePostureRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package datacloudflareaccountroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccountroles/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccountroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/account_roles cloudflare_account_roles}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_roles cloudflare_account_roles}.
 type DataCloudflareAccountRoles interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -38,13 +38,13 @@ type DataCloudflareAccountRoles interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxItems() *float64
+	SetMaxItems(val *float64)
+	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -53,7 +53,7 @@ type DataCloudflareAccountRoles interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Roles() DataCloudflareAccountRolesRolesList
+	Result() DataCloudflareAccountRolesResultList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -85,7 +85,7 @@ type DataCloudflareAccountRoles interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,31 +198,31 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAccountRoles) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAccountRoles) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountRoles) MaxItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountRoles) MaxItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItemsInput",
 		&returns,
 	)
 	return returns
@@ -258,11 +258,11 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles) Roles() DataCloudflareAccountRolesRolesList {
-	var returns DataCloudflareAccountRolesRolesList
+func (j *jsiiProxy_DataCloudflareAccountRoles) Result() DataCloudflareAccountRolesResultList {
+	var returns DataCloudflareAccountRolesResultList
 	_jsii_.Get(
 		j,
-		"roles",
+		"result",
 		&returns,
 	)
 	return returns
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareAccountRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) DataCloudflareAccountRoles {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareAccountRoles(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_roles cloudflare_account_roles} Data Source.
 func NewDataCloudflareAccountRoles_Override(d DataCloudflareAccountRoles, scope constructs.Construct, id *string, config *DataCloudflareAccountRolesConfig) {
 	_init_.Initialize()
 
@@ -366,17 +366,6 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccountRoles)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareAccountRoles)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -384,6 +373,17 @@ func (j *jsiiProxy_DataCloudflareAccountRoles)SetLifecycle(val *cdktf.TerraformR
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAccountRoles)SetMaxItems(val *float64) {
+	if err := j.validateSetMaxItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxItems",
 		val,
 	)
 }
@@ -681,10 +681,10 @@ func (d *jsiiProxy_DataCloudflareAccountRoles) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccountRoles) ResetId() {
+func (d *jsiiProxy_DataCloudflareAccountRoles) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetMaxItems",
 		nil, // no parameters
 	)
 }

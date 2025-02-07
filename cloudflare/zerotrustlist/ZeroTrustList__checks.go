@@ -207,22 +207,22 @@ func (z *jsiiProxy_ZeroTrustList) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustList) validatePutItemsWithDescriptionParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustList) validatePutItemsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustListItemsWithDescription:
-		value := value.(*[]*ZeroTrustListItemsWithDescription)
+	case *[]*ZeroTrustListItems:
+		value := value.(*[]*ZeroTrustListItems)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustListItemsWithDescription:
-		value_ := value.([]*ZeroTrustListItemsWithDescription)
+	case []*ZeroTrustListItems:
+		value_ := value.([]*ZeroTrustListItems)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -231,7 +231,7 @@ func (z *jsiiProxy_ZeroTrustList) validatePutItemsWithDescriptionParameters(valu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustListItemsWithDescription; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustListItems; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -377,22 +377,6 @@ func (j *jsiiProxy_ZeroTrustList) validateSetCountParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_ZeroTrustList) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustList) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustList) validateSetItemsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

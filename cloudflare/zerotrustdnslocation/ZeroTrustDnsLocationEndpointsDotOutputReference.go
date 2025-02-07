@@ -5,15 +5,14 @@ package zerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdnslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustDnsLocationEndpointsDotOutputReference interface {
 	cdktf.ComplexObject
-	AuthenticationEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,11 +33,10 @@ type ZeroTrustDnsLocationEndpointsDotOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDnsLocationEndpointsDot
-	SetInternalValue(val *ZeroTrustDnsLocationEndpointsDot)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Networks() ZeroTrustDnsLocationEndpointsDotNetworksList
 	NetworksInput() interface{}
-	RequireToken() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +70,7 @@ type ZeroTrustDnsLocationEndpointsDotOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworks(value interface{})
+	ResetEnabled()
 	ResetNetworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -86,16 +85,6 @@ type ZeroTrustDnsLocationEndpointsDotOutputReference interface {
 // The jsii proxy struct for ZeroTrustDnsLocationEndpointsDotOutputReference
 type jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) AuthenticationEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"authenticationEnabled",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) ComplexObjectIndex() interface{} {
@@ -158,8 +147,8 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) InternalValue() *ZeroTrustDnsLocationEndpointsDot {
-	var returns *ZeroTrustDnsLocationEndpointsDot
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -183,16 +172,6 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) NetworksInpu
 	_jsii_.Get(
 		j,
 		"networksInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) RequireToken() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"requireToken",
 		&returns,
 	)
 	return returns
@@ -279,7 +258,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference)SetEnabled(va
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference)SetInternalValue(val *ZeroTrustDnsLocationEndpointsDot) {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,6 +485,14 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) PutNetworks(
 		z,
 		"putNetworks",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsDotOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 

@@ -103,7 +103,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureIntegrationConfigAOutputReference) vali
 	return nil
 }
 
-func validateNewZeroTrustDevicePostureIntegrationConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustDevicePostureIntegrationConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

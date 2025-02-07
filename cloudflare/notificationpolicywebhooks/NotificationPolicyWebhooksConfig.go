@@ -22,28 +22,25 @@ type NotificationPolicyWebhooksConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// The account id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the webhook destination.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
+	// This will be included in the request body when you receive a webhook notification.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks#id NotificationPolicyWebhooks#id}.
+	// The POST endpoint to call when dispatching a notification.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// An optional secret can be provided that will be passed in the `cf-webhook-auth` header when dispatching a webhook notification.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+	Url *string `field:"required" json:"url" yaml:"url"`
+	// Optional secret that will be passed in the `cf-webhook-auth` header when dispatching generic webhook notifications or formatted for supported destinations.
 	//
-	// Secrets are not returned in any API response body. Refer to the [documentation](https://api.cloudflare.com/#notification-webhooks-create-webhook) for more details.
+	// Secrets are not returned in any API response body.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
 	Secret *string `field:"optional" json:"secret" yaml:"secret"`
-	// The URL of the webhook destinations. **Modifying this attribute will force creation of a new resource.**.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
-	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

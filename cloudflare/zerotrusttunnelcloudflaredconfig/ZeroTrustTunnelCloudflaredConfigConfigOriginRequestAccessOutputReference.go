@@ -5,9 +5,9 @@ package zerotrusttunnelcloudflaredconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrusttunnelcloudflaredconfig/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrusttunnelcloudflaredconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess
-	SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Required() interface{}
 	SetRequired(val interface{})
 	RequiredInput() interface{}
@@ -73,7 +73,6 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAudTag()
 	ResetRequired()
 	ResetTeamName()
 	// Produce the Token's value at resolution time.
@@ -151,8 +150,8 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) InternalValue() *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess {
-	var returns *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -282,7 +281,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutp
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference)SetInternalValue(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess) {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,14 +520,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutp
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) ResetAudTag() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAudTag",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) ResetRequired() {

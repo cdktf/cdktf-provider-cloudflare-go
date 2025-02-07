@@ -99,6 +99,10 @@ func (j *jsiiProxy_TurnstileWidget) validateSetBotFightModeParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_TurnstileWidget) validateSetClearanceLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TurnstileWidget) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -111,7 +115,7 @@ func (j *jsiiProxy_TurnstileWidget) validateSetDomainsParameters(val *[]*string)
 	return nil
 }
 
-func (j *jsiiProxy_TurnstileWidget) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_TurnstileWidget) validateSetEphemeralIdParameters(val interface{}) error {
 	return nil
 }
 

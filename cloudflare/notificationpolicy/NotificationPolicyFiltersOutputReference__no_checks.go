@@ -55,7 +55,15 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetActionsP
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffectedAsnsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffectedComponentsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAffectedLocationsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -64,6 +72,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAirportC
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetAlertTriggerPreferencesValueParameters(val *[]*string) error {
 	return nil
 }
 
@@ -111,11 +123,19 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInputIdP
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInternalValueParameters(val *NotificationPolicyFilters) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInsightClassParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLimitParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetLogoTagParameters(val *[]*string) error {
 	return nil
 }
 
@@ -139,6 +159,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPoolIdPa
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetPopNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProductParameters(val *[]*string) error {
 	return nil
 }
@@ -148,6 +172,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProjectI
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetProtocolParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetQueryTagParameters(val *[]*string) error {
 	return nil
 }
 
@@ -188,6 +216,10 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 }
 
 func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTrafficExclusionsParameters(val *[]*string) error {
 	return nil
 }
 

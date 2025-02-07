@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsUntrustedCertOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

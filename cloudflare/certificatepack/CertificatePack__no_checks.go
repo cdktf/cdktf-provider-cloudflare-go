@@ -75,14 +75,6 @@ func (c *jsiiProxy_CertificatePack) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePack) validatePutValidationErrorsParameters(value interface{}) error {
-	return nil
-}
-
-func (c *jsiiProxy_CertificatePack) validatePutValidationRecordsParameters(value interface{}) error {
-	return nil
-}
-
 func validateCertificatePack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -119,10 +111,6 @@ func (j *jsiiProxy_CertificatePack) validateSetHostsParameters(val *[]*string) e
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePack) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CertificatePack) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -140,10 +128,6 @@ func (j *jsiiProxy_CertificatePack) validateSetValidationMethodParameters(val *s
 }
 
 func (j *jsiiProxy_CertificatePack) validateSetValidityDaysParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_CertificatePack) validateSetWaitForActiveStatusParameters(val interface{}) error {
 	return nil
 }
 

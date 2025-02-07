@@ -166,29 +166,25 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetHeadersParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*map[string]*string:
-		// ok
-	case []*map[string]*string:
-		// ok
+	case *RateLimitMatchResponse:
+		val := val.(*RateLimitMatchResponse)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case RateLimitMatchResponse:
+		val_ := val.(RateLimitMatchResponse)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*map[string]*string; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RateLimitMatchResponse; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetInternalValueParameters(val *RateLimitMatchResponse) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
 	}
 
 	return nil
@@ -209,14 +205,6 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetOriginTraff
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetStatusesParameters(val *[]*float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

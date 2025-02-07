@@ -93,22 +93,22 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateInt
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomAttributeParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomAttributesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustAccessApplicationSaasAppCustomAttribute:
-		value := value.(*[]*ZeroTrustAccessApplicationSaasAppCustomAttribute)
+	case *[]*ZeroTrustAccessApplicationSaasAppCustomAttributes:
+		value := value.(*[]*ZeroTrustAccessApplicationSaasAppCustomAttributes)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustAccessApplicationSaasAppCustomAttribute:
-		value_ := value.([]*ZeroTrustAccessApplicationSaasAppCustomAttribute)
+	case []*ZeroTrustAccessApplicationSaasAppCustomAttributes:
+		value_ := value.([]*ZeroTrustAccessApplicationSaasAppCustomAttributes)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -117,29 +117,29 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePut
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessApplicationSaasAppCustomAttribute; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessApplicationSaasAppCustomAttributes; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomClaimParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutCustomClaimsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ZeroTrustAccessApplicationSaasAppCustomClaim:
-		value := value.(*[]*ZeroTrustAccessApplicationSaasAppCustomClaim)
+	case *[]*ZeroTrustAccessApplicationSaasAppCustomClaims:
+		value := value.(*[]*ZeroTrustAccessApplicationSaasAppCustomClaims)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ZeroTrustAccessApplicationSaasAppCustomClaim:
-		value_ := value.([]*ZeroTrustAccessApplicationSaasAppCustomClaim)
+	case []*ZeroTrustAccessApplicationSaasAppCustomClaims:
+		value_ := value.([]*ZeroTrustAccessApplicationSaasAppCustomClaims)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -148,7 +148,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePut
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessApplicationSaasAppCustomClaim; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessApplicationSaasAppCustomClaims; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -166,32 +166,12 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePut
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validatePutRefreshTokenOptionsParameters(value *ZeroTrustAccessApplicationSaasAppRefreshTokenOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions:
-		value := value.(*[]*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions:
-		value_ := value.([]*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustAccessApplicationSaasAppRefreshTokenOptions; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -242,6 +222,22 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetClientIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetClientSecretParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -346,9 +342,33 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationSaasApp) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetIdpEntityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustAccessApplicationSaasApp:
+		val := val.(*ZeroTrustAccessApplicationSaasApp)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustAccessApplicationSaasApp:
+		val_ := val.(ZeroTrustAccessApplicationSaasApp)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustAccessApplicationSaasApp; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -363,6 +383,14 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetNameIdTransformJsonataParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetPublicKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -395,6 +423,14 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetSpEntityIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetSsoEndpointParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

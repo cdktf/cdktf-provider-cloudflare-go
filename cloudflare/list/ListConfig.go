@@ -22,25 +22,21 @@ type ListConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list#account_id List#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list#account_id List#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The type of items the list will contain. Must provide only one of: `ip`, `redirect`, `hostname`, `asn`..
+	// The type of the list. Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list#kind List#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list#kind List#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
-	// The name of the list.
+	// An informative name for the list. Use this name in filter and rule expressions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list#name List#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list#name List#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// An optional description of the list.
+	// An informative summary of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list#description List#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list#description List#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// item block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list#item List#item}
-	Item interface{} `field:"optional" json:"item" yaml:"item"`
 }
 

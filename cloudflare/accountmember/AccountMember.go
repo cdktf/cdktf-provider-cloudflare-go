@@ -5,14 +5,14 @@ package accountmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accountmember/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accountmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member cloudflare_account_member}.
 type AccountMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -34,9 +34,9 @@ type AccountMember interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EmailAddress() *string
-	SetEmailAddress(val *string)
-	EmailAddressInput() *string
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,14 +46,14 @@ type AccountMember interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Policies() AccountMemberPoliciesList
+	PoliciesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -64,9 +64,9 @@ type AccountMember interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RoleIds() *[]*string
-	SetRoleIds(val *[]*string)
-	RoleIdsInput() *[]*string
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -76,6 +76,7 @@ type AccountMember interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	User() AccountMemberUserOutputReference
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,10 +120,12 @@ type AccountMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutPolicies(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicies()
+	ResetRoles()
 	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -212,21 +215,21 @@ func (j *jsiiProxy_AccountMember) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) EmailAddress() *string {
+func (j *jsiiProxy_AccountMember) Email() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"emailAddress",
+		"email",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) EmailAddressInput() *string {
+func (j *jsiiProxy_AccountMember) EmailInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"emailAddressInput",
+		"emailInput",
 		&returns,
 	)
 	return returns
@@ -272,16 +275,6 @@ func (j *jsiiProxy_AccountMember) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccountMember) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -297,6 +290,26 @@ func (j *jsiiProxy_AccountMember) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountMember) Policies() AccountMemberPoliciesList {
+	var returns AccountMemberPoliciesList
+	_jsii_.Get(
+		j,
+		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountMember) PoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policiesInput",
 		&returns,
 	)
 	return returns
@@ -332,21 +345,21 @@ func (j *jsiiProxy_AccountMember) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) RoleIds() *[]*string {
+func (j *jsiiProxy_AccountMember) Roles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"roleIds",
+		"roles",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AccountMember) RoleIdsInput() *[]*string {
+func (j *jsiiProxy_AccountMember) RolesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"roleIdsInput",
+		"rolesInput",
 		&returns,
 	)
 	return returns
@@ -402,8 +415,18 @@ func (j *jsiiProxy_AccountMember) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountMember) User() AccountMemberUserOutputReference {
+	var returns AccountMemberUserOutputReference
+	_jsii_.Get(
+		j,
+		"user",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account_member cloudflare_account_member} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember(scope constructs.Construct, id *string, config *AccountMemberConfig) AccountMember {
 	_init_.Initialize()
 
@@ -421,7 +444,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account_member cloudflare_account_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_member cloudflare_account_member} Resource.
 func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *string, config *AccountMemberConfig) {
 	_init_.Initialize()
 
@@ -473,13 +496,13 @@ func (j *jsiiProxy_AccountMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccountMember)SetEmailAddress(val *string) {
-	if err := j.validateSetEmailAddressParameters(val); err != nil {
+func (j *jsiiProxy_AccountMember)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"emailAddress",
+		"email",
 		val,
 	)
 }
@@ -488,17 +511,6 @@ func (j *jsiiProxy_AccountMember)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountMember)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -533,13 +545,13 @@ func (j *jsiiProxy_AccountMember)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountMember)SetRoleIds(val *[]*string) {
-	if err := j.validateSetRoleIdsParameters(val); err != nil {
+func (j *jsiiProxy_AccountMember)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"roleIds",
+		"roles",
 		val,
 	)
 }
@@ -908,11 +920,14 @@ func (a *jsiiProxy_AccountMember) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_AccountMember) ResetId() {
+func (a *jsiiProxy_AccountMember) PutPolicies(value interface{}) {
+	if err := a.validatePutPoliciesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
-		"resetId",
-		nil, // no parameters
+		"putPolicies",
+		[]interface{}{value},
 	)
 }
 
@@ -920,6 +935,22 @@ func (a *jsiiProxy_AccountMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountMember) ResetPolicies() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountMember) ResetRoles() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

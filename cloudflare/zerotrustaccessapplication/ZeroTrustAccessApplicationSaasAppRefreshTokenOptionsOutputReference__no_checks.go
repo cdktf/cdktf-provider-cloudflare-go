@@ -75,7 +75,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputRef
 	return nil
 }
 
-func validateNewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

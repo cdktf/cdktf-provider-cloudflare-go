@@ -47,19 +47,63 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAiBindingsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutAnalyticsEngineDatasetsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutBrowsersParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutD1DatabasesParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutDurableObjectNamespacesParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutEnvVarsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutHyperdriveBindingsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutKvNamespacesParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutMtlsCertificatesParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutPlacementParameters(value *PagesProjectDeploymentConfigsPreviewPlacement) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutServiceBindingParameters(value interface{}) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutQueueProducersParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutR2BucketsParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutServicesParameters(value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validatePutVectorizeBindingsParameters(value interface{}) error {
 	return nil
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetAlwaysUseLatestCompatibilityDateParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,35 +123,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetD1DatabasesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetDurableObjectNamespacesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetFailOpenParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetInternalValueParameters(val *PagesProjectDeploymentConfigsPreview) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetKvNamespacesParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetR2BucketsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetSecretsParameters(val *map[string]*string) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -116,10 +132,6 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validate
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProjectDeploymentConfigsPreviewOutputReference) validateSetUsageModelParameters(val *string) error {
 	return nil
 }
 

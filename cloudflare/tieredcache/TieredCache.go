@@ -5,19 +5,16 @@ package tieredcache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/tieredcache/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/tieredcache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 type TieredCache interface {
 	cdktf.TerraformResource
-	CacheType() *string
-	SetCacheType(val *string)
-	CacheTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,6 +31,7 @@ type TieredCache interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,12 +41,11 @@ type TieredCache interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -67,6 +64,9 @@ type TieredCache interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Value() *string
+	SetValue(val *string)
+	ValueInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -113,7 +113,6 @@ type TieredCache interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -133,26 +132,6 @@ type TieredCache interface {
 // The jsii proxy struct for TieredCache
 type jsiiProxy_TieredCache struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_TieredCache) CacheType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cacheType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TieredCache) CacheTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cacheTypeInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_TieredCache) CdktfStack() cdktf.TerraformStack {
@@ -205,6 +184,16 @@ func (j *jsiiProxy_TieredCache) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_TieredCache) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TieredCache) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -245,21 +234,21 @@ func (j *jsiiProxy_TieredCache) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TieredCache) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TieredCache) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TieredCache) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -335,6 +324,26 @@ func (j *jsiiProxy_TieredCache) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TieredCache) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TieredCache) ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TieredCache) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +365,7 @@ func (j *jsiiProxy_TieredCache) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheConfig) TieredCache {
 	_init_.Initialize()
 
@@ -374,7 +383,7 @@ func NewTieredCache(scope constructs.Construct, id *string, config *TieredCacheC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/tiered_cache cloudflare_tiered_cache} Resource.
 func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *string, config *TieredCacheConfig) {
 	_init_.Initialize()
 
@@ -382,17 +391,6 @@ func NewTieredCache_Override(t TieredCache, scope constructs.Construct, id *stri
 		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		[]interface{}{scope, id, config},
 		t,
-	)
-}
-
-func (j *jsiiProxy_TieredCache)SetCacheType(val *string) {
-	if err := j.validateSetCacheTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cacheType",
-		val,
 	)
 }
 
@@ -434,17 +432,6 @@ func (j *jsiiProxy_TieredCache)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TieredCache)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_TieredCache)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -471,6 +458,17 @@ func (j *jsiiProxy_TieredCache)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TieredCache)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"value",
 		val,
 	)
 }
@@ -836,14 +834,6 @@ func (t *jsiiProxy_TieredCache) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (t *jsiiProxy_TieredCache) ResetId() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

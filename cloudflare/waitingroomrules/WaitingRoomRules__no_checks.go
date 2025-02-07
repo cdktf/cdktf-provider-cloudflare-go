@@ -103,15 +103,15 @@ func (j *jsiiProxy_WaitingRoomRules) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRules) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomRules) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_WaitingRoomRules) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoomRules) validateSetRuleIdParameters(val *string) error {
 	return nil
 }
 

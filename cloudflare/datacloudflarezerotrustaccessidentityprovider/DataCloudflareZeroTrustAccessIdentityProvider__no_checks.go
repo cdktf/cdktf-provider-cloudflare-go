@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateOverri
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validatePutFilterParameters(value *DataCloudflareZeroTrustAccessIdentityProviderFilter) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessIdentityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -79,15 +83,11 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateSetCou
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateSetIdentityProviderIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) validateSetNameParameters(val *string) error {
 	return nil
 }
 

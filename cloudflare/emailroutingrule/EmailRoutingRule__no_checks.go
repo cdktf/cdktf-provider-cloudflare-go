@@ -75,11 +75,11 @@ func (e *jsiiProxy_EmailRoutingRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutActionsParameters(value interface{}) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutMatcherParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutMatchersParameters(value interface{}) error {
 	return nil
 }
 

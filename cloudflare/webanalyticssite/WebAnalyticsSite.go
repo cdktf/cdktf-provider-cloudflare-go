@@ -5,14 +5,14 @@ package webanalyticssite
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/webanalyticssite/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticssite/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 type WebAnalyticsSite interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -33,6 +33,7 @@ type WebAnalyticsSite interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,8 +50,6 @@ type WebAnalyticsSite interface {
 	SetHost(val *string)
 	HostInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,7 +66,8 @@ type WebAnalyticsSite interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RulesetId() *string
+	Rules() WebAnalyticsSiteRulesList
+	Ruleset() WebAnalyticsSiteRulesetOutputReference
 	SiteTag() *string
 	SiteToken() *string
 	Snippet() *string
@@ -77,8 +77,6 @@ type WebAnalyticsSite interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() WebAnalyticsSiteTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	ZoneTag() *string
 	SetZoneTag(val *string)
 	ZoneTagInput() *string
@@ -125,13 +123,11 @@ type WebAnalyticsSite interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *WebAnalyticsSiteTimeouts)
+	ResetAutoInstall()
 	ResetHost()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
 	ResetZoneTag()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -231,6 +227,16 @@ func (j *jsiiProxy_WebAnalyticsSite) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WebAnalyticsSite) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebAnalyticsSite) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -301,16 +307,6 @@ func (j *jsiiProxy_WebAnalyticsSite) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WebAnalyticsSite) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -361,11 +357,21 @@ func (j *jsiiProxy_WebAnalyticsSite) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) RulesetId() *string {
-	var returns *string
+func (j *jsiiProxy_WebAnalyticsSite) Rules() WebAnalyticsSiteRulesList {
+	var returns WebAnalyticsSiteRulesList
 	_jsii_.Get(
 		j,
-		"rulesetId",
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebAnalyticsSite) Ruleset() WebAnalyticsSiteRulesetOutputReference {
+	var returns WebAnalyticsSiteRulesetOutputReference
+	_jsii_.Get(
+		j,
+		"ruleset",
 		&returns,
 	)
 	return returns
@@ -431,26 +437,6 @@ func (j *jsiiProxy_WebAnalyticsSite) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsSite) Timeouts() WebAnalyticsSiteTimeoutsOutputReference {
-	var returns WebAnalyticsSiteTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WebAnalyticsSite) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WebAnalyticsSite) ZoneTag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -472,7 +458,7 @@ func (j *jsiiProxy_WebAnalyticsSite) ZoneTagInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) WebAnalyticsSite {
 	_init_.Initialize()
 
@@ -490,7 +476,7 @@ func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite_Override(w WebAnalyticsSite, scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) {
 	_init_.Initialize()
 
@@ -568,17 +554,6 @@ func (j *jsiiProxy_WebAnalyticsSite)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WebAnalyticsSite)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -977,14 +952,11 @@ func (w *jsiiProxy_WebAnalyticsSite) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) PutTimeouts(value *WebAnalyticsSiteTimeouts) {
-	if err := w.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
+func (w *jsiiProxy_WebAnalyticsSite) ResetAutoInstall() {
 	_jsii_.InvokeVoid(
 		w,
-		"putTimeouts",
-		[]interface{}{value},
+		"resetAutoInstall",
+		nil, // no parameters
 	)
 }
 
@@ -996,26 +968,10 @@ func (w *jsiiProxy_WebAnalyticsSite) ResetHost() {
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsSite) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WebAnalyticsSite) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WebAnalyticsSite) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

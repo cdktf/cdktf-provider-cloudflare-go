@@ -5,31 +5,37 @@ package loadbalancerpool
 
 
 type LoadBalancerPoolOrigins struct {
-	// The IP address (IPv4 or IPv6) of the origin, or the publicly addressable hostname.
+	// The IP address (IPv4 or IPv6) of the origin, or its publicly addressable hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#address LoadBalancerPool#address}
-	Address *string `field:"required" json:"address" yaml:"address"`
+	// Hostnames entered here should resolve directly to the origin, and not be a hostname proxied by Cloudflare. To set an internal/reserved address, virtual_network_id must also be set.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#address LoadBalancerPool#address}
+	Address *string `field:"optional" json:"address" yaml:"address"`
+	// Whether to enable (the default) this origin within the pool.
+	//
+	// Disabled origins will not receive traffic and are excluded from health checks. The origin will only be disabled for the current pool.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// The request header is used to pass additional information with an HTTP request. Currently supported header is 'Host'.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
+	Header *LoadBalancerPoolOriginsHeader `field:"optional" json:"header" yaml:"header"`
 	// A human-identifiable name for the origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// Whether this origin is enabled.
-	//
-	// Disabled origins will not receive traffic and are excluded from health checks. Defaults to `true`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#enabled LoadBalancerPool#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// header block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#name LoadBalancerPool#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The virtual network subnet ID the origin belongs in. Virtual network must also belong to the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#virtual_network_id LoadBalancerPool#virtual_network_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#virtual_network_id LoadBalancerPool#virtual_network_id}
 	VirtualNetworkId *string `field:"optional" json:"virtualNetworkId" yaml:"virtualNetworkId"`
-	// The weight (0.01 - 1.00) of this origin, relative to other origins in the pool. Equal values mean equal weighting. A weight of 0 means traffic will not be sent to this origin, but health is still checked. When [`origin_steering.policy="least_outstanding_requests"`](#policy), weight is used to scale the origin's outstanding requests. When [`origin_steering.policy="least_connections"`](#policy), weight is used to scale the origin's open connections. Defaults to `1`.
+	// The weight of this origin relative to other origins in the pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#weight LoadBalancerPool#weight}
+	// Based on the configured weight the total traffic is distributed among origins within the pool.
+	// - `origin_steering.policy="least_outstanding_requests"`: Use weight to scale the origin's outstanding requests.
+	// - `origin_steering.policy="least_connections"`: Use weight to scale the origin's open connections.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#weight LoadBalancerPool#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

@@ -95,7 +95,7 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetAccountIdPar
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetApplicationIdParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetAppIdParameters(val *string) error {
 	return nil
 }
 
@@ -104,10 +104,6 @@ func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetConnectionPa
 }
 
 func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessShortLivedCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 

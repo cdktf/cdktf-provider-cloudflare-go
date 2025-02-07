@@ -104,74 +104,12 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheKeyFieldsPara
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutCacheTtlByStatusParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*PageRuleActionsCacheTtlByStatus:
-		value := value.(*[]*PageRuleActionsCacheTtlByStatus)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*PageRuleActionsCacheTtlByStatus:
-		value_ := value.([]*PageRuleActionsCacheTtlByStatus)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PageRuleActionsCacheTtlByStatus; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutForwardingUrlParameters(value *PageRuleActionsForwardingUrl) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutMinifyParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*PageRuleActionsMinify:
-		value := value.(*[]*PageRuleActionsMinify)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*PageRuleActionsMinify:
-		value_ := value.([]*PageRuleActionsMinify)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PageRuleActionsMinify; received %#v (a %T)", value, value)
-		}
 	}
 
 	return nil
@@ -213,7 +151,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetAutomaticHttpsRewr
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetBrowserCacheTtlParameters(val *string) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetBrowserCacheTtlParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,6 +200,14 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheLevelParamete
 }
 
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheOnCookieParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -374,26 +320,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisablePerformance
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableRailgunParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetDisableSecurityParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -466,9 +392,25 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetHostHeaderOverride
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetInternalValueParameters(val *PageRuleActions) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *PageRuleActions:
+		val := val.(*PageRuleActions)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case PageRuleActions:
+		val_ := val.(PageRuleActions)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PageRuleActions; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -547,14 +489,6 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetRocketLoaderParame
 }
 
 func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetSecurityLevelParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetServerSideExcludeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -207,32 +207,23 @@ func (l *jsiiProxy_LoadBalancerPool) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPool) validatePutLoadSheddingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPool) validatePutLoadSheddingParameters(value *LoadBalancerPoolLoadShedding) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerPoolLoadShedding:
-		value := value.(*[]*LoadBalancerPoolLoadShedding)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerPoolLoadShedding:
-		value_ := value.([]*LoadBalancerPoolLoadShedding)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerPoolLoadShedding; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (l *jsiiProxy_LoadBalancerPool) validatePutNotificationFilterParameters(value *LoadBalancerPoolNotificationFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -269,32 +260,12 @@ func (l *jsiiProxy_LoadBalancerPool) validatePutOriginsParameters(value interfac
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPool) validatePutOriginSteeringParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerPool) validatePutOriginSteeringParameters(value *LoadBalancerPoolOriginSteering) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerPoolOriginSteering:
-		value := value.(*[]*LoadBalancerPoolOriginSteering)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerPoolOriginSteering:
-		value_ := value.([]*LoadBalancerPoolOriginSteering)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerPoolOriginSteering; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -469,14 +440,6 @@ func (j *jsiiProxy_LoadBalancerPool) validateSetEnabledParameters(val interface{
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_LoadBalancerPool) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutp
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) validateSetInternalValueParameters(val *ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

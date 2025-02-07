@@ -5,9 +5,9 @@ package apitoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apitoken/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apitoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,10 +30,10 @@ type ApiTokenConditionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ApiTokenCondition
-	SetInternalValue(val *ApiTokenCondition)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RequestIp() ApiTokenConditionRequestIpOutputReference
-	RequestIpInput() *ApiTokenConditionRequestIp
+	RequestIpInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference) InternalValue() *ApiTokenCondition {
-	var returns *ApiTokenCondition
+func (j *jsiiProxy_ApiTokenConditionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference) RequestIp() ApiTokenConditi
 	return returns
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference) RequestIpInput() *ApiTokenConditionRequestIp {
-	var returns *ApiTokenConditionRequestIp
+func (j *jsiiProxy_ApiTokenConditionOutputReference) RequestIpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"requestIpInput",
@@ -223,7 +223,7 @@ func (j *jsiiProxy_ApiTokenConditionOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_ApiTokenConditionOutputReference)SetInternalValue(val *ApiTokenCondition) {
+func (j *jsiiProxy_ApiTokenConditionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

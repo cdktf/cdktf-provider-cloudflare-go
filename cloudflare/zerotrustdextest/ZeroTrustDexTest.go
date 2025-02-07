@@ -5,14 +5,14 @@ package zerotrustdextest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdextest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 type ZeroTrustDexTest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,9 +30,8 @@ type ZeroTrustDexTest interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Created() *string
 	Data() ZeroTrustDexTestDataOutputReference
-	DataInput() *ZeroTrustDexTestData
+	DataInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,8 +51,6 @@ type ZeroTrustDexTest interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Interval() *string
 	SetInterval(val *string)
 	IntervalInput() *string
@@ -76,13 +73,18 @@ type ZeroTrustDexTest interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Targeted() interface{}
+	SetTargeted(val interface{})
+	TargetedInput() interface{}
+	TargetPolicies() ZeroTrustDexTestTargetPoliciesList
+	TargetPoliciesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Updated() *string
+	TestId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,10 +129,13 @@ type ZeroTrustDexTest interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutData(value *ZeroTrustDexTestData)
-	ResetId()
+	PutTargetPolicies(value interface{})
+	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTargeted()
+	ResetTargetPolicies()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -209,16 +214,6 @@ func (j *jsiiProxy_ZeroTrustDexTest) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) Created() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"created",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDexTest) Data() ZeroTrustDexTestDataOutputReference {
 	var returns ZeroTrustDexTestDataOutputReference
 	_jsii_.Get(
@@ -229,8 +224,8 @@ func (j *jsiiProxy_ZeroTrustDexTest) Data() ZeroTrustDexTestDataOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) DataInput() *ZeroTrustDexTestData {
-	var returns *ZeroTrustDexTestData
+func (j *jsiiProxy_ZeroTrustDexTest) DataInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dataInput",
@@ -329,16 +324,6 @@ func (j *jsiiProxy_ZeroTrustDexTest) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDexTest) Interval() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,6 +414,46 @@ func (j *jsiiProxy_ZeroTrustDexTest) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDexTest) Targeted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targeted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest) TargetedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest) TargetPolicies() ZeroTrustDexTestTargetPoliciesList {
+	var returns ZeroTrustDexTestTargetPoliciesList
+	_jsii_.Get(
+		j,
+		"targetPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest) TargetPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDexTest) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -459,18 +484,18 @@ func (j *jsiiProxy_ZeroTrustDexTest) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest) Updated() *string {
+func (j *jsiiProxy_ZeroTrustDexTest) TestId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"updated",
+		"testId",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) ZeroTrustDexTest {
 	_init_.Initialize()
 
@@ -488,7 +513,7 @@ func NewZeroTrustDexTest(scope constructs.Construct, id *string, config *ZeroTru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource.
 func NewZeroTrustDexTest_Override(z ZeroTrustDexTest, scope constructs.Construct, id *string, config *ZeroTrustDexTestConfig) {
 	_init_.Initialize()
 
@@ -570,17 +595,6 @@ func (j *jsiiProxy_ZeroTrustDexTest)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTest)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustDexTest)SetInterval(val *string) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
@@ -629,6 +643,17 @@ func (j *jsiiProxy_ZeroTrustDexTest)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDexTest)SetTargeted(val interface{}) {
+	if err := j.validateSetTargetedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targeted",
 		val,
 	)
 }
@@ -997,10 +1022,21 @@ func (z *jsiiProxy_ZeroTrustDexTest) PutData(value *ZeroTrustDexTestData) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDexTest) ResetId() {
+func (z *jsiiProxy_ZeroTrustDexTest) PutTargetPolicies(value interface{}) {
+	if err := z.validatePutTargetPoliciesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"putTargetPolicies",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTest) ResetDescription() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDescription",
 		nil, // no parameters
 	)
 }
@@ -1009,6 +1045,22 @@ func (z *jsiiProxy_ZeroTrustDexTest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTest) ResetTargeted() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTargeted",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTest) ResetTargetPolicies() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTargetPolicies",
 		nil, // no parameters
 	)
 }

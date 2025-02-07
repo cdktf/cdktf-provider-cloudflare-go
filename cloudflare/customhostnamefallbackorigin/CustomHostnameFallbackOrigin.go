@@ -5,14 +5,14 @@ package customhostnamefallbackorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/customhostnamefallbackorigin/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostnamefallbackorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 type CustomHostnameFallbackOrigin interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,10 +27,12 @@ type CustomHostnameFallbackOrigin interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Errors() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,8 +42,6 @@ type CustomHostnameFallbackOrigin interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,6 +68,7 @@ type CustomHostnameFallbackOrigin interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -114,7 +115,6 @@ type CustomHostnameFallbackOrigin interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -176,11 +176,31 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomHostnameFallbackOrigin) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) Errors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"errors",
 		&returns,
 	)
 	return returns
@@ -221,16 +241,6 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -346,6 +356,16 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomHostnameFallbackOrigin) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +387,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) CustomHostnameFallbackOrigin {
 	_init_.Initialize()
 
@@ -385,7 +405,7 @@ func NewCustomHostnameFallbackOrigin(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin} Resource.
 func NewCustomHostnameFallbackOrigin_Override(c CustomHostnameFallbackOrigin, scope constructs.Construct, id *string, config *CustomHostnameFallbackOriginConfig) {
 	_init_.Initialize()
 
@@ -430,17 +450,6 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CustomHostnameFallbackOrigin)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -847,14 +856,6 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) OverrideLogicalId(newLogicalId 
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (c *jsiiProxy_CustomHostnameFallbackOrigin) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

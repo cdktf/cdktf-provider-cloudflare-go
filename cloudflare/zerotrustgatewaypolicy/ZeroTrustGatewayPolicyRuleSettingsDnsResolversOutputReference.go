@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ipv4() ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4List
 	Ipv4Input() interface{}
 	Ipv6() ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6List
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsDnsResolversOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

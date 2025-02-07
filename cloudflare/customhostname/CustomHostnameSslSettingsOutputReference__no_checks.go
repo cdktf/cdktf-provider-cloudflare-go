@@ -91,7 +91,7 @@ func (j *jsiiProxy_CustomHostnameSslSettingsOutputReference) validateSetTls13Par
 	return nil
 }
 
-func validateNewCustomHostnameSslSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCustomHostnameSslSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

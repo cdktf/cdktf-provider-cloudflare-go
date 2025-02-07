@@ -5,14 +5,14 @@ package waitingroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroom/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/waitingroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room cloudflare_waiting_room}.
 type WaitingRoom interface {
 	cdktf.TerraformResource
 	AdditionalRoutes() WaitingRoomAdditionalRoutesList
@@ -25,6 +25,8 @@ type WaitingRoom interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CookieAttributes() WaitingRoomCookieAttributesOutputReference
+	CookieAttributesInput() interface{}
 	CookieSuffix() *string
 	SetCookieSuffix(val *string)
 	CookieSuffixInput() *string
@@ -32,6 +34,7 @@ type WaitingRoom interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	CustomPageHtml() *string
 	SetCustomPageHtml(val *string)
 	CustomPageHtmlInput() *string
@@ -63,8 +66,6 @@ type WaitingRoom interface {
 	SetHost(val *string)
 	HostInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	JsonResponseEnabled() interface{}
 	SetJsonResponseEnabled(val interface{})
 	JsonResponseEnabledInput() interface{}
@@ -72,12 +73,15 @@ type WaitingRoom interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	NewUsersPerMinute() *float64
 	SetNewUsersPerMinute(val *float64)
 	NewUsersPerMinuteInput() *float64
+	NextEventPrequeueStartTime() *string
+	NextEventStartTime() *string
 	// The tree node.
 	Node() constructs.Node
 	Path() *string
@@ -114,8 +118,6 @@ type WaitingRoom interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() WaitingRoomTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	TotalActiveUsers() *float64
 	SetTotalActiveUsers(val *float64)
 	TotalActiveUsersInput() *float64
@@ -172,15 +174,15 @@ type WaitingRoom interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdditionalRoutes(value interface{})
-	PutTimeouts(value *WaitingRoomTimeouts)
+	PutCookieAttributes(value *WaitingRoomCookieAttributes)
 	ResetAdditionalRoutes()
+	ResetCookieAttributes()
 	ResetCookieSuffix()
 	ResetCustomPageHtml()
 	ResetDefaultTemplateLanguage()
 	ResetDescription()
 	ResetDisableSessionRenewal()
 	ResetEnabledOriginCommands()
-	ResetId()
 	ResetJsonResponseEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -191,7 +193,6 @@ type WaitingRoom interface {
 	ResetQueueingStatusCode()
 	ResetSessionDuration()
 	ResetSuspended()
-	ResetTimeouts()
 	ResetTurnstileAction()
 	ResetTurnstileMode()
 	SynthesizeAttributes() *map[string]interface{}
@@ -262,6 +263,26 @@ func (j *jsiiProxy_WaitingRoom) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoom) CookieAttributes() WaitingRoomCookieAttributesOutputReference {
+	var returns WaitingRoomCookieAttributesOutputReference
+	_jsii_.Get(
+		j,
+		"cookieAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) CookieAttributesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cookieAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoom) CookieSuffix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,6 +308,16 @@ func (j *jsiiProxy_WaitingRoom) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -462,16 +493,6 @@ func (j *jsiiProxy_WaitingRoom) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoom) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WaitingRoom) JsonResponseEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -497,6 +518,16 @@ func (j *jsiiProxy_WaitingRoom) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -537,6 +568,26 @@ func (j *jsiiProxy_WaitingRoom) NewUsersPerMinuteInput() *float64 {
 	_jsii_.Get(
 		j,
 		"newUsersPerMinuteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) NextEventPrequeueStartTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextEventPrequeueStartTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoom) NextEventStartTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextEventStartTime",
 		&returns,
 	)
 	return returns
@@ -732,26 +783,6 @@ func (j *jsiiProxy_WaitingRoom) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoom) Timeouts() WaitingRoomTimeoutsOutputReference {
-	var returns WaitingRoomTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaitingRoom) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WaitingRoom) TotalActiveUsers() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -833,7 +864,7 @@ func (j *jsiiProxy_WaitingRoom) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomConfig) WaitingRoom {
 	_init_.Initialize()
 
@@ -851,7 +882,7 @@ func NewWaitingRoom(scope constructs.Construct, id *string, config *WaitingRoomC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/waiting_room cloudflare_waiting_room} Resource.
 func NewWaitingRoom_Override(w WaitingRoom, scope constructs.Construct, id *string, config *WaitingRoomConfig) {
 	_init_.Initialize()
 
@@ -973,17 +1004,6 @@ func (j *jsiiProxy_WaitingRoom)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WaitingRoom)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1525,13 +1545,13 @@ func (w *jsiiProxy_WaitingRoom) PutAdditionalRoutes(value interface{}) {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoom) PutTimeouts(value *WaitingRoomTimeouts) {
-	if err := w.validatePutTimeoutsParameters(value); err != nil {
+func (w *jsiiProxy_WaitingRoom) PutCookieAttributes(value *WaitingRoomCookieAttributes) {
+	if err := w.validatePutCookieAttributesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putTimeouts",
+		"putCookieAttributes",
 		[]interface{}{value},
 	)
 }
@@ -1540,6 +1560,14 @@ func (w *jsiiProxy_WaitingRoom) ResetAdditionalRoutes() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAdditionalRoutes",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoom) ResetCookieAttributes() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCookieAttributes",
 		nil, // no parameters
 	)
 }
@@ -1588,14 +1616,6 @@ func (w *jsiiProxy_WaitingRoom) ResetEnabledOriginCommands() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetEnabledOriginCommands",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WaitingRoom) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
 		nil, // no parameters
 	)
 }
@@ -1660,14 +1680,6 @@ func (w *jsiiProxy_WaitingRoom) ResetSuspended() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetSuspended",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WaitingRoom) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

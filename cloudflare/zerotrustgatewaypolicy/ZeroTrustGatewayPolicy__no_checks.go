@@ -75,7 +75,15 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicy) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) validatePutExpirationParameters(value *ZeroTrustGatewayPolicyExpiration) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicy) validatePutRuleSettingsParameters(value *ZeroTrustGatewayPolicyRuleSettings) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicy) validatePutScheduleParameters(value *ZeroTrustGatewayPolicySchedule) error {
 	return nil
 }
 
@@ -124,10 +132,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) validateSetEnabledParameters(val inte
 }
 
 func (j *jsiiProxy_ZeroTrustGatewayPolicy) validateSetFiltersParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }
 

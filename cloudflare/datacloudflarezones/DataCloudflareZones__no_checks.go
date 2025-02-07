@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataCloudflareZones) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZones) validatePutFilterParameters(value *DataCloudflareZonesFilter) error {
+func (d *jsiiProxy_DataCloudflareZones) validatePutAccountParameters(value *DataCloudflareZonesAccount) error {
 	return nil
 }
 
@@ -79,11 +79,31 @@ func (j *jsiiProxy_DataCloudflareZones) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZones) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZones) validateSetDirectionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareZones) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetMatchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

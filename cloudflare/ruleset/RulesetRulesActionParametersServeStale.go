@@ -5,9 +5,11 @@ package ruleset
 
 
 type RulesetRulesActionParametersServeStale struct {
-	// Disable stale while updating.
+	// Defines whether Cloudflare should serve stale content while updating.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
-	DisableStaleWhileUpdating interface{} `field:"optional" json:"disableStaleWhileUpdating" yaml:"disableStaleWhileUpdating"`
+	// If true, Cloudflare will not serve stale content while getting the latest content from the origin.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+	DisableStaleWhileUpdating interface{} `field:"required" json:"disableStaleWhileUpdating" yaml:"disableStaleWhileUpdating"`
 }
 

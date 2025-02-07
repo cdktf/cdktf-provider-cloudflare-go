@@ -5,14 +5,14 @@ package apishieldoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/apishieldoperation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/apishieldoperation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 type ApiShieldOperation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type ApiShieldOperation interface {
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
+	Features() ApiShieldOperationFeaturesOutputReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -46,6 +47,7 @@ type ApiShieldOperation interface {
 	SetHost(val *string)
 	HostInput() *string
 	Id() *string
+	LastUpdated() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -55,6 +57,7 @@ type ApiShieldOperation interface {
 	MethodInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OperationId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -208,6 +211,16 @@ func (j *jsiiProxy_ApiShieldOperation) EndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldOperation) Features() ApiShieldOperationFeaturesOutputReference {
+	var returns ApiShieldOperationFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"features",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldOperation) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -268,6 +281,16 @@ func (j *jsiiProxy_ApiShieldOperation) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldOperation) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldOperation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -303,6 +326,16 @@ func (j *jsiiProxy_ApiShieldOperation) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldOperation) OperationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"operationId",
 		&returns,
 	)
 	return returns
@@ -389,7 +422,7 @@ func (j *jsiiProxy_ApiShieldOperation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiShieldOperationConfig) ApiShieldOperation {
 	_init_.Initialize()
 
@@ -407,7 +440,7 @@ func NewApiShieldOperation(scope constructs.Construct, id *string, config *ApiSh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_shield_operation cloudflare_api_shield_operation} Resource.
 func NewApiShieldOperation_Override(a ApiShieldOperation, scope constructs.Construct, id *string, config *ApiShieldOperationConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package queue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/queue/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/queue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/queue cloudflare_queue}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/queue cloudflare_queue}.
 type Queue interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -26,10 +26,13 @@ type Queue interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Consumers() QueueConsumersList
+	ConsumersTotalCount() *float64
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,17 +46,15 @@ type Queue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
+	Producers() QueueProducersList
+	ProducersTotalCount() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -62,8 +63,14 @@ type Queue interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueueId() *string
+	QueueName() *string
+	SetQueueName(val *string)
+	QueueNameInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Settings() QueueSettingsOutputReference
+	SettingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,10 +120,11 @@ type Queue interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutSettings(value *QueueSettings)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -185,11 +193,41 @@ func (j *jsiiProxy_Queue) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Queue) Consumers() QueueConsumersList {
+	var returns QueueConsumersList
+	_jsii_.Get(
+		j,
+		"consumers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) ConsumersTotalCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consumersTotalCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Queue) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -245,16 +283,6 @@ func (j *jsiiProxy_Queue) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Queue) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Queue) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -265,21 +293,11 @@ func (j *jsiiProxy_Queue) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Queue) Name() *string {
+func (j *jsiiProxy_Queue) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Queue) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -290,6 +308,26 @@ func (j *jsiiProxy_Queue) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) Producers() QueueProducersList {
+	var returns QueueProducersList
+	_jsii_.Get(
+		j,
+		"producers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) ProducersTotalCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"producersTotalCount",
 		&returns,
 	)
 	return returns
@@ -315,11 +353,61 @@ func (j *jsiiProxy_Queue) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Queue) QueueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) QueueName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) QueueNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Queue) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) Settings() QueueSettingsOutputReference {
+	var returns QueueSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Queue) SettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"settingsInput",
 		&returns,
 	)
 	return returns
@@ -356,7 +444,7 @@ func (j *jsiiProxy_Queue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue {
 	_init_.Initialize()
 
@@ -374,7 +462,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/queue cloudflare_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/queue cloudflare_queue} Resource.
 func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *QueueConfig) {
 	_init_.Initialize()
 
@@ -434,17 +522,6 @@ func (j *jsiiProxy_Queue)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Queue)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Queue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -452,17 +529,6 @@ func (j *jsiiProxy_Queue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Queue)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -482,6 +548,17 @@ func (j *jsiiProxy_Queue)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Queue)SetQueueName(val *string) {
+	if err := j.validateSetQueueNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queueName",
 		val,
 	)
 }
@@ -839,11 +916,14 @@ func (q *jsiiProxy_Queue) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (q *jsiiProxy_Queue) ResetId() {
+func (q *jsiiProxy_Queue) PutSettings(value *QueueSettings) {
+	if err := q.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		q,
-		"resetId",
-		nil, // no parameters
+		"putSettings",
+		[]interface{}{value},
 	)
 }
 
@@ -851,6 +931,14 @@ func (q *jsiiProxy_Queue) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_Queue) ResetSettings() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetSettings",
 		nil, // no parameters
 	)
 }

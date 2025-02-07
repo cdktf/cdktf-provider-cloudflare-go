@@ -5,16 +5,18 @@ package datacloudflarezones
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezones/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezones/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zones cloudflare_zones}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones cloudflare_zones}.
 type DataCloudflareZones interface {
 	cdktf.TerraformDataSource
+	Account() DataCloudflareZonesAccountOutputReference
+	AccountInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,8 +29,9 @@ type DataCloudflareZones interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Filter() DataCloudflareZonesFilterOutputReference
-	FilterInput() *DataCloudflareZonesFilter
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -37,28 +40,40 @@ type DataCloudflareZones interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Match() *string
+	SetMatch(val *string)
+	MatchInput() *string
+	MaxItems() *float64
+	SetMaxItems(val *float64)
+	MaxItemsInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Order() *string
+	SetOrder(val *string)
+	OrderInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Result() DataCloudflareZonesResultList
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Zones() DataCloudflareZonesZonesList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -84,11 +99,17 @@ type DataCloudflareZones interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value *DataCloudflareZonesFilter)
-	ResetId()
+	PutAccount(value *DataCloudflareZonesAccount)
+	ResetAccount()
+	ResetDirection()
+	ResetMatch()
+	ResetMaxItems()
+	ResetName()
+	ResetOrder()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -106,6 +127,26 @@ type DataCloudflareZones interface {
 // The jsii proxy struct for DataCloudflareZones
 type jsiiProxy_DataCloudflareZones struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataCloudflareZones) Account() DataCloudflareZonesAccountOutputReference {
+	var returns DataCloudflareZonesAccountOutputReference
+	_jsii_.Get(
+		j,
+		"account",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) AccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accountInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZones) CdktfStack() cdktf.TerraformStack {
@@ -148,21 +189,21 @@ func (j *jsiiProxy_DataCloudflareZones) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZones) Filter() DataCloudflareZonesFilterOutputReference {
-	var returns DataCloudflareZonesFilterOutputReference
+func (j *jsiiProxy_DataCloudflareZones) Direction() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"filter",
+		"direction",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZones) FilterInput() *DataCloudflareZonesFilter {
-	var returns *DataCloudflareZonesFilter
+func (j *jsiiProxy_DataCloudflareZones) DirectionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"filterInput",
+		"directionInput",
 		&returns,
 	)
 	return returns
@@ -198,26 +239,6 @@ func (j *jsiiProxy_DataCloudflareZones) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZones) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZones) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareZones) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -228,11 +249,91 @@ func (j *jsiiProxy_DataCloudflareZones) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZones) Match() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"match",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) MatchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"matchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) MaxItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) MaxItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItemsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZones) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) Order() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"order",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) OrderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orderInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +354,36 @@ func (j *jsiiProxy_DataCloudflareZones) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) Result() DataCloudflareZonesResultList {
+	var returns DataCloudflareZonesResultList
+	_jsii_.Get(
+		j,
+		"result",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZones) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
 		&returns,
 	)
 	return returns
@@ -288,18 +419,8 @@ func (j *jsiiProxy_DataCloudflareZones) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZones) Zones() DataCloudflareZonesZonesList {
-	var returns DataCloudflareZonesZonesList
-	_jsii_.Get(
-		j,
-		"zones",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zones cloudflare_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones cloudflare_zones} Data Source.
 func NewDataCloudflareZones(scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) DataCloudflareZones {
 	_init_.Initialize()
 
@@ -317,7 +438,7 @@ func NewDataCloudflareZones(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zones cloudflare_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones cloudflare_zones} Data Source.
 func NewDataCloudflareZones_Override(d DataCloudflareZones, scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) {
 	_init_.Initialize()
 
@@ -347,21 +468,21 @@ func (j *jsiiProxy_DataCloudflareZones)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZones)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZones)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareZones)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -377,10 +498,65 @@ func (j *jsiiProxy_DataCloudflareZones)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZones)SetMatch(val *string) {
+	if err := j.validateSetMatchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"match",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetMaxItems(val *float64) {
+	if err := j.validateSetMaxItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetOrder(val *string) {
+	if err := j.validateSetOrderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"order",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZones)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZones)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -670,21 +846,61 @@ func (d *jsiiProxy_DataCloudflareZones) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZones) PutFilter(value *DataCloudflareZonesFilter) {
-	if err := d.validatePutFilterParameters(value); err != nil {
+func (d *jsiiProxy_DataCloudflareZones) PutAccount(value *DataCloudflareZonesAccount) {
+	if err := d.validatePutAccountParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
-		"putFilter",
+		"putAccount",
 		[]interface{}{value},
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZones) ResetId() {
+func (d *jsiiProxy_DataCloudflareZones) ResetAccount() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetAccount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetDirection() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetMatch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMatch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetMaxItems() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetOrder() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOrder",
 		nil, // no parameters
 	)
 }
@@ -693,6 +909,14 @@ func (d *jsiiProxy_DataCloudflareZones) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZones) ResetStatus() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

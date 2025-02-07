@@ -75,7 +75,7 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func validateNewWorkersScriptPlacementOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkersScriptPlacementOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -1,0 +1,60 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package datacloudflarezerotrustaccessinfrastructuretarget
+
+
+type DataCloudflareZeroTrustAccessInfrastructureTargetFilter struct {
+	// Date and time at which the target was created after (inclusive).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#created_after DataCloudflareZeroTrustAccessInfrastructureTarget#created_after}
+	CreatedAfter *string `field:"optional" json:"createdAfter" yaml:"createdAfter"`
+	// Date and time at which the target was created before (inclusive).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#created_before DataCloudflareZeroTrustAccessInfrastructureTarget#created_before}
+	CreatedBefore *string `field:"optional" json:"createdBefore" yaml:"createdBefore"`
+	// The sorting direction.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#direction DataCloudflareZeroTrustAccessInfrastructureTarget#direction}
+	Direction *string `field:"optional" json:"direction" yaml:"direction"`
+	// Hostname of a target.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname DataCloudflareZeroTrustAccessInfrastructureTarget#hostname}
+	Hostname *string `field:"optional" json:"hostname" yaml:"hostname"`
+	// Partial match to the hostname of a target.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname_contains DataCloudflareZeroTrustAccessInfrastructureTarget#hostname_contains}
+	HostnameContains *string `field:"optional" json:"hostnameContains" yaml:"hostnameContains"`
+	// Filters for targets that have any of the following IP addresses.
+	//
+	// Specify
+	// `ips` multiple times in query parameter to build list of candidates.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#ips DataCloudflareZeroTrustAccessInfrastructureTarget#ips}
+	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
+	// IPv4 address of the target.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v4 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v4}
+	IpV4 *string `field:"optional" json:"ipV4" yaml:"ipV4"`
+	// IPv6 address of the target.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v6 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v6}
+	IpV6 *string `field:"optional" json:"ipV6" yaml:"ipV6"`
+	// Date and time at which the target was modified after (inclusive).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_after DataCloudflareZeroTrustAccessInfrastructureTarget#modified_after}
+	ModifiedAfter *string `field:"optional" json:"modifiedAfter" yaml:"modifiedAfter"`
+	// Date and time at which the target was modified before (inclusive).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_before DataCloudflareZeroTrustAccessInfrastructureTarget#modified_before}
+	ModifiedBefore *string `field:"optional" json:"modifiedBefore" yaml:"modifiedBefore"`
+	// The field to sort by.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#order DataCloudflareZeroTrustAccessInfrastructureTarget#order}
+	Order *string `field:"optional" json:"order" yaml:"order"`
+	// Private virtual network identifier of the target.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_target#virtual_network_id DataCloudflareZeroTrustAccessInfrastructureTarget#virtual_network_id}
+	VirtualNetworkId *string `field:"optional" json:"virtualNetworkId" yaml:"virtualNetworkId"`
+}
+

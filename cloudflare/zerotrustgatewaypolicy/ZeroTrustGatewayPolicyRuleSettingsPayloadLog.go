@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 
 type ZeroTrustGatewayPolicyRuleSettingsPayloadLog struct {
-	// Enable or disable DLP Payload Logging for this rule.
+	// Set to true to enable DLP payload logging for this rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

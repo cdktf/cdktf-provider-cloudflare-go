@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsPayloadLog) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsPayloadLogOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

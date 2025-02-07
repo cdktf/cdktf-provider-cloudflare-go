@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsL4Override
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsL4Override)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -70,6 +70,8 @@ type ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIp()
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,8 +127,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsL4Override {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsL4Override
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -245,7 +247,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsL4Override) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,6 +486,22 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) 
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) ResetIp() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIp",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPort",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsL4OverrideOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

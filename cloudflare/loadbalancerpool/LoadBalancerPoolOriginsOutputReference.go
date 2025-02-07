@@ -5,9 +5,9 @@ package loadbalancerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancerpool/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,12 +31,13 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisabledAt() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Header() LoadBalancerPoolOriginsHeaderList
+	Header() LoadBalancerPoolOriginsHeaderOutputReference
 	HeaderInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
@@ -81,9 +82,11 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHeader(value interface{})
+	PutHeader(value *LoadBalancerPoolOriginsHeader)
+	ResetAddress()
 	ResetEnabled()
 	ResetHeader()
+	ResetName()
 	ResetVirtualNetworkId()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
@@ -151,6 +154,16 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) DisabledAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"disabledAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Enabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -181,8 +194,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Header() LoadBalancerPoolOriginsHeaderList {
-	var returns LoadBalancerPoolOriginsHeaderList
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Header() LoadBalancerPoolOriginsHeaderOutputReference {
+	var returns LoadBalancerPoolOriginsHeaderOutputReference
 	_jsii_.Get(
 		j,
 		"header",
@@ -615,7 +628,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PutHeader(value interface{}) {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PutHeader(value *LoadBalancerPoolOriginsHeader) {
 	if err := l.validatePutHeaderParameters(value); err != nil {
 		panic(err)
 	}
@@ -623,6 +636,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PutHeader(value inter
 		l,
 		"putHeader",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetAddress() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAddress",
+		nil, // no parameters
 	)
 }
 
@@ -638,6 +659,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetHeader() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetHeader",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetName",
 		nil, // no parameters
 	)
 }

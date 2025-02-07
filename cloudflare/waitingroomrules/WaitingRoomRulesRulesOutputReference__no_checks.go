@@ -67,15 +67,15 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetDescriptionP
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetExpressionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

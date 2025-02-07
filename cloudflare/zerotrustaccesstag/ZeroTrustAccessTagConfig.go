@@ -22,30 +22,13 @@ type ZeroTrustAccessTagConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Friendly name of the Access Tag.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
+	// The name of the tag.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource.
-	//
-	// Conflicts with `zone_id`. **Modifying this attribute will force creation of a new resource.**
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Number of apps associated with the tag.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag#app_count ZeroTrustAccessTag#app_count}
-	AppCount *float64 `field:"optional" json:"appCount" yaml:"appCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag#id ZeroTrustAccessTag#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The zone identifier to target for the resource.
-	//
-	// Conflicts with `account_id`. **Modifying this attribute will force creation of a new resource.**
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag#zone_id ZeroTrustAccessTag#zone_id}
-	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

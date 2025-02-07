@@ -5,17 +5,17 @@ package ruleset
 
 
 type RulesetRulesActionParametersEdgeTtl struct {
-	// Mode of the edge TTL. Available values: `override_origin`, `respect_origin`, `bypass_by_default`.
+	// edge ttl options.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#mode Ruleset#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#mode Ruleset#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
-	// Default edge TTL.
+	// The TTL (in seconds) if you choose override_origin mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#default Ruleset#default}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#default Ruleset#default}
 	Default *float64 `field:"optional" json:"default" yaml:"default"`
-	// status_code_ttl block.
+	// List of single status codes, or status code ranges to apply the selected mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 	StatusCodeTtl interface{} `field:"optional" json:"statusCodeTtl" yaml:"statusCodeTtl"`
 }
 

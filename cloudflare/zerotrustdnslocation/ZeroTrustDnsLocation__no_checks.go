@@ -119,15 +119,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpsIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetDnsDestinationIpv6BlockIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetEcsSupportParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDnsLocation) validateSetIdParameters(val *string) error {
 	return nil
 }
 

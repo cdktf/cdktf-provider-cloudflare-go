@@ -5,14 +5,14 @@ package workerscrontrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerscrontrigger/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerscrontrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 type WorkersCronTrigger interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -43,8 +43,6 @@ type WorkersCronTrigger interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,9 +59,8 @@ type WorkersCronTrigger interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Schedules() *[]*string
-	SetSchedules(val *[]*string)
-	SchedulesInput() *[]*string
+	Schedules() WorkersCronTriggerSchedulesList
+	SchedulesInput() interface{}
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
@@ -116,7 +113,7 @@ type WorkersCronTrigger interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutSchedules(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -248,16 +245,6 @@ func (j *jsiiProxy_WorkersCronTrigger) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersCronTrigger) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -308,8 +295,8 @@ func (j *jsiiProxy_WorkersCronTrigger) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) Schedules() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkersCronTrigger) Schedules() WorkersCronTriggerSchedulesList {
+	var returns WorkersCronTriggerSchedulesList
 	_jsii_.Get(
 		j,
 		"schedules",
@@ -318,8 +305,8 @@ func (j *jsiiProxy_WorkersCronTrigger) Schedules() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersCronTrigger) SchedulesInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_WorkersCronTrigger) SchedulesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"schedulesInput",
@@ -379,7 +366,7 @@ func (j *jsiiProxy_WorkersCronTrigger) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
 func NewWorkersCronTrigger(scope constructs.Construct, id *string, config *WorkersCronTriggerConfig) WorkersCronTrigger {
 	_init_.Initialize()
 
@@ -397,7 +384,7 @@ func NewWorkersCronTrigger(scope constructs.Construct, id *string, config *Worke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource.
 func NewWorkersCronTrigger_Override(w WorkersCronTrigger, scope constructs.Construct, id *string, config *WorkersCronTriggerConfig) {
 	_init_.Initialize()
 
@@ -457,17 +444,6 @@ func (j *jsiiProxy_WorkersCronTrigger)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkersCronTrigger)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_WorkersCronTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -494,17 +470,6 @@ func (j *jsiiProxy_WorkersCronTrigger)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersCronTrigger)SetSchedules(val *[]*string) {
-	if err := j.validateSetSchedulesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"schedules",
 		val,
 	)
 }
@@ -873,11 +838,14 @@ func (w *jsiiProxy_WorkersCronTrigger) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkersCronTrigger) ResetId() {
+func (w *jsiiProxy_WorkersCronTrigger) PutSchedules(value interface{}) {
+	if err := w.validatePutSchedulesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		w,
-		"resetId",
-		nil, // no parameters
+		"putSchedules",
+		[]interface{}{value},
 	)
 }
 

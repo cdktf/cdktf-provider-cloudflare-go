@@ -5,9 +5,9 @@ package pagerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PageRuleActionsForwardingUrl
-	SetInternalValue(val *PageRuleActionsForwardingUrl)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
@@ -125,8 +125,8 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InternalValue() *PageRuleActionsForwardingUrl {
-	var returns *PageRuleActionsForwardingUrl
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -245,7 +245,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetInternalValue(val *PageRuleActionsForwardingUrl) {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

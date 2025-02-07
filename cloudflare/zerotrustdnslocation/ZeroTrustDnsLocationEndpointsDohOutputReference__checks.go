@@ -217,9 +217,45 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val *ZeroTrustDnsLocationEndpointsDoh) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustDnsLocationEndpointsDoh:
+		val := val.(*ZeroTrustDnsLocationEndpointsDoh)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustDnsLocationEndpointsDoh:
+		val_ := val.(ZeroTrustDnsLocationEndpointsDoh)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustDnsLocationEndpointsDoh; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsDohOutputReference) validateSetRequireTokenParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

@@ -115,7 +115,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustAccessGroup) validateSetIsDefaultParameters(val interface{}) error {
 	return nil
 }
 

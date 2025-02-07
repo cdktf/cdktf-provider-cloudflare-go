@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataCloudflareRulesets) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesets) validatePutFilterParameters(value *DataCloudflareRulesetsFilter) error {
-	return nil
-}
-
 func validateDataCloudflareRulesets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -83,15 +79,11 @@ func (j *jsiiProxy_DataCloudflareRulesets) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareRulesets) validateSetIncludeRulesParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareRulesets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareRulesets) validateSetMaxItemsParameters(val *float64) error {
 	return nil
 }
 

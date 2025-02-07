@@ -47,55 +47,91 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateInterpola
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthContextParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAnyValidServiceTokenParameters(value *ZeroTrustAccessGroupExcludeAnyValidServiceToken) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAzureParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthContextParameters(value *ZeroTrustAccessGroupExcludeAuthContext) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAuthMethodParameters(value *ZeroTrustAccessGroupExcludeAuthMethod) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGithubParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutAzureAdParameters(value *ZeroTrustAccessGroupExcludeAzureAd) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGsuiteParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutCertificateParameters(value *ZeroTrustAccessGroupExcludeCertificate) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutCommonNameParameters(value *ZeroTrustAccessGroupExcludeCommonName) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutSamlParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutDevicePostureParameters(value *ZeroTrustAccessGroupExcludeDevicePosture) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailParameters(value *ZeroTrustAccessGroupExcludeEmail) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailDomainParameters(value *ZeroTrustAccessGroupExcludeEmailDomain) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEmailListParameters(value *ZeroTrustAccessGroupExcludeEmailListStruct) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutEveryoneParameters(value *ZeroTrustAccessGroupExcludeEveryone) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutExternalEvaluationParameters(value *ZeroTrustAccessGroupExcludeExternalEvaluation) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGeoParameters(value *ZeroTrustAccessGroupExcludeGeo) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGithubOrganizationParameters(value *ZeroTrustAccessGroupExcludeGithubOrganization) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGroupParameters(value *ZeroTrustAccessGroupExcludeGroup) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutGsuiteParameters(value *ZeroTrustAccessGroupExcludeGsuite) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpParameters(value *ZeroTrustAccessGroupExcludeIp) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpListParameters(value *ZeroTrustAccessGroupExcludeIpListStruct) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessGroupExcludeOkta) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutSamlParameters(value *ZeroTrustAccessGroupExcludeSaml) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutServiceTokenParameters(value *ZeroTrustAccessGroupExcludeServiceToken) error {
 	return nil
 }
 
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetAnyValidServiceTokenParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetAuthMethodParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCertificateParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCommonNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetCommonNamesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -107,51 +143,7 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetDevicePostureParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailDomainParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEmailListParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetEveryoneParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetGeoParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetGroupParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetIpParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetIpListParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetLoginMethodParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validateSetServiceTokenParameters(val *[]*string) error {
 	return nil
 }
 

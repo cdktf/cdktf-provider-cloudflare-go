@@ -5,9 +5,9 @@ package pagesproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagesproject/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagesproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -39,8 +39,8 @@ type PagesProjectBuildConfigOutputReference interface {
 	DestinationDirInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectBuildConfig
-	SetInternalValue(val *PagesProjectBuildConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RootDir() *string
 	SetRootDir(val *string)
 	RootDirInput() *string
@@ -203,8 +203,8 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) InternalValue() *PagesProjectBuildConfig {
-	var returns *PagesProjectBuildConfig
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -376,7 +376,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetDestinationDir(val 
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val *PagesProjectBuildConfig) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

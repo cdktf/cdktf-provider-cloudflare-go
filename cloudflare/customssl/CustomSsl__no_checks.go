@@ -75,11 +75,7 @@ func (c *jsiiProxy_CustomSsl) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (c *jsiiProxy_CustomSsl) validatePutCustomSslOptionsParameters(value *CustomSslCustomSslOptions) error {
-	return nil
-}
-
-func (c *jsiiProxy_CustomSsl) validatePutCustomSslPriorityParameters(value interface{}) error {
+func (c *jsiiProxy_CustomSsl) validatePutGeoRestrictionsParameters(value *CustomSslGeoRestrictions) error {
 	return nil
 }
 
@@ -99,6 +95,14 @@ func validateCustomSsl_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_CustomSsl) validateSetBundleMethodParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetCertificateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomSsl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,15 +111,23 @@ func (j *jsiiProxy_CustomSsl) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_CustomSsl) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CustomSsl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
+func (j *jsiiProxy_CustomSsl) validateSetPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetPrivateKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomSsl) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CustomSsl) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

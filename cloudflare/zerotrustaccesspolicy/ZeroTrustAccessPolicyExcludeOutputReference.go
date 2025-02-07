@@ -5,33 +5,26 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustAccessPolicyExcludeOutputReference interface {
 	cdktf.ComplexObject
-	AnyValidServiceToken() interface{}
-	SetAnyValidServiceToken(val interface{})
+	AnyValidServiceToken() ZeroTrustAccessPolicyExcludeAnyValidServiceTokenOutputReference
 	AnyValidServiceTokenInput() interface{}
-	AuthContext() ZeroTrustAccessPolicyExcludeAuthContextList
+	AuthContext() ZeroTrustAccessPolicyExcludeAuthContextOutputReference
 	AuthContextInput() interface{}
-	AuthMethod() *string
-	SetAuthMethod(val *string)
-	AuthMethodInput() *string
-	Azure() ZeroTrustAccessPolicyExcludeAzureList
-	AzureInput() interface{}
-	Certificate() interface{}
-	SetCertificate(val interface{})
+	AuthMethod() ZeroTrustAccessPolicyExcludeAuthMethodOutputReference
+	AuthMethodInput() interface{}
+	AzureAd() ZeroTrustAccessPolicyExcludeAzureAdOutputReference
+	AzureAdInput() interface{}
+	Certificate() ZeroTrustAccessPolicyExcludeCertificateOutputReference
 	CertificateInput() interface{}
-	CommonName() *string
-	SetCommonName(val *string)
-	CommonNameInput() *string
-	CommonNames() *[]*string
-	SetCommonNames(val *[]*string)
-	CommonNamesInput() *[]*string
+	CommonName() ZeroTrustAccessPolicyExcludeCommonNameOutputReference
+	CommonNameInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,53 +40,40 @@ type ZeroTrustAccessPolicyExcludeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DevicePosture() *[]*string
-	SetDevicePosture(val *[]*string)
-	DevicePostureInput() *[]*string
-	Email() *[]*string
-	SetEmail(val *[]*string)
-	EmailDomain() *[]*string
-	SetEmailDomain(val *[]*string)
-	EmailDomainInput() *[]*string
-	EmailInput() *[]*string
-	EmailList() *[]*string
-	SetEmailList(val *[]*string)
-	EmailListInput() *[]*string
-	Everyone() interface{}
-	SetEveryone(val interface{})
+	DevicePosture() ZeroTrustAccessPolicyExcludeDevicePostureOutputReference
+	DevicePostureInput() interface{}
+	Email() ZeroTrustAccessPolicyExcludeEmailOutputReference
+	EmailDomain() ZeroTrustAccessPolicyExcludeEmailDomainOutputReference
+	EmailDomainInput() interface{}
+	EmailInput() interface{}
+	EmailList() ZeroTrustAccessPolicyExcludeEmailListStructOutputReference
+	EmailListInput() interface{}
+	Everyone() ZeroTrustAccessPolicyExcludeEveryoneOutputReference
 	EveryoneInput() interface{}
-	ExternalEvaluation() ZeroTrustAccessPolicyExcludeExternalEvaluationList
+	ExternalEvaluation() ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference
 	ExternalEvaluationInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Geo() *[]*string
-	SetGeo(val *[]*string)
-	GeoInput() *[]*string
-	Github() ZeroTrustAccessPolicyExcludeGithubList
-	GithubInput() interface{}
-	Group() *[]*string
-	SetGroup(val *[]*string)
-	GroupInput() *[]*string
-	Gsuite() ZeroTrustAccessPolicyExcludeGsuiteList
+	Geo() ZeroTrustAccessPolicyExcludeGeoOutputReference
+	GeoInput() interface{}
+	GithubOrganization() ZeroTrustAccessPolicyExcludeGithubOrganizationOutputReference
+	GithubOrganizationInput() interface{}
+	Group() ZeroTrustAccessPolicyExcludeGroupOutputReference
+	GroupInput() interface{}
+	Gsuite() ZeroTrustAccessPolicyExcludeGsuiteOutputReference
 	GsuiteInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Ip() *[]*string
-	SetIp(val *[]*string)
-	IpInput() *[]*string
-	IpList() *[]*string
-	SetIpList(val *[]*string)
-	IpListInput() *[]*string
-	LoginMethod() *[]*string
-	SetLoginMethod(val *[]*string)
-	LoginMethodInput() *[]*string
-	Okta() ZeroTrustAccessPolicyExcludeOktaList
+	Ip() ZeroTrustAccessPolicyExcludeIpOutputReference
+	IpInput() interface{}
+	IpList() ZeroTrustAccessPolicyExcludeIpListStructOutputReference
+	IpListInput() interface{}
+	Okta() ZeroTrustAccessPolicyExcludeOktaOutputReference
 	OktaInput() interface{}
-	Saml() ZeroTrustAccessPolicyExcludeSamlList
+	Saml() ZeroTrustAccessPolicyExcludeSamlOutputReference
 	SamlInput() interface{}
-	ServiceToken() *[]*string
-	SetServiceToken(val *[]*string)
-	ServiceTokenInput() *[]*string
+	ServiceToken() ZeroTrustAccessPolicyExcludeServiceTokenOutputReference
+	ServiceTokenInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -126,20 +106,33 @@ type ZeroTrustAccessPolicyExcludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthContext(value interface{})
-	PutAzure(value interface{})
-	PutExternalEvaluation(value interface{})
-	PutGithub(value interface{})
-	PutGsuite(value interface{})
-	PutOkta(value interface{})
-	PutSaml(value interface{})
+	PutAnyValidServiceToken(value *ZeroTrustAccessPolicyExcludeAnyValidServiceToken)
+	PutAuthContext(value *ZeroTrustAccessPolicyExcludeAuthContext)
+	PutAuthMethod(value *ZeroTrustAccessPolicyExcludeAuthMethod)
+	PutAzureAd(value *ZeroTrustAccessPolicyExcludeAzureAd)
+	PutCertificate(value *ZeroTrustAccessPolicyExcludeCertificate)
+	PutCommonName(value *ZeroTrustAccessPolicyExcludeCommonName)
+	PutDevicePosture(value *ZeroTrustAccessPolicyExcludeDevicePosture)
+	PutEmail(value *ZeroTrustAccessPolicyExcludeEmail)
+	PutEmailDomain(value *ZeroTrustAccessPolicyExcludeEmailDomain)
+	PutEmailList(value *ZeroTrustAccessPolicyExcludeEmailListStruct)
+	PutEveryone(value *ZeroTrustAccessPolicyExcludeEveryone)
+	PutExternalEvaluation(value *ZeroTrustAccessPolicyExcludeExternalEvaluation)
+	PutGeo(value *ZeroTrustAccessPolicyExcludeGeo)
+	PutGithubOrganization(value *ZeroTrustAccessPolicyExcludeGithubOrganization)
+	PutGroup(value *ZeroTrustAccessPolicyExcludeGroup)
+	PutGsuite(value *ZeroTrustAccessPolicyExcludeGsuite)
+	PutIp(value *ZeroTrustAccessPolicyExcludeIp)
+	PutIpList(value *ZeroTrustAccessPolicyExcludeIpListStruct)
+	PutOkta(value *ZeroTrustAccessPolicyExcludeOkta)
+	PutSaml(value *ZeroTrustAccessPolicyExcludeSaml)
+	PutServiceToken(value *ZeroTrustAccessPolicyExcludeServiceToken)
 	ResetAnyValidServiceToken()
 	ResetAuthContext()
 	ResetAuthMethod()
-	ResetAzure()
+	ResetAzureAd()
 	ResetCertificate()
 	ResetCommonName()
-	ResetCommonNames()
 	ResetDevicePosture()
 	ResetEmail()
 	ResetEmailDomain()
@@ -147,12 +140,11 @@ type ZeroTrustAccessPolicyExcludeOutputReference interface {
 	ResetEveryone()
 	ResetExternalEvaluation()
 	ResetGeo()
-	ResetGithub()
+	ResetGithubOrganization()
 	ResetGroup()
 	ResetGsuite()
 	ResetIp()
 	ResetIpList()
-	ResetLoginMethod()
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
@@ -171,8 +163,8 @@ type jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AnyValidServiceToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AnyValidServiceToken() ZeroTrustAccessPolicyExcludeAnyValidServiceTokenOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeAnyValidServiceTokenOutputReference
 	_jsii_.Get(
 		j,
 		"anyValidServiceToken",
@@ -191,8 +183,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AnyValidServiceT
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthContext() ZeroTrustAccessPolicyExcludeAuthContextList {
-	var returns ZeroTrustAccessPolicyExcludeAuthContextList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthContext() ZeroTrustAccessPolicyExcludeAuthContextOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeAuthContextOutputReference
 	_jsii_.Get(
 		j,
 		"authContext",
@@ -211,8 +203,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthContextInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethod() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethod() ZeroTrustAccessPolicyExcludeAuthMethodOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeAuthMethodOutputReference
 	_jsii_.Get(
 		j,
 		"authMethod",
@@ -221,8 +213,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethod() *st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethodInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethodInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authMethodInput",
@@ -231,28 +223,28 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AuthMethodInput(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Azure() ZeroTrustAccessPolicyExcludeAzureList {
-	var returns ZeroTrustAccessPolicyExcludeAzureList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AzureAd() ZeroTrustAccessPolicyExcludeAzureAdOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeAzureAdOutputReference
 	_jsii_.Get(
 		j,
-		"azure",
+		"azureAd",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AzureInput() interface{} {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) AzureAdInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"azureInput",
+		"azureAdInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Certificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Certificate() ZeroTrustAccessPolicyExcludeCertificateOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeCertificateOutputReference
 	_jsii_.Get(
 		j,
 		"certificate",
@@ -271,8 +263,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CertificateInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonName() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonName() ZeroTrustAccessPolicyExcludeCommonNameOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeCommonNameOutputReference
 	_jsii_.Get(
 		j,
 		"commonName",
@@ -281,31 +273,11 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonName() *st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonNameInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonNameInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"commonNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"commonNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CommonNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"commonNamesInput",
 		&returns,
 	)
 	return returns
@@ -341,8 +313,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePosture() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePosture() ZeroTrustAccessPolicyExcludeDevicePostureOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeDevicePostureOutputReference
 	_jsii_.Get(
 		j,
 		"devicePosture",
@@ -351,8 +323,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePosture() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePostureInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePostureInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"devicePostureInput",
@@ -361,8 +333,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) DevicePostureInp
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Email() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Email() ZeroTrustAccessPolicyExcludeEmailOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeEmailOutputReference
 	_jsii_.Get(
 		j,
 		"email",
@@ -371,8 +343,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Email() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomain() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomain() ZeroTrustAccessPolicyExcludeEmailDomainOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeEmailDomainOutputReference
 	_jsii_.Get(
 		j,
 		"emailDomain",
@@ -381,8 +353,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomain() *[
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomainInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomainInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"emailDomainInput",
@@ -391,8 +363,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailDomainInput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"emailInput",
@@ -401,8 +373,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailList() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailList() ZeroTrustAccessPolicyExcludeEmailListStructOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeEmailListStructOutputReference
 	_jsii_.Get(
 		j,
 		"emailList",
@@ -411,8 +383,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailList() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailListInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailListInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"emailListInput",
@@ -421,8 +393,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EmailListInput()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Everyone() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Everyone() ZeroTrustAccessPolicyExcludeEveryoneOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeEveryoneOutputReference
 	_jsii_.Get(
 		j,
 		"everyone",
@@ -441,8 +413,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) EveryoneInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ExternalEvaluation() ZeroTrustAccessPolicyExcludeExternalEvaluationList {
-	var returns ZeroTrustAccessPolicyExcludeExternalEvaluationList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ExternalEvaluation() ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeExternalEvaluationOutputReference
 	_jsii_.Get(
 		j,
 		"externalEvaluation",
@@ -471,8 +443,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Geo() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Geo() ZeroTrustAccessPolicyExcludeGeoOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeGeoOutputReference
 	_jsii_.Get(
 		j,
 		"geo",
@@ -481,8 +453,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Geo() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GeoInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GeoInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"geoInput",
@@ -491,28 +463,28 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GeoInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Github() ZeroTrustAccessPolicyExcludeGithubList {
-	var returns ZeroTrustAccessPolicyExcludeGithubList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GithubOrganization() ZeroTrustAccessPolicyExcludeGithubOrganizationOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeGithubOrganizationOutputReference
 	_jsii_.Get(
 		j,
-		"github",
+		"githubOrganization",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GithubInput() interface{} {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GithubOrganizationInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"githubInput",
+		"githubOrganizationInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Group() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Group() ZeroTrustAccessPolicyExcludeGroupOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeGroupOutputReference
 	_jsii_.Get(
 		j,
 		"group",
@@ -521,8 +493,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Group() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GroupInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GroupInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"groupInput",
@@ -531,8 +503,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) GroupInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Gsuite() ZeroTrustAccessPolicyExcludeGsuiteList {
-	var returns ZeroTrustAccessPolicyExcludeGsuiteList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Gsuite() ZeroTrustAccessPolicyExcludeGsuiteOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeGsuiteOutputReference
 	_jsii_.Get(
 		j,
 		"gsuite",
@@ -561,8 +533,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Ip() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Ip() ZeroTrustAccessPolicyExcludeIpOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeIpOutputReference
 	_jsii_.Get(
 		j,
 		"ip",
@@ -571,8 +543,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Ip() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipInput",
@@ -581,8 +553,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpInput() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpList() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpList() ZeroTrustAccessPolicyExcludeIpListStructOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeIpListStructOutputReference
 	_jsii_.Get(
 		j,
 		"ipList",
@@ -591,8 +563,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpList() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpListInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpListInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ipListInput",
@@ -601,28 +573,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) IpListInput() *[
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) LoginMethod() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"loginMethod",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) LoginMethodInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"loginMethodInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Okta() ZeroTrustAccessPolicyExcludeOktaList {
-	var returns ZeroTrustAccessPolicyExcludeOktaList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Okta() ZeroTrustAccessPolicyExcludeOktaOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeOktaOutputReference
 	_jsii_.Get(
 		j,
 		"okta",
@@ -641,8 +593,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) OktaInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Saml() ZeroTrustAccessPolicyExcludeSamlList {
-	var returns ZeroTrustAccessPolicyExcludeSamlList
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) Saml() ZeroTrustAccessPolicyExcludeSamlOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeSamlOutputReference
 	_jsii_.Get(
 		j,
 		"saml",
@@ -661,8 +613,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) SamlInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ServiceToken() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ServiceToken() ZeroTrustAccessPolicyExcludeServiceTokenOutputReference {
+	var returns ZeroTrustAccessPolicyExcludeServiceTokenOutputReference
 	_jsii_.Get(
 		j,
 		"serviceToken",
@@ -671,8 +623,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ServiceToken() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ServiceTokenInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ServiceTokenInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"serviceTokenInput",
@@ -729,61 +681,6 @@ func NewZeroTrustAccessPolicyExcludeOutputReference_Override(z ZeroTrustAccessPo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetAnyValidServiceToken(val interface{}) {
-	if err := j.validateSetAnyValidServiceTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"anyValidServiceToken",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetAuthMethod(val *string) {
-	if err := j.validateSetAuthMethodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"authMethod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetCertificate(val interface{}) {
-	if err := j.validateSetCertificateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"certificate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetCommonName(val *string) {
-	if err := j.validateSetCommonNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"commonName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetCommonNames(val *[]*string) {
-	if err := j.validateSetCommonNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"commonNames",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -806,83 +703,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetDevicePosture(val *[]*string) {
-	if err := j.validateSetDevicePostureParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"devicePosture",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetEmail(val *[]*string) {
-	if err := j.validateSetEmailParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"email",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetEmailDomain(val *[]*string) {
-	if err := j.validateSetEmailDomainParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"emailDomain",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetEmailList(val *[]*string) {
-	if err := j.validateSetEmailListParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"emailList",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetEveryone(val interface{}) {
-	if err := j.validateSetEveryoneParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"everyone",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetGeo(val *[]*string) {
-	if err := j.validateSetGeoParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"geo",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetGroup(val *[]*string) {
-	if err := j.validateSetGroupParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"group",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -890,50 +710,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetIp(val *[]*string) {
-	if err := j.validateSetIpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ip",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetIpList(val *[]*string) {
-	if err := j.validateSetIpListParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ipList",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetLoginMethod(val *[]*string) {
-	if err := j.validateSetLoginMethodParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"loginMethod",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference)SetServiceToken(val *[]*string) {
-	if err := j.validateSetServiceTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serviceToken",
 		val,
 	)
 }
@@ -1146,7 +922,18 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) InterpolationFor
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAuthContext(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAnyValidServiceToken(value *ZeroTrustAccessPolicyExcludeAnyValidServiceToken) {
+	if err := z.validatePutAnyValidServiceTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putAnyValidServiceToken",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAuthContext(value *ZeroTrustAccessPolicyExcludeAuthContext) {
 	if err := z.validatePutAuthContextParameters(value); err != nil {
 		panic(err)
 	}
@@ -1157,18 +944,106 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAuthContext(v
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAzure(value interface{}) {
-	if err := z.validatePutAzureParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAuthMethod(value *ZeroTrustAccessPolicyExcludeAuthMethod) {
+	if err := z.validatePutAuthMethodParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putAzure",
+		"putAuthMethod",
 		[]interface{}{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutExternalEvaluation(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutAzureAd(value *ZeroTrustAccessPolicyExcludeAzureAd) {
+	if err := z.validatePutAzureAdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putAzureAd",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutCertificate(value *ZeroTrustAccessPolicyExcludeCertificate) {
+	if err := z.validatePutCertificateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putCertificate",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutCommonName(value *ZeroTrustAccessPolicyExcludeCommonName) {
+	if err := z.validatePutCommonNameParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putCommonName",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutDevicePosture(value *ZeroTrustAccessPolicyExcludeDevicePosture) {
+	if err := z.validatePutDevicePostureParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putDevicePosture",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutEmail(value *ZeroTrustAccessPolicyExcludeEmail) {
+	if err := z.validatePutEmailParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putEmail",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutEmailDomain(value *ZeroTrustAccessPolicyExcludeEmailDomain) {
+	if err := z.validatePutEmailDomainParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putEmailDomain",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutEmailList(value *ZeroTrustAccessPolicyExcludeEmailListStruct) {
+	if err := z.validatePutEmailListParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putEmailList",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutEveryone(value *ZeroTrustAccessPolicyExcludeEveryone) {
+	if err := z.validatePutEveryoneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putEveryone",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutExternalEvaluation(value *ZeroTrustAccessPolicyExcludeExternalEvaluation) {
 	if err := z.validatePutExternalEvaluationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1179,18 +1054,40 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutExternalEvalu
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGithub(value interface{}) {
-	if err := z.validatePutGithubParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGeo(value *ZeroTrustAccessPolicyExcludeGeo) {
+	if err := z.validatePutGeoParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putGithub",
+		"putGeo",
 		[]interface{}{value},
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGsuite(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGithubOrganization(value *ZeroTrustAccessPolicyExcludeGithubOrganization) {
+	if err := z.validatePutGithubOrganizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putGithubOrganization",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGroup(value *ZeroTrustAccessPolicyExcludeGroup) {
+	if err := z.validatePutGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putGroup",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGsuite(value *ZeroTrustAccessPolicyExcludeGsuite) {
 	if err := z.validatePutGsuiteParameters(value); err != nil {
 		panic(err)
 	}
@@ -1201,7 +1098,29 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutGsuite(value 
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutOkta(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutIp(value *ZeroTrustAccessPolicyExcludeIp) {
+	if err := z.validatePutIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putIp",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutIpList(value *ZeroTrustAccessPolicyExcludeIpListStruct) {
+	if err := z.validatePutIpListParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putIpList",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutOkta(value *ZeroTrustAccessPolicyExcludeOkta) {
 	if err := z.validatePutOktaParameters(value); err != nil {
 		panic(err)
 	}
@@ -1212,13 +1131,24 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutOkta(value in
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutSaml(value interface{}) {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutSaml(value *ZeroTrustAccessPolicyExcludeSaml) {
 	if err := z.validatePutSamlParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
 		"putSaml",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) PutServiceToken(value *ZeroTrustAccessPolicyExcludeServiceToken) {
+	if err := z.validatePutServiceTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putServiceToken",
 		[]interface{}{value},
 	)
 }
@@ -1247,10 +1177,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetAuthMethod(
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetAzure() {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetAzureAd() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetAzure",
+		"resetAzureAd",
 		nil, // no parameters
 	)
 }
@@ -1267,14 +1197,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetCommonName(
 	_jsii_.InvokeVoid(
 		z,
 		"resetCommonName",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetCommonNames() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetCommonNames",
 		nil, // no parameters
 	)
 }
@@ -1335,10 +1257,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetGeo() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetGithub() {
+func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetGithubOrganization() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetGithub",
+		"resetGithubOrganization",
 		nil, // no parameters
 	)
 }
@@ -1371,14 +1293,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetIpList() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIpList",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOutputReference) ResetLoginMethod() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetLoginMethod",
 		nil, // no parameters
 	)
 }

@@ -5,17 +5,16 @@ package datacloudflareaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflareaccounts/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflareaccounts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/accounts cloudflare_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts cloudflare_accounts}.
 type DataCloudflareAccounts interface {
 	cdktf.TerraformDataSource
-	Accounts() DataCloudflareAccountsAccountsList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -28,6 +27,9 @@ type DataCloudflareAccounts interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Direction() *string
+	SetDirection(val *string)
+	DirectionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,13 +38,13 @@ type DataCloudflareAccounts interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxItems() *float64
+	SetMaxItems(val *float64)
+	MaxItemsInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -54,6 +56,7 @@ type DataCloudflareAccounts interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Result() DataCloudflareAccountsResultList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -85,7 +88,8 @@ type DataCloudflareAccounts interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetDirection()
+	ResetMaxItems()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -107,16 +111,6 @@ type DataCloudflareAccounts interface {
 // The jsii proxy struct for DataCloudflareAccounts
 type jsiiProxy_DataCloudflareAccounts struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataCloudflareAccounts) Accounts() DataCloudflareAccountsAccountsList {
-	var returns DataCloudflareAccountsAccountsList
-	_jsii_.Get(
-		j,
-		"accounts",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareAccounts) CdktfStack() cdktf.TerraformStack {
@@ -159,6 +153,26 @@ func (j *jsiiProxy_DataCloudflareAccounts) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccounts) Direction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"direction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts) DirectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"directionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccounts) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -189,31 +203,31 @@ func (j *jsiiProxy_DataCloudflareAccounts) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccounts) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAccounts) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAccounts) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts) MaxItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts) MaxItemsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxItemsInput",
 		&returns,
 	)
 	return returns
@@ -269,6 +283,16 @@ func (j *jsiiProxy_DataCloudflareAccounts) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccounts) Result() DataCloudflareAccountsResultList {
+	var returns DataCloudflareAccountsResultList
+	_jsii_.Get(
+		j,
+		"result",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccounts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataCloudflareAccounts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) DataCloudflareAccounts {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataCloudflareAccounts(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts cloudflare_accounts} Data Source.
 func NewDataCloudflareAccounts_Override(d DataCloudflareAccounts, scope constructs.Construct, id *string, config *DataCloudflareAccountsConfig) {
 	_init_.Initialize()
 
@@ -348,21 +372,21 @@ func (j *jsiiProxy_DataCloudflareAccounts)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareAccounts)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareAccounts)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareAccounts)SetDirection(val *string) {
+	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"direction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -374,6 +398,17 @@ func (j *jsiiProxy_DataCloudflareAccounts)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAccounts)SetMaxItems(val *float64) {
+	if err := j.validateSetMaxItemsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxItems",
 		val,
 	)
 }
@@ -682,10 +717,18 @@ func (d *jsiiProxy_DataCloudflareAccounts) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareAccounts) ResetId() {
+func (d *jsiiProxy_DataCloudflareAccounts) ResetDirection() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetDirection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccounts) ResetMaxItems() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxItems",
 		nil, // no parameters
 	)
 }

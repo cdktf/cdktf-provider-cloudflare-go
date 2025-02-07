@@ -75,10 +75,6 @@ func (l *jsiiProxy_LoadBalancerMonitor) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) validatePutHeaderParameters(value interface{}) error {
-	return nil
-}
-
 func validateLoadBalancerMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -135,7 +131,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetFollowRedirectsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetHeaderParameters(val interface{}) error {
 	return nil
 }
 

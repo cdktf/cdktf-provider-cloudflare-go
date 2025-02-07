@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsAuditSsh) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

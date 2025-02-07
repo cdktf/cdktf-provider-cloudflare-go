@@ -59,7 +59,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetHeaderParameters(val *string) error {
+func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetHostParameters(val *[]*string) error {
 	return nil
 }
 
@@ -75,11 +75,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference) validateSetValuesParameters(val *[]*string) error {
-	return nil
-}
-
-func validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerPoolOriginsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -79,11 +79,11 @@ func (j *jsiiProxy_DataCloudflareLists) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLists) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareLists) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLists) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareLists) validateSetMaxItemsParameters(val *float64) error {
 	return nil
 }
 

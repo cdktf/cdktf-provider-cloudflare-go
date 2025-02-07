@@ -392,23 +392,7 @@ func (j *jsiiProxy_LogpushJob) validateSetEnabledParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_LogpushJob) validateSetFilterParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_LogpushJob) validateSetFrequencyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_LogpushJob) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

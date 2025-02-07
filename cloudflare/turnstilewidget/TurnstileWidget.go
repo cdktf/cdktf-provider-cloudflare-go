@@ -5,14 +5,14 @@ package turnstilewidget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/turnstilewidget/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/turnstilewidget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 type TurnstileWidget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -23,6 +23,9 @@ type TurnstileWidget interface {
 	BotFightModeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClearanceLevel() *string
+	SetClearanceLevel(val *string)
+	ClearanceLevelInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -33,6 +36,7 @@ type TurnstileWidget interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,6 +44,9 @@ type TurnstileWidget interface {
 	Domains() *[]*string
 	SetDomains(val *[]*string)
 	DomainsInput() *[]*string
+	EphemeralId() interface{}
+	SetEphemeralId(val interface{})
+	EphemeralIdInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,8 +56,6 @@ type TurnstileWidget interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,6 +63,7 @@ type TurnstileWidget interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -80,6 +86,7 @@ type TurnstileWidget interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Secret() *string
+	Sitekey() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,7 +137,8 @@ type TurnstileWidget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBotFightMode()
-	ResetId()
+	ResetClearanceLevel()
+	ResetEphemeralId()
 	ResetOfflabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -204,6 +212,26 @@ func (j *jsiiProxy_TurnstileWidget) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_TurnstileWidget) ClearanceLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clearanceLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) ClearanceLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clearanceLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TurnstileWidget) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -234,6 +262,16 @@ func (j *jsiiProxy_TurnstileWidget) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TurnstileWidget) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TurnstileWidget) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -259,6 +297,26 @@ func (j *jsiiProxy_TurnstileWidget) DomainsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"domainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) EphemeralId() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ephemeralId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) EphemeralIdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ephemeralIdInput",
 		&returns,
 	)
 	return returns
@@ -304,16 +362,6 @@ func (j *jsiiProxy_TurnstileWidget) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TurnstileWidget) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_TurnstileWidget) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -339,6 +387,16 @@ func (j *jsiiProxy_TurnstileWidget) ModeInput() *string {
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TurnstileWidget) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -454,6 +512,16 @@ func (j *jsiiProxy_TurnstileWidget) Secret() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TurnstileWidget) Sitekey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sitekey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TurnstileWidget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -485,7 +553,7 @@ func (j *jsiiProxy_TurnstileWidget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget(scope constructs.Construct, id *string, config *TurnstileWidgetConfig) TurnstileWidget {
 	_init_.Initialize()
 
@@ -503,7 +571,7 @@ func NewTurnstileWidget(scope constructs.Construct, id *string, config *Turnstil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource.
 func NewTurnstileWidget_Override(t TurnstileWidget, scope constructs.Construct, id *string, config *TurnstileWidgetConfig) {
 	_init_.Initialize()
 
@@ -532,6 +600,17 @@ func (j *jsiiProxy_TurnstileWidget)SetBotFightMode(val interface{}) {
 	_jsii_.Set(
 		j,
 		"botFightMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetClearanceLevel(val *string) {
+	if err := j.validateSetClearanceLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clearanceLevel",
 		val,
 	)
 }
@@ -577,21 +656,21 @@ func (j *jsiiProxy_TurnstileWidget)SetDomains(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TurnstileWidget)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TurnstileWidget)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_TurnstileWidget)SetEphemeralId(val interface{}) {
+	if err := j.validateSetEphemeralIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"ephemeralId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TurnstileWidget)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -1031,10 +1110,18 @@ func (t *jsiiProxy_TurnstileWidget) ResetBotFightMode() {
 	)
 }
 
-func (t *jsiiProxy_TurnstileWidget) ResetId() {
+func (t *jsiiProxy_TurnstileWidget) ResetClearanceLevel() {
 	_jsii_.InvokeVoid(
 		t,
-		"resetId",
+		"resetClearanceLevel",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TurnstileWidget) ResetEphemeralId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEphemeralId",
 		nil, // no parameters
 	)
 }

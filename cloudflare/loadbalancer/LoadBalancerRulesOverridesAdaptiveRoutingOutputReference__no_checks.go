@@ -75,7 +75,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingOutputReference) val
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesAdaptiveRoutingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesAdaptiveRoutingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

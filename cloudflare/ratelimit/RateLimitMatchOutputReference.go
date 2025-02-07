@@ -5,9 +5,9 @@ package ratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ratelimit/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,12 +30,14 @@ type RateLimitMatchOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *RateLimitMatch
-	SetInternalValue(val *RateLimitMatch)
+	Headers() RateLimitMatchHeadersList
+	HeadersInput() interface{}
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Request() RateLimitMatchRequestOutputReference
-	RequestInput() *RateLimitMatchRequest
+	RequestInput() interface{}
 	Response() RateLimitMatchResponseOutputReference
-	ResponseInput() *RateLimitMatchResponse
+	ResponseInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +70,10 @@ type RateLimitMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaders(value interface{})
 	PutRequest(value *RateLimitMatchRequest)
 	PutResponse(value *RateLimitMatchResponse)
+	ResetHeaders()
 	ResetRequest()
 	ResetResponse()
 	// Produce the Token's value at resolution time.
@@ -127,8 +131,28 @@ func (j *jsiiProxy_RateLimitMatchOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) InternalValue() *RateLimitMatch {
-	var returns *RateLimitMatch
+func (j *jsiiProxy_RateLimitMatchOutputReference) Headers() RateLimitMatchHeadersList {
+	var returns RateLimitMatchHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RateLimitMatchOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RateLimitMatchOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -147,8 +171,8 @@ func (j *jsiiProxy_RateLimitMatchOutputReference) Request() RateLimitMatchReques
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) RequestInput() *RateLimitMatchRequest {
-	var returns *RateLimitMatchRequest
+func (j *jsiiProxy_RateLimitMatchOutputReference) RequestInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"requestInput",
@@ -167,8 +191,8 @@ func (j *jsiiProxy_RateLimitMatchOutputReference) Response() RateLimitMatchRespo
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) ResponseInput() *RateLimitMatchResponse {
-	var returns *RateLimitMatchResponse
+func (j *jsiiProxy_RateLimitMatchOutputReference) ResponseInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"responseInput",
@@ -247,7 +271,7 @@ func (j *jsiiProxy_RateLimitMatchOutputReference)SetComplexObjectIsFromSet(val *
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference)SetInternalValue(val *RateLimitMatch) {
+func (j *jsiiProxy_RateLimitMatchOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,6 +490,17 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) InterpolationForAttribute(prop
 	return returns
 }
 
+func (r *jsiiProxy_RateLimitMatchOutputReference) PutHeaders(value interface{}) {
+	if err := r.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RateLimitMatchOutputReference) PutRequest(value *RateLimitMatchRequest) {
 	if err := r.validatePutRequestParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) PutResponse(value *RateLimitMa
 		r,
 		"putResponse",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RateLimitMatchOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetHeaders",
+		nil, // no parameters
 	)
 }
 

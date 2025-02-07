@@ -55,6 +55,10 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetCloudProviderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -75,11 +79,11 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetExpressio
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetProviderParameters(val *string) error {
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11
+module github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12
 
 go 1.18
 

@@ -177,9 +177,25 @@ func (j *jsiiProxy_RateLimitActionOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionOutputReference) validateSetInternalValueParameters(val *RateLimitAction) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_RateLimitActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *RateLimitAction:
+		val := val.(*RateLimitAction)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case RateLimitAction:
+		val_ := val.(RateLimitAction)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RateLimitAction; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

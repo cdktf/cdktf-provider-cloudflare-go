@@ -93,218 +93,45 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateInterpolat
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutAdaptiveRoutingParameters(value *LoadBalancerRulesOverridesAdaptiveRouting) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesAdaptiveRouting:
-		value := value.(*[]*LoadBalancerRulesOverridesAdaptiveRouting)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesAdaptiveRouting:
-		value_ := value.([]*LoadBalancerRulesOverridesAdaptiveRouting)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesAdaptiveRouting; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutCountryPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value *LoadBalancerRulesOverridesLocationStrategy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesCountryPools:
-		value := value.(*[]*LoadBalancerRulesOverridesCountryPools)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesCountryPools:
-		value_ := value.([]*LoadBalancerRulesOverridesCountryPools)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesCountryPools; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutLocationStrategyParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value *LoadBalancerRulesOverridesRandomSteering) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesLocationStrategy:
-		value := value.(*[]*LoadBalancerRulesOverridesLocationStrategy)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesLocationStrategy:
-		value_ := value.([]*LoadBalancerRulesOverridesLocationStrategy)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesLocationStrategy; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutPopPoolsParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value *LoadBalancerRulesOverridesSessionAffinityAttributes) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesPopPools:
-		value := value.(*[]*LoadBalancerRulesOverridesPopPools)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesPopPools:
-		value_ := value.([]*LoadBalancerRulesOverridesPopPools)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesPopPools; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRandomSteeringParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesRandomSteering:
-		value := value.(*[]*LoadBalancerRulesOverridesRandomSteering)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesRandomSteering:
-		value_ := value.([]*LoadBalancerRulesOverridesRandomSteering)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesRandomSteering; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutRegionPoolsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesRegionPools:
-		value := value.(*[]*LoadBalancerRulesOverridesRegionPools)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesRegionPools:
-		value_ := value.([]*LoadBalancerRulesOverridesRegionPools)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesRegionPools; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (l *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validatePutSessionAffinityAttributesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*LoadBalancerRulesOverridesSessionAffinityAttributes:
-		value := value.(*[]*LoadBalancerRulesOverridesSessionAffinityAttributes)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*LoadBalancerRulesOverridesSessionAffinityAttributes:
-		value_ := value.([]*LoadBalancerRulesOverridesSessionAffinityAttributes)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoadBalancerRulesOverridesSessionAffinityAttributes; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -383,6 +210,26 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetCountryPoolsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *map[string]*[]*string:
+		// ok
+	case map[string]*[]*string:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetDefaultPoolsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -417,6 +264,46 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetInterna
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LoadBalancerRulesOverrides; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetPopPoolsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *map[string]*[]*string:
+		// ok
+	case map[string]*[]*string:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetRegionPoolsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *map[string]*[]*string:
+		// ok
+	case map[string]*[]*string:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -471,21 +358,13 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesOutputReference) validateSetTtlPara
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

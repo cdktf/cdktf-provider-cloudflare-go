@@ -5,14 +5,14 @@ package magicwangretunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/magicwangretunnel/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/magicwangretunnel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -51,18 +51,13 @@ type MagicWanGreTunnel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HealthCheckEnabled() interface{}
-	SetHealthCheckEnabled(val interface{})
-	HealthCheckEnabledInput() interface{}
-	HealthCheckTarget() *string
-	SetHealthCheckTarget(val *string)
-	HealthCheckTargetInput() *string
-	HealthCheckType() *string
-	SetHealthCheckType(val *string)
-	HealthCheckTypeInput() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	GreTunnel() MagicWanGreTunnelGreTunnelOutputReference
+	GreTunnelId() *string
+	SetGreTunnelId(val *string)
+	GreTunnelIdInput() *string
+	GreTunnels() MagicWanGreTunnelGreTunnelsList
+	HealthCheck() MagicWanGreTunnelHealthCheckOutputReference
+	HealthCheckInput() interface{}
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
 	InterfaceAddressInput() *string
@@ -70,6 +65,8 @@ type MagicWanGreTunnel interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Modified() cdktf.IResolvable
+	ModifiedGreTunnel() MagicWanGreTunnelModifiedGreTunnelOutputReference
 	Mtu() *float64
 	SetMtu(val *float64)
 	MtuInput() *float64
@@ -140,13 +137,15 @@ type MagicWanGreTunnel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
+	PutHealthCheck(value *MagicWanGreTunnelHealthCheck)
+	ResetCloudflareGreEndpoint()
+	ResetCustomerGreEndpoint()
 	ResetDescription()
-	ResetHealthCheckEnabled()
-	ResetHealthCheckTarget()
-	ResetHealthCheckType()
-	ResetId()
+	ResetGreTunnelId()
+	ResetHealthCheck()
+	ResetInterfaceAddress()
 	ResetMtu()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -329,81 +328,61 @@ func (j *jsiiProxy_MagicWanGreTunnel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckEnabled() interface{} {
+func (j *jsiiProxy_MagicWanGreTunnel) GreTunnel() MagicWanGreTunnelGreTunnelOutputReference {
+	var returns MagicWanGreTunnelGreTunnelOutputReference
+	_jsii_.Get(
+		j,
+		"greTunnel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) GreTunnelId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"greTunnelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) GreTunnelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"greTunnelIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) GreTunnels() MagicWanGreTunnelGreTunnelsList {
+	var returns MagicWanGreTunnelGreTunnelsList
+	_jsii_.Get(
+		j,
+		"greTunnels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) HealthCheck() MagicWanGreTunnelHealthCheckOutputReference {
+	var returns MagicWanGreTunnelHealthCheckOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"healthCheckEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckEnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"healthCheckEnabledInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckTarget() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"healthCheckTarget",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckTargetInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"healthCheckTargetInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"healthCheckType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) HealthCheckTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"healthCheckTypeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
+		"healthCheckInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +413,26 @@ func (j *jsiiProxy_MagicWanGreTunnel) Lifecycle() *cdktf.TerraformResourceLifecy
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) Modified() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"modified",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) ModifiedGreTunnel() MagicWanGreTunnelModifiedGreTunnelOutputReference {
+	var returns MagicWanGreTunnelModifiedGreTunnelOutputReference
+	_jsii_.Get(
+		j,
+		"modifiedGreTunnel",
 		&returns,
 	)
 	return returns
@@ -570,7 +569,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -588,7 +587,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 
@@ -681,46 +680,13 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel)SetHealthCheckEnabled(val interface{}) {
-	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
+func (j *jsiiProxy_MagicWanGreTunnel)SetGreTunnelId(val *string) {
+	if err := j.validateSetGreTunnelIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"healthCheckEnabled",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel)SetHealthCheckTarget(val *string) {
-	if err := j.validateSetHealthCheckTargetParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"healthCheckTarget",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel)SetHealthCheckType(val *string) {
-	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"healthCheckType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
+		"greTunnelId",
 		val,
 	)
 }
@@ -1152,10 +1118,29 @@ func (m *jsiiProxy_MagicWanGreTunnel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ResetAccountId() {
+func (m *jsiiProxy_MagicWanGreTunnel) PutHealthCheck(value *MagicWanGreTunnelHealthCheck) {
+	if err := m.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
-		"resetAccountId",
+		"putHealthCheck",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetCloudflareGreEndpoint() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCloudflareGreEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetCustomerGreEndpoint() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCustomerGreEndpoint",
 		nil, // no parameters
 	)
 }
@@ -1168,34 +1153,26 @@ func (m *jsiiProxy_MagicWanGreTunnel) ResetDescription() {
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheckEnabled() {
+func (m *jsiiProxy_MagicWanGreTunnel) ResetGreTunnelId() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetHealthCheckEnabled",
+		"resetGreTunnelId",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheckTarget() {
+func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheck() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetHealthCheckTarget",
+		"resetHealthCheck",
 		nil, // no parameters
 	)
 }
 
-func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheckType() {
+func (m *jsiiProxy_MagicWanGreTunnel) ResetInterfaceAddress() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetHealthCheckType",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MagicWanGreTunnel) ResetId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetId",
+		"resetInterfaceAddress",
 		nil, // no parameters
 	)
 }
@@ -1204,6 +1181,14 @@ func (m *jsiiProxy_MagicWanGreTunnel) ResetMtu() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMtu",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetName",
 		nil, // no parameters
 	)
 }

@@ -83,7 +83,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyRequireAuthContextOutputReference) valid
 	return nil
 }
 
-func validateNewZeroTrustAccessPolicyRequireAuthContextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessPolicyRequireAuthContextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

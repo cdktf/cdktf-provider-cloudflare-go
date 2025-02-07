@@ -111,10 +111,6 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

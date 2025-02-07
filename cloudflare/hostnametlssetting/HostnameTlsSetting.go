@@ -5,14 +5,14 @@ package hostnametlssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/hostnametlssetting/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/hostnametlssetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,8 +44,6 @@ type HostnameTlsSetting interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -62,9 +60,10 @@ type HostnameTlsSetting interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Setting() *string
-	SetSetting(val *string)
-	SettingInput() *string
+	SettingId() *string
+	SetSettingId(val *string)
+	SettingIdInput() *string
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -72,9 +71,9 @@ type HostnameTlsSetting interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
-	Value() *string
-	SetValue(val *string)
-	ValueInput() *string
+	Value() *float64
+	SetValue(val *float64)
+	ValueInput() *float64
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -121,7 +120,7 @@ type HostnameTlsSetting interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetHostname()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -263,16 +262,6 @@ func (j *jsiiProxy_HostnameTlsSetting) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_HostnameTlsSetting) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -323,21 +312,31 @@ func (j *jsiiProxy_HostnameTlsSetting) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) Setting() *string {
+func (j *jsiiProxy_HostnameTlsSetting) SettingId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"setting",
+		"settingId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) SettingInput() *string {
+func (j *jsiiProxy_HostnameTlsSetting) SettingIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"settingInput",
+		"settingIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HostnameTlsSetting) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -383,8 +382,8 @@ func (j *jsiiProxy_HostnameTlsSetting) UpdatedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) Value() *string {
-	var returns *string
+func (j *jsiiProxy_HostnameTlsSetting) Value() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"value",
@@ -393,8 +392,8 @@ func (j *jsiiProxy_HostnameTlsSetting) Value() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) ValueInput() *string {
-	var returns *string
+func (j *jsiiProxy_HostnameTlsSetting) ValueInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -442,7 +441,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -502,17 +501,6 @@ func (j *jsiiProxy_HostnameTlsSetting)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HostnameTlsSetting)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_HostnameTlsSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -543,18 +531,18 @@ func (j *jsiiProxy_HostnameTlsSetting)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HostnameTlsSetting)SetSetting(val *string) {
-	if err := j.validateSetSettingParameters(val); err != nil {
+func (j *jsiiProxy_HostnameTlsSetting)SetSettingId(val *string) {
+	if err := j.validateSetSettingIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"setting",
+		"settingId",
 		val,
 	)
 }
 
-func (j *jsiiProxy_HostnameTlsSetting)SetValue(val *string) {
+func (j *jsiiProxy_HostnameTlsSetting)SetValue(val *float64) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,10 +917,10 @@ func (h *jsiiProxy_HostnameTlsSetting) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (h *jsiiProxy_HostnameTlsSetting) ResetId() {
+func (h *jsiiProxy_HostnameTlsSetting) ResetHostname() {
 	_jsii_.InvokeVoid(
 		h,
-		"resetId",
+		"resetHostname",
 		nil, // no parameters
 	)
 }

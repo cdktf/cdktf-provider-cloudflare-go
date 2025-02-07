@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,11 +33,11 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
-	Message() *string
-	SetMessage(val *string)
-	MessageInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Msg() *string
+	SetMsg(val *string)
+	MsgInput() *string
 	SupportUrl() *string
 	SetSupportUrl(val *string)
 	SupportUrlInput() *string
@@ -74,7 +74,7 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
-	ResetMessage()
+	ResetMsg()
 	ResetSupportUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -161,21 +161,21 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) Message() *string {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) Msg() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"message",
+		"msg",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) MessageInput() *string {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) MsgInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"messageInput",
+		"msgInput",
 		&returns,
 	)
 	return returns
@@ -282,7 +282,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,13 +293,13 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetMessage(val *string) {
-	if err := j.validateSetMessageParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetMsg(val *string) {
+	if err := j.validateSetMsgParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"message",
+		"msg",
 		val,
 	)
 }
@@ -531,10 +531,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetMessage() {
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetMsg() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetMessage",
+		"resetMsg",
 		nil, // no parameters
 	)
 }

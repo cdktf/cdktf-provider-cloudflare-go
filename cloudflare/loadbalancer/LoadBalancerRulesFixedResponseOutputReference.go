@@ -5,9 +5,9 @@ package loadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/loadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/loadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type LoadBalancerRulesFixedResponseOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *LoadBalancerRulesFixedResponse
-	SetInternalValue(val *LoadBalancerRulesFixedResponse)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -155,8 +155,8 @@ func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) InternalValue() *LoadBalancerRulesFixedResponse {
-	var returns *LoadBalancerRulesFixedResponse
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -306,7 +306,7 @@ func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference)SetContentType(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference)SetInternalValue(val *LoadBalancerRulesFixedResponse) {
+func (j *jsiiProxy_LoadBalancerRulesFixedResponseOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

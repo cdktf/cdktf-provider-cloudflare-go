@@ -115,10 +115,6 @@ func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_BotManagement) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BotManagement) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

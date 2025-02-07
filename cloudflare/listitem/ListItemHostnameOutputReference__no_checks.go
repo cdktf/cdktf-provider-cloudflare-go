@@ -75,7 +75,7 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetUrlHostnameParame
 	return nil
 }
 
-func validateNewListItemHostnameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewListItemHostnameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

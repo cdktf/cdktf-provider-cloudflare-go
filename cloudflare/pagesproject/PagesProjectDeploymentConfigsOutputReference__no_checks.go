@@ -67,7 +67,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetInternalValueParameters(val *PagesProjectDeploymentConfigs) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

@@ -207,6 +207,37 @@ func (c *jsiiProxy_ContentScanningExpression) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (c *jsiiProxy_ContentScanningExpression) validatePutBodyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContentScanningExpressionBody:
+		value := value.(*[]*ContentScanningExpressionBody)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContentScanningExpressionBody:
+		value_ := value.([]*ContentScanningExpressionBody)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContentScanningExpressionBody; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateContentScanningExpression_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -337,17 +368,17 @@ func (j *jsiiProxy_ContentScanningExpression) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ContentScanningExpression) validateSetExpressionIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpression) validateSetPayloadParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
+func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

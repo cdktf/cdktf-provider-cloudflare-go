@@ -5,14 +5,14 @@ package regionalhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/regionalhostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/regionalhostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,8 +44,6 @@ type RegionalHostname interface {
 	SetHostname(val *string)
 	HostnameInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,8 +69,6 @@ type RegionalHostname interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() RegionalHostnameTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -119,12 +115,9 @@ type RegionalHostname interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *RegionalHostnameTimeouts)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -263,16 +256,6 @@ func (j *jsiiProxy_RegionalHostname) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalHostname) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RegionalHostname) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -373,26 +356,6 @@ func (j *jsiiProxy_RegionalHostname) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegionalHostname) Timeouts() RegionalHostnameTimeoutsOutputReference {
-	var returns RegionalHostnameTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RegionalHostname) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RegionalHostname) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +377,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -432,7 +395,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 
@@ -488,17 +451,6 @@ func (j *jsiiProxy_RegionalHostname)SetHostname(val *string) {
 	_jsii_.Set(
 		j,
 		"hostname",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RegionalHostname)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -908,37 +860,10 @@ func (r *jsiiProxy_RegionalHostname) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_RegionalHostname) PutTimeouts(value *RegionalHostnameTimeouts) {
-	if err := r.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_RegionalHostname) ResetId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RegionalHostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RegionalHostname) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

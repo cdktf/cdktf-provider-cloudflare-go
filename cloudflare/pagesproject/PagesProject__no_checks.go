@@ -83,10 +83,6 @@ func (p *jsiiProxy_PagesProject) validatePutDeploymentConfigsParameters(value *P
 	return nil
 }
 
-func (p *jsiiProxy_PagesProject) validatePutSourceParameters(value *PagesProjectSource) error {
-	return nil
-}
-
 func validatePagesProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -112,10 +108,6 @@ func (j *jsiiProxy_PagesProject) validateSetConnectionParameters(val interface{}
 }
 
 func (j *jsiiProxy_PagesProject) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_PagesProject) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -47,7 +47,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validatePutStatusCodeRangeParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) validatePutStatusCodeRangeParameters(value *RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package pagerule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/pagerule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/pagerule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -39,8 +39,8 @@ type PageRuleActionsCacheKeyFieldsHeaderOutputReference interface {
 	Include() *[]*string
 	SetInclude(val *[]*string)
 	IncludeInput() *[]*string
-	InternalValue() *PageRuleActionsCacheKeyFieldsHeader
-	SetInternalValue(val *PageRuleActionsCacheKeyFieldsHeader)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) IncludeIn
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) InternalValue() *PageRuleActionsCacheKeyFieldsHeader {
-	var returns *PageRuleActionsCacheKeyFieldsHeader
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference)SetInclude
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFieldsHeader) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

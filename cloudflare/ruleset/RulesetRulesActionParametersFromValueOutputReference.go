@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,7 +38,7 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	StatusCode() *float64
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
-	TargetUrl() RulesetRulesActionParametersFromValueTargetUrlList
+	TargetUrl() RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	TargetUrlInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -72,7 +72,7 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTargetUrl(value interface{})
+	PutTargetUrl(value *RulesetRulesActionParametersFromValueTargetUrl)
 	ResetPreserveQueryString()
 	ResetStatusCode()
 	ResetTargetUrl()
@@ -181,8 +181,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) StatusC
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TargetUrl() RulesetRulesActionParametersFromValueTargetUrlList {
-	var returns RulesetRulesActionParametersFromValueTargetUrlList
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TargetUrl() RulesetRulesActionParametersFromValueTargetUrlOutputReference {
+	var returns RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	_jsii_.Get(
 		j,
 		"targetUrl",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Terrafo
 }
 
 
-func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersFromValueOutputReference {
+func NewRulesetRulesActionParametersFromValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersFromValueOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersFromValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersFromValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersFromValueOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersFromValueOutputReference_Override(r RulesetRulesActionParametersFromValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersFromValueOutputReference_Override(r RulesetRulesActionParametersFromValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -512,7 +512,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) Interpo
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) PutTargetUrl(value interface{}) {
+func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) PutTargetUrl(value *RulesetRulesActionParametersFromValueTargetUrl) {
 	if err := r.validatePutTargetUrlParameters(value); err != nil {
 		panic(err)
 	}

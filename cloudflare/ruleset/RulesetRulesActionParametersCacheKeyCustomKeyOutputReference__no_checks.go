@@ -47,23 +47,23 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyCookie) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyHeader) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyHost) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryString) error {
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value *RulesetRulesActionParametersCacheKeyCustomKeyUser) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

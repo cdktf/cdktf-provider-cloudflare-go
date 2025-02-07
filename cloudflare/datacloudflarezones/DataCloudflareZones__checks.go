@@ -114,7 +114,7 @@ func (d *jsiiProxy_DataCloudflareZones) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareZones) validatePutFilterParameters(value *DataCloudflareZonesFilter) error {
+func (d *jsiiProxy_DataCloudflareZones) validatePutAccountParameters(value *DataCloudflareZonesAccount) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DataCloudflareZones) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZones) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZones) validateSetDirectionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,6 +238,46 @@ func (j *jsiiProxy_DataCloudflareZones) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZones) validateSetMatchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetMaxItemsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetOrderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZones) validateSetStatusParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataCloudflareZonesParameters(scope constructs.Construct, id *string, config *DataCloudflareZonesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -247,9 +287,6 @@ func validateNewDataCloudflareZonesParameters(scope constructs.Construct, id *st
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -39,8 +39,8 @@ type ZeroTrustAccessApplicationLandingPageDesignOutputReference interface {
 	ImageUrl() *string
 	SetImageUrl(val *string)
 	ImageUrlInput() *string
-	InternalValue() *ZeroTrustAccessApplicationLandingPageDesign
-	SetInternalValue(val *ZeroTrustAccessApplicationLandingPageDesign)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) InternalValue() *ZeroTrustAccessApplicationLandingPageDesign {
-	var returns *ZeroTrustAccessApplicationLandingPageDesign
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -352,7 +352,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationLandingPageDesign) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

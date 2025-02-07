@@ -39,7 +39,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -56,8 +55,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putScimConfig", GoMethod: "PutScimConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConfig", GoMethod: "ResetConfig"},
-			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScimConfig", GoMethod: "ResetScimConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetZoneId", GoMethod: "ResetZoneId"},
@@ -92,33 +89,9 @@ func init() {
 		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAList",
-		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigAList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustAccessIdentityProviderConfigAList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference",
 		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "apiToken", GoGetter: "ApiToken"},
-			_jsii_.MemberProperty{JsiiProperty: "apiTokenInput", GoGetter: "ApiTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appsDomain", GoGetter: "AppsDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "appsDomainInput", GoGetter: "AppsDomainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -161,8 +134,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "idpPublicCert", GoGetter: "IdpPublicCert"},
-			_jsii_.MemberProperty{JsiiProperty: "idpPublicCertInput", GoGetter: "IdpPublicCertInput"},
+			_jsii_.MemberProperty{JsiiProperty: "headerAttributes", GoGetter: "HeaderAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "headerAttributesInput", GoGetter: "HeaderAttributesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "idpPublicCerts", GoGetter: "IdpPublicCerts"},
+			_jsii_.MemberProperty{JsiiProperty: "idpPublicCertsInput", GoGetter: "IdpPublicCertsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -176,8 +151,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pingEnvIdInput", GoGetter: "PingEnvIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pkceEnabled", GoGetter: "PkceEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "pkceEnabledInput", GoGetter: "PkceEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prompt", GoGetter: "Prompt"},
+			_jsii_.MemberProperty{JsiiProperty: "promptInput", GoGetter: "PromptInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putHeaderAttributes", GoMethod: "PutHeaderAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectUrl", GoGetter: "RedirectUrl"},
-			_jsii_.MemberMethod{JsiiMethod: "resetApiToken", GoMethod: "ResetApiToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppsDomain", GoMethod: "ResetAppsDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttributes", GoMethod: "ResetAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizationServerId", GoMethod: "ResetAuthorizationServerId"},
@@ -192,12 +169,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryId", GoMethod: "ResetDirectoryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailAttributeName", GoMethod: "ResetEmailAttributeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailClaimName", GoMethod: "ResetEmailClaimName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIdpPublicCert", GoMethod: "ResetIdpPublicCert"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeaderAttributes", GoMethod: "ResetHeaderAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdpPublicCerts", GoMethod: "ResetIdpPublicCerts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIssuerUrl", GoMethod: "ResetIssuerUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOktaAccount", GoMethod: "ResetOktaAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOneloginAccount", GoMethod: "ResetOneloginAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPingEnvId", GoMethod: "ResetPingEnvId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPkceEnabled", GoMethod: "ResetPkceEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrompt", GoMethod: "ResetPrompt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignRequest", GoMethod: "ResetSignRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsoTargetUrl", GoMethod: "ResetSsoTargetUrl"},
@@ -225,12 +204,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig",
-		reflect.TypeOf((*ZeroTrustAccessIdentityProviderScimConfig)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributes",
+		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigHeaderAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigList",
-		reflect.TypeOf((*ZeroTrustAccessIdentityProviderScimConfigList)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributesList",
+		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigHeaderAttributesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -245,10 +224,52 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigList{}
+			j := jsiiProxy_ZeroTrustAccessIdentityProviderConfigHeaderAttributesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributesOutputReference",
+		reflect.TypeOf((*ZeroTrustAccessIdentityProviderConfigHeaderAttributesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
+			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "headerName", GoGetter: "HeaderName"},
+			_jsii_.MemberProperty{JsiiProperty: "headerNameInput", GoGetter: "HeaderNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttributeName", GoMethod: "ResetAttributeName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHeaderName", GoMethod: "ResetHeaderName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustAccessIdentityProviderConfigHeaderAttributesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig",
+		reflect.TypeOf((*ZeroTrustAccessIdentityProviderScimConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference",
@@ -270,24 +291,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "groupMemberDeprovision", GoGetter: "GroupMemberDeprovision"},
-			_jsii_.MemberProperty{JsiiProperty: "groupMemberDeprovisionInput", GoGetter: "GroupMemberDeprovisionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "identityUpdateBehavior", GoGetter: "IdentityUpdateBehavior"},
 			_jsii_.MemberProperty{JsiiProperty: "identityUpdateBehaviorInput", GoGetter: "IdentityUpdateBehaviorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resetGroupMemberDeprovision", GoMethod: "ResetGroupMemberDeprovision"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentityUpdateBehavior", GoMethod: "ResetIdentityUpdateBehavior"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSeatDeprovision", GoMethod: "ResetSeatDeprovision"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserDeprovision", GoMethod: "ResetUserDeprovision"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scimBaseUrl", GoGetter: "ScimBaseUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "seatDeprovision", GoGetter: "SeatDeprovision"},
 			_jsii_.MemberProperty{JsiiProperty: "seatDeprovisionInput", GoGetter: "SeatDeprovisionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
-			_jsii_.MemberProperty{JsiiProperty: "secretInput", GoGetter: "SecretInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

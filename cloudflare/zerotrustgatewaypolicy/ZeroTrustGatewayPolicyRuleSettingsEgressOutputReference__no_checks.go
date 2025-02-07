@@ -59,7 +59,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) validateSetInternalValueParameters(val *ZeroTrustGatewayPolicyRuleSettingsEgress) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

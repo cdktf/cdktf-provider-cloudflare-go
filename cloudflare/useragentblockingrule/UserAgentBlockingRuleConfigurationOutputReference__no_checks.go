@@ -59,7 +59,7 @@ func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetInternalValueParameters(val *UserAgentBlockingRuleConfiguration) error {
+func (j *jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

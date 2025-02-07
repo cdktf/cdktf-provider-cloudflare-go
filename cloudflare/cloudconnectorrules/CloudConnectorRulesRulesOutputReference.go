@@ -5,14 +5,17 @@ package cloudconnectorrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/cloudconnectorrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/cloudconnectorrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type CloudConnectorRulesRulesOutputReference interface {
 	cdktf.ComplexObject
+	CloudProvider() *string
+	SetCloudProvider(val *string)
+	CloudProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,13 +42,13 @@ type CloudConnectorRulesRulesOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Parameters() CloudConnectorRulesRulesParametersOutputReference
 	ParametersInput() interface{}
-	Provider() *string
-	SetProvider(val *string)
-	ProviderInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,8 +82,12 @@ type CloudConnectorRulesRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParameters(value *CloudConnectorRulesRulesParameters)
+	ResetCloudProvider()
 	ResetDescription()
 	ResetEnabled()
+	ResetExpression()
+	ResetId()
+	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -94,6 +101,26 @@ type CloudConnectorRulesRulesOutputReference interface {
 // The jsii proxy struct for CloudConnectorRulesRulesOutputReference
 type jsiiProxy_CloudConnectorRulesRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) CloudProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) CloudProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -196,6 +223,26 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -221,26 +268,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ParametersInput() in
 	_jsii_.Get(
 		j,
 		"parametersInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Provider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"provider",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"providerInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +318,17 @@ func NewCloudConnectorRulesRulesOutputReference_Override(c CloudConnectorRulesRu
 		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetCloudProvider(val *string) {
+	if err := j.validateSetCloudProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudProvider",
+		val,
 	)
 }
 
@@ -349,6 +387,17 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetExpression(val *st
 	)
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -356,17 +405,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetProvider(val *string) {
-	if err := j.validateSetProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provider",
 		val,
 	)
 }
@@ -590,6 +628,14 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) PutParameters(value 
 	)
 }
 
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetCloudProvider() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCloudProvider",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -602,6 +648,30 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetExpression() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpression",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

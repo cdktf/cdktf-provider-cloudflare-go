@@ -5,14 +5,14 @@ package urlnormalizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/urlnormalizationsettings/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/urlnormalizationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings}.
 type UrlNormalizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,8 +40,6 @@ type UrlNormalizationSettings interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,7 +114,6 @@ type UrlNormalizationSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -223,16 +220,6 @@ func (j *jsiiProxy_UrlNormalizationSettings) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_UrlNormalizationSettings) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +366,7 @@ func (j *jsiiProxy_UrlNormalizationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
 func NewUrlNormalizationSettings(scope constructs.Construct, id *string, config *UrlNormalizationSettingsConfig) UrlNormalizationSettings {
 	_init_.Initialize()
 
@@ -397,7 +384,7 @@ func NewUrlNormalizationSettings(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/url_normalization_settings cloudflare_url_normalization_settings} Resource.
 func NewUrlNormalizationSettings_Override(u UrlNormalizationSettings, scope constructs.Construct, id *string, config *UrlNormalizationSettingsConfig) {
 	_init_.Initialize()
 
@@ -442,17 +429,6 @@ func (j *jsiiProxy_UrlNormalizationSettings)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UrlNormalizationSettings)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -870,14 +846,6 @@ func (u *jsiiProxy_UrlNormalizationSettings) OverrideLogicalId(newLogicalId *str
 		u,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (u *jsiiProxy_UrlNormalizationSettings) ResetId() {
-	_jsii_.InvokeVoid(
-		u,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

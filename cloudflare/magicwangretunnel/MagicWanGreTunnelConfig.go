@@ -22,54 +22,47 @@ type MagicWanGreTunnelConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
+	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The IP address assigned to the Cloudflare side of the GRE tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
-	CloudflareGreEndpoint *string `field:"required" json:"cloudflareGreEndpoint" yaml:"cloudflareGreEndpoint"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#cloudflare_gre_endpoint MagicWanGreTunnel#cloudflare_gre_endpoint}
+	CloudflareGreEndpoint *string `field:"optional" json:"cloudflareGreEndpoint" yaml:"cloudflareGreEndpoint"`
 	// The IP address assigned to the customer side of the GRE tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
-	CustomerGreEndpoint *string `field:"required" json:"customerGreEndpoint" yaml:"customerGreEndpoint"`
-	// 31-bit prefix (/31 in CIDR notation) supporting 2 hosts, one for each side of the tunnel.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#customer_gre_endpoint MagicWanGreTunnel#customer_gre_endpoint}
+	CustomerGreEndpoint *string `field:"optional" json:"customerGreEndpoint" yaml:"customerGreEndpoint"`
+	// An optional description of the GRE tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
-	InterfaceAddress *string `field:"required" json:"interfaceAddress" yaml:"interfaceAddress"`
-	// Name of the GRE tunnel.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#account_id MagicWanGreTunnel#account_id}
-	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Description of the GRE tunnel intent.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#description MagicWanGreTunnel#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Specifies if ICMP tunnel health checks are enabled.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#health_check_enabled MagicWanGreTunnel#health_check_enabled}
-	HealthCheckEnabled interface{} `field:"optional" json:"healthCheckEnabled" yaml:"healthCheckEnabled"`
-	// The IP address of the customer endpoint that will receive tunnel health checks.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#gre_tunnel_id MagicWanGreTunnel#gre_tunnel_id}
+	GreTunnelId *string `field:"optional" json:"greTunnelId" yaml:"greTunnelId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#health_check MagicWanGreTunnel#health_check}.
+	HealthCheck *MagicWanGreTunnelHealthCheck `field:"optional" json:"healthCheck" yaml:"healthCheck"`
+	// A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#health_check_target MagicWanGreTunnel#health_check_target}
-	HealthCheckTarget *string `field:"optional" json:"healthCheckTarget" yaml:"healthCheckTarget"`
-	// Specifies the ICMP echo type for the health check. Available values: `request`, `reply`.
+	// Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#health_check_type MagicWanGreTunnel#health_check_type}
-	HealthCheckType *string `field:"optional" json:"healthCheckType" yaml:"healthCheckType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#id MagicWanGreTunnel#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#interface_address MagicWanGreTunnel#interface_address}
+	InterfaceAddress *string `field:"optional" json:"interfaceAddress" yaml:"interfaceAddress"`
+	// Maximum Transmission Unit (MTU) in bytes for the GRE tunnel. The minimum value is 576.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Maximum Transmission Unit (MTU) in bytes for the GRE tunnel.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#mtu MagicWanGreTunnel#mtu}
 	Mtu *float64 `field:"optional" json:"mtu" yaml:"mtu"`
+	// The name of the tunnel.
+	//
+	// The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#name MagicWanGreTunnel#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Time To Live (TTL) in number of hops of the GRE tunnel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_gre_tunnel#ttl MagicWanGreTunnel#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
 

@@ -207,117 +207,7 @@ func (z *jsiiProxy_ZeroTrustGatewaySettings) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutAntivirusParameters(value *ZeroTrustGatewaySettingsAntivirus) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBlockPageParameters(value *ZeroTrustGatewaySettingsBlockPage) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutBodyScanningParameters(value *ZeroTrustGatewaySettingsBodyScanning) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCertificateParameters(value *ZeroTrustGatewaySettingsCertificate) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutCustomCertificateParameters(value *ZeroTrustGatewaySettingsCustomCertificate) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutExtendedEmailMatchingParameters(value *ZeroTrustGatewaySettingsExtendedEmailMatching) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutFipsParameters(value *ZeroTrustGatewaySettingsFips) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutLoggingParameters(value *ZeroTrustGatewaySettingsLogging) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutPayloadLogParameters(value *ZeroTrustGatewaySettingsPayloadLog) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutProxyParameters(value *ZeroTrustGatewaySettingsProxy) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutSshSessionLogParameters(value *ZeroTrustGatewaySettingsSshSessionLog) error {
+func (z *jsiiProxy_ZeroTrustGatewaySettings) validatePutSettingsParameters(value *ZeroTrustGatewaySettingsSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -371,26 +261,6 @@ func validateZeroTrustGatewaySettings_IsTerraformResourceParameters(x interface{
 func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetActivityLogEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil
@@ -486,57 +356,9 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetNonIdentityBrowserIsolationEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetProtocolDetectionEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil
@@ -582,46 +404,6 @@ func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetProvisionersParameters(v
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetTlsDecryptEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewaySettings) validateSetUrlBrowserIsolationEnabledParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

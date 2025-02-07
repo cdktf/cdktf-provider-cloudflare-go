@@ -22,78 +22,77 @@ type LogpushJobConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The kind of the dataset to use with the logpush job.
-	//
-	// Available values: `access_requests`, `casb_findings`, `firewall_events`, `http_requests`, `spectrum_events`, `nel_reports`, `audit_logs`, `gateway_dns`, `gateway_http`, `gateway_network`, `dns_logs`, `network_analytics_logs`, `workers_trace_events`, `device_posture_results`, `zero_trust_network_sessions`, `magic_ids_detections`, `page_shield_events`, `dlp_forensic_copies`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
-	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// Uniquely identifies a resource (such as an s3 bucket) where data will be pushed.
 	//
-	// Additional configuration parameters supported by the destination may be included. See [Logpush destination documentation](https://developers.cloudflare.com/logs/reference/logpush-api-configuration#destination).
+	// Additional configuration parameters supported by the destination may be included.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#destination_conf LogpushJob#destination_conf}
 	DestinationConf *string `field:"required" json:"destinationConf" yaml:"destinationConf"`
-	// The account identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
+	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#account_id LogpushJob#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Whether to enable the job.
+	// Name of the dataset. A list of supported datasets can be found on the [Developer Docs](https://developers.cloudflare.com/logs/reference/log-fields/).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#dataset LogpushJob#dataset}
+	Dataset *string `field:"optional" json:"dataset" yaml:"dataset"`
+	// Flag that indicates if the job is enabled.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#enabled LogpushJob#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Use filters to select the events to include and/or remove from your logs. For more information, refer to [Filters](https://developers.cloudflare.com/logs/reference/logpush-api-configuration/filters/).
+	// This field is deprecated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#filter LogpushJob#filter}
-	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// A higher frequency will result in logs being pushed on faster with smaller files.
+	// Please use `max_upload_*` parameters instead. The frequency at which Cloudflare sends batches of logs to your destination. Setting frequency to high sends your logs in larger quantities of smaller files. Setting frequency to low sends logs in smaller quantities of larger files.
 	//
-	// `low` frequency will push logs less often with larger files. Available values: `high`, `low`. Defaults to `high`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#frequency LogpushJob#frequency}
 	Frequency *string `field:"optional" json:"frequency" yaml:"frequency"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#id LogpushJob#id}.
+	// The kind parameter (optional) is used to differentiate between Logpush and Edge Log Delivery jobs.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The kind of logpush job to create. Available values: `edge`, `instant-logs`, `""`.
+	// Currently, Edge Log Delivery is only supported for the `http_requests` dataset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#kind LogpushJob#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#kind LogpushJob#kind}
 	Kind *string `field:"optional" json:"kind" yaml:"kind"`
-	// Configuration string for the Logshare API. It specifies things like requested fields and timestamp formats. See [Logpush options documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#options).
+	// This field is deprecated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
+	// Use `output_options` instead. Configuration string. It specifies things like requested fields and timestamp formats. If migrating from the logpull api, copy the url (full url or just the query string) of your call here, and logpush will keep on making this call for you, setting start and end times appropriately.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#logpull_options LogpushJob#logpull_options}
 	LogpullOptions *string `field:"optional" json:"logpullOptions" yaml:"logpullOptions"`
-	// The maximum uncompressed file size of a batch of logs. Value must be between 5MB and 1GB.
+	// The maximum uncompressed file size of a batch of logs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
+	// This setting value must be between `5 MB` and `1 GB`, or `0` to disable it. Note that you cannot set a minimum file size; this means that log files may be much smaller than this batch size. This parameter is not available for jobs with `edge` as its kind.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_bytes LogpushJob#max_upload_bytes}
 	MaxUploadBytes *float64 `field:"optional" json:"maxUploadBytes" yaml:"maxUploadBytes"`
-	// The maximum interval in seconds for log batches. Value must be between 30 and 300.
+	// The maximum interval in seconds for log batches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
+	// This setting must be between 30 and 300 seconds (5 minutes), or `0` to disable it. Note that you cannot specify a minimum interval for log batches; this means that log files may be sent in shorter intervals than this. This parameter is only used for jobs with `edge` as its kind.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_interval_seconds LogpushJob#max_upload_interval_seconds}
 	MaxUploadIntervalSeconds *float64 `field:"optional" json:"maxUploadIntervalSeconds" yaml:"maxUploadIntervalSeconds"`
-	// The maximum number of log lines per batch. Value must be between 1000 and 1,000,000.
+	// The maximum number of log lines per batch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
+	// This setting must be between 1000 and 1,000,000 lines, or `0` to disable it. Note that you cannot specify a minimum number of log lines per batch; this means that log files may contain many fewer lines than this. This parameter is not available for jobs with `edge` as its kind.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#max_upload_records LogpushJob#max_upload_records}
 	MaxUploadRecords *float64 `field:"optional" json:"maxUploadRecords" yaml:"maxUploadRecords"`
-	// The name of the logpush job to create.
+	// Optional human readable job name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#name LogpushJob#name}
+	// Not unique. Cloudflare suggests that you set this to a meaningful string, like the domain name, to make it easier to identify your job.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#name LogpushJob#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// output_options block.
+	// The structured replacement for `logpull_options`. When including this field, the `logpull_option` field will be ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#output_options LogpushJob#output_options}
 	OutputOptions *LogpushJobOutputOptions `field:"optional" json:"outputOptions" yaml:"outputOptions"`
-	// Ownership challenge token to prove destination ownership, required when destination is Amazon S3, Google Cloud Storage, Microsoft Azure or Sumo Logic.
+	// Ownership challenge token to prove destination ownership.
 	//
-	// See [Developer documentation](https://developers.cloudflare.com/logs/logpush/logpush-configuration-api/understanding-logpush-api/#usage).
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#ownership_challenge LogpushJob#ownership_challenge}
 	OwnershipChallenge *string `field:"optional" json:"ownershipChallenge" yaml:"ownershipChallenge"`
-	// The zone identifier to target for the resource. Must provide only one of `account_id`, `zone_id`.
+	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job#zone_id LogpushJob#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

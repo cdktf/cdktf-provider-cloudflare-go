@@ -71,7 +71,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetDestinatio
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetInternalValueParameters(val *PagesProjectBuildConfig) error {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

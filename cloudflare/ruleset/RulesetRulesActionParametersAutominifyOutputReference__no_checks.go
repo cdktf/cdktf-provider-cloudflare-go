@@ -83,7 +83,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersAutominifyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersAutominifyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

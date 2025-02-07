@@ -207,37 +207,6 @@ func (n *jsiiProxy_NotificationPolicy) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicy) validatePutEmailIntegrationParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*NotificationPolicyEmailIntegration:
-		value := value.(*[]*NotificationPolicyEmailIntegration)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*NotificationPolicyEmailIntegration:
-		value_ := value.([]*NotificationPolicyEmailIntegration)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyEmailIntegration; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (n *jsiiProxy_NotificationPolicy) validatePutFiltersParameters(value *NotificationPolicyFilters) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -249,63 +218,12 @@ func (n *jsiiProxy_NotificationPolicy) validatePutFiltersParameters(value *Notif
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicy) validatePutPagerdutyIntegrationParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicy) validatePutMechanismsParameters(value *NotificationPolicyMechanisms) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*NotificationPolicyPagerdutyIntegration:
-		value := value.(*[]*NotificationPolicyPagerdutyIntegration)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*NotificationPolicyPagerdutyIntegration:
-		value_ := value.([]*NotificationPolicyPagerdutyIntegration)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyPagerdutyIntegration; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (n *jsiiProxy_NotificationPolicy) validatePutWebhooksIntegrationParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*NotificationPolicyWebhooksIntegration:
-		value := value.(*[]*NotificationPolicyWebhooksIntegration)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*NotificationPolicyWebhooksIntegration:
-		value_ := value.([]*NotificationPolicyWebhooksIntegration)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationPolicyWebhooksIntegration; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -352,6 +270,14 @@ func validateNotificationPolicy_IsTerraformResourceParameters(x interface{}) err
 }
 
 func (j *jsiiProxy_NotificationPolicy) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationPolicy) validateSetAlertIntervalParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -480,14 +406,6 @@ func (j *jsiiProxy_NotificationPolicy) validateSetEnabledParameters(val interfac
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_NotificationPolicy) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

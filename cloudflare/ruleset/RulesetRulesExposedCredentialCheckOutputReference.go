@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,8 +70,6 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPasswordExpression()
-	ResetUsernameExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,29 +196,29 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) UsernameEx
 }
 
 
-func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesExposedCredentialCheckOutputReference {
+func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesExposedCredentialCheckOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRulesExposedCredentialCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRulesExposedCredentialCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -486,22 +484,6 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Interpolat
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ResetPasswordExpression() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPasswordExpression",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ResetUsernameExpression() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetUsernameExpression",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

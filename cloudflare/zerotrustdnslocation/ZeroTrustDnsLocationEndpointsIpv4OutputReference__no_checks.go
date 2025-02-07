@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) validateSetInternalValueParameters(val *ZeroTrustDnsLocationEndpointsIpv4) error {
+func (j *jsiiProxy_ZeroTrustDnsLocationEndpointsIpv4OutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

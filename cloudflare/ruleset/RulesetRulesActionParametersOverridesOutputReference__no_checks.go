@@ -91,7 +91,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesOutputReference) validat
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

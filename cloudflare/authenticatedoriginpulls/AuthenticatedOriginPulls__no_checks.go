@@ -75,6 +75,10 @@ func (a *jsiiProxy_AuthenticatedOriginPulls) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (a *jsiiProxy_AuthenticatedOriginPulls) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
 func validateAuthenticatedOriginPulls_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -91,10 +95,6 @@ func validateAuthenticatedOriginPulls_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetAuthenticatedOriginPullsCertificateParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -103,15 +103,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetHostnameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPulls) validateSetIdParameters(val *string) error {
 	return nil
 }
 

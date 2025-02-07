@@ -22,32 +22,21 @@ type ZoneLockdownConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// configurations block.
+	// A list of IP addresses or CIDR ranges that will be allowed to access the URLs specified in the Zone Lockdown rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+	// You can include any number of `ip` or `ip_range` configurations.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 	Configurations interface{} `field:"required" json:"configurations" yaml:"configurations"`
-	// A list of simple wildcard patterns to match requests against. The order of the urls is unimportant.
+	// The URLs to include in the current WAF override.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+	// You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 	Urls *[]*string `field:"required" json:"urls" yaml:"urls"`
-	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// A description about the lockdown entry. Typically used as a reminder or explanation for the lockdown.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#description ZoneLockdown#description}
-	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#id ZoneLockdown#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Boolean of whether this zone lockdown is currently paused. Defaults to `false`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}.
-	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 }
 

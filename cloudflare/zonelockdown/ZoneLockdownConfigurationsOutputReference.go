@@ -5,9 +5,9 @@ package zonelockdown
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonelockdown/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonelockdown/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,8 @@ type ZoneLockdownConfigurationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTarget()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) ResetTarget() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTarget",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

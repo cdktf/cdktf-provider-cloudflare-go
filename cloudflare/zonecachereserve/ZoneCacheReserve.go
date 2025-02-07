@@ -5,14 +5,14 @@ package zonecachereserve
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachereserve/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonecachereserve/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type ZoneCacheReserve interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,9 +31,7 @@ type ZoneCacheReserve interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,12 +41,11 @@ type ZoneCacheReserve interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -67,9 +64,13 @@ type ZoneCacheReserve interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Value() *string
+	SetValue(val *string)
+	ValueInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
+	ZoneSettingId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,10 +114,10 @@ type ZoneCacheReserve interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetValue()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -185,21 +186,11 @@ func (j *jsiiProxy_ZoneCacheReserve) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneCacheReserve) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"enabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheReserve) EnabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enabledInput",
+		"editable",
 		&returns,
 	)
 	return returns
@@ -245,21 +236,21 @@ func (j *jsiiProxy_ZoneCacheReserve) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheReserve) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZoneCacheReserve) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneCacheReserve) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -335,6 +326,26 @@ func (j *jsiiProxy_ZoneCacheReserve) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneCacheReserve) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneCacheReserve) ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneCacheReserve) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,8 +366,18 @@ func (j *jsiiProxy_ZoneCacheReserve) ZoneIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneCacheReserve) ZoneSettingId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneSettingId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) ZoneCacheReserve {
 	_init_.Initialize()
 
@@ -374,7 +395,7 @@ func NewZoneCacheReserve(scope constructs.Construct, id *string, config *ZoneCac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve} Resource.
 func NewZoneCacheReserve_Override(z ZoneCacheReserve, scope constructs.Construct, id *string, config *ZoneCacheReserveConfig) {
 	_init_.Initialize()
 
@@ -415,32 +436,10 @@ func (j *jsiiProxy_ZoneCacheReserve)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheReserve)SetEnabled(val interface{}) {
-	if err := j.validateSetEnabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneCacheReserve)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheReserve)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -471,6 +470,17 @@ func (j *jsiiProxy_ZoneCacheReserve)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneCacheReserve)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"value",
 		val,
 	)
 }
@@ -839,18 +849,18 @@ func (z *jsiiProxy_ZoneCacheReserve) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheReserve) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZoneCacheReserve) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneCacheReserve) ResetValue() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetValue",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (z *jsiiProxy_ZoneCacheVariants) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (z *jsiiProxy_ZoneCacheVariants) validatePutValueParameters(value *ZoneCacheVariantsValue) error {
+	return nil
+}
+
 func validateZoneCacheVariants_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -91,14 +95,6 @@ func validateZoneCacheVariants_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetAvifParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetBmpParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneCacheVariants) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,51 +103,11 @@ func (j *jsiiProxy_ZoneCacheVariants) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetGifParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetJp2Parameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetJpegParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetJpgParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetJpg2Parameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneCacheVariants) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) validateSetPngParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneCacheVariants) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetTifParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetTiffParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) validateSetWebpParameters(val *[]*string) error {
 	return nil
 }
 

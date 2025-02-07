@@ -5,14 +5,14 @@ package webanalyticsrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/webanalyticsrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/webanalyticsrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
 type WebAnalyticsRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,7 @@ type WebAnalyticsRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,8 +47,6 @@ type WebAnalyticsRule interface {
 	SetHost(val *string)
 	HostInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Inclusive() interface{}
 	SetInclusive(val interface{})
 	InclusiveInput() interface{}
@@ -63,6 +62,7 @@ type WebAnalyticsRule interface {
 	Paths() *[]*string
 	SetPaths(val *[]*string)
 	PathsInput() *[]*string
+	Priority() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,8 +82,6 @@ type WebAnalyticsRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() WebAnalyticsRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -127,12 +125,13 @@ type WebAnalyticsRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *WebAnalyticsRuleTimeouts)
-	ResetId()
+	ResetHost()
+	ResetInclusive()
+	ResetIsPaused()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
+	ResetPaths()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -211,6 +210,16 @@ func (j *jsiiProxy_WebAnalyticsRule) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WebAnalyticsRule) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebAnalyticsRule) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -276,16 +285,6 @@ func (j *jsiiProxy_WebAnalyticsRule) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WebAnalyticsRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -371,6 +370,16 @@ func (j *jsiiProxy_WebAnalyticsRule) PathsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WebAnalyticsRule) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebAnalyticsRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -451,28 +460,8 @@ func (j *jsiiProxy_WebAnalyticsRule) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WebAnalyticsRule) Timeouts() WebAnalyticsRuleTimeoutsOutputReference {
-	var returns WebAnalyticsRuleTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_WebAnalyticsRule) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) WebAnalyticsRule {
 	_init_.Initialize()
 
@@ -490,7 +479,7 @@ func NewWebAnalyticsRule(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource.
 func NewWebAnalyticsRule_Override(w WebAnalyticsRule, scope constructs.Construct, id *string, config *WebAnalyticsRuleConfig) {
 	_init_.Initialize()
 
@@ -557,17 +546,6 @@ func (j *jsiiProxy_WebAnalyticsRule)SetHost(val *string) {
 	_jsii_.Set(
 		j,
 		"host",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WebAnalyticsRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -999,21 +977,26 @@ func (w *jsiiProxy_WebAnalyticsRule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) PutTimeouts(value *WebAnalyticsRuleTimeouts) {
-	if err := w.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
+func (w *jsiiProxy_WebAnalyticsRule) ResetHost() {
 	_jsii_.InvokeVoid(
 		w,
-		"putTimeouts",
-		[]interface{}{value},
+		"resetHost",
+		nil, // no parameters
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) ResetId() {
+func (w *jsiiProxy_WebAnalyticsRule) ResetInclusive() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetId",
+		"resetInclusive",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebAnalyticsRule) ResetIsPaused() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetIsPaused",
 		nil, // no parameters
 	)
 }
@@ -1026,10 +1009,10 @@ func (w *jsiiProxy_WebAnalyticsRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (w *jsiiProxy_WebAnalyticsRule) ResetTimeouts() {
+func (w *jsiiProxy_WebAnalyticsRule) ResetPaths() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetTimeouts",
+		"resetPaths",
 		nil, // no parameters
 	)
 }

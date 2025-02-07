@@ -5,14 +5,14 @@ package zerotrustlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustlist/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
 type ZeroTrustList interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,7 @@ type ZeroTrustList interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,17 +47,13 @@ type ZeroTrustList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	Items() *[]*string
-	SetItems(val *[]*string)
-	ItemsInput() *[]*string
-	ItemsWithDescription() ZeroTrustListItemsWithDescriptionList
-	ItemsWithDescriptionInput() interface{}
+	Items() ZeroTrustListItemsList
+	ItemsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListCount() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -81,6 +78,7 @@ type ZeroTrustList interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -124,11 +122,9 @@ type ZeroTrustList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutItemsWithDescription(value interface{})
+	PutItems(value interface{})
 	ResetDescription()
-	ResetId()
 	ResetItems()
-	ResetItemsWithDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -210,6 +206,16 @@ func (j *jsiiProxy_ZeroTrustList) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustList) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustList) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -280,18 +286,8 @@ func (j *jsiiProxy_ZeroTrustList) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustList) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustList) Items() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustList) Items() ZeroTrustListItemsList {
+	var returns ZeroTrustListItemsList
 	_jsii_.Get(
 		j,
 		"items",
@@ -300,31 +296,11 @@ func (j *jsiiProxy_ZeroTrustList) Items() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustList) ItemsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"itemsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustList) ItemsWithDescription() ZeroTrustListItemsWithDescriptionList {
-	var returns ZeroTrustListItemsWithDescriptionList
-	_jsii_.Get(
-		j,
-		"itemsWithDescription",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustList) ItemsWithDescriptionInput() interface{} {
+func (j *jsiiProxy_ZeroTrustList) ItemsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"itemsWithDescriptionInput",
+		"itemsInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +311,16 @@ func (j *jsiiProxy_ZeroTrustList) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustList) ListCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"listCount",
 		&returns,
 	)
 	return returns
@@ -450,8 +436,18 @@ func (j *jsiiProxy_ZeroTrustList) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustList) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
 func NewZeroTrustList(scope constructs.Construct, id *string, config *ZeroTrustListConfig) ZeroTrustList {
 	_init_.Initialize()
 
@@ -469,7 +465,7 @@ func NewZeroTrustList(scope constructs.Construct, id *string, config *ZeroTrustL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_list cloudflare_zero_trust_list} Resource.
 func NewZeroTrustList_Override(z ZeroTrustList, scope constructs.Construct, id *string, config *ZeroTrustListConfig) {
 	_init_.Initialize()
 
@@ -536,28 +532,6 @@ func (j *jsiiProxy_ZeroTrustList)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustList)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustList)SetItems(val *[]*string) {
-	if err := j.validateSetItemsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"items",
 		val,
 	)
 }
@@ -967,13 +941,13 @@ func (z *jsiiProxy_ZeroTrustList) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustList) PutItemsWithDescription(value interface{}) {
-	if err := z.validatePutItemsWithDescriptionParameters(value); err != nil {
+func (z *jsiiProxy_ZeroTrustList) PutItems(value interface{}) {
+	if err := z.validatePutItemsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		z,
-		"putItemsWithDescription",
+		"putItems",
 		[]interface{}{value},
 	)
 }
@@ -986,26 +960,10 @@ func (z *jsiiProxy_ZeroTrustList) ResetDescription() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustList) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustList) ResetItems() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetItems",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustList) ResetItemsWithDescription() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetItemsWithDescription",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package logpushjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/logpushjob/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/logpushjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -43,9 +43,7 @@ type LogpushJob interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
-	Filter() *string
-	SetFilter(val *string)
-	FilterInput() *string
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,12 +55,12 @@ type LogpushJob interface {
 	FrequencyInput() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
+	LastComplete() *string
+	LastError() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,7 +83,7 @@ type LogpushJob interface {
 	// The tree node.
 	Node() constructs.Node
 	OutputOptions() LogpushJobOutputOptionsOutputReference
-	OutputOptionsInput() *LogpushJobOutputOptions
+	OutputOptionsInput() interface{}
 	OwnershipChallenge() *string
 	SetOwnershipChallenge(val *string)
 	OwnershipChallengeInput() *string
@@ -153,10 +151,9 @@ type LogpushJob interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutOutputOptions(value *LogpushJobOutputOptions)
 	ResetAccountId()
+	ResetDataset()
 	ResetEnabled()
-	ResetFilter()
 	ResetFrequency()
-	ResetId()
 	ResetKind()
 	ResetLogpullOptions()
 	ResetMaxUploadBytes()
@@ -317,21 +314,11 @@ func (j *jsiiProxy_LogpushJob) EnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJob) Filter() *string {
+func (j *jsiiProxy_LogpushJob) ErrorMessage() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"filter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogpushJob) FilterInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterInput",
+		"errorMessage",
 		&returns,
 	)
 	return returns
@@ -387,21 +374,11 @@ func (j *jsiiProxy_LogpushJob) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJob) Id() *string {
-	var returns *string
+func (j *jsiiProxy_LogpushJob) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogpushJob) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +399,26 @@ func (j *jsiiProxy_LogpushJob) KindInput() *string {
 	_jsii_.Get(
 		j,
 		"kindInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) LastComplete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) LastError() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastError",
 		&returns,
 	)
 	return returns
@@ -557,8 +554,8 @@ func (j *jsiiProxy_LogpushJob) OutputOptions() LogpushJobOutputOptionsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJob) OutputOptionsInput() *LogpushJobOutputOptions {
-	var returns *LogpushJobOutputOptions
+func (j *jsiiProxy_LogpushJob) OutputOptionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"outputOptionsInput",
@@ -668,7 +665,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -686,7 +683,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 
@@ -771,17 +768,6 @@ func (j *jsiiProxy_LogpushJob)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushJob)SetFilter(val *string) {
-	if err := j.validateSetFilterParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"filter",
-		val,
-	)
-}
-
 func (j *jsiiProxy_LogpushJob)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -797,17 +783,6 @@ func (j *jsiiProxy_LogpushJob)SetFrequency(val *string) {
 	_jsii_.Set(
 		j,
 		"frequency",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LogpushJob)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1302,6 +1277,14 @@ func (l *jsiiProxy_LogpushJob) ResetAccountId() {
 	)
 }
 
+func (l *jsiiProxy_LogpushJob) ResetDataset() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDataset",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogpushJob) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1310,26 +1293,10 @@ func (l *jsiiProxy_LogpushJob) ResetEnabled() {
 	)
 }
 
-func (l *jsiiProxy_LogpushJob) ResetFilter() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetFilter",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LogpushJob) ResetFrequency() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetFrequency",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LogpushJob) ResetId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetId",
 		nil, // no parameters
 	)
 }

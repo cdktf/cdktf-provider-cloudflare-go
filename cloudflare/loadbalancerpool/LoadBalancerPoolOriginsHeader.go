@@ -5,13 +5,11 @@ package loadbalancerpool
 
 
 type LoadBalancerPoolOriginsHeader struct {
-	// HTTP Header name.
+	// The 'Host' header allows to override the hostname set in the HTTP request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#header LoadBalancerPool#header}
-	Header *string `field:"required" json:"header" yaml:"header"`
-	// Values for the HTTP headers.
+	// Current support is 1 'Host' header override per origin.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/load_balancer_pool#values LoadBalancerPool#values}
-	Values *[]*string `field:"required" json:"values" yaml:"values"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/load_balancer_pool#host LoadBalancerPool#host}
+	Host *[]*string `field:"optional" json:"host" yaml:"host"`
 }
 

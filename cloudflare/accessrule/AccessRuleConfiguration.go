@@ -5,15 +5,13 @@ package accessrule
 
 
 type AccessRuleConfiguration struct {
-	// The request property to target.
+	// The configuration target. You must set the target to `ip` when specifying an IP address in the rule.
 	//
-	// Available values: `ip`, `ip6`, `ip_range`, `asn`, `country`. **Modifying this attribute will force creation of a new resource.**
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/access_rule#target AccessRule#target}
+	Target *string `field:"optional" json:"target" yaml:"target"`
+	// The IP address to match. This address will be compared to the IP address of incoming requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_rule#target AccessRule#target}
-	Target *string `field:"required" json:"target" yaml:"target"`
-	// The value to target. Depends on target's type. **Modifying this attribute will force creation of a new resource.**.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/access_rule#value AccessRule#value}
-	Value *string `field:"required" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/access_rule#value AccessRule#value}
+	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

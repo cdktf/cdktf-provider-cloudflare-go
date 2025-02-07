@@ -5,9 +5,9 @@ package accessrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/accessrule/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/accessrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type AccessRuleConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AccessRuleConfiguration
-	SetInternalValue(val *AccessRuleConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -70,6 +70,8 @@ type AccessRuleConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTarget()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,8 +127,8 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) InternalValue() *AccessRuleConfiguration {
-	var returns *AccessRuleConfiguration
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -245,7 +247,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetInternalValue(val *AccessRuleConfiguration) {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,6 +486,22 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessRuleConfigurationOutputReference) ResetTarget() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTarget",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessRuleConfigurationOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessRuleConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

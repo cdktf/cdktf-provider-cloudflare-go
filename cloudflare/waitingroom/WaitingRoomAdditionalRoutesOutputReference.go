@@ -5,9 +5,9 @@ package waitingroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/waitingroom/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/waitingroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,7 @@ type WaitingRoomAdditionalRoutesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -485,6 +486,14 @@ func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHost",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WaitingRoomAdditionalRoutesOutputReference) ResetPath() {

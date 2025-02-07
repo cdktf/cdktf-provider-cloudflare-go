@@ -345,7 +345,7 @@ func (j *jsiiProxy_WorkersSecret) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WorkersSecret) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_WorkersSecret) validateSetDispatchNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -423,7 +423,15 @@ func (j *jsiiProxy_WorkersSecret) validateSetScriptNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_WorkersSecret) validateSetSecretTextParameters(val *string) error {
+func (j *jsiiProxy_WorkersSecret) validateSetTextParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersSecret) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

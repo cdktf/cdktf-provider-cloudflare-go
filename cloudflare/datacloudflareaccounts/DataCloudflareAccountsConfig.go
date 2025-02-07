@@ -22,14 +22,17 @@ type DataCloudflareAccountsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/accounts#id DataCloudflareAccounts#id}.
+	// Direction to order results.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The account name to target for the resource.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+	Direction *string `field:"optional" json:"direction" yaml:"direction"`
+	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
+	// Name of the account.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

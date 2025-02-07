@@ -75,10 +75,6 @@ func (l *jsiiProxy_List) validateOverrideLogicalIdParameters(newLogicalId *strin
 	return nil
 }
 
-func (l *jsiiProxy_List) validatePutItemParameters(value interface{}) error {
-	return nil
-}
-
 func validateList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

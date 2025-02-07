@@ -1,0 +1,35 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package datacloudflareaccessrule
+
+
+type DataCloudflareAccessRuleFilter struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#configuration DataCloudflareAccessRule#configuration}.
+	Configuration *DataCloudflareAccessRuleFilterConfiguration `field:"optional" json:"configuration" yaml:"configuration"`
+	// The direction used to sort returned rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#direction DataCloudflareAccessRule#direction}
+	Direction *string `field:"optional" json:"direction" yaml:"direction"`
+	// When set to `all`, all the search requirements must match.
+	//
+	// When set to `any`, only one of the search requirements has to match.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#match DataCloudflareAccessRule#match}
+	Match *string `field:"optional" json:"match" yaml:"match"`
+	// The action to apply to a matched request.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#mode DataCloudflareAccessRule#mode}
+	Mode *string `field:"optional" json:"mode" yaml:"mode"`
+	// The string to search for in the notes of existing IP Access rules.
+	//
+	// Notes: For example, the string 'attack' would match IP Access rules with notes 'Attack 26/02' and 'Attack 27/02'. The search is case insensitive.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#notes DataCloudflareAccessRule#notes}
+	Notes *string `field:"optional" json:"notes" yaml:"notes"`
+	// The field used to sort returned rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/access_rule#order DataCloudflareAccessRule#order}
+	Order *string `field:"optional" json:"order" yaml:"order"`
+}
+

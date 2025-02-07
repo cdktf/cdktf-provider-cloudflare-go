@@ -5,9 +5,9 @@ package ratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ratelimit/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,17 +30,11 @@ type RateLimitMatchResponseOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Headers() interface{}
-	SetHeaders(val interface{})
-	HeadersInput() interface{}
-	InternalValue() *RateLimitMatchResponse
-	SetInternalValue(val *RateLimitMatchResponse)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	OriginTraffic() interface{}
 	SetOriginTraffic(val interface{})
 	OriginTrafficInput() interface{}
-	Statuses() *[]*float64
-	SetStatuses(val *[]*float64)
-	StatusesInput() *[]*float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +67,7 @@ type RateLimitMatchResponseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetHeaders()
 	ResetOriginTraffic()
-	ResetStatuses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,28 +123,8 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) Headers() interface{} {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) InternalValue() interface{} {
 	var returns interface{}
-	_jsii_.Get(
-		j,
-		"headers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) HeadersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"headersInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) InternalValue() *RateLimitMatchResponse {
-	var returns *RateLimitMatchResponse
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -176,26 +148,6 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) OriginTrafficInput() i
 	_jsii_.Get(
 		j,
 		"originTrafficInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) Statuses() *[]*float64 {
-	var returns *[]*float64
-	_jsii_.Get(
-		j,
-		"statuses",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) StatusesInput() *[]*float64 {
-	var returns *[]*float64
-	_jsii_.Get(
-		j,
-		"statusesInput",
 		&returns,
 	)
 	return returns
@@ -271,18 +223,7 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetHeaders(val interface{}) {
-	if err := j.validateSetHeadersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"headers",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetInternalValue(val *RateLimitMatchResponse) {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,17 +241,6 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetOriginTraffic(val in
 	_jsii_.Set(
 		j,
 		"originTraffic",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference)SetStatuses(val *[]*float64) {
-	if err := j.validateSetStatusesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"statuses",
 		val,
 	)
 }
@@ -523,26 +453,10 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) InterpolationForAttrib
 	return returns
 }
 
-func (r *jsiiProxy_RateLimitMatchResponseOutputReference) ResetHeaders() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetHeaders",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RateLimitMatchResponseOutputReference) ResetOriginTraffic() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOriginTraffic",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RateLimitMatchResponseOutputReference) ResetStatuses() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetStatuses",
 		nil, // no parameters
 	)
 }

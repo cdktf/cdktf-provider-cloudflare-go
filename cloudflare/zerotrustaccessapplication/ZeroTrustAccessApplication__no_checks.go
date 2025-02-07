@@ -75,7 +75,7 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutCorsHeadersParameters(value interface{}) error {
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutCorsHeadersParameters(value *ZeroTrustAccessApplicationCorsHeaders) error {
 	return nil
 }
 
@@ -88,6 +88,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutFooterLinksParameters(
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutLandingPageDesignParameters(value *ZeroTrustAccessApplicationLandingPageDesign) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) validatePutPoliciesParameters(value interface{}) error {
 	return nil
 }
 
@@ -175,10 +179,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetDomainParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetDomainTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetEnableBindingCookieParameters(val interface{}) error {
 	return nil
 }
@@ -188,10 +188,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetHeaderBgColorParameter
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetHttpOnlyCookieAttributeParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -211,7 +207,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetOptionsPreflightBypass
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetPoliciesParameters(val *[]*string) error {
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetPathCookieAttributeParameters(val interface{}) error {
 	return nil
 }
 

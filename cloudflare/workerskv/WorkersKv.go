@@ -5,14 +5,14 @@ package workerskv
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerskv/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerskv/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv}.
 type WorkersKv interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -43,15 +43,16 @@ type WorkersKv interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	Key() *string
-	SetKey(val *string)
-	KeyInput() *string
+	KeyName() *string
+	SetKeyName(val *string)
+	KeyNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() *string
+	SetMetadata(val *string)
+	MetadataInput() *string
 	NamespaceId() *string
 	SetNamespaceId(val *string)
 	NamespaceIdInput() *string
@@ -119,7 +120,7 @@ type WorkersKv interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -251,31 +252,21 @@ func (j *jsiiProxy_WorkersKv) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersKv) IdInput() *string {
+func (j *jsiiProxy_WorkersKv) KeyName() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"keyName",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WorkersKv) Key() *string {
+func (j *jsiiProxy_WorkersKv) KeyNameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"key",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersKv) KeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"keyInput",
+		"keyNameInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +277,26 @@ func (j *jsiiProxy_WorkersKv) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) Metadata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersKv) MetadataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +413,7 @@ func (j *jsiiProxy_WorkersKv) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfig) WorkersKv {
 	_init_.Initialize()
 
@@ -420,7 +431,7 @@ func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_kv cloudflare_workers_kv} Resource.
 func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, config *WorkersKvConfig) {
 	_init_.Initialize()
 
@@ -480,24 +491,13 @@ func (j *jsiiProxy_WorkersKv)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkersKv)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_WorkersKv)SetKeyName(val *string) {
+	if err := j.validateSetKeyNameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersKv)SetKey(val *string) {
-	if err := j.validateSetKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"key",
+		"keyName",
 		val,
 	)
 }
@@ -509,6 +509,17 @@ func (j *jsiiProxy_WorkersKv)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersKv)SetMetadata(val *string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
 		val,
 	)
 }
@@ -907,10 +918,10 @@ func (w *jsiiProxy_WorkersKv) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkersKv) ResetId() {
+func (w *jsiiProxy_WorkersKv) ResetMetadata() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetId",
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

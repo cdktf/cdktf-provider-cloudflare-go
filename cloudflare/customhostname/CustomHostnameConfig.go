@@ -22,40 +22,31 @@ type CustomHostnameConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Hostname you intend to request a certificate for. **Modifying this attribute will force creation of a new resource.**.
+	// The custom hostname that will point to your hostname via CNAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#hostname CustomHostname#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
-	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
+	// SSL properties used when creating the custom hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
+	Ssl *CustomHostnameSsl `field:"required" json:"ssl" yaml:"ssl"`
+	// Identifier.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#zone_id CustomHostname#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Custom metadata associated with custom hostname.
+	// Unique key/value metadata for this hostname. These are per-hostname (customer) settings.
 	//
-	// Only supports primitive string values, all other values are accessible via the API directly.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_metadata CustomHostname#custom_metadata}
 	CustomMetadata *map[string]*string `field:"optional" json:"customMetadata" yaml:"customMetadata"`
-	// The custom origin server used for certificates.
+	// a valid hostname that’s been added to your DNS zone as an A, AAAA, or CNAME record.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_origin_server CustomHostname#custom_origin_server}
 	CustomOriginServer *string `field:"optional" json:"customOriginServer" yaml:"customOriginServer"`
-	// The [custom origin SNI](https://developers.cloudflare.com/ssl/ssl-for-saas/hostname-specific-behavior/custom-origin) used for certificates.
+	// A hostname that will be sent to your custom origin server as SNI for TLS handshake.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
+	// This can be a valid subdomain of the zone or custom origin server name or the string ':request_host_header:' which will cause the host header in the request to be used as SNI. Not configurable with default/fallback origin server.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/custom_hostname#custom_origin_sni CustomHostname#custom_origin_sni}
 	CustomOriginSni *string `field:"optional" json:"customOriginSni" yaml:"customOriginSni"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#id CustomHostname#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// ssl block.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#ssl CustomHostname#ssl}
-	Ssl interface{} `field:"optional" json:"ssl" yaml:"ssl"`
-	// Whether to wait for a custom hostname SSL sub-object to reach status `pending_validation` during creation. Defaults to `false`.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/custom_hostname#wait_for_ssl_pending_validation CustomHostname#wait_for_ssl_pending_validation}
-	WaitForSslPendingValidation interface{} `field:"optional" json:"waitForSslPendingValidation" yaml:"waitForSslPendingValidation"`
 }
 

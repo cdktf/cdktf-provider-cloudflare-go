@@ -5,13 +5,13 @@ package addressmap
 
 
 type AddressMapMemberships struct {
-	// Identifier of the account or zone.
+	// The identifier for the membership (eg. a zone or account tag).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#identifier AddressMap#identifier}
-	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#identifier AddressMap#identifier}
+	Identifier *string `field:"optional" json:"identifier" yaml:"identifier"`
 	// The type of the membership.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/address_map#kind AddressMap#kind}
-	Kind *string `field:"required" json:"kind" yaml:"kind"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/address_map#kind AddressMap#kind}
+	Kind *string `field:"optional" json:"kind" yaml:"kind"`
 }
 

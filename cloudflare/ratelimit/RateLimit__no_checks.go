@@ -79,10 +79,6 @@ func (r *jsiiProxy_RateLimit) validatePutActionParameters(value *RateLimitAction
 	return nil
 }
 
-func (r *jsiiProxy_RateLimit) validatePutCorrelateParameters(value *RateLimitCorrelate) error {
-	return nil
-}
-
 func (r *jsiiProxy_RateLimit) validatePutMatchParameters(value *RateLimitMatch) error {
 	return nil
 }
@@ -103,27 +99,11 @@ func validateRateLimit_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_RateLimit) validateSetBypassUrlPatternsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RateLimit) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_RateLimit) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RateLimit) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_RateLimit) validateSetDisabledParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RateLimit) validateSetIdParameters(val *string) error {
 	return nil
 }
 

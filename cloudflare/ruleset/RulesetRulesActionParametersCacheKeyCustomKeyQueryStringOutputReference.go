@@ -5,9 +5,9 @@ package ruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/ruleset/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/ruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,14 +28,12 @@ type RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference int
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Exclude() *[]*string
-	SetExclude(val *[]*string)
-	ExcludeInput() *[]*string
+	Exclude() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference
+	ExcludeInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Include() *[]*string
-	SetInclude(val *[]*string)
-	IncludeInput() *[]*string
+	Include() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference
+	IncludeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,6 +68,8 @@ type RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExclude(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude)
+	PutInclude(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude)
 	ResetExclude()
 	ResetInclude()
 	// Produce the Token's value at resolution time.
@@ -117,8 +117,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) Exclude() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) Exclude() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeOutputReference
 	_jsii_.Get(
 		j,
 		"exclude",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) ExcludeInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) ExcludeInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"excludeInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) Include() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) Include() RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference {
+	var returns RulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeOutputReference
 	_jsii_.Get(
 		j,
 		"include",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) IncludeInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) IncludeInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"includeInput",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 }
 
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference_Override(r RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -243,28 +243,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference)SetExclude(val *[]*string) {
-	if err := j.validateSetExcludeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"exclude",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference)SetInclude(val *[]*string) {
-	if err := j.validateSetIncludeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"include",
 		val,
 	)
 }
@@ -486,6 +464,28 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) PutExclude(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude) {
+	if err := r.validatePutExcludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putExclude",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) PutInclude(value *RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude) {
+	if err := r.validatePutIncludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putInclude",
+		[]interface{}{value},
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) ResetExclude() {

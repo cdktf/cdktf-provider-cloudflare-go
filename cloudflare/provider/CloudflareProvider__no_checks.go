@@ -31,10 +31,6 @@ func validateCloudflareProvider_IsTerraformProviderParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_CloudflareProvider) validateSetApiClientLoggingParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewCloudflareProviderParameters(scope constructs.Construct, id *string, config *CloudflareProviderConfig) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package zerotrustdnslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdnslocation/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdnslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,7 +67,6 @@ type ZeroTrustDnsLocationNetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) InterpolationFor
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) ResetNetwork() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetNetwork",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustDnsLocationNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -5,9 +5,9 @@ package snippetrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/snippetrules/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/snippetrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,8 @@ type SnippetRulesRulesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
 	ResetEnabled()
+	ResetExpression()
+	ResetSnippetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -568,6 +570,22 @@ func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetExpression() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpression",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnippetRulesRulesOutputReference) ResetSnippetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSnippetName",
 		nil, // no parameters
 	)
 }

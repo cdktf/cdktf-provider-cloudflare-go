@@ -5,14 +5,14 @@ package datacloudflarezerotrustaccessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/datacloudflarezerotrustaccessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarezerotrustaccessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -20,6 +20,7 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Config() DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,6 +31,8 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() DataCloudflareZeroTrustAccessIdentityProviderFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,15 +42,14 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	IdentityProviderId() *string
+	SetIdentityProviderId(val *string)
+	IdentityProviderIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -56,6 +58,7 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ScimConfig() DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -91,8 +94,10 @@ type DataCloudflareZeroTrustAccessIdentityProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareZeroTrustAccessIdentityProviderFilter)
 	ResetAccountId()
-	ResetId()
+	ResetFilter()
+	ResetIdentityProviderId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -146,6 +151,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) CdktfStack() c
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) Config() DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference {
+	var returns DataCloudflareZeroTrustAccessIdentityProviderConfigAOutputReference
+	_jsii_.Get(
+		j,
+		"config",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -171,6 +186,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) DependsOn() *[
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) Filter() DataCloudflareZeroTrustAccessIdentityProviderFilterOutputReference {
+	var returns DataCloudflareZeroTrustAccessIdentityProviderFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -216,11 +251,21 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) IdInput() *string {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) IdentityProviderId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"identityProviderId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) IdentityProviderIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityProviderIdInput",
 		&returns,
 	)
 	return returns
@@ -241,16 +286,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) Name() *string
 	_jsii_.Get(
 		j,
 		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
 		&returns,
 	)
 	return returns
@@ -281,6 +316,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) RawOverrides()
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ScimConfig() DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference {
+	var returns DataCloudflareZeroTrustAccessIdentityProviderScimConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scimConfig",
 		&returns,
 	)
 	return returns
@@ -347,7 +392,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ZoneIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) DataCloudflareZeroTrustAccessIdentityProvider {
 	_init_.Initialize()
 
@@ -365,7 +410,7 @@ func NewDataCloudflareZeroTrustAccessIdentityProvider(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider} Data Source.
 func NewDataCloudflareZeroTrustAccessIdentityProvider_Override(d DataCloudflareZeroTrustAccessIdentityProvider, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessIdentityProviderConfig) {
 	_init_.Initialize()
 
@@ -414,13 +459,13 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider)SetForEach(val 
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider)SetIdentityProviderId(val *string) {
+	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"identityProviderId",
 		val,
 	)
 }
@@ -432,17 +477,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider)SetLifecycle(va
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -751,6 +785,17 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) OverrideLogica
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) PutFilter(value *DataCloudflareZeroTrustAccessIdentityProviderFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -759,10 +804,18 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ResetAccountId
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ResetId() {
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetId",
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessIdentityProvider) ResetIdentityProviderId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentityProviderId",
 		nil, // no parameters
 	)
 }

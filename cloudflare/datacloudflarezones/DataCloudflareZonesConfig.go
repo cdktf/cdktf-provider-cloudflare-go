@@ -22,14 +22,42 @@ type DataCloudflareZonesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// filter block.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#account DataCloudflareZones#account}.
+	Account *DataCloudflareZonesAccount `field:"optional" json:"account" yaml:"account"`
+	// Direction to order zones.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zones#filter DataCloudflareZones#filter}
-	Filter *DataCloudflareZonesFilter `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/data-sources/zones#id DataCloudflareZones#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#direction DataCloudflareZones#direction}
+	Direction *string `field:"optional" json:"direction" yaml:"direction"`
+	// Whether to match all search requirements or at least one (any).
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#match DataCloudflareZones#match}
+	Match *string `field:"optional" json:"match" yaml:"match"`
+	// Max items to fetch, default: 1000.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#max_items DataCloudflareZones#max_items}
+	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
+	// A domain name.
+	//
+	// Optional filter operators can be provided to extend refine the search:
+	//   * `equal` (default)
+	//   * `not_equal`
+	//   * `starts_with`
+	//   * `ends_with`
+	//   * `contains`
+	//   * `starts_with_case_sensitive`
+	//   * `ends_with_case_sensitive`
+	//   * `contains_case_sensitive`
+	//
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#name DataCloudflareZones#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Field to order zones by.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#order DataCloudflareZones#order}
+	Order *string `field:"optional" json:"order" yaml:"order"`
+	// A zone status.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zones#status DataCloudflareZones#status}
+	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

@@ -59,7 +59,7 @@ func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val *AccessRuleConfiguration) error {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

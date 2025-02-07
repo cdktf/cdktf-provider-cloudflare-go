@@ -5,17 +5,14 @@ package zerotrustaccessidentityprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessidentityprovider/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessidentityprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	cdktf.ComplexObject
-	ApiToken() *string
-	SetApiToken(val *string)
-	ApiTokenInput() *string
 	AppsDomain() *string
 	SetAppsDomain(val *string)
 	AppsDomainInput() *string
@@ -75,9 +72,11 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	EmailClaimNameInput() *string
 	// Experimental.
 	Fqn() *string
-	IdpPublicCert() *string
-	SetIdpPublicCert(val *string)
-	IdpPublicCertInput() *string
+	HeaderAttributes() ZeroTrustAccessIdentityProviderConfigHeaderAttributesList
+	HeaderAttributesInput() interface{}
+	IdpPublicCerts() *[]*string
+	SetIdpPublicCerts(val *[]*string)
+	IdpPublicCertsInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	IssuerUrl() *string
@@ -95,6 +94,9 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	PkceEnabled() interface{}
 	SetPkceEnabled(val interface{})
 	PkceEnabledInput() interface{}
+	Prompt() *string
+	SetPrompt(val *string)
+	PromptInput() *string
 	RedirectUrl() *string
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
@@ -143,7 +145,7 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetApiToken()
+	PutHeaderAttributes(value interface{})
 	ResetAppsDomain()
 	ResetAttributes()
 	ResetAuthorizationServerId()
@@ -158,12 +160,14 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 	ResetDirectoryId()
 	ResetEmailAttributeName()
 	ResetEmailClaimName()
-	ResetIdpPublicCert()
+	ResetHeaderAttributes()
+	ResetIdpPublicCerts()
 	ResetIssuerUrl()
 	ResetOktaAccount()
 	ResetOneloginAccount()
 	ResetPingEnvId()
 	ResetPkceEnabled()
+	ResetPrompt()
 	ResetScopes()
 	ResetSignRequest()
 	ResetSsoTargetUrl()
@@ -182,26 +186,6 @@ type ZeroTrustAccessIdentityProviderConfigAOutputReference interface {
 // The jsii proxy struct for ZeroTrustAccessIdentityProviderConfigAOutputReference
 type jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ApiToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ApiTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"apiTokenInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) AppsDomain() *string {
@@ -524,21 +508,41 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) IdpPublicCert() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) HeaderAttributes() ZeroTrustAccessIdentityProviderConfigHeaderAttributesList {
+	var returns ZeroTrustAccessIdentityProviderConfigHeaderAttributesList
 	_jsii_.Get(
 		j,
-		"idpPublicCert",
+		"headerAttributes",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) IdpPublicCertInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) HeaderAttributesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"idpPublicCertInput",
+		"headerAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) IdpPublicCerts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"idpPublicCerts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) IdpPublicCertsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"idpPublicCertsInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +653,26 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) PkceEn
 	_jsii_.Get(
 		j,
 		"pkceEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Prompt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prompt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) PromptInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"promptInput",
 		&returns,
 	)
 	return returns
@@ -785,41 +809,30 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) TokenU
 }
 
 
-func NewZeroTrustAccessIdentityProviderConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessIdentityProviderConfigAOutputReference {
+func NewZeroTrustAccessIdentityProviderConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessIdentityProviderConfigAOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessIdentityProviderConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessIdentityProviderConfigAOutputReference_Override(z ZeroTrustAccessIdentityProviderConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessIdentityProviderConfigAOutputReference_Override(z ZeroTrustAccessIdentityProviderConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetApiToken(val *string) {
-	if err := j.validateSetApiTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"apiToken",
-		val,
 	)
 }
 
@@ -999,13 +1012,13 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetEmai
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIdpPublicCert(val *string) {
-	if err := j.validateSetIdpPublicCertParameters(val); err != nil {
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetIdpPublicCerts(val *[]*string) {
+	if err := j.validateSetIdpPublicCertsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"idpPublicCert",
+		"idpPublicCerts",
 		val,
 	)
 }
@@ -1072,6 +1085,17 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetPkce
 	_jsii_.Set(
 		j,
 		"pkceEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference)SetPrompt(val *string) {
+	if err := j.validateSetPromptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prompt",
 		val,
 	)
 }
@@ -1339,11 +1363,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) Interp
 	return returns
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetApiToken() {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) PutHeaderAttributes(value interface{}) {
+	if err := z.validatePutHeaderAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
-		"resetApiToken",
-		nil, // no parameters
+		"putHeaderAttributes",
+		[]interface{}{value},
 	)
 }
 
@@ -1459,10 +1486,18 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetE
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetIdpPublicCert() {
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetHeaderAttributes() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetIdpPublicCert",
+		"resetHeaderAttributes",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetIdpPublicCerts() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIdpPublicCerts",
 		nil, // no parameters
 	)
 }
@@ -1503,6 +1538,14 @@ func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetP
 	_jsii_.InvokeVoid(
 		z,
 		"resetPkceEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessIdentityProviderConfigAOutputReference) ResetPrompt() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPrompt",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsEgress
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsEgress)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Ipv4() *string
 	SetIpv4(val *string)
 	Ipv4Fallback() *string
@@ -73,7 +73,9 @@ type ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpv4()
 	ResetIpv4Fallback()
+	ResetIpv6()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -129,8 +131,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsEgress {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsEgress
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -269,7 +271,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsEgress) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,10 +523,26 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) Inte
 	return returns
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ResetIpv4() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIpv4",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ResetIpv4Fallback() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIpv4Fallback",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsEgressOutputReference) ResetIpv6() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIpv6",
 		nil, // no parameters
 	)
 }

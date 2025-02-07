@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validatePutFilterParameters(value *DataCloudflareZeroTrustAccessApplicationFilter) error {
+	return nil
+}
+
 func validateDataCloudflareZeroTrustAccessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -75,23 +79,15 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetAccountI
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetAppIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetDomainParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) validateSetNameParameters(val *string) error {
 	return nil
 }
 

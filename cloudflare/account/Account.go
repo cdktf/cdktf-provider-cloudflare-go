@@ -5,14 +5,14 @@ package account
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/account/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/account/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,13 +27,11 @@ type Account interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnforceTwofactor() interface{}
-	SetEnforceTwofactor(val interface{})
-	EnforceTwofactorInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,8 +41,6 @@ type Account interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -64,6 +60,8 @@ type Account interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Settings() AccountSettingsOutputReference
+	SettingsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -73,6 +71,8 @@ type Account interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	Unit() AccountUnitOutputReference
+	UnitInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,12 +116,13 @@ type Account interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetEnforceTwofactor()
-	ResetId()
+	PutSettings(value *AccountSettings)
+	PutUnit(value *AccountUnit)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetType()
+	ResetSettings()
+	ResetUnit()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -180,31 +181,21 @@ func (j *jsiiProxy_Account) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Account) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Account) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Account) EnforceTwofactor() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforceTwofactor",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Account) EnforceTwofactorInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enforceTwofactorInput",
 		&returns,
 	)
 	return returns
@@ -245,16 +236,6 @@ func (j *jsiiProxy_Account) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Account) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -330,6 +311,26 @@ func (j *jsiiProxy_Account) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Account) Settings() AccountSettingsOutputReference {
+	var returns AccountSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Account) SettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"settingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Account) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,8 +381,28 @@ func (j *jsiiProxy_Account) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Account) Unit() AccountUnitOutputReference {
+	var returns AccountUnitOutputReference
+	_jsii_.Get(
+		j,
+		"unit",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account cloudflare_account} Resource.
+func (j *jsiiProxy_Account) UnitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unitInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -399,7 +420,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 
@@ -440,32 +461,10 @@ func (j *jsiiProxy_Account)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Account)SetEnforceTwofactor(val interface{}) {
-	if err := j.validateSetEnforceTwofactorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enforceTwofactor",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Account)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Account)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -875,19 +874,25 @@ func (a *jsiiProxy_Account) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (a *jsiiProxy_Account) ResetEnforceTwofactor() {
+func (a *jsiiProxy_Account) PutSettings(value *AccountSettings) {
+	if err := a.validatePutSettingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
-		"resetEnforceTwofactor",
-		nil, // no parameters
+		"putSettings",
+		[]interface{}{value},
 	)
 }
 
-func (a *jsiiProxy_Account) ResetId() {
+func (a *jsiiProxy_Account) PutUnit(value *AccountUnit) {
+	if err := a.validatePutUnitParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
-		"resetId",
-		nil, // no parameters
+		"putUnit",
+		[]interface{}{value},
 	)
 }
 
@@ -899,10 +904,18 @@ func (a *jsiiProxy_Account) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_Account) ResetType() {
+func (a *jsiiProxy_Account) ResetSettings() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetType",
+		"resetSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Account) ResetUnit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUnit",
 		nil, // no parameters
 	)
 }

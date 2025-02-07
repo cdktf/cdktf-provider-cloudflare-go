@@ -71,7 +71,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetInternalValueParameters(val *ZeroTrustAccessApplicationLandingPageDesign) error {
+func (j *jsiiProxy_ZeroTrustAccessApplicationLandingPageDesignOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

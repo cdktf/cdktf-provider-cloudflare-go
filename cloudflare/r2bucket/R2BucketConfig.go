@@ -22,17 +22,25 @@ type R2BucketConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The account identifier to target for the resource.
+	// Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// The name of the R2 bucket.
+	// Name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#name R2Bucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#name R2Bucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The location hint of the R2 bucket. Available values: `WNAM`, `ENAM`, `WEUR`, `EEUR`, `APAC`, `OC`.
+	// Jurisdiction of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/r2_bucket#location R2Bucket#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
+	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
+	// Location of the bucket.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#location R2Bucket#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
+	// Storage class for newly uploaded objects, unless specified otherwise.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
+	StorageClass *string `field:"optional" json:"storageClass" yaml:"storageClass"`
 }
 

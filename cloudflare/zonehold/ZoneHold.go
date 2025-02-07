@@ -5,14 +5,14 @@ package zonehold
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonehold/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonehold/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold}.
 type ZoneHold interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,15 +39,11 @@ type ZoneHold interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Hold() interface{}
-	SetHold(val interface{})
+	Hold() cdktf.IResolvable
 	HoldAfter() *string
 	SetHoldAfter(val *string)
 	HoldAfterInput() *string
-	HoldInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IncludeSubdomains() interface{}
 	SetIncludeSubdomains(val interface{})
 	IncludeSubdomainsInput() interface{}
@@ -120,7 +116,6 @@ type ZoneHold interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetHoldAfter()
-	ResetId()
 	ResetIncludeSubdomains()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -223,8 +218,8 @@ func (j *jsiiProxy_ZoneHold) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneHold) Hold() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneHold) Hold() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"hold",
@@ -253,31 +248,11 @@ func (j *jsiiProxy_ZoneHold) HoldAfterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneHold) HoldInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"holdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZoneHold) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneHold) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +379,7 @@ func (j *jsiiProxy_ZoneHold) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
 func NewZoneHold(scope constructs.Construct, id *string, config *ZoneHoldConfig) ZoneHold {
 	_init_.Initialize()
 
@@ -422,7 +397,7 @@ func NewZoneHold(scope constructs.Construct, id *string, config *ZoneHoldConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_hold cloudflare_zone_hold} Resource.
 func NewZoneHold_Override(z ZoneHold, scope constructs.Construct, id *string, config *ZoneHoldConfig) {
 	_init_.Initialize()
 
@@ -471,17 +446,6 @@ func (j *jsiiProxy_ZoneHold)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneHold)SetHold(val interface{}) {
-	if err := j.validateSetHoldParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hold",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneHold)SetHoldAfter(val *string) {
 	if err := j.validateSetHoldAfterParameters(val); err != nil {
 		panic(err)
@@ -489,17 +453,6 @@ func (j *jsiiProxy_ZoneHold)SetHoldAfter(val *string) {
 	_jsii_.Set(
 		j,
 		"holdAfter",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneHold)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -913,14 +866,6 @@ func (z *jsiiProxy_ZoneHold) ResetHoldAfter() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetHoldAfter",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneHold) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
 		nil, // no parameters
 	)
 }

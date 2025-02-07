@@ -5,9 +5,9 @@ package zerotrustgatewaypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustgatewaypolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustgatewaypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference inter
 	FallbackInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
-	SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) InternalValue() *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
-	var returns *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -258,7 +258,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference)SetInternalValue(val *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

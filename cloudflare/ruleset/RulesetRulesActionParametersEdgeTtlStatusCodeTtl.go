@@ -5,17 +5,19 @@ package ruleset
 
 
 type RulesetRulesActionParametersEdgeTtlStatusCodeTtl struct {
-	// Status code for which the edge TTL is applied.
+	// Time to cache a response (in seconds).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#status_code Ruleset#status_code}
+	// A value of 0 is equivalent to setting the Cache-Control header with the value "no-cache". A value of -1 is equivalent to setting Cache-Control header with the value of "no-store".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#value Ruleset#value}
+	Value *float64 `field:"required" json:"value" yaml:"value"`
+	// Set the ttl for responses with this specific status code.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#status_code Ruleset#status_code}
 	StatusCode *float64 `field:"optional" json:"statusCode" yaml:"statusCode"`
-	// status_code_range block.
+	// The range of status codes used to apply the selected mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
-	StatusCodeRange interface{} `field:"optional" json:"statusCodeRange" yaml:"statusCodeRange"`
-	// Status code edge TTL value.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/ruleset#value Ruleset#value}
-	Value *float64 `field:"optional" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+	StatusCodeRange *RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange `field:"optional" json:"statusCodeRange" yaml:"statusCodeRange"`
 }
 

@@ -103,14 +103,6 @@ func (j *jsiiProxy_UserAgentBlockingRule) validateSetCountParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetDescriptionParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_UserAgentBlockingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -119,11 +111,11 @@ func (j *jsiiProxy_UserAgentBlockingRule) validateSetModeParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_UserAgentBlockingRule) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserAgentBlockingRule) validateSetUaRuleIdParameters(val *string) error {
 	return nil
 }
 

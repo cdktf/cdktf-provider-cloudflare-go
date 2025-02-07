@@ -5,22 +5,20 @@ package zerotrustaccesstag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccesstag/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccesstag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 type ZeroTrustAccessTag interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	AppCount() *float64
-	SetAppCount(val *float64)
-	AppCountInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -33,6 +31,7 @@ type ZeroTrustAccessTag interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,8 +45,6 @@ type ZeroTrustAccessTag interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,9 +70,7 @@ type ZeroTrustAccessTag interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	ZoneId() *string
-	SetZoneId(val *string)
-	ZoneIdInput() *string
+	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,13 +114,9 @@ type ZeroTrustAccessTag interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAccountId()
-	ResetAppCount()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -174,16 +165,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) AppCount() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) AppCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessTag) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -219,6 +200,16 @@ func (j *jsiiProxy_ZeroTrustAccessTag) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessTag) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -269,16 +260,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -384,28 +365,18 @@ func (j *jsiiProxy_ZeroTrustAccessTag) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) ZoneId() *string {
+func (j *jsiiProxy_ZeroTrustAccessTag) UpdatedAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"zoneId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) ZoneIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneIdInput",
+		"updatedAt",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) ZeroTrustAccessTag {
 	_init_.Initialize()
 
@@ -423,7 +394,7 @@ func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag_Override(z ZeroTrustAccessTag, scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) {
 	_init_.Initialize()
 
@@ -441,17 +412,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag)SetAppCount(val *float64) {
-	if err := j.validateSetAppCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appCount",
 		val,
 	)
 }
@@ -494,17 +454,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -542,17 +491,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag)SetZoneId(val *string) {
-	if err := j.validateSetZoneIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"zoneId",
 		val,
 	)
 }
@@ -910,42 +848,10 @@ func (z *jsiiProxy_ZeroTrustAccessTag) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetAppCount() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAppCount",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessTag) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessTag) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

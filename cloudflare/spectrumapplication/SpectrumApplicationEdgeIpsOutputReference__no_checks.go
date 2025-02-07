@@ -63,7 +63,7 @@ func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetInternalValueParameters(val *SpectrumApplicationEdgeIps) error {
+func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

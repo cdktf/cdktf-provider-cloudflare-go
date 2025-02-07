@@ -5,9 +5,9 @@ package zerotrustaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,9 +35,9 @@ type ZeroTrustAccessPolicyExcludeOktaOutputReference interface {
 	IdentityProviderIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Name() *[]*string
-	SetName(val *[]*string)
-	NameInput() *[]*string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +70,6 @@ type ZeroTrustAccessPolicyExcludeOktaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIdentityProviderId()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -157,8 +155,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) Name() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) Name() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
@@ -167,8 +165,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) Name() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) NameInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) NameInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"nameInput",
@@ -198,29 +196,29 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) TerraformRes
 }
 
 
-func NewZeroTrustAccessPolicyExcludeOktaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustAccessPolicyExcludeOktaOutputReference {
+func NewZeroTrustAccessPolicyExcludeOktaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessPolicyExcludeOktaOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewZeroTrustAccessPolicyExcludeOktaOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewZeroTrustAccessPolicyExcludeOktaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeOktaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewZeroTrustAccessPolicyExcludeOktaOutputReference_Override(z ZeroTrustAccessPolicyExcludeOktaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewZeroTrustAccessPolicyExcludeOktaOutputReference_Override(z ZeroTrustAccessPolicyExcludeOktaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zeroTrustAccessPolicy.ZeroTrustAccessPolicyExcludeOktaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)
 }
@@ -269,7 +267,7 @@ func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference)SetName(val *[]*string) {
+func (j *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,22 +484,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) Interpolatio
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) ResetIdentityProviderId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIdentityProviderId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessPolicyExcludeOktaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -99,10 +99,6 @@ func (j *jsiiProxy_UrlNormalizationSettings) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_UrlNormalizationSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

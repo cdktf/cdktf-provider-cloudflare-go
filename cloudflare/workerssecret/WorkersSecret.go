@@ -5,14 +5,14 @@ package workerssecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/workerssecret/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/workerssecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret}.
 type WorkersSecret interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -34,6 +34,9 @@ type WorkersSecret interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DispatchNamespace() *string
+	SetDispatchNamespace(val *string)
+	DispatchNamespaceInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,8 +46,6 @@ type WorkersSecret interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,15 +68,18 @@ type WorkersSecret interface {
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
-	SecretText() *string
-	SetSecretText(val *string)
-	SecretTextInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Text() *string
+	SetText(val *string)
+	TextInput() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,10 +123,11 @@ type WorkersSecret interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetText()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -211,6 +216,26 @@ func (j *jsiiProxy_WorkersSecret) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersSecret) DispatchNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersSecret) DispatchNamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dispatchNamespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersSecret) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -246,16 +271,6 @@ func (j *jsiiProxy_WorkersSecret) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersSecret) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -351,26 +366,6 @@ func (j *jsiiProxy_WorkersSecret) ScriptNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersSecret) SecretText() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretText",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersSecret) SecretTextInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretTextInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersSecret) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -401,8 +396,48 @@ func (j *jsiiProxy_WorkersSecret) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersSecret) Text() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"text",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
+func (j *jsiiProxy_WorkersSecret) TextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"textInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersSecret) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersSecret) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
 func NewWorkersSecret(scope constructs.Construct, id *string, config *WorkersSecretConfig) WorkersSecret {
 	_init_.Initialize()
 
@@ -420,7 +455,7 @@ func NewWorkersSecret(scope constructs.Construct, id *string, config *WorkersSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_secret cloudflare_workers_secret} Resource.
 func NewWorkersSecret_Override(w WorkersSecret, scope constructs.Construct, id *string, config *WorkersSecretConfig) {
 	_init_.Initialize()
 
@@ -472,21 +507,21 @@ func (j *jsiiProxy_WorkersSecret)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersSecret)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersSecret)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_WorkersSecret)SetDispatchNamespace(val *string) {
+	if err := j.validateSetDispatchNamespaceParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"dispatchNamespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersSecret)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -543,13 +578,24 @@ func (j *jsiiProxy_WorkersSecret)SetScriptName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkersSecret)SetSecretText(val *string) {
-	if err := j.validateSetSecretTextParameters(val); err != nil {
+func (j *jsiiProxy_WorkersSecret)SetText(val *string) {
+	if err := j.validateSetTextParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"secretText",
+		"text",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersSecret)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -907,18 +953,26 @@ func (w *jsiiProxy_WorkersSecret) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (w *jsiiProxy_WorkersSecret) ResetId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (w *jsiiProxy_WorkersSecret) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersSecret) ResetText() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetText",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersSecret) ResetType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetType",
 		nil, // no parameters
 	)
 }

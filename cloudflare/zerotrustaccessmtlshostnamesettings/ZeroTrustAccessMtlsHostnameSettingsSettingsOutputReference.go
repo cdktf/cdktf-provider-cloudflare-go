@@ -5,9 +5,9 @@ package zerotrustaccessmtlshostnamesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessmtlshostnamesettings/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessmtlshostnamesettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,8 +73,6 @@ type ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetChinaNetwork()
-	ResetClientCertificateForwarding()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -520,22 +518,6 @@ func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) I
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ResetChinaNetwork() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetChinaNetwork",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) ResetClientCertificateForwarding() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetClientCertificateForwarding",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -107,10 +107,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -123,7 +119,7 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetProvisionersParameters
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetSecretParameters(val *string) error {
+func (j *jsiiProxy_ZeroTrustTunnelCloudflared) validateSetTunnelSecretParameters(val *string) error {
 	return nil
 }
 

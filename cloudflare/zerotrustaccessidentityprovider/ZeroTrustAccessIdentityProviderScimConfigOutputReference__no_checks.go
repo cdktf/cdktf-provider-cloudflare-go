@@ -63,10 +63,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetGroupMemberDeprovisionParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetIdentityUpdateBehaviorParameters(val *string) error {
 	return nil
 }
@@ -76,10 +72,6 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 }
 
 func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetSeatDeprovisionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) validateSetSecretParameters(val *string) error {
 	return nil
 }
 
@@ -95,7 +87,7 @@ func (j *jsiiProxy_ZeroTrustAccessIdentityProviderScimConfigOutputReference) val
 	return nil
 }
 
-func validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZeroTrustAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

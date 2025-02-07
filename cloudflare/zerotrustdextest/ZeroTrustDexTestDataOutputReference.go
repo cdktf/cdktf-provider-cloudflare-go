@@ -5,9 +5,9 @@ package zerotrustdextest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustdextest/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustdextest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ZeroTrustDexTestDataOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
-	InternalValue() *ZeroTrustDexTestData
-	SetInternalValue(val *ZeroTrustDexTestData)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -73,6 +73,8 @@ type ZeroTrustDexTestDataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
+	ResetKind()
 	ResetMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,8 +151,8 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) HostInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) InternalValue() *ZeroTrustDexTestData {
-	var returns *ZeroTrustDexTestData
+func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -280,7 +282,7 @@ func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetInternalValue(val *ZeroTrustDexTestData) {
+func (j *jsiiProxy_ZeroTrustDexTestDataOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,6 +521,22 @@ func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetKind() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetKind",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDexTestDataOutputReference) ResetMethod() {

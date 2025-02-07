@@ -5,9 +5,9 @@ package customhostname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/customhostname/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/customhostname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -19,6 +19,9 @@ type CustomHostnameSslOutputReference interface {
 	CertificateAuthority() *string
 	SetCertificateAuthority(val *string)
 	CertificateAuthorityInput() *string
+	CloudflareBranding() interface{}
+	SetCloudflareBranding(val interface{})
+	CloudflareBrandingInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,9 +50,8 @@ type CustomHostnameSslOutputReference interface {
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
-	Settings() CustomHostnameSslSettingsList
+	Settings() CustomHostnameSslSettingsOutputReference
 	SettingsInput() interface{}
-	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,8 +63,6 @@ type CustomHostnameSslOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	ValidationErrors() CustomHostnameSslValidationErrorsList
-	ValidationRecords() CustomHostnameSslValidationRecordsList
 	Wildcard() interface{}
 	SetWildcard(val interface{})
 	WildcardInput() interface{}
@@ -90,9 +90,10 @@ type CustomHostnameSslOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSettings(value interface{})
+	PutSettings(value *CustomHostnameSslSettings)
 	ResetBundleMethod()
 	ResetCertificateAuthority()
+	ResetCloudflareBranding()
 	ResetCustomCertificate()
 	ResetCustomKey()
 	ResetMethod()
@@ -149,6 +150,26 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) CertificateAuthorityInput()
 	_jsii_.Get(
 		j,
 		"certificateAuthorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CloudflareBranding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareBranding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CloudflareBrandingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudflareBrandingInput",
 		&returns,
 	)
 	return returns
@@ -264,8 +285,8 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) MethodInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) Settings() CustomHostnameSslSettingsList {
-	var returns CustomHostnameSslSettingsList
+func (j *jsiiProxy_CustomHostnameSslOutputReference) Settings() CustomHostnameSslSettingsOutputReference {
+	var returns CustomHostnameSslSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"settings",
@@ -279,16 +300,6 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) SettingsInput() interface{}
 	_jsii_.Get(
 		j,
 		"settingsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomHostnameSslOutputReference) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
 		&returns,
 	)
 	return returns
@@ -334,26 +345,6 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) ValidationErrors() CustomHostnameSslValidationErrorsList {
-	var returns CustomHostnameSslValidationErrorsList
-	_jsii_.Get(
-		j,
-		"validationErrors",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CustomHostnameSslOutputReference) ValidationRecords() CustomHostnameSslValidationRecordsList {
-	var returns CustomHostnameSslValidationRecordsList
-	_jsii_.Get(
-		j,
-		"validationRecords",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CustomHostnameSslOutputReference) Wildcard() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -375,29 +366,29 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) WildcardInput() interface{}
 }
 
 
-func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomHostnameSslOutputReference {
+func NewCustomHostnameSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomHostnameSslOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewCustomHostnameSslOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewCustomHostnameSslOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_CustomHostnameSslOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCustomHostnameSslOutputReference_Override(c CustomHostnameSslOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -420,6 +411,17 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCertificateAuthority(val 
 	_jsii_.Set(
 		j,
 		"certificateAuthority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference)SetCloudflareBranding(val interface{}) {
+	if err := j.validateSetCloudflareBrandingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudflareBranding",
 		val,
 	)
 }
@@ -720,7 +722,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) PutSettings(value interface{}) {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) PutSettings(value *CustomHostnameSslSettings) {
 	if err := c.validatePutSettingsParameters(value); err != nil {
 		panic(err)
 	}
@@ -743,6 +745,14 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCertificateAuthority()
 	_jsii_.InvokeVoid(
 		c,
 		"resetCertificateAuthority",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCloudflareBranding() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCloudflareBranding",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package zerotrustaccessapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zerotrustaccessapplication/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zerotrustaccessapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,8 +36,8 @@ type ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference inter
 	DeleteInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustAccessApplicationScimConfigMappingsOperations
-	SetInternalValue(val *ZeroTrustAccessApplicationScimConfigMappingsOperations)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) InternalValue() *ZeroTrustAccessApplicationScimConfigMappingsOperations {
-	var returns *ZeroTrustAccessApplicationScimConfigMappingsOperations
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputR
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference)SetInternalValue(val *ZeroTrustAccessApplicationScimConfigMappingsOperations) {
+func (j *jsiiProxy_ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -75,7 +75,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostOutputRefere
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyCustomKeyHostOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRulesetRulesActionParametersCacheKeyCustomKeyHostOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

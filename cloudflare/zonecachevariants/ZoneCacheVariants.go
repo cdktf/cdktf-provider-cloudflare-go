@@ -5,22 +5,16 @@ package zonecachevariants
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/zonecachevariants/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/zonecachevariants/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
 type ZoneCacheVariants interface {
 	cdktf.TerraformResource
-	Avif() *[]*string
-	SetAvif(val *[]*string)
-	AvifInput() *[]*string
-	Bmp() *[]*string
-	SetBmp(val *[]*string)
-	BmpInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,6 +31,7 @@ type ZoneCacheVariants interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,33 +40,14 @@ type ZoneCacheVariants interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Gif() *[]*string
-	SetGif(val *[]*string)
-	GifInput() *[]*string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
-	Jp2() *[]*string
-	SetJp2(val *[]*string)
-	Jp2Input() *[]*string
-	Jpeg() *[]*string
-	SetJpeg(val *[]*string)
-	JpegInput() *[]*string
-	Jpg() *[]*string
-	SetJpg(val *[]*string)
-	Jpg2() *[]*string
-	SetJpg2(val *[]*string)
-	Jpg2Input() *[]*string
-	JpgInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
-	Png() *[]*string
-	SetPng(val *[]*string)
-	PngInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -88,15 +64,8 @@ type ZoneCacheVariants interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Tif() *[]*string
-	SetTif(val *[]*string)
-	Tiff() *[]*string
-	SetTiff(val *[]*string)
-	TiffInput() *[]*string
-	TifInput() *[]*string
-	Webp() *[]*string
-	SetWebp(val *[]*string)
-	WebpInput() *[]*string
+	Value() ZoneCacheVariantsValueOutputReference
+	ValueInput() interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -143,21 +112,10 @@ type ZoneCacheVariants interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAvif()
-	ResetBmp()
-	ResetGif()
-	ResetId()
-	ResetJp2()
-	ResetJpeg()
-	ResetJpg()
-	ResetJpg2()
+	PutValue(value *ZoneCacheVariantsValue)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPng()
-	ResetTif()
-	ResetTiff()
-	ResetWebp()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -174,46 +132,6 @@ type ZoneCacheVariants interface {
 // The jsii proxy struct for ZoneCacheVariants
 type jsiiProxy_ZoneCacheVariants struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Avif() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"avif",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) AvifInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"avifInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Bmp() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"bmp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) BmpInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"bmpInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ZoneCacheVariants) CdktfStack() cdktf.TerraformStack {
@@ -266,6 +184,16 @@ func (j *jsiiProxy_ZoneCacheVariants) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneCacheVariants) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneCacheVariants) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -296,121 +224,11 @@ func (j *jsiiProxy_ZoneCacheVariants) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) Gif() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"gif",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) GifInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"gifInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZoneCacheVariants) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jp2() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jp2",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jp2Input() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jp2Input",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jpeg() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpeg",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) JpegInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpegInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jpg() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpg",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jpg2() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpg2",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Jpg2Input() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpg2Input",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) JpgInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"jpgInput",
 		&returns,
 	)
 	return returns
@@ -426,31 +244,21 @@ func (j *jsiiProxy_ZoneCacheVariants) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_ZoneCacheVariants) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneCacheVariants) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Png() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"png",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) PngInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"pngInput",
 		&returns,
 	)
 	return returns
@@ -516,61 +324,21 @@ func (j *jsiiProxy_ZoneCacheVariants) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) Tif() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZoneCacheVariants) Value() ZoneCacheVariantsValueOutputReference {
+	var returns ZoneCacheVariantsValueOutputReference
 	_jsii_.Get(
 		j,
-		"tif",
+		"value",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ZoneCacheVariants) Tiff() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ZoneCacheVariants) ValueInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"tiff",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) TiffInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tiffInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) TifInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"tifInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) Webp() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"webp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneCacheVariants) WebpInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"webpInput",
+		"valueInput",
 		&returns,
 	)
 	return returns
@@ -597,7 +365,7 @@ func (j *jsiiProxy_ZoneCacheVariants) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) ZoneCacheVariants {
 	_init_.Initialize()
 
@@ -615,7 +383,7 @@ func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource.
 func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Construct, id *string, config *ZoneCacheVariantsConfig) {
 	_init_.Initialize()
 
@@ -623,28 +391,6 @@ func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Constru
 		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		[]interface{}{scope, id, config},
 		z,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetAvif(val *[]*string) {
-	if err := j.validateSetAvifParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"avif",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetBmp(val *[]*string) {
-	if err := j.validateSetBmpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bmp",
-		val,
 	)
 }
 
@@ -686,72 +432,6 @@ func (j *jsiiProxy_ZoneCacheVariants)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneCacheVariants)SetGif(val *[]*string) {
-	if err := j.validateSetGifParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"gif",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetJp2(val *[]*string) {
-	if err := j.validateSetJp2Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jp2",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetJpeg(val *[]*string) {
-	if err := j.validateSetJpegParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jpeg",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetJpg(val *[]*string) {
-	if err := j.validateSetJpgParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jpg",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetJpg2(val *[]*string) {
-	if err := j.validateSetJpg2Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"jpg2",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneCacheVariants)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -759,17 +439,6 @@ func (j *jsiiProxy_ZoneCacheVariants)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetPng(val *[]*string) {
-	if err := j.validateSetPngParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"png",
 		val,
 	)
 }
@@ -789,39 +458,6 @@ func (j *jsiiProxy_ZoneCacheVariants)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetTif(val *[]*string) {
-	if err := j.validateSetTifParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tif",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetTiff(val *[]*string) {
-	if err := j.validateSetTiffParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tiff",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneCacheVariants)SetWebp(val *[]*string) {
-	if err := j.validateSetWebpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"webp",
 		val,
 	)
 }
@@ -1190,67 +826,14 @@ func (z *jsiiProxy_ZoneCacheVariants) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZoneCacheVariants) ResetAvif() {
+func (z *jsiiProxy_ZoneCacheVariants) PutValue(value *ZoneCacheVariantsValue) {
+	if err := z.validatePutValueParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		z,
-		"resetAvif",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetBmp() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetBmp",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetGif() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetGif",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetJp2() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetJp2",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetJpeg() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetJpeg",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetJpg() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetJpg",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetJpg2() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetJpg2",
-		nil, // no parameters
+		"putValue",
+		[]interface{}{value},
 	)
 }
 
@@ -1258,38 +841,6 @@ func (z *jsiiProxy_ZoneCacheVariants) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetPng() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPng",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetTif() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetTif",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetTiff() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetTiff",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZoneCacheVariants) ResetWebp() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetWebp",
 		nil, // no parameters
 	)
 }

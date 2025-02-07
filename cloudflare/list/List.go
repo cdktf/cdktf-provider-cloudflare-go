@@ -5,14 +5,14 @@ package list
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v11/list/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/list/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list cloudflare_list}.
 type List interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,7 @@ type List interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,8 +47,6 @@ type List interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	Item() ListItemList
-	ItemInput() interface{}
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -55,11 +54,14 @@ type List interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumItems() *float64
+	NumReferencingFilters() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,9 +121,7 @@ type List interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutItem(value interface{})
 	ResetDescription()
-	ResetItem()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -203,6 +203,16 @@ func (j *jsiiProxy_List) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_List) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_List) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -273,26 +283,6 @@ func (j *jsiiProxy_List) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_List) Item() ListItemList {
-	var returns ListItemList
-	_jsii_.Get(
-		j,
-		"item",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_List) ItemInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"itemInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_List) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -323,6 +313,16 @@ func (j *jsiiProxy_List) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_List) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_List) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -348,6 +348,26 @@ func (j *jsiiProxy_List) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_List) NumItems() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numItems",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_List) NumReferencingFilters() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numReferencingFilters",
 		&returns,
 	)
 	return returns
@@ -414,7 +434,7 @@ func (j *jsiiProxy_List) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list cloudflare_list} Resource.
 func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	_init_.Initialize()
 
@@ -432,7 +452,7 @@ func NewList(scope constructs.Construct, id *string, config *ListConfig) List {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/list cloudflare_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list cloudflare_list} Resource.
 func NewList_Override(l List, scope constructs.Construct, id *string, config *ListConfig) {
 	_init_.Initialize()
 
@@ -908,29 +928,10 @@ func (l *jsiiProxy_List) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (l *jsiiProxy_List) PutItem(value interface{}) {
-	if err := l.validatePutItemParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putItem",
-		[]interface{}{value},
-	)
-}
-
 func (l *jsiiProxy_List) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_List) ResetItem() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetItem",
 		nil, // no parameters
 	)
 }

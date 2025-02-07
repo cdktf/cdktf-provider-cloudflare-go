@@ -5,9 +5,9 @@ package cloudconnectorrules
 
 
 type CloudConnectorRulesRulesParameters struct {
-	// Host parameter for cloud connector rule.
+	// Host to perform Cloud Connection to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.52.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
-	Host *string `field:"required" json:"host" yaml:"host"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules#host CloudConnectorRules#host}
+	Host *string `field:"optional" json:"host" yaml:"host"`
 }
 
