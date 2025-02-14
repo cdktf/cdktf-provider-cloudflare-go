@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpLikeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpsParameters(val *[]*string) error {
 	return nil
 }
@@ -107,7 +111,23 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv4EndParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv4StartParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpV6Parameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv6EndParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv6StartParameters(val *string) error {
 	return nil
 }
 
@@ -128,6 +148,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetTargetIdsParameters(val *[]*string) error {
 	return nil
 }
 

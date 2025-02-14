@@ -12,20 +12,23 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type DataCloudflareCloudforceOneRequestMessage interface {
 	cdktf.TerraformDataSource
 	AccountIdentifier() *string
 	SetAccountIdentifier(val *string)
 	AccountIdentifierInput() *string
+	Author() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Content() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -38,6 +41,8 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *float64
+	IsFollowOnRequest() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,6 +64,7 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Updated() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -126,6 +132,16 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AccountIdentifierI
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Author() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"author",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -146,11 +162,31 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ConstructNodeMetad
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Content() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"content",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
 		&returns,
 	)
 	return returns
@@ -191,6 +227,26 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) FriendlyUniqueId()
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Id() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) IsFollowOnRequest() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isFollowOnRequest",
 		&returns,
 	)
 	return returns
@@ -286,8 +342,18 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) TerraformResourceT
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Updated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updated",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -305,7 +371,7 @@ func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloudforceOneRequestMessage, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 

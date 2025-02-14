@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
 type DnsZoneTransfersIncoming interface {
 	cdktf.TerraformResource
 	AutoRefreshSeconds() *float64
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DnsZoneTransfersIncoming) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) DnsZoneTransfersIncoming {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDnsZoneTransfersIncoming(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource.
 func NewDnsZoneTransfersIncoming_Override(d DnsZoneTransfersIncoming, scope constructs.Construct, id *string, config *DnsZoneTransfersIncomingConfig) {
 	_init_.Initialize()
 

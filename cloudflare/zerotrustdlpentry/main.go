@@ -90,6 +90,7 @@ func init() {
 		"@cdktf/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfidenceOutputReference",
 		reflect.TypeOf((*ZeroTrustDlpEntryConfidenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aiContextAvailable", GoGetter: "AiContextAvailable"},
 			_jsii_.MemberProperty{JsiiProperty: "available", GoGetter: "Available"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

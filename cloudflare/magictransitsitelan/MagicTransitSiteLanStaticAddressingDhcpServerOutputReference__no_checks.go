@@ -71,6 +71,10 @@ func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetDnsServersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

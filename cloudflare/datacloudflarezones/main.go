@@ -271,6 +271,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "vanityNameServers", GoGetter: "VanityNameServers"},
+			_jsii_.MemberProperty{JsiiProperty: "verificationKey", GoGetter: "VerificationKey"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesResultOutputReference{}

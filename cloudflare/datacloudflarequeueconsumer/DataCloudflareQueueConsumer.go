@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/queue_consumer cloudflare_queue_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/queue_consumer cloudflare_queue_consumer}.
 type DataCloudflareQueueConsumer interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -22,10 +22,12 @@ type DataCloudflareQueueConsumer interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ConsumerId() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,16 +51,18 @@ type DataCloudflareQueueConsumer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	QueueId() *string
-	SetQueueId(val *string)
-	QueueIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Script() *string
+	ScriptName() *string
+	Settings() DataCloudflareQueueConsumerSettingsOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -146,11 +150,31 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) ConstructNodeMetadata() *map[str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumer) ConsumerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumerId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumer) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumer) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -236,21 +260,41 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) QueueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) QueueIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"queueIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareQueueConsumer) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumer) Script() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"script",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumer) ScriptName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scriptName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueueConsumer) Settings() DataCloudflareQueueConsumerSettingsOutputReference {
+	var returns DataCloudflareQueueConsumerSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"settings",
 		&returns,
 	)
 	return returns
@@ -286,8 +330,18 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumer) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
 func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) DataCloudflareQueueConsumer {
 	_init_.Initialize()
 
@@ -305,7 +359,7 @@ func NewDataCloudflareQueueConsumer(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/queue_consumer cloudflare_queue_consumer} Data Source.
 func NewDataCloudflareQueueConsumer_Override(d DataCloudflareQueueConsumer, scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) {
 	_init_.Initialize()
 
@@ -369,17 +423,6 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareQueueConsumer)SetQueueId(val *string) {
-	if err := j.validateSetQueueIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"queueId",
 		val,
 	)
 }

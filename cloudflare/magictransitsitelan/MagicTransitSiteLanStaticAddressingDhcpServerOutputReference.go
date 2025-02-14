@@ -37,6 +37,9 @@ type MagicTransitSiteLanStaticAddressingDhcpServerOutputReference interface {
 	DnsServer() *string
 	SetDnsServer(val *string)
 	DnsServerInput() *string
+	DnsServers() *[]*string
+	SetDnsServers(val *[]*string)
+	DnsServersInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -79,6 +82,7 @@ type MagicTransitSiteLanStaticAddressingDhcpServerOutputReference interface {
 	ResetDhcpPoolEnd()
 	ResetDhcpPoolStart()
 	ResetDnsServer()
+	ResetDnsServers()
 	ResetReservations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	_jsii_.Get(
 		j,
 		"dnsServerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) DnsServers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) DnsServersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsServersInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +348,17 @@ func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	_jsii_.Set(
 		j,
 		"dnsServer",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)SetDnsServers(val *[]*string) {
+	if err := j.validateSetDnsServersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsServers",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference)
 	_jsii_.InvokeVoid(
 		m,
 		"resetDnsServer",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteLanStaticAddressingDhcpServerOutputReference) ResetDnsServers() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDnsServers",
 		nil, // no parameters
 	)
 }

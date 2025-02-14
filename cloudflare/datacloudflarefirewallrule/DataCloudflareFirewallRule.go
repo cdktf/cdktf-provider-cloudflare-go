@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/firewall_rule cloudflare_firewall_rule}.
 type DataCloudflareFirewallRule interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -29,7 +29,6 @@ type DataCloudflareFirewallRule interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	Filter() DataCloudflareFirewallRuleFilterOutputReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,8 +38,6 @@ type DataCloudflareFirewallRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -94,10 +91,10 @@ type DataCloudflareFirewallRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -177,16 +174,6 @@ func (j *jsiiProxy_DataCloudflareFirewallRule) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareFirewallRule) Filter() DataCloudflareFirewallRuleFilterOutputReference {
-	var returns DataCloudflareFirewallRuleFilterOutputReference
-	_jsii_.Get(
-		j,
-		"filter",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareFirewallRule) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -222,16 +209,6 @@ func (j *jsiiProxy_DataCloudflareFirewallRule) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareFirewallRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -388,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareFirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/firewall_rule cloudflare_firewall_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/firewall_rule cloudflare_firewall_rule} Data Source.
 func NewDataCloudflareFirewallRule(scope constructs.Construct, id *string, config *DataCloudflareFirewallRuleConfig) DataCloudflareFirewallRule {
 	_init_.Initialize()
 
@@ -406,7 +383,7 @@ func NewDataCloudflareFirewallRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/firewall_rule cloudflare_firewall_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/firewall_rule cloudflare_firewall_rule} Data Source.
 func NewDataCloudflareFirewallRule_Override(d DataCloudflareFirewallRule, scope constructs.Construct, id *string, config *DataCloudflareFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -440,17 +417,6 @@ func (j *jsiiProxy_DataCloudflareFirewallRule)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareFirewallRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -781,18 +747,18 @@ func (d *jsiiProxy_DataCloudflareFirewallRule) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareFirewallRule) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareFirewallRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFirewallRule) ResetRuleId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRuleId",
 		nil, // no parameters
 	)
 }

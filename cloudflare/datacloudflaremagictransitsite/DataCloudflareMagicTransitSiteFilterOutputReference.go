@@ -23,9 +23,9 @@ type DataCloudflareMagicTransitSiteFilterOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConnectorIdentifier() *string
-	SetConnectorIdentifier(val *string)
-	ConnectorIdentifierInput() *string
+	Connectorid() *string
+	SetConnectorid(val *string)
+	ConnectoridInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,7 +67,7 @@ type DataCloudflareMagicTransitSiteFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetConnectorIdentifier()
+	ResetConnectorid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -103,21 +103,21 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ConnectorIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) Connectorid() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"connectorIdentifier",
+		"connectorid",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ConnectorIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ConnectoridInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"connectorIdentifierInput",
+		"connectoridInput",
 		&returns,
 	)
 	return returns
@@ -223,13 +223,13 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference)SetConnectorIdentifier(val *string) {
-	if err := j.validateSetConnectorIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference)SetConnectorid(val *string) {
+	if err := j.validateSetConnectoridParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"connectorIdentifier",
+		"connectorid",
 		val,
 	)
 }
@@ -453,10 +453,10 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ResetConnectorIdentifier() {
+func (d *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) ResetConnectorid() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetConnectorIdentifier",
+		"resetConnectorid",
 		nil, // no parameters
 	)
 }

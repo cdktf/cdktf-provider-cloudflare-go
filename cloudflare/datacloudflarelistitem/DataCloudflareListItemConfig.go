@@ -24,15 +24,15 @@ type DataCloudflareListItemConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_item#account_identifier DataCloudflareListItem#account_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_item#account_identifier DataCloudflareListItem#account_identifier}
 	AccountIdentifier *string `field:"required" json:"accountIdentifier" yaml:"accountIdentifier"`
 	// The unique ID of the item in the List.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
 	ItemId *string `field:"required" json:"itemId" yaml:"itemId"`
 	// The unique ID of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
 	ListId *string `field:"required" json:"listId" yaml:"listId"`
 }
 

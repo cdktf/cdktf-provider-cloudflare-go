@@ -24,15 +24,17 @@ type D1DatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#account_id D1Database#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#account_id D1Database#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#name D1Database#name}.
+	// D1 database name.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#name D1Database#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specify the region to create the D1 primary, if available.
 	//
 	// If this option is omitted, the D1 will be created as close as possible to the current user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 	PrimaryLocationHint *string `field:"optional" json:"primaryLocationHint" yaml:"primaryLocationHint"`
 }
 

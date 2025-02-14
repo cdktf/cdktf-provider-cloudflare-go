@@ -259,6 +259,14 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpLikeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -275,7 +283,39 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv4EndParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv4StartParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpV6Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv6EndParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetIpv6StartParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -316,6 +356,14 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateS
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetOrderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) validateSetTargetIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

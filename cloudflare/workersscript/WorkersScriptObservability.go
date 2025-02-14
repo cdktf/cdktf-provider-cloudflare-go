@@ -7,11 +7,11 @@ package workersscript
 type WorkersScriptObservability struct {
 	// Whether observability is enabled for the Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
 	HeadSamplingRate *float64 `field:"optional" json:"headSamplingRate" yaml:"headSamplingRate"`
 }
 

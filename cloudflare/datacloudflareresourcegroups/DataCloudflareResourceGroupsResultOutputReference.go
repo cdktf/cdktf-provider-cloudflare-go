@@ -30,8 +30,12 @@ type DataCloudflareResourceGroupsResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareResourceGroupsResult
 	SetInternalValue(val *DataCloudflareResourceGroupsResult)
+	Meta() DataCloudflareResourceGroupsResultMetaOutputReference
+	Name() *string
+	Scope() DataCloudflareResourceGroupsResultScopeList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,11 +123,51 @@ func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) Fqn() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) InternalValue() *DataCloudflareResourceGroupsResult {
 	var returns *DataCloudflareResourceGroupsResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) Meta() DataCloudflareResourceGroupsResultMetaOutputReference {
+	var returns DataCloudflareResourceGroupsResultMetaOutputReference
+	_jsii_.Get(
+		j,
+		"meta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareResourceGroupsResultOutputReference) Scope() DataCloudflareResourceGroupsResultScopeList {
+	var returns DataCloudflareResourceGroupsResultScopeList
+	_jsii_.Get(
+		j,
+		"scope",
 		&returns,
 	)
 	return returns

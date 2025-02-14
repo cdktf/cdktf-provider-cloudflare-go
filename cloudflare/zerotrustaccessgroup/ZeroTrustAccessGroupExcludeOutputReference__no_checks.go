@@ -119,6 +119,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpList
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutLoginMethodParameters(value *ZeroTrustAccessGroupExcludeLoginMethod) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessGroupExcludeOkta) error {
 	return nil
 }

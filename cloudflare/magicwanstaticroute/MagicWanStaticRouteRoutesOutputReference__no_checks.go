@@ -47,6 +47,10 @@ func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateInterpolati
 	return nil
 }
 
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validatePutScopeParameters(value *MagicWanStaticRouteRoutesScope) error {
+	return nil
+}
+
 func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,7 +63,23 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetInternalValueParameters(val *MagicWanStaticRouteRoutes) error {
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetNexthopParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetPriorityParameters(val *float64) error {
 	return nil
 }
 
@@ -68,6 +88,10 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetTerrafor
 }
 
 func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) validateSetWeightParameters(val *float64) error {
 	return nil
 }
 

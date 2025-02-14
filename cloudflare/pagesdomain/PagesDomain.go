@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_domain cloudflare_pages_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/pages_domain cloudflare_pages_domain}.
 type PagesDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -121,7 +121,6 @@ type PagesDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -444,7 +443,7 @@ func (j *jsiiProxy_PagesDomain) ZoneTag() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainConfig) PagesDomain {
 	_init_.Initialize()
 
@@ -462,7 +461,7 @@ func NewPagesDomain(scope constructs.Construct, id *string, config *PagesDomainC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/pages_domain cloudflare_pages_domain} Resource.
 func NewPagesDomain_Override(p PagesDomain, scope constructs.Construct, id *string, config *PagesDomainConfig) {
 	_init_.Initialize()
 
@@ -924,14 +923,6 @@ func (p *jsiiProxy_PagesDomain) OverrideLogicalId(newLogicalId *string) {
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (p *jsiiProxy_PagesDomain) ResetName() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetName",
-		nil, // no parameters
 	)
 }
 

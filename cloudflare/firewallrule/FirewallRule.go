@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 type FirewallRule interface {
 	cdktf.TerraformResource
 	Action() FirewallRuleActionOutputReference
@@ -65,9 +65,6 @@ type FirewallRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Ref() *string
-	RuleId() *string
-	SetRuleId(val *string)
-	RuleIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,7 +122,6 @@ type FirewallRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -374,26 +370,6 @@ func (j *jsiiProxy_FirewallRule) Ref() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirewallRule) RuleId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ruleId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FirewallRule) RuleIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ruleIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FirewallRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -445,7 +421,7 @@ func (j *jsiiProxy_FirewallRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRuleConfig) FirewallRule {
 	_init_.Initialize()
 
@@ -463,7 +439,7 @@ func NewFirewallRule(scope constructs.Construct, id *string, config *FirewallRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/firewall_rule cloudflare_firewall_rule} Resource.
 func NewFirewallRule_Override(f FirewallRule, scope constructs.Construct, id *string, config *FirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -538,17 +514,6 @@ func (j *jsiiProxy_FirewallRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_FirewallRule)SetRuleId(val *string) {
-	if err := j.validateSetRuleIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ruleId",
 		val,
 	)
 }
@@ -943,14 +908,6 @@ func (f *jsiiProxy_FirewallRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (f *jsiiProxy_FirewallRule) ResetRuleId() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetRuleId",
 		nil, // no parameters
 	)
 }

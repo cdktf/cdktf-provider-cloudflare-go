@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesActionParametersAlgorithms struct {
 	// Name of compression algorithm to enable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/ruleset#name Ruleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/ruleset#name Ruleset#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

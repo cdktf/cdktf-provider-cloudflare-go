@@ -103,6 +103,10 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetAccountIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetAiContextEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) validateSetAllowedMatchCountParameters(val *float64) error {
 	return nil
 }

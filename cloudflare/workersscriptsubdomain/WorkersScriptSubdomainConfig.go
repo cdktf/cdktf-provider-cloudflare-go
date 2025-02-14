@@ -24,19 +24,19 @@ type WorkersScriptSubdomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Whether the Worker should be available on the workers.dev subdomain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// Name of the script, used in URLs and route configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
 	// Whether the Worker's Preview URLs should be available on the workers.dev subdomain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
 	PreviewsEnabled interface{} `field:"optional" json:"previewsEnabled" yaml:"previewsEnabled"`
 }
 

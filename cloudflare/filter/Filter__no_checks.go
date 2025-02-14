@@ -103,10 +103,6 @@ func (j *jsiiProxy_Filter) validateSetExpressionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Filter) validateSetFilterIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Filter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

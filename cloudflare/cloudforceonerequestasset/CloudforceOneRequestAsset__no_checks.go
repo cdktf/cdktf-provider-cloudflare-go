@@ -95,10 +95,6 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) validateSetAccountIdentifierParame
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestAsset) validateSetAssetIdentiferParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudforceOneRequestAsset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

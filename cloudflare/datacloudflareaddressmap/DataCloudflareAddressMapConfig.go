@@ -24,11 +24,11 @@ type DataCloudflareAddressMapConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier of a Cloudflare account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Identifier of an Address Map.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
 	AddressMapId *string `field:"optional" json:"addressMapId" yaml:"addressMapId"`
 }
 

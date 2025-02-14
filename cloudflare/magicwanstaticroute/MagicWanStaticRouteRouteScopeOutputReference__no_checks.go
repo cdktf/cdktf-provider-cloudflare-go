@@ -51,6 +51,14 @@ func (m *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetColoNamesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetColoRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -59,7 +67,7 @@ func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetInternalValueParameters(val *MagicWanStaticRouteRouteScope) error {
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

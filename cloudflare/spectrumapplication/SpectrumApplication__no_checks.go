@@ -115,10 +115,6 @@ func (j *jsiiProxy_SpectrumApplication) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplication) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SpectrumApplication) validateSetIpFirewallParameters(val interface{}) error {
 	return nil
 }

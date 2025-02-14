@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription cloudflare_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription cloudflare_account_subscription}.
 type AccountSubscription interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,9 @@ type AccountSubscription interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Currency() *string
+	CurrentPeriodEnd() *string
+	CurrentPeriodStart() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,12 +48,14 @@ type AccountSubscription interface {
 	FrequencyInput() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Price() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -63,6 +68,7 @@ type AccountSubscription interface {
 	RatePlanInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	State() *string
 	SubscriptionIdentifier() *string
 	SetSubscriptionIdentifier(val *string)
 	SubscriptionIdentifierInput() *string
@@ -200,6 +206,36 @@ func (j *jsiiProxy_AccountSubscription) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AccountSubscription) Currency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSubscription) CurrentPeriodEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSubscription) CurrentPeriodStart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodStart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSubscription) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -260,6 +296,16 @@ func (j *jsiiProxy_AccountSubscription) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountSubscription) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountSubscription) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -275,6 +321,16 @@ func (j *jsiiProxy_AccountSubscription) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSubscription) Price() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"price",
 		&returns,
 	)
 	return returns
@@ -325,6 +381,16 @@ func (j *jsiiProxy_AccountSubscription) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountSubscription) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns
@@ -381,7 +447,7 @@ func (j *jsiiProxy_AccountSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription(scope constructs.Construct, id *string, config *AccountSubscriptionConfig) AccountSubscription {
 	_init_.Initialize()
 
@@ -399,7 +465,7 @@ func NewAccountSubscription(scope constructs.Construct, id *string, config *Acco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription_Override(a AccountSubscription, scope constructs.Construct, id *string, config *AccountSubscriptionConfig) {
 	_init_.Initialize()
 

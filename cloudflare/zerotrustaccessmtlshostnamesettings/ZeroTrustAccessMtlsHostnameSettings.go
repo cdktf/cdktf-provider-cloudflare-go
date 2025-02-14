@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}.
 type ZeroTrustAccessMtlsHostnameSettings interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -20,6 +20,8 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChinaNetwork() cdktf.IResolvable
+	ClientCertificateForwarding() cdktf.IResolvable
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -42,6 +44,7 @@ type ZeroTrustAccessMtlsHostnameSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -166,6 +169,26 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) CdktfStack() cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ChinaNetwork() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"chinaNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ClientCertificateForwarding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"clientCertificateForwarding",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -231,6 +254,16 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) FriendlyUniqueId() *stri
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
 		&returns,
 	)
 	return returns
@@ -357,7 +390,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsHostnameSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) ZeroTrustAccessMtlsHostnameSettings {
 	_init_.Initialize()
 
@@ -375,7 +408,7 @@ func NewZeroTrustAccessMtlsHostnameSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource.
 func NewZeroTrustAccessMtlsHostnameSettings_Override(z ZeroTrustAccessMtlsHostnameSettings, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsHostnameSettingsConfig) {
 	_init_.Initialize()
 

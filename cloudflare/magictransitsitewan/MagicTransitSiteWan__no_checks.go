@@ -135,10 +135,6 @@ func (j *jsiiProxy_MagicTransitSiteWan) validateSetVlanTagParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteWan) validateSetWanIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewMagicTransitSiteWanParameters(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) error {
 	return nil
 }

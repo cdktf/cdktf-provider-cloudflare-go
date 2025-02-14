@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track}.
 type DataCloudflareStreamAudioTrack interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,6 +26,7 @@ type DataCloudflareStreamAudioTrack interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Default() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,6 +42,7 @@ type DataCloudflareStreamAudioTrack interface {
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
+	Label() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,12 +55,14 @@ type DataCloudflareStreamAudioTrack interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uid() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -156,6 +160,16 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Default() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"default",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -216,6 +230,16 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) IdentifierInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Label() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"label",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -256,6 +280,16 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareStreamAudioTrack) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -286,8 +320,18 @@ func (j *jsiiProxy_DataCloudflareStreamAudioTrack) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareStreamAudioTrack) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) DataCloudflareStreamAudioTrack {
 	_init_.Initialize()
 
@@ -305,7 +349,7 @@ func NewDataCloudflareStreamAudioTrack(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/stream_audio_track cloudflare_stream_audio_track} Data Source.
 func NewDataCloudflareStreamAudioTrack_Override(d DataCloudflareStreamAudioTrack, scope constructs.Construct, id *string, config *DataCloudflareStreamAudioTrackConfig) {
 	_init_.Initialize()
 

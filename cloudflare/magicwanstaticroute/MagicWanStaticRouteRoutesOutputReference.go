@@ -30,16 +30,25 @@ type MagicWanStaticRouteRoutesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() *MagicWanStaticRouteRoutes
-	SetInternalValue(val *MagicWanStaticRouteRoutes)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	ModifiedOn() *string
 	Nexthop() *string
+	SetNexthop(val *string)
+	NexthopInput() *string
 	Prefix() *string
+	SetPrefix(val *string)
+	PrefixInput() *string
 	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	Scope() MagicWanStaticRouteRoutesScopeOutputReference
+	ScopeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,6 +58,8 @@ type MagicWanStaticRouteRoutesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Weight() *float64
+	SetWeight(val *float64)
+	WeightInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +84,13 @@ type MagicWanStaticRouteRoutesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScope(value *MagicWanStaticRouteRoutesScope)
+	ResetDescription()
+	ResetNexthop()
+	ResetPrefix()
+	ResetPriority()
+	ResetScope()
+	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +156,16 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Description() *stri
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -158,8 +186,8 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) InternalValue() *MagicWanStaticRouteRoutes {
-	var returns *MagicWanStaticRouteRoutes
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -188,11 +216,31 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Nexthop() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) NexthopInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nexthopInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Prefix() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixInput",
 		&returns,
 	)
 	return returns
@@ -208,11 +256,31 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Priority() *float64
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Scope() MagicWanStaticRouteRoutesScopeOutputReference {
 	var returns MagicWanStaticRouteRoutesScopeOutputReference
 	_jsii_.Get(
 		j,
 		"scope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ScopeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scopeInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +311,16 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Weight() *float64 {
 	_jsii_.Get(
 		j,
 		"weight",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) WeightInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"weightInput",
 		&returns,
 	)
 	return returns
@@ -298,13 +376,57 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetInternalValue(val *MagicWanStaticRouteRoutes) {
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetNexthop(val *string) {
+	if err := j.validateSetNexthopParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nexthop",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetPrefix(val *string) {
+	if err := j.validateSetPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
 		val,
 	)
 }
@@ -327,6 +449,17 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesOutputReference)SetWeight(val *float64) {
+	if err := j.validateSetWeightParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"weight",
 		val,
 	)
 }
@@ -515,6 +648,65 @@ func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) PutScope(value *MagicWanStaticRouteRoutesScope) {
+	if err := m.validatePutScopeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putScope",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetNexthop() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNexthop",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetPrefix() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetPriority() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetScope() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetScope",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) ResetWeight() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWeight",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MagicWanStaticRouteRoutesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

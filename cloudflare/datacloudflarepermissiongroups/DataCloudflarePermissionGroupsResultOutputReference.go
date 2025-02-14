@@ -30,8 +30,11 @@ type DataCloudflarePermissionGroupsResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflarePermissionGroupsResult
 	SetInternalValue(val *DataCloudflarePermissionGroupsResult)
+	Meta() DataCloudflarePermissionGroupsResultMetaOutputReference
+	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,11 +122,41 @@ func (j *jsiiProxy_DataCloudflarePermissionGroupsResultOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflarePermissionGroupsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflarePermissionGroupsResultOutputReference) InternalValue() *DataCloudflarePermissionGroupsResult {
 	var returns *DataCloudflarePermissionGroupsResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePermissionGroupsResultOutputReference) Meta() DataCloudflarePermissionGroupsResultMetaOutputReference {
+	var returns DataCloudflarePermissionGroupsResultMetaOutputReference
+	_jsii_.Get(
+		j,
+		"meta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflarePermissionGroupsResultOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns

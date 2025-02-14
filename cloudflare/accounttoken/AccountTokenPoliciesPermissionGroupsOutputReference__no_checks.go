@@ -63,6 +63,10 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

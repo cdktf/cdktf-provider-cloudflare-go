@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}.
 type AuthenticatedOriginPulls interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -52,6 +52,7 @@ type AuthenticatedOriginPulls interface {
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
+	Id() *string
 	Issuer() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -59,6 +60,7 @@ type AuthenticatedOriginPulls interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PrivateKey() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -348,6 +350,16 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) HostnameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthenticatedOriginPulls) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthenticatedOriginPulls) Issuer() *string {
 	var returns *string
 	_jsii_.Get(
@@ -373,6 +385,16 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthenticatedOriginPulls) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
 		&returns,
 	)
 	return returns
@@ -499,7 +521,7 @@ func (j *jsiiProxy_AuthenticatedOriginPulls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls {
 	_init_.Initialize()
 
@@ -517,7 +539,7 @@ func NewAuthenticatedOriginPulls(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource.
 func NewAuthenticatedOriginPulls_Override(a AuthenticatedOriginPulls, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint}.
 type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,6 +26,7 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -38,10 +39,13 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
+	Ips() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -53,12 +57,14 @@ type DataCloudflareZeroTrustGatewayProxyEndpoint interface {
 	ProxyEndpointIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Subdomain() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -156,6 +162,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Count() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -196,11 +212,41 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) FriendlyUniqueId
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Ips() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ips",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns
@@ -256,6 +302,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) RawOverrides() i
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) Subdomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subdomain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -286,8 +342,18 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayProxyEndpoint) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointConfig) DataCloudflareZeroTrustGatewayProxyEndpoint {
 	_init_.Initialize()
 
@@ -305,7 +371,7 @@ func NewDataCloudflareZeroTrustGatewayProxyEndpoint(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_gateway_proxy_endpoint cloudflare_zero_trust_gateway_proxy_endpoint} Data Source.
 func NewDataCloudflareZeroTrustGatewayProxyEndpoint_Override(d DataCloudflareZeroTrustGatewayProxyEndpoint, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayProxyEndpointConfig) {
 	_init_.Initialize()
 

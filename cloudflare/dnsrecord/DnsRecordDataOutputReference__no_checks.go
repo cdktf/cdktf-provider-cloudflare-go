@@ -83,7 +83,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFingerprintParameter
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFlagsParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFlagsParameters(val *float64) error {
 	return nil
 }
 

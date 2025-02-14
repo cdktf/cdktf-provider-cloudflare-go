@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list}.
 type DataCloudflareApiTokenPermissionsGroupsList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsList) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source.
 func NewDataCloudflareApiTokenPermissionsGroupsList(scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionsGroupsListConfig) DataCloudflareApiTokenPermissionsGroupsList {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareApiTokenPermissionsGroupsList(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_token_permissions_groups_list cloudflare_api_token_permissions_groups_list} Data Source.
 func NewDataCloudflareApiTokenPermissionsGroupsList_Override(d DataCloudflareApiTokenPermissionsGroupsList, scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionsGroupsListConfig) {
 	_init_.Initialize()
 

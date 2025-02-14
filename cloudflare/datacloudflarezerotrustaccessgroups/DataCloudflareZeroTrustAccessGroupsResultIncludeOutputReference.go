@@ -50,6 +50,7 @@ type DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference interface {
 	SetInternalValue(val *DataCloudflareZeroTrustAccessGroupsResultInclude)
 	Ip() DataCloudflareZeroTrustAccessGroupsResultIncludeIpOutputReference
 	IpList() DataCloudflareZeroTrustAccessGroupsResultIncludeIpListStructOutputReference
+	LoginMethod() DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference
 	Okta() DataCloudflareZeroTrustAccessGroupsResultIncludeOktaOutputReference
 	Saml() DataCloudflareZeroTrustAccessGroupsResultIncludeSamlOutputReference
 	ServiceToken() DataCloudflareZeroTrustAccessGroupsResultIncludeServiceTokenOutputReference
@@ -325,6 +326,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReferen
 	_jsii_.Get(
 		j,
 		"ipList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupsResultIncludeOutputReference) LoginMethod() DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupsResultIncludeLoginMethodOutputReference
+	_jsii_.Get(
+		j,
+		"loginMethod",
 		&returns,
 	)
 	return returns

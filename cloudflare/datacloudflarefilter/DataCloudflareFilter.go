@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/filter cloudflare_filter}.
 type DataCloudflareFilter interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -29,9 +29,11 @@ type DataCloudflareFilter interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Expression() *string
+	Filter() DataCloudflareFilterFilterOutputReference
 	FilterId() *string
 	SetFilterId(val *string)
 	FilterIdInput() *string
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +91,9 @@ type DataCloudflareFilter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareFilterFilter)
+	ResetFilter()
+	ResetFilterId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -171,6 +176,16 @@ func (j *jsiiProxy_DataCloudflareFilter) Expression() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareFilter) Filter() DataCloudflareFilterFilterOutputReference {
+	var returns DataCloudflareFilterFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareFilter) FilterId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -186,6 +201,16 @@ func (j *jsiiProxy_DataCloudflareFilter) FilterIdInput() *string {
 	_jsii_.Get(
 		j,
 		"filterIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareFilter) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -342,7 +367,7 @@ func (j *jsiiProxy_DataCloudflareFilter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/filter cloudflare_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/filter cloudflare_filter} Data Source.
 func NewDataCloudflareFilter(scope constructs.Construct, id *string, config *DataCloudflareFilterConfig) DataCloudflareFilter {
 	_init_.Initialize()
 
@@ -360,7 +385,7 @@ func NewDataCloudflareFilter(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/filter cloudflare_filter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/filter cloudflare_filter} Data Source.
 func NewDataCloudflareFilter_Override(d DataCloudflareFilter, scope constructs.Construct, id *string, config *DataCloudflareFilterConfig) {
 	_init_.Initialize()
 
@@ -721,6 +746,33 @@ func (d *jsiiProxy_DataCloudflareFilter) OverrideLogicalId(newLogicalId *string)
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFilter) PutFilter(value *DataCloudflareFilterFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFilter) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareFilter) ResetFilterId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilterId",
+		nil, // no parameters
 	)
 }
 

@@ -9,19 +9,19 @@ type DataCloudflareLoadBalancerRulesOverrides struct {
 	//
 	// Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#country_pools DataCloudflareLoadBalancer#country_pools}
 	CountryPools interface{} `field:"optional" json:"countryPools" yaml:"countryPools"`
 	// (Enterprise only): A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter).
 	//
 	// Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
 	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
 	// A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region.
 	//
 	// Any regions not explicitly defined will fall back to using default_pools.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
 	RegionPools interface{} `field:"optional" json:"regionPools" yaml:"regionPools"`
 	// Time, in seconds, until a client's session expires after being created.
 	//
@@ -29,7 +29,7 @@ type DataCloudflareLoadBalancerRulesOverrides struct {
 	// - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800].
 	// - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#session_affinity_ttl DataCloudflareLoadBalancer#session_affinity_ttl}
 	SessionAffinityTtl *float64 `field:"optional" json:"sessionAffinityTtl" yaml:"sessionAffinityTtl"`
 	// Steering Policy for this load balancer.
 	//
@@ -42,13 +42,13 @@ type DataCloudflareLoadBalancerRulesOverrides struct {
 	// - `"least_connections"`: Select a pool by taking into consideration `random_steering` weights, as well as each pool's number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
 	// - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#steering_policy DataCloudflareLoadBalancer#steering_policy}
 	SteeringPolicy *string `field:"optional" json:"steeringPolicy" yaml:"steeringPolicy"`
 	// Time to live (TTL) of the DNS entry for the IP address returned by this load balancer.
 	//
 	// This only applies to gray-clouded (unproxied) load balancers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/load_balancer#ttl DataCloudflareLoadBalancer#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
 

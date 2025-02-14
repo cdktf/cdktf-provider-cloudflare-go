@@ -285,6 +285,14 @@ func (j *jsiiProxy_ListItem) validateSetAsnParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_ListItem) validateSetCommentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ListItem) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

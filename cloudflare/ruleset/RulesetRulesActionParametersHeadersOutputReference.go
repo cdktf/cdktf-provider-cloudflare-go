@@ -74,7 +74,6 @@ type RulesetRulesActionParametersHeadersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExpression()
-	ResetOperation()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -527,14 +526,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ResetExpr
 	_jsii_.InvokeVoid(
 		r,
 		"resetExpression",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersHeadersOutputReference) ResetOperation() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetOperation",
 		nil, // no parameters
 	)
 }

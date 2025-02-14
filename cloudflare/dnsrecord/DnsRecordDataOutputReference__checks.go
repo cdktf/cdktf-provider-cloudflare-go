@@ -214,7 +214,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFingerprintParameter
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFlagsParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_DnsRecordDataOutputReference) validateSetFlagsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

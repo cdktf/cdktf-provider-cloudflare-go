@@ -31,6 +31,8 @@ type AccountTokenPoliciesPermissionGroupsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Meta() AccountTokenPoliciesPermissionGroupsMetaOutputReference
@@ -130,6 +132,16 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) Id() *st
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +253,17 @@ func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountTokenPoliciesPermissionGroupsOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }

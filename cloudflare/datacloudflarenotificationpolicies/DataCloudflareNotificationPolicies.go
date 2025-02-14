@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/notification_policies cloudflare_notification_policies}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policies cloudflare_notification_policies}.
 type DataCloudflareNotificationPolicies interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareNotificationPolicies) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source.
 func NewDataCloudflareNotificationPolicies(scope constructs.Construct, id *string, config *DataCloudflareNotificationPoliciesConfig) DataCloudflareNotificationPolicies {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareNotificationPolicies(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source.
 func NewDataCloudflareNotificationPolicies_Override(d DataCloudflareNotificationPolicies, scope constructs.Construct, id *string, config *DataCloudflareNotificationPoliciesConfig) {
 	_init_.Initialize()
 

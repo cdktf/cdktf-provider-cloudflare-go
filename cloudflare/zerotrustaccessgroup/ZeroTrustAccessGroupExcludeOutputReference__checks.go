@@ -291,6 +291,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutIpList
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutLoginMethodParameters(value *ZeroTrustAccessGroupExcludeLoginMethod) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessGroupExcludeOkta) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

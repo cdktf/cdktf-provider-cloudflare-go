@@ -103,10 +103,6 @@ func (j *jsiiProxy_ContentScanningExpression) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ContentScanningExpression) validateSetExpressionIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ContentScanningExpression) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback}.
 type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -34,6 +34,8 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	DnsServer() *[]*string
 	Domains() ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList
 	DomainsInput() interface{}
 	// Experimental.
@@ -64,6 +66,7 @@ type ZeroTrustDeviceCustomProfileLocalDomainFallback interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Suffix() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -205,6 +208,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) DependsOn() 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) DnsServer() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsServer",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Domains() ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList {
 	var returns ZeroTrustDeviceCustomProfileLocalDomainFallbackDomainsList
 	_jsii_.Get(
@@ -335,6 +358,16 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) RawOverrides
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) Suffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suffix",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -366,7 +399,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileLocalDomainFallback) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) ZeroTrustDeviceCustomProfileLocalDomainFallback {
 	_init_.Initialize()
 
@@ -384,7 +417,7 @@ func NewZeroTrustDeviceCustomProfileLocalDomainFallback(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile_local_domain_fallback cloudflare_zero_trust_device_custom_profile_local_domain_fallback} Resource.
 func NewZeroTrustDeviceCustomProfileLocalDomainFallback_Override(z ZeroTrustDeviceCustomProfileLocalDomainFallback, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileLocalDomainFallbackConfig) {
 	_init_.Initialize()
 

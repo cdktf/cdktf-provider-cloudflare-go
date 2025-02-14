@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 type HostnameTlsSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,9 +71,9 @@ type HostnameTlsSetting interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
-	Value() *float64
-	SetValue(val *float64)
-	ValueInput() *float64
+	Value() *map[string]interface{}
+	SetValue(val *map[string]interface{})
+	ValueInput() *map[string]interface{}
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -382,8 +382,8 @@ func (j *jsiiProxy_HostnameTlsSetting) UpdatedAt() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) Value() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HostnameTlsSetting) Value() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"value",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_HostnameTlsSetting) Value() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) ValueInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HostnameTlsSetting) ValueInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -423,7 +423,7 @@ func (j *jsiiProxy_HostnameTlsSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) HostnameTlsSetting {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewHostnameTlsSetting(scope constructs.Construct, id *string, config *Hostn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource.
 func NewHostnameTlsSetting_Override(h HostnameTlsSetting, scope constructs.Construct, id *string, config *HostnameTlsSettingConfig) {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func (j *jsiiProxy_HostnameTlsSetting)SetSettingId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HostnameTlsSetting)SetValue(val *float64) {
+func (j *jsiiProxy_HostnameTlsSetting)SetValue(val *map[string]interface{}) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}

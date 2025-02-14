@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 type MagicWanStaticRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -76,7 +76,9 @@ type MagicWanStaticRoute interface {
 	RouteId() *string
 	SetRouteId(val *string)
 	RouteIdInput() *string
+	RouteInput() interface{}
 	Routes() MagicWanStaticRouteRoutesList
+	RoutesInput() interface{}
 	Scope() MagicWanStaticRouteScopeOutputReference
 	ScopeInput() interface{}
 	// Experimental.
@@ -131,6 +133,8 @@ type MagicWanStaticRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRoute(value *MagicWanStaticRouteRoute)
+	PutRoutes(value interface{})
 	PutScope(value *MagicWanStaticRouteScope)
 	ResetDescription()
 	ResetNexthop()
@@ -139,7 +143,9 @@ type MagicWanStaticRoute interface {
 	ResetOverrideLogicalId()
 	ResetPrefix()
 	ResetPriority()
+	ResetRoute()
 	ResetRouteId()
+	ResetRoutes()
 	ResetScope()
 	ResetWeight()
 	SynthesizeAttributes() *map[string]interface{}
@@ -440,11 +446,31 @@ func (j *jsiiProxy_MagicWanStaticRoute) RouteIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRoute) RouteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRoute) Routes() MagicWanStaticRouteRoutesList {
 	var returns MagicWanStaticRouteRoutesList
 	_jsii_.Get(
 		j,
 		"routes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRoute) RoutesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routesInput",
 		&returns,
 	)
 	return returns
@@ -521,7 +547,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) MagicWanStaticRoute {
 	_init_.Initialize()
 
@@ -539,7 +565,7 @@ func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute_Override(m MagicWanStaticRoute, scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) {
 	_init_.Initialize()
 
@@ -1048,6 +1074,28 @@ func (m *jsiiProxy_MagicWanStaticRoute) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MagicWanStaticRoute) PutRoute(value *MagicWanStaticRouteRoute) {
+	if err := m.validatePutRouteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRoute",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRoute) PutRoutes(value interface{}) {
+	if err := m.validatePutRoutesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRoutes",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MagicWanStaticRoute) PutScope(value *MagicWanStaticRouteScope) {
 	if err := m.validatePutScopeParameters(value); err != nil {
 		panic(err)
@@ -1099,10 +1147,26 @@ func (m *jsiiProxy_MagicWanStaticRoute) ResetPriority() {
 	)
 }
 
+func (m *jsiiProxy_MagicWanStaticRoute) ResetRoute() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRoute",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MagicWanStaticRoute) ResetRouteId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRouteId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRoute) ResetRoutes() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRoutes",
 		nil, // no parameters
 	)
 }

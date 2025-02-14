@@ -7,7 +7,7 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationPoliciesRequireEmailDomain struct {
 	// The email domain to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_access_application#domain ZeroTrustAccessApplication#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 }
 

@@ -111,10 +111,6 @@ func (j *jsiiProxy_WaitingRoomRules) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRules) validateSetRuleIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomRules) validateSetWaitingRoomIdParameters(val *string) error {
 	return nil
 }

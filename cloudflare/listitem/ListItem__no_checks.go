@@ -107,6 +107,10 @@ func (j *jsiiProxy_ListItem) validateSetAsnParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_ListItem) validateSetCommentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ListItem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -47,15 +47,30 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference inte
 	HostnameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IpLike() *string
+	SetIpLike(val *string)
+	IpLikeInput() *string
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
 	IpV4() *string
 	SetIpV4(val *string)
+	Ipv4End() *string
+	SetIpv4End(val *string)
+	Ipv4EndInput() *string
 	IpV4Input() *string
+	Ipv4Start() *string
+	SetIpv4Start(val *string)
+	Ipv4StartInput() *string
 	IpV6() *string
 	SetIpV6(val *string)
+	Ipv6End() *string
+	SetIpv6End(val *string)
+	Ipv6EndInput() *string
 	IpV6Input() *string
+	Ipv6Start() *string
+	SetIpv6Start(val *string)
+	Ipv6StartInput() *string
 	ModifiedAfter() *string
 	SetModifiedAfter(val *string)
 	ModifiedAfterInput() *string
@@ -65,6 +80,9 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference inte
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	TargetIds() *[]*string
+	SetTargetIds(val *[]*string)
+	TargetIdsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -105,12 +123,18 @@ type DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference inte
 	ResetDirection()
 	ResetHostname()
 	ResetHostnameContains()
+	ResetIpLike()
 	ResetIps()
 	ResetIpV4()
+	ResetIpv4End()
+	ResetIpv4Start()
 	ResetIpV6()
+	ResetIpv6End()
+	ResetIpv6Start()
 	ResetModifiedAfter()
 	ResetModifiedBefore()
 	ResetOrder()
+	ResetTargetIds()
 	ResetVirtualNetworkId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -277,6 +301,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) IpLike() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipLike",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) IpLikeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipLikeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ips() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -307,11 +351,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv4End() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4End",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv4EndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4EndInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) IpV4Input() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ipV4Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv4Start() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Start",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv4StartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4StartInput",
 		&returns,
 	)
 	return returns
@@ -327,11 +411,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv6End() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6End",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv6EndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) IpV6Input() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ipV6Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv6Start() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Start",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) Ipv6StartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6StartInput",
 		&returns,
 	)
 	return returns
@@ -392,6 +516,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.Get(
 		j,
 		"orderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) TargetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) TargetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIdsInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +697,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpLike(val *string) {
+	if err := j.validateSetIpLikeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipLike",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIps(val *[]*string) {
 	if err := j.validateSetIpsParameters(val); err != nil {
 		panic(err)
@@ -575,6 +730,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpv4End(val *string) {
+	if err := j.validateSetIpv4EndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4End",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpv4Start(val *string) {
+	if err := j.validateSetIpv4StartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4Start",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpV6(val *string) {
 	if err := j.validateSetIpV6Parameters(val); err != nil {
 		panic(err)
@@ -582,6 +759,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.Set(
 		j,
 		"ipV6",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpv6End(val *string) {
+	if err := j.validateSetIpv6EndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6End",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetIpv6Start(val *string) {
+	if err := j.validateSetIpv6StartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Start",
 		val,
 	)
 }
@@ -615,6 +814,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference)SetTargetIds(val *[]*string) {
+	if err := j.validateSetTargetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetIds",
 		val,
 	)
 }
@@ -878,6 +1088,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpLike() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpLike",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIps() {
 	_jsii_.InvokeVoid(
 		d,
@@ -894,10 +1112,42 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpv4End() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4End",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpv4Start() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4Start",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpV6() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIpV6",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpv6End() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6End",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetIpv6Start() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6Start",
 		nil, // no parameters
 	)
 }
@@ -922,6 +1172,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutput
 	_jsii_.InvokeVoid(
 		d,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference) ResetTargetIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTargetIds",
 		nil, // no parameters
 	)
 }

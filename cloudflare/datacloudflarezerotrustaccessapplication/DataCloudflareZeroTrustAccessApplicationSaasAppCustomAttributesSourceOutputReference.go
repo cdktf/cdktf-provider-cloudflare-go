@@ -33,7 +33,7 @@ type DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	InternalValue() *DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSource
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSource)
 	Name() *string
-	NameByIdp() cdktf.StringMap
+	NameByIdp() DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttribut
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdp() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdp() DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList {
+	var returns DataCloudflareZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList
 	_jsii_.Get(
 		j,
 		"nameByIdp",

@@ -7,7 +7,7 @@ package workersscript
 type WorkersScriptPlacement struct {
 	// Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_script#mode WorkersScript#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script#mode WorkersScript#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

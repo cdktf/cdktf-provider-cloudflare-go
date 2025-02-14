@@ -63,6 +63,10 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) validateSetAiContextEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) validateSetAllowedMatchCountParameters(val *float64) error {
 	return nil
 }

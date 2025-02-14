@@ -47,6 +47,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) validatePutNameByIdpParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,10 +68,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) validateSetNameByIdpParameters(val *map[string]*string) error {
 	return nil
 }
 

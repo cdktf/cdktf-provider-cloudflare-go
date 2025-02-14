@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type DataCloudflareCloudforceOneRequestAsset interface {
 	cdktf.TerraformDataSource
 	AccountIdentifier() *string
@@ -29,10 +29,13 @@ type DataCloudflareCloudforceOneRequestAsset interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	FileType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,10 +44,12 @@ type DataCloudflareCloudforceOneRequestAsset interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -179,11 +184,41 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Count() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) FileType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileType",
 		&returns,
 	)
 	return returns
@@ -219,11 +254,31 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) FriendlyUniqueId() *
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Id() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns
@@ -310,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) DataCloudflareCloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -328,7 +383,7 @@ func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset_Override(d DataCloudflareCloudforceOneRequestAsset, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 

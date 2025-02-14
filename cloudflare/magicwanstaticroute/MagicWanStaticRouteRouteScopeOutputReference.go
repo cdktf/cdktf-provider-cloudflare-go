@@ -14,7 +14,11 @@ import (
 type MagicWanStaticRouteRouteScopeOutputReference interface {
 	cdktf.ComplexObject
 	ColoNames() *[]*string
+	SetColoNames(val *[]*string)
+	ColoNamesInput() *[]*string
 	ColoRegions() *[]*string
+	SetColoRegions(val *[]*string)
+	ColoRegionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,8 +36,8 @@ type MagicWanStaticRouteRouteScopeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *MagicWanStaticRouteRouteScope
-	SetInternalValue(val *MagicWanStaticRouteRouteScope)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +70,8 @@ type MagicWanStaticRouteRouteScopeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetColoNames()
+	ResetColoRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -91,11 +97,31 @@ func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ColoNames() *[]
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ColoNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"coloNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ColoRegions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"coloRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ColoRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"coloRegionsInput",
 		&returns,
 	)
 	return returns
@@ -141,8 +167,8 @@ func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) InternalValue() *MagicWanStaticRouteRouteScope {
-	var returns *MagicWanStaticRouteRouteScope
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -199,6 +225,28 @@ func NewMagicWanStaticRouteRouteScopeOutputReference_Override(m MagicWanStaticRo
 	)
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetColoNames(val *[]*string) {
+	if err := j.validateSetColoNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"coloNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetColoRegions(val *[]*string) {
+	if err := j.validateSetColoRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"coloRegions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -221,7 +269,7 @@ func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetInternalValue(val *MagicWanStaticRouteRouteScope) {
+func (j *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,6 +486,22 @@ func (m *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ResetColoNames() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetColoNames",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) ResetColoRegions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetColoRegions",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MagicWanStaticRouteRouteScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

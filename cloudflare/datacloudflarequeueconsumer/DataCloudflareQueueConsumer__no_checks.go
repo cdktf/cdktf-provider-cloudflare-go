@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetQueueIdParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataCloudflareQueueConsumerParameters(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumerConfig) error {
 	return nil
 }

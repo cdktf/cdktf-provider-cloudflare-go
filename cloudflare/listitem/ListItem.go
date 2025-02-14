@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item cloudflare_list_item}.
 type ListItem interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,6 +24,8 @@ type ListItem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
+	SetComment(val *string)
+	CommentInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -53,7 +55,6 @@ type ListItem interface {
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
-	ItemId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -130,6 +131,7 @@ type ListItem interface {
 	PutRedirect(value *ListItemRedirect)
 	ResetAccountId()
 	ResetAsn()
+	ResetComment()
 	ResetHostname()
 	ResetIp()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -209,6 +211,16 @@ func (j *jsiiProxy_ListItem) Comment() *string {
 	_jsii_.Get(
 		j,
 		"comment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItem) CommentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commentInput",
 		&returns,
 	)
 	return returns
@@ -339,16 +351,6 @@ func (j *jsiiProxy_ListItem) IpInput() *string {
 	_jsii_.Get(
 		j,
 		"ipInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ListItem) ItemId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"itemId",
 		&returns,
 	)
 	return returns
@@ -495,7 +497,7 @@ func (j *jsiiProxy_ListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig) ListItem {
 	_init_.Initialize()
 
@@ -513,7 +515,7 @@ func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem_Override(l ListItem, scope constructs.Construct, id *string, config *ListItemConfig) {
 	_init_.Initialize()
 
@@ -542,6 +544,17 @@ func (j *jsiiProxy_ListItem)SetAsn(val *float64) {
 	_jsii_.Set(
 		j,
 		"asn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ListItem)SetComment(val *string) {
+	if err := j.validateSetCommentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"comment",
 		val,
 	)
 }
@@ -1023,6 +1036,14 @@ func (l *jsiiProxy_ListItem) ResetAsn() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAsn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_ListItem) ResetComment() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetComment",
 		nil, // no parameters
 	)
 }

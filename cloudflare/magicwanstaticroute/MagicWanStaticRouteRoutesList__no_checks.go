@@ -19,6 +19,10 @@ func (m *jsiiProxy_MagicWanStaticRouteRoutesList) validateResolveParameters(_con
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

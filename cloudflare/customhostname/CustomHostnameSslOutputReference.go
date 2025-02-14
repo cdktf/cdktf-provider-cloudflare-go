@@ -37,6 +37,8 @@ type CustomHostnameSslOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomCertBundle() CustomHostnameSslCustomCertBundleList
+	CustomCertBundleInput() interface{}
 	CustomCertificate() *string
 	SetCustomCertificate(val *string)
 	CustomCertificateInput() *string
@@ -90,10 +92,12 @@ type CustomHostnameSslOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomCertBundle(value interface{})
 	PutSettings(value *CustomHostnameSslSettings)
 	ResetBundleMethod()
 	ResetCertificateAuthority()
 	ResetCloudflareBranding()
+	ResetCustomCertBundle()
 	ResetCustomCertificate()
 	ResetCustomKey()
 	ResetMethod()
@@ -200,6 +204,26 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) CreationStack() *[]*string 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CustomCertBundle() CustomHostnameSslCustomCertBundleList {
+	var returns CustomHostnameSslCustomCertBundleList
+	_jsii_.Get(
+		j,
+		"customCertBundle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomHostnameSslOutputReference) CustomCertBundleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customCertBundleInput",
 		&returns,
 	)
 	return returns
@@ -722,6 +746,17 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (c *jsiiProxy_CustomHostnameSslOutputReference) PutCustomCertBundle(value interface{}) {
+	if err := c.validatePutCustomCertBundleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCustomCertBundle",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CustomHostnameSslOutputReference) PutSettings(value *CustomHostnameSslSettings) {
 	if err := c.validatePutSettingsParameters(value); err != nil {
 		panic(err)
@@ -753,6 +788,14 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCloudflareBranding() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudflareBranding",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomHostnameSslOutputReference) ResetCustomCertBundle() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomCertBundle",
 		nil, // no parameters
 	)
 }

@@ -322,6 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dhcpPoolEnd", GoGetter: "DhcpPoolEnd"},
 			_jsii_.MemberProperty{JsiiProperty: "dhcpPoolStart", GoGetter: "DhcpPoolStart"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsServer", GoGetter: "DnsServer"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsServers", GoGetter: "DnsServers"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

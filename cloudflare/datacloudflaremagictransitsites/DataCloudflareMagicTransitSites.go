@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites}.
 type DataCloudflareMagicTransitSites interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -20,9 +20,9 @@ type DataCloudflareMagicTransitSites interface {
 	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ConnectorIdentifier() *string
-	SetConnectorIdentifier(val *string)
-	ConnectorIdentifierInput() *string
+	Connectorid() *string
+	SetConnectorid(val *string)
+	ConnectoridInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -88,7 +88,7 @@ type DataCloudflareMagicTransitSites interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetConnectorIdentifier()
+	ResetConnectorid()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -142,21 +142,21 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSites) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSites) ConnectorIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareMagicTransitSites) Connectorid() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"connectorIdentifier",
+		"connectorid",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSites) ConnectorIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareMagicTransitSites) ConnectoridInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"connectorIdentifierInput",
+		"connectoridInput",
 		&returns,
 	)
 	return returns
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSites) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites} Data Source.
 func NewDataCloudflareMagicTransitSites(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSitesConfig) DataCloudflareMagicTransitSites {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataCloudflareMagicTransitSites(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_transit_sites cloudflare_magic_transit_sites} Data Source.
 func NewDataCloudflareMagicTransitSites_Override(d DataCloudflareMagicTransitSites, scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSitesConfig) {
 	_init_.Initialize()
 
@@ -363,13 +363,13 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSites)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSites)SetConnectorIdentifier(val *string) {
-	if err := j.validateSetConnectorIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareMagicTransitSites)SetConnectorid(val *string) {
+	if err := j.validateSetConnectoridParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"connectorIdentifier",
+		"connectorid",
 		val,
 	)
 }
@@ -716,10 +716,10 @@ func (d *jsiiProxy_DataCloudflareMagicTransitSites) OverrideLogicalId(newLogical
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareMagicTransitSites) ResetConnectorIdentifier() {
+func (d *jsiiProxy_DataCloudflareMagicTransitSites) ResetConnectorid() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetConnectorIdentifier",
+		"resetConnectorid",
 		nil, // no parameters
 	)
 }

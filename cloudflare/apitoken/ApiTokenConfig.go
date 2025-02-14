@@ -24,25 +24,25 @@ type ApiTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Token name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#name ApiToken#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#name ApiToken#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// List of access policies assigned to the token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#policies ApiToken#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#policies ApiToken#policies}
 	Policies interface{} `field:"required" json:"policies" yaml:"policies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#condition ApiToken#condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#condition ApiToken#condition}.
 	Condition *ApiTokenCondition `field:"optional" json:"condition" yaml:"condition"`
 	// The expiration time on or after which the JWT MUST NOT be accepted for processing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#expires_on ApiToken#expires_on}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#expires_on ApiToken#expires_on}
 	ExpiresOn *string `field:"optional" json:"expiresOn" yaml:"expiresOn"`
 	// The time before which the token MUST NOT be accepted for processing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#not_before ApiToken#not_before}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#not_before ApiToken#not_before}
 	NotBefore *string `field:"optional" json:"notBefore" yaml:"notBefore"`
 	// Status of the token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/api_token#status ApiToken#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/api_token#status ApiToken#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

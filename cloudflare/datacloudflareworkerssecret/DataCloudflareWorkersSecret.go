@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secret cloudflare_workers_secret}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret cloudflare_workers_secret}.
 type DataCloudflareWorkersSecret interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataCloudflareWorkersSecret) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source.
 func NewDataCloudflareWorkersSecret(scope constructs.Construct, id *string, config *DataCloudflareWorkersSecretConfig) DataCloudflareWorkersSecret {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataCloudflareWorkersSecret(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/workers_secret cloudflare_workers_secret} Data Source.
 func NewDataCloudflareWorkersSecret_Override(d DataCloudflareWorkersSecret, scope constructs.Construct, id *string, config *DataCloudflareWorkersSecretConfig) {
 	_init_.Initialize()
 

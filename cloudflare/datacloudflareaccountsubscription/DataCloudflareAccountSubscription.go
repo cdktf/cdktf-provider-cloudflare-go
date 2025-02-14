@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_subscription cloudflare_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_subscription cloudflare_account_subscription}.
 type DataCloudflareAccountSubscription interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,6 +26,9 @@ type DataCloudflareAccountSubscription interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Currency() *string
+	CurrentPeriodEnd() *string
+	CurrentPeriodStart() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,20 +39,25 @@ type DataCloudflareAccountSubscription interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Frequency() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Price() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	RatePlan() DataCloudflareAccountSubscriptionRatePlanOutputReference
 	// Experimental.
 	RawOverrides() interface{}
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -153,6 +161,36 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountSubscription) Currency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountSubscription) CurrentPeriodEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountSubscription) CurrentPeriodStart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodStart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountSubscription) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -183,11 +221,31 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountSubscription) Frequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frequency",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountSubscription) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountSubscription) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -213,6 +271,16 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountSubscription) Price() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"price",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountSubscription) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -223,11 +291,31 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) Provider() cdktf.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareAccountSubscription) RatePlan() DataCloudflareAccountSubscriptionRatePlanOutputReference {
+	var returns DataCloudflareAccountSubscriptionRatePlanOutputReference
+	_jsii_.Get(
+		j,
+		"ratePlan",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareAccountSubscription) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountSubscription) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns
@@ -264,7 +352,7 @@ func (j *jsiiProxy_DataCloudflareAccountSubscription) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_subscription cloudflare_account_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_subscription cloudflare_account_subscription} Data Source.
 func NewDataCloudflareAccountSubscription(scope constructs.Construct, id *string, config *DataCloudflareAccountSubscriptionConfig) DataCloudflareAccountSubscription {
 	_init_.Initialize()
 
@@ -282,7 +370,7 @@ func NewDataCloudflareAccountSubscription(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/account_subscription cloudflare_account_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/account_subscription cloudflare_account_subscription} Data Source.
 func NewDataCloudflareAccountSubscription_Override(d DataCloudflareAccountSubscription, scope constructs.Construct, id *string, config *DataCloudflareAccountSubscriptionConfig) {
 	_init_.Initialize()
 

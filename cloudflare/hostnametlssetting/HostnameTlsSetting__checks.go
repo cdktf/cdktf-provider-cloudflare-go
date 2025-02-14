@@ -407,7 +407,7 @@ func (j *jsiiProxy_HostnameTlsSetting) validateSetSettingIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_HostnameTlsSetting) validateSetValueParameters(val *float64) error {
+func (j *jsiiProxy_HostnameTlsSetting) validateSetValueParameters(val *map[string]interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

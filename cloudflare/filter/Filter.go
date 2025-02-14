@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter}.
 type Filter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,9 +35,6 @@ type Filter interface {
 	Expression() *string
 	SetExpression(val *string)
 	ExpressionInput() *string
-	FilterId() *string
-	SetFilterId(val *string)
-	FilterIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,7 +114,6 @@ type Filter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetFilterId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -214,26 +210,6 @@ func (j *jsiiProxy_Filter) ExpressionInput() *string {
 	_jsii_.Get(
 		j,
 		"expressionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Filter) FilterId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Filter) FilterIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"filterIdInput",
 		&returns,
 	)
 	return returns
@@ -400,7 +376,7 @@ func (j *jsiiProxy_Filter) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Filter {
 	_init_.Initialize()
 
@@ -418,7 +394,7 @@ func NewFilter(scope constructs.Construct, id *string, config *FilterConfig) Fil
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/filter cloudflare_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/filter cloudflare_filter} Resource.
 func NewFilter_Override(f Filter, scope constructs.Construct, id *string, config *FilterConfig) {
 	_init_.Initialize()
 
@@ -466,17 +442,6 @@ func (j *jsiiProxy_Filter)SetExpression(val *string) {
 	_jsii_.Set(
 		j,
 		"expression",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Filter)SetFilterId(val *string) {
-	if err := j.validateSetFilterIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"filterId",
 		val,
 	)
 }
@@ -880,14 +845,6 @@ func (f *jsiiProxy_Filter) OverrideLogicalId(newLogicalId *string) {
 		f,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (f *jsiiProxy_Filter) ResetFilterId() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetFilterId",
-		nil, // no parameters
 	)
 }
 

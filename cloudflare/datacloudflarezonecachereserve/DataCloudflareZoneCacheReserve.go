@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 type DataCloudflareZoneCacheReserve interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataCloudflareZoneCacheReserve interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,7 +60,6 @@ type DataCloudflareZoneCacheReserve interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
-	ZoneSettingId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -187,6 +187,16 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneCacheReserve) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -297,18 +307,8 @@ func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ZoneIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneCacheReserve) ZoneSettingId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneSettingId",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) DataCloudflareZoneCacheReserve {
 	_init_.Initialize()
 
@@ -326,7 +326,7 @@ func NewDataCloudflareZoneCacheReserve(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone_cache_reserve cloudflare_zone_cache_reserve} Data Source.
 func NewDataCloudflareZoneCacheReserve_Override(d DataCloudflareZoneCacheReserve, scope constructs.Construct, id *string, config *DataCloudflareZoneCacheReserveConfig) {
 	_init_.Initialize()
 

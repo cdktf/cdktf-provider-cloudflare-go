@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
 type DataCloudflareZeroTrustDlpDataset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpDataset) Uploads() DataCloudflareZe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
 func NewDataCloudflareZeroTrustDlpDataset(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDatasetConfig) DataCloudflareZeroTrustDlpDataset {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataCloudflareZeroTrustDlpDataset(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Data Source.
 func NewDataCloudflareZeroTrustDlpDataset_Override(d DataCloudflareZeroTrustDlpDataset, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpDatasetConfig) {
 	_init_.Initialize()
 

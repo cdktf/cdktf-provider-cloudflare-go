@@ -68,6 +68,8 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	IpInput() interface{}
 	IpList() ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference
 	IpListInput() interface{}
+	LoginMethod() ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference
+	LoginMethodInput() interface{}
 	Okta() ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference
 	OktaInput() interface{}
 	Saml() ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference
@@ -124,6 +126,7 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	PutGsuite(value *ZeroTrustAccessApplicationPoliciesIncludeGsuite)
 	PutIp(value *ZeroTrustAccessApplicationPoliciesIncludeIp)
 	PutIpList(value *ZeroTrustAccessApplicationPoliciesIncludeIpListStruct)
+	PutLoginMethod(value *ZeroTrustAccessApplicationPoliciesIncludeLoginMethod)
 	PutOkta(value *ZeroTrustAccessApplicationPoliciesIncludeOkta)
 	PutSaml(value *ZeroTrustAccessApplicationPoliciesIncludeSaml)
 	PutServiceToken(value *ZeroTrustAccessApplicationPoliciesIncludeServiceToken)
@@ -145,6 +148,7 @@ type ZeroTrustAccessApplicationPoliciesIncludeOutputReference interface {
 	ResetGsuite()
 	ResetIp()
 	ResetIpList()
+	ResetLoginMethod()
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
@@ -568,6 +572,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) IpL
 	_jsii_.Get(
 		j,
 		"ipListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) LoginMethod() ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference {
+	var returns ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference
+	_jsii_.Get(
+		j,
+		"loginMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) LoginMethodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loginMethodInput",
 		&returns,
 	)
 	return returns
@@ -1120,6 +1144,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Put
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) PutLoginMethod(value *ZeroTrustAccessApplicationPoliciesIncludeLoginMethod) {
+	if err := z.validatePutLoginMethodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putLoginMethod",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) PutOkta(value *ZeroTrustAccessApplicationPoliciesIncludeOkta) {
 	if err := z.validatePutOktaParameters(value); err != nil {
 		panic(err)
@@ -1293,6 +1328,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) Res
 	_jsii_.InvokeVoid(
 		z,
 		"resetIpList",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesIncludeOutputReference) ResetLoginMethod() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetLoginMethod",
 		nil, // no parameters
 	)
 }

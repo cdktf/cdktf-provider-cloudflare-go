@@ -63,7 +63,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "zoneSettingId", GoGetter: "ZoneSettingId"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneCacheReserve{}

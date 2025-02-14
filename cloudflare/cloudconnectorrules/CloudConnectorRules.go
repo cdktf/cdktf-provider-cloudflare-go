@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type CloudConnectorRules interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudProvider() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -31,6 +32,9 @@ type CloudConnectorRules interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	Enabled() cdktf.IResolvable
+	Expression() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -39,12 +43,14 @@ type CloudConnectorRules interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Parameters() CloudConnectorRulesParametersOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -141,6 +147,16 @@ func (j *jsiiProxy_CloudConnectorRules) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_CloudConnectorRules) CloudProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProvider",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudConnectorRules) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -181,6 +197,36 @@ func (j *jsiiProxy_CloudConnectorRules) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudConnectorRules) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRules) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRules) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudConnectorRules) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -211,6 +257,16 @@ func (j *jsiiProxy_CloudConnectorRules) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudConnectorRules) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudConnectorRules) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -226,6 +282,16 @@ func (j *jsiiProxy_CloudConnectorRules) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRules) Parameters() CloudConnectorRulesParametersOutputReference {
+	var returns CloudConnectorRulesParametersOutputReference
+	_jsii_.Get(
+		j,
+		"parameters",
 		&returns,
 	)
 	return returns
@@ -332,7 +398,7 @@ func (j *jsiiProxy_CloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules(scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) CloudConnectorRules {
 	_init_.Initialize()
 
@@ -350,7 +416,7 @@ func NewCloudConnectorRules(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules_Override(c CloudConnectorRules, scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) {
 	_init_.Initialize()
 

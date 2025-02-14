@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}.
 type DataCloudflareLogpushDatasetJob interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,6 +26,7 @@ type DataCloudflareLogpushDatasetJob interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Dataset() *string
 	DatasetId() *string
 	SetDatasetId(val *string)
 	DatasetIdInput() *string
@@ -33,20 +34,34 @@ type DataCloudflareLogpushDatasetJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestinationConf() *string
+	Enabled() cdktf.IResolvable
+	ErrorMessage() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Frequency() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *float64
+	Kind() *string
+	LastComplete() *string
+	LastError() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogpullOptions() *string
+	MaxUploadBytes() *float64
+	MaxUploadIntervalSeconds() *float64
+	MaxUploadRecords() *float64
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	OutputOptions() DataCloudflareLogpushDatasetJobOutputOptionsOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -161,6 +176,16 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Dataset() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataset",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) DatasetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -191,6 +216,36 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) DestinationConf() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationConf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -211,11 +266,61 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Frequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frequency",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Id() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Kind() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) LastComplete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastComplete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) LastError() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastError",
 		&returns,
 	)
 	return returns
@@ -231,11 +336,71 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Lifecycle() *cdktf.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) LogpullOptions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logpullOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) MaxUploadBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) MaxUploadIntervalSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadIntervalSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) MaxUploadRecords() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUploadRecords",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) OutputOptions() DataCloudflareLogpushDatasetJobOutputOptionsOutputReference {
+	var returns DataCloudflareLogpushDatasetJobOutputOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"outputOptions",
 		&returns,
 	)
 	return returns
@@ -312,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
 func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetJobConfig) DataCloudflareLogpushDatasetJob {
 	_init_.Initialize()
 
@@ -330,7 +495,7 @@ func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
 func NewDataCloudflareLogpushDatasetJob_Override(d DataCloudflareLogpushDatasetJob, scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetJobConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules}.
 type DataCloudflareWaitingRoomRules interface {
 	cdktf.TerraformDataSource
+	Action() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,6 +28,9 @@ type DataCloudflareWaitingRoomRules interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	Enabled() cdktf.IResolvable
+	Expression() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,6 +39,8 @@ type DataCloudflareWaitingRoomRules interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
+	LastUpdated() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,6 +59,7 @@ type DataCloudflareWaitingRoomRules interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Version() *string
 	WaitingRoomId() *string
 	SetWaitingRoomId(val *string)
 	WaitingRoomIdInput() *string
@@ -106,6 +113,16 @@ type jsiiProxy_DataCloudflareWaitingRoomRules struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Action() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"action",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWaitingRoomRules) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -146,6 +163,36 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Expression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expression",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -171,6 +218,26 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
 		&returns,
 	)
 	return returns
@@ -246,6 +313,16 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWaitingRoomRules) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWaitingRoomRules) WaitingRoomId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,7 +364,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) DataCloudflareWaitingRoomRules {
 	_init_.Initialize()
 
@@ -305,7 +382,7 @@ func NewDataCloudflareWaitingRoomRules(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_room_rules cloudflare_waiting_room_rules} Data Source.
 func NewDataCloudflareWaitingRoomRules_Override(d DataCloudflareWaitingRoomRules, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomRulesConfig) {
 	_init_.Initialize()
 

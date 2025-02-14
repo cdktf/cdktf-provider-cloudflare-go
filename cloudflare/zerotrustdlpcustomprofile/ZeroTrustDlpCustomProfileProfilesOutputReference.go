@@ -13,6 +13,9 @@ import (
 
 type ZeroTrustDlpCustomProfileProfilesOutputReference interface {
 	cdktf.ComplexObject
+	AiContextEnabled() interface{}
+	SetAiContextEnabled(val interface{})
+	AiContextEnabledInput() interface{}
 	AllowedMatchCount() *float64
 	SetAllowedMatchCount(val *float64)
 	AllowedMatchCountInput() *float64
@@ -88,6 +91,7 @@ type ZeroTrustDlpCustomProfileProfilesOutputReference interface {
 	PutContextAwareness(value *ZeroTrustDlpCustomProfileProfilesContextAwareness)
 	PutEntries(value interface{})
 	PutSharedEntries(value interface{})
+	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
 	ResetContextAwareness()
@@ -107,6 +111,26 @@ type ZeroTrustDlpCustomProfileProfilesOutputReference interface {
 // The jsii proxy struct for ZeroTrustDlpCustomProfileProfilesOutputReference
 type jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) AiContextEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiContextEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) AiContextEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiContextEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) AllowedMatchCount() *float64 {
@@ -364,6 +388,17 @@ func NewZeroTrustDlpCustomProfileProfilesOutputReference_Override(z ZeroTrustDlp
 		"@cdktf/provider-cloudflare.zeroTrustDlpCustomProfile.ZeroTrustDlpCustomProfileProfilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference)SetAiContextEnabled(val interface{}) {
+	if err := j.validateSetAiContextEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiContextEnabled",
+		val,
 	)
 }
 
@@ -693,6 +728,14 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) PutSharedEn
 		z,
 		"putSharedEntries",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileProfilesOutputReference) ResetAiContextEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAiContextEnabled",
+		nil, // no parameters
 	)
 }
 

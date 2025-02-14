@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone cloudflare_zone}.
 type DataCloudflareZone interface {
 	cdktf.TerraformDataSource
 	Account() DataCloudflareZoneAccountOutputReference
@@ -72,6 +72,7 @@ type DataCloudflareZone interface {
 	TerraformResourceType() *string
 	Type() *string
 	VanityNameServers() *[]*string
+	VerificationKey() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -455,6 +456,16 @@ func (j *jsiiProxy_DataCloudflareZone) VanityNameServers() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZone) VerificationKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZone) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -476,7 +487,7 @@ func (j *jsiiProxy_DataCloudflareZone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) DataCloudflareZone {
 	_init_.Initialize()
 
@@ -494,7 +505,7 @@ func NewDataCloudflareZone(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zone cloudflare_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zone cloudflare_zone} Data Source.
 func NewDataCloudflareZone_Override(d DataCloudflareZone, scope constructs.Construct, id *string, config *DataCloudflareZoneConfig) {
 	_init_.Initialize()
 

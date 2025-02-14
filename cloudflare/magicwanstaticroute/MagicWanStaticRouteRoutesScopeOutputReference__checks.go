@@ -101,6 +101,22 @@ func (m *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetColoNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetColoRegionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,9 +182,25 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetInternalValueParameters(val *MagicWanStaticRouteRoutesScope) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *MagicWanStaticRouteRoutesScope:
+		val := val.(*MagicWanStaticRouteRoutesScope)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case MagicWanStaticRouteRoutesScope:
+		val_ := val.(MagicWanStaticRouteRoutesScope)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MagicWanStaticRouteRoutesScope; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

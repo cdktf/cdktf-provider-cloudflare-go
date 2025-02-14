@@ -24,19 +24,19 @@ type WebAnalyticsSiteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
 	AutoInstall interface{} `field:"optional" json:"autoInstall" yaml:"autoInstall"`
 	// The hostname to use for gray-clouded sites.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
 	Host *string `field:"optional" json:"host" yaml:"host"`
 	// The zone identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 	ZoneTag *string `field:"optional" json:"zoneTag" yaml:"zoneTag"`
 }
 

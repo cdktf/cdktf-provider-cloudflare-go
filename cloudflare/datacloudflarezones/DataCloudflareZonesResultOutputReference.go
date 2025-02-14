@@ -57,6 +57,7 @@ type DataCloudflareZonesResultOutputReference interface {
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
 	VanityNameServers() *[]*string
+	VerificationKey() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -331,6 +332,16 @@ func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) VanityNameServers()
 	_jsii_.Get(
 		j,
 		"vanityNameServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) VerificationKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"verificationKey",
 		&returns,
 	)
 	return returns

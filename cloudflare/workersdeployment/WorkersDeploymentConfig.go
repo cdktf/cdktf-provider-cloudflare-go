@@ -24,17 +24,17 @@ type WorkersDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the script.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}.
 	Strategy *string `field:"required" json:"strategy" yaml:"strategy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 	Versions interface{} `field:"required" json:"versions" yaml:"versions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 	Annotations *WorkersDeploymentAnnotations `field:"optional" json:"annotations" yaml:"annotations"`
 }
 

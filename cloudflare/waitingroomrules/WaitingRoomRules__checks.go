@@ -422,14 +422,6 @@ func (j *jsiiProxy_WaitingRoomRules) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRules) validateSetRuleIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_WaitingRoomRules) validateSetWaitingRoomIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

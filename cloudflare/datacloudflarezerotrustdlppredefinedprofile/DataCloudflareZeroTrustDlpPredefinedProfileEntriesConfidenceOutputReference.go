@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference interface {
 	cdktf.ComplexObject
+	AiContextAvailable() cdktf.IResolvable
 	Available() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
@@ -78,6 +79,16 @@ type DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference
 // The jsii proxy struct for DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference
 type jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) AiContextAvailable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"aiContextAvailable",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesConfidenceOutputReference) Available() cdktf.IResolvable {

@@ -30,8 +30,11 @@ type DataCloudflareApiTokenPermissionsGroupsListResultOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareApiTokenPermissionsGroupsListResult
 	SetInternalValue(val *DataCloudflareApiTokenPermissionsGroupsListResult)
+	Name() *string
+	Scopes() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,11 +122,41 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsListResultOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsListResultOutputReference) InternalValue() *DataCloudflareApiTokenPermissionsGroupsListResult {
 	var returns *DataCloudflareApiTokenPermissionsGroupsListResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsListResultOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionsGroupsListResultOutputReference) Scopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"scopes",
 		&returns,
 	)
 	return returns

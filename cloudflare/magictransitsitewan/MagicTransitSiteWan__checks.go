@@ -450,14 +450,6 @@ func (j *jsiiProxy_MagicTransitSiteWan) validateSetVlanTagParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitSiteWan) validateSetWanIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewMagicTransitSiteWanParameters(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

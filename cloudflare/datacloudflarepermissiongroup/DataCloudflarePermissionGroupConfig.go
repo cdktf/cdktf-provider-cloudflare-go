@@ -24,11 +24,11 @@ type DataCloudflarePermissionGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#account_id DataCloudflarePermissionGroup#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Permission Group identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/permission_group#permission_group_id DataCloudflarePermissionGroup#permission_group_id}
 	PermissionGroupId *string `field:"required" json:"permissionGroupId" yaml:"permissionGroupId"`
 }
 

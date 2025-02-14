@@ -31,6 +31,7 @@ type DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerOutputRef
 	DhcpPoolEnd() *string
 	DhcpPoolStart() *string
 	DnsServer() *string
+	DnsServers() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServer
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpS
 	_jsii_.Get(
 		j,
 		"dnsServer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerOutputReference) DnsServers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dnsServers",
 		&returns,
 	)
 	return returns

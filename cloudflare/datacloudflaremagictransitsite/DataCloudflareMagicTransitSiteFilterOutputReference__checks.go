@@ -166,7 +166,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validateSetConnectorIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validateSetConnectoridParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

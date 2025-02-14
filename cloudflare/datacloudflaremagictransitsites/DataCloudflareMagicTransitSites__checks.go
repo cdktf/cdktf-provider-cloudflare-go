@@ -162,7 +162,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSites) validateSetAccountIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSites) validateSetConnectorIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareMagicTransitSites) validateSetConnectoridParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validateSetConnectorIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteFilterOutputReference) validateSetConnectoridParameters(val *string) error {
 	return nil
 }
 

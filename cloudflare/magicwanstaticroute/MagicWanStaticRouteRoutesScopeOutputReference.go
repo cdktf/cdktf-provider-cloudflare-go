@@ -14,7 +14,11 @@ import (
 type MagicWanStaticRouteRoutesScopeOutputReference interface {
 	cdktf.ComplexObject
 	ColoNames() *[]*string
+	SetColoNames(val *[]*string)
+	ColoNamesInput() *[]*string
 	ColoRegions() *[]*string
+	SetColoRegions(val *[]*string)
+	ColoRegionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,8 +36,8 @@ type MagicWanStaticRouteRoutesScopeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *MagicWanStaticRouteRoutesScope
-	SetInternalValue(val *MagicWanStaticRouteRoutesScope)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +70,8 @@ type MagicWanStaticRouteRoutesScopeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetColoNames()
+	ResetColoRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -91,11 +97,31 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ColoNames() *[
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ColoNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"coloNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ColoRegions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"coloRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ColoRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"coloRegionsInput",
 		&returns,
 	)
 	return returns
@@ -141,8 +167,8 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) InternalValue() *MagicWanStaticRouteRoutesScope {
-	var returns *MagicWanStaticRouteRoutesScope
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -199,6 +225,28 @@ func NewMagicWanStaticRouteRoutesScopeOutputReference_Override(m MagicWanStaticR
 	)
 }
 
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetColoNames(val *[]*string) {
+	if err := j.validateSetColoNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"coloNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetColoRegions(val *[]*string) {
+	if err := j.validateSetColoRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"coloRegions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -221,7 +269,7 @@ func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetInternalValue(val *MagicWanStaticRouteRoutesScope) {
+func (j *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,6 +486,22 @@ func (m *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ResetColoNames() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetColoNames",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) ResetColoRegions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetColoRegions",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MagicWanStaticRouteRoutesScopeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

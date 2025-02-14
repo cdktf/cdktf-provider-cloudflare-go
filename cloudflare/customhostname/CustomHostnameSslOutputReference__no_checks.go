@@ -47,6 +47,10 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutCustomCertBundleParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutSettingsParameters(value *CustomHostnameSslSettings) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
 type DnsFirewall interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -145,14 +145,12 @@ type DnsFirewall interface {
 	ResetEcsFallback()
 	ResetMaximumCacheTtl()
 	ResetMinimumCacheTtl()
-	ResetName()
 	ResetNegativeCacheTtl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRatelimit()
 	ResetRetries()
-	ResetUpstreamIps()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -582,7 +580,7 @@ func (j *jsiiProxy_DnsFirewall) UpstreamIpsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallConfig) DnsFirewall {
 	_init_.Initialize()
 
@@ -600,7 +598,7 @@ func NewDnsFirewall(scope constructs.Construct, id *string, config *DnsFirewallC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource.
 func NewDnsFirewall_Override(d DnsFirewall, scope constructs.Construct, id *string, config *DnsFirewallConfig) {
 	_init_.Initialize()
 
@@ -1193,14 +1191,6 @@ func (d *jsiiProxy_DnsFirewall) ResetMinimumCacheTtl() {
 	)
 }
 
-func (d *jsiiProxy_DnsFirewall) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DnsFirewall) ResetNegativeCacheTtl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1229,14 +1219,6 @@ func (d *jsiiProxy_DnsFirewall) ResetRetries() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetries",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DnsFirewall) ResetUpstreamIps() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUpstreamIps",
 		nil, // no parameters
 	)
 }

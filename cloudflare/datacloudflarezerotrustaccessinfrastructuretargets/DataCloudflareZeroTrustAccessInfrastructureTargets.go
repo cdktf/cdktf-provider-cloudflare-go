@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
 type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -53,15 +53,30 @@ type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	SetHostnameContains(val *string)
 	HostnameContainsInput() *string
 	HostnameInput() *string
+	IpLike() *string
+	SetIpLike(val *string)
+	IpLikeInput() *string
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
 	IpV4() *string
 	SetIpV4(val *string)
+	Ipv4End() *string
+	SetIpv4End(val *string)
+	Ipv4EndInput() *string
 	IpV4Input() *string
+	Ipv4Start() *string
+	SetIpv4Start(val *string)
+	Ipv4StartInput() *string
 	IpV6() *string
 	SetIpV6(val *string)
+	Ipv6End() *string
+	SetIpv6End(val *string)
+	Ipv6EndInput() *string
 	IpV6Input() *string
+	Ipv6Start() *string
+	SetIpv6Start(val *string)
+	Ipv6StartInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -87,6 +102,9 @@ type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareZeroTrustAccessInfrastructureTargetsResultList
+	TargetIds() *[]*string
+	SetTargetIds(val *[]*string)
+	TargetIdsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -126,9 +144,14 @@ type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	ResetDirection()
 	ResetHostname()
 	ResetHostnameContains()
+	ResetIpLike()
 	ResetIps()
 	ResetIpV4()
+	ResetIpv4End()
+	ResetIpv4Start()
 	ResetIpV6()
+	ResetIpv6End()
+	ResetIpv6Start()
 	ResetMaxItems()
 	ResetModifiedAfter()
 	ResetModifiedBefore()
@@ -136,6 +159,7 @@ type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTargetIds()
 	ResetVirtualNetworkId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -346,6 +370,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) HostnameI
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpLike() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipLike",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpLikeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipLikeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ips() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -376,11 +420,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpV4() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv4End() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4End",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv4EndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4EndInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpV4Input() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ipV4Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv4Start() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Start",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv4StartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4StartInput",
 		&returns,
 	)
 	return returns
@@ -396,11 +480,51 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpV6() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv6End() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6End",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv6EndInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) IpV6Input() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"ipV6Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv6Start() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Start",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Ipv6StartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6StartInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +660,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) Result() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) TargetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) TargetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -587,7 +731,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) VirtualNe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) DataCloudflareZeroTrustAccessInfrastructureTargets {
 	_init_.Initialize()
 
@@ -605,7 +749,7 @@ func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets_Override(d DataCloudflareZeroTrustAccessInfrastructureTargets, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) {
 	_init_.Initialize()
 
@@ -709,6 +853,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetHostnam
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpLike(val *string) {
+	if err := j.validateSetIpLikeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipLike",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIps(val *[]*string) {
 	if err := j.validateSetIpsParameters(val); err != nil {
 		panic(err)
@@ -731,6 +886,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpV4(va
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpv4End(val *string) {
+	if err := j.validateSetIpv4EndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4End",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpv4Start(val *string) {
+	if err := j.validateSetIpv4StartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4Start",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpV6(val *string) {
 	if err := j.validateSetIpV6Parameters(val); err != nil {
 		panic(err)
@@ -738,6 +915,28 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpV6(va
 	_jsii_.Set(
 		j,
 		"ipV6",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpv6End(val *string) {
+	if err := j.validateSetIpv6EndParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6End",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetIpv6Start(val *string) {
+	if err := j.validateSetIpv6StartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Start",
 		val,
 	)
 }
@@ -801,6 +1000,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets)SetTargetIds(val *[]*string) {
+	if err := j.validateSetTargetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetIds",
 		val,
 	)
 }
@@ -1141,6 +1351,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetHost
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpLike() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpLike",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIps() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1157,10 +1375,42 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpV4
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpv4End() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4End",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpv4Start() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4Start",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpV6() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIpV6",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpv6End() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6End",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetIpv6Start() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6Start",
 		nil, // no parameters
 	)
 }
@@ -1201,6 +1451,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetOver
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) ResetTargetIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTargetIds",
 		nil, // no parameters
 	)
 }

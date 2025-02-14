@@ -115,10 +115,6 @@ func (j *jsiiProxy_FirewallRule) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_FirewallRule) validateSetRuleIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FirewallRule) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

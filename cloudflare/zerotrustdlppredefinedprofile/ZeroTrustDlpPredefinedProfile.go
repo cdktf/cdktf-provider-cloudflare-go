@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
 type ZeroTrustDlpPredefinedProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AiContextEnabled() interface{}
+	SetAiContextEnabled(val interface{})
+	AiContextEnabledInput() interface{}
 	AllowedMatchCount() *float64
 	SetAllowedMatchCount(val *float64)
 	AllowedMatchCountInput() *float64
@@ -132,6 +135,7 @@ type ZeroTrustDlpPredefinedProfile interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContextAwareness(value *ZeroTrustDlpPredefinedProfileContextAwareness)
 	PutEntries(value interface{})
+	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
 	ResetContextAwareness()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) AiContextEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiContextEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) AiContextEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"aiContextEnabledInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) ZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile_Override(z ZeroTrustDlpPredefinedProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) {
 	_init_.Initialize()
 
@@ -564,6 +588,17 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile)SetAiContextEnabled(val interface{}) {
+	if err := j.validateSetAiContextEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aiContextEnabled",
 		val,
 	)
 }
@@ -1052,6 +1087,14 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) PutEntries(value interface{}) 
 		z,
 		"putEntries",
 		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetAiContextEnabled() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAiContextEnabled",
+		nil, // no parameters
 	)
 }
 

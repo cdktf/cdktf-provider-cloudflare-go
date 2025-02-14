@@ -12,15 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type CloudforceOneRequestAsset interface {
 	cdktf.TerraformResource
 	AccountIdentifier() *string
 	SetAccountIdentifier(val *string)
 	AccountIdentifierInput() *string
-	AssetIdentifer() *string
-	SetAssetIdentifer(val *string)
-	AssetIdentiferInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -127,7 +124,6 @@ type CloudforceOneRequestAsset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAssetIdentifer()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -165,26 +161,6 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) AccountIdentifierInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdentifierInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudforceOneRequestAsset) AssetIdentifer() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"assetIdentifer",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudforceOneRequestAsset) AssetIdentiferInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"assetIdentiferInput",
 		&returns,
 	)
 	return returns
@@ -481,7 +457,7 @@ func (j *jsiiProxy_CloudforceOneRequestAsset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) CloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -499,7 +475,7 @@ func NewCloudforceOneRequestAsset(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Resource.
 func NewCloudforceOneRequestAsset_Override(c CloudforceOneRequestAsset, scope constructs.Construct, id *string, config *CloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 
@@ -517,17 +493,6 @@ func (j *jsiiProxy_CloudforceOneRequestAsset)SetAccountIdentifier(val *string) {
 	_jsii_.Set(
 		j,
 		"accountIdentifier",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudforceOneRequestAsset)SetAssetIdentifer(val *string) {
-	if err := j.validateSetAssetIdentiferParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"assetIdentifer",
 		val,
 	)
 }
@@ -994,14 +959,6 @@ func (c *jsiiProxy_CloudforceOneRequestAsset) OverrideLogicalId(newLogicalId *st
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (c *jsiiProxy_CloudforceOneRequestAsset) ResetAssetIdentifer() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAssetIdentifer",
-		nil, // no parameters
 	)
 }
 

@@ -34,9 +34,8 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference inte
 	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
-	NameByIdp() *map[string]*string
-	SetNameByIdp(val *map[string]*string)
-	NameByIdpInput() *map[string]*string
+	NameByIdp() ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList
+	NameByIdpInput() interface{}
 	NameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -70,6 +69,7 @@ type ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNameByIdp(value interface{})
 	ResetName()
 	ResetNameByIdp()
 	// Produce the Token's value at resolution time.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdp() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdp() ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList {
+	var returns ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList
 	_jsii_.Get(
 		j,
 		"nameByIdp",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdpInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) NameByIdpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"nameByIdpInput",
@@ -265,17 +265,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference)SetNameByIdp(val *map[string]*string) {
-	if err := j.validateSetNameByIdpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"nameByIdp",
 		val,
 	)
 }
@@ -486,6 +475,17 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutput
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) PutNameByIdp(value interface{}) {
+	if err := z.validatePutNameByIdpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putNameByIdp",
+		[]interface{}{value},
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference) ResetName() {

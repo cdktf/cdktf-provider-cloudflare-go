@@ -5,11 +5,11 @@ package ratelimit
 
 
 type RateLimitMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#headers RateLimit#headers}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/rate_limit#headers RateLimit#headers}.
 	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#request RateLimit#request}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/rate_limit#request RateLimit#request}.
 	Request *RateLimitMatchRequest `field:"optional" json:"request" yaml:"request"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.0.0/docs/resources/rate_limit#response RateLimit#response}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/rate_limit#response RateLimit#response}.
 	Response *RateLimitMatchResponse `field:"optional" json:"response" yaml:"response"`
 }
 
