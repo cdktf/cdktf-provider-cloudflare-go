@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
 type DataCloudflareR2CustomDomain interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -34,9 +34,8 @@ type DataCloudflareR2CustomDomain interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Domain() *string
-	DomainName() *string
-	SetDomainName(val *string)
-	DomainNameInput() *string
+	SetDomain(val *string)
+	DomainInput() *string
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -205,21 +204,11 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) Domain() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2CustomDomain) DomainName() *string {
+func (j *jsiiProxy_DataCloudflareR2CustomDomain) DomainInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"domainName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareR2CustomDomain) DomainNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainNameInput",
+		"domainInput",
 		&returns,
 	)
 	return returns
@@ -376,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) DataCloudflareR2CustomDomain {
 	_init_.Initialize()
 
@@ -394,7 +383,7 @@ func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain_Override(d DataCloudflareR2CustomDomain, scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) {
 	_init_.Initialize()
 
@@ -446,13 +435,13 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareR2CustomDomain)SetDomainName(val *string) {
-	if err := j.validateSetDomainNameParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareR2CustomDomain)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"domainName",
+		"domain",
 		val,
 	)
 }

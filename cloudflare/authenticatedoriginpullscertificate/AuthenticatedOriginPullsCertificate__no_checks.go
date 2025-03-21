@@ -95,10 +95,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCertificatePa
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCertificateIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

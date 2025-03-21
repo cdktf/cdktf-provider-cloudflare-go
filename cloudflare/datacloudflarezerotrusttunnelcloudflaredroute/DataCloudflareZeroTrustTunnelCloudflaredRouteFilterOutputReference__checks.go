@@ -274,7 +274,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetTunTypesParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetTunTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

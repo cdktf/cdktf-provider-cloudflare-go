@@ -67,7 +67,7 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetCve20214428Parameters(val interface{}) error {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) validateSetCve202144228Parameters(val interface{}) error {
 	return nil
 }
 

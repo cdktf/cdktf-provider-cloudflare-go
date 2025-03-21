@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteLan) validateSetSiteIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareMagicTransitSiteLanParameters(scope constructs.Construct, id *string, config *DataCloudflareMagicTransitSiteLanConfig) error {
 	return nil
 }

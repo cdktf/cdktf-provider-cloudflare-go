@@ -79,6 +79,14 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateSetLifecycleP
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateSetUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

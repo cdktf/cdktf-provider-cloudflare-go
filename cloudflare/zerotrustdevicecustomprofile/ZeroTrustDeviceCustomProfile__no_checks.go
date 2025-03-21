@@ -75,6 +75,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutExcludeParameters(value interface{}) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutIncludeParameters(value interface{}) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) validatePutServiceModeV2Parameters(value *ZeroTrustDeviceCustomProfileServiceModeV2) error {
 	return nil
 }
@@ -168,6 +176,10 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetPrecedenceParameters
 }
 
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetRegisterInterfaceIpWithDnsParameters(val interface{}) error {
 	return nil
 }
 

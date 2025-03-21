@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetOmitSourceParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetSchemaIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareApiShieldSchema) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

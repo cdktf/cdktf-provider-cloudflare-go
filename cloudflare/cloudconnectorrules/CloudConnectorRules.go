@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules}.
 type CloudConnectorRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -119,6 +119,7 @@ type CloudConnectorRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRules()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -398,7 +399,7 @@ func (j *jsiiProxy_CloudConnectorRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules(scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) CloudConnectorRules {
 	_init_.Initialize()
 
@@ -416,7 +417,7 @@ func NewCloudConnectorRules(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules cloudflare_cloud_connector_rules} Resource.
 func NewCloudConnectorRules_Override(c CloudConnectorRules, scope constructs.Construct, id *string, config *CloudConnectorRulesConfig) {
 	_init_.Initialize()
 
@@ -874,6 +875,14 @@ func (c *jsiiProxy_CloudConnectorRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudConnectorRules) ResetRules() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRules",
 		nil, // no parameters
 	)
 }

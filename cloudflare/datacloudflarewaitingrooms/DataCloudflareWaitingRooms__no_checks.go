@@ -71,6 +71,10 @@ func validateDataCloudflareWaitingRooms_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareWaitingRooms) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareWaitingRooms) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetDomainNameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetDomainParameters(val *string) error {
 	return nil
 }
 

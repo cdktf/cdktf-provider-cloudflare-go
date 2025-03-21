@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
 type DataCloudflareEmailRoutingRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source.
 func NewDataCloudflareEmailRoutingRules(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRulesConfig) DataCloudflareEmailRoutingRules {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataCloudflareEmailRoutingRules(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules} Data Source.
 func NewDataCloudflareEmailRoutingRules_Override(d DataCloudflareEmailRoutingRules, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingRulesConfig) {
 	_init_.Initialize()
 

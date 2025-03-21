@@ -207,6 +207,68 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutExcludeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustDeviceDefaultProfileExclude:
+		value := value.(*[]*ZeroTrustDeviceDefaultProfileExclude)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustDeviceDefaultProfileExclude:
+		value_ := value.([]*ZeroTrustDeviceDefaultProfileExclude)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustDeviceDefaultProfileExclude; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutIncludeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustDeviceDefaultProfileInclude:
+		value := value.(*[]*ZeroTrustDeviceDefaultProfileInclude)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustDeviceDefaultProfileInclude:
+		value_ := value.([]*ZeroTrustDeviceDefaultProfileInclude)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustDeviceDefaultProfileInclude; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) validatePutServiceModeV2Parameters(value *ZeroTrustDeviceDefaultProfileServiceModeV2) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -520,6 +582,26 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetProvisionersParamet
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetRegisterInterfaceIpWithDnsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

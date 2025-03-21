@@ -70,7 +70,6 @@ type PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -485,14 +484,6 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference) I
 	)
 
 	return returns
-}
-
-func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (p *jsiiProxy_PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

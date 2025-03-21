@@ -22,13 +22,13 @@ type CloudConnectorRulesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// List of Cloud Connector rules.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#zone_id CloudConnectorRules#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
+	// List of Cloud Connector rules.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloud_connector_rules#rules CloudConnectorRules#rules}
+	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 

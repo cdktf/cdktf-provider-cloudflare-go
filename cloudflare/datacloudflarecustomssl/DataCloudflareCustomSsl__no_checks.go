@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareCustomSsl) validateSetZoneIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareCustomSslParameters(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) error {
 	return nil
 }

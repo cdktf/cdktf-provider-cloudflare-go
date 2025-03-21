@@ -107,11 +107,19 @@ func (j *jsiiProxy_WebAnalyticsSite) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_WebAnalyticsSite) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WebAnalyticsSite) validateSetHostParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_WebAnalyticsSite) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_WebAnalyticsSite) validateSetLiteParameters(val interface{}) error {
 	return nil
 }
 

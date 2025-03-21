@@ -67,6 +67,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	Phases() *[]*string
 	Polish() *string
 	Products() *[]*string
+	RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
 	ReadTimeout() *float64
 	RequestFields() DataCloudflareRulesetRulesActionParametersRequestFieldsList
 	RespectStrongEtags() cdktf.IResolvable
@@ -91,6 +92,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransformedRequestFields() DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList
 	Uri() DataCloudflareRulesetRulesActionParametersUriOutputReference
 	// Experimental.
 	ComputeFqn() *string
@@ -531,6 +533,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Pr
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) RawResponseFields() DataCloudflareRulesetRulesActionParametersRawResponseFieldsList {
+	var returns DataCloudflareRulesetRulesActionParametersRawResponseFieldsList
+	_jsii_.Get(
+		j,
+		"rawResponseFields",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) ReadTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -706,6 +718,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) TransformedRequestFields() DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList {
+	var returns DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList
+	_jsii_.Get(
+		j,
+		"transformedRequestFields",
 		&returns,
 	)
 	return returns

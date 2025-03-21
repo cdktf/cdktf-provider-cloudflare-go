@@ -101,6 +101,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,9 +174,41 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetInternalValueParameters(val *ZeroTrustDeviceCustomProfileInclude) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetHostParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustDeviceCustomProfileInclude:
+		val := val.(*ZeroTrustDeviceCustomProfileInclude)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustDeviceCustomProfileInclude:
+		val_ := val.(ZeroTrustDeviceCustomProfileInclude)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustDeviceCustomProfileInclude; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

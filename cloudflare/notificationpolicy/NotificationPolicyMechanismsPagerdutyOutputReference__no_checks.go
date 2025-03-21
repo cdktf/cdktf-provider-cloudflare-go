@@ -59,6 +59,10 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

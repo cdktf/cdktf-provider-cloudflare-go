@@ -8,6 +8,8 @@ package zerotrustdevicecustomprofile
 import (
 	"fmt"
 
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,6 +32,34 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfileExcludeList) validateGetParameter
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfileExcludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfileExcludeList) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ZeroTrustDeviceCustomProfileExclude:
+		val := val.(*[]*ZeroTrustDeviceCustomProfileExclude)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*ZeroTrustDeviceCustomProfileExclude:
+		val_ := val.([]*ZeroTrustDeviceCustomProfileExclude)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*ZeroTrustDeviceCustomProfileExclude; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

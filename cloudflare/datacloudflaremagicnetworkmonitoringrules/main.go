@@ -117,10 +117,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "packetThreshold", GoGetter: "PacketThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixes", GoGetter: "Prefixes"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixMatch", GoGetter: "PrefixMatch"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "zscoreSensitivity", GoGetter: "ZscoreSensitivity"},
+			_jsii_.MemberProperty{JsiiProperty: "zscoreTarget", GoGetter: "ZscoreTarget"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference{}

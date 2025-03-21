@@ -115,7 +115,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) validateSetTu
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) validateSetTunTypesParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) validateSetTunTypesParameters(val *[]*string) error {
 	return nil
 }
 

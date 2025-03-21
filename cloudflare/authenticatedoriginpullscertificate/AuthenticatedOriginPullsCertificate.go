@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
 type AuthenticatedOriginPullsCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -20,8 +20,6 @@ type AuthenticatedOriginPullsCertificate interface {
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateId() *string
-	SetCertificateId(val *string)
-	CertificateIdInput() *string
 	CertificateInput() *string
 	// Experimental.
 	Connection() interface{}
@@ -123,7 +121,6 @@ type AuthenticatedOriginPullsCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCertificateId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -170,16 +167,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) CertificateId() *string 
 	_jsii_.Get(
 		j,
 		"certificateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) CertificateIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"certificateIdInput",
 		&returns,
 	)
 	return returns
@@ -456,7 +443,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) AuthenticatedOriginPullsCertificate {
 	_init_.Initialize()
 
@@ -474,7 +461,7 @@ func NewAuthenticatedOriginPullsCertificate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate} Resource.
 func NewAuthenticatedOriginPullsCertificate_Override(a AuthenticatedOriginPullsCertificate, scope constructs.Construct, id *string, config *AuthenticatedOriginPullsCertificateConfig) {
 	_init_.Initialize()
 
@@ -492,17 +479,6 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetCertificate(val *strin
 	_jsii_.Set(
 		j,
 		"certificate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate)SetCertificateId(val *string) {
-	if err := j.validateSetCertificateIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"certificateId",
 		val,
 	)
 }
@@ -947,14 +923,6 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) OverrideLogicalId(newLog
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) ResetCertificateId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCertificateId",
-		nil, // no parameters
 	)
 }
 

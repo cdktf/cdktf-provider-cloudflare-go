@@ -67,7 +67,6 @@ type DataCloudflareOriginCaCertificateFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetZoneId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataCloudflareOriginCaCertificateFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

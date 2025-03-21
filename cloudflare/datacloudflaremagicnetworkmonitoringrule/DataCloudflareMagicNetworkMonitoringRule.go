@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type DataCloudflareMagicNetworkMonitoringRule interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -51,6 +51,7 @@ type DataCloudflareMagicNetworkMonitoringRule interface {
 	Node() constructs.Node
 	PacketThreshold() *float64
 	Prefixes() *[]*string
+	PrefixMatch() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -66,6 +67,9 @@ type DataCloudflareMagicNetworkMonitoringRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	ZscoreSensitivity() *string
+	ZscoreTarget() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -294,6 +298,16 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) Prefixes() *[]*stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) PrefixMatch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixMatch",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -364,8 +378,38 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) TerraformResourceTy
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) ZscoreSensitivity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreSensitivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRule) ZscoreTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreTarget",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRuleConfig) DataCloudflareMagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -383,7 +427,7 @@ func NewDataCloudflareMagicNetworkMonitoringRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRule_Override(d DataCloudflareMagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 

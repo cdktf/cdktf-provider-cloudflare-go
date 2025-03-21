@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "packetThresholdInput", GoGetter: "PacketThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixes", GoGetter: "Prefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixesInput", GoGetter: "PrefixesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixMatch", GoGetter: "PrefixMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -77,6 +78,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "zscoreSensitivity", GoGetter: "ZscoreSensitivity"},
+			_jsii_.MemberProperty{JsiiProperty: "zscoreTarget", GoGetter: "ZscoreTarget"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicNetworkMonitoringRule{}

@@ -9,8 +9,9 @@ type LoadBalancerLocationStrategy struct {
 	//
 	// - `"pop"`: Use the Cloudflare PoP location.
 	// - `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
+	// Available values: "pop", "resolver_ip".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer#mode LoadBalancer#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// Whether the EDNS Client Subnet (ECS) GeoIP should be preferred as the authoritative location.
 	//
@@ -18,8 +19,9 @@ type LoadBalancerLocationStrategy struct {
 	// - `"never"`: Never prefer ECS.
 	// - `"proximity"`: Prefer ECS only when `steering_policy="proximity"`.
 	// - `"geo"`: Prefer ECS only when `steering_policy="geo"`.
+	// Available values: "always", "never", "proximity", "geo".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
 	PreferEcs *string `field:"optional" json:"preferEcs" yaml:"preferEcs"`
 }
 

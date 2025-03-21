@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 type R2BucketLock interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,6 +45,9 @@ type R2BucketLock interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -113,6 +116,7 @@ type R2BucketLock interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_R2BucketLock) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_R2BucketLock) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketLock) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2BucketLock) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_R2BucketLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLockConfig) R2BucketLock {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewR2BucketLock(scope constructs.Construct, id *string, config *R2BucketLoc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock} Resource.
 func NewR2BucketLock_Override(r R2BucketLock, scope constructs.Construct, id *string, config *R2BucketLockConfig) {
 	_init_.Initialize()
 
@@ -441,6 +465,17 @@ func (j *jsiiProxy_R2BucketLock)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketLock)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -836,6 +871,14 @@ func (r *jsiiProxy_R2BucketLock) PutRules(value interface{}) {
 		r,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_R2BucketLock) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetJurisdiction",
+		nil, // no parameters
 	)
 }
 

@@ -35,6 +35,9 @@ type RulesetRulesActionParametersResponseFieldsOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	PreserveDuplicates() interface{}
+	SetPreserveDuplicates(val interface{})
+	PreserveDuplicatesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type RulesetRulesActionParametersResponseFieldsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPreserveDuplicates()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Na
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) PreserveDuplicates() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveDuplicates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) PreserveDuplicatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveDuplicatesInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference)SetPreserveDuplicates(val interface{}) {
+	if err := j.validateSetPreserveDuplicatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preserveDuplicates",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) In
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) ResetPreserveDuplicates() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPreserveDuplicates",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

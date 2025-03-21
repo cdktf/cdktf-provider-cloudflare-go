@@ -12,10 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 type DataCloudflareByoIpPrefix interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	Advertised() cdktf.IResolvable
 	AdvertisedModifiedAt() *string
 	Approved() *string
@@ -122,6 +124,16 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) AccountId() *string {
 	_jsii_.Get(
 		j,
 		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -408,7 +420,7 @@ func (j *jsiiProxy_DataCloudflareByoIpPrefix) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) DataCloudflareByoIpPrefix {
 	_init_.Initialize()
 
@@ -426,7 +438,7 @@ func NewDataCloudflareByoIpPrefix(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/byo_ip_prefix cloudflare_byo_ip_prefix} Data Source.
 func NewDataCloudflareByoIpPrefix_Override(d DataCloudflareByoIpPrefix, scope constructs.Construct, id *string, config *DataCloudflareByoIpPrefixConfig) {
 	_init_.Initialize()
 
@@ -434,6 +446,17 @@ func NewDataCloudflareByoIpPrefix_Override(d DataCloudflareByoIpPrefix, scope co
 		"@cdktf/provider-cloudflare.dataCloudflareByoIpPrefix.DataCloudflareByoIpPrefix",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareByoIpPrefix)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 

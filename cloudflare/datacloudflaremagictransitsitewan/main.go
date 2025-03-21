@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWanId", GoMethod: "ResetWanId"},
 			_jsii_.MemberProperty{JsiiProperty: "siteId", GoGetter: "SiteId"},
+			_jsii_.MemberProperty{JsiiProperty: "siteIdInput", GoGetter: "SiteIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "staticAddressing", GoGetter: "StaticAddressing"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

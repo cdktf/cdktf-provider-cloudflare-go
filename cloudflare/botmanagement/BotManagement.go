@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -33,6 +33,9 @@ type BotManagement interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CrawlerProtection() *string
+	SetCrawlerProtection(val *string)
+	CrawlerProtectionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,6 +145,7 @@ type BotManagement interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
+	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
 	ResetOptimizeWordpress()
@@ -246,6 +250,26 @@ func (j *jsiiProxy_BotManagement) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CrawlerProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crawlerProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) CrawlerProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"crawlerProtectionInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +606,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -600,7 +624,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -651,6 +675,17 @@ func (j *jsiiProxy_BotManagement)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetCrawlerProtection(val *string) {
+	if err := j.validateSetCrawlerProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crawlerProtection",
 		val,
 	)
 }
@@ -1165,6 +1200,14 @@ func (b *jsiiProxy_BotManagement) ResetAutoUpdateModel() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAutoUpdateModel",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetCrawlerProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCrawlerProtection",
 		nil, // no parameters
 	)
 }

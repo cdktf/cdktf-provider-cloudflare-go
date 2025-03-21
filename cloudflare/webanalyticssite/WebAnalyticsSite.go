@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 type WebAnalyticsSite interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -38,6 +38,9 @@ type WebAnalyticsSite interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,6 +57,9 @@ type WebAnalyticsSite interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Lite() interface{}
+	SetLite(val interface{})
+	LiteInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -124,7 +130,9 @@ type WebAnalyticsSite interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutoInstall()
+	ResetEnabled()
 	ResetHost()
+	ResetLite()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -247,6 +255,26 @@ func (j *jsiiProxy_WebAnalyticsSite) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WebAnalyticsSite) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebAnalyticsSite) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WebAnalyticsSite) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -312,6 +340,26 @@ func (j *jsiiProxy_WebAnalyticsSite) Lifecycle() *cdktf.TerraformResourceLifecyc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebAnalyticsSite) Lite() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WebAnalyticsSite) LiteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"liteInput",
 		&returns,
 	)
 	return returns
@@ -458,7 +506,7 @@ func (j *jsiiProxy_WebAnalyticsSite) ZoneTagInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) WebAnalyticsSite {
 	_init_.Initialize()
 
@@ -476,7 +524,7 @@ func NewWebAnalyticsSite(scope constructs.Construct, id *string, config *WebAnal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource.
 func NewWebAnalyticsSite_Override(w WebAnalyticsSite, scope constructs.Construct, id *string, config *WebAnalyticsSiteConfig) {
 	_init_.Initialize()
 
@@ -539,6 +587,17 @@ func (j *jsiiProxy_WebAnalyticsSite)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_WebAnalyticsSite)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WebAnalyticsSite)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -565,6 +624,17 @@ func (j *jsiiProxy_WebAnalyticsSite)SetLifecycle(val *cdktf.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WebAnalyticsSite)SetLite(val interface{}) {
+	if err := j.validateSetLiteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lite",
 		val,
 	)
 }
@@ -960,10 +1030,26 @@ func (w *jsiiProxy_WebAnalyticsSite) ResetAutoInstall() {
 	)
 }
 
+func (w *jsiiProxy_WebAnalyticsSite) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WebAnalyticsSite) ResetHost() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WebAnalyticsSite) ResetLite() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLite",
 		nil, // no parameters
 	)
 }

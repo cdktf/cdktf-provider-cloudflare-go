@@ -154,6 +154,14 @@ func validateDataCloudflareByoIpPrefix_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -236,6 +244,9 @@ func validateNewDataCloudflareByoIpPrefixParameters(scope constructs.Construct, 
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
+	if config == nil {
+		return fmt.Errorf("parameter config is required, but nil was provided")
+	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

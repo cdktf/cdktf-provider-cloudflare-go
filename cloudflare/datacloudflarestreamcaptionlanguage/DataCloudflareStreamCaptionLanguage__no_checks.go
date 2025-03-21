@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) validateSetIdentifierPar
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) validateSetLanguageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareStreamCaptionLanguage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

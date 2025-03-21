@@ -61,9 +61,9 @@ type DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference interfac
 	TunnelId() *string
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
-	TunTypes() *string
-	SetTunTypes(val *string)
-	TunTypesInput() *string
+	TunTypes() *[]*string
+	SetTunTypes(val *[]*string)
+	TunTypesInput() *[]*string
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) TunTypes() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) TunTypes() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tunTypes",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) TunTypesInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) TunTypesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tunTypesInput",
@@ -525,7 +525,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTunTypes(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference)SetTunTypes(val *[]*string) {
 	if err := j.validateSetTunTypesParameters(val); err != nil {
 		panic(err)
 	}

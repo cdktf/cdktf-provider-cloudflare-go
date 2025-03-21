@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}.
 type DataCloudflareApiShieldSchema interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,8 @@ type DataCloudflareApiShieldSchema interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SchemaId() *string
+	SetSchemaId(val *string)
+	SchemaIdInput() *string
 	Source() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -283,6 +285,16 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchema) SchemaId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareApiShieldSchema) SchemaIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schemaIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareApiShieldSchema) Source() *string {
 	var returns *string
 	_jsii_.Get(
@@ -354,7 +366,7 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchema) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source.
 func NewDataCloudflareApiShieldSchema(scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaConfig) DataCloudflareApiShieldSchema {
 	_init_.Initialize()
 
@@ -372,7 +384,7 @@ func NewDataCloudflareApiShieldSchema(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source.
 func NewDataCloudflareApiShieldSchema_Override(d DataCloudflareApiShieldSchema, scope constructs.Construct, id *string, config *DataCloudflareApiShieldSchemaConfig) {
 	_init_.Initialize()
 
@@ -436,6 +448,17 @@ func (j *jsiiProxy_DataCloudflareApiShieldSchema)SetProvider(val cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareApiShieldSchema)SetSchemaId(val *string) {
+	if err := j.validateSetSchemaIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schemaId",
 		val,
 	)
 }

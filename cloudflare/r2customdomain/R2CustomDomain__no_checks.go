@@ -111,10 +111,6 @@ func (j *jsiiProxy_R2CustomDomain) validateSetDomainParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_R2CustomDomain) validateSetDomainNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_R2CustomDomain) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_R2ManagedDomain) validateSetEnabledParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_R2ManagedDomain) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2ManagedDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

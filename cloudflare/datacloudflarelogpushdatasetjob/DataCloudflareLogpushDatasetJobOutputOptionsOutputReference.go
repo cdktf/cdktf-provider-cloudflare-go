@@ -30,7 +30,7 @@ type DataCloudflareLogpushDatasetJobOutputOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Cve20214428() cdktf.IResolvable
+	Cve202144228() cdktf.IResolvable
 	FieldDelimiter() *string
 	FieldNames() *[]*string
 	// Experimental.
@@ -141,11 +141,11 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference) Cve20214428() cdktf.IResolvable {
+func (j *jsiiProxy_DataCloudflareLogpushDatasetJobOutputOptionsOutputReference) Cve202144228() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"cve20214428",
+		"cve202144228",
 		&returns,
 	)
 	return returns

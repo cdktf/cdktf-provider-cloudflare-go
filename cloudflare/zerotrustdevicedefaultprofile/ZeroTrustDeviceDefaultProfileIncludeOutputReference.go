@@ -14,6 +14,8 @@ import (
 type ZeroTrustDeviceDefaultProfileIncludeOutputReference interface {
 	cdktf.ComplexObject
 	Address() *string
+	SetAddress(val *string)
+	AddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,11 +32,15 @@ type ZeroTrustDeviceDefaultProfileIncludeOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
 	Host() *string
-	InternalValue() *ZeroTrustDeviceDefaultProfileInclude
-	SetInternalValue(val *ZeroTrustDeviceDefaultProfileInclude)
+	SetHost(val *string)
+	HostInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +73,7 @@ type ZeroTrustDeviceDefaultProfileIncludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -87,6 +94,16 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Address(
 	_jsii_.Get(
 		j,
 		"address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressInput",
 		&returns,
 	)
 	return returns
@@ -132,6 +149,16 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Descript
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -152,8 +179,18 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Host() *
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) InternalValue() *ZeroTrustDeviceDefaultProfileInclude {
-	var returns *ZeroTrustDeviceDefaultProfileInclude
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) HostInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -210,6 +247,17 @@ func NewZeroTrustDeviceDefaultProfileIncludeOutputReference_Override(z ZeroTrust
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetAddress(val *string) {
+	if err := j.validateSetAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"address",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -232,7 +280,29 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetInternalValue(val *ZeroTrustDeviceDefaultProfileInclude) {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"host",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,6 +519,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetHost",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

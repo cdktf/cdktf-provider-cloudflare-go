@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type R2BucketEventNotification interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -45,6 +45,9 @@ type R2BucketEventNotification interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -117,6 +120,7 @@ type R2BucketEventNotification interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -260,6 +264,26 @@ func (j *jsiiProxy_R2BucketEventNotification) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_R2BucketEventNotification) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketEventNotification) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2BucketEventNotification) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_R2BucketEventNotification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification(scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) R2BucketEventNotification {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewR2BucketEventNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification_Override(r R2BucketEventNotification, scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func (j *jsiiProxy_R2BucketEventNotification)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketEventNotification)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -882,6 +917,14 @@ func (r *jsiiProxy_R2BucketEventNotification) PutRules(value interface{}) {
 		r,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_R2BucketEventNotification) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetJurisdiction",
+		nil, // no parameters
 	)
 }
 

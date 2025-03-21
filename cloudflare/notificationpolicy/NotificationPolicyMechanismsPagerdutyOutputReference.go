@@ -31,6 +31,8 @@ type NotificationPolicyMechanismsPagerdutyOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -65,6 +67,7 @@ type NotificationPolicyMechanismsPagerdutyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -125,6 +128,16 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Id() *s
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -206,6 +219,17 @@ func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }
@@ -427,6 +451,14 @@ func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NotificationPolicyMechanismsPagerdutyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

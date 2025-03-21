@@ -71,11 +71,19 @@ func validateDataCloudflareZeroTrustTunnelCloudflaredConfigA_IsTerraformElementP
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) validateSetTunnelIdParameters(val *string) error {
 	return nil
 }
 

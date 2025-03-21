@@ -111,6 +111,10 @@ func (j *jsiiProxy_R2BucketEventNotification) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketEventNotification) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketEventNotification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

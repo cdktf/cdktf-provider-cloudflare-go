@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateSetCountParam
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareAuthenticatedOriginPulls) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

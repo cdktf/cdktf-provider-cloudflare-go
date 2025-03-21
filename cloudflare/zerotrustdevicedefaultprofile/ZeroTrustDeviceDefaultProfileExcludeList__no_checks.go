@@ -19,6 +19,10 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

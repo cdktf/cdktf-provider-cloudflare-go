@@ -99,7 +99,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetTunTypesParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRouteFilterOutputReference) validateSetTunTypesParameters(val *[]*string) error {
 	return nil
 }
 

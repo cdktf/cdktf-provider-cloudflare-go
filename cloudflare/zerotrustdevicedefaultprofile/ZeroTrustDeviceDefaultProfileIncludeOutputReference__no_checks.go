@@ -51,6 +51,10 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -59,7 +63,15 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetInternalValueParameters(val *ZeroTrustDeviceDefaultProfileInclude) error {
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetHostParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

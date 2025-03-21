@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 type DataCloudflareObservatoryScheduledTest interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -49,6 +49,8 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -56,6 +58,8 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
+	SetUrl(val *string)
+	UrlInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -87,6 +91,7 @@ type DataCloudflareObservatoryScheduledTest interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -236,6 +241,16 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -276,6 +291,16 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) Url() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) UrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"urlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -297,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
 func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *string, config *DataCloudflareObservatoryScheduledTestConfig) DataCloudflareObservatoryScheduledTest {
 	_init_.Initialize()
 
@@ -315,7 +340,7 @@ func NewDataCloudflareObservatoryScheduledTest(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Data Source.
 func NewDataCloudflareObservatoryScheduledTest_Override(d DataCloudflareObservatoryScheduledTest, scope constructs.Construct, id *string, config *DataCloudflareObservatoryScheduledTestConfig) {
 	_init_.Initialize()
 
@@ -368,6 +393,28 @@ func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetProvider(val cdktf.
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareObservatoryScheduledTest)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"url",
 		val,
 	)
 }
@@ -672,6 +719,14 @@ func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareObservatoryScheduledTest) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

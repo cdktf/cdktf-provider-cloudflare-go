@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes}.
 type DataCloudflareZeroTrustTunnelCloudflaredRoutes interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -81,9 +81,9 @@ type DataCloudflareZeroTrustTunnelCloudflaredRoutes interface {
 	TunnelId() *string
 	SetTunnelId(val *string)
 	TunnelIdInput() *string
-	TunTypes() *string
-	SetTunTypes(val *string)
-	TunTypesInput() *string
+	TunTypes() *[]*string
+	SetTunTypes(val *[]*string)
+	TunTypesInput() *[]*string
 	VirtualNetworkId() *string
 	SetVirtualNetworkId(val *string)
 	VirtualNetworkIdInput() *string
@@ -474,8 +474,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunnelIdInput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunTypes() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunTypes() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tunTypes",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunTypes() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunTypesInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) TunTypesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tunTypesInput",
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes) VirtualNetwor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig) DataCloudflareZeroTrustTunnelCloudflaredRoutes {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_routes cloudflare_zero_trust_tunnel_cloudflared_routes} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredRoutes_Override(d DataCloudflareZeroTrustTunnelCloudflaredRoutes, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig) {
 	_init_.Initialize()
 
@@ -689,7 +689,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes)SetTunnelId(va
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes)SetTunTypes(val *string) {
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredRoutes)SetTunTypes(val *[]*string) {
 	if err := j.validateSetTunTypesParameters(val); err != nil {
 		panic(err)
 	}

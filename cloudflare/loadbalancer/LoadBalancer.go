@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer cloudflare_load_balancer}.
 type LoadBalancer interface {
 	cdktf.TerraformResource
 	AdaptiveRouting() LoadBalancerAdaptiveRoutingOutputReference
@@ -119,6 +119,7 @@ type LoadBalancer interface {
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
+	ZoneName() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -794,8 +795,18 @@ func (j *jsiiProxy_LoadBalancer) ZoneIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancer) ZoneName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneName",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalancerConfig) LoadBalancer {
 	_init_.Initialize()
 
@@ -813,7 +824,7 @@ func NewLoadBalancer(scope constructs.Construct, id *string, config *LoadBalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/load_balancer cloudflare_load_balancer} Resource.
 func NewLoadBalancer_Override(l LoadBalancer, scope constructs.Construct, id *string, config *LoadBalancerConfig) {
 	_init_.Initialize()
 

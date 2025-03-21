@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge}.
 type LogpushOwnershipChallenge interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) {
 	_init_.Initialize()
 

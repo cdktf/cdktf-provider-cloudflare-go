@@ -67,6 +67,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetPreserveDuplicatesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersResponseFieldsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

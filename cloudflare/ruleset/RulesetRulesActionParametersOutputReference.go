@@ -124,6 +124,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	Products() *[]*string
 	SetProducts(val *[]*string)
 	ProductsInput() *[]*string
+	RawResponseFields() RulesetRulesActionParametersRawResponseFieldsList
+	RawResponseFieldsInput() interface{}
 	ReadTimeout() *float64
 	SetReadTimeout(val *float64)
 	ReadTimeoutInput() *float64
@@ -175,6 +177,8 @@ type RulesetRulesActionParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransformedRequestFields() RulesetRulesActionParametersTransformedRequestFieldsList
+	TransformedRequestFieldsInput() interface{}
 	Uri() RulesetRulesActionParametersUriOutputReference
 	UriInput() interface{}
 	// Experimental.
@@ -214,11 +218,13 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutMatchedData(value *RulesetRulesActionParametersMatchedData)
 	PutOrigin(value *RulesetRulesActionParametersOrigin)
 	PutOverrides(value *RulesetRulesActionParametersOverrides)
+	PutRawResponseFields(value interface{})
 	PutRequestFields(value interface{})
 	PutResponse(value *RulesetRulesActionParametersResponse)
 	PutResponseFields(value interface{})
 	PutServeStale(value *RulesetRulesActionParametersServeStale)
 	PutSni(value *RulesetRulesActionParametersSni)
+	PutTransformedRequestFields(value interface{})
 	PutUri(value *RulesetRulesActionParametersUri)
 	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
@@ -255,6 +261,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetPhases()
 	ResetPolish()
 	ResetProducts()
+	ResetRawResponseFields()
 	ResetReadTimeout()
 	ResetRequestFields()
 	ResetRespectStrongEtags()
@@ -271,6 +278,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetSsl()
 	ResetStatusCode()
 	ResetSxg()
+	ResetTransformedRequestFields()
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -1037,6 +1045,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ProductsInput() 
 	return returns
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RawResponseFields() RulesetRulesActionParametersRawResponseFieldsList {
+	var returns RulesetRulesActionParametersRawResponseFieldsList
+	_jsii_.Get(
+		j,
+		"rawResponseFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) RawResponseFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawResponseFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) ReadTimeout() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1372,6 +1400,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TransformedRequestFields() RulesetRulesActionParametersTransformedRequestFieldsList {
+	var returns RulesetRulesActionParametersTransformedRequestFieldsList
+	_jsii_.Get(
+		j,
+		"transformedRequestFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) TransformedRequestFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transformedRequestFieldsInput",
 		&returns,
 	)
 	return returns
@@ -2172,6 +2220,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutOverrides(val
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutRawResponseFields(value interface{}) {
+	if err := r.validatePutRawResponseFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putRawResponseFields",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutRequestFields(value interface{}) {
 	if err := r.validatePutRequestFieldsParameters(value); err != nil {
 		panic(err)
@@ -2223,6 +2282,17 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutSni(value *Ru
 	_jsii_.InvokeVoid(
 		r,
 		"putSni",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) PutTransformedRequestFields(value interface{}) {
+	if err := r.validatePutTransformedRequestFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTransformedRequestFields",
 		[]interface{}{value},
 	)
 }
@@ -2518,6 +2588,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetProducts() 
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetRawResponseFields() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRawResponseFields",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetReadTimeout() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2642,6 +2720,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetSxg() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSxg",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetTransformedRequestFields() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTransformedRequestFields",
 		nil, // no parameters
 	)
 }

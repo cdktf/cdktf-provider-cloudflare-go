@@ -12,10 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}.
 type DataCloudflareZeroTrustTunnelCloudflaredConfigA interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputReference
@@ -58,6 +60,8 @@ type DataCloudflareZeroTrustTunnelCloudflaredConfigA interface {
 	// Experimental.
 	TerraformResourceType() *string
 	TunnelId() *string
+	SetTunnelId(val *string)
+	TunnelIdInput() *string
 	Version() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -111,6 +115,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) AccountId() 
 	_jsii_.Get(
 		j,
 		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -296,6 +310,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) TunnelId() *
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) TunnelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) Version() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -307,7 +331,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA) Version() *f
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredConfigA(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig) DataCloudflareZeroTrustTunnelCloudflaredConfigA {
 	_init_.Initialize()
 
@@ -325,7 +349,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredConfigA(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredConfigA_Override(d DataCloudflareZeroTrustTunnelCloudflaredConfigA, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig) {
 	_init_.Initialize()
 
@@ -333,6 +357,17 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredConfigA_Override(d DataCloudflar
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredConfig.DataCloudflareZeroTrustTunnelCloudflaredConfigA",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -378,6 +413,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA)SetProvider(v
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredConfigA)SetTunnelId(val *string) {
+	if err := j.validateSetTunnelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelId",
 		val,
 	)
 }

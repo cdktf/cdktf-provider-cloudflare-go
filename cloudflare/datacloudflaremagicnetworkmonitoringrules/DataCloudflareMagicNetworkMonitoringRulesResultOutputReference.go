@@ -39,6 +39,7 @@ type DataCloudflareMagicNetworkMonitoringRulesResultOutputReference interface {
 	Name() *string
 	PacketThreshold() *float64
 	Prefixes() *[]*string
+	PrefixMatch() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,6 +48,9 @@ type DataCloudflareMagicNetworkMonitoringRulesResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	ZscoreSensitivity() *string
+	ZscoreTarget() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -206,6 +210,16 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference) PrefixMatch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixMatch",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -221,6 +235,36 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference) ZscoreSensitivity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreSensitivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRulesResultOutputReference) ZscoreTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreTarget",
 		&returns,
 	)
 	return returns

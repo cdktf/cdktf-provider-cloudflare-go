@@ -59,6 +59,10 @@ func (j *jsiiProxy_NotificationPolicyMechanismsWebhooksOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_NotificationPolicyMechanismsWebhooksOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationPolicyMechanismsWebhooksOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

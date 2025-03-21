@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetSiteIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetWanIdParameters(val *string) error {
 	return nil
 }

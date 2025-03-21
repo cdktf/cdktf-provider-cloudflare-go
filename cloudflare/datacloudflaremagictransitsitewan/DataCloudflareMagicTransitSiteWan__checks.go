@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetSiteIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareMagicTransitSiteWan) validateSetWanIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -71,6 +71,10 @@ func validateDataCloudflareByoIpPrefix_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareByoIpPrefix) validateSetCountParameters(val interface{}) error {
 	return nil
 }

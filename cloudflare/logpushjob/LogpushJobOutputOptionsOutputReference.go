@@ -34,9 +34,9 @@ type LogpushJobOutputOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Cve20214428() interface{}
-	SetCve20214428(val interface{})
-	Cve20214428Input() interface{}
+	Cve202144228() interface{}
+	SetCve202144228(val interface{})
+	Cve202144228Input() interface{}
 	FieldDelimiter() *string
 	SetFieldDelimiter(val *string)
 	FieldDelimiterInput() *string
@@ -102,7 +102,7 @@ type LogpushJobOutputOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBatchPrefix()
 	ResetBatchSuffix()
-	ResetCve20214428()
+	ResetCve202144228()
 	ResetFieldDelimiter()
 	ResetFieldNames()
 	ResetOutputType()
@@ -197,21 +197,21 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve20214428() interface{} {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"cve20214428",
+		"cve202144228",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve20214428Input() interface{} {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference) Cve202144228Input() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"cve20214428Input",
+		"cve202144228Input",
 		&returns,
 	)
 	return returns
@@ -509,13 +509,13 @@ func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetCve20214428(val interface{}) {
-	if err := j.validateSetCve20214428Parameters(val); err != nil {
+func (j *jsiiProxy_LogpushJobOutputOptionsOutputReference)SetCve202144228(val interface{}) {
+	if err := j.validateSetCve202144228Parameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"cve20214428",
+		"cve202144228",
 		val,
 	)
 }
@@ -854,10 +854,10 @@ func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetBatchSuffix() {
 	)
 }
 
-func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetCve20214428() {
+func (l *jsiiProxy_LogpushJobOutputOptionsOutputReference) ResetCve202144228() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetCve20214428",
+		"resetCve202144228",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
 type DataCloudflareOriginCaCertificates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -89,7 +89,6 @@ type DataCloudflareOriginCaCertificates interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -300,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) DataCloudflareOriginCaCertificates {
 	_init_.Initialize()
 
@@ -318,7 +317,7 @@ func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates_Override(d DataCloudflareOriginCaCertificates, scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) {
 	_init_.Initialize()
 
@@ -694,14 +693,6 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificates) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareOriginCaCertificates) ResetZoneId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneId",
 		nil, // no parameters
 	)
 }

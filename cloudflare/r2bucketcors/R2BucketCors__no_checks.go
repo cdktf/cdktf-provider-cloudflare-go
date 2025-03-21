@@ -111,6 +111,10 @@ func (j *jsiiProxy_R2BucketCors) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketCors) validateSetJurisdictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketCors) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

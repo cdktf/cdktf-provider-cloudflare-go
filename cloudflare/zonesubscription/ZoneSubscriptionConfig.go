@@ -24,15 +24,15 @@ type ZoneSubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Subscription identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#identifier ZoneSubscription#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
-	// How often the subscription is renewed automatically.
+	// How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
 	Frequency *string `field:"optional" json:"frequency" yaml:"frequency"`
 	// The rate plan applied to the subscription.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
 	RatePlan *ZoneSubscriptionRatePlan `field:"optional" json:"ratePlan" yaml:"ratePlan"`
 }
 

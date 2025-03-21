@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}.
 type DataCloudflareCustomSsl interface {
 	cdktf.TerraformDataSource
 	BundleMethod() *string
@@ -72,6 +72,8 @@ type DataCloudflareCustomSsl interface {
 	TerraformResourceType() *string
 	UploadedOn() *string
 	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -442,8 +444,18 @@ func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomSsl) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) DataCloudflareCustomSsl {
 	_init_.Initialize()
 
@@ -461,7 +473,7 @@ func NewDataCloudflareCustomSsl(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source.
 func NewDataCloudflareCustomSsl_Override(d DataCloudflareCustomSsl, scope constructs.Construct, id *string, config *DataCloudflareCustomSslConfig) {
 	_init_.Initialize()
 
@@ -525,6 +537,17 @@ func (j *jsiiProxy_DataCloudflareCustomSsl)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCustomSsl)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }

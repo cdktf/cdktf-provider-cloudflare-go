@@ -155,6 +155,10 @@ func (j *jsiiProxy_WorkersScript) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetLogpushParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetMainModuleParameters(val *string) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_WorkersScript) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_WorkersScript) validateSetScriptNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScript) validateSetUsageModelParameters(val *string) error {
 	return nil
 }
 

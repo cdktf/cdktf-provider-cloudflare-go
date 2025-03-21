@@ -74,6 +74,7 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
+	ZoneName() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -464,6 +465,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) TtlInput() 
 	_jsii_.Get(
 		j,
 		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ZoneName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneName",
 		&returns,
 	)
 	return returns

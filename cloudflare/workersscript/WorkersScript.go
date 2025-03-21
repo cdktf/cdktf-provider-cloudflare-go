@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -73,7 +73,9 @@ type WorkersScript interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Logpush() cdktf.IResolvable
+	Logpush() interface{}
+	SetLogpush(val interface{})
+	LogpushInput() interface{}
 	MainModule() *string
 	SetMainModule(val *string)
 	MainModuleInput() *string
@@ -109,6 +111,8 @@ type WorkersScript interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UsageModel() *string
+	SetUsageModel(val *string)
+	UsageModelInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -165,6 +169,7 @@ type WorkersScript interface {
 	ResetCompatibilityFlags()
 	ResetKeepAssets()
 	ResetKeepBindings()
+	ResetLogpush()
 	ResetMainModule()
 	ResetMigrations()
 	ResetObservability()
@@ -173,6 +178,7 @@ type WorkersScript interface {
 	ResetOverrideLogicalId()
 	ResetPlacement()
 	ResetTailConsumers()
+	ResetUsageModel()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -511,11 +517,21 @@ func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_WorkersScript) Logpush() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_WorkersScript) Logpush() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"logpush",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) LogpushInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logpushInput",
 		&returns,
 	)
 	return returns
@@ -741,8 +757,18 @@ func (j *jsiiProxy_WorkersScript) UsageModel() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModelInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -760,7 +786,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -897,6 +923,17 @@ func (j *jsiiProxy_WorkersScript)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
+func (j *jsiiProxy_WorkersScript)SetLogpush(val interface{}) {
+	if err := j.validateSetLogpushParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logpush",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScript)SetMainModule(val *string) {
 	if err := j.validateSetMainModuleParameters(val); err != nil {
 		panic(err)
@@ -934,6 +971,17 @@ func (j *jsiiProxy_WorkersScript)SetScriptName(val *string) {
 	_jsii_.Set(
 		j,
 		"scriptName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetUsageModel(val *string) {
+	if err := j.validateSetUsageModelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usageModel",
 		val,
 	)
 }
@@ -1413,6 +1461,14 @@ func (w *jsiiProxy_WorkersScript) ResetKeepBindings() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) ResetLogpush() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLogpush",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) ResetMainModule() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1457,6 +1513,14 @@ func (w *jsiiProxy_WorkersScript) ResetTailConsumers() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTailConsumers",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetUsageModel() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetUsageModel",
 		nil, // no parameters
 	)
 }

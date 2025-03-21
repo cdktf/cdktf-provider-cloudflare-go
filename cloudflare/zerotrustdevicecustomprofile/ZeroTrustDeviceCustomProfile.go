@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}.
 type ZeroTrustDeviceCustomProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -60,6 +60,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	Exclude() ZeroTrustDeviceCustomProfileExcludeList
+	ExcludeInput() interface{}
 	ExcludeOfficeIps() interface{}
 	SetExcludeOfficeIps(val interface{})
 	ExcludeOfficeIpsInput() interface{}
@@ -75,6 +76,7 @@ type ZeroTrustDeviceCustomProfile interface {
 	GatewayUniqueId() *string
 	Id() *string
 	Include() ZeroTrustDeviceCustomProfileIncludeList
+	IncludeInput() interface{}
 	LanAllowMinutes() *float64
 	SetLanAllowMinutes(val *float64)
 	LanAllowMinutesInput() *float64
@@ -107,6 +109,9 @@ type ZeroTrustDeviceCustomProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RegisterInterfaceIpWithDns() interface{}
+	SetRegisterInterfaceIpWithDns(val interface{})
+	RegisterInterfaceIpWithDnsInput() interface{}
 	ServiceModeV2() ZeroTrustDeviceCustomProfileServiceModeV2OutputReference
 	ServiceModeV2Input() interface{}
 	SupportUrl() *string
@@ -168,6 +173,8 @@ type ZeroTrustDeviceCustomProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExclude(value interface{})
+	PutInclude(value interface{})
 	PutServiceModeV2(value *ZeroTrustDeviceCustomProfileServiceModeV2)
 	ResetAllowedToLeave()
 	ResetAllowModeSwitch()
@@ -177,12 +184,15 @@ type ZeroTrustDeviceCustomProfile interface {
 	ResetDescription()
 	ResetDisableAutoFallback()
 	ResetEnabled()
+	ResetExclude()
 	ResetExcludeOfficeIps()
+	ResetInclude()
 	ResetLanAllowMinutes()
 	ResetLanAllowSubnetSize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegisterInterfaceIpWithDns()
 	ResetServiceModeV2()
 	ResetSupportUrl()
 	ResetSwitchLocked()
@@ -455,6 +465,16 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) Exclude() ZeroTrustDeviceCustom
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) ExcludeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) ExcludeOfficeIps() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -540,6 +560,16 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) Include() ZeroTrustDeviceCustom
 	_jsii_.Get(
 		j,
 		"include",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) IncludeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeInput",
 		&returns,
 	)
 	return returns
@@ -705,6 +735,26 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) RegisterInterfaceIpWithDns() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registerInterfaceIpWithDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) RegisterInterfaceIpWithDnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"registerInterfaceIpWithDnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) ServiceModeV2() ZeroTrustDeviceCustomProfileServiceModeV2OutputReference {
 	var returns ZeroTrustDeviceCustomProfileServiceModeV2OutputReference
 	_jsii_.Get(
@@ -826,7 +876,7 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) TunnelProtocolInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) ZeroTrustDeviceCustomProfile {
 	_init_.Initialize()
 
@@ -844,7 +894,7 @@ func NewZeroTrustDeviceCustomProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource.
 func NewZeroTrustDeviceCustomProfile_Override(z ZeroTrustDeviceCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1084,6 +1134,17 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile)SetRegisterInterfaceIpWithDns(val interface{}) {
+	if err := j.validateSetRegisterInterfaceIpWithDnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"registerInterfaceIpWithDns",
 		val,
 	)
 }
@@ -1474,6 +1535,28 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutExclude(value interface{}) {
+	if err := z.validatePutExcludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putExclude",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutInclude(value interface{}) {
+	if err := z.validatePutIncludeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putInclude",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) PutServiceModeV2(value *ZeroTrustDeviceCustomProfileServiceModeV2) {
 	if err := z.validatePutServiceModeV2Parameters(value); err != nil {
 		panic(err)
@@ -1549,10 +1632,26 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetEnabled() {
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetExclude() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetExclude",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetExcludeOfficeIps() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetExcludeOfficeIps",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetInclude() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetInclude",
 		nil, // no parameters
 	)
 }
@@ -1577,6 +1676,14 @@ func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceCustomProfile) ResetRegisterInterfaceIpWithDns() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRegisterInterfaceIpWithDns",
 		nil, // no parameters
 	)
 }

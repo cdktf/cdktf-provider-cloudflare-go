@@ -52,6 +52,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	Name() *string
 	PolicyId() *string
 	Precedence() *float64
+	RegisterInterfaceIpWithDns() cdktf.IResolvable
 	ServiceModeV2() DataCloudflareZeroTrustDeviceCustomProfilesResultServiceModeV2OutputReference
 	SupportUrl() *string
 	SwitchLocked() cdktf.IResolvable
@@ -349,6 +350,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"precedence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) RegisterInterfaceIpWithDns() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"registerInterfaceIpWithDns",
 		&returns,
 	)
 	return returns

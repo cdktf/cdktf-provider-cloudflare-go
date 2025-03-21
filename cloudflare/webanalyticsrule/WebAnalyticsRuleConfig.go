@@ -24,23 +24,23 @@ type WebAnalyticsRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The Web Analytics ruleset identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
 	RulesetId *string `field:"required" json:"rulesetId" yaml:"rulesetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}.
 	Host *string `field:"optional" json:"host" yaml:"host"`
 	// Whether the rule includes or excludes traffic from being measured.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
 	Inclusive interface{} `field:"optional" json:"inclusive" yaml:"inclusive"`
 	// Whether the rule is paused or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
 	IsPaused interface{} `field:"optional" json:"isPaused" yaml:"isPaused"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}.
 	Paths *[]*string `field:"optional" json:"paths" yaml:"paths"`
 }
 

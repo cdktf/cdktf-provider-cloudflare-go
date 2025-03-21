@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetDomainNameParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareR2CustomDomain) validateSetDomainParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

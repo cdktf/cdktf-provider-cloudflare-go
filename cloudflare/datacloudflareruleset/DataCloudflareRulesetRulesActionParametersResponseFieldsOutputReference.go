@@ -33,6 +33,7 @@ type DataCloudflareRulesetRulesActionParametersResponseFieldsOutputReference int
 	InternalValue() *DataCloudflareRulesetRulesActionParametersResponseFields
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParametersResponseFields)
 	Name() *string
+	PreserveDuplicates() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersResponseFieldsOutpu
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersResponseFieldsOutputReference) PreserveDuplicates() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"preserveDuplicates",
 		&returns,
 	)
 	return returns

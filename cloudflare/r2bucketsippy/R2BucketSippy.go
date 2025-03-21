@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy}.
 type R2BucketSippy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -48,6 +48,9 @@ type R2BucketSippy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Jurisdiction() *string
+	SetJurisdiction(val *string)
+	JurisdictionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -118,6 +121,7 @@ type R2BucketSippy interface {
 	PutDestination(value *R2BucketSippyDestination)
 	PutSource(value *R2BucketSippySource)
 	ResetDestination()
+	ResetJurisdiction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_R2BucketSippy) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_R2BucketSippy) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippy) JurisdictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2BucketSippy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_R2BucketSippy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSippyConfig) R2BucketSippy {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewR2BucketSippy(scope constructs.Construct, id *string, config *R2BucketSi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/r2_bucket_sippy cloudflare_r2_bucket_sippy} Resource.
 func NewR2BucketSippy_Override(r R2BucketSippy, scope constructs.Construct, id *string, config *R2BucketSippyConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func (j *jsiiProxy_R2BucketSippy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2BucketSippy)SetJurisdiction(val *string) {
+	if err := j.validateSetJurisdictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jurisdiction",
 		val,
 	)
 }
@@ -889,6 +924,14 @@ func (r *jsiiProxy_R2BucketSippy) ResetDestination() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDestination",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_R2BucketSippy) ResetJurisdiction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetJurisdiction",
 		nil, // no parameters
 	)
 }

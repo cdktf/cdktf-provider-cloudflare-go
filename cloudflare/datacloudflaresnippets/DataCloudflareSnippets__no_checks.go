@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataCloudflareSnippets) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareSnippets) validateSetSnippetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareSnippets) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type MagicNetworkMonitoringRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -70,6 +70,7 @@ type MagicNetworkMonitoringRule interface {
 	Prefixes() *[]*string
 	SetPrefixes(val *[]*string)
 	PrefixesInput() *[]*string
+	PrefixMatch() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -86,6 +87,9 @@ type MagicNetworkMonitoringRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	ZscoreSensitivity() *string
+	ZscoreTarget() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -425,6 +429,16 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) PrefixesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) PrefixMatch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixMatch",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicNetworkMonitoringRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -485,8 +499,38 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicNetworkMonitoringRule) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreSensitivity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreSensitivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zscoreTarget",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -504,7 +548,7 @@ func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule_Override(m MagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 

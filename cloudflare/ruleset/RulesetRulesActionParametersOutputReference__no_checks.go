@@ -99,6 +99,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutOverr
 	return nil
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutRawResponseFieldsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutRequestFieldsParameters(value interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutServe
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutSniParameters(value *RulesetRulesActionParametersSni) error {
+	return nil
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) validatePutTransformedRequestFieldsParameters(value interface{}) error {
 	return nil
 }
 

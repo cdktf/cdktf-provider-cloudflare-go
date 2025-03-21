@@ -22,19 +22,19 @@ type DnsZoneTransfersTsigConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// TSIG algorithm.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_tsig#algo DnsZoneTransfersTsig#algo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_tsig#algo DnsZoneTransfersTsig#algo}
 	Algo *string `field:"required" json:"algo" yaml:"algo"`
 	// TSIG key name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_tsig#name DnsZoneTransfersTsig#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_tsig#name DnsZoneTransfersTsig#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// TSIG secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/resources/dns_zone_transfers_tsig#secret DnsZoneTransfersTsig#secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/dns_zone_transfers_tsig#secret DnsZoneTransfersTsig#secret}
 	Secret *string `field:"required" json:"secret" yaml:"secret"`
 }
 

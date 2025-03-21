@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}.
 type DataCloudflareWaitingRooms interface {
 	cdktf.TerraformDataSource
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -85,10 +88,12 @@ type DataCloudflareWaitingRooms interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetZoneId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -106,6 +111,26 @@ type DataCloudflareWaitingRooms interface {
 // The jsii proxy struct for DataCloudflareWaitingRooms
 type jsiiProxy_DataCloudflareWaitingRooms struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRooms) AccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRooms) AccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWaitingRooms) CdktfStack() cdktf.TerraformStack {
@@ -299,7 +324,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRooms) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source.
 func NewDataCloudflareWaitingRooms(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomsConfig) DataCloudflareWaitingRooms {
 	_init_.Initialize()
 
@@ -317,7 +342,7 @@ func NewDataCloudflareWaitingRooms(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.1.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source.
 func NewDataCloudflareWaitingRooms_Override(d DataCloudflareWaitingRooms, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomsConfig) {
 	_init_.Initialize()
 
@@ -325,6 +350,17 @@ func NewDataCloudflareWaitingRooms_Override(d DataCloudflareWaitingRooms, scope 
 		"@cdktf/provider-cloudflare.dataCloudflareWaitingRooms.DataCloudflareWaitingRooms",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRooms)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -681,6 +717,14 @@ func (d *jsiiProxy_DataCloudflareWaitingRooms) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareWaitingRooms) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareWaitingRooms) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -693,6 +737,14 @@ func (d *jsiiProxy_DataCloudflareWaitingRooms) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWaitingRooms) ResetZoneId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZoneId",
 		nil, // no parameters
 	)
 }
