@@ -28,19 +28,16 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Dns() *string
-	SetDns(val *string)
-	DnsInput() *string
+	Dns() ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference
+	DnsInput() interface{}
 	// Experimental.
 	Fqn() *string
-	Http() *string
-	SetHttp(val *string)
-	HttpInput() *string
+	Http() ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference
+	HttpInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	L4() *string
-	SetL4(val *string)
-	L4Input() *string
+	L4() ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference
+	L4Input() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +70,9 @@ type ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDns(value *ZeroTrustGatewayLoggingSettingsByRuleTypeDns)
+	PutHttp(value *ZeroTrustGatewayLoggingSettingsByRuleTypeHttp)
+	PutL4(value *ZeroTrustGatewayLoggingSettingsByRuleTypeL4)
 	ResetDns()
 	ResetHttp()
 	ResetL4()
@@ -121,8 +121,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Dns() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Dns() ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference {
+	var returns ZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference
 	_jsii_.Get(
 		j,
 		"dns",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Dns
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) DnsInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) DnsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"dnsInput",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Http() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Http() ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference {
+	var returns ZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference
 	_jsii_.Get(
 		j,
 		"http",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Htt
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) HttpInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) HttpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"httpInput",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4() ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference {
+	var returns ZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference
 	_jsii_.Get(
 		j,
 		"l4",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4(
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4Input() *string {
-	var returns *string
+func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4Input() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"l4Input",
@@ -271,28 +271,6 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetDns(val *string) {
-	if err := j.validateSetDnsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"dns",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetHttp(val *string) {
-	if err := j.validateSetHttpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"http",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -300,17 +278,6 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetI
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference)SetL4(val *string) {
-	if err := j.validateSetL4Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"l4",
 		val,
 	)
 }
@@ -521,6 +488,39 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Int
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) PutDns(value *ZeroTrustGatewayLoggingSettingsByRuleTypeDns) {
+	if err := z.validatePutDnsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putDns",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) PutHttp(value *ZeroTrustGatewayLoggingSettingsByRuleTypeHttp) {
+	if err := z.validatePutHttpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putHttp",
+		[]interface{}{value},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) PutL4(value *ZeroTrustGatewayLoggingSettingsByRuleTypeL4) {
+	if err := z.validatePutL4Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putL4",
+		[]interface{}{value},
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) ResetDns() {

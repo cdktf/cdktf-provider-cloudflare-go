@@ -31,6 +31,9 @@ type QueueSettingsOutputReference interface {
 	DeliveryDelay() *float64
 	SetDeliveryDelay(val *float64)
 	DeliveryDelayInput() *float64
+	DeliveryPaused() interface{}
+	SetDeliveryPaused(val interface{})
+	DeliveryPausedInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -71,6 +74,7 @@ type QueueSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeliveryDelay()
+	ResetDeliveryPaused()
 	ResetMessageRetentionPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryDelayInput() *float64 {
 	_jsii_.Get(
 		j,
 		"deliveryDelayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPaused() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deliveryPaused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QueueSettingsOutputReference) DeliveryPausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deliveryPausedInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryDelay(val *float64) {
 	_jsii_.Set(
 		j,
 		"deliveryDelay",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QueueSettingsOutputReference)SetDeliveryPaused(val interface{}) {
+	if err := j.validateSetDeliveryPausedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deliveryPaused",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (q *jsiiProxy_QueueSettingsOutputReference) ResetDeliveryDelay() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetDeliveryDelay",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QueueSettingsOutputReference) ResetDeliveryPaused() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetDeliveryPaused",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job}.
 type DataCloudflareLogpushDatasetJob interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
 func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetJobConfig) DataCloudflareLogpushDatasetJob {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewDataCloudflareLogpushDatasetJob(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_job cloudflare_logpush_dataset_job} Data Source.
 func NewDataCloudflareLogpushDatasetJob_Override(d DataCloudflareLogpushDatasetJob, scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetJobConfig) {
 	_init_.Initialize()
 

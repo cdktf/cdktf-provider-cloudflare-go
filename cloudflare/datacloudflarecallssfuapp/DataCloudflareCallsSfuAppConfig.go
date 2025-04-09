@@ -24,11 +24,11 @@ type DataCloudflareCallsSfuAppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
 }
 

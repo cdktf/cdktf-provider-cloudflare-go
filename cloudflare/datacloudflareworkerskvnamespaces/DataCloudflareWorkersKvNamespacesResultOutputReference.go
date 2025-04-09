@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareWorkersKvNamespacesResultOutputReference interface {
 	cdktf.ComplexObject
+	Beta() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataCloudflareWorkersKvNamespacesResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkersKvNamespacesResultOutputReference
 type jsiiProxy_DataCloudflareWorkersKvNamespacesResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersKvNamespacesResultOutputReference) Beta() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"beta",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersKvNamespacesResultOutputReference) ComplexObjectIndex() interface{} {

@@ -132,6 +132,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalActiveUsers", GoGetter: "TotalActiveUsers"},
+			_jsii_.MemberProperty{JsiiProperty: "turnstileAction", GoGetter: "TurnstileAction"},
+			_jsii_.MemberProperty{JsiiProperty: "turnstileMode", GoGetter: "TurnstileMode"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareWaitingRoomEventsResultOutputReference{}

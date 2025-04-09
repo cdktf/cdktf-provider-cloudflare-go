@@ -47,6 +47,18 @@ func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) val
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validatePutDnsParameters(value *ZeroTrustGatewayLoggingSettingsByRuleTypeDns) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validatePutHttpParameters(value *ZeroTrustGatewayLoggingSettingsByRuleTypeHttp) error {
+	return nil
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validatePutL4Parameters(value *ZeroTrustGatewayLoggingSettingsByRuleTypeL4) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,19 +71,7 @@ func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validateSetDnsParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validateSetHttpParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) validateSetL4Parameters(val *string) error {
 	return nil
 }
 

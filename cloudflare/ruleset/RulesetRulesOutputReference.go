@@ -19,6 +19,8 @@ type RulesetRulesOutputReference interface {
 	ActionParameters() RulesetRulesActionParametersOutputReference
 	ActionParametersInput() interface{}
 	Categories() *[]*string
+	SetCategories(val *[]*string)
+	CategoriesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,6 +97,7 @@ type RulesetRulesOutputReference interface {
 	PutRatelimit(value *RulesetRulesRatelimit)
 	ResetAction()
 	ResetActionParameters()
+	ResetCategories()
 	ResetDescription()
 	ResetEnabled()
 	ResetExposedCredentialCheck()
@@ -162,6 +165,16 @@ func (j *jsiiProxy_RulesetRulesOutputReference) Categories() *[]*string {
 	_jsii_.Get(
 		j,
 		"categories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference) CategoriesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"categoriesInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +435,17 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetAction(val *string) {
 	_jsii_.Set(
 		j,
 		"action",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesOutputReference)SetCategories(val *[]*string) {
+	if err := j.validateSetCategoriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"categories",
 		val,
 	)
 }
@@ -767,6 +791,14 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetActionParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetActionParameters",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesOutputReference) ResetCategories() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCategories",
 		nil, // no parameters
 	)
 }

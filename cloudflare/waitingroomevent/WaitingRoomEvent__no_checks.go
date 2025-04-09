@@ -159,6 +159,14 @@ func (j *jsiiProxy_WaitingRoomEvent) validateSetTotalActiveUsersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_WaitingRoomEvent) validateSetTurnstileActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) validateSetTurnstileModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaitingRoomEvent) validateSetWaitingRoomIdParameters(val *string) error {
 	return nil
 }

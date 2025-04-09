@@ -215,6 +215,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetReadServiceTokensFromHeaderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSameSiteCookieAttributeParameters(val *string) error {
 	return nil
 }

@@ -34,13 +34,16 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference inte
 	// Experimental.
 	Fqn() *string
 	HeaderText() *string
+	IncludeContext() cdktf.IResolvable
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettingsBlockPage
 	SetInternalValue(val *DataCloudflareZeroTrustGatewaySettingsSettingsBlockPage)
 	LogoPath() *string
 	MailtoAddress() *string
 	MailtoSubject() *string
+	Mode() *string
 	Name() *string
 	SuppressFooter() cdktf.IResolvable
+	TargetUri() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -168,6 +171,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContext() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"includeContext",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettingsBlockPage {
 	var returns *DataCloudflareZeroTrustGatewaySettingsSettingsBlockPage
 	_jsii_.Get(
@@ -208,6 +221,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutput
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -223,6 +246,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutput
 	_jsii_.Get(
 		j,
 		"suppressFooter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) TargetUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetUri",
 		&returns,
 	)
 	return returns

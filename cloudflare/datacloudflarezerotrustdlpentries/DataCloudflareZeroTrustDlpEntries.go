@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries}.
 type DataCloudflareZeroTrustDlpEntries interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpEntries) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries} Data Source.
 func NewDataCloudflareZeroTrustDlpEntries(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpEntriesConfig) DataCloudflareZeroTrustDlpEntries {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareZeroTrustDlpEntries(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries} Data Source.
 func NewDataCloudflareZeroTrustDlpEntries_Override(d DataCloudflareZeroTrustDlpEntries, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDlpEntriesConfig) {
 	_init_.Initialize()
 

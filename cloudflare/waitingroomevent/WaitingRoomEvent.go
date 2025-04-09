@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}.
 type WaitingRoomEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,6 +103,12 @@ type WaitingRoomEvent interface {
 	TotalActiveUsers() *float64
 	SetTotalActiveUsers(val *float64)
 	TotalActiveUsersInput() *float64
+	TurnstileAction() *string
+	SetTurnstileAction(val *string)
+	TurnstileActionInput() *string
+	TurnstileMode() *string
+	SetTurnstileMode(val *string)
+	TurnstileModeInput() *string
 	WaitingRoomId() *string
 	SetWaitingRoomId(val *string)
 	WaitingRoomIdInput() *string
@@ -165,6 +171,8 @@ type WaitingRoomEvent interface {
 	ResetShuffleAtEventStart()
 	ResetSuspended()
 	ResetTotalActiveUsers()
+	ResetTurnstileAction()
+	ResetTurnstileMode()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -633,6 +641,46 @@ func (j *jsiiProxy_WaitingRoomEvent) TotalActiveUsersInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaitingRoomEvent) TurnstileModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaitingRoomEvent) WaitingRoomId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -674,7 +722,7 @@ func (j *jsiiProxy_WaitingRoomEvent) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *WaitingRoomEventConfig) WaitingRoomEvent {
 	_init_.Initialize()
 
@@ -692,7 +740,7 @@ func NewWaitingRoomEvent(scope constructs.Construct, id *string, config *Waiting
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource.
 func NewWaitingRoomEvent_Override(w WaitingRoomEvent, scope constructs.Construct, id *string, config *WaitingRoomEventConfig) {
 	_init_.Initialize()
 
@@ -910,6 +958,28 @@ func (j *jsiiProxy_WaitingRoomEvent)SetTotalActiveUsers(val *float64) {
 	_jsii_.Set(
 		j,
 		"totalActiveUsers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoomEvent)SetTurnstileAction(val *string) {
+	if err := j.validateSetTurnstileActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaitingRoomEvent)SetTurnstileMode(val *string) {
+	if err := j.validateSetTurnstileModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turnstileMode",
 		val,
 	)
 }
@@ -1373,6 +1443,22 @@ func (w *jsiiProxy_WaitingRoomEvent) ResetTotalActiveUsers() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTotalActiveUsers",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) ResetTurnstileAction() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileAction",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaitingRoomEvent) ResetTurnstileMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTurnstileMode",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,7 @@ type DataCloudflareZeroTrustListsResultOutputReference interface {
 	Id() *string
 	InternalValue() *DataCloudflareZeroTrustListsResult
 	SetInternalValue(val *DataCloudflareZeroTrustListsResult)
+	Items() DataCloudflareZeroTrustListsResultItemsList
 	ListCount() *float64
 	Name() *string
 	// Experimental.
@@ -161,6 +162,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustListsResultOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustListsResultOutputReference) Items() DataCloudflareZeroTrustListsResultItemsList {
+	var returns DataCloudflareZeroTrustListsResultItemsList
+	_jsii_.Get(
+		j,
+		"items",
 		&returns,
 	)
 	return returns

@@ -28,13 +28,13 @@ type DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Dns() *string
+	Dns() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference
 	// Experimental.
 	Fqn() *string
-	Http() *string
+	Http() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference
 	InternalValue() *DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType
 	SetInternalValue(val *DataCloudflareZeroTrustGatewayLoggingSettingsByRuleType)
-	L4() *string
+	L4() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Dns() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Dns() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference {
+	var returns DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeDnsOutputReference
 	_jsii_.Get(
 		j,
 		"dns",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Http() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) Http() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference {
+	var returns DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeHttpOutputReference
 	_jsii_.Get(
 		j,
 		"http",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4() *string {
-	var returns *string
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference) L4() DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference {
+	var returns DataCloudflareZeroTrustGatewayLoggingSettingsByRuleTypeL4OutputReference
 	_jsii_.Get(
 		j,
 		"l4",

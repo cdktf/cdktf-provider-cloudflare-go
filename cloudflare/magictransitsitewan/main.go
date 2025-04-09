@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticAddressing", GoMethod: "ResetStaticAddressing"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVlanTag", GoMethod: "ResetVlanTag"},
 			_jsii_.MemberProperty{JsiiProperty: "siteId", GoGetter: "SiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "siteIdInput", GoGetter: "SiteIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "staticAddressing", GoGetter: "StaticAddressing"},

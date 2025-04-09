@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}.
 type MagicTransitSiteWan interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -133,6 +133,7 @@ type MagicTransitSiteWan interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetStaticAddressing()
+	ResetVlanTag()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -472,7 +473,7 @@ func (j *jsiiProxy_MagicTransitSiteWan) VlanTagInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) MagicTransitSiteWan {
 	_init_.Initialize()
 
@@ -490,7 +491,7 @@ func NewMagicTransitSiteWan(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource.
 func NewMagicTransitSiteWan_Override(m MagicTransitSiteWan, scope constructs.Construct, id *string, config *MagicTransitSiteWanConfig) {
 	_init_.Initialize()
 
@@ -1027,6 +1028,14 @@ func (m *jsiiProxy_MagicTransitSiteWan) ResetStaticAddressing() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetStaticAddressing",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitSiteWan) ResetVlanTag() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetVlanTag",
 		nil, // no parameters
 	)
 }

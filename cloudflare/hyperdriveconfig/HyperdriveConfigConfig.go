@@ -24,13 +24,13 @@ type HyperdriveConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}.
 	Origin *HyperdriveConfigOrigin `field:"required" json:"origin" yaml:"origin"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}.
 	Caching *HyperdriveConfigCaching `field:"optional" json:"caching" yaml:"caching"`
 }
 

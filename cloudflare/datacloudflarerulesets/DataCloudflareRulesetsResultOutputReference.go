@@ -35,7 +35,6 @@ type DataCloudflareRulesetsResultOutputReference interface {
 	InternalValue() *DataCloudflareRulesetsResult
 	SetInternalValue(val *DataCloudflareRulesetsResult)
 	Kind() *string
-	LastUpdated() *string
 	Name() *string
 	Phase() *string
 	// Experimental.
@@ -160,16 +159,6 @@ func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) Kind() *string {
 	_jsii_.Get(
 		j,
 		"kind",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) LastUpdated() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastUpdated",
 		&returns,
 	)
 	return returns

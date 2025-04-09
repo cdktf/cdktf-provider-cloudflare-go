@@ -73,6 +73,8 @@ type ZeroTrustDeviceDefaultProfileExcludeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAddress()
+	ResetDescription()
 	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +521,22 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeOutputReference) ResetAddress() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAddress",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDescription",
+		nil, // no parameters
+	)
 }
 
 func (z *jsiiProxy_ZeroTrustDeviceDefaultProfileExcludeOutputReference) ResetHost() {

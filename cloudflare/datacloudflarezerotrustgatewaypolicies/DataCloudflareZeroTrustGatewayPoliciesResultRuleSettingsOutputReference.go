@@ -52,6 +52,7 @@ type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference int
 	OverrideIps() *[]*string
 	PayloadLog() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsPayloadLogOutputReference
 	Quarantine() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsQuarantineOutputReference
+	Redirect() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsRedirectOutputReference
 	ResolveDnsInternally() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsResolveDnsInternallyOutputReference
 	ResolveDnsThroughCloudflare() cdktf.IResolvable
 	// Experimental.
@@ -347,6 +348,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutpu
 	_jsii_.Get(
 		j,
 		"quarantine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference) Redirect() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsRedirectOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"redirect",
 		&returns,
 	)
 	return returns

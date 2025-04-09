@@ -75,6 +75,10 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetIncludeContextParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -91,11 +95,19 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetSuppressFooterParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetTargetUriParameters(val *string) error {
 	return nil
 }
 

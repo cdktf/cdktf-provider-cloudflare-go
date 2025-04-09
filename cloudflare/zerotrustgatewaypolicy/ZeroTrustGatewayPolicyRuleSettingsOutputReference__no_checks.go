@@ -83,6 +83,10 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePu
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutRedirectParameters(value *ZeroTrustGatewayPolicyRuleSettingsRedirect) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validatePutResolveDnsInternallyParameters(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) error {
 	return nil
 }

@@ -30,6 +30,9 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Headers() *string
+	SetHeaders(val *string)
+	HeadersInput() *string
 	HtmlHandling() *string
 	SetHtmlHandling(val *string)
 	HtmlHandlingInput() *string
@@ -38,6 +41,9 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	NotFoundHandling() *string
 	SetNotFoundHandling(val *string)
 	NotFoundHandlingInput() *string
+	Redirects() *string
+	SetRedirects(val *string)
+	RedirectsInput() *string
 	RunWorkerFirst() interface{}
 	SetRunWorkerFirst(val interface{})
 	RunWorkerFirstInput() interface{}
@@ -76,8 +82,10 @@ type WorkersScriptAssetsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHeaders()
 	ResetHtmlHandling()
 	ResetNotFoundHandling()
+	ResetRedirects()
 	ResetRunWorkerFirst()
 	ResetServeDirectly()
 	// Produce the Token's value at resolution time.
@@ -135,6 +143,26 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Headers() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) HeadersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"headersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) HtmlHandling() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,6 +208,26 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) NotFoundHandlingInp
 	_jsii_.Get(
 		j,
 		"notFoundHandlingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) Redirects() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) RedirectsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redirectsInput",
 		&returns,
 	)
 	return returns
@@ -295,6 +343,17 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHeaders(val *string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"headers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetHtmlHandling(val *string) {
 	if err := j.validateSetHtmlHandlingParameters(val); err != nil {
 		panic(err)
@@ -324,6 +383,17 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetNotFoundHandling(
 	_jsii_.Set(
 		j,
 		"notFoundHandling",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference)SetRedirects(val *string) {
+	if err := j.validateSetRedirectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redirects",
 		val,
 	)
 }
@@ -558,6 +628,14 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetHtmlHandling() {
 	_jsii_.InvokeVoid(
 		w,
@@ -570,6 +648,14 @@ func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetNotFoundHandli
 	_jsii_.InvokeVoid(
 		w,
 		"resetNotFoundHandling",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptAssetsConfigOutputReference) ResetRedirects() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRedirects",
 		nil, // no parameters
 	)
 }

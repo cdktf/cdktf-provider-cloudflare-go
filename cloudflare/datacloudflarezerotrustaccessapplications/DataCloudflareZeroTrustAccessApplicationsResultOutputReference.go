@@ -58,6 +58,7 @@ type DataCloudflareZeroTrustAccessApplicationsResultOutputReference interface {
 	OptionsPreflightBypass() cdktf.IResolvable
 	PathCookieAttribute() cdktf.IResolvable
 	Policies() DataCloudflareZeroTrustAccessApplicationsResultPoliciesList
+	ReadServiceTokensFromHeader() *string
 	SaasApp() DataCloudflareZeroTrustAccessApplicationsResultSaasAppOutputReference
 	SameSiteCookieAttribute() *string
 	ScimConfig() DataCloudflareZeroTrustAccessApplicationsResultScimConfigOutputReference
@@ -422,6 +423,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReference) ReadServiceTokensFromHeader() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readServiceTokensFromHeader",
 		&returns,
 	)
 	return returns

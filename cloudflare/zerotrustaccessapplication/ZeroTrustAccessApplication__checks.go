@@ -795,6 +795,14 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetReadServiceTokensFromHeaderParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetSameSiteCookieAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

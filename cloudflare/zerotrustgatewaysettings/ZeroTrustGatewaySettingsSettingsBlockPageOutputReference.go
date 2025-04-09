@@ -42,6 +42,9 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	HeaderText() *string
 	SetHeaderText(val *string)
 	HeaderTextInput() *string
+	IncludeContext() interface{}
+	SetIncludeContext(val interface{})
+	IncludeContextInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LogoPath() *string
@@ -53,12 +56,18 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	MailtoSubject() *string
 	SetMailtoSubject(val *string)
 	MailtoSubjectInput() *string
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	SuppressFooter() interface{}
 	SetSuppressFooter(val interface{})
 	SuppressFooterInput() interface{}
+	TargetUri() *string
+	SetTargetUri(val *string)
+	TargetUriInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -95,11 +104,14 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	ResetEnabled()
 	ResetFooterText()
 	ResetHeaderText()
+	ResetIncludeContext()
 	ResetLogoPath()
 	ResetMailtoAddress()
 	ResetMailtoSubject()
+	ResetMode()
 	ResetName()
 	ResetSuppressFooter()
+	ResetTargetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -235,6 +247,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Hea
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContext() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) IncludeContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContextInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -305,6 +337,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Mai
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -340,6 +392,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Sup
 	_jsii_.Get(
 		j,
 		"suppressFooterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) TargetUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) TargetUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetUriInput",
 		&returns,
 	)
 	return returns
@@ -459,6 +531,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetH
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetIncludeContext(val interface{}) {
+	if err := j.validateSetIncludeContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeContext",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -503,6 +586,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetM
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -521,6 +615,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetS
 	_jsii_.Set(
 		j,
 		"suppressFooter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference)SetTargetUri(val *string) {
+	if err := j.validateSetTargetUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetUri",
 		val,
 	)
 }
@@ -765,6 +870,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetIncludeContext() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIncludeContext",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetLogoPath() {
 	_jsii_.InvokeVoid(
 		z,
@@ -789,6 +902,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetMode",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		z,
@@ -801,6 +922,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Res
 	_jsii_.InvokeVoid(
 		z,
 		"resetSuppressFooter",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ResetTargetUri() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetTargetUri",
 		nil, // no parameters
 	)
 }

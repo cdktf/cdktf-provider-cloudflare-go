@@ -56,6 +56,8 @@ type DataCloudflareWaitingRoomEventsResultOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TotalActiveUsers() *float64
+	TurnstileAction() *string
+	TurnstileMode() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -320,6 +322,26 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomEventsResultOutputReference) TotalAc
 	_jsii_.Get(
 		j,
 		"totalActiveUsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomEventsResultOutputReference) TurnstileAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWaitingRoomEventsResultOutputReference) TurnstileMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turnstileMode",
 		&returns,
 	)
 	return returns

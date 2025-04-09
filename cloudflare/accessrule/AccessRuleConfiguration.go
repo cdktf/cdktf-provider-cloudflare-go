@@ -10,11 +10,11 @@ type AccessRuleConfiguration struct {
 	// You must set the target to `ip` when specifying an IP address in the rule.
 	// Available values: "ip".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#target AccessRule#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/access_rule#target AccessRule#target}
 	Target *string `field:"optional" json:"target" yaml:"target"`
 	// The IP address to match. This address will be compared to the IP address of incoming requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/access_rule#value AccessRule#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/access_rule#value AccessRule#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetActionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetCategoriesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

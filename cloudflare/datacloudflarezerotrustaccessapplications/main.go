@@ -360,6 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "optionsPreflightBypass", GoGetter: "OptionsPreflightBypass"},
 			_jsii_.MemberProperty{JsiiProperty: "pathCookieAttribute", GoGetter: "PathCookieAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "policies", GoGetter: "Policies"},
+			_jsii_.MemberProperty{JsiiProperty: "readServiceTokensFromHeader", GoGetter: "ReadServiceTokensFromHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saasApp", GoGetter: "SaasApp"},
 			_jsii_.MemberProperty{JsiiProperty: "sameSiteCookieAttribute", GoGetter: "SameSiteCookieAttribute"},

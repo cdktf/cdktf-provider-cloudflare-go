@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/list_item cloudflare_list_item}.
 type ListItem interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig) ListItem {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewListItem(scope constructs.Construct, id *string, config *ListItemConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/list_item cloudflare_list_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/list_item cloudflare_list_item} Resource.
 func NewListItem_Override(l ListItem, scope constructs.Construct, id *string, config *ListItemConfig) {
 	_init_.Initialize()
 

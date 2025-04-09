@@ -29,6 +29,7 @@ type DataCloudflareQueuesResultSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DeliveryDelay() *float64
+	DeliveryPaused() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareQueuesResultSettings
@@ -116,6 +117,16 @@ func (j *jsiiProxy_DataCloudflareQueuesResultSettingsOutputReference) DeliveryDe
 	_jsii_.Get(
 		j,
 		"deliveryDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareQueuesResultSettingsOutputReference) DeliveryPaused() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deliveryPaused",
 		&returns,
 	)
 	return returns

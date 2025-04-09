@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_kv cloudflare_workers_kv}.
 type DataCloudflareWorkersKv interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKv) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
 func NewDataCloudflareWorkersKv(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvConfig) DataCloudflareWorkersKv {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataCloudflareWorkersKv(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_kv cloudflare_workers_kv} Data Source.
 func NewDataCloudflareWorkersKv_Override(d DataCloudflareWorkersKv, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvConfig) {
 	_init_.Initialize()
 

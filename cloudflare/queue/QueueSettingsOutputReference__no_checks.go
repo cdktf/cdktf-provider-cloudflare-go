@@ -63,6 +63,10 @@ func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryDelayParamet
 	return nil
 }
 
+func (j *jsiiProxy_QueueSettingsOutputReference) validateSetDeliveryPausedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QueueSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

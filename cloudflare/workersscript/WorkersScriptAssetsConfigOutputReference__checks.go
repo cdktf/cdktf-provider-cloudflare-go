@@ -166,6 +166,14 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetHeadersParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetHtmlHandlingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -199,6 +207,14 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetInternal
 }
 
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetNotFoundHandlingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRedirectsParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

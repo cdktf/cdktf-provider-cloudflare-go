@@ -7,76 +7,76 @@ package workersscript
 type WorkersScriptBindings struct {
 	// A JavaScript variable name for the binding.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#name WorkersScript#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#name WorkersScript#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The kind of resource that the binding provides.
 	//
 	// Available values: "ai", "analytics_engine", "assets", "browser_rendering", "d1", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "json", "kv_namespace", "mtls_certificate", "plain_text", "queue", "r2_bucket", "secret_text", "service", "tail_consumer", "vectorize", "version_metadata".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#type WorkersScript#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#type WorkersScript#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// R2 bucket to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
 	BucketName *string `field:"optional" json:"bucketName" yaml:"bucketName"`
 	// Identifier of the certificate to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
 	CertificateId *string `field:"optional" json:"certificateId" yaml:"certificateId"`
 	// The exported class name of the Durable Object.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#class_name WorkersScript#class_name}
 	ClassName *string `field:"optional" json:"className" yaml:"className"`
 	// The name of the dataset to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#dataset WorkersScript#dataset}
 	Dataset *string `field:"optional" json:"dataset" yaml:"dataset"`
 	// The environment of the script_name to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#environment WorkersScript#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#environment WorkersScript#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 	// Identifier of the D1 database to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#id WorkersScript#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#id WorkersScript#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Name of the Vectorize index to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#index_name WorkersScript#index_name}
 	IndexName *string `field:"optional" json:"indexName" yaml:"indexName"`
 	// JSON data to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#json WorkersScript#json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#json WorkersScript#json}
 	Json *string `field:"optional" json:"json" yaml:"json"`
 	// Namespace to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#namespace WorkersScript#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Namespace identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
 	NamespaceId *string `field:"optional" json:"namespaceId" yaml:"namespaceId"`
 	// Outbound worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#outbound WorkersScript#outbound}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#outbound WorkersScript#outbound}
 	Outbound *WorkersScriptBindingsOutbound `field:"optional" json:"outbound" yaml:"outbound"`
 	// Name of the Queue to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
 	QueueName *string `field:"optional" json:"queueName" yaml:"queueName"`
 	// The script where the Durable Object is defined, if it is external to this Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#script_name WorkersScript#script_name}
 	ScriptName *string `field:"optional" json:"scriptName" yaml:"scriptName"`
 	// Name of Worker to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#service WorkersScript#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#service WorkersScript#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// The text value to use.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_script#text WorkersScript#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_script#text WorkersScript#text}
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

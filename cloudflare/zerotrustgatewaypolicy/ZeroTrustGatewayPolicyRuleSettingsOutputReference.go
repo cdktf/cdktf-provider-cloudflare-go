@@ -83,6 +83,8 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	PayloadLogInput() interface{}
 	Quarantine() ZeroTrustGatewayPolicyRuleSettingsQuarantineOutputReference
 	QuarantineInput() interface{}
+	Redirect() ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
+	RedirectInput() interface{}
 	ResolveDnsInternally() ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyOutputReference
 	ResolveDnsInternallyInput() interface{}
 	ResolveDnsThroughCloudflare() interface{}
@@ -131,6 +133,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	PutNotificationSettings(value *ZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	PutPayloadLog(value *ZeroTrustGatewayPolicyRuleSettingsPayloadLog)
 	PutQuarantine(value *ZeroTrustGatewayPolicyRuleSettingsQuarantine)
+	PutRedirect(value *ZeroTrustGatewayPolicyRuleSettingsRedirect)
 	PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally)
 	PutUntrustedCert(value *ZeroTrustGatewayPolicyRuleSettingsUntrustedCert)
 	ResetAddHeaders()
@@ -153,6 +156,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetOverrideIps()
 	ResetPayloadLog()
 	ResetQuarantine()
+	ResetRedirect()
 	ResetResolveDnsInternally()
 	ResetResolveDnsThroughCloudflare()
 	ResetUntrustedCert()
@@ -616,6 +620,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Quarantine
 	_jsii_.Get(
 		j,
 		"quarantineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) Redirect() ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"redirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) RedirectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectInput",
 		&returns,
 	)
 	return returns
@@ -1201,6 +1225,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutQuarant
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutRedirect(value *ZeroTrustGatewayPolicyRuleSettingsRedirect) {
+	if err := z.validatePutRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putRedirect",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutResolveDnsInternally(value *ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally) {
 	if err := z.validatePutResolveDnsInternallyParameters(value); err != nil {
 		panic(err)
@@ -1379,6 +1414,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetQuara
 	_jsii_.InvokeVoid(
 		z,
 		"resetQuarantine",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetRedirect() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRedirect",
 		nil, // no parameters
 	)
 }

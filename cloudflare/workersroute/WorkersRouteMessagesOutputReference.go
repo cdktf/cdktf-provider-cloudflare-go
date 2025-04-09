@@ -29,11 +29,13 @@ type WorkersRouteMessagesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DocumentationUrl() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *WorkersRouteMessages
 	SetInternalValue(val *WorkersRouteMessages)
 	Message() *string
+	Source() WorkersRouteMessagesSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +123,16 @@ func (j *jsiiProxy_WorkersRouteMessagesOutputReference) CreationStack() *[]*stri
 	return returns
 }
 
+func (j *jsiiProxy_WorkersRouteMessagesOutputReference) DocumentationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersRouteMessagesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -146,6 +158,16 @@ func (j *jsiiProxy_WorkersRouteMessagesOutputReference) Message() *string {
 	_jsii_.Get(
 		j,
 		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersRouteMessagesOutputReference) Source() WorkersRouteMessagesSourceOutputReference {
+	var returns WorkersRouteMessagesSourceOutputReference
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns

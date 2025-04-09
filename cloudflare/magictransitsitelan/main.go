@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoutedSubnets", GoMethod: "ResetRoutedSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticAddressing", GoMethod: "ResetStaticAddressing"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVlanTag", GoMethod: "ResetVlanTag"},
 			_jsii_.MemberProperty{JsiiProperty: "routedSubnets", GoGetter: "RoutedSubnets"},
 			_jsii_.MemberProperty{JsiiProperty: "routedSubnetsInput", GoGetter: "RoutedSubnetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "siteId", GoGetter: "SiteId"},

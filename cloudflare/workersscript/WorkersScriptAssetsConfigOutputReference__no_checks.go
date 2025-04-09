@@ -59,6 +59,10 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetHeadersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetHtmlHandlingParameters(val *string) error {
 	return nil
 }
@@ -68,6 +72,10 @@ func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetInternal
 }
 
 func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetNotFoundHandlingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptAssetsConfigOutputReference) validateSetRedirectsParameters(val *string) error {
 	return nil
 }
 

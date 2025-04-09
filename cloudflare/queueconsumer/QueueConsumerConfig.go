@@ -24,27 +24,27 @@ type QueueConsumerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
 	QueueId *string `field:"required" json:"queueId" yaml:"queueId"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#consumer_id QueueConsumer#consumer_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#consumer_id QueueConsumer#consumer_id}
 	ConsumerId *string `field:"optional" json:"consumerId" yaml:"consumerId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}.
 	DeadLetterQueue *string `field:"optional" json:"deadLetterQueue" yaml:"deadLetterQueue"`
 	// Name of a Worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
 	ScriptName *string `field:"optional" json:"scriptName" yaml:"scriptName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#settings QueueConsumer#settings}.
 	Settings *QueueConsumerSettings `field:"optional" json:"settings" yaml:"settings"`
 	// Available values: "worker".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/queue_consumer#type QueueConsumer#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/queue_consumer#type QueueConsumer#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

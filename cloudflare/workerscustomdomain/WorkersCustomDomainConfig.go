@@ -24,23 +24,23 @@ type WorkersCustomDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifer of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Worker environment associated with the zone and hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
 	Environment *string `field:"required" json:"environment" yaml:"environment"`
 	// Hostname of the Worker Domain.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// Worker service associated with the zone and hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// Identifier of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

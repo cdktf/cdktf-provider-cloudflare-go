@@ -24,27 +24,27 @@ type CloudforceOneRequestConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#account_identifier CloudforceOneRequest#account_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#account_identifier CloudforceOneRequest#account_identifier}
 	AccountIdentifier *string `field:"required" json:"accountIdentifier" yaml:"accountIdentifier"`
 	// Request content.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
 	Content *string `field:"optional" json:"content" yaml:"content"`
 	// Priority for analyzing the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
 	Priority *string `field:"optional" json:"priority" yaml:"priority"`
 	// Requested information from request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
 	RequestType *string `field:"optional" json:"requestType" yaml:"requestType"`
 	// Brief description of the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
 	Summary *string `field:"optional" json:"summary" yaml:"summary"`
 	// The CISA defined Traffic Light Protocol (TLP) Available values: "clear", "amber", "amber-strict", "green", "red".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.2.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
 	Tlp *string `field:"optional" json:"tlp" yaml:"tlp"`
 }
 
