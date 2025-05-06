@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field}.
 type DataCloudflareLogpushDatasetField interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -88,6 +88,7 @@ type DataCloudflareLogpushDatasetField interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetDatasetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -312,7 +313,7 @@ func (j *jsiiProxy_DataCloudflareLogpushDatasetField) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
 func NewDataCloudflareLogpushDatasetField(scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetFieldConfig) DataCloudflareLogpushDatasetField {
 	_init_.Initialize()
 
@@ -330,7 +331,7 @@ func NewDataCloudflareLogpushDatasetField(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/logpush_dataset_field cloudflare_logpush_dataset_field} Data Source.
 func NewDataCloudflareLogpushDatasetField_Override(d DataCloudflareLogpushDatasetField, scope constructs.Construct, id *string, config *DataCloudflareLogpushDatasetFieldConfig) {
 	_init_.Initialize()
 
@@ -709,6 +710,14 @@ func (d *jsiiProxy_DataCloudflareLogpushDatasetField) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareLogpushDatasetField) ResetDatasetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatasetId",
 		nil, // no parameters
 	)
 }

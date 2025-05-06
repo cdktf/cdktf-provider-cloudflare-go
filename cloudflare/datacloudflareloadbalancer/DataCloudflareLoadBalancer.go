@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
 type DataCloudflareLoadBalancer interface {
 	cdktf.TerraformDataSource
 	AdaptiveRouting() DataCloudflareLoadBalancerAdaptiveRoutingOutputReference
@@ -24,9 +24,7 @@ type DataCloudflareLoadBalancer interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CountryPools() interface{}
-	SetCountryPools(val interface{})
-	CountryPoolsInput() interface{}
+	CountryPools() cdktf.StringListMap
 	CreatedOn() *string
 	DefaultPools() *[]*string
 	// Experimental.
@@ -76,11 +74,7 @@ type DataCloudflareLoadBalancer interface {
 	SessionAffinity() *string
 	SessionAffinityAttributes() DataCloudflareLoadBalancerSessionAffinityAttributesOutputReference
 	SessionAffinityTtl() *float64
-	SetSessionAffinityTtl(val *float64)
-	SessionAffinityTtlInput() *float64
 	SteeringPolicy() *string
-	SetSteeringPolicy(val *string)
-	SteeringPolicyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -88,12 +82,9 @@ type DataCloudflareLoadBalancer interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Ttl() *float64
-	SetTtl(val *float64)
-	TtlInput() *float64
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
-	ZoneName() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,16 +110,12 @@ type DataCloudflareLoadBalancer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCountryPools()
 	ResetLoadBalancerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPopPools()
 	ResetRegionPools()
-	ResetSessionAffinityTtl()
-	ResetSteeringPolicy()
-	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -188,21 +175,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) CountryPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancer) CountryPools() cdktf.StringListMap {
+	var returns cdktf.StringListMap
 	_jsii_.Get(
 		j,
 		"countryPools",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) CountryPoolsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"countryPoolsInput",
 		&returns,
 	)
 	return returns
@@ -508,31 +485,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) SessionAffinityTtl() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) SessionAffinityTtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"sessionAffinityTtlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancer) SteeringPolicy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"steeringPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) SteeringPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"steeringPolicyInput",
 		&returns,
 	)
 	return returns
@@ -578,16 +535,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) Ttl() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) TtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ttlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -608,18 +555,8 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"zoneName",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) DataCloudflareLoadBalancer {
 	_init_.Initialize()
 
@@ -637,7 +574,7 @@ func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer_Override(d DataCloudflareLoadBalancer, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) {
 	_init_.Initialize()
 
@@ -655,17 +592,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetCountryPools(val interface{}) {
-	if err := j.validateSetCountryPoolsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"countryPools",
 		val,
 	)
 }
@@ -734,39 +660,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer)SetRegionPools(val interface{}) {
 	_jsii_.Set(
 		j,
 		"regionPools",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetSessionAffinityTtl(val *float64) {
-	if err := j.validateSetSessionAffinityTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sessionAffinityTtl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetSteeringPolicy(val *string) {
-	if err := j.validateSetSteeringPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"steeringPolicy",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer)SetTtl(val *float64) {
-	if err := j.validateSetTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ttl",
 		val,
 	)
 }
@@ -1067,14 +960,6 @@ func (d *jsiiProxy_DataCloudflareLoadBalancer) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetCountryPools() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCountryPools",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetLoadBalancerId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1103,30 +988,6 @@ func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetRegionPools() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegionPools",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetSessionAffinityTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSessionAffinityTtl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetSteeringPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSteeringPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancer) ResetTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTtl",
 		nil, // no parameters
 	)
 }

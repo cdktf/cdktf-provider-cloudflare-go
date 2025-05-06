@@ -95,6 +95,10 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpDataset) validateSetCaseSensitiveParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpDataset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

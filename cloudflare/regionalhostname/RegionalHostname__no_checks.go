@@ -115,6 +115,10 @@ func (j *jsiiProxy_RegionalHostname) validateSetRegionKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_RegionalHostname) validateSetRoutingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegionalHostname) validateSetZoneIdParameters(val *string) error {
 	return nil
 }

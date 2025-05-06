@@ -63,6 +63,10 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetClientEmailPar
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetCloudProviderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -76,10 +80,6 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetInternalValueP
 }
 
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetPrivateKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_R2BucketSippySourceOutputReference) validateSetProviderParameters(val *string) error {
 	return nil
 }
 

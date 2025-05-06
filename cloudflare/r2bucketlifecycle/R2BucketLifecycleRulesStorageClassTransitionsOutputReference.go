@@ -24,7 +24,7 @@ type R2BucketLifecycleRulesStorageClassTransitionsOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Condition() R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference
-	ConditionInput() *R2BucketLifecycleRulesStorageClassTransitionsCondition
+	ConditionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) ConditionInput() *R2BucketLifecycleRulesStorageClassTransitionsCondition {
-	var returns *R2BucketLifecycleRulesStorageClassTransitionsCondition
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsOutputReference) ConditionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"conditionInput",

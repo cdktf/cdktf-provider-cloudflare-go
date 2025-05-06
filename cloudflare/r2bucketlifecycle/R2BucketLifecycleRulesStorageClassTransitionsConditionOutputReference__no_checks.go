@@ -63,7 +63,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetInternalValueParameters(val *R2BucketLifecycleRulesStorageClassTransitionsCondition) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

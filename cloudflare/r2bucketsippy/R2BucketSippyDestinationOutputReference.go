@@ -16,6 +16,9 @@ type R2BucketSippyDestinationOutputReference interface {
 	AccessKeyId() *string
 	SetAccessKeyId(val *string)
 	AccessKeyIdInput() *string
+	CloudProvider() *string
+	SetCloudProvider(val *string)
+	CloudProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,9 +38,6 @@ type R2BucketSippyDestinationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Provider() *string
-	SetProvider(val *string)
-	ProviderInput() *string
 	SecretAccessKey() *string
 	SetSecretAccessKey(val *string)
 	SecretAccessKeyInput() *string
@@ -74,7 +74,7 @@ type R2BucketSippyDestinationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessKeyId()
-	ResetProvider()
+	ResetCloudProvider()
 	ResetSecretAccessKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,6 +106,26 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) AccessKeyIdInput() *
 	_jsii_.Get(
 		j,
 		"accessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) CloudProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) CloudProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderInput",
 		&returns,
 	)
 	return returns
@@ -156,26 +176,6 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) InternalValue() inte
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) Provider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"provider",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) ProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"providerInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +260,17 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference)SetAccessKeyId(val *s
 	)
 }
 
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference)SetCloudProvider(val *string) {
+	if err := j.validateSetCloudProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudProvider",
+		val,
+	)
+}
+
 func (j *jsiiProxy_R2BucketSippyDestinationOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -289,17 +300,6 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference)SetProvider(val *string) {
-	if err := j.validateSetProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provider",
 		val,
 	)
 }
@@ -531,10 +531,10 @@ func (r *jsiiProxy_R2BucketSippyDestinationOutputReference) ResetAccessKeyId() {
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippyDestinationOutputReference) ResetProvider() {
+func (r *jsiiProxy_R2BucketSippyDestinationOutputReference) ResetCloudProvider() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetProvider",
+		"resetCloudProvider",
 		nil, // no parameters
 	)
 }

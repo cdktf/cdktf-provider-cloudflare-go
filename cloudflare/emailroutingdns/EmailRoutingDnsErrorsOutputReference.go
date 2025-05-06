@@ -29,11 +29,13 @@ type EmailRoutingDnsErrorsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DocumentationUrl() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EmailRoutingDnsErrors
 	SetInternalValue(val *EmailRoutingDnsErrors)
 	Message() *string
+	Source() EmailRoutingDnsErrorsSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +123,16 @@ func (j *jsiiProxy_EmailRoutingDnsErrorsOutputReference) CreationStack() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_EmailRoutingDnsErrorsOutputReference) DocumentationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmailRoutingDnsErrorsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -146,6 +158,16 @@ func (j *jsiiProxy_EmailRoutingDnsErrorsOutputReference) Message() *string {
 	_jsii_.Get(
 		j,
 		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmailRoutingDnsErrorsOutputReference) Source() EmailRoutingDnsErrorsSourceOutputReference {
+	var returns EmailRoutingDnsErrorsSourceOutputReference
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns

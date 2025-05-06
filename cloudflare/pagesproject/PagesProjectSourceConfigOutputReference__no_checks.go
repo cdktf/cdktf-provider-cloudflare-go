@@ -59,7 +59,51 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val *PagesProjectSourceConfig) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathExcludesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathIncludesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewBranchExcludesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewBranchIncludesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewDeploymentSettingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionBranchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetRepoNameParameters(val *string) error {
 	return nil
 }
 

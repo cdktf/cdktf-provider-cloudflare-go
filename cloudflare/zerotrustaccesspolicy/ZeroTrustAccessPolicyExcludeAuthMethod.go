@@ -7,7 +7,7 @@ package zerotrustaccesspolicy
 type ZeroTrustAccessPolicyExcludeAuthMethod struct {
 	// The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_access_policy#auth_method ZeroTrustAccessPolicy#auth_method}
 	AuthMethod *string `field:"required" json:"authMethod" yaml:"authMethod"`
 }
 

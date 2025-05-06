@@ -143,6 +143,14 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetExcludeOfficeIpsPar
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetLanAllowMinutesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetLanAllowSubnetSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

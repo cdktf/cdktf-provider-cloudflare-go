@@ -13,7 +13,6 @@ import (
 
 type DataCloudflareCloudConnectorRulesListResultOutputReference interface {
 	cdktf.ComplexObject
-	CloudProvider() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +37,7 @@ type DataCloudflareCloudConnectorRulesListResultOutputReference interface {
 	InternalValue() *DataCloudflareCloudConnectorRulesListResult
 	SetInternalValue(val *DataCloudflareCloudConnectorRulesListResult)
 	Parameters() DataCloudflareCloudConnectorRulesListResultParametersOutputReference
+	Provider() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -83,16 +83,6 @@ type DataCloudflareCloudConnectorRulesListResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareCloudConnectorRulesListResultOutputReference
 type jsiiProxy_DataCloudflareCloudConnectorRulesListResultOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_DataCloudflareCloudConnectorRulesListResultOutputReference) CloudProvider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudProvider",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareCloudConnectorRulesListResultOutputReference) ComplexObjectIndex() interface{} {
@@ -190,6 +180,16 @@ func (j *jsiiProxy_DataCloudflareCloudConnectorRulesListResultOutputReference) P
 	_jsii_.Get(
 		j,
 		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudConnectorRulesListResultOutputReference) Provider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provider",
 		&returns,
 	)
 	return returns

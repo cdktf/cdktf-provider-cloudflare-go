@@ -31,9 +31,7 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
-	Expired() interface{}
-	SetExpired(val interface{})
-	ExpiredInput() interface{}
+	Expired() cdktf.IResolvable
 	ExpiresAt() *string
 	SetExpiresAt(val *string)
 	ExpiresAtInput() *string
@@ -74,7 +72,6 @@ type ZeroTrustGatewayPolicyExpirationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDuration()
-	ResetExpired()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,21 +137,11 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) DurationInpu
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Expired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) Expired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"expired",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) ExpiredInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"expiredInput",
 		&returns,
 	)
 	return returns
@@ -277,17 +264,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference)SetDuration(v
 	_jsii_.Set(
 		j,
 		"duration",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference)SetExpired(val interface{}) {
-	if err := j.validateSetExpiredParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"expired",
 		val,
 	)
 }
@@ -526,14 +502,6 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) ResetDuratio
 	_jsii_.InvokeVoid(
 		z,
 		"resetDuration",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) ResetExpired() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetExpired",
 		nil, // no parameters
 	)
 }

@@ -112,6 +112,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetAlgorithmParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetBucketNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -217,6 +225,14 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetEnvironmentP
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetFormatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -265,6 +281,22 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetJsonParamete
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetKeyBase64Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetKeyJwkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -289,6 +321,14 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetNamespaceIdP
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetPipelineParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetQueueNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -305,7 +345,23 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetScriptNamePa
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetSecretNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetStoreIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,6 +394,14 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTextParamete
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) validateSetUsagesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

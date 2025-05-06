@@ -55,6 +55,10 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetAccessKey
 	return nil
 }
 
+func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetCloudProviderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -64,10 +68,6 @@ func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetComplexOb
 }
 
 func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_R2BucketSippyDestinationOutputReference) validateSetProviderParameters(val *string) error {
 	return nil
 }
 

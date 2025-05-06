@@ -218,6 +218,17 @@ func (h *jsiiProxy_HyperdriveConfig) validatePutCachingParameters(value *Hyperdr
 	return nil
 }
 
+func (h *jsiiProxy_HyperdriveConfig) validatePutMtlsParameters(value *HyperdriveConfigMtls) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (h *jsiiProxy_HyperdriveConfig) validatePutOriginParameters(value *HyperdriveConfigOrigin) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

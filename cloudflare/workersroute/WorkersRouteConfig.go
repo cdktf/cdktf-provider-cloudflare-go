@@ -22,19 +22,17 @@ type WorkersRouteConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route#pattern WorkersRoute#pattern}.
+	// Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#pattern WorkersRoute#pattern}
 	Pattern *string `field:"required" json:"pattern" yaml:"pattern"`
+	// Name of the script to run if the route matches.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#script WorkersRoute#script}
+	Script *string `field:"required" json:"script" yaml:"script"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route#zone_id WorkersRoute#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Identifier.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route#route_id WorkersRoute#route_id}
-	RouteId *string `field:"optional" json:"routeId" yaml:"routeId"`
-	// Name of the script, used in URLs and route configuration.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route#script WorkersRoute#script}
-	Script *string `field:"optional" json:"script" yaml:"script"`
 }
 

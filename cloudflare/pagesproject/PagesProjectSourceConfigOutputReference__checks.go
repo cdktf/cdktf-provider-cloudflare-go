@@ -166,9 +166,149 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val *PagesProjectSourceConfig) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *PagesProjectSourceConfig:
+		val := val.(*PagesProjectSourceConfig)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case PagesProjectSourceConfig:
+		val_ := val.(PagesProjectSourceConfig)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PagesProjectSourceConfig; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathExcludesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPathIncludesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewBranchExcludesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewBranchIncludesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPreviewDeploymentSettingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionBranchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentsEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetRepoNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

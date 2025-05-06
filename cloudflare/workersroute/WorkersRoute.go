@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route}.
 type WorkersRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,7 +31,6 @@ type WorkersRoute interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Errors() WorkersRouteErrorsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,7 +44,6 @@ type WorkersRoute interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Messages() WorkersRouteMessagesList
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
@@ -61,13 +59,9 @@ type WorkersRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RouteId() *string
-	SetRouteId(val *string)
-	RouteIdInput() *string
 	Script() *string
 	SetScript(val *string)
 	ScriptInput() *string
-	Success() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,8 +117,6 @@ type WorkersRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRouteId()
-	ResetScript()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -193,16 +185,6 @@ func (j *jsiiProxy_WorkersRoute) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersRoute) Errors() WorkersRouteErrorsList {
-	var returns WorkersRouteErrorsList
-	_jsii_.Get(
-		j,
-		"errors",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersRoute) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -248,16 +230,6 @@ func (j *jsiiProxy_WorkersRoute) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersRoute) Messages() WorkersRouteMessagesList {
-	var returns WorkersRouteMessagesList
-	_jsii_.Get(
-		j,
-		"messages",
 		&returns,
 	)
 	return returns
@@ -323,26 +295,6 @@ func (j *jsiiProxy_WorkersRoute) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkersRoute) RouteId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"routeId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersRoute) RouteIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"routeIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_WorkersRoute) Script() *string {
 	var returns *string
 	_jsii_.Get(
@@ -358,16 +310,6 @@ func (j *jsiiProxy_WorkersRoute) ScriptInput() *string {
 	_jsii_.Get(
 		j,
 		"scriptInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkersRoute) Success() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"success",
 		&returns,
 	)
 	return returns
@@ -424,7 +366,7 @@ func (j *jsiiProxy_WorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRouteConfig) WorkersRoute {
 	_init_.Initialize()
 
@@ -442,7 +384,7 @@ func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute_Override(w WorkersRoute, scope constructs.Construct, id *string, config *WorkersRouteConfig) {
 	_init_.Initialize()
 
@@ -528,17 +470,6 @@ func (j *jsiiProxy_WorkersRoute)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkersRoute)SetRouteId(val *string) {
-	if err := j.validateSetRouteIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"routeId",
 		val,
 	)
 }
@@ -922,22 +853,6 @@ func (w *jsiiProxy_WorkersRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersRoute) ResetRouteId() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetRouteId",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkersRoute) ResetScript() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetScript",
 		nil, // no parameters
 	)
 }

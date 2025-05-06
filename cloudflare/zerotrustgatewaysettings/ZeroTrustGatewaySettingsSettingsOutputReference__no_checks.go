@@ -83,6 +83,10 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutF
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutHostSelectorParameters(value *ZeroTrustGatewaySettingsSettingsHostSelector) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutProtocolDetectionParameters(value *ZeroTrustGatewaySettingsSettingsProtocolDetection) error {
 	return nil
 }

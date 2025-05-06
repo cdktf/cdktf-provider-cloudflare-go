@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel}.
 type MagicWanIpsecTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	AllowNullCipher() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudflareEndpoint() *string
@@ -33,6 +34,7 @@ type MagicWanIpsecTunnel interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	CustomerEndpoint() *string
 	SetCustomerEndpoint(val *string)
 	CustomerEndpointInput() *string
@@ -53,20 +55,18 @@ type MagicWanIpsecTunnel interface {
 	FriendlyUniqueId() *string
 	HealthCheck() MagicWanIpsecTunnelHealthCheckOutputReference
 	HealthCheckInput() interface{}
+	Id() *string
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
 	InterfaceAddressInput() *string
 	IpsecTunnel() MagicWanIpsecTunnelIpsecTunnelOutputReference
-	IpsecTunnelId() *string
-	SetIpsecTunnelId(val *string)
-	IpsecTunnelIdInput() *string
-	IpsecTunnels() MagicWanIpsecTunnelIpsecTunnelsList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Modified() cdktf.IResolvable
 	ModifiedIpsecTunnel() MagicWanIpsecTunnelModifiedIpsecTunnelOutputReference
+	ModifiedOn() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -83,6 +83,7 @@ type MagicWanIpsecTunnel interface {
 	Psk() *string
 	SetPsk(val *string)
 	PskInput() *string
+	PskMetadata() MagicWanIpsecTunnelPskMetadataOutputReference
 	// Experimental.
 	RawOverrides() interface{}
 	ReplayProtection() interface{}
@@ -141,7 +142,6 @@ type MagicWanIpsecTunnel interface {
 	ResetCustomerEndpoint()
 	ResetDescription()
 	ResetHealthCheck()
-	ResetIpsecTunnelId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -180,6 +180,16 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) AllowNullCipher() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowNullCipher",
 		&returns,
 	)
 	return returns
@@ -240,6 +250,16 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -345,6 +365,16 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) HealthCheckInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnel) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnel) InterfaceAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -375,36 +405,6 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) IpsecTunnel() MagicWanIpsecTunnelIpsecTu
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanIpsecTunnel) IpsecTunnelId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipsecTunnelId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) IpsecTunnelIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipsecTunnelIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel) IpsecTunnels() MagicWanIpsecTunnelIpsecTunnelsList {
-	var returns MagicWanIpsecTunnelIpsecTunnelsList
-	_jsii_.Get(
-		j,
-		"ipsecTunnels",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanIpsecTunnel) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -430,6 +430,16 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) ModifiedIpsecTunnel() MagicWanIpsecTunne
 	_jsii_.Get(
 		j,
 		"modifiedIpsecTunnel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanIpsecTunnel) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -505,6 +515,16 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) PskInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanIpsecTunnel) PskMetadata() MagicWanIpsecTunnelPskMetadataOutputReference {
+	var returns MagicWanIpsecTunnelPskMetadataOutputReference
+	_jsii_.Get(
+		j,
+		"pskMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanIpsecTunnel) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -566,7 +586,7 @@ func (j *jsiiProxy_MagicWanIpsecTunnel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) MagicWanIpsecTunnel {
 	_init_.Initialize()
 
@@ -584,7 +604,7 @@ func NewMagicWanIpsecTunnel(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_wan_ipsec_tunnel cloudflare_magic_wan_ipsec_tunnel} Resource.
 func NewMagicWanIpsecTunnel_Override(m MagicWanIpsecTunnel, scope constructs.Construct, id *string, config *MagicWanIpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -684,17 +704,6 @@ func (j *jsiiProxy_MagicWanIpsecTunnel)SetInterfaceAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicWanIpsecTunnel)SetIpsecTunnelId(val *string) {
-	if err := j.validateSetIpsecTunnelIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ipsecTunnelId",
 		val,
 	)
 }
@@ -1146,14 +1155,6 @@ func (m *jsiiProxy_MagicWanIpsecTunnel) ResetHealthCheck() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetHealthCheck",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MagicWanIpsecTunnel) ResetIpsecTunnelId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetIpsecTunnelId",
 		nil, // no parameters
 	)
 }

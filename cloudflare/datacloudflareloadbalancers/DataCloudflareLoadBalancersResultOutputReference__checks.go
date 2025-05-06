@@ -234,22 +234,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetSessionAffinityTtlParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetSteeringPolicyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -259,14 +243,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSet
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) validateSetTtlParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

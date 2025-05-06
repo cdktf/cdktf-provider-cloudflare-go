@@ -119,10 +119,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetGreTunnelIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddressParameters(val *string) error {
 	return nil
 }

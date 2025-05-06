@@ -33,8 +33,8 @@ type R2BucketCorsRulesAllowedOutputReference interface {
 	Headers() *[]*string
 	SetHeaders(val *[]*string)
 	HeadersInput() *[]*string
-	InternalValue() *R2BucketCorsRulesAllowed
-	SetInternalValue(val *R2BucketCorsRulesAllowed)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Methods() *[]*string
 	SetMethods(val *[]*string)
 	MethodsInput() *[]*string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) HeadersInput() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) InternalValue() *R2BucketCorsRulesAllowed {
-	var returns *R2BucketCorsRulesAllowed
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -280,7 +280,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetHeaders(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetInternalValue(val *R2BucketCorsRulesAllowed) {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

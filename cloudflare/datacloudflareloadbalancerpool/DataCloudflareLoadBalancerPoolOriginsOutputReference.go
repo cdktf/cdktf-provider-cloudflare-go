@@ -37,6 +37,7 @@ type DataCloudflareLoadBalancerPoolOriginsOutputReference interface {
 	InternalValue() *DataCloudflareLoadBalancerPoolOrigins
 	SetInternalValue(val *DataCloudflareLoadBalancerPoolOrigins)
 	Name() *string
+	Port() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) Name() 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolOriginsOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
 		&returns,
 	)
 	return returns

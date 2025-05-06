@@ -22,13 +22,13 @@ type DataCloudflareWeb3HostnameConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
+	// Specify the identifier of the hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/web3_hostname#zone_id DataCloudflareWeb3Hostname#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/web3_hostname#zone_id DataCloudflareWeb3Hostname#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Identifier.
+	// Specify the identifier of the hostname.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/web3_hostname#identifier DataCloudflareWeb3Hostname#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/web3_hostname#identifier DataCloudflareWeb3Hostname#identifier}
 	Identifier *string `field:"optional" json:"identifier" yaml:"identifier"`
 }
 

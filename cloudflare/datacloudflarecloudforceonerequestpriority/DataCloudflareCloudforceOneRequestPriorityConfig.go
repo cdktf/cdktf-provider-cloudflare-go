@@ -24,11 +24,11 @@ type DataCloudflareCloudforceOneRequestPriorityConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/cloudforce_one_request_priority#account_identifier DataCloudflareCloudforceOneRequestPriority#account_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority#account_identifier DataCloudflareCloudforceOneRequestPriority#account_identifier}
 	AccountIdentifier *string `field:"required" json:"accountIdentifier" yaml:"accountIdentifier"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/cloudforce_one_request_priority#priority_identifer DataCloudflareCloudforceOneRequestPriority#priority_identifer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority#priority_identifer DataCloudflareCloudforceOneRequestPriority#priority_identifer}
 	PriorityIdentifer *string `field:"required" json:"priorityIdentifer" yaml:"priorityIdentifer"`
 }
 

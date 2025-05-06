@@ -33,8 +33,8 @@ type R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference inter
 	DateInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *R2BucketLifecycleRulesStorageClassTransitionsCondition
-	SetInternalValue(val *R2BucketLifecycleRulesStorageClassTransitionsCondition)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MaxAge() *float64
 	SetMaxAge(val *float64)
 	MaxAgeInput() *float64
@@ -150,8 +150,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputR
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) InternalValue() *R2BucketLifecycleRulesStorageClassTransitionsCondition {
-	var returns *R2BucketLifecycleRulesStorageClassTransitionsCondition
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputR
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference)SetInternalValue(val *R2BucketLifecycleRulesStorageClassTransitionsCondition) {
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

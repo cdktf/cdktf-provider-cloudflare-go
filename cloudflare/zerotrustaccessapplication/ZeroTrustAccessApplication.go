@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type ZeroTrustAccessApplication interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -24,6 +24,9 @@ type ZeroTrustAccessApplication interface {
 	AllowedIdps() *[]*string
 	SetAllowedIdps(val *[]*string)
 	AllowedIdpsInput() *[]*string
+	AllowIframe() interface{}
+	SetAllowIframe(val interface{})
+	AllowIframeInput() interface{}
 	AppLauncherLogoUrl() *string
 	SetAppLauncherLogoUrl(val *string)
 	AppLauncherLogoUrlInput() *string
@@ -222,6 +225,7 @@ type ZeroTrustAccessApplication interface {
 	ResetAccountId()
 	ResetAllowAuthenticateViaWarp()
 	ResetAllowedIdps()
+	ResetAllowIframe()
 	ResetAppLauncherLogoUrl()
 	ResetAppLauncherVisible()
 	ResetAutoRedirectToIdentity()
@@ -332,6 +336,26 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) AllowedIdpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedIdpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) AllowIframe() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIframe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication) AllowIframeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIframeInput",
 		&returns,
 	)
 	return returns
@@ -1218,7 +1242,7 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -1236,7 +1260,7 @@ func NewZeroTrustAccessApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_access_application cloudflare_zero_trust_access_application} Resource.
 func NewZeroTrustAccessApplication_Override(z ZeroTrustAccessApplication, scope constructs.Construct, id *string, config *ZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1276,6 +1300,17 @@ func (j *jsiiProxy_ZeroTrustAccessApplication)SetAllowedIdps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedIdps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustAccessApplication)SetAllowIframe(val interface{}) {
+	if err := j.validateSetAllowIframeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowIframe",
 		val,
 	)
 }
@@ -2095,6 +2130,14 @@ func (z *jsiiProxy_ZeroTrustAccessApplication) ResetAllowedIdps() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetAllowedIdps",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessApplication) ResetAllowIframe() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAllowIframe",
 		nil, // no parameters
 	)
 }

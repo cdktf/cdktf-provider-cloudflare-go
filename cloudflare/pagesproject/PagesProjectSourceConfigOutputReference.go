@@ -28,21 +28,43 @@ type PagesProjectSourceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeploymentsEnabled() cdktf.IResolvable
+	DeploymentsEnabled() interface{}
+	SetDeploymentsEnabled(val interface{})
+	DeploymentsEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *PagesProjectSourceConfig
-	SetInternalValue(val *PagesProjectSourceConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	PathExcludes() *[]*string
+	SetPathExcludes(val *[]*string)
+	PathExcludesInput() *[]*string
 	PathIncludes() *[]*string
-	PrCommentsEnabled() cdktf.IResolvable
+	SetPathIncludes(val *[]*string)
+	PathIncludesInput() *[]*string
+	PrCommentsEnabled() interface{}
+	SetPrCommentsEnabled(val interface{})
+	PrCommentsEnabledInput() interface{}
 	PreviewBranchExcludes() *[]*string
+	SetPreviewBranchExcludes(val *[]*string)
+	PreviewBranchExcludesInput() *[]*string
 	PreviewBranchIncludes() *[]*string
+	SetPreviewBranchIncludes(val *[]*string)
+	PreviewBranchIncludesInput() *[]*string
 	PreviewDeploymentSetting() *string
+	SetPreviewDeploymentSetting(val *string)
+	PreviewDeploymentSettingInput() *string
 	ProductionBranch() *string
-	ProductionDeploymentsEnabled() cdktf.IResolvable
+	SetProductionBranch(val *string)
+	ProductionBranchInput() *string
+	ProductionDeploymentsEnabled() interface{}
+	SetProductionDeploymentsEnabled(val interface{})
+	ProductionDeploymentsEnabledInput() interface{}
 	RepoName() *string
+	SetRepoName(val *string)
+	RepoNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +97,17 @@ type PagesProjectSourceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeploymentsEnabled()
+	ResetOwner()
+	ResetPathExcludes()
+	ResetPathIncludes()
+	ResetPrCommentsEnabled()
+	ResetPreviewBranchExcludes()
+	ResetPreviewBranchIncludes()
+	ResetPreviewDeploymentSetting()
+	ResetProductionBranch()
+	ResetProductionDeploymentsEnabled()
+	ResetRepoName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,11 +153,21 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) DeploymentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) DeploymentsEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"deploymentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) DeploymentsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deploymentsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -140,8 +183,8 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) InternalValue() *PagesProjectSourceConfig {
-	var returns *PagesProjectSourceConfig
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -160,11 +203,31 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) Owner() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PathExcludes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"pathExcludes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PathExcludesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pathExcludesInput",
 		&returns,
 	)
 	return returns
@@ -180,11 +243,31 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PathIncludes() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PrCommentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PathIncludesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pathIncludesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PrCommentsEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"prCommentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PrCommentsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"prCommentsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -200,11 +283,31 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewBranchExclude
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewBranchExcludesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"previewBranchExcludesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewBranchIncludes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"previewBranchIncludes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewBranchIncludesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"previewBranchIncludesInput",
 		&returns,
 	)
 	return returns
@@ -220,6 +323,16 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewDeploymentSet
 	return returns
 }
 
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) PreviewDeploymentSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewDeploymentSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionBranch() *string {
 	var returns *string
 	_jsii_.Get(
@@ -230,11 +343,31 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionBranch() *
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionDeploymentsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productionBranchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionDeploymentsEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"productionDeploymentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) ProductionDeploymentsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"productionDeploymentsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +378,16 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) RepoName() *string {
 	_jsii_.Get(
 		j,
 		"repoName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) RepoNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoNameInput",
 		&returns,
 	)
 	return returns
@@ -320,13 +463,134 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetInternalValue(val *PagesProjectSourceConfig) {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetDeploymentsEnabled(val interface{}) {
+	if err := j.validateSetDeploymentsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPathExcludes(val *[]*string) {
+	if err := j.validateSetPathExcludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pathExcludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPathIncludes(val *[]*string) {
+	if err := j.validateSetPathIncludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pathIncludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPrCommentsEnabled(val interface{}) {
+	if err := j.validateSetPrCommentsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prCommentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPreviewBranchExcludes(val *[]*string) {
+	if err := j.validateSetPreviewBranchExcludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previewBranchExcludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPreviewBranchIncludes(val *[]*string) {
+	if err := j.validateSetPreviewBranchIncludesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previewBranchIncludes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetPreviewDeploymentSetting(val *string) {
+	if err := j.validateSetPreviewDeploymentSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"previewDeploymentSetting",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetProductionBranch(val *string) {
+	if err := j.validateSetProductionBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"productionBranch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetProductionDeploymentsEnabled(val interface{}) {
+	if err := j.validateSetProductionDeploymentsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"productionDeploymentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference)SetRepoName(val *string) {
+	if err := j.validateSetRepoNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repoName",
 		val,
 	)
 }
@@ -537,6 +801,94 @@ func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetDeploymentsEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeploymentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetOwner() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPathExcludes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPathExcludes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPathIncludes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPathIncludes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPrCommentsEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPrCommentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPreviewBranchExcludes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreviewBranchExcludes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPreviewBranchIncludes() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreviewBranchIncludes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetPreviewDeploymentSetting() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreviewDeploymentSetting",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetProductionBranch() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductionBranch",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetProductionDeploymentsEnabled() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProductionDeploymentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) ResetRepoName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRepoName",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

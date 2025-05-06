@@ -24,11 +24,11 @@ type ObservatoryScheduledTestConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowedIdpsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAllowIframeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustAccessApplication) validateSetAppLauncherLogoUrlParameters(val *string) error {
 	return nil
 }

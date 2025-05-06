@@ -319,6 +319,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAuthenticateViaWarp", GoGetter: "AllowAuthenticateViaWarp"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIdps", GoGetter: "AllowedIdps"},
+			_jsii_.MemberProperty{JsiiProperty: "allowIframe", GoGetter: "AllowIframe"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherLogoUrl", GoGetter: "AppLauncherLogoUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherVisible", GoGetter: "AppLauncherVisible"},
 			_jsii_.MemberProperty{JsiiProperty: "aud", GoGetter: "Aud"},

@@ -380,14 +380,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) validateSetGreTunnelIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

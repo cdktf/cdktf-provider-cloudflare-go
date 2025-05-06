@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/d1_database cloudflare_d1_database}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/d1_database cloudflare_d1_database}.
 type DataCloudflareD1Database interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -60,6 +60,7 @@ type DataCloudflareD1Database interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ReadReplication() DataCloudflareD1DatabaseReadReplicationOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -338,6 +339,16 @@ func (j *jsiiProxy_DataCloudflareD1Database) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareD1Database) ReadReplication() DataCloudflareD1DatabaseReadReplicationOutputReference {
+	var returns DataCloudflareD1DatabaseReadReplicationOutputReference
+	_jsii_.Get(
+		j,
+		"readReplication",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareD1Database) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -389,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareD1Database) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) DataCloudflareD1Database {
 	_init_.Initialize()
 
@@ -407,7 +418,7 @@ func NewDataCloudflareD1Database(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source.
 func NewDataCloudflareD1Database_Override(d DataCloudflareD1Database, scope constructs.Construct, id *string, config *DataCloudflareD1DatabaseConfig) {
 	_init_.Initialize()
 

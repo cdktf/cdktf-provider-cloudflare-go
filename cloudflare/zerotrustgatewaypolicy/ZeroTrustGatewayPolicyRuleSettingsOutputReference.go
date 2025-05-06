@@ -23,9 +23,11 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	AuditSshInput() interface{}
 	BisoAdminControls() ZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
 	BisoAdminControlsInput() interface{}
+	BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
 	BlockPageEnabled() interface{}
 	SetBlockPageEnabled(val interface{})
 	BlockPageEnabledInput() interface{}
+	BlockPageInput() interface{}
 	BlockReason() *string
 	SetBlockReason(val *string)
 	BlockReasonInput() *string
@@ -126,6 +128,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuditSsh(value *ZeroTrustGatewayPolicyRuleSettingsAuditSsh)
 	PutBisoAdminControls(value *ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls)
+	PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage)
 	PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession)
 	PutDnsResolvers(value *ZeroTrustGatewayPolicyRuleSettingsDnsResolvers)
 	PutEgress(value *ZeroTrustGatewayPolicyRuleSettingsEgress)
@@ -140,6 +143,7 @@ type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	ResetAllowChildBypass()
 	ResetAuditSsh()
 	ResetBisoAdminControls()
+	ResetBlockPage()
 	ResetBlockPageEnabled()
 	ResetBlockReason()
 	ResetBypassParentRule()
@@ -255,6 +259,16 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BisoAdminC
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPage() ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference {
+	var returns ZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
+	_jsii_.Get(
+		j,
+		"blockPage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -270,6 +284,16 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageE
 	_jsii_.Get(
 		j,
 		"blockPageEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"blockPageInput",
 		&returns,
 	)
 	return returns
@@ -1148,6 +1172,17 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBisoAdm
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutBlockPage(value *ZeroTrustGatewayPolicyRuleSettingsBlockPage) {
+	if err := z.validatePutBlockPageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putBlockPage",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) PutCheckSession(value *ZeroTrustGatewayPolicyRuleSettingsCheckSession) {
 	if err := z.validatePutCheckSessionParameters(value); err != nil {
 		panic(err)
@@ -1286,6 +1321,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBisoA
 	_jsii_.InvokeVoid(
 		z,
 		"resetBisoAdminControls",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) ResetBlockPage() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetBlockPage",
 		nil, // no parameters
 	)
 }

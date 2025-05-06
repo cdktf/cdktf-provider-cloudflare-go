@@ -65,7 +65,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "redirect", GoGetter: "Redirect"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectInput", GoGetter: "RedirectInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAsn", GoMethod: "ResetAsn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostname", GoMethod: "ResetHostname"},

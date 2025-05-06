@@ -33,6 +33,9 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IncludeContext() interface{}
+	SetIncludeContext(val interface{})
+	IncludeContextInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Msg() *string
@@ -74,6 +77,7 @@ type ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnabled()
+	ResetIncludeContext()
 	ResetMsg()
 	ResetSupportUrl()
 	// Produce the Token's value at resolution time.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) IncludeContext() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) IncludeContextInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeContextInput",
 		&returns,
 	)
 	return returns
@@ -278,6 +302,17 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference)SetIncludeContext(val interface{}) {
+	if err := j.validateSetIncludeContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeContext",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	_jsii_.InvokeVoid(
 		z,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) ResetIncludeContext() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetIncludeContext",
 		nil, // no parameters
 	)
 }

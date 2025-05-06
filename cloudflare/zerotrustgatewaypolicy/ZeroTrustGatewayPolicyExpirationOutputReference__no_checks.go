@@ -63,10 +63,6 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetExpiredParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustGatewayPolicyExpirationOutputReference) validateSetExpiresAtParameters(val *string) error {
 	return nil
 }

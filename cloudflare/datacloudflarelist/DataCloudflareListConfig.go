@@ -22,13 +22,13 @@ type DataCloudflareListConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Identifier.
+	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The unique ID of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
-	ListId *string `field:"optional" json:"listId" yaml:"listId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
+	ListId *string `field:"required" json:"listId" yaml:"listId"`
 }
 

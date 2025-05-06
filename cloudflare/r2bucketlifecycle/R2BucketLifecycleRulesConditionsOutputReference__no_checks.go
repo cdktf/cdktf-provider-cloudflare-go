@@ -59,7 +59,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetInternalValueParameters(val *R2BucketLifecycleRulesConditions) error {
+func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

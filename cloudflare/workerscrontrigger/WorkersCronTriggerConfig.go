@@ -24,13 +24,13 @@ type WorkersCronTriggerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
 	Schedules interface{} `field:"required" json:"schedules" yaml:"schedules"`
 	// Name of the script, used in URLs and route configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
 }
 

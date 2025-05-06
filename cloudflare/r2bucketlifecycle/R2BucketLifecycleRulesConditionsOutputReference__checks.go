@@ -166,9 +166,25 @@ func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetInternalValueParameters(val *R2BucketLifecycleRulesConditions) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *R2BucketLifecycleRulesConditions:
+		val := val.(*R2BucketLifecycleRulesConditions)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case R2BucketLifecycleRulesConditions:
+		val_ := val.(R2BucketLifecycleRulesConditions)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *R2BucketLifecycleRulesConditions; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

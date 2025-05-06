@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration}.
 type DataCloudflareZeroTrustRiskScoringIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskScoringIntegration) WellKnownUrl()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegration(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationConfig) DataCloudflareZeroTrustRiskScoringIntegration {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataCloudflareZeroTrustRiskScoringIntegration(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_risk_scoring_integration cloudflare_zero_trust_risk_scoring_integration} Data Source.
 func NewDataCloudflareZeroTrustRiskScoringIntegration_Override(d DataCloudflareZeroTrustRiskScoringIntegration, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskScoringIntegrationConfig) {
 	_init_.Initialize()
 

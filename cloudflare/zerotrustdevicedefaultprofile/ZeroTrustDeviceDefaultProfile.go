@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type ZeroTrustDeviceDefaultProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -72,6 +72,12 @@ type ZeroTrustDeviceDefaultProfile interface {
 	Id() *string
 	Include() ZeroTrustDeviceDefaultProfileIncludeList
 	IncludeInput() interface{}
+	LanAllowMinutes() *float64
+	SetLanAllowMinutes(val *float64)
+	LanAllowMinutesInput() *float64
+	LanAllowSubnetSize() *float64
+	SetLanAllowSubnetSize(val *float64)
+	LanAllowSubnetSizeInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -163,6 +169,8 @@ type ZeroTrustDeviceDefaultProfile interface {
 	ResetExclude()
 	ResetExcludeOfficeIps()
 	ResetInclude()
+	ResetLanAllowMinutes()
+	ResetLanAllowSubnetSize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -519,6 +527,46 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) IncludeInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) LanAllowMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lanAllowMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) LanAllowMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lanAllowMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) LanAllowSubnetSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lanAllowSubnetSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) LanAllowSubnetSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"lanAllowSubnetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -700,7 +748,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TunnelProtocolInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -718,7 +766,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 
@@ -851,6 +899,28 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetForEach(val cdktf.ITerraform
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowMinutes(val *float64) {
+	if err := j.validateSetLanAllowMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lanAllowMinutes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetLanAllowSubnetSize(val *float64) {
+	if err := j.validateSetLanAllowSubnetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lanAllowSubnetSize",
 		val,
 	)
 }
@@ -1383,6 +1453,22 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetInclude() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetInclude",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetLanAllowMinutes() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetLanAllowMinutes",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetLanAllowSubnetSize() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetLanAllowSubnetSize",
 		nil, // no parameters
 	)
 }

@@ -15,6 +15,7 @@ type DataCloudflareZeroTrustAccessApplicationsResultOutputReference interface {
 	cdktf.ComplexObject
 	AllowAuthenticateViaWarp() cdktf.IResolvable
 	AllowedIdps() *[]*string
+	AllowIframe() cdktf.IResolvable
 	AppLauncherLogoUrl() *string
 	AppLauncherVisible() cdktf.IResolvable
 	Aud() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReferenc
 	_jsii_.Get(
 		j,
 		"allowedIdps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationsResultOutputReference) AllowIframe() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowIframe",
 		&returns,
 	)
 	return returns

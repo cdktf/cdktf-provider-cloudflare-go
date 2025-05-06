@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}.
 type ZeroTrustDlpDataset interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	CaseSensitive() interface{}
+	SetCaseSensitive(val interface{})
+	CaseSensitiveInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Columns() ZeroTrustDlpDatasetColumnsList
@@ -132,6 +135,7 @@ type ZeroTrustDlpDataset interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCaseSensitive()
 	ResetDatasetId()
 	ResetDescription()
 	ResetEncodingVersion()
@@ -172,6 +176,26 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpDataset) CaseSensitive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"caseSensitive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpDataset) CaseSensitiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"caseSensitiveInput",
 		&returns,
 	)
 	return returns
@@ -538,7 +562,7 @@ func (j *jsiiProxy_ZeroTrustDlpDataset) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
 func NewZeroTrustDlpDataset(scope constructs.Construct, id *string, config *ZeroTrustDlpDatasetConfig) ZeroTrustDlpDataset {
 	_init_.Initialize()
 
@@ -556,7 +580,7 @@ func NewZeroTrustDlpDataset(scope constructs.Construct, id *string, config *Zero
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource.
 func NewZeroTrustDlpDataset_Override(z ZeroTrustDlpDataset, scope constructs.Construct, id *string, config *ZeroTrustDlpDatasetConfig) {
 	_init_.Initialize()
 
@@ -574,6 +598,17 @@ func (j *jsiiProxy_ZeroTrustDlpDataset)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDlpDataset)SetCaseSensitive(val interface{}) {
+	if err := j.validateSetCaseSensitiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caseSensitive",
 		val,
 	)
 }
@@ -1051,6 +1086,14 @@ func (z *jsiiProxy_ZeroTrustDlpDataset) OverrideLogicalId(newLogicalId *string) 
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpDataset) ResetCaseSensitive() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetCaseSensitive",
+		nil, // no parameters
 	)
 }
 

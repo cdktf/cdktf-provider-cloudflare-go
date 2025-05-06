@@ -36,6 +36,7 @@ type DataCloudflareHyperdriveConfigsResultOutputReference interface {
 	InternalValue() *DataCloudflareHyperdriveConfigsResult
 	SetInternalValue(val *DataCloudflareHyperdriveConfigsResult)
 	ModifiedOn() *string
+	Mtls() DataCloudflareHyperdriveConfigsResultMtlsOutputReference
 	Name() *string
 	Origin() DataCloudflareHyperdriveConfigsResultOriginOutputReference
 	// Experimental.
@@ -170,6 +171,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) Modifie
 	_jsii_.Get(
 		j,
 		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) Mtls() DataCloudflareHyperdriveConfigsResultMtlsOutputReference {
+	var returns DataCloudflareHyperdriveConfigsResultMtlsOutputReference
+	_jsii_.Get(
+		j,
+		"mtls",
 		&returns,
 	)
 	return returns

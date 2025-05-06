@@ -24,15 +24,15 @@ type UrlNormalizationSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The scope of the URL normalization. Available values: "incoming", "both".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/url_normalization_settings#scope UrlNormalizationSettings#scope}
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 	// The type of URL normalization performed by Cloudflare. Available values: "cloudflare", "rfc3986".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/url_normalization_settings#type UrlNormalizationSettings#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The unique ID of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/url_normalization_settings#zone_id UrlNormalizationSettings#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

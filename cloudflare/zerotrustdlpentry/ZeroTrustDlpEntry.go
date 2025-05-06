@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
 type ZeroTrustDlpEntry interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	CaseSensitive() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Confidence() ZeroTrustDlpEntryConfidenceOutputReference
@@ -165,6 +166,16 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpEntry) CaseSensitive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"caseSensitive",
 		&returns,
 	)
 	return returns
@@ -491,7 +502,7 @@ func (j *jsiiProxy_ZeroTrustDlpEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
 func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) ZeroTrustDlpEntry {
 	_init_.Initialize()
 
@@ -509,7 +520,7 @@ func NewZeroTrustDlpEntry(scope constructs.Construct, id *string, config *ZeroTr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Resource.
 func NewZeroTrustDlpEntry_Override(z ZeroTrustDlpEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpEntryConfig) {
 	_init_.Initialize()
 

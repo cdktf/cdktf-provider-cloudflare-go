@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}.
 type DataCloudflareTurnstileWidgets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataCloudflareTurnstileWidgets) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
 func NewDataCloudflareTurnstileWidgets(scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetsConfig) DataCloudflareTurnstileWidgets {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataCloudflareTurnstileWidgets(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source.
 func NewDataCloudflareTurnstileWidgets_Override(d DataCloudflareTurnstileWidgets, scope constructs.Construct, id *string, config *DataCloudflareTurnstileWidgetsConfig) {
 	_init_.Initialize()
 

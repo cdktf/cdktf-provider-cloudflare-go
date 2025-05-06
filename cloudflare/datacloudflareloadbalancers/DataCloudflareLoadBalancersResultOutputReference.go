@@ -58,11 +58,7 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	SessionAffinity() *string
 	SessionAffinityAttributes() DataCloudflareLoadBalancersResultSessionAffinityAttributesOutputReference
 	SessionAffinityTtl() *float64
-	SetSessionAffinityTtl(val *float64)
-	SessionAffinityTtlInput() *float64
 	SteeringPolicy() *string
-	SetSteeringPolicy(val *string)
-	SteeringPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,8 +68,6 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Ttl() *float64
-	SetTtl(val *float64)
-	TtlInput() *float64
 	ZoneName() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -102,9 +96,6 @@ type DataCloudflareLoadBalancersResultOutputReference interface {
 	ResetCountryPools()
 	ResetPopPools()
 	ResetRegionPools()
-	ResetSessionAffinityTtl()
-	ResetSteeringPolicy()
-	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -400,31 +391,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SessionAffi
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SessionAffinityTtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"sessionAffinityTtlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SteeringPolicy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"steeringPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) SteeringPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"steeringPolicyInput",
 		&returns,
 	)
 	return returns
@@ -455,16 +426,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) Ttl() *floa
 	_jsii_.Get(
 		j,
 		"ttl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) TtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ttlInput",
 		&returns,
 	)
 	return returns
@@ -574,28 +535,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetRegionPoo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetSessionAffinityTtl(val *float64) {
-	if err := j.validateSetSessionAffinityTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sessionAffinityTtl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetSteeringPolicy(val *string) {
-	if err := j.validateSetSteeringPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"steeringPolicy",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -614,17 +553,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTerraform
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference)SetTtl(val *float64) {
-	if err := j.validateSetTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ttl",
 		val,
 	)
 }
@@ -835,30 +763,6 @@ func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ResetRegion
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegionPools",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ResetSessionAffinityTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSessionAffinityTtl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ResetSteeringPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSteeringPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancersResultOutputReference) ResetTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTtl",
 		nil, // no parameters
 	)
 }

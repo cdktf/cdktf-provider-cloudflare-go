@@ -24,11 +24,11 @@ type DataCloudflareZoneSettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Setting name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_setting#setting_id DataCloudflareZoneSetting#setting_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_setting#setting_id DataCloudflareZoneSetting#setting_id}
 	SettingId *string `field:"required" json:"settingId" yaml:"settingId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zone_setting#zone_id DataCloudflareZoneSetting#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_setting#zone_id DataCloudflareZoneSetting#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

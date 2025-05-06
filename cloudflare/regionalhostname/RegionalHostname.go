@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type RegionalHostname interface {
 	RegionKey() *string
 	SetRegionKey(val *string)
 	RegionKeyInput() *string
+	Routing() *string
+	SetRouting(val *string)
+	RoutingInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type RegionalHostname interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRouting()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_RegionalHostname) RegionKeyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RegionalHostname) Routing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegionalHostname) RoutingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegionalHostname) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -377,7 +401,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 
@@ -492,6 +516,17 @@ func (j *jsiiProxy_RegionalHostname)SetRegionKey(val *string) {
 	_jsii_.Set(
 		j,
 		"regionKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegionalHostname)SetRouting(val *string) {
+	if err := j.validateSetRoutingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routing",
 		val,
 	)
 }
@@ -864,6 +899,14 @@ func (r *jsiiProxy_RegionalHostname) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegionalHostname) ResetRouting() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRouting",
 		nil, // no parameters
 	)
 }

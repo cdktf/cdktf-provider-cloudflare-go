@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 type DataCloudflareZeroTrustAccessKeyConfiguration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessKeyConfiguration) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
 func NewDataCloudflareZeroTrustAccessKeyConfiguration(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessKeyConfigurationConfig) DataCloudflareZeroTrustAccessKeyConfiguration {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataCloudflareZeroTrustAccessKeyConfiguration(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration} Data Source.
 func NewDataCloudflareZeroTrustAccessKeyConfiguration_Override(d DataCloudflareZeroTrustAccessKeyConfiguration, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessKeyConfigurationConfig) {
 	_init_.Initialize()
 

@@ -186,9 +186,25 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateSetInternalValueParameters(val *ZeroTrustDlpCustomProfileContextAwarenessSkip) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *ZeroTrustDlpCustomProfileContextAwarenessSkip:
+		val := val.(*ZeroTrustDlpCustomProfileContextAwarenessSkip)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case ZeroTrustDlpCustomProfileContextAwarenessSkip:
+		val_ := val.(ZeroTrustDlpCustomProfileContextAwarenessSkip)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ZeroTrustDlpCustomProfileContextAwarenessSkip; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

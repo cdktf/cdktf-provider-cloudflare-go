@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountryPoolsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -92,18 +88,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetPopPoolsParameters(val
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetRegionPoolsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetSessionAffinityTtlParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetSteeringPolicyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 

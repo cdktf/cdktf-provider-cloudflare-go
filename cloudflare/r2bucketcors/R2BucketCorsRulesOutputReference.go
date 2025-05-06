@@ -14,7 +14,7 @@ import (
 type R2BucketCorsRulesOutputReference interface {
 	cdktf.ComplexObject
 	Allowed() R2BucketCorsRulesAllowedOutputReference
-	AllowedInput() *R2BucketCorsRulesAllowed
+	AllowedInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -104,8 +104,8 @@ func (j *jsiiProxy_R2BucketCorsRulesOutputReference) Allowed() R2BucketCorsRules
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesOutputReference) AllowedInput() *R2BucketCorsRulesAllowed {
-	var returns *R2BucketCorsRulesAllowed
+func (j *jsiiProxy_R2BucketCorsRulesOutputReference) AllowedInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"allowedInput",

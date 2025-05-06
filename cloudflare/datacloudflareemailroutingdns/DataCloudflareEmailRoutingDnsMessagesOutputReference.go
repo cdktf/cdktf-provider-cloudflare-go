@@ -29,11 +29,13 @@ type DataCloudflareEmailRoutingDnsMessagesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DocumentationUrl() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataCloudflareEmailRoutingDnsMessages
 	SetInternalValue(val *DataCloudflareEmailRoutingDnsMessages)
 	Message() *string
+	Source() DataCloudflareEmailRoutingDnsMessagesSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +123,16 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDnsMessagesOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareEmailRoutingDnsMessagesOutputReference) DocumentationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareEmailRoutingDnsMessagesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -146,6 +158,16 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingDnsMessagesOutputReference) Message
 	_jsii_.Get(
 		j,
 		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailRoutingDnsMessagesOutputReference) Source() DataCloudflareEmailRoutingDnsMessagesSourceOutputReference {
+	var returns DataCloudflareEmailRoutingDnsMessagesSourceOutputReference
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns

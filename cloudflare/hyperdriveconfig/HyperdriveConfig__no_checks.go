@@ -79,6 +79,10 @@ func (h *jsiiProxy_HyperdriveConfig) validatePutCachingParameters(value *Hyperdr
 	return nil
 }
 
+func (h *jsiiProxy_HyperdriveConfig) validatePutMtlsParameters(value *HyperdriveConfigMtls) error {
+	return nil
+}
+
 func (h *jsiiProxy_HyperdriveConfig) validatePutOriginParameters(value *HyperdriveConfigOrigin) error {
 	return nil
 }

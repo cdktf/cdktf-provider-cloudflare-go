@@ -24,9 +24,7 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CountryPools() interface{}
-	SetCountryPools(val interface{})
-	CountryPoolsInput() interface{}
+	CountryPools() cdktf.StringListMap
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -43,17 +41,11 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	SetPopPools(val interface{})
 	PopPoolsInput() interface{}
 	RandomSteering() DataCloudflareLoadBalancerRulesOverridesRandomSteeringOutputReference
-	RegionPools() interface{}
-	SetRegionPools(val interface{})
-	RegionPoolsInput() interface{}
+	RegionPools() cdktf.StringListMap
 	SessionAffinity() *string
 	SessionAffinityAttributes() DataCloudflareLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference
 	SessionAffinityTtl() *float64
-	SetSessionAffinityTtl(val *float64)
-	SessionAffinityTtlInput() *float64
 	SteeringPolicy() *string
-	SetSteeringPolicy(val *string)
-	SteeringPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,8 +55,6 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Ttl() *float64
-	SetTtl(val *float64)
-	TtlInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -89,12 +79,7 @@ type DataCloudflareLoadBalancerRulesOverridesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCountryPools()
 	ResetPopPools()
-	ResetRegionPools()
-	ResetSessionAffinityTtl()
-	ResetSteeringPolicy()
-	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,21 +125,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Comp
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) CountryPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) CountryPools() cdktf.StringListMap {
+	var returns cdktf.StringListMap
 	_jsii_.Get(
 		j,
 		"countryPools",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) CountryPoolsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"countryPoolsInput",
 		&returns,
 	)
 	return returns
@@ -250,21 +225,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Rand
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) RegionPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) RegionPools() cdktf.StringListMap {
+	var returns cdktf.StringListMap
 	_jsii_.Get(
 		j,
 		"regionPools",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) RegionPoolsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"regionPoolsInput",
 		&returns,
 	)
 	return returns
@@ -300,31 +265,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Sess
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) SessionAffinityTtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"sessionAffinityTtlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) SteeringPolicy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"steeringPolicy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) SteeringPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"steeringPolicyInput",
 		&returns,
 	)
 	return returns
@@ -355,16 +300,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Ttl(
 	_jsii_.Get(
 		j,
 		"ttl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) TtlInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ttlInput",
 		&returns,
 	)
 	return returns
@@ -420,17 +355,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetCountryPools(val interface{}) {
-	if err := j.validateSetCountryPoolsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"countryPools",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetInternalValue(val *DataCloudflareLoadBalancerRulesOverrides) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -453,39 +377,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetRegionPools(val interface{}) {
-	if err := j.validateSetRegionPoolsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"regionPools",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetSessionAffinityTtl(val *float64) {
-	if err := j.validateSetSessionAffinityTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sessionAffinityTtl",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetSteeringPolicy(val *string) {
-	if err := j.validateSetSteeringPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"steeringPolicy",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -504,17 +395,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTe
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference)SetTtl(val *float64) {
-	if err := j.validateSetTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ttl",
 		val,
 	)
 }
@@ -705,50 +585,10 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetCountryPools() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCountryPools",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetPopPools() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPopPools",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetRegionPools() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegionPools",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetSessionAffinityTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSessionAffinityTtl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetSteeringPolicy() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSteeringPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) ResetTtl() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTtl",
 		nil, // no parameters
 	)
 }

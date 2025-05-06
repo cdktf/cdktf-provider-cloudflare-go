@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/custom_pages cloudflare_custom_pages}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_pages cloudflare_custom_pages}.
 type DataCloudflareCustomPages interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataCloudflareCustomPages) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
 func NewDataCloudflareCustomPages(scope constructs.Construct, id *string, config *DataCloudflareCustomPagesConfig) DataCloudflareCustomPages {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewDataCloudflareCustomPages(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
 func NewDataCloudflareCustomPages_Override(d DataCloudflareCustomPages, scope constructs.Construct, id *string, config *DataCloudflareCustomPagesConfig) {
 	_init_.Initialize()
 

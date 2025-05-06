@@ -111,10 +111,6 @@ func (j *jsiiProxy_WorkersRoute) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_WorkersRoute) validateSetRouteIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_WorkersRoute) validateSetScriptParameters(val *string) error {
 	return nil
 }

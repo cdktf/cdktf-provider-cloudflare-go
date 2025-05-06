@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAuthenticateViaWarp", GoGetter: "AllowAuthenticateViaWarp"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIdps", GoGetter: "AllowedIdps"},
+			_jsii_.MemberProperty{JsiiProperty: "allowIframe", GoGetter: "AllowIframe"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdInput", GoGetter: "AppIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appLauncherLogoUrl", GoGetter: "AppLauncherLogoUrl"},

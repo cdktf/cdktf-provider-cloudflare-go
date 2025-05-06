@@ -26,17 +26,17 @@ type ZoneLockdownConfig struct {
 	//
 	// You can include any number of `ip` or `ip_range` configurations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
 	Configurations interface{} `field:"required" json:"configurations" yaml:"configurations"`
 	// The URLs to include in the current WAF override.
 	//
 	// You can use wildcards. Each entered URL will be escaped before use, which means you can only use simple wildcard patterns.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
 	Urls *[]*string `field:"required" json:"urls" yaml:"urls"`
-	// Identifier.
+	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_lockdown#zone_id ZoneLockdown#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

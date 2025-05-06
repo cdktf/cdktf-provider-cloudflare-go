@@ -44,6 +44,9 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +90,7 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	ResetEnabled()
 	ResetHeader()
 	ResetName()
+	ResetPort()
 	ResetVirtualNetworkId()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
@@ -244,6 +248,26 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,6 +418,17 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPort",
 		nil, // no parameters
 	)
 }

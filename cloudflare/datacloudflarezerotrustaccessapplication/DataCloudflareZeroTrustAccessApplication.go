@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application}.
 type DataCloudflareZeroTrustAccessApplication interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -20,6 +20,7 @@ type DataCloudflareZeroTrustAccessApplication interface {
 	AccountIdInput() *string
 	AllowAuthenticateViaWarp() cdktf.IResolvable
 	AllowedIdps() *[]*string
+	AllowIframe() cdktf.IResolvable
 	AppId() *string
 	SetAppId(val *string)
 	AppIdInput() *string
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AllowedIdps() *[]*s
 	_jsii_.Get(
 		j,
 		"allowedIdps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) AllowIframe() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowIframe",
 		&returns,
 	)
 	return returns
@@ -766,7 +777,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplication) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
 func NewDataCloudflareZeroTrustAccessApplication(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationConfig) DataCloudflareZeroTrustAccessApplication {
 	_init_.Initialize()
 
@@ -784,7 +795,7 @@ func NewDataCloudflareZeroTrustAccessApplication(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_access_application cloudflare_zero_trust_access_application} Data Source.
 func NewDataCloudflareZeroTrustAccessApplication_Override(d DataCloudflareZeroTrustAccessApplication, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationConfig) {
 	_init_.Initialize()
 

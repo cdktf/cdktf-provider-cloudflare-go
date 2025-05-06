@@ -26,7 +26,7 @@ type R2BucketLifecycleRulesOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Conditions() R2BucketLifecycleRulesConditionsOutputReference
-	ConditionsInput() *R2BucketLifecycleRulesConditions
+	ConditionsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) Conditions() R2BucketL
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ConditionsInput() *R2BucketLifecycleRulesConditions {
-	var returns *R2BucketLifecycleRulesConditions
+func (j *jsiiProxy_R2BucketLifecycleRulesOutputReference) ConditionsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"conditionsInput",

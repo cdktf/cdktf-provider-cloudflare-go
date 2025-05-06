@@ -154,6 +154,7 @@ func init() {
 		"@cdktf/provider-cloudflare.dataCloudflareZeroTrustDlpDatasets.DataCloudflareZeroTrustDlpDatasetsResultOutputReference",
 		reflect.TypeOf((*DataCloudflareZeroTrustDlpDatasetsResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "caseSensitive", GoGetter: "CaseSensitive"},
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

@@ -35,6 +35,7 @@ type DataCloudflareRegionalHostnamesResultOutputReference interface {
 	InternalValue() *DataCloudflareRegionalHostnamesResult
 	SetInternalValue(val *DataCloudflareRegionalHostnamesResult)
 	RegionKey() *string
+	Routing() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) RegionK
 	_jsii_.Get(
 		j,
 		"regionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRegionalHostnamesResultOutputReference) Routing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routing",
 		&returns,
 	)
 	return returns

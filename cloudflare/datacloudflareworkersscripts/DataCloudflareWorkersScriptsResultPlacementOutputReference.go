@@ -32,6 +32,7 @@ type DataCloudflareWorkersScriptsResultPlacementOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareWorkersScriptsResultPlacement
 	SetInternalValue(val *DataCloudflareWorkersScriptsResultPlacement)
+	LastAnalyzedAt() *string
 	Mode() *string
 	Status() *string
 	// Experimental.
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultPlacementOutputReference) LastAnalyzedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastAnalyzedAt",
 		&returns,
 	)
 	return returns

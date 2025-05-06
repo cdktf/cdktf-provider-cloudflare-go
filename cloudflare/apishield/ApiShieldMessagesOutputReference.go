@@ -29,11 +29,13 @@ type ApiShieldMessagesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DocumentationUrl() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ApiShieldMessages
 	SetInternalValue(val *ApiShieldMessages)
 	Message() *string
+	Source() ApiShieldMessagesSourceOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -121,6 +123,16 @@ func (j *jsiiProxy_ApiShieldMessagesOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
+func (j *jsiiProxy_ApiShieldMessagesOutputReference) DocumentationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentationUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiShieldMessagesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -146,6 +158,16 @@ func (j *jsiiProxy_ApiShieldMessagesOutputReference) Message() *string {
 	_jsii_.Get(
 		j,
 		"message",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiShieldMessagesOutputReference) Source() ApiShieldMessagesSourceOutputReference {
+	var returns ApiShieldMessagesSourceOutputReference
+	_jsii_.Get(
+		j,
+		"source",
 		&returns,
 	)
 	return returns

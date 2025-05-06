@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces}.
 type DataCloudflareWorkersForPlatformsDispatchNamespaces interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespaces) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces} Data Source.
 func NewDataCloudflareWorkersForPlatformsDispatchNamespaces(scope constructs.Construct, id *string, config *DataCloudflareWorkersForPlatformsDispatchNamespacesConfig) DataCloudflareWorkersForPlatformsDispatchNamespaces {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareWorkersForPlatformsDispatchNamespaces(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/workers_for_platforms_dispatch_namespaces cloudflare_workers_for_platforms_dispatch_namespaces} Data Source.
 func NewDataCloudflareWorkersForPlatformsDispatchNamespaces_Override(d DataCloudflareWorkersForPlatformsDispatchNamespaces, scope constructs.Construct, id *string, config *DataCloudflareWorkersForPlatformsDispatchNamespacesConfig) {
 	_init_.Initialize()
 

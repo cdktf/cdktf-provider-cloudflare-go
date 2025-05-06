@@ -211,26 +211,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetCountryPoolsParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *map[string]*[]*string:
-		// ok
-	case map[string]*[]*string:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -282,30 +262,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetRegionPoolsParameters(
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetSessionAffinityTtlParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetSteeringPolicyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancer) validateSetTtlParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

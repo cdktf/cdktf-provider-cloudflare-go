@@ -14,8 +14,8 @@ func init() {
 		"@cdktf/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem",
 		reflect.TypeOf((*DataCloudflareListItem)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accountIdentifier", GoGetter: "AccountIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "accountIdentifierInput", GoGetter: "AccountIdentifierInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asn", GoGetter: "Asn"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

@@ -47,6 +47,10 @@ func (p *jsiiProxy_PagesProjectSourceOutputReference) validateInterpolationForAt
 	return nil
 }
 
+func (p *jsiiProxy_PagesProjectSourceOutputReference) validatePutConfigParameters(value *PagesProjectSourceConfig) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProjectSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -59,7 +63,7 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetInternalValueParameters(val *PagesProjectSource) error {
+func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -68,6 +72,10 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTerraformAttrib
 }
 
 func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

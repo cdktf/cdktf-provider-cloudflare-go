@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 type HyperdriveConfig interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -51,6 +51,8 @@ type HyperdriveConfig interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ModifiedOn() *string
+	Mtls() HyperdriveConfigMtlsOutputReference
+	MtlsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -118,8 +120,10 @@ type HyperdriveConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCaching(value *HyperdriveConfigCaching)
+	PutMtls(value *HyperdriveConfigMtls)
 	PutOrigin(value *HyperdriveConfigOrigin)
 	ResetCaching()
+	ResetMtls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_HyperdriveConfig) ModifiedOn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HyperdriveConfig) Mtls() HyperdriveConfigMtlsOutputReference {
+	var returns HyperdriveConfigMtlsOutputReference
+	_jsii_.Get(
+		j,
+		"mtls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfig) MtlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mtlsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HyperdriveConfig) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_HyperdriveConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig(scope constructs.Construct, id *string, config *HyperdriveConfigConfig) HyperdriveConfig {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewHyperdriveConfig(scope constructs.Construct, id *string, config *Hyperdr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig_Override(h HyperdriveConfig, scope constructs.Construct, id *string, config *HyperdriveConfigConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (h *jsiiProxy_HyperdriveConfig) PutCaching(value *HyperdriveConfigCaching) 
 	)
 }
 
+func (h *jsiiProxy_HyperdriveConfig) PutMtls(value *HyperdriveConfigMtls) {
+	if err := h.validatePutMtlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putMtls",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HyperdriveConfig) PutOrigin(value *HyperdriveConfigOrigin) {
 	if err := h.validatePutOriginParameters(value); err != nil {
 		panic(err)
@@ -910,6 +945,14 @@ func (h *jsiiProxy_HyperdriveConfig) ResetCaching() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetCaching",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfig) ResetMtls() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetMtls",
 		nil, // no parameters
 	)
 }

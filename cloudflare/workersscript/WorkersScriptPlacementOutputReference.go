@@ -32,6 +32,7 @@ type WorkersScriptPlacementOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LastAnalyzedAt() *string
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -129,6 +130,16 @@ func (j *jsiiProxy_WorkersScriptPlacementOutputReference) InternalValue() interf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptPlacementOutputReference) LastAnalyzedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastAnalyzedAt",
 		&returns,
 	)
 	return returns

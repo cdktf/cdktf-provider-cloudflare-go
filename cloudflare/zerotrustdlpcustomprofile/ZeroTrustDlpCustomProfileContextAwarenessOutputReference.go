@@ -36,7 +36,7 @@ type ZeroTrustDlpCustomProfileContextAwarenessOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Skip() ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference
-	SkipInput() *ZeroTrustDlpCustomProfileContextAwarenessSkip
+	SkipInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) Ski
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) SkipInput() *ZeroTrustDlpCustomProfileContextAwarenessSkip {
-	var returns *ZeroTrustDlpCustomProfileContextAwarenessSkip
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileContextAwarenessOutputReference) SkipInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"skipInput",

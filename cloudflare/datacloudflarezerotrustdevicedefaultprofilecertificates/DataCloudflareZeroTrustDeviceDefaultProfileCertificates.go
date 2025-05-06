@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
 type DataCloudflareZeroTrustDeviceDefaultProfileCertificates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataCloudflareZeroTrustDeviceDefaultProfileCertificates interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Depe
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
 		&returns,
 	)
 	return returns
@@ -264,7 +275,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceDefaultProfileCertificates) Zone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileCertificatesConfig) DataCloudflareZeroTrustDeviceDefaultProfileCertificates {
 	_init_.Initialize()
 
@@ -282,7 +293,7 @@ func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Data Source.
 func NewDataCloudflareZeroTrustDeviceDefaultProfileCertificates_Override(d DataCloudflareZeroTrustDeviceDefaultProfileCertificates, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceDefaultProfileCertificatesConfig) {
 	_init_.Initialize()
 

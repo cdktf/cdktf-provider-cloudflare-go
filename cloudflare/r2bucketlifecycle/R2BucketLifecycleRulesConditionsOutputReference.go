@@ -30,8 +30,8 @@ type R2BucketLifecycleRulesConditionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *R2BucketLifecycleRulesConditions
-	SetInternalValue(val *R2BucketLifecycleRulesConditions)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -122,8 +122,8 @@ func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) InternalValue() *R2BucketLifecycleRulesConditions {
-	var returns *R2BucketLifecycleRulesConditions
+func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,7 +222,7 @@ func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference)SetInternalValue(val *R2BucketLifecycleRulesConditions) {
+func (j *jsiiProxy_R2BucketLifecycleRulesConditionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

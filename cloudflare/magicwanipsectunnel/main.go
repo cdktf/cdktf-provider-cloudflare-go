@@ -18,12 +18,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowNullCipher", GoGetter: "AllowNullCipher"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudflareEndpoint", GoGetter: "CloudflareEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudflareEndpointInput", GoGetter: "CloudflareEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "createdOn", GoGetter: "CreatedOn"},
 			_jsii_.MemberProperty{JsiiProperty: "customerEndpoint", GoGetter: "CustomerEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "customerEndpointInput", GoGetter: "CustomerEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -44,17 +46,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "healthCheck", GoGetter: "HealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "healthCheckInput", GoGetter: "HealthCheckInput"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "interfaceAddress", GoGetter: "InterfaceAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "interfaceAddressInput", GoGetter: "InterfaceAddressInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipsecTunnel", GoGetter: "IpsecTunnel"},
-			_jsii_.MemberProperty{JsiiProperty: "ipsecTunnelId", GoGetter: "IpsecTunnelId"},
-			_jsii_.MemberProperty{JsiiProperty: "ipsecTunnelIdInput", GoGetter: "IpsecTunnelIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ipsecTunnels", GoGetter: "IpsecTunnels"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "modified", GoGetter: "Modified"},
 			_jsii_.MemberProperty{JsiiProperty: "modifiedIpsecTunnel", GoGetter: "ModifiedIpsecTunnel"},
+			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "psk", GoGetter: "Psk"},
 			_jsii_.MemberProperty{JsiiProperty: "pskInput", GoGetter: "PskInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pskMetadata", GoGetter: "PskMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putHealthCheck", GoMethod: "PutHealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "replayProtection", GoGetter: "ReplayProtection"},
@@ -73,7 +75,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerEndpoint", GoMethod: "ResetCustomerEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheck", GoMethod: "ResetHealthCheck"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpsecTunnelId", GoMethod: "ResetIpsecTunnelId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPsk", GoMethod: "ResetPsk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplayProtection", GoMethod: "ResetReplayProtection"},
@@ -354,191 +355,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnels",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnels)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsHealthCheck",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsHealthCheck)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsHealthCheckOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsHealthCheckOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "direction", GoGetter: "Direction"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "rate", GoGetter: "Rate"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MagicWanIpsecTunnelIpsecTunnelsHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsHealthCheckTarget)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsHealthCheckTargetOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsHealthCheckTargetOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "effective", GoGetter: "Effective"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "saved", GoGetter: "Saved"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MagicWanIpsecTunnelIpsecTunnelsHealthCheckTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsList",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MagicWanIpsecTunnelIpsecTunnelsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "allowNullCipher", GoGetter: "AllowNullCipher"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudflareEndpoint", GoGetter: "CloudflareEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "createdOn", GoGetter: "CreatedOn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customerEndpoint", GoGetter: "CustomerEndpoint"},
-			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "healthCheck", GoGetter: "HealthCheck"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberProperty{JsiiProperty: "interfaceAddress", GoGetter: "InterfaceAddress"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
-			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
-			_jsii_.MemberProperty{JsiiProperty: "pskMetadata", GoGetter: "PskMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "replayProtection", GoGetter: "ReplayProtection"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MagicWanIpsecTunnelIpsecTunnelsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsPskMetadata",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsPskMetadata)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelIpsecTunnelsPskMetadataOutputReference",
-		reflect.TypeOf((*MagicWanIpsecTunnelIpsecTunnelsPskMetadataOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "lastGeneratedOn", GoGetter: "LastGeneratedOn"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_MagicWanIpsecTunnelIpsecTunnelsPskMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelModifiedIpsecTunnel",
 		reflect.TypeOf((*MagicWanIpsecTunnelModifiedIpsecTunnel)(nil)).Elem(),
 	)
@@ -698,6 +514,43 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MagicWanIpsecTunnelModifiedIpsecTunnelPskMetadataOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadata",
+		reflect.TypeOf((*MagicWanIpsecTunnelPskMetadata)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.magicWanIpsecTunnel.MagicWanIpsecTunnelPskMetadataOutputReference",
+		reflect.TypeOf((*MagicWanIpsecTunnelPskMetadataOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lastGeneratedOn", GoGetter: "LastGeneratedOn"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MagicWanIpsecTunnelPskMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

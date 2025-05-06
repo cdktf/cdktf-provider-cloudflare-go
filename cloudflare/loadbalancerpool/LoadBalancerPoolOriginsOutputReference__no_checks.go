@@ -79,6 +79,10 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetNameParame
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -33,8 +33,8 @@ type R2BucketLockRulesConditionOutputReference interface {
 	DateInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *R2BucketLockRulesCondition
-	SetInternalValue(val *R2BucketLockRulesCondition)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MaxAgeSeconds() *float64
 	SetMaxAgeSeconds(val *float64)
 	MaxAgeSecondsInput() *float64
@@ -150,8 +150,8 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) InternalValue() *R2BucketLockRulesCondition {
-	var returns *R2BucketLockRulesCondition
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetDate(val *string
 	)
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetInternalValue(val *R2BucketLockRulesCondition) {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

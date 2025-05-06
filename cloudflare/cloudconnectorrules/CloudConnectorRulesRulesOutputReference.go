@@ -13,9 +13,6 @@ import (
 
 type CloudConnectorRulesRulesOutputReference interface {
 	cdktf.ComplexObject
-	CloudProvider() *string
-	SetCloudProvider(val *string)
-	CloudProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,6 +46,9 @@ type CloudConnectorRulesRulesOutputReference interface {
 	SetInternalValue(val interface{})
 	Parameters() CloudConnectorRulesRulesParametersOutputReference
 	ParametersInput() interface{}
+	Provider() *string
+	SetProvider(val *string)
+	ProviderInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,12 +82,12 @@ type CloudConnectorRulesRulesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParameters(value *CloudConnectorRulesRulesParameters)
-	ResetCloudProvider()
 	ResetDescription()
 	ResetEnabled()
 	ResetExpression()
 	ResetId()
 	ResetParameters()
+	ResetProvider()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -101,26 +101,6 @@ type CloudConnectorRulesRulesOutputReference interface {
 // The jsii proxy struct for CloudConnectorRulesRulesOutputReference
 type jsiiProxy_CloudConnectorRulesRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) CloudProvider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudProvider",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) CloudProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudProviderInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -273,6 +253,26 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ParametersInput() in
 	return returns
 }
 
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Provider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) ProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"providerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -318,17 +318,6 @@ func NewCloudConnectorRulesRulesOutputReference_Override(c CloudConnectorRulesRu
 		"@cdktf/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
-	)
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetCloudProvider(val *string) {
-	if err := j.validateSetCloudProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cloudProvider",
-		val,
 	)
 }
 
@@ -405,6 +394,17 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetProvider(val *string) {
+	if err := j.validateSetProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }
@@ -628,14 +628,6 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) PutParameters(value 
 	)
 }
 
-func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetCloudProvider() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCloudProvider",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -672,6 +664,14 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetParameters() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetProvider() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvider",
 		nil, // no parameters
 	)
 }

@@ -33,8 +33,8 @@ type ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference interface 
 	FilesInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *ZeroTrustDlpPredefinedProfileContextAwarenessSkip
-	SetInternalValue(val *ZeroTrustDlpPredefinedProfileContextAwarenessSkip)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference) InternalValue() *ZeroTrustDlpPredefinedProfileContextAwarenessSkip {
-	var returns *ZeroTrustDlpPredefinedProfileContextAwarenessSkip
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -233,7 +233,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference)SetInternalValue(val *ZeroTrustDlpPredefinedProfileContextAwarenessSkip) {
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

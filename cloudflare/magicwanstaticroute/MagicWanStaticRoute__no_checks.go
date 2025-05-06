@@ -79,10 +79,6 @@ func (m *jsiiProxy_MagicWanStaticRoute) validatePutRouteParameters(value *MagicW
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) validatePutRoutesParameters(value interface{}) error {
-	return nil
-}
-
 func (m *jsiiProxy_MagicWanStaticRoute) validatePutScopeParameters(value *MagicWanStaticRouteScope) error {
 	return nil
 }
@@ -136,10 +132,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) validateSetPriorityParameters(val *float
 }
 
 func (j *jsiiProxy_MagicWanStaticRoute) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) validateSetRouteIdParameters(val *string) error {
 	return nil
 }
 

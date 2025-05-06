@@ -13,6 +13,9 @@ import (
 
 type WorkersScriptBindingsOutputReference interface {
 	cdktf.ComplexObject
+	Algorithm() *string
+	SetAlgorithm(val *string)
+	AlgorithmInput() *string
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
@@ -43,6 +46,9 @@ type WorkersScriptBindingsOutputReference interface {
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
+	Format() *string
+	SetFormat(val *string)
+	FormatInput() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -56,6 +62,12 @@ type WorkersScriptBindingsOutputReference interface {
 	Json() *string
 	SetJson(val *string)
 	JsonInput() *string
+	KeyBase64() *string
+	SetKeyBase64(val *string)
+	KeyBase64Input() *string
+	KeyJwk() *string
+	SetKeyJwk(val *string)
+	KeyJwkInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,15 +79,24 @@ type WorkersScriptBindingsOutputReference interface {
 	NamespaceInput() *string
 	Outbound() WorkersScriptBindingsOutboundOutputReference
 	OutboundInput() interface{}
+	Pipeline() *string
+	SetPipeline(val *string)
+	PipelineInput() *string
 	QueueName() *string
 	SetQueueName(val *string)
 	QueueNameInput() *string
 	ScriptName() *string
 	SetScriptName(val *string)
 	ScriptNameInput() *string
+	SecretName() *string
+	SetSecretName(val *string)
+	SecretNameInput() *string
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
+	StoreId() *string
+	SetStoreId(val *string)
+	StoreIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -90,6 +111,9 @@ type WorkersScriptBindingsOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	Usages() *[]*string
+	SetUsages(val *[]*string)
+	UsagesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -115,21 +139,29 @@ type WorkersScriptBindingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOutbound(value *WorkersScriptBindingsOutbound)
+	ResetAlgorithm()
 	ResetBucketName()
 	ResetCertificateId()
 	ResetClassName()
 	ResetDataset()
 	ResetEnvironment()
+	ResetFormat()
 	ResetId()
 	ResetIndexName()
 	ResetJson()
+	ResetKeyBase64()
+	ResetKeyJwk()
 	ResetNamespace()
 	ResetNamespaceId()
 	ResetOutbound()
+	ResetPipeline()
 	ResetQueueName()
 	ResetScriptName()
+	ResetSecretName()
 	ResetService()
+	ResetStoreId()
 	ResetText()
+	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,6 +175,26 @@ type WorkersScriptBindingsOutputReference interface {
 // The jsii proxy struct for WorkersScriptBindingsOutputReference
 type jsiiProxy_WorkersScriptBindingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Algorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"algorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) AlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"algorithmInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) BucketName() *string {
@@ -275,6 +327,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) EnvironmentInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Format() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"format",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) FormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"formatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -350,6 +422,46 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) JsonInput() *string {
 	_jsii_.Get(
 		j,
 		"jsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) KeyBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) KeyBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyBase64Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) KeyJwk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyJwk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) KeyJwkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyJwkInput",
 		&returns,
 	)
 	return returns
@@ -435,6 +547,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) OutboundInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Pipeline() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipeline",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) PipelineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) QueueName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +607,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) ScriptNameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) SecretName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) SecretNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Service() *string {
 	var returns *string
 	_jsii_.Get(
@@ -490,6 +642,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) ServiceInput() *string 
 	_jsii_.Get(
 		j,
 		"serviceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) StoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) StoreIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storeIdInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +727,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) Usages() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) UsagesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"usagesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewWorkersScriptBindingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptBindingsOutputReference {
 	_init_.Initialize()
@@ -580,6 +772,17 @@ func NewWorkersScriptBindingsOutputReference_Override(w WorkersScriptBindingsOut
 		"@cdktf/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetAlgorithm(val *string) {
+	if err := j.validateSetAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"algorithm",
+		val,
 	)
 }
 
@@ -660,6 +863,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetEnvironment(val *stri
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetFormat(val *string) {
+	if err := j.validateSetFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"format",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -704,6 +918,28 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetJson(val *string) {
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetKeyBase64(val *string) {
+	if err := j.validateSetKeyBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyBase64",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetKeyJwk(val *string) {
+	if err := j.validateSetKeyJwkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyJwk",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -737,6 +973,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetNamespaceId(val *stri
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetPipeline(val *string) {
+	if err := j.validateSetPipelineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipeline",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetQueueName(val *string) {
 	if err := j.validateSetQueueNameParameters(val); err != nil {
 		panic(err)
@@ -759,6 +1006,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetScriptName(val *strin
 	)
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetSecretName(val *string) {
+	if err := j.validateSetSecretNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
@@ -766,6 +1024,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetService(val *string) 
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetStoreId(val *string) {
+	if err := j.validateSetStoreIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storeId",
 		val,
 	)
 }
@@ -810,6 +1079,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetUsages(val *[]*string) {
+	if err := j.validateSetUsagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usages",
 		val,
 	)
 }
@@ -1011,6 +1291,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) PutOutbound(value *Work
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetAlgorithm() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAlgorithm",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetBucketName() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1051,6 +1339,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetEnvironment() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetFormat() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetFormat",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1071,6 +1367,22 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetJson() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetJson",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetKeyBase64() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetKeyBase64",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetKeyJwk() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetKeyJwk",
 		nil, // no parameters
 	)
 }
@@ -1099,6 +1411,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetOutbound() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetPipeline() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetPipeline",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetQueueName() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1115,6 +1435,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetScriptName() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetSecretName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSecretName",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetService() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1123,10 +1451,26 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetService() {
 	)
 }
 
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetStoreId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStoreId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetText() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetText",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetUsages() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetUsages",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project cloudflare_pages_project}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project cloudflare_pages_project}.
 type PagesProject interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -74,6 +74,7 @@ type PagesProject interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Source() PagesProjectSourceOutputReference
+	SourceInput() interface{}
 	Subdomain() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -126,12 +127,14 @@ type PagesProject interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBuildConfig(value *PagesProjectBuildConfig)
 	PutDeploymentConfigs(value *PagesProjectDeploymentConfigs)
+	PutSource(value *PagesProjectSource)
 	ResetBuildConfig()
 	ResetDeploymentConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProductionBranch()
+	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -440,6 +443,16 @@ func (j *jsiiProxy_PagesProject) Source() PagesProjectSourceOutputReference {
 	return returns
 }
 
+func (j *jsiiProxy_PagesProject) SourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PagesProject) Subdomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -481,7 +494,7 @@ func (j *jsiiProxy_PagesProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjectConfig) PagesProject {
 	_init_.Initialize()
 
@@ -499,7 +512,7 @@ func NewPagesProject(scope constructs.Construct, id *string, config *PagesProjec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/pages_project cloudflare_pages_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/pages_project cloudflare_pages_project} Resource.
 func NewPagesProject_Override(p PagesProject, scope constructs.Construct, id *string, config *PagesProjectConfig) {
 	_init_.Initialize()
 
@@ -986,6 +999,17 @@ func (p *jsiiProxy_PagesProject) PutDeploymentConfigs(value *PagesProjectDeploym
 	)
 }
 
+func (p *jsiiProxy_PagesProject) PutSource(value *PagesProjectSource) {
+	if err := p.validatePutSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSource",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PagesProject) ResetBuildConfig() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1014,6 +1038,14 @@ func (p *jsiiProxy_PagesProject) ResetProductionBranch() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProductionBranch",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PagesProject) ResetSource() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSource",
 		nil, // no parameters
 	)
 }

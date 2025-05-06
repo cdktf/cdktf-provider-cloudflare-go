@@ -13,6 +13,7 @@ import (
 
 type DataCloudflareZeroTrustDlpDatasetsResultOutputReference interface {
 	cdktf.ComplexObject
+	CaseSensitive() cdktf.IResolvable
 	Columns() DataCloudflareZeroTrustDlpDatasetsResultColumnsList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -88,6 +89,16 @@ type DataCloudflareZeroTrustDlpDatasetsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareZeroTrustDlpDatasetsResultOutputReference
 type jsiiProxy_DataCloudflareZeroTrustDlpDatasetsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpDatasetsResultOutputReference) CaseSensitive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"caseSensitive",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareZeroTrustDlpDatasetsResultOutputReference) Columns() DataCloudflareZeroTrustDlpDatasetsResultColumnsList {

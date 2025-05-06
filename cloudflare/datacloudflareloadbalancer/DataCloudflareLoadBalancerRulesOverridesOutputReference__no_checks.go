@@ -59,10 +59,6 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetCountryPoolsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetInternalValueParameters(val *DataCloudflareLoadBalancerRulesOverrides) error {
 	return nil
 }
@@ -71,27 +67,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetRegionPoolsParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetSessionAffinityTtlParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetSteeringPolicyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancerRulesOverridesOutputReference) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 

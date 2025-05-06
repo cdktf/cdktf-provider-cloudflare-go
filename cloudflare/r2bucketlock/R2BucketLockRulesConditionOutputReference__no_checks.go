@@ -63,7 +63,7 @@ func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetDatePar
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetInternalValueParameters(val *R2BucketLockRulesCondition) error {
+func (j *jsiiProxy_R2BucketLockRulesConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

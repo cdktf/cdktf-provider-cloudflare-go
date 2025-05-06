@@ -63,7 +63,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference) validateSetInternalValueParameters(val *ZeroTrustDlpPredefinedProfileContextAwarenessSkip) error {
+func (j *jsiiProxy_ZeroTrustDlpPredefinedProfileContextAwarenessSkipOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

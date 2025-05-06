@@ -22,6 +22,9 @@ type R2BucketSippySourceOutputReference interface {
 	ClientEmail() *string
 	SetClientEmail(val *string)
 	ClientEmailInput() *string
+	CloudProvider() *string
+	SetCloudProvider(val *string)
+	CloudProviderInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -44,9 +47,6 @@ type R2BucketSippySourceOutputReference interface {
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
-	Provider() *string
-	SetProvider(val *string)
-	ProviderInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -88,8 +88,8 @@ type R2BucketSippySourceOutputReference interface {
 	ResetAccessKeyId()
 	ResetBucket()
 	ResetClientEmail()
+	ResetCloudProvider()
 	ResetPrivateKey()
-	ResetProvider()
 	ResetRegion()
 	ResetSecretAccessKey()
 	// Produce the Token's value at resolution time.
@@ -167,6 +167,26 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) ClientEmailInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) CloudProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2BucketSippySourceOutputReference) CloudProviderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudProviderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -232,26 +252,6 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference) PrivateKeyInput() *string
 	_jsii_.Get(
 		j,
 		"privateKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_R2BucketSippySourceOutputReference) Provider() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"provider",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_R2BucketSippySourceOutputReference) ProviderInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"providerInput",
 		&returns,
 	)
 	return returns
@@ -378,6 +378,17 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetClientEmail(val *string
 	)
 }
 
+func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetCloudProvider(val *string) {
+	if err := j.validateSetCloudProviderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudProvider",
+		val,
+	)
+}
+
 func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -418,17 +429,6 @@ func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetPrivateKey(val *string)
 	_jsii_.Set(
 		j,
 		"privateKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_R2BucketSippySourceOutputReference)SetProvider(val *string) {
-	if err := j.validateSetProviderParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provider",
 		val,
 	)
 }
@@ -687,18 +687,18 @@ func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetClientEmail() {
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetPrivateKey() {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetCloudProvider() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetPrivateKey",
+		"resetCloudProvider",
 		nil, // no parameters
 	)
 }
 
-func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetProvider() {
+func (r *jsiiProxy_R2BucketSippySourceOutputReference) ResetPrivateKey() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetProvider",
+		"resetPrivateKey",
 		nil, // no parameters
 	)
 }

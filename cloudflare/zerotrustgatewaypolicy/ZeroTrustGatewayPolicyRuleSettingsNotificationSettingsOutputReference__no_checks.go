@@ -63,6 +63,10 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetIncludeContextParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

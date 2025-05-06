@@ -75,23 +75,11 @@ func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReference) validateSetSessionAffinityTtlParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReference) validateSetSteeringPolicyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataCloudflareLoadBalancersResultRulesOverridesOutputReference) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 

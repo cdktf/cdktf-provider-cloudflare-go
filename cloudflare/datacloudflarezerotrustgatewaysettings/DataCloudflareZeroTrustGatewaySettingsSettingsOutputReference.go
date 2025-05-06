@@ -39,6 +39,7 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference interface {
 	Fips() DataCloudflareZeroTrustGatewaySettingsSettingsFipsOutputReference
 	// Experimental.
 	Fqn() *string
+	HostSelector() DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettings
 	SetInternalValue(val *DataCloudflareZeroTrustGatewaySettingsSettings)
 	ProtocolDetection() DataCloudflareZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference) HostSelector() DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference {
+	var returns DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"hostSelector",
 		&returns,
 	)
 	return returns

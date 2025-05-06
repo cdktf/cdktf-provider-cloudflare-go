@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates}.
 type DataCloudflareOriginCaCertificates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,11 +39,17 @@ type DataCloudflareOriginCaCertificates interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Limit() *float64
+	SetLimit(val *float64)
+	LimitInput() *float64
 	MaxItems() *float64
 	SetMaxItems(val *float64)
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	Offset() *float64
+	SetOffset(val *float64)
+	OffsetInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -85,7 +91,9 @@ type DataCloudflareOriginCaCertificates interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetLimit()
 	ResetMaxItems()
+	ResetOffset()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -188,6 +196,26 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) Lifecycle() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates) Limit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates) LimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareOriginCaCertificates) MaxItems() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -213,6 +241,26 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates) Offset() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"offset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates) OffsetInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"offsetInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +347,7 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) DataCloudflareOriginCaCertificates {
 	_init_.Initialize()
 
@@ -317,7 +365,7 @@ func NewDataCloudflareOriginCaCertificates(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/origin_ca_certificates cloudflare_origin_ca_certificates} Data Source.
 func NewDataCloudflareOriginCaCertificates_Override(d DataCloudflareOriginCaCertificates, scope constructs.Construct, id *string, config *DataCloudflareOriginCaCertificatesConfig) {
 	_init_.Initialize()
 
@@ -366,6 +414,17 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates)SetLifecycle(val *cdktf.Te
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"limit",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareOriginCaCertificates)SetMaxItems(val *float64) {
 	if err := j.validateSetMaxItemsParameters(val); err != nil {
 		panic(err)
@@ -373,6 +432,17 @@ func (j *jsiiProxy_DataCloudflareOriginCaCertificates)SetMaxItems(val *float64) 
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareOriginCaCertificates)SetOffset(val *float64) {
+	if err := j.validateSetOffsetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"offset",
 		val,
 	)
 }
@@ -681,10 +751,26 @@ func (d *jsiiProxy_DataCloudflareOriginCaCertificates) OverrideLogicalId(newLogi
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareOriginCaCertificates) ResetLimit() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLimit",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareOriginCaCertificates) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxItems",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareOriginCaCertificates) ResetOffset() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOffset",
 		nil, // no parameters
 	)
 }

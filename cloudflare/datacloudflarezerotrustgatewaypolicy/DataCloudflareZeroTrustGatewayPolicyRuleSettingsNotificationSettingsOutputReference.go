@@ -31,6 +31,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputR
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	IncludeContext() cdktf.IResolvable
 	InternalValue() *DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationSettings
 	SetInternalValue(val *DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationSettings)
 	Msg() *string
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationS
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsNotificationSettingsOutputReference) IncludeContext() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"includeContext",
 		&returns,
 	)
 	return returns

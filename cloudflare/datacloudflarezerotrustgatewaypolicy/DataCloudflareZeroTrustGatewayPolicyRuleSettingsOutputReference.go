@@ -17,6 +17,7 @@ type DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	AllowChildBypass() cdktf.IResolvable
 	AuditSsh() DataCloudflareZeroTrustGatewayPolicyRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBisoAdminControlsOutputReference
+	BlockPage() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
 	BlockPageEnabled() cdktf.IResolvable
 	BlockReason() *string
 	BypassParentRule() cdktf.IResolvable
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"bisoAdminControls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicyRuleSettingsOutputReference) BlockPage() DataCloudflareZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference {
+	var returns DataCloudflareZeroTrustGatewayPolicyRuleSettingsBlockPageOutputReference
+	_jsii_.Get(
+		j,
+		"blockPage",
 		&returns,
 	)
 	return returns

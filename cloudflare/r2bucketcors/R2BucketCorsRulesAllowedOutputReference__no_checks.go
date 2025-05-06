@@ -63,7 +63,7 @@ func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) validateSetHeadersPa
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) validateSetInternalValueParameters(val *R2BucketCorsRulesAllowed) error {
+func (j *jsiiProxy_R2BucketCorsRulesAllowedOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

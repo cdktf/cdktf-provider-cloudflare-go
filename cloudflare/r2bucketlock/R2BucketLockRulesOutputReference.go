@@ -24,7 +24,7 @@ type R2BucketLockRulesOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Condition() R2BucketLockRulesConditionOutputReference
-	ConditionInput() *R2BucketLockRulesCondition
+	ConditionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_R2BucketLockRulesOutputReference) Condition() R2BucketLockRul
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketLockRulesOutputReference) ConditionInput() *R2BucketLockRulesCondition {
-	var returns *R2BucketLockRulesCondition
+func (j *jsiiProxy_R2BucketLockRulesOutputReference) ConditionInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"conditionInput",

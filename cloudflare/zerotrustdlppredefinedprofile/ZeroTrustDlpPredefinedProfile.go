@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
 type ZeroTrustDlpPredefinedProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -552,7 +552,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) ZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.3.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile_Override(z ZeroTrustDlpPredefinedProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) {
 	_init_.Initialize()
 

@@ -174,9 +174,25 @@ func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetInternalValueParameters(val *R2BucketLifecycleRulesStorageClassTransitionsCondition) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_R2BucketLifecycleRulesStorageClassTransitionsConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *R2BucketLifecycleRulesStorageClassTransitionsCondition:
+		val := val.(*R2BucketLifecycleRulesStorageClassTransitionsCondition)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case R2BucketLifecycleRulesStorageClassTransitionsCondition:
+		val_ := val.(R2BucketLifecycleRulesStorageClassTransitionsCondition)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *R2BucketLifecycleRulesStorageClassTransitionsCondition; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
