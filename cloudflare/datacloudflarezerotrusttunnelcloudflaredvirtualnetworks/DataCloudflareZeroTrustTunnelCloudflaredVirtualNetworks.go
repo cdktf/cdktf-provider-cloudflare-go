@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks}.
 type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) Terr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig) DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks_Override(d DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig) {
 	_init_.Initialize()
 

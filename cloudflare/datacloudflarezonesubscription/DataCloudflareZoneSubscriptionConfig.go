@@ -24,7 +24,7 @@ type DataCloudflareZoneSubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Subscription identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_subscription#identifier DataCloudflareZoneSubscription#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_subscription#identifier DataCloudflareZoneSubscription#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 }
 

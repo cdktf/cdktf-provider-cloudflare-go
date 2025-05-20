@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_firewall cloudflare_dns_firewall}.
 type DataCloudflareDnsFirewall interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataCloudflareDnsFirewall) UpstreamIps() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) DataCloudflareDnsFirewall {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataCloudflareDnsFirewall(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/dns_firewall cloudflare_dns_firewall} Data Source.
 func NewDataCloudflareDnsFirewall_Override(d DataCloudflareDnsFirewall, scope constructs.Construct, id *string, config *DataCloudflareDnsFirewallConfig) {
 	_init_.Initialize()
 

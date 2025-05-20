@@ -91,7 +91,7 @@ func validateCloudforceOneRequestMessage_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 
@@ -115,7 +115,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetRequestIdParameters(val *string) error {
 	return nil
 }
 

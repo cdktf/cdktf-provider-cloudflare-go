@@ -71,7 +71,7 @@ func validateDataCloudflareCloudforceOneRequestPriority_IsTerraformElementParame
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetPriorityIdentiferParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetPriorityIdParameters(val *string) error {
 	return nil
 }
 

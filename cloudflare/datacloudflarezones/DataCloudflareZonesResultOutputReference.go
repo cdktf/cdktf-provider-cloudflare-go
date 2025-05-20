@@ -15,6 +15,7 @@ type DataCloudflareZonesResultOutputReference interface {
 	cdktf.ComplexObject
 	Account() DataCloudflareZonesResultAccountOutputReference
 	ActivatedOn() *string
+	CnameSuffix() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,7 +47,11 @@ type DataCloudflareZonesResultOutputReference interface {
 	OriginalRegistrar() *string
 	Owner() DataCloudflareZonesResultOwnerOutputReference
 	Paused() cdktf.IResolvable
+	Permissions() *[]*string
+	Plan() DataCloudflareZonesResultPlanOutputReference
 	Status() *string
+	Tenant() DataCloudflareZonesResultTenantOutputReference
+	TenantUnit() DataCloudflareZonesResultTenantUnitOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,6 +117,16 @@ func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) ActivatedOn() *stri
 	_jsii_.Get(
 		j,
 		"activatedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) CnameSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnameSuffix",
 		&returns,
 	)
 	return returns
@@ -287,11 +302,51 @@ func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) Paused() cdktf.IRes
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) Permissions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) Plan() DataCloudflareZonesResultPlanOutputReference {
+	var returns DataCloudflareZonesResultPlanOutputReference
+	_jsii_.Get(
+		j,
+		"plan",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) Tenant() DataCloudflareZonesResultTenantOutputReference {
+	var returns DataCloudflareZonesResultTenantOutputReference
+	_jsii_.Get(
+		j,
+		"tenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZonesResultOutputReference) TenantUnit() DataCloudflareZonesResultTenantUnitOutputReference {
+	var returns DataCloudflareZonesResultTenantUnitOutputReference
+	_jsii_.Get(
+		j,
+		"tenantUnit",
 		&returns,
 	)
 	return returns

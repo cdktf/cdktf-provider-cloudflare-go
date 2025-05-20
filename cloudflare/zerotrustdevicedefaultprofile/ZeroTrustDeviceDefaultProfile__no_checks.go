@@ -163,6 +163,10 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetRegisterInterfaceIp
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSccmVpnBoundarySupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) validateSetSupportUrlParameters(val *string) error {
 	return nil
 }

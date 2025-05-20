@@ -247,7 +247,7 @@ func validateCloudforceOneRequestMessage_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -407,7 +407,7 @@ func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_CloudforceOneRequestMessage) validateSetRequestIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

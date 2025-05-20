@@ -40,8 +40,6 @@ type CloudConnectorRulesRulesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Parameters() CloudConnectorRulesRulesParametersOutputReference
@@ -85,7 +83,6 @@ type CloudConnectorRulesRulesOutputReference interface {
 	ResetDescription()
 	ResetEnabled()
 	ResetExpression()
-	ResetId()
 	ResetParameters()
 	ResetProvider()
 	// Produce the Token's value at resolution time.
@@ -208,16 +205,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -372,17 +359,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetExpression(val *st
 	_jsii_.Set(
 		j,
 		"expression",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -648,14 +624,6 @@ func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetExpression() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExpression",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudConnectorRulesRulesOutputReference) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
 		nil, // no parameters
 	)
 }

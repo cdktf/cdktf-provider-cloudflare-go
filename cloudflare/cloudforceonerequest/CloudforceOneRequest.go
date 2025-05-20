@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type CloudforceOneRequest interface {
 	cdktf.TerraformResource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Completed() *string
@@ -157,21 +157,21 @@ type jsiiProxy_CloudforceOneRequest struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_CloudforceOneRequest) AccountIdentifier() *string {
+func (j *jsiiProxy_CloudforceOneRequest) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequest) AccountIdentifierInput() *string {
+func (j *jsiiProxy_CloudforceOneRequest) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +528,7 @@ func (j *jsiiProxy_CloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) CloudforceOneRequest {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest_Override(c CloudforceOneRequest, scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) {
 	_init_.Initialize()
 
@@ -557,13 +557,13 @@ func NewCloudforceOneRequest_Override(c CloudforceOneRequest, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequest)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_CloudforceOneRequest)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
 		val,
 	)
 }

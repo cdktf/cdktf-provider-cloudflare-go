@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
 type DataCloudflareZoneHold interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareZoneHold) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
 func NewDataCloudflareZoneHold(scope constructs.Construct, id *string, config *DataCloudflareZoneHoldConfig) DataCloudflareZoneHold {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataCloudflareZoneHold(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_hold cloudflare_zone_hold} Data Source.
 func NewDataCloudflareZoneHold_Override(d DataCloudflareZoneHold, scope constructs.Construct, id *string, config *DataCloudflareZoneHoldConfig) {
 	_init_.Initialize()
 

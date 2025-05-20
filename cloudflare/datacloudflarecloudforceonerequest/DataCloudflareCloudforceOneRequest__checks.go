@@ -114,6 +114,17 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) validatePutFilterParameters(value *DataCloudflareCloudforceOneRequestFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateDataCloudflareCloudforceOneRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -154,7 +165,7 @@ func validateDataCloudflareCloudforceOneRequest_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +238,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetRequestIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

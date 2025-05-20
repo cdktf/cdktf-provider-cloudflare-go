@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) validatePutFilterParameters(value *DataCloudflareCloudforceOneRequestFilter) error {
+	return nil
+}
+
 func validateDataCloudflareCloudforceOneRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -71,7 +75,7 @@ func validateDataCloudflareCloudforceOneRequest_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 
@@ -83,7 +87,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) validateSetRequestIdParameters(val *string) error {
 	return nil
 }
 

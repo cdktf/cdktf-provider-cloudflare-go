@@ -154,7 +154,7 @@ func validateDataCloudflareCloudforceOneRequestPriority_IsTerraformElementParame
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetLifecy
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetPriorityIdentiferParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) validateSetPriorityIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,13 +12,19 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}.
 type DataCloudflareCloudforceOneRequestMessage interface {
 	cdktf.TerraformDataSource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
+	After() *string
+	SetAfter(val *string)
+	AfterInput() *string
 	Author() *string
+	Before() *string
+	SetBefore(val *string)
+	BeforeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -49,15 +55,27 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Page() *float64
+	SetPage(val *float64)
+	PageInput() *float64
+	PerPage() *float64
+	SetPerPage(val *float64)
+	PerPageInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RequestIdentifier() *string
-	SetRequestIdentifier(val *string)
-	RequestIdentifierInput() *string
+	RequestId() *string
+	SetRequestId(val *string)
+	RequestIdInput() *string
+	SortBy() *string
+	SetSortBy(val *string)
+	SortByInput() *string
+	SortOrder() *string
+	SetSortOrder(val *string)
+	SortOrderInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,9 +108,13 @@ type DataCloudflareCloudforceOneRequestMessage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAfter()
+	ResetBefore()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSortBy()
+	ResetSortOrder()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -112,21 +134,41 @@ type jsiiProxy_DataCloudflareCloudforceOneRequestMessage struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AccountIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AccountIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) After() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"after",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) AfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"afterInput",
 		&returns,
 	)
 	return returns
@@ -137,6 +179,26 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Author() *string {
 	_jsii_.Get(
 		j,
 		"author",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Before() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"before",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) BeforeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beforeInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +334,46 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Node() constructs.
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Page() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"page",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) PageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) PerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) PerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -292,21 +394,61 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RawOverrides() int
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RequestIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RequestId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifier",
+		"requestId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RequestIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) RequestIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifierInput",
+		"requestIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SortBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sortBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SortByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sortByInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SortOrder() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sortOrder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) SortOrderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sortOrderInput",
 		&returns,
 	)
 	return returns
@@ -353,7 +495,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) Updated() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) DataCloudflareCloudforceOneRequestMessage {
 	_init_.Initialize()
 
@@ -371,7 +513,7 @@ func NewDataCloudflareCloudforceOneRequestMessage(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source.
 func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloudforceOneRequestMessage, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestMessageConfig) {
 	_init_.Initialize()
 
@@ -382,13 +524,35 @@ func NewDataCloudflareCloudforceOneRequestMessage_Override(d DataCloudflareCloud
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetAfter(val *string) {
+	if err := j.validateSetAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"after",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetBefore(val *string) {
+	if err := j.validateSetBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"before",
 		val,
 	)
 }
@@ -431,6 +595,28 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetLifecycle(val *c
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPage(val *float64) {
+	if err := j.validateSetPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"page",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetPerPage(val *float64) {
+	if err := j.validateSetPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perPage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -439,13 +625,35 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetRequestIdentifier(val *string) {
-	if err := j.validateSetRequestIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetRequestId(val *string) {
+	if err := j.validateSetRequestIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requestIdentifier",
+		"requestId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetSortBy(val *string) {
+	if err := j.validateSetSortByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sortBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage)SetSortOrder(val *string) {
+	if err := j.validateSetSortOrderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sortOrder",
 		val,
 	)
 }
@@ -735,10 +943,42 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) OverrideLogicalId(
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetAfter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAfter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetBefore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBefore",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetSortBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSortBy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) ResetSortOrder() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSortOrder",
 		nil, // no parameters
 	)
 }

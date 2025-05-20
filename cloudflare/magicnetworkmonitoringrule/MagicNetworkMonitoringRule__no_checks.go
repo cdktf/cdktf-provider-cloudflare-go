@@ -115,10 +115,6 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetDurationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MagicNetworkMonitoringRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

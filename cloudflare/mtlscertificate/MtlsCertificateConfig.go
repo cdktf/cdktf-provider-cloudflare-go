@@ -24,23 +24,25 @@ type MtlsCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Indicates whether the certificate is a CA or leaf certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
 	Ca interface{} `field:"required" json:"ca" yaml:"ca"`
 	// The uploaded root CA certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
 	Certificates *string `field:"required" json:"certificates" yaml:"certificates"`
 	// Optional unique name for the certificate. Only used for human readability.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The private key for the certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+	// This field is only needed for specific use cases such as using a custom certificate with Zero Trust's block page.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
 }
 

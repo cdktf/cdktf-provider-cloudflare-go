@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec}.
 type DataCloudflareZoneDnssec interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -33,6 +33,7 @@ type DataCloudflareZoneDnssec interface {
 	DigestType() *string
 	DnssecMultiSigner() cdktf.IResolvable
 	DnssecPresigned() cdktf.IResolvable
+	DnssecUseNsec3() cdktf.IResolvable
 	Ds() *string
 	Flags() *float64
 	// Experimental.
@@ -211,6 +212,16 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecPresigned() cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"dnssecPresigned",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneDnssec) DnssecUseNsec3() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dnssecUseNsec3",
 		&returns,
 	)
 	return returns
@@ -407,7 +418,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) DataCloudflareZoneDnssec {
 	_init_.Initialize()
 
@@ -425,7 +436,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_dnssec cloudflare_zone_dnssec} Data Source.
 func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope constructs.Construct, id *string, config *DataCloudflareZoneDnssecConfig) {
 	_init_.Initialize()
 

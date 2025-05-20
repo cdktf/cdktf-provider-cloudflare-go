@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) validateSetLifecycle
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) validateSetQueueIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareR2BucketEventNotificationParameters(scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) error {
 	return nil
 }

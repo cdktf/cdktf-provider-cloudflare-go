@@ -47,6 +47,10 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateInterpolat
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validatePutLogsParameters(value *WorkersScriptObservabilityLogs) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

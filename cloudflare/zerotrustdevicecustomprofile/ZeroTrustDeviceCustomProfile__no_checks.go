@@ -183,6 +183,10 @@ func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetRegisterInterfaceIpW
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetSccmVpnBoundarySupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceCustomProfile) validateSetSupportUrlParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting cloudflare_zone_setting}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting cloudflare_zone_setting}.
 type ZoneSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type ZoneSetting interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Editable() cdktf.IResolvable
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,8 +44,6 @@ type ZoneSetting interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -119,7 +120,7 @@ type ZoneSetting interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -201,6 +202,26 @@ func (j *jsiiProxy_ZoneSetting) Editable() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSetting) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSetting) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSetting) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -236,16 +257,6 @@ func (j *jsiiProxy_ZoneSetting) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneSetting) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -412,7 +423,7 @@ func (j *jsiiProxy_ZoneSetting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
 func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingConfig) ZoneSetting {
 	_init_.Initialize()
 
@@ -430,7 +441,7 @@ func NewZoneSetting(scope constructs.Construct, id *string, config *ZoneSettingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_setting cloudflare_zone_setting} Resource.
 func NewZoneSetting_Override(z ZoneSetting, scope constructs.Construct, id *string, config *ZoneSettingConfig) {
 	_init_.Initialize()
 
@@ -471,21 +482,21 @@ func (j *jsiiProxy_ZoneSetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSetting)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZoneSetting)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
+func (j *jsiiProxy_ZoneSetting)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"id",
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSetting)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -906,10 +917,10 @@ func (z *jsiiProxy_ZoneSetting) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (z *jsiiProxy_ZoneSetting) ResetId() {
+func (z *jsiiProxy_ZoneSetting) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetId",
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

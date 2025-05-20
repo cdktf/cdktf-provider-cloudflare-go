@@ -24,7 +24,7 @@ type ZoneDnssecConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#zone_id ZoneDnssec#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// If true, multi-signer DNSSEC is enabled on the zone, allowing multiple providers to serve a DNSSEC-signed zone at the same time.
 	//
@@ -33,18 +33,29 @@ type ZoneDnssecConfig struct {
 	//
 	// See [Multi-signer DNSSEC](https://developers.cloudflare.com/dns/dnssec/multi-signer-dnssec/) for details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_multi_signer ZoneDnssec#dnssec_multi_signer}
 	DnssecMultiSigner interface{} `field:"optional" json:"dnssecMultiSigner" yaml:"dnssecMultiSigner"`
 	// If true, allows Cloudflare to transfer in a DNSSEC-signed zone including signatures from an external provider, without requiring Cloudflare to sign any records on the fly.
 	//
 	// Note that this feature has some limitations.
 	// See [Cloudflare as Secondary](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/#dnssec) for details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_presigned ZoneDnssec#dnssec_presigned}
 	DnssecPresigned interface{} `field:"optional" json:"dnssecPresigned" yaml:"dnssecPresigned"`
+	// If true, enables the use of NSEC3 together with DNSSEC on the zone.
+	//
+	// Combined with setting dnssec_presigned to true, this enables the use of
+	// NSEC3 records when transferring in from an external provider.
+	// If dnssec_presigned is instead set to false (default), NSEC3 records will be
+	// generated and signed at request time.
+	//
+	// See [DNSSEC with NSEC3](https://developers.cloudflare.com/dns/dnssec/enable-nsec3/) for details.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#dnssec_use_nsec3 ZoneDnssec#dnssec_use_nsec3}
+	DnssecUseNsec3 interface{} `field:"optional" json:"dnssecUseNsec3" yaml:"dnssecUseNsec3"`
 	// Status of DNSSEC, based on user-desired state and presence of necessary records. Available values: "active", "disabled".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec#status ZoneDnssec#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

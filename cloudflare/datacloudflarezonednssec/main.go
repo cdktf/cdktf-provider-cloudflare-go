@@ -25,6 +25,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "digestType", GoGetter: "DigestType"},
 			_jsii_.MemberProperty{JsiiProperty: "dnssecMultiSigner", GoGetter: "DnssecMultiSigner"},
 			_jsii_.MemberProperty{JsiiProperty: "dnssecPresigned", GoGetter: "DnssecPresigned"},
+			_jsii_.MemberProperty{JsiiProperty: "dnssecUseNsec3", GoGetter: "DnssecUseNsec3"},
 			_jsii_.MemberProperty{JsiiProperty: "ds", GoGetter: "Ds"},
 			_jsii_.MemberProperty{JsiiProperty: "flags", GoGetter: "Flags"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks}.
 type DataCloudflareZeroTrustDeviceManagedNetworks interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceManagedNetworks) Type() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Data Source.
 func NewDataCloudflareZeroTrustDeviceManagedNetworks(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceManagedNetworksConfig) DataCloudflareZeroTrustDeviceManagedNetworks {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataCloudflareZeroTrustDeviceManagedNetworks(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_managed_networks cloudflare_zero_trust_device_managed_networks} Data Source.
 func NewDataCloudflareZeroTrustDeviceManagedNetworks_Override(d DataCloudflareZeroTrustDeviceManagedNetworks, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDeviceManagedNetworksConfig) {
 	_init_.Initialize()
 

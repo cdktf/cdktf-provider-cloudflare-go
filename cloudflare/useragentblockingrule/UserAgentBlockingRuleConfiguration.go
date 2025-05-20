@@ -8,13 +8,13 @@ type UserAgentBlockingRuleConfiguration struct {
 	// The configuration target.
 	//
 	// You must set the target to `ip` when specifying an IP address in the rule.
-	// Available values: "ip".
+	// Available values: "ip", "ip6", "ip_range", "asn", "country".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
 	Target *string `field:"optional" json:"target" yaml:"target"`
 	// The IP address to match. This address will be compared to the IP address of incoming requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -24,22 +24,22 @@ type ListConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#account_id List#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#account_id List#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The type of the list.
 	//
 	// Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 	// Available values: "ip", "redirect", "hostname", "asn".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#kind List#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#kind List#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
 	// An informative name for the list. Use this name in filter and rule expressions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#name List#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#name List#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// An informative summary of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/list#description List#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/list#description List#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

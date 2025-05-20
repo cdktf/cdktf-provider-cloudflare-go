@@ -71,11 +71,27 @@ func validateDataCloudflareCloudforceOneRequests_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetCompletedAfterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetCompletedBeforeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetCreatedAfterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetCreatedBeforeParameters(val *string) error {
 	return nil
 }
 
@@ -84,6 +100,30 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetLifecyclePara
 }
 
 func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetMaxItemsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetPerPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetRequestTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetSortByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetSortOrderParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequests) validateSetStatusParameters(val *string) error {
 	return nil
 }
 

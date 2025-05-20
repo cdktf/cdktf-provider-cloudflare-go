@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 type WorkersCustomDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_WorkersCustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) WorkersCustomDomain {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewWorkersCustomDomain(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain} Resource.
 func NewWorkersCustomDomain_Override(w WorkersCustomDomain, scope constructs.Construct, id *string, config *WorkersCustomDomainConfig) {
 	_init_.Initialize()
 

@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 type DataCloudflareCloudforceOneRequestPriority interface {
 	cdktf.TerraformDataSource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Completed() *string
@@ -50,9 +50,9 @@ type DataCloudflareCloudforceOneRequestPriority interface {
 	// The tree node.
 	Node() constructs.Node
 	Priority() *string
-	PriorityIdentifer() *string
-	SetPriorityIdentifer(val *string)
-	PriorityIdentiferInput() *string
+	PriorityId() *string
+	SetPriorityId(val *string)
+	PriorityIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,21 +119,21 @@ type jsiiProxy_DataCloudflareCloudforceOneRequestPriority struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -289,21 +289,21 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Priority() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) PriorityIdentifer() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) PriorityId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"priorityIdentifer",
+		"priorityId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) PriorityIdentiferInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) PriorityIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"priorityIdentiferInput",
+		"priorityIdInput",
 		&returns,
 	)
 	return returns
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority) Updated() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) DataCloudflareCloudforceOneRequestPriority {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataCloudflareCloudforceOneRequestPriority(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Data Source.
 func NewDataCloudflareCloudforceOneRequestPriority_Override(d DataCloudflareCloudforceOneRequestPriority, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestPriorityConfig) {
 	_init_.Initialize()
 
@@ -459,13 +459,13 @@ func NewDataCloudflareCloudforceOneRequestPriority_Override(d DataCloudflareClou
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
 		val,
 	)
 }
@@ -508,13 +508,13 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetPriorityIdentifer(val *string) {
-	if err := j.validateSetPriorityIdentiferParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestPriority)SetPriorityId(val *string) {
+	if err := j.validateSetPriorityIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"priorityIdentifer",
+		"priorityId",
 		val,
 	)
 }

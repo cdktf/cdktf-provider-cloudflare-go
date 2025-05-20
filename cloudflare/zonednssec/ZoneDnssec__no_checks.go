@@ -107,6 +107,10 @@ func (j *jsiiProxy_ZoneDnssec) validateSetDnssecPresignedParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ZoneDnssec) validateSetDnssecUseNsec3Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneDnssec) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

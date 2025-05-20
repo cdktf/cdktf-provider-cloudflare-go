@@ -63,10 +63,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) validateSetDefaultNameserversParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AccountSettingsOutputReference) validateSetEnforceTwofactorParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +76,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference) validateSetTerraformAttribute
 }
 
 func (j *jsiiProxy_AccountSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_AccountSettingsOutputReference) validateSetUseAccountCustomNsByDefaultParameters(val interface{}) error {
 	return nil
 }
 

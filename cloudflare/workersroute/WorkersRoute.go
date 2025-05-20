@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route cloudflare_workers_route}.
 type WorkersRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -117,6 +117,7 @@ type WorkersRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScript()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -366,7 +367,7 @@ func (j *jsiiProxy_WorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRouteConfig) WorkersRoute {
 	_init_.Initialize()
 
@@ -384,7 +385,7 @@ func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute_Override(w WorkersRoute, scope constructs.Construct, id *string, config *WorkersRouteConfig) {
 	_init_.Initialize()
 
@@ -853,6 +854,14 @@ func (w *jsiiProxy_WorkersRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersRoute) ResetScript() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetScript",
 		nil, // no parameters
 	)
 }

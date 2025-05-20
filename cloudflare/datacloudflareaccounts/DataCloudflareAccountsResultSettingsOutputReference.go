@@ -29,7 +29,6 @@ type DataCloudflareAccountsResultSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DefaultNameservers() *string
 	EnforceTwofactor() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -43,7 +42,6 @@ type DataCloudflareAccountsResultSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseAccountCustomNsByDefault() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -123,16 +121,6 @@ func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) DefaultNameservers() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultNameservers",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) EnforceTwofactor() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -178,16 +166,6 @@ func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareAccountsResultSettingsOutputReference) UseAccountCustomNsByDefault() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"useAccountCustomNsByDefault",
 		&returns,
 	)
 	return returns

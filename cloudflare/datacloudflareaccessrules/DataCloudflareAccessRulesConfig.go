@@ -24,42 +24,42 @@ type DataCloudflareAccessRulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#account_id DataCloudflareAccessRules#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#account_id DataCloudflareAccessRules#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#configuration DataCloudflareAccessRules#configuration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#configuration DataCloudflareAccessRules#configuration}.
 	Configuration *DataCloudflareAccessRulesConfiguration `field:"optional" json:"configuration" yaml:"configuration"`
 	// Defines the direction used to sort returned rules. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#direction DataCloudflareAccessRules#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#direction DataCloudflareAccessRules#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Defines the search requirements.
 	//
 	// When set to `all`, all the search requirements must match. When set to `any`, only one of the search requirements has to match.
 	// Available values: "any", "all".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#match DataCloudflareAccessRules#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#match DataCloudflareAccessRules#match}
 	Match *string `field:"optional" json:"match" yaml:"match"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#max_items DataCloudflareAccessRules#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#max_items DataCloudflareAccessRules#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#mode DataCloudflareAccessRules#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#mode DataCloudflareAccessRules#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// Defines the string to search for in the notes of existing IP Access rules.
 	//
 	// Notes: For example, the string 'attack' would match IP Access rules with notes 'Attack 26/02' and 'Attack 27/02'. The search is case insensitive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#notes DataCloudflareAccessRules#notes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#notes DataCloudflareAccessRules#notes}
 	Notes *string `field:"optional" json:"notes" yaml:"notes"`
 	// Defines the field used to sort returned rules. Available values: "configuration.target", "configuration.value", "mode".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#order DataCloudflareAccessRules#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#order DataCloudflareAccessRules#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/access_rules#zone_id DataCloudflareAccessRules#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/access_rules#zone_id DataCloudflareAccessRules#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

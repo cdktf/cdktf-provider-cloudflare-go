@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}.
 type MagicNetworkMonitoringRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -53,8 +53,6 @@ type MagicNetworkMonitoringRule interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -339,16 +337,6 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicNetworkMonitoringRule) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicNetworkMonitoringRule) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -530,7 +518,7 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule) ZscoreTarget() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule {
 	_init_.Initialize()
 
@@ -548,7 +536,7 @@ func NewMagicNetworkMonitoringRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource.
 func NewMagicNetworkMonitoringRule_Override(m MagicNetworkMonitoringRule, scope constructs.Construct, id *string, config *MagicNetworkMonitoringRuleConfig) {
 	_init_.Initialize()
 
@@ -637,17 +625,6 @@ func (j *jsiiProxy_MagicNetworkMonitoringRule)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicNetworkMonitoringRule)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }

@@ -14,8 +14,8 @@ func init() {
 		"@cdktf/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority",
 		reflect.TypeOf((*CloudforceOneRequestPriority)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "accountIdentifier", GoGetter: "AccountIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "accountIdentifierInput", GoGetter: "AccountIdentifierInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

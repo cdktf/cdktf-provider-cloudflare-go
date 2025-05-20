@@ -75,10 +75,6 @@ func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetExpressio
 	return nil
 }
 
-func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudConnectorRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

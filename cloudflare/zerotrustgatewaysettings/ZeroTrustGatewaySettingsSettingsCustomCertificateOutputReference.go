@@ -72,7 +72,6 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnabled()
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -508,14 +507,6 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	)
 
 	return returns
-}
-
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetEnabled",
-		nil, // no parameters
-	)
 }
 
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ResetId() {

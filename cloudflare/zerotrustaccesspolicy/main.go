@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalGroups", GoMethod: "ResetApprovalGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalRequired", GoMethod: "ResetApprovalRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExclude", GoMethod: "ResetExclude"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInclude", GoMethod: "ResetInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsolationRequired", GoMethod: "ResetIsolationRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPurposeJustificationPrompt", GoMethod: "ResetPurposeJustificationPrompt"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
 type DataCloudflareR2Bucket interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -42,6 +42,7 @@ type DataCloudflareR2Bucket interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Jurisdiction() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -230,6 +231,16 @@ func (j *jsiiProxy_DataCloudflareR2Bucket) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareR2Bucket) Jurisdiction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jurisdiction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareR2Bucket) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -331,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareR2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) DataCloudflareR2Bucket {
 	_init_.Initialize()
 
@@ -349,7 +360,7 @@ func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket_Override(d DataCloudflareR2Bucket, scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) {
 	_init_.Initialize()
 

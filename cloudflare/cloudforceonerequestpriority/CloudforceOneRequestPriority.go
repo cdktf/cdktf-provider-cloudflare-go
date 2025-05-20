@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 type CloudforceOneRequestPriority interface {
 	cdktf.TerraformResource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Completed() *string
@@ -151,21 +151,21 @@ type jsiiProxy_CloudforceOneRequestPriority struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) AccountIdentifier() *string {
+func (j *jsiiProxy_CloudforceOneRequestPriority) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority) AccountIdentifierInput() *string {
+func (j *jsiiProxy_CloudforceOneRequestPriority) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -522,7 +522,7 @@ func (j *jsiiProxy_CloudforceOneRequestPriority) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
 func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, config *CloudforceOneRequestPriorityConfig) CloudforceOneRequestPriority {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewCloudforceOneRequestPriority(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource.
 func NewCloudforceOneRequestPriority_Override(c CloudforceOneRequestPriority, scope constructs.Construct, id *string, config *CloudforceOneRequestPriorityConfig) {
 	_init_.Initialize()
 
@@ -551,13 +551,13 @@ func NewCloudforceOneRequestPriority_Override(c CloudforceOneRequestPriority, sc
 	)
 }
 
-func (j *jsiiProxy_CloudforceOneRequestPriority)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_CloudforceOneRequestPriority)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
 		val,
 	)
 }

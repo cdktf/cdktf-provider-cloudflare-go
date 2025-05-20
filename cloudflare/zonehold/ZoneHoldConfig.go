@@ -24,7 +24,7 @@ type ZoneHoldConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// If `hold_after` is provided and future-dated, the hold will be temporarily disabled, then automatically re-enabled by the system at the time specified in this RFC3339-formatted timestamp.
 	//
@@ -32,7 +32,7 @@ type ZoneHoldConfig struct {
 	// no effect on an existing, enabled hold. Providing an empty string will set its value
 	// to the current time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
 	HoldAfter *string `field:"optional" json:"holdAfter" yaml:"holdAfter"`
 	// If `true`, the zone hold will extend to block any subdomain of the given zone, as well as SSL4SaaS Custom Hostnames.
 	//
@@ -40,7 +40,7 @@ type ZoneHoldConfig struct {
 	// 'example.com' and include_subdomains=true will block 'example.com',
 	// 'staging.example.com', 'api.staging.example.com', etc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
 	IncludeSubdomains interface{} `field:"optional" json:"includeSubdomains" yaml:"includeSubdomains"`
 }
 

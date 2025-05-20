@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type DataCloudflareCloudforceOneRequest interface {
 	cdktf.TerraformDataSource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Completed() *string
@@ -33,6 +33,8 @@ type DataCloudflareCloudforceOneRequest interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filter() DataCloudflareCloudforceOneRequestFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,9 +60,9 @@ type DataCloudflareCloudforceOneRequest interface {
 	RawOverrides() interface{}
 	ReadableId() *string
 	Request() *string
-	RequestIdentifier() *string
-	SetRequestIdentifier(val *string)
-	RequestIdentifierInput() *string
+	RequestId() *string
+	SetRequestId(val *string)
+	RequestIdInput() *string
 	Status() *string
 	Summary() *string
 	// Experimental.
@@ -97,10 +99,12 @@ type DataCloudflareCloudforceOneRequest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value *DataCloudflareCloudforceOneRequestFilter)
+	ResetFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRequestIdentifier()
+	ResetRequestId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -120,21 +124,21 @@ type jsiiProxy_DataCloudflareCloudforceOneRequest struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) AccountIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) AccountIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -205,6 +209,26 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) Filter() DataCloudflareCloudforceOneRequestFilterOutputReference {
+	var returns DataCloudflareCloudforceOneRequestFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -330,21 +354,21 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) Request() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) RequestIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) RequestId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifier",
+		"requestId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) RequestIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) RequestIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifierInput",
+		"requestIdInput",
 		&returns,
 	)
 	return returns
@@ -431,7 +455,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) DataCloudflareCloudforceOneRequest {
 	_init_.Initialize()
 
@@ -449,7 +473,7 @@ func NewDataCloudflareCloudforceOneRequest(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request cloudflare_cloudforce_one_request} Data Source.
 func NewDataCloudflareCloudforceOneRequest_Override(d DataCloudflareCloudforceOneRequest, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestConfig) {
 	_init_.Initialize()
 
@@ -460,13 +484,13 @@ func NewDataCloudflareCloudforceOneRequest_Override(d DataCloudflareCloudforceOn
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
 		val,
 	)
 }
@@ -517,13 +541,13 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequest)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequest)SetRequestIdentifier(val *string) {
-	if err := j.validateSetRequestIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequest)SetRequestId(val *string) {
+	if err := j.validateSetRequestIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requestIdentifier",
+		"requestId",
 		val,
 	)
 }
@@ -813,6 +837,25 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) OverrideLogicalId(newLogi
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) PutFilter(value *DataCloudflareCloudforceOneRequestFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -821,10 +864,10 @@ func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetOverrideLogicalId() 
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetRequestIdentifier() {
+func (d *jsiiProxy_DataCloudflareCloudforceOneRequest) ResetRequestId() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetRequestIdentifier",
+		"resetRequestId",
 		nil, // no parameters
 	)
 }

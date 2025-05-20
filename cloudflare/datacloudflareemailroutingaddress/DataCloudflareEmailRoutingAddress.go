@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}.
 type DataCloudflareEmailRoutingAddress interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataCloudflareEmailRoutingAddress) Verified() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source.
 func NewDataCloudflareEmailRoutingAddress(scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingAddressConfig) DataCloudflareEmailRoutingAddress {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataCloudflareEmailRoutingAddress(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source.
 func NewDataCloudflareEmailRoutingAddress_Override(d DataCloudflareEmailRoutingAddress, scope constructs.Construct, id *string, config *DataCloudflareEmailRoutingAddressConfig) {
 	_init_.Initialize()
 

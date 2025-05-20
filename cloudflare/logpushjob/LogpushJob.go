@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpush_job cloudflare_logpush_job}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpush_job cloudflare_logpush_job}.
 type LogpushJob interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -44,6 +44,9 @@ type LogpushJob interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	ErrorMessage() *string
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -153,6 +156,7 @@ type LogpushJob interface {
 	ResetAccountId()
 	ResetDataset()
 	ResetEnabled()
+	ResetFilter()
 	ResetFrequency()
 	ResetKind()
 	ResetLogpullOptions()
@@ -319,6 +323,26 @@ func (j *jsiiProxy_LogpushJob) ErrorMessage() *string {
 	_jsii_.Get(
 		j,
 		"errorMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogpushJob) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -665,7 +689,7 @@ func (j *jsiiProxy_LogpushJob) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobConfig) LogpushJob {
 	_init_.Initialize()
 
@@ -683,7 +707,7 @@ func NewLogpushJob(scope constructs.Construct, id *string, config *LogpushJobCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/logpush_job cloudflare_logpush_job} Resource.
 func NewLogpushJob_Override(l LogpushJob, scope constructs.Construct, id *string, config *LogpushJobConfig) {
 	_init_.Initialize()
 
@@ -764,6 +788,17 @@ func (j *jsiiProxy_LogpushJob)SetEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogpushJob)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
 		val,
 	)
 }
@@ -1289,6 +1324,14 @@ func (l *jsiiProxy_LogpushJob) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogpushJob) ResetFilter() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

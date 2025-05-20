@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
 	Account() ZoneAccountOutputReference
@@ -20,6 +20,7 @@ type Zone interface {
 	ActivatedOn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CnameSuffix() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -62,6 +63,8 @@ type Zone interface {
 	OriginalRegistrar() *string
 	Owner() ZoneOwnerOutputReference
 	Paused() cdktf.IResolvable
+	Permissions() *[]*string
+	Plan() ZonePlanOutputReference
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -73,6 +76,8 @@ type Zone interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	Tenant() ZoneTenantOutputReference
+	TenantUnit() ZoneTenantUnitOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -188,6 +193,16 @@ func (j *jsiiProxy_Zone) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) CnameSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cnameSuffix",
 		&returns,
 	)
 	return returns
@@ -413,6 +428,26 @@ func (j *jsiiProxy_Zone) Paused() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_Zone) Permissions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permissions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) Plan() ZonePlanOutputReference {
+	var returns ZonePlanOutputReference
+	_jsii_.Get(
+		j,
+		"plan",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Zone) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -448,6 +483,26 @@ func (j *jsiiProxy_Zone) Status() *string {
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) Tenant() ZoneTenantOutputReference {
+	var returns ZoneTenantOutputReference
+	_jsii_.Get(
+		j,
+		"tenant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) TenantUnit() ZoneTenantUnitOutputReference {
+	var returns ZoneTenantUnitOutputReference
+	_jsii_.Get(
+		j,
+		"tenantUnit",
 		&returns,
 	)
 	return returns
@@ -534,7 +589,7 @@ func (j *jsiiProxy_Zone) VerificationKey() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -552,7 +607,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 

@@ -71,7 +71,15 @@ func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformElementParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAfterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetBeforeParameters(val *string) error {
 	return nil
 }
 
@@ -83,7 +91,23 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetLifecyc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetPerPageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetRequestIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetSortByParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetSortOrderParameters(val *string) error {
 	return nil
 }
 

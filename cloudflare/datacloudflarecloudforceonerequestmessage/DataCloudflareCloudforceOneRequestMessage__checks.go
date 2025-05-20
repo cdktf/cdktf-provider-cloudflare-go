@@ -154,7 +154,23 @@ func validateDataCloudflareCloudforceOneRequestMessage_IsTerraformElementParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAccountIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetAfterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetBeforeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +243,39 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetLifecyc
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetRequestIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetPageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetPerPageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetRequestIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetSortByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestMessage) validateSetSortOrderParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

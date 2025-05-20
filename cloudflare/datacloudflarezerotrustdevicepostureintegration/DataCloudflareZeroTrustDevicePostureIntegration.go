@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}.
 type DataCloudflareZeroTrustDevicePostureIntegration interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureIntegration) Type() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureIntegration(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureIntegrationConfig) DataCloudflareZeroTrustDevicePostureIntegration {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataCloudflareZeroTrustDevicePostureIntegration(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Data Source.
 func NewDataCloudflareZeroTrustDevicePostureIntegration_Override(d DataCloudflareZeroTrustDevicePostureIntegration, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustDevicePostureIntegrationConfig) {
 	_init_.Initialize()
 

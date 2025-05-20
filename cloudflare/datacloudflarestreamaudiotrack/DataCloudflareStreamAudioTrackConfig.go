@@ -24,11 +24,11 @@ type DataCloudflareStreamAudioTrackConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/stream_audio_track#account_id DataCloudflareStreamAudioTrack#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream_audio_track#account_id DataCloudflareStreamAudioTrack#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a media item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/stream_audio_track#identifier DataCloudflareStreamAudioTrack#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream_audio_track#identifier DataCloudflareStreamAudioTrack#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 }
 

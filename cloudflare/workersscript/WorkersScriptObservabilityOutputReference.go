@@ -38,6 +38,8 @@ type WorkersScriptObservabilityOutputReference interface {
 	HeadSamplingRateInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Logs() WorkersScriptObservabilityLogsOutputReference
+	LogsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +72,9 @@ type WorkersScriptObservabilityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLogs(value *WorkersScriptObservabilityLogs)
 	ResetHeadSamplingRate()
+	ResetLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +175,26 @@ func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) Logs() WorkersScriptObservabilityLogsOutputReference {
+	var returns WorkersScriptObservabilityLogsOutputReference
+	_jsii_.Get(
+		j,
+		"logs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptObservabilityOutputReference) LogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logsInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +511,29 @@ func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) InterpolationForAt
 	return returns
 }
 
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) PutLogs(value *WorkersScriptObservabilityLogs) {
+	if err := w.validatePutLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putLogs",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetHeadSamplingRate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeadSamplingRate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptObservabilityOutputReference) ResetLogs() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLogs",
 		nil, // no parameters
 	)
 }

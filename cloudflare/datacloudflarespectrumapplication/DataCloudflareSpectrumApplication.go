@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 type DataCloudflareSpectrumApplication interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DataCloudflareSpectrumApplication) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) DataCloudflareSpectrumApplication {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDataCloudflareSpectrumApplication(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source.
 func NewDataCloudflareSpectrumApplication_Override(d DataCloudflareSpectrumApplication, scope constructs.Construct, id *string, config *DataCloudflareSpectrumApplicationConfig) {
 	_init_.Initialize()
 

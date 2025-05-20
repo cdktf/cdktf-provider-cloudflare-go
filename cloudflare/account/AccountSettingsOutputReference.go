@@ -31,9 +31,6 @@ type AccountSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DefaultNameservers() *string
-	SetDefaultNameservers(val *string)
-	DefaultNameserversInput() *string
 	EnforceTwofactor() interface{}
 	SetEnforceTwofactor(val interface{})
 	EnforceTwofactorInput() interface{}
@@ -49,9 +46,6 @@ type AccountSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseAccountCustomNsByDefault() interface{}
-	SetUseAccountCustomNsByDefault(val interface{})
-	UseAccountCustomNsByDefaultInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -77,9 +71,7 @@ type AccountSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAbuseContactEmail()
-	ResetDefaultNameservers()
 	ResetEnforceTwofactor()
-	ResetUseAccountCustomNsByDefault()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,26 +137,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference) DefaultNameservers() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultNameservers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingsOutputReference) DefaultNameserversInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"defaultNameserversInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccountSettingsOutputReference) EnforceTwofactor() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -220,26 +192,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference) TerraformResource() cdktf.IIn
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingsOutputReference) UseAccountCustomNsByDefault() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"useAccountCustomNsByDefault",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSettingsOutputReference) UseAccountCustomNsByDefaultInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"useAccountCustomNsByDefaultInput",
 		&returns,
 	)
 	return returns
@@ -306,17 +258,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_AccountSettingsOutputReference)SetDefaultNameservers(val *string) {
-	if err := j.validateSetDefaultNameserversParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultNameservers",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AccountSettingsOutputReference)SetEnforceTwofactor(val interface{}) {
 	if err := j.validateSetEnforceTwofactorParameters(val); err != nil {
 		panic(err)
@@ -357,17 +298,6 @@ func (j *jsiiProxy_AccountSettingsOutputReference)SetTerraformResource(val cdktf
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountSettingsOutputReference)SetUseAccountCustomNsByDefault(val interface{}) {
-	if err := j.validateSetUseAccountCustomNsByDefaultParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"useAccountCustomNsByDefault",
 		val,
 	)
 }
@@ -566,26 +496,10 @@ func (a *jsiiProxy_AccountSettingsOutputReference) ResetAbuseContactEmail() {
 	)
 }
 
-func (a *jsiiProxy_AccountSettingsOutputReference) ResetDefaultNameservers() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetDefaultNameservers",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AccountSettingsOutputReference) ResetEnforceTwofactor() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnforceTwofactor",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSettingsOutputReference) ResetUseAccountCustomNsByDefault() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUseAccountCustomNsByDefault",
 		nil, // no parameters
 	)
 }

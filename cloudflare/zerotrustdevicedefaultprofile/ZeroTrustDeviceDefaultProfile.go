@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile}.
 type ZeroTrustDeviceDefaultProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -97,6 +97,9 @@ type ZeroTrustDeviceDefaultProfile interface {
 	RegisterInterfaceIpWithDns() interface{}
 	SetRegisterInterfaceIpWithDns(val interface{})
 	RegisterInterfaceIpWithDnsInput() interface{}
+	SccmVpnBoundarySupport() interface{}
+	SetSccmVpnBoundarySupport(val interface{})
+	SccmVpnBoundarySupportInput() interface{}
 	ServiceModeV2() ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference
 	ServiceModeV2Input() interface{}
 	SupportUrl() *string
@@ -175,6 +178,7 @@ type ZeroTrustDeviceDefaultProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegisterInterfaceIpWithDns()
+	ResetSccmVpnBoundarySupport()
 	ResetServiceModeV2()
 	ResetSupportUrl()
 	ResetSwitchLocked()
@@ -637,6 +641,26 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) RegisterInterfaceIpWithDnsInpu
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sccmVpnBoundarySupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) SccmVpnBoundarySupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sccmVpnBoundarySupportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) ServiceModeV2() ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference {
 	var returns ZeroTrustDeviceDefaultProfileServiceModeV2OutputReference
 	_jsii_.Get(
@@ -748,7 +772,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile) TunnelProtocolInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) ZeroTrustDeviceDefaultProfile {
 	_init_.Initialize()
 
@@ -766,7 +790,7 @@ func NewZeroTrustDeviceDefaultProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_device_default_profile cloudflare_zero_trust_device_default_profile} Resource.
 func NewZeroTrustDeviceDefaultProfile_Override(z ZeroTrustDeviceDefaultProfile, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileConfig) {
 	_init_.Initialize()
 
@@ -962,6 +986,17 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetRegisterInterfaceIpWithDns(v
 	_jsii_.Set(
 		j,
 		"registerInterfaceIpWithDns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDeviceDefaultProfile)SetSccmVpnBoundarySupport(val interface{}) {
+	if err := j.validateSetSccmVpnBoundarySupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sccmVpnBoundarySupport",
 		val,
 	)
 }
@@ -1485,6 +1520,14 @@ func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetRegisterInterfaceIpWithDn
 	_jsii_.InvokeVoid(
 		z,
 		"resetRegisterInterfaceIpWithDns",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDeviceDefaultProfile) ResetSccmVpnBoundarySupport() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSccmVpnBoundarySupport",
 		nil, // no parameters
 	)
 }

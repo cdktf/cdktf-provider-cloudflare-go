@@ -23,6 +23,7 @@ type WorkersCronTriggerSchedulesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -35,6 +36,7 @@ type WorkersCronTriggerSchedulesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ModifiedOn() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -102,6 +104,16 @@ func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) ComplexObjectIsFr
 	return returns
 }
 
+func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -147,6 +159,16 @@ func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) InternalValue() i
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersCronTriggerSchedulesOutputReference) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns

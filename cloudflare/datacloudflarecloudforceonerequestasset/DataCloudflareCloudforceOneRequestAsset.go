@@ -12,15 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type DataCloudflareCloudforceOneRequestAsset interface {
 	cdktf.TerraformDataSource
-	AccountIdentifier() *string
-	SetAccountIdentifier(val *string)
-	AccountIdentifierInput() *string
-	AssetIdentifer() *string
-	SetAssetIdentifer(val *string)
-	AssetIdentiferInput() *string
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
+	AssetId() *string
+	SetAssetId(val *string)
+	AssetIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -58,9 +58,9 @@ type DataCloudflareCloudforceOneRequestAsset interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	RequestIdentifier() *string
-	SetRequestIdentifier(val *string)
-	RequestIdentifierInput() *string
+	RequestId() *string
+	SetRequestId(val *string)
+	RequestIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,41 +114,41 @@ type jsiiProxy_DataCloudflareCloudforceOneRequestAsset struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AccountIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifier",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AccountIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AccountIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"accountIdentifierInput",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AssetIdentifer() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AssetId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"assetIdentifer",
+		"assetId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AssetIdentiferInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) AssetIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"assetIdentiferInput",
+		"assetIdInput",
 		&returns,
 	)
 	return returns
@@ -314,21 +314,21 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) RawOverrides() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) RequestIdentifier() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) RequestId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifier",
+		"requestId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) RequestIdentifierInput() *string {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) RequestIdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"requestIdentifierInput",
+		"requestIdInput",
 		&returns,
 	)
 	return returns
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) DataCloudflareCloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset_Override(d DataCloudflareCloudforceOneRequestAsset, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 
@@ -394,24 +394,24 @@ func NewDataCloudflareCloudforceOneRequestAsset_Override(d DataCloudflareCloudfo
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetAccountIdentifier(val *string) {
-	if err := j.validateSetAccountIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetAccountId(val *string) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"accountIdentifier",
+		"accountId",
 		val,
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetAssetIdentifer(val *string) {
-	if err := j.validateSetAssetIdentiferParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetAssetId(val *string) {
+	if err := j.validateSetAssetIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"assetIdentifer",
+		"assetId",
 		val,
 	)
 }
@@ -462,13 +462,13 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetRequestIdentifier(val *string) {
-	if err := j.validateSetRequestIdentifierParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset)SetRequestId(val *string) {
+	if err := j.validateSetRequestIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"requestIdentifier",
+		"requestId",
 		val,
 	)
 }

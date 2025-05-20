@@ -53,6 +53,7 @@ type DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference interface 
 	PolicyId() *string
 	Precedence() *float64
 	RegisterInterfaceIpWithDns() cdktf.IResolvable
+	SccmVpnBoundarySupport() cdktf.IResolvable
 	ServiceModeV2() DataCloudflareZeroTrustDeviceCustomProfilesResultServiceModeV2OutputReference
 	SupportUrl() *string
 	SwitchLocked() cdktf.IResolvable
@@ -360,6 +361,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputRefere
 	_jsii_.Get(
 		j,
 		"registerInterfaceIpWithDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDeviceCustomProfilesResultOutputReference) SccmVpnBoundarySupport() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sccmVpnBoundarySupport",
 		&returns,
 	)
 	return returns

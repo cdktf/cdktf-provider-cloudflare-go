@@ -99,7 +99,7 @@ func (j *jsiiProxy_ZoneSetting) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSetting) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_ZoneSetting) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
 

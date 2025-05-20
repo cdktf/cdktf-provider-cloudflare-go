@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec cloudflare_zone_dnssec}.
 type ZoneDnssec interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -41,6 +41,9 @@ type ZoneDnssec interface {
 	DnssecPresigned() interface{}
 	SetDnssecPresigned(val interface{})
 	DnssecPresignedInput() interface{}
+	DnssecUseNsec3() interface{}
+	SetDnssecUseNsec3(val interface{})
+	DnssecUseNsec3Input() interface{}
 	Ds() *string
 	Flags() *float64
 	// Experimental.
@@ -129,6 +132,7 @@ type ZoneDnssec interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDnssecMultiSigner()
 	ResetDnssecPresigned()
+	ResetDnssecUseNsec3()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -276,6 +280,26 @@ func (j *jsiiProxy_ZoneDnssec) DnssecPresignedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"dnssecPresignedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnssec) DnssecUseNsec3() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecUseNsec3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneDnssec) DnssecUseNsec3Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnssecUseNsec3Input",
 		&returns,
 	)
 	return returns
@@ -502,7 +526,7 @@ func (j *jsiiProxy_ZoneDnssec) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecConfig) ZoneDnssec {
 	_init_.Initialize()
 
@@ -520,7 +544,7 @@ func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_dnssec cloudflare_zone_dnssec} Resource.
 func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string, config *ZoneDnssecConfig) {
 	_init_.Initialize()
 
@@ -579,6 +603,17 @@ func (j *jsiiProxy_ZoneDnssec)SetDnssecPresigned(val interface{}) {
 	_jsii_.Set(
 		j,
 		"dnssecPresigned",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneDnssec)SetDnssecUseNsec3(val interface{}) {
+	if err := j.validateSetDnssecUseNsec3Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnssecUseNsec3",
 		val,
 	)
 }
@@ -1008,6 +1043,14 @@ func (z *jsiiProxy_ZoneDnssec) ResetDnssecPresigned() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetDnssecPresigned",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneDnssec) ResetDnssecUseNsec3() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetDnssecUseNsec3",
 		nil, // no parameters
 	)
 }

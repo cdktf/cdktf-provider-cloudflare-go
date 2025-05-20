@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) validateSetLifecycle
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) validateSetQueueIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataCloudflareR2BucketEventNotificationParameters(scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

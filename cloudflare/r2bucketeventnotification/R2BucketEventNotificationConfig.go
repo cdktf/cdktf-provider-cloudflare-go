@@ -24,23 +24,23 @@ type R2BucketEventNotificationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// Jurisdiction of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
 	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
 	// Queue ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
 	QueueId *string `field:"optional" json:"queueId" yaml:"queueId"`
 	// Array of rules to drive notifications.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.4.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 
