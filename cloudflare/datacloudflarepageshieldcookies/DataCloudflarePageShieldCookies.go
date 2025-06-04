@@ -5,10 +5,10 @@ package datacloudflarepageshieldcookies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v12/datacloudflarepageshieldcookies/internal"
+	"github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/datacloudflarepageshieldcookies/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
