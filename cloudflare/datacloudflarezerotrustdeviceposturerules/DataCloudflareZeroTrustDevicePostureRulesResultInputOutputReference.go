@@ -68,6 +68,7 @@ type DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference interfa
 	SensorConfig() *string
 	Sha256() *string
 	State() *string
+	SubjectAlternativeNames() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -524,6 +525,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputRef
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDevicePostureRulesResultInputOutputReference) SubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subjectAlternativeNames",
 		&returns,
 	)
 	return returns

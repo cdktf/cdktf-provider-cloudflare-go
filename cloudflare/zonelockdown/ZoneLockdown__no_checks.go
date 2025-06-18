@@ -103,7 +103,19 @@ func (j *jsiiProxy_ZoneLockdown) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ZoneLockdown) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneLockdown) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneLockdown) validateSetPausedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneLockdown) validateSetPriorityParameters(val *float64) error {
 	return nil
 }
 

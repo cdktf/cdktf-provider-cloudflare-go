@@ -412,6 +412,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStoreId", GoMethod: "ResetStoreId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetText", GoMethod: "ResetText"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUsages", GoMethod: "ResetUsages"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkflowName", GoMethod: "ResetWorkflowName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptName", GoGetter: "ScriptName"},
 			_jsii_.MemberProperty{JsiiProperty: "scriptNameInput", GoGetter: "ScriptNameInput"},
@@ -430,6 +431,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "usages", GoGetter: "Usages"},
 			_jsii_.MemberProperty{JsiiProperty: "usagesInput", GoGetter: "UsagesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workflowName", GoGetter: "WorkflowName"},
+			_jsii_.MemberProperty{JsiiProperty: "workflowNameInput", GoGetter: "WorkflowNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkersScriptBindingsOutputReference{}

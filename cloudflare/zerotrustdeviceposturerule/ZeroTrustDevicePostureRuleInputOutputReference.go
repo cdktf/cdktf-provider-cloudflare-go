@@ -139,6 +139,9 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	State() *string
 	SetState(val *string)
 	StateInput() *string
+	SubjectAlternativeNames() *[]*string
+	SetSubjectAlternativeNames(val *[]*string)
+	SubjectAlternativeNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -220,6 +223,7 @@ type ZeroTrustDevicePostureRuleInputOutputReference interface {
 	ResetSensorConfig()
 	ResetSha256()
 	ResetState()
+	ResetSubjectAlternativeNames()
 	ResetThumbprint()
 	ResetTotalScore()
 	ResetVersion()
@@ -1009,6 +1013,26 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) StateInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) SubjectAlternativeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subjectAlternativeNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1551,6 +1575,17 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetState(val *
 	_jsii_.Set(
 		j,
 		"state",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference)SetSubjectAlternativeNames(val *[]*string) {
+	if err := j.validateSetSubjectAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subjectAlternativeNames",
 		val,
 	)
 }
@@ -2102,6 +2137,14 @@ func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetState() 
 	_jsii_.InvokeVoid(
 		z,
 		"resetState",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) ResetSubjectAlternativeNames() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetSubjectAlternativeNames",
 		nil, // no parameters
 	)
 }

@@ -42,9 +42,9 @@ type PageRuleActionsOutputReference interface {
 	CacheOnCookie() *string
 	SetCacheOnCookie(val *string)
 	CacheOnCookieInput() *string
-	CacheTtlByStatus() *map[string]interface{}
-	SetCacheTtlByStatus(val *map[string]interface{})
-	CacheTtlByStatusInput() *map[string]interface{}
+	CacheTtlByStatus() *map[string]*string
+	SetCacheTtlByStatus(val *map[string]*string)
+	CacheTtlByStatusInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -415,8 +415,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheOnCookieInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"cacheTtlByStatus",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatus() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatusInput() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PageRuleActionsOutputReference) CacheTtlByStatusInput() *map[string]*string {
+	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"cacheTtlByStatusInput",
@@ -1092,7 +1092,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheOnCookie(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheTtlByStatus(val *map[string]interface{}) {
+func (j *jsiiProxy_PageRuleActionsOutputReference)SetCacheTtlByStatus(val *map[string]*string) {
 	if err := j.validateSetCacheTtlByStatusParameters(val); err != nil {
 		panic(err)
 	}

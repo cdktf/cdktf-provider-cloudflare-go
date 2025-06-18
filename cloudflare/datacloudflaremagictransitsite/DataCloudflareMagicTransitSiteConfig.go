@@ -24,13 +24,13 @@ type DataCloudflareMagicTransitSiteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/magic_transit_site#account_id DataCloudflareMagicTransitSite#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/magic_transit_site#account_id DataCloudflareMagicTransitSite#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/magic_transit_site#filter DataCloudflareMagicTransitSite#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/magic_transit_site#filter DataCloudflareMagicTransitSite#filter}.
 	Filter *DataCloudflareMagicTransitSiteFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/magic_transit_site#site_id DataCloudflareMagicTransitSite#site_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/magic_transit_site#site_id DataCloudflareMagicTransitSite#site_id}
 	SiteId *string `field:"optional" json:"siteId" yaml:"siteId"`
 }
 

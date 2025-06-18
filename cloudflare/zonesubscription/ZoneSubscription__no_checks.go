@@ -107,15 +107,15 @@ func (j *jsiiProxy_ZoneSubscription) validateSetFrequencyParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSubscription) validateSetIdentifierParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ZoneSubscription) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSubscription) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 type CloudforceOneRequest interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -528,7 +528,7 @@ func (j *jsiiProxy_CloudforceOneRequest) Updated() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) CloudforceOneRequest {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewCloudforceOneRequest(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource.
 func NewCloudforceOneRequest_Override(c CloudforceOneRequest, scope constructs.Construct, id *string, config *CloudforceOneRequestConfig) {
 	_init_.Initialize()
 

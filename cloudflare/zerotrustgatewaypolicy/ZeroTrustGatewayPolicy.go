@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -102,6 +102,7 @@ type ZeroTrustGatewayPolicy interface {
 	TrafficInput() *string
 	UpdatedAt() *string
 	Version() *float64
+	WarningStatus() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -649,8 +650,18 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) Version() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warningStatus",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -668,7 +679,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 

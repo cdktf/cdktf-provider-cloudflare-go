@@ -83,10 +83,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutEntriesParameters(value
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutProfilesParameters(value interface{}) error {
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) validatePutSharedEntriesParameters(value interface{}) error {
 	return nil
 }

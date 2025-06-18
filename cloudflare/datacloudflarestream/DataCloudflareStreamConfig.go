@@ -24,11 +24,11 @@ type DataCloudflareStreamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a media item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 }
 

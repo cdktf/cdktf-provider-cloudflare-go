@@ -24,23 +24,23 @@ type DataCloudflareAccountMembersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Direction to order results. Available values: "asc", "desc".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
 	Direction *string `field:"optional" json:"direction" yaml:"direction"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Field to order results by. Available values: "user.first_name", "user.last_name", "user.email", "status".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
 	Order *string `field:"optional" json:"order" yaml:"order"`
 	// A member's status in the account. Available values: "accepted", "pending", "rejected".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

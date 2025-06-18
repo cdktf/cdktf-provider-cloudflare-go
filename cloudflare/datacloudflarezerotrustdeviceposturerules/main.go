@@ -168,6 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sensorConfig", GoGetter: "SensorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "sha256", GoGetter: "Sha256"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectAlternativeNames", GoGetter: "SubjectAlternativeNames"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "thumbprint", GoGetter: "Thumbprint"},

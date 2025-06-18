@@ -55,6 +55,10 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutA
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutAppControlSettingsParameters(value *ZeroTrustGatewaySettingsSettingsAppControlSettings) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutBlockPageParameters(value *ZeroTrustGatewaySettingsSettingsBlockPage) error {
 	return nil
 }

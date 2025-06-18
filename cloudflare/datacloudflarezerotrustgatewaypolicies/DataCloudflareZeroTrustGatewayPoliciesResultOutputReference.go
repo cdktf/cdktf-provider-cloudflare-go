@@ -57,6 +57,7 @@ type DataCloudflareZeroTrustGatewayPoliciesResultOutputReference interface {
 	Traffic() *string
 	UpdatedAt() *string
 	Version() *float64
+	WarningStatus() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -331,6 +332,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) 
 	_jsii_.Get(
 		j,
 		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultOutputReference) WarningStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warningStatus",
 		&returns,
 	)
 	return returns

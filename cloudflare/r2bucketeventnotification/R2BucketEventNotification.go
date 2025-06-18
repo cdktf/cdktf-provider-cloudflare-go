@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type R2BucketEventNotification interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -65,7 +65,7 @@ type R2BucketEventNotification interface {
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
-	Queues() R2BucketEventNotificationQueuesList
+	QueueName() *string
 	// Experimental.
 	RawOverrides() interface{}
 	Rules() R2BucketEventNotificationRulesList
@@ -124,7 +124,6 @@ type R2BucketEventNotification interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetQueueId()
 	ResetRules()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -344,11 +343,11 @@ func (j *jsiiProxy_R2BucketEventNotification) QueueIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_R2BucketEventNotification) Queues() R2BucketEventNotificationQueuesList {
-	var returns R2BucketEventNotificationQueuesList
+func (j *jsiiProxy_R2BucketEventNotification) QueueName() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"queues",
+		"queueName",
 		&returns,
 	)
 	return returns
@@ -415,7 +414,7 @@ func (j *jsiiProxy_R2BucketEventNotification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification(scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) R2BucketEventNotification {
 	_init_.Initialize()
 
@@ -433,7 +432,7 @@ func NewR2BucketEventNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification_Override(r R2BucketEventNotification, scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) {
 	_init_.Initialize()
 
@@ -932,14 +931,6 @@ func (r *jsiiProxy_R2BucketEventNotification) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_R2BucketEventNotification) ResetQueueId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetQueueId",
 		nil, // no parameters
 	)
 }

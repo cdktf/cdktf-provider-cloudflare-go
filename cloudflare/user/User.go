@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/user cloudflare_user}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user cloudflare_user}.
 type User interface {
 	cdktf.TerraformResource
+	Betas() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,6 +46,10 @@ type User interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasBusinessZones() cdktf.IResolvable
+	HasEnterpriseZones() cdktf.IResolvable
+	HasProZones() cdktf.IResolvable
+	Id() *string
 	LastName() *string
 	SetLastName(val *string)
 	LastNameInput() *string
@@ -54,6 +59,7 @@ type User interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Organizations() UserOrganizationsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -64,6 +70,7 @@ type User interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Suspended() cdktf.IResolvable
 	Telephone() *string
 	SetTelephone(val *string)
 	TelephoneInput() *string
@@ -73,6 +80,8 @@ type User interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TwoFactorAuthenticationEnabled() cdktf.IResolvable
+	TwoFactorAuthenticationLocked() cdktf.IResolvable
 	Zipcode() *string
 	SetZipcode(val *string)
 	ZipcodeInput() *string
@@ -143,6 +152,16 @@ type User interface {
 // The jsii proxy struct for User
 type jsiiProxy_User struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_User) Betas() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"betas",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_User) CdktfStack() cdktf.TerraformStack {
@@ -265,6 +284,46 @@ func (j *jsiiProxy_User) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_User) HasBusinessZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasBusinessZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) HasEnterpriseZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasEnterpriseZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) HasProZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasProZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) LastName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -305,6 +364,16 @@ func (j *jsiiProxy_User) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_User) Organizations() UserOrganizationsList {
+	var returns UserOrganizationsList
+	_jsii_.Get(
+		j,
+		"organizations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -330,6 +399,16 @@ func (j *jsiiProxy_User) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) Suspended() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"suspended",
 		&returns,
 	)
 	return returns
@@ -385,6 +464,26 @@ func (j *jsiiProxy_User) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_User) TwoFactorAuthenticationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"twoFactorAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_User) TwoFactorAuthenticationLocked() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"twoFactorAuthenticationLocked",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_User) Zipcode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -406,7 +505,7 @@ func (j *jsiiProxy_User) ZipcodeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/user cloudflare_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user cloudflare_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
 
@@ -424,7 +523,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/user cloudflare_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user cloudflare_user} Resource.
 func NewUser_Override(u User, scope constructs.Construct, id *string, config *UserConfig) {
 	_init_.Initialize()
 

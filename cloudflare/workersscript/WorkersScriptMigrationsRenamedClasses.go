@@ -5,9 +5,9 @@ package workersscript
 
 
 type WorkersScriptMigrationsRenamedClasses struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#from WorkersScript#from}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_script#from WorkersScript#from}.
 	From *string `field:"optional" json:"from" yaml:"from"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/workers_script#to WorkersScript#to}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_script#to WorkersScript#to}.
 	To *string `field:"optional" json:"to" yaml:"to"`
 }
 

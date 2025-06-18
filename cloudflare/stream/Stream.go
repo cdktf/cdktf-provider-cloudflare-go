@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/stream cloudflare_stream}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/stream cloudflare_stream}.
 type Stream interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -690,7 +690,7 @@ func (j *jsiiProxy_Stream) Watermark() StreamWatermarkOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Stream {
 	_init_.Initialize()
 
@@ -708,7 +708,7 @@ func NewStream(scope constructs.Construct, id *string, config *StreamConfig) Str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/stream cloudflare_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/stream cloudflare_stream} Resource.
 func NewStream_Override(s Stream, scope constructs.Construct, id *string, config *StreamConfig) {
 	_init_.Initialize()
 

@@ -72,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedMatchCount", GoMethod: "ResetAllowedMatchCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidenceThreshold", GoMethod: "ResetConfidenceThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContextAwareness", GoMethod: "ResetContextAwareness"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEntries", GoMethod: "ResetEntries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOcrEnabled", GoMethod: "ResetOcrEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

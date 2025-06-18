@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}.
 type ZeroTrustDlpCustomProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -73,8 +73,6 @@ type ZeroTrustDlpCustomProfile interface {
 	SetOcrEnabled(val interface{})
 	OcrEnabledInput() interface{}
 	OpenAccess() cdktf.IResolvable
-	Profiles() ZeroTrustDlpCustomProfileProfilesList
-	ProfilesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -140,20 +138,16 @@ type ZeroTrustDlpCustomProfile interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContextAwareness(value *ZeroTrustDlpCustomProfileContextAwareness)
 	PutEntries(value interface{})
-	PutProfiles(value interface{})
 	PutSharedEntries(value interface{})
 	ResetAiContextEnabled()
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
 	ResetContextAwareness()
 	ResetDescription()
-	ResetEntries()
-	ResetName()
 	ResetOcrEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProfiles()
 	ResetSharedEntries()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -483,26 +477,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) OpenAccess() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Profiles() ZeroTrustDlpCustomProfileProfilesList {
-	var returns ZeroTrustDlpCustomProfileProfilesList
-	_jsii_.Get(
-		j,
-		"profiles",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomProfile) ProfilesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"profilesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDlpCustomProfile) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -604,7 +578,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) ZeroTrustDlpCustomProfile {
 	_init_.Initialize()
 
@@ -622,7 +596,7 @@ func NewZeroTrustDlpCustomProfile(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource.
 func NewZeroTrustDlpCustomProfile_Override(z ZeroTrustDlpCustomProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomProfileConfig) {
 	_init_.Initialize()
 
@@ -1153,17 +1127,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutEntries(value interface{}) {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutProfiles(value interface{}) {
-	if err := z.validatePutProfilesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		z,
-		"putProfiles",
-		[]interface{}{value},
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) PutSharedEntries(value interface{}) {
 	if err := z.validatePutSharedEntriesParameters(value); err != nil {
 		panic(err)
@@ -1215,22 +1178,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetDescription() {
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetEntries() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetEntries",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetOcrEnabled() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1243,14 +1190,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomProfile) ResetProfiles() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetProfiles",
 		nil, // no parameters
 	)
 }

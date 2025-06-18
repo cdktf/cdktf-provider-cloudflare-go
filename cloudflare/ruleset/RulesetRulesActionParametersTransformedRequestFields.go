@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesActionParametersTransformedRequestFields struct {
 	// The name of the field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/ruleset#name Ruleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/ruleset#name Ruleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -7,7 +7,7 @@ package ruleset
 type RulesetRulesLogging struct {
 	// Whether to generate a log when the rule matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/ruleset#enabled Ruleset#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/ruleset#enabled Ruleset#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

@@ -24,13 +24,13 @@ type DataCloudflareFilterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/filter#zone_id DataCloudflareFilter#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/filter#zone_id DataCloudflareFilter#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/filter#filter DataCloudflareFilter#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/filter#filter DataCloudflareFilter#filter}.
 	Filter *DataCloudflareFilterFilter `field:"optional" json:"filter" yaml:"filter"`
 	// The unique identifier of the filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/filter#filter_id DataCloudflareFilter#filter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/filter#filter_id DataCloudflareFilter#filter_id}
 	FilterId *string `field:"optional" json:"filterId" yaml:"filterId"`
 }
 

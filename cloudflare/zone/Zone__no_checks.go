@@ -111,6 +111,10 @@ func (j *jsiiProxy_Zone) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Zone) validateSetPausedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Zone) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

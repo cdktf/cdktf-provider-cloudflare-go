@@ -119,10 +119,6 @@ func (j *jsiiProxy_AccountSubscription) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscription) validateSetSubscriptionIdentifierParameters(val *string) error {
-	return nil
-}
-
 func validateNewAccountSubscriptionParameters(scope constructs.Construct, id *string, config *AccountSubscriptionConfig) error {
 	return nil
 }

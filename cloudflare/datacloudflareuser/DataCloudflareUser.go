@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user cloudflare_user}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user cloudflare_user}.
 type DataCloudflareUser interface {
 	cdktf.TerraformDataSource
+	Betas() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,10 +24,12 @@ type DataCloudflareUser interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Country() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FirstName() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,24 +38,35 @@ type DataCloudflareUser interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasBusinessZones() cdktf.IResolvable
+	HasEnterpriseZones() cdktf.IResolvable
+	HasProZones() cdktf.IResolvable
+	Id() *string
+	LastName() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Organizations() DataCloudflareUserOrganizationsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Suspended() cdktf.IResolvable
+	Telephone() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TwoFactorAuthenticationEnabled() cdktf.IResolvable
+	TwoFactorAuthenticationLocked() cdktf.IResolvable
+	Zipcode() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,6 +114,16 @@ type jsiiProxy_DataCloudflareUser struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataCloudflareUser) Betas() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"betas",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareUser) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -130,11 +154,31 @@ func (j *jsiiProxy_DataCloudflareUser) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareUser) Country() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"country",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareUser) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) FirstName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firstName",
 		&returns,
 	)
 	return returns
@@ -170,6 +214,56 @@ func (j *jsiiProxy_DataCloudflareUser) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareUser) HasBusinessZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasBusinessZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) HasEnterpriseZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasEnterpriseZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) HasProZones() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasProZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) LastName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -190,6 +284,16 @@ func (j *jsiiProxy_DataCloudflareUser) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareUser) Organizations() DataCloudflareUserOrganizationsList {
+	var returns DataCloudflareUserOrganizationsList
+	_jsii_.Get(
+		j,
+		"organizations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareUser) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -205,6 +309,26 @@ func (j *jsiiProxy_DataCloudflareUser) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) Suspended() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"suspended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) Telephone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telephone",
 		&returns,
 	)
 	return returns
@@ -240,8 +364,38 @@ func (j *jsiiProxy_DataCloudflareUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareUser) TwoFactorAuthenticationEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"twoFactorAuthenticationEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user cloudflare_user} Data Source.
+func (j *jsiiProxy_DataCloudflareUser) TwoFactorAuthenticationLocked() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"twoFactorAuthenticationLocked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUser) Zipcode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipcode",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user cloudflare_user} Data Source.
 func NewDataCloudflareUser(scope constructs.Construct, id *string, config *DataCloudflareUserConfig) DataCloudflareUser {
 	_init_.Initialize()
 
@@ -259,7 +413,7 @@ func NewDataCloudflareUser(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/user cloudflare_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user cloudflare_user} Data Source.
 func NewDataCloudflareUser_Override(d DataCloudflareUser, scope constructs.Construct, id *string, config *DataCloudflareUserConfig) {
 	_init_.Initialize()
 

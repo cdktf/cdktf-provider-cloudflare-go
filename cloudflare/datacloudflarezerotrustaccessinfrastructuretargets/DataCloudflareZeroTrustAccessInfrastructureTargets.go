@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets}.
 type DataCloudflareZeroTrustAccessInfrastructureTargets interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -731,7 +731,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessInfrastructureTargets) VirtualNe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) DataCloudflareZeroTrustAccessInfrastructureTargets {
 	_init_.Initialize()
 
@@ -749,7 +749,7 @@ func NewDataCloudflareZeroTrustAccessInfrastructureTargets(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_infrastructure_targets cloudflare_zero_trust_access_infrastructure_targets} Data Source.
 func NewDataCloudflareZeroTrustAccessInfrastructureTargets_Override(d DataCloudflareZeroTrustAccessInfrastructureTargets, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessInfrastructureTargetsConfig) {
 	_init_.Initialize()
 

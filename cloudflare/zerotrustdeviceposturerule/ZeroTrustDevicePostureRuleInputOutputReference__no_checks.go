@@ -207,6 +207,10 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetSt
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetSubjectAlternativeNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDevicePostureRuleInputOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

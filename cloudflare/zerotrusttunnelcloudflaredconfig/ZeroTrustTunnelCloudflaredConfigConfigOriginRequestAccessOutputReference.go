@@ -74,7 +74,6 @@ type ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference in
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetRequired()
-	ResetTeamName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -526,14 +525,6 @@ func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutp
 	_jsii_.InvokeVoid(
 		z,
 		"resetRequired",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference) ResetTeamName() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetTeamName",
 		nil, // no parameters
 	)
 }

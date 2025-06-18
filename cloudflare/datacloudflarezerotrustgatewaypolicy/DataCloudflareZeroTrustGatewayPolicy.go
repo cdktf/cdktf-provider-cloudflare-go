@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type DataCloudflareZeroTrustGatewayPolicy interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -76,6 +76,7 @@ type DataCloudflareZeroTrustGatewayPolicy interface {
 	Traffic() *string
 	UpdatedAt() *string
 	Version() *float64
+	WarningStatus() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -474,8 +475,18 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicy) Version() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPolicy) WarningStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"warningStatus",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source.
 func NewDataCloudflareZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayPolicyConfig) DataCloudflareZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -493,7 +504,7 @@ func NewDataCloudflareZeroTrustGatewayPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Data Source.
 func NewDataCloudflareZeroTrustGatewayPolicy_Override(d DataCloudflareZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 

@@ -356,14 +356,6 @@ func (j *jsiiProxy_ZoneSubscription) validateSetFrequencyParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSubscription) validateSetIdentifierParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZoneSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -413,6 +405,14 @@ func (j *jsiiProxy_ZoneSubscription) validateSetProvisionersParameters(val *[]in
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ZoneSubscription) validateSetZoneIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

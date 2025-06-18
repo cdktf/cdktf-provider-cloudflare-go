@@ -75,11 +75,11 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneSubscription) validateSetIdentifierParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareZoneSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareZoneSubscription) validateSetZoneIdParameters(val *string) error {
 	return nil
 }
 

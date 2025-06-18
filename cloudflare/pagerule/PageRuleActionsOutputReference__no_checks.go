@@ -95,7 +95,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheOnCookieParam
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]*string) error {
 	return nil
 }
 

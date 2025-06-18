@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zone_subscription cloudflare_zone_subscription}.
 type DataCloudflareZoneSubscription interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,9 @@ type DataCloudflareZoneSubscription interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Currency() *string
+	CurrentPeriodEnd() *string
+	CurrentPeriodStart() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,29 +36,34 @@ type DataCloudflareZoneSubscription interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
+	Frequency() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Identifier() *string
-	SetIdentifier(val *string)
-	IdentifierInput() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Price() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	RatePlan() DataCloudflareZoneSubscriptionRatePlanOutputReference
 	// Experimental.
 	RawOverrides() interface{}
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -133,6 +141,36 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneSubscription) Currency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneSubscription) CurrentPeriodEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneSubscription) CurrentPeriodStart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodStart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneSubscription) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -163,6 +201,16 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneSubscription) Frequency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"frequency",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneSubscription) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -173,21 +221,11 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareZoneSubscription) Identifier() *string {
+func (j *jsiiProxy_DataCloudflareZoneSubscription) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"identifier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZoneSubscription) IdentifierInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"identifierInput",
+		"id",
 		&returns,
 	)
 	return returns
@@ -213,6 +251,16 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneSubscription) Price() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"price",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneSubscription) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -223,11 +271,31 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) Provider() cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneSubscription) RatePlan() DataCloudflareZoneSubscriptionRatePlanOutputReference {
+	var returns DataCloudflareZoneSubscriptionRatePlanOutputReference
+	_jsii_.Get(
+		j,
+		"ratePlan",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZoneSubscription) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZoneSubscription) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns
@@ -263,8 +331,28 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZoneSubscription) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
+func (j *jsiiProxy_DataCloudflareZoneSubscription) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
 func NewDataCloudflareZoneSubscription(scope constructs.Construct, id *string, config *DataCloudflareZoneSubscriptionConfig) DataCloudflareZoneSubscription {
 	_init_.Initialize()
 
@@ -282,7 +370,7 @@ func NewDataCloudflareZoneSubscription(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zone_subscription cloudflare_zone_subscription} Data Source.
 func NewDataCloudflareZoneSubscription_Override(d DataCloudflareZoneSubscription, scope constructs.Construct, id *string, config *DataCloudflareZoneSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -320,17 +408,6 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareZoneSubscription)SetIdentifier(val *string) {
-	if err := j.validateSetIdentifierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"identifier",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareZoneSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -346,6 +423,17 @@ func (j *jsiiProxy_DataCloudflareZoneSubscription)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZoneSubscription)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }

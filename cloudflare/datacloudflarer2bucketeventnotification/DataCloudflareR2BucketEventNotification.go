@@ -12,10 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type DataCloudflareR2BucketEventNotification interface {
 	cdktf.TerraformDataSource
-	AbortMultipartUploadsTransition() DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionOutputReference
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -24,19 +23,16 @@ type DataCloudflareR2BucketEventNotification interface {
 	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Conditions() DataCloudflareR2BucketEventNotificationConditionsOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DeleteObjectsTransition() DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionOutputReference
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,7 +41,6 @@ type DataCloudflareR2BucketEventNotification interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,9 +54,10 @@ type DataCloudflareR2BucketEventNotification interface {
 	QueueId() *string
 	SetQueueId(val *string)
 	QueueIdInput() *string
+	QueueName() *string
 	// Experimental.
 	RawOverrides() interface{}
-	StorageClassTransitions() DataCloudflareR2BucketEventNotificationStorageClassTransitionsList
+	Rules() DataCloudflareR2BucketEventNotificationRulesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,16 +111,6 @@ type jsiiProxy_DataCloudflareR2BucketEventNotification struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) AbortMultipartUploadsTransition() DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionOutputReference {
-	var returns DataCloudflareR2BucketEventNotificationAbortMultipartUploadsTransitionOutputReference
-	_jsii_.Get(
-		j,
-		"abortMultipartUploadsTransition",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) AccountId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,16 +161,6 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) Conditions() DataCloudflareR2BucketEventNotificationConditionsOutputReference {
-	var returns DataCloudflareR2BucketEventNotificationConditionsOutputReference
-	_jsii_.Get(
-		j,
-		"conditions",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -205,31 +181,11 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) Count() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) DeleteObjectsTransition() DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionOutputReference {
-	var returns DataCloudflareR2BucketEventNotificationDeleteObjectsTransitionOutputReference
-	_jsii_.Get(
-		j,
-		"deleteObjectsTransition",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"enabled",
 		&returns,
 	)
 	return returns
@@ -260,16 +216,6 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) FriendlyUniqueId() *
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
 		&returns,
 	)
 	return returns
@@ -325,6 +271,16 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) QueueIdInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) QueueName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queueName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -335,11 +291,11 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) RawOverrides() inter
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) StorageClassTransitions() DataCloudflareR2BucketEventNotificationStorageClassTransitionsList {
-	var returns DataCloudflareR2BucketEventNotificationStorageClassTransitionsList
+func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) Rules() DataCloudflareR2BucketEventNotificationRulesList {
+	var returns DataCloudflareR2BucketEventNotificationRulesList
 	_jsii_.Get(
 		j,
-		"storageClassTransitions",
+		"rules",
 		&returns,
 	)
 	return returns
@@ -376,7 +332,7 @@ func (j *jsiiProxy_DataCloudflareR2BucketEventNotification) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
 func NewDataCloudflareR2BucketEventNotification(scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) DataCloudflareR2BucketEventNotification {
 	_init_.Initialize()
 
@@ -394,7 +350,7 @@ func NewDataCloudflareR2BucketEventNotification(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Data Source.
 func NewDataCloudflareR2BucketEventNotification_Override(d DataCloudflareR2BucketEventNotification, scope constructs.Construct, id *string, config *DataCloudflareR2BucketEventNotificationConfig) {
 	_init_.Initialize()
 

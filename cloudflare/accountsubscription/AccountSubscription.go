@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription cloudflare_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription cloudflare_account_subscription}.
 type AccountSubscription interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -69,9 +69,6 @@ type AccountSubscription interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
-	SubscriptionIdentifier() *string
-	SetSubscriptionIdentifier(val *string)
-	SubscriptionIdentifierInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,7 +124,6 @@ type AccountSubscription interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRatePlan()
-	ResetSubscriptionIdentifier()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -396,26 +392,6 @@ func (j *jsiiProxy_AccountSubscription) State() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccountSubscription) SubscriptionIdentifier() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subscriptionIdentifier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccountSubscription) SubscriptionIdentifierInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"subscriptionIdentifierInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AccountSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -447,7 +423,7 @@ func (j *jsiiProxy_AccountSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription(scope constructs.Construct, id *string, config *AccountSubscriptionConfig) AccountSubscription {
 	_init_.Initialize()
 
@@ -465,7 +441,7 @@ func NewAccountSubscription(scope constructs.Construct, id *string, config *Acco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_subscription cloudflare_account_subscription} Resource.
 func NewAccountSubscription_Override(a AccountSubscription, scope constructs.Construct, id *string, config *AccountSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -562,17 +538,6 @@ func (j *jsiiProxy_AccountSubscription)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccountSubscription)SetSubscriptionIdentifier(val *string) {
-	if err := j.validateSetSubscriptionIdentifierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"subscriptionIdentifier",
 		val,
 	)
 }
@@ -961,14 +926,6 @@ func (a *jsiiProxy_AccountSubscription) ResetRatePlan() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRatePlan",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccountSubscription) ResetSubscriptionIdentifier() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSubscriptionIdentifier",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_subscription cloudflare_zone_subscription}.
 type ZoneSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type ZoneSubscription interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Currency() *string
+	CurrentPeriodEnd() *string
+	CurrentPeriodStart() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,15 +45,14 @@ type ZoneSubscription interface {
 	FrequencyInput() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Identifier() *string
-	SetIdentifier(val *string)
-	IdentifierInput() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Price() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -63,12 +65,16 @@ type ZoneSubscription interface {
 	RatePlanInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ZoneId() *string
+	SetZoneId(val *string)
+	ZoneIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -176,6 +182,36 @@ func (j *jsiiProxy_ZoneSubscription) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSubscription) Currency() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSubscription) CurrentPeriodEnd() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodEnd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSubscription) CurrentPeriodStart() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentPeriodStart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSubscription) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -236,21 +272,11 @@ func (j *jsiiProxy_ZoneSubscription) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSubscription) Identifier() *string {
+func (j *jsiiProxy_ZoneSubscription) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"identifier",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneSubscription) IdentifierInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"identifierInput",
+		"id",
 		&returns,
 	)
 	return returns
@@ -271,6 +297,16 @@ func (j *jsiiProxy_ZoneSubscription) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneSubscription) Price() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"price",
 		&returns,
 	)
 	return returns
@@ -326,6 +362,16 @@ func (j *jsiiProxy_ZoneSubscription) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSubscription) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,8 +402,28 @@ func (j *jsiiProxy_ZoneSubscription) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneSubscription) ZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+func (j *jsiiProxy_ZoneSubscription) ZoneIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) ZoneSubscription {
 	_init_.Initialize()
 
@@ -375,7 +441,7 @@ func NewZoneSubscription(scope constructs.Construct, id *string, config *ZoneSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource.
 func NewZoneSubscription_Override(z ZoneSubscription, scope constructs.Construct, id *string, config *ZoneSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -435,17 +501,6 @@ func (j *jsiiProxy_ZoneSubscription)SetFrequency(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneSubscription)SetIdentifier(val *string) {
-	if err := j.validateSetIdentifierParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"identifier",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -472,6 +527,17 @@ func (j *jsiiProxy_ZoneSubscription)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneSubscription)SetZoneId(val *string) {
+	if err := j.validateSetZoneIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zoneId",
 		val,
 	)
 }

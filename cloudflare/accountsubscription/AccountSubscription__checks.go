@@ -418,14 +418,6 @@ func (j *jsiiProxy_AccountSubscription) validateSetProvisionersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_AccountSubscription) validateSetSubscriptionIdentifierParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewAccountSubscriptionParameters(scope constructs.Construct, id *string, config *AccountSubscriptionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

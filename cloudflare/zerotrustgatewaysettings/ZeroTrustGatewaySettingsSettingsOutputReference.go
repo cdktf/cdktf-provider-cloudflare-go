@@ -17,6 +17,8 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	ActivityLogInput() interface{}
 	Antivirus() ZeroTrustGatewaySettingsSettingsAntivirusOutputReference
 	AntivirusInput() interface{}
+	AppControlSettings() ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference
+	AppControlSettingsInput() interface{}
 	BlockPage() ZeroTrustGatewaySettingsSettingsBlockPageOutputReference
 	BlockPageInput() interface{}
 	BodyScanning() ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference
@@ -92,6 +94,7 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActivityLog(value *ZeroTrustGatewaySettingsSettingsActivityLog)
 	PutAntivirus(value *ZeroTrustGatewaySettingsSettingsAntivirus)
+	PutAppControlSettings(value *ZeroTrustGatewaySettingsSettingsAppControlSettings)
 	PutBlockPage(value *ZeroTrustGatewaySettingsSettingsBlockPage)
 	PutBodyScanning(value *ZeroTrustGatewaySettingsSettingsBodyScanning)
 	PutBrowserIsolation(value *ZeroTrustGatewaySettingsSettingsBrowserIsolation)
@@ -105,6 +108,7 @@ type ZeroTrustGatewaySettingsSettingsOutputReference interface {
 	PutTlsDecrypt(value *ZeroTrustGatewaySettingsSettingsTlsDecrypt)
 	ResetActivityLog()
 	ResetAntivirus()
+	ResetAppControlSettings()
 	ResetBlockPage()
 	ResetBodyScanning()
 	ResetBrowserIsolation()
@@ -166,6 +170,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) AntivirusInp
 	_jsii_.Get(
 		j,
 		"antivirusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) AppControlSettings() ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference {
+	var returns ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"appControlSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) AppControlSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appControlSettingsInput",
 		&returns,
 	)
 	return returns
@@ -752,6 +776,17 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutAntivirus
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutAppControlSettings(value *ZeroTrustGatewaySettingsSettingsAppControlSettings) {
+	if err := z.validatePutAppControlSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putAppControlSettings",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) PutBlockPage(value *ZeroTrustGatewaySettingsSettingsBlockPage) {
 	if err := z.validatePutBlockPageParameters(value); err != nil {
 		panic(err)
@@ -885,6 +920,14 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetAntivir
 	_jsii_.InvokeVoid(
 		z,
 		"resetAntivirus",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) ResetAppControlSettings() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetAppControlSettings",
 		nil, // no parameters
 	)
 }

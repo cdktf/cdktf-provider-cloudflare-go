@@ -207,7 +207,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheOnCookieParam
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetCacheTtlByStatusParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

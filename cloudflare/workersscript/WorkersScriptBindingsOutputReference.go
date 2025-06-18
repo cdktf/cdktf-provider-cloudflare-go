@@ -114,6 +114,9 @@ type WorkersScriptBindingsOutputReference interface {
 	Usages() *[]*string
 	SetUsages(val *[]*string)
 	UsagesInput() *[]*string
+	WorkflowName() *string
+	SetWorkflowName(val *string)
+	WorkflowNameInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -162,6 +165,7 @@ type WorkersScriptBindingsOutputReference interface {
 	ResetStoreId()
 	ResetText()
 	ResetUsages()
+	ResetWorkflowName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -747,6 +751,26 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference) UsagesInput() *[]*strin
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) WorkflowName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workflowName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference) WorkflowNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workflowNameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewWorkersScriptBindingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkersScriptBindingsOutputReference {
 	_init_.Initialize()
@@ -1090,6 +1114,17 @@ func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetUsages(val *[]*string
 	_jsii_.Set(
 		j,
 		"usages",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScriptBindingsOutputReference)SetWorkflowName(val *string) {
+	if err := j.validateSetWorkflowNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workflowName",
 		val,
 	)
 }
@@ -1471,6 +1506,14 @@ func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetUsages() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetUsages",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScriptBindingsOutputReference) ResetWorkflowName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkflowName",
 		nil, // no parameters
 	)
 }

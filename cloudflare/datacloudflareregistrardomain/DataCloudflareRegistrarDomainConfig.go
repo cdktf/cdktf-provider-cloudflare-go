@@ -24,11 +24,11 @@ type DataCloudflareRegistrarDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 }
 

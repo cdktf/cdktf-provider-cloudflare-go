@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile}.
 type ZeroTrustDlpPredefinedProfile interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -139,6 +139,7 @@ type ZeroTrustDlpPredefinedProfile interface {
 	ResetAllowedMatchCount()
 	ResetConfidenceThreshold()
 	ResetContextAwareness()
+	ResetEntries()
 	ResetOcrEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -552,7 +553,7 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedProfile) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) ZeroTrustDlpPredefinedProfile {
 	_init_.Initialize()
 
@@ -570,7 +571,7 @@ func NewZeroTrustDlpPredefinedProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_dlp_predefined_profile cloudflare_zero_trust_dlp_predefined_profile} Resource.
 func NewZeroTrustDlpPredefinedProfile_Override(z ZeroTrustDlpPredefinedProfile, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedProfileConfig) {
 	_init_.Initialize()
 
@@ -1118,6 +1119,14 @@ func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetContextAwareness() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetContextAwareness",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustDlpPredefinedProfile) ResetEntries() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetEntries",
 		nil, // no parameters
 	)
 }

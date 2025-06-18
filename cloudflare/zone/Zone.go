@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone cloudflare_zone}.
 type Zone interface {
 	cdktf.TerraformResource
 	Account() ZoneAccountOutputReference
@@ -62,7 +62,9 @@ type Zone interface {
 	OriginalNameServers() *[]*string
 	OriginalRegistrar() *string
 	Owner() ZoneOwnerOutputReference
-	Paused() cdktf.IResolvable
+	Paused() interface{}
+	SetPaused(val interface{})
+	PausedInput() interface{}
 	Permissions() *[]*string
 	Plan() ZonePlanOutputReference
 	// Experimental.
@@ -138,6 +140,7 @@ type Zone interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPaused()
 	ResetType()
 	ResetVanityNameServers()
 	SynthesizeAttributes() *map[string]interface{}
@@ -418,11 +421,21 @@ func (j *jsiiProxy_Zone) Owner() ZoneOwnerOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Zone) Paused() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Zone) Paused() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Zone) PausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pausedInput",
 		&returns,
 	)
 	return returns
@@ -589,7 +602,7 @@ func (j *jsiiProxy_Zone) VerificationKey() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -607,7 +620,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.5.0/docs/resources/zone cloudflare_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zone cloudflare_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 
@@ -674,6 +687,17 @@ func (j *jsiiProxy_Zone)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Zone)SetPaused(val interface{}) {
+	if err := j.validateSetPausedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paused",
 		val,
 	)
 }
@@ -1087,6 +1111,14 @@ func (z *jsiiProxy_Zone) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_Zone) ResetPaused() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetPaused",
 		nil, // no parameters
 	)
 }
