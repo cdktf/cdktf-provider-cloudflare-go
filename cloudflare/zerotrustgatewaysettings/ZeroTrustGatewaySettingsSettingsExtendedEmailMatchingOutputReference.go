@@ -35,6 +35,8 @@ type ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference interf
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ReadOnly() cdktf.IResolvable
+	SourceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,6 +150,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ReadOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) SourceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAccount",
 		&returns,
 	)
 	return returns

@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetDescriptionP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetDescriptionSearchParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -91,7 +87,11 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetMaxItemsPara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetUaSearchParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetPausedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetUserAgentParameters(val *string) error {
 	return nil
 }
 

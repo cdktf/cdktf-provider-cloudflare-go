@@ -95,10 +95,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAppCountParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

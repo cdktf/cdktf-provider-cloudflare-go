@@ -39,6 +39,7 @@ type DataCloudflareHyperdriveConfigsResultOutputReference interface {
 	Mtls() DataCloudflareHyperdriveConfigsResultMtlsOutputReference
 	Name() *string
 	Origin() DataCloudflareHyperdriveConfigsResultOriginOutputReference
+	OriginConnectionLimit() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) Origin(
 	_jsii_.Get(
 		j,
 		"origin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareHyperdriveConfigsResultOutputReference) OriginConnectionLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"originConnectionLimit",
 		&returns,
 	)
 	return returns

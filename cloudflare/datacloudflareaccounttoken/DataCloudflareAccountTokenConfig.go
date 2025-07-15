@@ -24,13 +24,13 @@ type DataCloudflareAccountTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 	Filter *DataCloudflareAccountTokenFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Token identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 	TokenId *string `field:"optional" json:"tokenId" yaml:"tokenId"`
 }
 

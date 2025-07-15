@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
 type DataCloudflareZeroTrustAccessApplications interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -36,6 +36,9 @@ type DataCloudflareZeroTrustAccessApplications interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	Exact() interface{}
+	SetExact(val interface{})
+	ExactInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -103,6 +106,7 @@ type DataCloudflareZeroTrustAccessApplications interface {
 	ResetAccountId()
 	ResetAud()
 	ResetDomain()
+	ResetExact()
 	ResetMaxItems()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) DomainInput() *str
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) Exact() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) ExactInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactInput",
 		&returns,
 	)
 	return returns
@@ -420,7 +444,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
 func NewDataCloudflareZeroTrustAccessApplications(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationsConfig) DataCloudflareZeroTrustAccessApplications {
 	_init_.Initialize()
 
@@ -438,7 +462,7 @@ func NewDataCloudflareZeroTrustAccessApplications(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
 func NewDataCloudflareZeroTrustAccessApplications_Override(d DataCloudflareZeroTrustAccessApplications, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationsConfig) {
 	_init_.Initialize()
 
@@ -497,6 +521,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications)SetDomain(val *stri
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications)SetExact(val interface{}) {
+	if err := j.validateSetExactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exact",
 		val,
 	)
 }
@@ -877,6 +912,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplications) ResetDomain() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplications) ResetExact() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExact",
 		nil, // no parameters
 	)
 }

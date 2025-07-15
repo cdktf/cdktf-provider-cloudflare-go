@@ -42,6 +42,8 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference inte
 	MailtoSubject() *string
 	Mode() *string
 	Name() *string
+	ReadOnly() cdktf.IResolvable
+	SourceAccount() *string
 	SuppressFooter() cdktf.IResolvable
 	TargetUri() *string
 	// Experimental.
@@ -236,6 +238,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutput
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ReadOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SourceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAccount",
 		&returns,
 	)
 	return returns

@@ -7,11 +7,11 @@ package loadbalancerpool
 type LoadBalancerPoolNotificationFilterOrigin struct {
 	// If set true, disable notifications for this type of resource (pool or origin).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/load_balancer_pool#disable LoadBalancerPool#disable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer_pool#disable LoadBalancerPool#disable}
 	Disable interface{} `field:"optional" json:"disable" yaml:"disable"`
 	// If present, send notifications only for this health status (e.g. false for only DOWN events). Use null to reset (all events).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/load_balancer_pool#healthy LoadBalancerPool#healthy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/load_balancer_pool#healthy LoadBalancerPool#healthy}
 	Healthy interface{} `field:"optional" json:"healthy" yaml:"healthy"`
 }
 

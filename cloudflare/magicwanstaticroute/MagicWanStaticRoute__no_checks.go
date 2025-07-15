@@ -75,10 +75,6 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) validatePutRouteParameters(value *MagicWanStaticRouteRoute) error {
-	return nil
-}
-
 func (m *jsiiProxy_MagicWanStaticRoute) validatePutScopeParameters(value *MagicWanStaticRouteScope) error {
 	return nil
 }

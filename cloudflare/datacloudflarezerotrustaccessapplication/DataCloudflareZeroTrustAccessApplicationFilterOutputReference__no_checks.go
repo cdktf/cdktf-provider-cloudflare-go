@@ -67,6 +67,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference) validateSetExactParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

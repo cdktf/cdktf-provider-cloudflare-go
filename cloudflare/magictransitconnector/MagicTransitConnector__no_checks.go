@@ -75,6 +75,10 @@ func (m *jsiiProxy_MagicTransitConnector) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (m *jsiiProxy_MagicTransitConnector) validatePutDeviceParameters(value *MagicTransitConnectorDevice) error {
+	return nil
+}
+
 func validateMagicTransitConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -100,10 +104,6 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetActivatedParameters(val int
 }
 
 func (j *jsiiProxy_MagicTransitConnector) validateSetConnectionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_MagicTransitConnector) validateSetConnectorIdParameters(val *string) error {
 	return nil
 }
 

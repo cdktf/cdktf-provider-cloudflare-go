@@ -123,6 +123,10 @@ func (j *jsiiProxy_HyperdriveConfig) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_HyperdriveConfig) validateSetOriginConnectionLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_HyperdriveConfig) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

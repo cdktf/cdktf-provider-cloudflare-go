@@ -115,17 +115,6 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutA
 	return nil
 }
 
-func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutAppControlSettingsParameters(value *ZeroTrustGatewaySettingsSettingsAppControlSettings) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsOutputReference) validatePutBlockPageParameters(value *ZeroTrustGatewaySettingsSettingsBlockPage) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -83,14 +83,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetClientIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetClientSecretParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -128,10 +120,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetNameIdTransformJsonataParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) validateSetPublicKeyParameters(val *string) error {
 	return nil
 }
 

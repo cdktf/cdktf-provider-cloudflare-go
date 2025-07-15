@@ -31,9 +31,13 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() *MagicTransitConnectorDevice
-	SetInternalValue(val *MagicTransitConnectorDevice)
+	SetId(val *string)
+	IdInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	SerialNumber() *string
+	SetSerialNumber(val *string)
+	SerialNumberInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +70,8 @@ type MagicTransitConnectorDeviceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetId()
+	ResetSerialNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,8 +137,18 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InternalValue() *MagicTransitConnectorDevice {
-	var returns *MagicTransitConnectorDevice
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -146,6 +162,16 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) SerialNumber() *s
 	_jsii_.Get(
 		j,
 		"serialNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) SerialNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumberInput",
 		&returns,
 	)
 	return returns
@@ -221,13 +247,35 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetInternalValue(val *MagicTransitConnectorDevice) {
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference)SetSerialNumber(val *string) {
+	if err := j.validateSetSerialNumberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serialNumber",
 		val,
 	)
 }
@@ -438,6 +486,22 @@ func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) ResetSerialNumber() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSerialNumber",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MagicTransitConnectorDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

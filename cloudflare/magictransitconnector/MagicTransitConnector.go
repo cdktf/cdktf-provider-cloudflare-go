@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}.
 type MagicTransitConnector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,6 @@ type MagicTransitConnector interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
-	ConnectorId() *string
-	SetConnectorId(val *string)
-	ConnectorIdInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -41,6 +38,7 @@ type MagicTransitConnector interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Device() MagicTransitConnectorDeviceOutputReference
+	DeviceInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -130,6 +128,7 @@ type MagicTransitConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDevice(value *MagicTransitConnectorDevice)
 	ResetActivated()
 	ResetInterruptWindowDurationHours()
 	ResetInterruptWindowHourOfDay()
@@ -216,26 +215,6 @@ func (j *jsiiProxy_MagicTransitConnector) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicTransitConnector) ConnectorId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"connectorId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicTransitConnector) ConnectorIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"connectorIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicTransitConnector) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -271,6 +250,16 @@ func (j *jsiiProxy_MagicTransitConnector) Device() MagicTransitConnectorDeviceOu
 	_jsii_.Get(
 		j,
 		"device",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicTransitConnector) DeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deviceInput",
 		&returns,
 	)
 	return returns
@@ -507,7 +496,7 @@ func (j *jsiiProxy_MagicTransitConnector) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector(scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) MagicTransitConnector {
 	_init_.Initialize()
 
@@ -525,7 +514,7 @@ func NewMagicTransitConnector(scope constructs.Construct, id *string, config *Ma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource.
 func NewMagicTransitConnector_Override(m MagicTransitConnector, scope constructs.Construct, id *string, config *MagicTransitConnectorConfig) {
 	_init_.Initialize()
 
@@ -565,17 +554,6 @@ func (j *jsiiProxy_MagicTransitConnector)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MagicTransitConnector)SetConnectorId(val *string) {
-	if err := j.validateSetConnectorIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"connectorId",
 		val,
 	)
 }
@@ -1031,6 +1009,17 @@ func (m *jsiiProxy_MagicTransitConnector) OverrideLogicalId(newLogicalId *string
 		m,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_MagicTransitConnector) PutDevice(value *MagicTransitConnectorDevice) {
+	if err := m.validatePutDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDevice",
+		[]interface{}{value},
 	)
 }
 

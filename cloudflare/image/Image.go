@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image cloudflare_image}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image cloudflare_image}.
 type Image interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -47,6 +47,8 @@ type Image interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -289,6 +291,16 @@ func (j *jsiiProxy_Image) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Image) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Image) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -460,7 +472,7 @@ func (j *jsiiProxy_Image) Variants() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image cloudflare_image} Resource.
 func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image {
 	_init_.Initialize()
 
@@ -478,7 +490,7 @@ func NewImage(scope constructs.Construct, id *string, config *ImageConfig) Image
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/image cloudflare_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/image cloudflare_image} Resource.
 func NewImage_Override(i Image, scope constructs.Construct, id *string, config *ImageConfig) {
 	_init_.Initialize()
 
@@ -545,6 +557,17 @@ func (j *jsiiProxy_Image)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Image)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }

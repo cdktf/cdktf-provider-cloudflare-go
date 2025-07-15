@@ -70,6 +70,8 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	IpListInput() interface{}
 	LoginMethod() ZeroTrustAccessGroupRequireLoginMethodOutputReference
 	LoginMethodInput() interface{}
+	Oidc() ZeroTrustAccessGroupRequireOidcOutputReference
+	OidcInput() interface{}
 	Okta() ZeroTrustAccessGroupRequireOktaOutputReference
 	OktaInput() interface{}
 	Saml() ZeroTrustAccessGroupRequireSamlOutputReference
@@ -127,6 +129,7 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	PutIp(value *ZeroTrustAccessGroupRequireIp)
 	PutIpList(value *ZeroTrustAccessGroupRequireIpListStruct)
 	PutLoginMethod(value *ZeroTrustAccessGroupRequireLoginMethod)
+	PutOidc(value *ZeroTrustAccessGroupRequireOidc)
 	PutOkta(value *ZeroTrustAccessGroupRequireOkta)
 	PutSaml(value *ZeroTrustAccessGroupRequireSaml)
 	PutServiceToken(value *ZeroTrustAccessGroupRequireServiceToken)
@@ -149,6 +152,7 @@ type ZeroTrustAccessGroupRequireOutputReference interface {
 	ResetIp()
 	ResetIpList()
 	ResetLoginMethod()
+	ResetOidc()
 	ResetOkta()
 	ResetSaml()
 	ResetServiceToken()
@@ -592,6 +596,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) LoginMethodInput(
 	_jsii_.Get(
 		j,
 		"loginMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) Oidc() ZeroTrustAccessGroupRequireOidcOutputReference {
+	var returns ZeroTrustAccessGroupRequireOidcOutputReference
+	_jsii_.Get(
+		j,
+		"oidc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) OidcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oidcInput",
 		&returns,
 	)
 	return returns
@@ -1155,6 +1179,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutLoginMethod(va
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutOidc(value *ZeroTrustAccessGroupRequireOidc) {
+	if err := z.validatePutOidcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putOidc",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) PutOkta(value *ZeroTrustAccessGroupRequireOkta) {
 	if err := z.validatePutOktaParameters(value); err != nil {
 		panic(err)
@@ -1336,6 +1371,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) ResetLoginMethod(
 	_jsii_.InvokeVoid(
 		z,
 		"resetLoginMethod",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupRequireOutputReference) ResetOidc() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetOidc",
 		nil, // no parameters
 	)
 }

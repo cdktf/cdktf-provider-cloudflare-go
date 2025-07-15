@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token cloudflare_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token cloudflare_account_token}.
 type AccountToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -76,6 +76,8 @@ type AccountToken interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -134,6 +136,7 @@ type AccountToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatus()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -452,6 +455,16 @@ func (j *jsiiProxy_AccountToken) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AccountToken) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccountToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -493,7 +506,7 @@ func (j *jsiiProxy_AccountToken) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token cloudflare_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token cloudflare_account_token} Resource.
 func NewAccountToken(scope constructs.Construct, id *string, config *AccountTokenConfig) AccountToken {
 	_init_.Initialize()
 
@@ -511,7 +524,7 @@ func NewAccountToken(scope constructs.Construct, id *string, config *AccountToke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/account_token cloudflare_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/account_token cloudflare_account_token} Resource.
 func NewAccountToken_Override(a AccountToken, scope constructs.Construct, id *string, config *AccountTokenConfig) {
 	_init_.Initialize()
 
@@ -630,6 +643,17 @@ func (j *jsiiProxy_AccountToken)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccountToken)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -1037,6 +1061,14 @@ func (a *jsiiProxy_AccountToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountToken) ResetStatus() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

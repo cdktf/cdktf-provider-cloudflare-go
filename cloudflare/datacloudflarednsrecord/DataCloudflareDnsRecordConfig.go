@@ -24,13 +24,13 @@ type DataCloudflareDnsRecordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
 	DnsRecordId *string `field:"optional" json:"dnsRecordId" yaml:"dnsRecordId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}.
 	Filter *DataCloudflareDnsRecordFilter `field:"optional" json:"filter" yaml:"filter"`
 }
 

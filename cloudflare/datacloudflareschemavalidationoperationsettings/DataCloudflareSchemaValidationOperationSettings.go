@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
 type DataCloudflareSchemaValidationOperationSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareSchemaValidationOperationSettings) ZoneIdInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Data Source.
 func NewDataCloudflareSchemaValidationOperationSettings(scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationOperationSettingsConfig) DataCloudflareSchemaValidationOperationSettings {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataCloudflareSchemaValidationOperationSettings(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Data Source.
 func NewDataCloudflareSchemaValidationOperationSettings_Override(d DataCloudflareSchemaValidationOperationSettings, scope constructs.Construct, id *string, config *DataCloudflareSchemaValidationOperationSettingsConfig) {
 	_init_.Initialize()
 

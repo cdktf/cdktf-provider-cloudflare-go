@@ -227,6 +227,22 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetLif
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataCloudflareAccountApiTokenPermissionGroupsParameters(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

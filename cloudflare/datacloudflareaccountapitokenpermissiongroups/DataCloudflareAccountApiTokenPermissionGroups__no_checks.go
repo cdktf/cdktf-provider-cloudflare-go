@@ -83,6 +83,14 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetLif
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareAccountApiTokenPermissionGroupsParameters(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules}.
 type DataCloudflareUserAgentBlockingRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,9 +30,6 @@ type DataCloudflareUserAgentBlockingRules interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DescriptionSearch() *string
-	SetDescriptionSearch(val *string)
-	DescriptionSearchInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,6 +47,9 @@ type DataCloudflareUserAgentBlockingRules interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	Paused() interface{}
+	SetPaused(val interface{})
+	PausedInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -63,9 +63,9 @@ type DataCloudflareUserAgentBlockingRules interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UaSearch() *string
-	SetUaSearch(val *string)
-	UaSearchInput() *string
+	UserAgent() *string
+	SetUserAgent(val *string)
+	UserAgentInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -95,12 +95,12 @@ type DataCloudflareUserAgentBlockingRules interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
-	ResetDescriptionSearch()
 	ResetMaxItems()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetUaSearch()
+	ResetPaused()
+	ResetUserAgent()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -180,26 +180,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) DescriptionInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) DescriptionSearch() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionSearch",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) DescriptionSearchInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"descriptionSearchInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -270,6 +250,26 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) Node() constructs.Node 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) Paused() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) PausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pausedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -330,21 +330,21 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) TerraformResourceType()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) UaSearch() *string {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) UserAgent() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"uaSearch",
+		"userAgent",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) UaSearchInput() *string {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) UserAgentInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"uaSearchInput",
+		"userAgentInput",
 		&returns,
 	)
 	return returns
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) DataCloudflareUserAgentBlockingRules {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataCloudflareUserAgentBlockingRules(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/user_agent_blocking_rules cloudflare_user_agent_blocking_rules} Data Source.
 func NewDataCloudflareUserAgentBlockingRules_Override(d DataCloudflareUserAgentBlockingRules, scope constructs.Construct, id *string, config *DataCloudflareUserAgentBlockingRulesConfig) {
 	_init_.Initialize()
 
@@ -430,17 +430,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetDescription(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetDescriptionSearch(val *string) {
-	if err := j.validateSetDescriptionSearchParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"descriptionSearch",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -471,6 +460,17 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetMaxItems(val *float64
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetPaused(val interface{}) {
+	if err := j.validateSetPausedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paused",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -479,13 +479,13 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetUaSearch(val *string) {
-	if err := j.validateSetUaSearchParameters(val); err != nil {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules)SetUserAgent(val *string) {
+	if err := j.validateSetUserAgentParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"uaSearch",
+		"userAgent",
 		val,
 	)
 }
@@ -794,14 +794,6 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetDescription() {
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetDescriptionSearch() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDescriptionSearch",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetMaxItems() {
 	_jsii_.InvokeVoid(
 		d,
@@ -818,10 +810,18 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetOverrideLogicalId(
 	)
 }
 
-func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetUaSearch() {
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetPaused() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetUaSearch",
+		"resetPaused",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRules) ResetUserAgent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUserAgent",
 		nil, // no parameters
 	)
 }

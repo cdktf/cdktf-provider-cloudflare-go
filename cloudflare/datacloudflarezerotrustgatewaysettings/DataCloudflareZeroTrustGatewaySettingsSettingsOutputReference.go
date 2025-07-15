@@ -15,7 +15,6 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference interface {
 	cdktf.ComplexObject
 	ActivityLog() DataCloudflareZeroTrustGatewaySettingsSettingsActivityLogOutputReference
 	Antivirus() DataCloudflareZeroTrustGatewaySettingsSettingsAntivirusOutputReference
-	AppControlSettings() DataCloudflareZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference
 	BlockPage() DataCloudflareZeroTrustGatewaySettingsSettingsBlockPageOutputReference
 	BodyScanning() DataCloudflareZeroTrustGatewaySettingsSettingsBodyScanningOutputReference
 	BrowserIsolation() DataCloudflareZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference
@@ -108,16 +107,6 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"antivirus",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference) AppControlSettings() DataCloudflareZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference {
-	var returns DataCloudflareZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference
-	_jsii_.Get(
-		j,
-		"appControlSettings",
 		&returns,
 	)
 	return returns

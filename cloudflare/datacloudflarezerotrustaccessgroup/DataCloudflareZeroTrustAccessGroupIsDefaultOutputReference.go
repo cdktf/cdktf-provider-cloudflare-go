@@ -51,6 +51,7 @@ type DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference interface {
 	Ip() DataCloudflareZeroTrustAccessGroupIsDefaultIpOutputReference
 	IpList() DataCloudflareZeroTrustAccessGroupIsDefaultIpListStructOutputReference
 	LoginMethod() DataCloudflareZeroTrustAccessGroupIsDefaultLoginMethodOutputReference
+	Oidc() DataCloudflareZeroTrustAccessGroupIsDefaultOidcOutputReference
 	Okta() DataCloudflareZeroTrustAccessGroupIsDefaultOktaOutputReference
 	Saml() DataCloudflareZeroTrustAccessGroupIsDefaultSamlOutputReference
 	ServiceToken() DataCloudflareZeroTrustAccessGroupIsDefaultServiceTokenOutputReference
@@ -336,6 +337,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference) L
 	_jsii_.Get(
 		j,
 		"loginMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessGroupIsDefaultOutputReference) Oidc() DataCloudflareZeroTrustAccessGroupIsDefaultOidcOutputReference {
+	var returns DataCloudflareZeroTrustAccessGroupIsDefaultOidcOutputReference
+	_jsii_.Get(
+		j,
+		"oidc",
 		&returns,
 	)
 	return returns

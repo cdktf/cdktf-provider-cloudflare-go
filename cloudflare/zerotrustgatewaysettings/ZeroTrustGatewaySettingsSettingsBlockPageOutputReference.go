@@ -62,6 +62,8 @@ type ZeroTrustGatewaySettingsSettingsBlockPageOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	ReadOnly() cdktf.IResolvable
+	SourceAccount() *string
 	SuppressFooter() interface{}
 	SetSuppressFooter(val interface{})
 	SuppressFooterInput() interface{}
@@ -372,6 +374,26 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) Nam
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) ReadOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) SourceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAccount",
 		&returns,
 	)
 	return returns

@@ -24,13 +24,13 @@ type DataCloudflareEmailRoutingAddressConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Destination address identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
 	DestinationAddressIdentifier *string `field:"optional" json:"destinationAddressIdentifier" yaml:"destinationAddressIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}.
 	Filter *DataCloudflareEmailRoutingAddressFilter `field:"optional" json:"filter" yaml:"filter"`
 }
 

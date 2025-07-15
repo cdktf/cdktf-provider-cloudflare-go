@@ -24,23 +24,23 @@ type UserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The country in which the user lives.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user#country User#country}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user#country User#country}
 	Country *string `field:"optional" json:"country" yaml:"country"`
 	// User's first name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user#first_name User#first_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user#first_name User#first_name}
 	FirstName *string `field:"optional" json:"firstName" yaml:"firstName"`
 	// User's last name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user#last_name User#last_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user#last_name User#last_name}
 	LastName *string `field:"optional" json:"lastName" yaml:"lastName"`
 	// User's telephone number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user#telephone User#telephone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user#telephone User#telephone}
 	Telephone *string `field:"optional" json:"telephone" yaml:"telephone"`
 	// The zipcode or postal code where the user lives.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user#zipcode User#zipcode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user#zipcode User#zipcode}
 	Zipcode *string `field:"optional" json:"zipcode" yaml:"zipcode"`
 }
 

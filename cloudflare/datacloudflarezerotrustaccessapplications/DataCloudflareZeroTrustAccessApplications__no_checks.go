@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetDomainP
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetExactParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

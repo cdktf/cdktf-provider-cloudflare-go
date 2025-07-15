@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups}.
 type DataCloudflareAccountApiTokenPermissionGroups interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -38,12 +38,13 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -52,7 +53,9 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Scopes() *[]*string
+	Scope() *string
+	SetScope(val *string)
+	ScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,9 +87,11 @@ type DataCloudflareAccountApiTokenPermissionGroups interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScope()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -196,16 +201,6 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) FriendlyUnique
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -221,6 +216,16 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Name() *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -256,11 +261,21 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) RawOverrides()
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Scopes() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) Scope() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"scopes",
+		"scope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeInput",
 		&returns,
 	)
 	return returns
@@ -297,7 +312,7 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) DataCloudflareAccountApiTokenPermissionGroups {
 	_init_.Initialize()
 
@@ -315,7 +330,7 @@ func NewDataCloudflareAccountApiTokenPermissionGroups(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/account_api_token_permission_groups cloudflare_account_api_token_permission_groups} Data Source.
 func NewDataCloudflareAccountApiTokenPermissionGroups_Override(d DataCloudflareAccountApiTokenPermissionGroups, scope constructs.Construct, id *string, config *DataCloudflareAccountApiTokenPermissionGroupsConfig) {
 	_init_.Initialize()
 
@@ -375,10 +390,32 @@ func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetLifecycle(va
 	)
 }
 
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups)SetScope(val *string) {
+	if err := j.validateSetScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scope",
 		val,
 	)
 }
@@ -668,10 +705,26 @@ func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) OverrideLogica
 	)
 }
 
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareAccountApiTokenPermissionGroups) ResetScope() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScope",
 		nil, // no parameters
 	)
 }

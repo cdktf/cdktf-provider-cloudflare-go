@@ -12,13 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy}.
 type ZeroTrustAccessPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
 	ApprovalGroups() ZeroTrustAccessPolicyApprovalGroupsList
 	ApprovalGroupsInput() interface{}
 	ApprovalRequired() interface{}
@@ -36,7 +35,6 @@ type ZeroTrustAccessPolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	Decision() *string
 	SetDecision(val *string)
 	DecisionInput() *string
@@ -87,7 +85,6 @@ type ZeroTrustAccessPolicy interface {
 	RawOverrides() interface{}
 	Require() ZeroTrustAccessPolicyRequireList
 	RequireInput() interface{}
-	Reusable() cdktf.IResolvable
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
@@ -97,7 +94,6 @@ type ZeroTrustAccessPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -148,7 +144,6 @@ type ZeroTrustAccessPolicy interface {
 	ResetApprovalGroups()
 	ResetApprovalRequired()
 	ResetExclude()
-	ResetInclude()
 	ResetIsolationRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -190,16 +185,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
 		&returns,
 	)
 	return returns
@@ -280,16 +265,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessPolicy) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -555,16 +530,6 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) RequireInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) Reusable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"reusable",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessPolicy) SessionDuration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -615,18 +580,8 @@ func (j *jsiiProxy_ZeroTrustAccessPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessPolicy) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) ZeroTrustAccessPolicy {
 	_init_.Initialize()
 
@@ -644,7 +599,7 @@ func NewZeroTrustAccessPolicy(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_policy cloudflare_zero_trust_access_policy} Resource.
 func NewZeroTrustAccessPolicy_Override(z ZeroTrustAccessPolicy, scope constructs.Construct, id *string, config *ZeroTrustAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -1228,14 +1183,6 @@ func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetExclude() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetExclude",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessPolicy) ResetInclude() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetInclude",
 		nil, // no parameters
 	)
 }

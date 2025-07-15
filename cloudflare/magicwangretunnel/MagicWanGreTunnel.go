@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -52,7 +52,6 @@ type MagicWanGreTunnel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GreTunnel() MagicWanGreTunnelGreTunnelOutputReference
 	HealthCheck() MagicWanGreTunnelHealthCheckOutputReference
 	HealthCheckInput() interface{}
 	Id() *string
@@ -63,8 +62,6 @@ type MagicWanGreTunnel interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Modified() cdktf.IResolvable
-	ModifiedGreTunnel() MagicWanGreTunnelModifiedGreTunnelOutputReference
 	ModifiedOn() *string
 	Mtu() *float64
 	SetMtu(val *float64)
@@ -332,16 +329,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanGreTunnel) GreTunnel() MagicWanGreTunnelGreTunnelOutputReference {
-	var returns MagicWanGreTunnelGreTunnelOutputReference
-	_jsii_.Get(
-		j,
-		"greTunnel",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanGreTunnel) HealthCheck() MagicWanGreTunnelHealthCheckOutputReference {
 	var returns MagicWanGreTunnelHealthCheckOutputReference
 	_jsii_.Get(
@@ -397,26 +384,6 @@ func (j *jsiiProxy_MagicWanGreTunnel) Lifecycle() *cdktf.TerraformResourceLifecy
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) Modified() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"modified",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanGreTunnel) ModifiedGreTunnel() MagicWanGreTunnelModifiedGreTunnelOutputReference {
-	var returns MagicWanGreTunnelModifiedGreTunnelOutputReference
-	_jsii_.Get(
-		j,
-		"modifiedGreTunnel",
 		&returns,
 	)
 	return returns
@@ -563,7 +530,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -581,7 +548,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 

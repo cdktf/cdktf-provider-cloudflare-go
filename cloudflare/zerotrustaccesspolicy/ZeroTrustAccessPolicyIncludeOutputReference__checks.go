@@ -302,6 +302,17 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutLogin
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutOidcParameters(value *ZeroTrustAccessPolicyIncludeOidc) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessPolicyIncludeOkta) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

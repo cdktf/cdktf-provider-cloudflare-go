@@ -83,6 +83,14 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateSetMaxIte
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareApiTokenPermissionGroupsListParameters(scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsListConfig) error {
 	return nil
 }

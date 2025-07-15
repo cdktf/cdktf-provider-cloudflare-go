@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -41,7 +41,13 @@ type WorkersScript interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	Content() *string
 	SetContent(val *string)
+	ContentFile() *string
+	SetContentFile(val *string)
+	ContentFileInput() *string
 	ContentInput() *string
+	ContentSha256() *string
+	SetContentSha256(val *string)
+	ContentSha256Input() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -167,6 +173,9 @@ type WorkersScript interface {
 	ResetBodyPart()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
+	ResetContent()
+	ResetContentFile()
+	ResetContentSha256()
 	ResetKeepAssets()
 	ResetKeepBindings()
 	ResetLogpush()
@@ -357,11 +366,51 @@ func (j *jsiiProxy_WorkersScript) Content() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) ContentFile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ContentFileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentFileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScript) ContentInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"contentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ContentSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentSha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ContentSha256Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentSha256Input",
 		&returns,
 	)
 	return returns
@@ -768,7 +817,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -786,7 +835,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -859,6 +908,28 @@ func (j *jsiiProxy_WorkersScript)SetContent(val *string) {
 	_jsii_.Set(
 		j,
 		"content",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetContentFile(val *string) {
+	if err := j.validateSetContentFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentFile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetContentSha256(val *string) {
+	if err := j.validateSetContentSha256Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentSha256",
 		val,
 	)
 }
@@ -1441,6 +1512,30 @@ func (w *jsiiProxy_WorkersScript) ResetCompatibilityFlags() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCompatibilityFlags",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetContent() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContent",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetContentFile() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContentFile",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetContentSha256() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContentSha256",
 		nil, // no parameters
 	)
 }

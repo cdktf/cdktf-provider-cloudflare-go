@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 type UserAgentBlockingRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type UserAgentBlockingRule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,6 +44,7 @@ type UserAgentBlockingRule interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -50,6 +54,9 @@ type UserAgentBlockingRule interface {
 	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Paused() interface{}
+	SetPaused(val interface{})
+	PausedInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -66,9 +73,6 @@ type UserAgentBlockingRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UaRuleId() *string
-	SetUaRuleId(val *string)
-	UaRuleIdInput() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -116,10 +120,11 @@ type UserAgentBlockingRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *UserAgentBlockingRuleConfiguration)
+	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetUaRuleId()
+	ResetPaused()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -208,6 +213,26 @@ func (j *jsiiProxy_UserAgentBlockingRule) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_UserAgentBlockingRule) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserAgentBlockingRule) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_UserAgentBlockingRule) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -233,6 +258,16 @@ func (j *jsiiProxy_UserAgentBlockingRule) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserAgentBlockingRule) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -273,6 +308,26 @@ func (j *jsiiProxy_UserAgentBlockingRule) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserAgentBlockingRule) Paused() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"paused",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserAgentBlockingRule) PausedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pausedInput",
 		&returns,
 	)
 	return returns
@@ -338,26 +393,6 @@ func (j *jsiiProxy_UserAgentBlockingRule) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserAgentBlockingRule) UaRuleId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"uaRuleId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_UserAgentBlockingRule) UaRuleIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"uaRuleIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_UserAgentBlockingRule) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +414,7 @@ func (j *jsiiProxy_UserAgentBlockingRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) UserAgentBlockingRule {
 	_init_.Initialize()
 
@@ -397,7 +432,7 @@ func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *Us
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource.
 func NewUserAgentBlockingRule_Override(u UserAgentBlockingRule, scope constructs.Construct, id *string, config *UserAgentBlockingRuleConfig) {
 	_init_.Initialize()
 
@@ -438,6 +473,17 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_UserAgentBlockingRule)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_UserAgentBlockingRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -468,6 +514,17 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetMode(val *string) {
 	)
 }
 
+func (j *jsiiProxy_UserAgentBlockingRule)SetPaused(val interface{}) {
+	if err := j.validateSetPausedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"paused",
+		val,
+	)
+}
+
 func (j *jsiiProxy_UserAgentBlockingRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -483,17 +540,6 @@ func (j *jsiiProxy_UserAgentBlockingRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_UserAgentBlockingRule)SetUaRuleId(val *string) {
-	if err := j.validateSetUaRuleIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"uaRuleId",
 		val,
 	)
 }
@@ -873,6 +919,14 @@ func (u *jsiiProxy_UserAgentBlockingRule) PutConfiguration(value *UserAgentBlock
 	)
 }
 
+func (u *jsiiProxy_UserAgentBlockingRule) ResetDescription() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_UserAgentBlockingRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		u,
@@ -881,10 +935,10 @@ func (u *jsiiProxy_UserAgentBlockingRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (u *jsiiProxy_UserAgentBlockingRule) ResetUaRuleId() {
+func (u *jsiiProxy_UserAgentBlockingRule) ResetPaused() {
 	_jsii_.InvokeVoid(
 		u,
-		"resetUaRuleId",
+		"resetPaused",
 		nil, // no parameters
 	)
 }

@@ -33,6 +33,8 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputRe
 	Fqn() *string
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatching
 	SetInternalValue(val *DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatching)
+	ReadOnly() cdktf.IResolvable
+	SourceAccount() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +137,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) ReadOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"readOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference) SourceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAccount",
 		&returns,
 	)
 	return returns

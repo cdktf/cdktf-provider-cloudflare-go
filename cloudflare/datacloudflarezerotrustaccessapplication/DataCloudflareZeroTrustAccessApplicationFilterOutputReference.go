@@ -34,6 +34,9 @@ type DataCloudflareZeroTrustAccessApplicationFilterOutputReference interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	Exact() interface{}
+	SetExact(val interface{})
+	ExactInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -78,6 +81,7 @@ type DataCloudflareZeroTrustAccessApplicationFilterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAud()
 	ResetDomain()
+	ResetExact()
 	ResetName()
 	ResetSearch()
 	// Produce the Token's value at resolution time.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference) Exact() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference) ExactInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exactInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference)SetExact(val interface{}) {
+	if err := j.validateSetExactParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exact",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustAccessApplicationFilterOutputReference) ResetExact() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExact",
 		nil, // no parameters
 	)
 }

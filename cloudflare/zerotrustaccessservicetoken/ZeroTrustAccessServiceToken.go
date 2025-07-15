@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token}.
 type ZeroTrustAccessServiceToken interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,7 +32,6 @@ type ZeroTrustAccessServiceToken interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,7 +49,6 @@ type ZeroTrustAccessServiceToken interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	LastSeenAt() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,7 +74,6 @@ type ZeroTrustAccessServiceToken interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -227,16 +224,6 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -312,16 +299,6 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) LastSeenAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastSeenAt",
 		&returns,
 	)
 	return returns
@@ -427,16 +404,6 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) TerraformResourceType() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessServiceToken) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -458,7 +425,7 @@ func (j *jsiiProxy_ZeroTrustAccessServiceToken) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) ZeroTrustAccessServiceToken {
 	_init_.Initialize()
 
@@ -476,7 +443,7 @@ func NewZeroTrustAccessServiceToken(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_service_token cloudflare_zero_trust_access_service_token} Resource.
 func NewZeroTrustAccessServiceToken_Override(z ZeroTrustAccessServiceToken, scope constructs.Construct, id *string, config *ZeroTrustAccessServiceTokenConfig) {
 	_init_.Initialize()
 

@@ -216,45 +216,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAppControlSettings",
-		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsAppControlSettings)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference",
-		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
-			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ZeroTrustGatewaySettingsSettingsAppControlSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsBlockPage",
 		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsBlockPage)(nil)).Elem(),
 	)
@@ -299,6 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackgroundColor", GoMethod: "ResetBackgroundColor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFooterText", GoMethod: "ResetFooterText"},
@@ -312,6 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSuppressFooter", GoMethod: "ResetSuppressFooter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetUri", GoMethod: "ResetTargetUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceAccount", GoGetter: "SourceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressFooter", GoGetter: "SuppressFooter"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressFooterInput", GoGetter: "SuppressFooterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetUri", GoGetter: "TargetUri"},
@@ -515,8 +478,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceAccount", GoGetter: "SourceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -613,8 +578,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "activityLogInput", GoGetter: "ActivityLogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "antivirus", GoGetter: "Antivirus"},
 			_jsii_.MemberProperty{JsiiProperty: "antivirusInput", GoGetter: "AntivirusInput"},
-			_jsii_.MemberProperty{JsiiProperty: "appControlSettings", GoGetter: "AppControlSettings"},
-			_jsii_.MemberProperty{JsiiProperty: "appControlSettingsInput", GoGetter: "AppControlSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPage", GoGetter: "BlockPage"},
 			_jsii_.MemberProperty{JsiiProperty: "blockPageInput", GoGetter: "BlockPageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyScanning", GoGetter: "BodyScanning"},
@@ -652,7 +615,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "protocolDetectionInput", GoGetter: "ProtocolDetectionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putActivityLog", GoMethod: "PutActivityLog"},
 			_jsii_.MemberMethod{JsiiMethod: "putAntivirus", GoMethod: "PutAntivirus"},
-			_jsii_.MemberMethod{JsiiMethod: "putAppControlSettings", GoMethod: "PutAppControlSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockPage", GoMethod: "PutBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "putBodyScanning", GoMethod: "PutBodyScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "putBrowserIsolation", GoMethod: "PutBrowserIsolation"},
@@ -666,7 +628,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTlsDecrypt", GoMethod: "PutTlsDecrypt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActivityLog", GoMethod: "ResetActivityLog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAntivirus", GoMethod: "ResetAntivirus"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAppControlSettings", GoMethod: "ResetAppControlSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBodyScanning", GoMethod: "ResetBodyScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBrowserIsolation", GoMethod: "ResetBrowserIsolation"},

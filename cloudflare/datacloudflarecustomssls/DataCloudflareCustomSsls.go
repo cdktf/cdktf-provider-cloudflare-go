@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
 type DataCloudflareCustomSsls interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataCloudflareCustomSsls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source.
 func NewDataCloudflareCustomSsls(scope constructs.Construct, id *string, config *DataCloudflareCustomSslsConfig) DataCloudflareCustomSsls {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataCloudflareCustomSsls(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source.
 func NewDataCloudflareCustomSsls_Override(d DataCloudflareCustomSsls, scope constructs.Construct, id *string, config *DataCloudflareCustomSslsConfig) {
 	_init_.Initialize()
 

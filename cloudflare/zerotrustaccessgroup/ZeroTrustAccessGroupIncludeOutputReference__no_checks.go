@@ -123,6 +123,10 @@ func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutLoginM
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutOidcParameters(value *ZeroTrustAccessGroupIncludeOidc) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupIncludeOutputReference) validatePutOktaParameters(value *ZeroTrustAccessGroupIncludeOkta) error {
 	return nil
 }

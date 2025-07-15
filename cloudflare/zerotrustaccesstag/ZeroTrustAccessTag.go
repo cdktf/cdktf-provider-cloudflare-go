@@ -12,13 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 type ZeroTrustAccessTag interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,7 +30,6 @@ type ZeroTrustAccessTag interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,7 +68,6 @@ type ZeroTrustAccessTag interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -155,16 +152,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessTag) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -200,16 +187,6 @@ func (j *jsiiProxy_ZeroTrustAccessTag) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessTag) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -365,18 +342,8 @@ func (j *jsiiProxy_ZeroTrustAccessTag) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessTag) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) ZeroTrustAccessTag {
 	_init_.Initialize()
 
@@ -394,7 +361,7 @@ func NewZeroTrustAccessTag(scope constructs.Construct, id *string, config *ZeroT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag} Resource.
 func NewZeroTrustAccessTag_Override(z ZeroTrustAccessTag, scope constructs.Construct, id *string, config *ZeroTrustAccessTagConfig) {
 	_init_.Initialize()
 

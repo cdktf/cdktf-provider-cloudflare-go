@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/rate_limit cloudflare_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/rate_limit cloudflare_rate_limit}.
 type RateLimit interface {
 	cdktf.TerraformResource
 	Action() RateLimitActionOutputReference
@@ -445,7 +445,7 @@ func (j *jsiiProxy_RateLimit) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfig) RateLimit {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/rate_limit cloudflare_rate_limit} Resource.
 func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, config *RateLimitConfig) {
 	_init_.Initialize()
 

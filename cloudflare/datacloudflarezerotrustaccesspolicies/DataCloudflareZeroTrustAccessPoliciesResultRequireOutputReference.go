@@ -51,6 +51,7 @@ type DataCloudflareZeroTrustAccessPoliciesResultRequireOutputReference interface
 	Ip() DataCloudflareZeroTrustAccessPoliciesResultRequireIpOutputReference
 	IpList() DataCloudflareZeroTrustAccessPoliciesResultRequireIpListStructOutputReference
 	LoginMethod() DataCloudflareZeroTrustAccessPoliciesResultRequireLoginMethodOutputReference
+	Oidc() DataCloudflareZeroTrustAccessPoliciesResultRequireOidcOutputReference
 	Okta() DataCloudflareZeroTrustAccessPoliciesResultRequireOktaOutputReference
 	Saml() DataCloudflareZeroTrustAccessPoliciesResultRequireSamlOutputReference
 	ServiceToken() DataCloudflareZeroTrustAccessPoliciesResultRequireServiceTokenOutputReference
@@ -336,6 +337,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultRequireOutputRefer
 	_jsii_.Get(
 		j,
 		"loginMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessPoliciesResultRequireOutputReference) Oidc() DataCloudflareZeroTrustAccessPoliciesResultRequireOidcOutputReference {
+	var returns DataCloudflareZeroTrustAccessPoliciesResultRequireOidcOutputReference
+	_jsii_.Get(
+		j,
+		"oidc",
 		&returns,
 	)
 	return returns

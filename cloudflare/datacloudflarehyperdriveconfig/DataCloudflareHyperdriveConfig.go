@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}.
 type DataCloudflareHyperdriveConfig interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -54,6 +54,7 @@ type DataCloudflareHyperdriveConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	Origin() DataCloudflareHyperdriveConfigOriginOutputReference
+	OriginConnectionLimit() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -314,6 +315,16 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) Origin() DataCloudflareHyperd
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareHyperdriveConfig) OriginConnectionLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"originConnectionLimit",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareHyperdriveConfig) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -365,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareHyperdriveConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source.
 func NewDataCloudflareHyperdriveConfig(scope constructs.Construct, id *string, config *DataCloudflareHyperdriveConfigConfig) DataCloudflareHyperdriveConfig {
 	_init_.Initialize()
 
@@ -383,7 +394,7 @@ func NewDataCloudflareHyperdriveConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source.
 func NewDataCloudflareHyperdriveConfig_Override(d DataCloudflareHyperdriveConfig, scope constructs.Construct, id *string, config *DataCloudflareHyperdriveConfigConfig) {
 	_init_.Initialize()
 

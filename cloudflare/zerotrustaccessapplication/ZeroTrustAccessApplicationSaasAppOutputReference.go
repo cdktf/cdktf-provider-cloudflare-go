@@ -26,11 +26,7 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	SetAuthType(val *string)
 	AuthTypeInput() *string
 	ClientId() *string
-	SetClientId(val *string)
-	ClientIdInput() *string
 	ClientSecret() *string
-	SetClientSecret(val *string)
-	ClientSecretInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,8 +75,6 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	SetNameIdTransformJsonata(val *string)
 	NameIdTransformJsonataInput() *string
 	PublicKey() *string
-	SetPublicKey(val *string)
-	PublicKeyInput() *string
 	RedirectUris() *[]*string
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
@@ -139,8 +133,6 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	ResetAllowPkceWithoutClientSecret()
 	ResetAppLauncherUrl()
 	ResetAuthType()
-	ResetClientId()
-	ResetClientSecret()
 	ResetConsumerServiceUrl()
 	ResetCustomAttributes()
 	ResetCustomClaims()
@@ -151,7 +143,6 @@ type ZeroTrustAccessApplicationSaasAppOutputReference interface {
 	ResetIdpEntityId()
 	ResetNameIdFormat()
 	ResetNameIdTransformJsonata()
-	ResetPublicKey()
 	ResetRedirectUris()
 	ResetRefreshTokenOptions()
 	ResetSamlAttributeTransformJsonata()
@@ -263,31 +254,11 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ClientId() 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ClientIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ClientSecret() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"clientSecret",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ClientSecretInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientSecretInput",
 		&returns,
 	)
 	return returns
@@ -563,16 +534,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PublicKey()
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) PublicKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"publicKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) RedirectUris() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -795,28 +756,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetAuthType(
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetClientId(val *string) {
-	if err := j.validateSetClientIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clientId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetClientSecret(val *string) {
-	if err := j.validateSetClientSecretParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clientSecret",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -923,17 +862,6 @@ func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetNameIdTra
 	_jsii_.Set(
 		j,
 		"nameIdTransformJsonata",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference)SetPublicKey(val *string) {
-	if err := j.validateSetPublicKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"publicKey",
 		val,
 	)
 }
@@ -1277,22 +1205,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetAuthTy
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetClientId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetClientId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetClientSecret() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetClientSecret",
-		nil, // no parameters
-	)
-}
-
 func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetConsumerServiceUrl() {
 	_jsii_.InvokeVoid(
 		z,
@@ -1369,14 +1281,6 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetNameId
 	_jsii_.InvokeVoid(
 		z,
 		"resetNameIdTransformJsonata",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessApplicationSaasAppOutputReference) ResetPublicKey() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetPublicKey",
 		nil, // no parameters
 	)
 }

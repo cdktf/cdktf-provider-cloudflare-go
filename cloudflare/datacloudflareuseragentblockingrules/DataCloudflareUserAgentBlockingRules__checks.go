@@ -219,14 +219,6 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetDescriptionP
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetDescriptionSearchParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -243,7 +235,27 @@ func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetMaxItemsPara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetUaSearchParameters(val *string) error {
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetPausedParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataCloudflareUserAgentBlockingRules) validateSetUserAgentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

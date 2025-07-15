@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareUserAgentBlockingRule) validatePutFilterParameters(value *DataCloudflareUserAgentBlockingRuleFilter) error {
+	return nil
+}
+
 func validateDataCloudflareUserAgentBlockingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

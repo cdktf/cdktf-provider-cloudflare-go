@@ -139,6 +139,14 @@ func (j *jsiiProxy_WorkersScript) validateSetContentParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetContentFileParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkersScript) validateSetContentSha256Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -7,7 +7,7 @@ package datacloudflarezones
 type DataCloudflareZonesAccount struct {
 	// Filter by an account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zones#id DataCloudflareZones#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zones#id DataCloudflareZones#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ type DataCloudflareZonesAccount struct {
 	//   * `ends_with_case_sensitive`
 	//   * `contains_case_sensitive`
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/zones#name DataCloudflareZones#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/zones#name DataCloudflareZones#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

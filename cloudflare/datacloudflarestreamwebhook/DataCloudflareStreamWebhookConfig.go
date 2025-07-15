@@ -24,7 +24,7 @@ type DataCloudflareStreamWebhookConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/images cloudflare_images}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/images cloudflare_images}.
 type DataCloudflareImages interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareImages) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/images cloudflare_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/images cloudflare_images} Data Source.
 func NewDataCloudflareImages(scope constructs.Construct, id *string, config *DataCloudflareImagesConfig) DataCloudflareImages {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareImages(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/data-sources/images cloudflare_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/images cloudflare_images} Data Source.
 func NewDataCloudflareImages_Override(d DataCloudflareImages, scope constructs.Construct, id *string, config *DataCloudflareImagesConfig) {
 	_init_.Initialize()
 

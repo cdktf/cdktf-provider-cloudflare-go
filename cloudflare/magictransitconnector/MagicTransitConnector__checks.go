@@ -207,6 +207,17 @@ func (m *jsiiProxy_MagicTransitConnector) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (m *jsiiProxy_MagicTransitConnector) validatePutDeviceParameters(value *MagicTransitConnectorDevice) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateMagicTransitConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -303,14 +314,6 @@ func (j *jsiiProxy_MagicTransitConnector) validateSetConnectionParameters(val in
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MagicTransitConnector) validateSetConnectorIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

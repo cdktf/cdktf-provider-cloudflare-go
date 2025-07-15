@@ -131,6 +131,10 @@ func (j *jsiiProxy_AccountToken) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_AccountToken) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccountTokenParameters(scope constructs.Construct, id *string, config *AccountTokenConfig) error {
 	return nil
 }

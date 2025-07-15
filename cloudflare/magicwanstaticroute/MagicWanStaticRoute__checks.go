@@ -207,17 +207,6 @@ func (m *jsiiProxy_MagicWanStaticRoute) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) validatePutRouteParameters(value *MagicWanStaticRouteRoute) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (m *jsiiProxy_MagicWanStaticRoute) validatePutScopeParameters(value *MagicWanStaticRouteScope) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 type MagicWanStaticRoute interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -51,9 +51,7 @@ type MagicWanStaticRoute interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Modified() cdktf.IResolvable
 	ModifiedOn() *string
-	ModifiedRoute() MagicWanStaticRouteModifiedRouteOutputReference
 	Nexthop() *string
 	SetNexthop(val *string)
 	NexthopInput() *string
@@ -75,8 +73,6 @@ type MagicWanStaticRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Route() MagicWanStaticRouteRouteOutputReference
-	RouteInput() interface{}
 	Scope() MagicWanStaticRouteScopeOutputReference
 	ScopeInput() interface{}
 	// Experimental.
@@ -131,13 +127,11 @@ type MagicWanStaticRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRoute(value *MagicWanStaticRouteRoute)
 	PutScope(value *MagicWanStaticRouteScope)
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRoute()
 	ResetScope()
 	ResetWeight()
 	SynthesizeAttributes() *map[string]interface{}
@@ -308,31 +302,11 @@ func (j *jsiiProxy_MagicWanStaticRoute) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) Modified() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"modified",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanStaticRoute) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"modifiedOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) ModifiedRoute() MagicWanStaticRouteModifiedRouteOutputReference {
-	var returns MagicWanStaticRouteModifiedRouteOutputReference
-	_jsii_.Get(
-		j,
-		"modifiedRoute",
 		&returns,
 	)
 	return returns
@@ -438,26 +412,6 @@ func (j *jsiiProxy_MagicWanStaticRoute) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MagicWanStaticRoute) Route() MagicWanStaticRouteRouteOutputReference {
-	var returns MagicWanStaticRouteRouteOutputReference
-	_jsii_.Get(
-		j,
-		"route",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MagicWanStaticRoute) RouteInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"routeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MagicWanStaticRoute) Scope() MagicWanStaticRouteScopeOutputReference {
 	var returns MagicWanStaticRouteScopeOutputReference
 	_jsii_.Get(
@@ -529,7 +483,7 @@ func (j *jsiiProxy_MagicWanStaticRoute) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) MagicWanStaticRoute {
 	_init_.Initialize()
 
@@ -547,7 +501,7 @@ func NewMagicWanStaticRoute(scope constructs.Construct, id *string, config *Magi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource.
 func NewMagicWanStaticRoute_Override(m MagicWanStaticRoute, scope constructs.Construct, id *string, config *MagicWanStaticRouteConfig) {
 	_init_.Initialize()
 
@@ -1045,17 +999,6 @@ func (m *jsiiProxy_MagicWanStaticRoute) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (m *jsiiProxy_MagicWanStaticRoute) PutRoute(value *MagicWanStaticRouteRoute) {
-	if err := m.validatePutRouteParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		m,
-		"putRoute",
-		[]interface{}{value},
-	)
-}
-
 func (m *jsiiProxy_MagicWanStaticRoute) PutScope(value *MagicWanStaticRouteScope) {
 	if err := m.validatePutScopeParameters(value); err != nil {
 		panic(err)
@@ -1079,14 +1022,6 @@ func (m *jsiiProxy_MagicWanStaticRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MagicWanStaticRoute) ResetRoute() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetRoute",
 		nil, // no parameters
 	)
 }

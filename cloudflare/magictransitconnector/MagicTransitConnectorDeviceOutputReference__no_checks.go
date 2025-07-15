@@ -59,7 +59,15 @@ func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetInternalValueParameters(val *MagicTransitConnectorDevice) error {
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MagicTransitConnectorDeviceOutputReference) validateSetSerialNumberParameters(val *string) error {
 	return nil
 }
 

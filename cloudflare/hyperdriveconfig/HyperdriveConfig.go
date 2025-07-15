@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}.
 type HyperdriveConfig interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -59,6 +59,9 @@ type HyperdriveConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	Origin() HyperdriveConfigOriginOutputReference
+	OriginConnectionLimit() *float64
+	SetOriginConnectionLimit(val *float64)
+	OriginConnectionLimitInput() *float64
 	OriginInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -124,6 +127,7 @@ type HyperdriveConfig interface {
 	PutOrigin(value *HyperdriveConfigOrigin)
 	ResetCaching()
 	ResetMtls()
+	ResetOriginConnectionLimit()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -365,6 +369,26 @@ func (j *jsiiProxy_HyperdriveConfig) Origin() HyperdriveConfigOriginOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_HyperdriveConfig) OriginConnectionLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"originConnectionLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HyperdriveConfig) OriginConnectionLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"originConnectionLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HyperdriveConfig) OriginInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -436,7 +460,7 @@ func (j *jsiiProxy_HyperdriveConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig(scope constructs.Construct, id *string, config *HyperdriveConfigConfig) HyperdriveConfig {
 	_init_.Initialize()
 
@@ -454,7 +478,7 @@ func NewHyperdriveConfig(scope constructs.Construct, id *string, config *Hyperdr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource.
 func NewHyperdriveConfig_Override(h HyperdriveConfig, scope constructs.Construct, id *string, config *HyperdriveConfigConfig) {
 	_init_.Initialize()
 
@@ -532,6 +556,17 @@ func (j *jsiiProxy_HyperdriveConfig)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HyperdriveConfig)SetOriginConnectionLimit(val *float64) {
+	if err := j.validateSetOriginConnectionLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originConnectionLimit",
 		val,
 	)
 }
@@ -953,6 +988,14 @@ func (h *jsiiProxy_HyperdriveConfig) ResetMtls() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetMtls",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HyperdriveConfig) ResetOriginConnectionLimit() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetOriginConnectionLimit",
 		nil, // no parameters
 	)
 }

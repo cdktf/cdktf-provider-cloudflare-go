@@ -255,14 +255,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetAppCountParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

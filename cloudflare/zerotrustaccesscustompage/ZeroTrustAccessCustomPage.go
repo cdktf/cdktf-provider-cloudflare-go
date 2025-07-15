@@ -12,15 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 type ZeroTrustAccessCustomPage interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AppCount() *float64
-	SetAppCount(val *float64)
-	AppCountInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -33,7 +30,6 @@ type ZeroTrustAccessCustomPage interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	CustomHtml() *string
 	SetCustomHtml(val *string)
 	CustomHtmlInput() *string
@@ -79,7 +75,6 @@ type ZeroTrustAccessCustomPage interface {
 	SetType(val *string)
 	TypeInput() *string
 	Uid() *string
-	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -123,7 +118,6 @@ type ZeroTrustAccessCustomPage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAppCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -165,26 +159,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) AppCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) AppCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"appCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustAccessCustomPage) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -220,16 +194,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -435,18 +399,8 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage) Uid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustAccessCustomPage) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) ZeroTrustAccessCustomPage {
 	_init_.Initialize()
 
@@ -464,7 +418,7 @@ func NewZeroTrustAccessCustomPage(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.6.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page} Resource.
 func NewZeroTrustAccessCustomPage_Override(z ZeroTrustAccessCustomPage, scope constructs.Construct, id *string, config *ZeroTrustAccessCustomPageConfig) {
 	_init_.Initialize()
 
@@ -482,17 +436,6 @@ func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustAccessCustomPage)SetAppCount(val *float64) {
-	if err := j.validateSetAppCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"appCount",
 		val,
 	)
 }
@@ -948,14 +891,6 @@ func (z *jsiiProxy_ZeroTrustAccessCustomPage) OverrideLogicalId(newLogicalId *st
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustAccessCustomPage) ResetAppCount() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetAppCount",
-		nil, // no parameters
 	)
 }
 
