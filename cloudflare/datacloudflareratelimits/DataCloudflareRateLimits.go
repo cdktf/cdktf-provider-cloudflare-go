@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/rate_limits cloudflare_rate_limits}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rate_limits cloudflare_rate_limits}.
 type DataCloudflareRateLimits interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareRateLimits) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
 func NewDataCloudflareRateLimits(scope constructs.Construct, id *string, config *DataCloudflareRateLimitsConfig) DataCloudflareRateLimits {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareRateLimits(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/rate_limits cloudflare_rate_limits} Data Source.
 func NewDataCloudflareRateLimits_Override(d DataCloudflareRateLimits, scope constructs.Construct, id *string, config *DataCloudflareRateLimitsConfig) {
 	_init_.Initialize()
 

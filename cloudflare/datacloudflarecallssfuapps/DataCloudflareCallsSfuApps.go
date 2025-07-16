@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
 type DataCloudflareCallsSfuApps interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareCallsSfuApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) DataCloudflareCallsSfuApps {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareCallsSfuApps(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps} Data Source.
 func NewDataCloudflareCallsSfuApps_Override(d DataCloudflareCallsSfuApps, scope constructs.Construct, id *string, config *DataCloudflareCallsSfuAppsConfig) {
 	_init_.Initialize()
 

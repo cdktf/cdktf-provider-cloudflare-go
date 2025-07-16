@@ -24,25 +24,25 @@ type PagesProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#account_id PagesProject#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#account_id PagesProject#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#name PagesProject#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#name PagesProject#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Configs for the project build process.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#build_config PagesProject#build_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#build_config PagesProject#build_config}
 	BuildConfig *PagesProjectBuildConfig `field:"optional" json:"buildConfig" yaml:"buildConfig"`
 	// Configs for deployments in a project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
 	DeploymentConfigs *PagesProjectDeploymentConfigs `field:"optional" json:"deploymentConfigs" yaml:"deploymentConfigs"`
 	// Production branch of the project. Used to identify production deployments.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#production_branch PagesProject#production_branch}
 	ProductionBranch *string `field:"optional" json:"productionBranch" yaml:"productionBranch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/resources/pages_project#source PagesProject#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/pages_project#source PagesProject#source}.
 	Source *PagesProjectSource `field:"optional" json:"source" yaml:"source"`
 }
 

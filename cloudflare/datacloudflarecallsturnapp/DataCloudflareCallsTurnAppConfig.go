@@ -24,11 +24,11 @@ type DataCloudflareCallsTurnAppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/calls_turn_app#account_id DataCloudflareCallsTurnApp#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/calls_turn_app#account_id DataCloudflareCallsTurnApp#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/calls_turn_app#key_id DataCloudflareCallsTurnApp#key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/calls_turn_app#key_id DataCloudflareCallsTurnApp#key_id}
 	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
 }
 

@@ -24,11 +24,11 @@ type DataCloudflareStreamLiveInputConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_live_input#account_id DataCloudflareStreamLiveInput#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_live_input#account_id DataCloudflareStreamLiveInput#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A unique identifier for a live input.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_live_input#live_input_identifier DataCloudflareStreamLiveInput#live_input_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_live_input#live_input_identifier DataCloudflareStreamLiveInput#live_input_identifier}
 	LiveInputIdentifier *string `field:"required" json:"liveInputIdentifier" yaml:"liveInputIdentifier"`
 }
 

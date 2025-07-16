@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_download cloudflare_stream_download}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_download cloudflare_stream_download}.
 type DataCloudflareStreamDownload interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataCloudflareStreamDownload) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_download cloudflare_stream_download} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_download cloudflare_stream_download} Data Source.
 func NewDataCloudflareStreamDownload(scope constructs.Construct, id *string, config *DataCloudflareStreamDownloadConfig) DataCloudflareStreamDownload {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataCloudflareStreamDownload(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.0/docs/data-sources/stream_download cloudflare_stream_download} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/stream_download cloudflare_stream_download} Data Source.
 func NewDataCloudflareStreamDownload_Override(d DataCloudflareStreamDownload, scope constructs.Construct, id *string, config *DataCloudflareStreamDownloadConfig) {
 	_init_.Initialize()
 
