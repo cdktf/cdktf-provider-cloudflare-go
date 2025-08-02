@@ -14,6 +14,8 @@ import (
 type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface {
 	cdktf.ComplexObject
 	BindingStatus() *string
+	SetBindingStatus(val *string)
+	BindingStatusInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,6 +50,8 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UpdatedAt() *string
+	SetUpdatedAt(val *string)
+	UpdatedAtInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,7 +76,9 @@ type ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBindingStatus()
 	ResetId()
+	ResetUpdatedAt()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -93,6 +99,16 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Get(
 		j,
 		"bindingStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) BindingStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bindingStatusInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +234,16 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) UpdatedAtInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAtInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference {
 	_init_.Initialize()
@@ -243,6 +269,17 @@ func NewZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference_Overrid
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetBindingStatus(val *string) {
+	if err := j.validateSetBindingStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bindingStatus",
+		val,
 	)
 }
 
@@ -319,6 +356,17 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)SetUpdatedAt(val *string) {
+	if err := j.validateSetUpdatedAtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updatedAt",
 		val,
 	)
 }
@@ -509,10 +557,26 @@ func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputRefere
 	return returns
 }
 
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ResetBindingStatus() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetBindingStatus",
+		nil, // no parameters
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference) ResetUpdatedAt() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetUpdatedAt",
 		nil, // no parameters
 	)
 }

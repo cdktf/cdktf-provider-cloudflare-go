@@ -442,6 +442,14 @@ func (j *jsiiProxy_WorkersScript) validateSetContentSha256Parameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetContentTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

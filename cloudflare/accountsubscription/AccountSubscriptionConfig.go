@@ -24,15 +24,15 @@ type AccountSubscriptionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account_subscription#account_id AccountSubscription#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account_subscription#frequency AccountSubscription#frequency}
 	Frequency *string `field:"optional" json:"frequency" yaml:"frequency"`
 	// The rate plan applied to the subscription.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
 	RatePlan *AccountSubscriptionRatePlan `field:"optional" json:"ratePlan" yaml:"ratePlan"`
 }
 

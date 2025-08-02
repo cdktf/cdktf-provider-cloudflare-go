@@ -64,6 +64,7 @@ type DataCloudflareRulesetRulesActionParametersOutputReference interface {
 	OriginCacheControl() cdktf.IResolvable
 	OriginErrorPagePassthru() cdktf.IResolvable
 	Overrides() DataCloudflareRulesetRulesActionParametersOverridesOutputReference
+	Phase() *string
 	Phases() *[]*string
 	Polish() *string
 	Products() *[]*string
@@ -498,6 +499,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Ov
 	_jsii_.Get(
 		j,
 		"overrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersOutputReference) Phase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phase",
 		&returns,
 	)
 	return returns

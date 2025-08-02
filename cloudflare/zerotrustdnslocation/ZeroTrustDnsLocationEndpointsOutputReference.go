@@ -76,10 +76,6 @@ type ZeroTrustDnsLocationEndpointsOutputReference interface {
 	PutDot(value *ZeroTrustDnsLocationEndpointsDot)
 	PutIpv4(value *ZeroTrustDnsLocationEndpointsIpv4)
 	PutIpv6(value *ZeroTrustDnsLocationEndpointsIpv6)
-	ResetDoh()
-	ResetDot()
-	ResetIpv4()
-	ResetIpv6()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -555,38 +551,6 @@ func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) PutIpv6(value *
 		z,
 		"putIpv6",
 		[]interface{}{value},
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) ResetDoh() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDoh",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) ResetDot() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetDot",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) ResetIpv4() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIpv4",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDnsLocationEndpointsOutputReference) ResetIpv6() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetIpv6",
-		nil, // no parameters
 	)
 }
 

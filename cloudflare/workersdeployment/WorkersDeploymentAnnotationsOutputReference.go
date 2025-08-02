@@ -43,6 +43,7 @@ type WorkersDeploymentAnnotationsOutputReference interface {
 	WorkersMessage() *string
 	SetWorkersMessage(val *string)
 	WorkersMessageInput() *string
+	WorkersTriggeredBy() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -168,6 +169,16 @@ func (j *jsiiProxy_WorkersDeploymentAnnotationsOutputReference) WorkersMessageIn
 	_jsii_.Get(
 		j,
 		"workersMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersDeploymentAnnotationsOutputReference) WorkersTriggeredBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workersTriggeredBy",
 		&returns,
 	)
 	return returns

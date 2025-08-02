@@ -291,6 +291,14 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetOrd
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetPatternParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetSearchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

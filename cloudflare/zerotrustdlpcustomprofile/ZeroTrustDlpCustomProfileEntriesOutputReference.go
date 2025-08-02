@@ -31,6 +31,9 @@ type ZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	EntryId() *string
+	SetEntryId(val *string)
+	EntryIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -48,9 +51,6 @@ type ZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Words() *[]*string
-	SetWords(val *[]*string)
-	WordsInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,8 +76,7 @@ type ZeroTrustDlpCustomProfileEntriesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPattern(value *ZeroTrustDlpCustomProfileEntriesPattern)
-	ResetPattern()
-	ResetWords()
+	ResetEntryId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +137,26 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) EnabledInput
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) EntryId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entryId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) EntryIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entryIdInput",
 		&returns,
 	)
 	return returns
@@ -223,26 +242,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) TerraformRes
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) Words() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"words",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) WordsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"wordsInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewZeroTrustDlpCustomProfileEntriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ZeroTrustDlpCustomProfileEntriesOutputReference {
 	_init_.Initialize()
@@ -304,6 +303,17 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetEnabled(va
 	)
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetEntryId(val *string) {
+	if err := j.validateSetEntryIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"entryId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -344,17 +354,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference)SetWords(val *[]*string) {
-	if err := j.validateSetWordsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"words",
 		val,
 	)
 }
@@ -556,18 +555,10 @@ func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) PutPattern(v
 	)
 }
 
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) ResetPattern() {
+func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) ResetEntryId() {
 	_jsii_.InvokeVoid(
 		z,
-		"resetPattern",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) ResetWords() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetWords",
+		"resetEntryId",
 		nil, // no parameters
 	)
 }

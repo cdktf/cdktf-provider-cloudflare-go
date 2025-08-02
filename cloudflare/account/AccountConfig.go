@@ -24,21 +24,21 @@ type AccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account#name Account#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account#name Account#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// the type of account being created. For self-serve customers, use standard. for enterprise customers, use enterprise. Available values: "standard", "enterprise".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account#type Account#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account#type Account#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Account settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account#settings Account#settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account#settings Account#settings}
 	Settings *AccountSettings `field:"optional" json:"settings" yaml:"settings"`
 	// information related to the tenant unit, and optionally, an id of the unit to create the account on.
 	//
 	// see https://developers.cloudflare.com/tenant/how-to/manage-accounts/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/account#unit Account#unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/account#unit Account#unit}
 	Unit *AccountUnit `field:"optional" json:"unit" yaml:"unit"`
 }
 

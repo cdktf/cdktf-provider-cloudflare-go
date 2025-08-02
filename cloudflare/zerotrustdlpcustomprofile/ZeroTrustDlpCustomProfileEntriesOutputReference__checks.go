@@ -197,6 +197,14 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetE
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetEntryIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -238,14 +246,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetT
 }
 
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetWordsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

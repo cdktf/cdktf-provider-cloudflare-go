@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/address_map cloudflare_address_map}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/address_map cloudflare_address_map}.
 type DataCloudflareAddressMap interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareAddressMap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/address_map cloudflare_address_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/address_map cloudflare_address_map} Data Source.
 func NewDataCloudflareAddressMap(scope constructs.Construct, id *string, config *DataCloudflareAddressMapConfig) DataCloudflareAddressMap {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataCloudflareAddressMap(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/address_map cloudflare_address_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/address_map cloudflare_address_map} Data Source.
 func NewDataCloudflareAddressMap_Override(d DataCloudflareAddressMap, scope constructs.Construct, id *string, config *DataCloudflareAddressMapConfig) {
 	_init_.Initialize()
 

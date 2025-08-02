@@ -261,6 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "readOnlyInput", GoGetter: "ReadOnlyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackgroundColor", GoMethod: "ResetBackgroundColor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFooterText", GoMethod: "ResetFooterText"},
@@ -271,10 +272,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMailtoSubject", GoMethod: "ResetMailtoSubject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReadOnly", GoMethod: "ResetReadOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceAccount", GoMethod: "ResetSourceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSuppressFooter", GoMethod: "ResetSuppressFooter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetUri", GoMethod: "ResetTargetUri"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceAccount", GoGetter: "SourceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceAccountInput", GoGetter: "SourceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressFooter", GoGetter: "SuppressFooter"},
 			_jsii_.MemberProperty{JsiiProperty: "suppressFooterInput", GoGetter: "SuppressFooterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetUri", GoGetter: "TargetUri"},
@@ -282,6 +287,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference{}
@@ -417,6 +424,7 @@ func init() {
 		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bindingStatus", GoGetter: "BindingStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "bindingStatusInput", GoGetter: "BindingStatusInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,12 +446,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBindingStatus", GoMethod: "ResetBindingStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdatedAt", GoMethod: "ResetUpdatedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedAtInput", GoGetter: "UpdatedAtInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference{}
@@ -479,12 +490,19 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "readOnlyInput", GoGetter: "ReadOnlyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReadOnly", GoMethod: "ResetReadOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceAccount", GoMethod: "ResetSourceAccount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceAccount", GoGetter: "SourceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceAccountInput", GoGetter: "SourceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference{}
@@ -570,6 +588,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspection",
+		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsInspection)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsInspectionOutputReference",
+		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsInspectionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ZeroTrustGatewaySettingsSettingsInspectionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.zeroTrustGatewaySettings.ZeroTrustGatewaySettingsSettingsOutputReference",
 		reflect.TypeOf((*ZeroTrustGatewaySettingsSettingsOutputReference)(nil)).Elem(),
@@ -608,6 +665,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "hostSelector", GoGetter: "HostSelector"},
 			_jsii_.MemberProperty{JsiiProperty: "hostSelectorInput", GoGetter: "HostSelectorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "inspection", GoGetter: "Inspection"},
+			_jsii_.MemberProperty{JsiiProperty: "inspectionInput", GoGetter: "InspectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -623,6 +682,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExtendedEmailMatching", GoMethod: "PutExtendedEmailMatching"},
 			_jsii_.MemberMethod{JsiiMethod: "putFips", GoMethod: "PutFips"},
 			_jsii_.MemberMethod{JsiiMethod: "putHostSelector", GoMethod: "PutHostSelector"},
+			_jsii_.MemberMethod{JsiiMethod: "putInspection", GoMethod: "PutInspection"},
 			_jsii_.MemberMethod{JsiiMethod: "putProtocolDetection", GoMethod: "PutProtocolDetection"},
 			_jsii_.MemberMethod{JsiiMethod: "putSandbox", GoMethod: "PutSandbox"},
 			_jsii_.MemberMethod{JsiiMethod: "putTlsDecrypt", GoMethod: "PutTlsDecrypt"},
@@ -636,6 +696,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetExtendedEmailMatching", GoMethod: "ResetExtendedEmailMatching"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFips", GoMethod: "ResetFips"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostSelector", GoMethod: "ResetHostSelector"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInspection", GoMethod: "ResetInspection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocolDetection", GoMethod: "ResetProtocolDetection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSandbox", GoMethod: "ResetSandbox"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsDecrypt", GoMethod: "ResetTlsDecrypt"},

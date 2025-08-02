@@ -59,10 +59,6 @@ func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZeroTrustTunnelCloudflaredConfigConfigWarpRoutingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

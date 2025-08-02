@@ -24,15 +24,15 @@ type DataCloudflareRulesetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// The unique ID of the ruleset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
 	RulesetId *string `field:"optional" json:"rulesetId" yaml:"rulesetId"`
 	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

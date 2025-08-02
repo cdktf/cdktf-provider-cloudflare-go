@@ -24,11 +24,11 @@ type RegionalTieredCacheConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Value of the Regional Tiered Cache zone setting. Available values: "on", "off".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

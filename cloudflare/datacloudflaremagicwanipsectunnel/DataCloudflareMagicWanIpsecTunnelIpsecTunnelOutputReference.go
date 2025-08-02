@@ -38,6 +38,7 @@ type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	HealthCheck() DataCloudflareMagicWanIpsecTunnelIpsecTunnelHealthCheckOutputReference
 	Id() *string
 	InterfaceAddress() *string
+	InterfaceAddress6() *string
 	InternalValue() *DataCloudflareMagicWanIpsecTunnelIpsecTunnel
 	SetInternalValue(val *DataCloudflareMagicWanIpsecTunnelIpsecTunnel)
 	ModifiedOn() *string
@@ -206,6 +207,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"interfaceAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
 		&returns,
 	)
 	return returns

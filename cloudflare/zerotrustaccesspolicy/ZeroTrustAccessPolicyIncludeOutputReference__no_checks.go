@@ -119,6 +119,10 @@ func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutIpLis
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutLinkedAppTokenParameters(value *ZeroTrustAccessPolicyIncludeLinkedAppToken) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessPolicyIncludeOutputReference) validatePutLoginMethodParameters(value *ZeroTrustAccessPolicyIncludeLoginMethod) error {
 	return nil
 }

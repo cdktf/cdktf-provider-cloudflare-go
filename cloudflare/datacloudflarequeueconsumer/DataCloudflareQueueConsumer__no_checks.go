@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetConsumerIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,8 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	IpInput() interface{}
 	IpList() ZeroTrustAccessGroupExcludeIpListStructOutputReference
 	IpListInput() interface{}
+	LinkedAppToken() ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference
+	LinkedAppTokenInput() interface{}
 	LoginMethod() ZeroTrustAccessGroupExcludeLoginMethodOutputReference
 	LoginMethodInput() interface{}
 	Oidc() ZeroTrustAccessGroupExcludeOidcOutputReference
@@ -128,6 +130,7 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	PutGsuite(value *ZeroTrustAccessGroupExcludeGsuite)
 	PutIp(value *ZeroTrustAccessGroupExcludeIp)
 	PutIpList(value *ZeroTrustAccessGroupExcludeIpListStruct)
+	PutLinkedAppToken(value *ZeroTrustAccessGroupExcludeLinkedAppToken)
 	PutLoginMethod(value *ZeroTrustAccessGroupExcludeLoginMethod)
 	PutOidc(value *ZeroTrustAccessGroupExcludeOidc)
 	PutOkta(value *ZeroTrustAccessGroupExcludeOkta)
@@ -151,6 +154,7 @@ type ZeroTrustAccessGroupExcludeOutputReference interface {
 	ResetGsuite()
 	ResetIp()
 	ResetIpList()
+	ResetLinkedAppToken()
 	ResetLoginMethod()
 	ResetOidc()
 	ResetOkta()
@@ -576,6 +580,26 @@ func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) IpListInput() int
 	_jsii_.Get(
 		j,
 		"ipListInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) LinkedAppToken() ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference {
+	var returns ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference
+	_jsii_.Get(
+		j,
+		"linkedAppToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) LinkedAppTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linkedAppTokenInput",
 		&returns,
 	)
 	return returns
@@ -1168,6 +1192,17 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) PutIpList(value *
 	)
 }
 
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) PutLinkedAppToken(value *ZeroTrustAccessGroupExcludeLinkedAppToken) {
+	if err := z.validatePutLinkedAppTokenParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"putLinkedAppToken",
+		[]interface{}{value},
+	)
+}
+
 func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) PutLoginMethod(value *ZeroTrustAccessGroupExcludeLoginMethod) {
 	if err := z.validatePutLoginMethodParameters(value); err != nil {
 		panic(err)
@@ -1363,6 +1398,14 @@ func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) ResetIpList() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetIpList",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZeroTrustAccessGroupExcludeOutputReference) ResetLinkedAppToken() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetLinkedAppToken",
 		nil, // no parameters
 	)
 }

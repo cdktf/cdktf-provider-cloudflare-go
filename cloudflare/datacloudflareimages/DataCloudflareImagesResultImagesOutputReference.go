@@ -28,6 +28,7 @@ type DataCloudflareImagesResultImagesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Creator() *string
 	Filename() *string
 	// Experimental.
 	Fqn() *string
@@ -110,6 +111,16 @@ func (j *jsiiProxy_DataCloudflareImagesResultImagesOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareImagesResultImagesOutputReference) Creator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creator",
 		&returns,
 	)
 	return returns

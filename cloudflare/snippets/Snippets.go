@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets}.
 type Snippets interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,9 +32,9 @@ type Snippets interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Files() *string
-	SetFiles(val *string)
-	FilesInput() *string
+	Files() *[]*string
+	SetFiles(val *[]*string)
+	FilesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -118,8 +118,6 @@ type Snippets interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *SnippetsMetadata)
-	ResetFiles()
-	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -201,8 +199,8 @@ func (j *jsiiProxy_Snippets) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) Files() *string {
-	var returns *string
+func (j *jsiiProxy_Snippets) Files() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"files",
@@ -211,8 +209,8 @@ func (j *jsiiProxy_Snippets) Files() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Snippets) FilesInput() *string {
-	var returns *string
+func (j *jsiiProxy_Snippets) FilesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"filesInput",
@@ -402,7 +400,7 @@ func (j *jsiiProxy_Snippets) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets} Resource.
 func NewSnippets(scope constructs.Construct, id *string, config *SnippetsConfig) Snippets {
 	_init_.Initialize()
 
@@ -420,7 +418,7 @@ func NewSnippets(scope constructs.Construct, id *string, config *SnippetsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/snippets cloudflare_snippets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/snippets cloudflare_snippets} Resource.
 func NewSnippets_Override(s Snippets, scope constructs.Construct, id *string, config *SnippetsConfig) {
 	_init_.Initialize()
 
@@ -461,7 +459,7 @@ func (j *jsiiProxy_Snippets)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Snippets)SetFiles(val *string) {
+func (j *jsiiProxy_Snippets)SetFiles(val *[]*string) {
 	if err := j.validateSetFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,22 +891,6 @@ func (s *jsiiProxy_Snippets) PutMetadata(value *SnippetsMetadata) {
 		s,
 		"putMetadata",
 		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_Snippets) ResetFiles() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetFiles",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Snippets) ResetMetadata() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetMetadata",
-		nil, // no parameters
 	)
 }
 

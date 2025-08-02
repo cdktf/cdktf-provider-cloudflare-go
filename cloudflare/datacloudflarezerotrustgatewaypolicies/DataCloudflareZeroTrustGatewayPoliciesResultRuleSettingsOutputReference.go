@@ -13,7 +13,7 @@ import (
 
 type DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AddHeaders() cdktf.StringMap
+	AddHeaders() cdktf.StringListMap
 	AllowChildBypass() cdktf.IResolvable
 	AuditSsh() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsAuditSshOutputReference
 	BisoAdminControls() DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsBisoAdminControlsOutputReference
@@ -104,8 +104,8 @@ type jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference) AddHeaders() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewayPoliciesResultRuleSettingsOutputReference) AddHeaders() cdktf.StringListMap {
+	var returns cdktf.StringListMap
 	_jsii_.Get(
 		j,
 		"addHeaders",

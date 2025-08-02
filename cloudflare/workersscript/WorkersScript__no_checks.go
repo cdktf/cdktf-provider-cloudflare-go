@@ -147,6 +147,10 @@ func (j *jsiiProxy_WorkersScript) validateSetContentSha256Parameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_WorkersScript) validateSetContentTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkersScript) validateSetCountParameters(val interface{}) error {
 	return nil
 }

@@ -40,6 +40,7 @@ type DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HostSelector() DataCloudflareZeroTrustGatewaySettingsSettingsHostSelectorOutputReference
+	Inspection() DataCloudflareZeroTrustGatewaySettingsSettingsInspectionOutputReference
 	InternalValue() *DataCloudflareZeroTrustGatewaySettingsSettings
 	SetInternalValue(val *DataCloudflareZeroTrustGatewaySettingsSettings)
 	ProtocolDetection() DataCloudflareZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference
@@ -227,6 +228,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference
 	_jsii_.Get(
 		j,
 		"hostSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustGatewaySettingsSettingsOutputReference) Inspection() DataCloudflareZeroTrustGatewaySettingsSettingsInspectionOutputReference {
+	var returns DataCloudflareZeroTrustGatewaySettingsSettingsInspectionOutputReference
+	_jsii_.Get(
+		j,
+		"inspection",
 		&returns,
 	)
 	return returns

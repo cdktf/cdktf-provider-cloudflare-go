@@ -59,6 +59,10 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetExcludeExactHostnameParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ListItemHostnameOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

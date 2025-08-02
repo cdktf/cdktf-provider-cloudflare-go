@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -48,6 +48,9 @@ type WorkersScript interface {
 	ContentSha256() *string
 	SetContentSha256(val *string)
 	ContentSha256Input() *string
+	ContentType() *string
+	SetContentType(val *string)
+	ContentTypeInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -176,6 +179,7 @@ type WorkersScript interface {
 	ResetContent()
 	ResetContentFile()
 	ResetContentSha256()
+	ResetContentType()
 	ResetKeepAssets()
 	ResetKeepBindings()
 	ResetLogpush()
@@ -411,6 +415,26 @@ func (j *jsiiProxy_WorkersScript) ContentSha256Input() *string {
 	_jsii_.Get(
 		j,
 		"contentSha256Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ContentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) ContentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentTypeInput",
 		&returns,
 	)
 	return returns
@@ -817,7 +841,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -835,7 +859,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -930,6 +954,17 @@ func (j *jsiiProxy_WorkersScript)SetContentSha256(val *string) {
 	_jsii_.Set(
 		j,
 		"contentSha256",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkersScript)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"contentType",
 		val,
 	)
 }
@@ -1536,6 +1571,14 @@ func (w *jsiiProxy_WorkersScript) ResetContentSha256() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetContentSha256",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetContentType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContentType",
 		nil, // no parameters
 	)
 }

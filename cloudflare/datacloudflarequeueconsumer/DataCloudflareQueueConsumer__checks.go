@@ -162,6 +162,14 @@ func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetConsumerIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareQueueConsumer) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

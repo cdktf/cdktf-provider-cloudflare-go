@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset cloudflare_ruleset}.
 type DataCloudflareRuleset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataCloudflareRuleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
 func NewDataCloudflareRuleset(scope constructs.Construct, id *string, config *DataCloudflareRulesetConfig) DataCloudflareRuleset {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataCloudflareRuleset(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
 func NewDataCloudflareRuleset_Override(d DataCloudflareRuleset, scope constructs.Construct, id *string, config *DataCloudflareRulesetConfig) {
 	_init_.Initialize()
 

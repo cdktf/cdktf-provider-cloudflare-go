@@ -1100,6 +1100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "originCacheControl", GoGetter: "OriginCacheControl"},
 			_jsii_.MemberProperty{JsiiProperty: "originErrorPagePassthru", GoGetter: "OriginErrorPagePassthru"},
 			_jsii_.MemberProperty{JsiiProperty: "overrides", GoGetter: "Overrides"},
+			_jsii_.MemberProperty{JsiiProperty: "phase", GoGetter: "Phase"},
 			_jsii_.MemberProperty{JsiiProperty: "phases", GoGetter: "Phases"},
 			_jsii_.MemberProperty{JsiiProperty: "polish", GoGetter: "Polish"},
 			_jsii_.MemberProperty{JsiiProperty: "products", GoGetter: "Products"},

@@ -13,9 +13,9 @@ import (
 
 type ZeroTrustGatewayPolicyRuleSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AddHeaders() *map[string]*string
-	SetAddHeaders(val *map[string]*string)
-	AddHeadersInput() *map[string]*string
+	AddHeaders() interface{}
+	SetAddHeaders(val interface{})
+	AddHeadersInput() interface{}
 	AllowChildBypass() interface{}
 	SetAllowChildBypass(val interface{})
 	AllowChildBypassInput() interface{}
@@ -179,8 +179,8 @@ type jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"addHeaders",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeaders
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeadersInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) AddHeadersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"addHeadersInput",
@@ -777,7 +777,7 @@ func NewZeroTrustGatewayPolicyRuleSettingsOutputReference_Override(z ZeroTrustGa
 	)
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeaders(val *map[string]*string) {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference)SetAddHeaders(val interface{}) {
 	if err := j.validateSetAddHeadersParameters(val); err != nil {
 		panic(err)
 	}

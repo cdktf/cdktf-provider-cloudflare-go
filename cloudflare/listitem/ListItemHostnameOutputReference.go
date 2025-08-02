@@ -28,6 +28,9 @@ type ListItemHostnameOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeExactHostname() interface{}
+	SetExcludeExactHostname(val interface{})
+	ExcludeExactHostnameInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type ListItemHostnameOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcludeExactHostname()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_ListItemHostnameOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemHostnameOutputReference) ExcludeExactHostname() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeExactHostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ListItemHostnameOutputReference) ExcludeExactHostnameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludeExactHostnameInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_ListItemHostnameOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ListItemHostnameOutputReference)SetExcludeExactHostname(val interface{}) {
+	if err := j.validateSetExcludeExactHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeExactHostname",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (l *jsiiProxy_ListItemHostnameOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_ListItemHostnameOutputReference) ResetExcludeExactHostname() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetExcludeExactHostname",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_ListItemHostnameOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

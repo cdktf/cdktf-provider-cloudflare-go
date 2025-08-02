@@ -37,6 +37,7 @@ type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 	HealthCheck() DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference
 	Id() *string
 	InterfaceAddress() *string
+	InterfaceAddress6() *string
 	InternalValue() *DataCloudflareMagicWanGreTunnelGreTunnel
 	SetInternalValue(val *DataCloudflareMagicWanGreTunnelGreTunnel)
 	ModifiedOn() *string
@@ -195,6 +196,16 @@ func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"interfaceAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
 		&returns,
 	)
 	return returns

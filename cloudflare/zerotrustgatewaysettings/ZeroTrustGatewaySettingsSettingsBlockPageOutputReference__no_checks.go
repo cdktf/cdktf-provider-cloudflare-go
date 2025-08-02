@@ -103,6 +103,14 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetSourceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetSuppressFooterParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +124,10 @@ func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) val
 }
 
 func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ZeroTrustGatewaySettingsSettingsBlockPageOutputReference) validateSetVersionParameters(val *float64) error {
 	return nil
 }
 

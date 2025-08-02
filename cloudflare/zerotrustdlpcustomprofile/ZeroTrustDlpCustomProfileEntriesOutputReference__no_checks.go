@@ -67,6 +67,10 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetE
 	return nil
 }
 
+func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetEntryIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +84,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetT
 }
 
 func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomProfileEntriesOutputReference) validateSetWordsParameters(val *[]*string) error {
 	return nil
 }
 

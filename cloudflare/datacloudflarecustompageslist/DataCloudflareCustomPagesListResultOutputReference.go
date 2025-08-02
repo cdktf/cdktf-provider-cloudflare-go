@@ -23,15 +23,22 @@ type DataCloudflareCustomPagesListResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareCustomPagesListResult
 	SetInternalValue(val *DataCloudflareCustomPagesListResult)
+	ModifiedOn() *string
+	PreviewTarget() *string
+	RequiredTokens() *[]*string
+	State() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +47,7 @@ type DataCloudflareCustomPagesListResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Url() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -99,11 +107,31 @@ func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) ComplexOb
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -119,11 +147,61 @@ func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) Fqn() *st
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) InternalValue() *DataCloudflareCustomPagesListResult {
 	var returns *DataCloudflareCustomPagesListResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) PreviewTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) RequiredTokens() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiredTokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns
@@ -144,6 +222,16 @@ func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPagesListResultOutputReference) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
 		&returns,
 	)
 	return returns

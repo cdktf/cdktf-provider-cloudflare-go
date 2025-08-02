@@ -12,23 +12,20 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list_item cloudflare_list_item}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list_item cloudflare_list_item}.
 type DataCloudflareListItem interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Asn() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Comment() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,9 +38,6 @@ type DataCloudflareListItem interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Hostname() DataCloudflareListItemHostnameOutputReference
-	Id() *string
-	Ip() *string
 	ItemId() *string
 	SetItemId(val *string)
 	ItemIdInput() *string
@@ -54,7 +48,6 @@ type DataCloudflareListItem interface {
 	ListId() *string
 	SetListId(val *string)
 	ListIdInput() *string
-	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -63,7 +56,6 @@ type DataCloudflareListItem interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Redirect() DataCloudflareListItemRedirectOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,31 +129,11 @@ func (j *jsiiProxy_DataCloudflareListItem) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItem) Asn() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"asn",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareListItem) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) Comment() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"comment",
 		&returns,
 	)
 	return returns
@@ -182,16 +154,6 @@ func (j *jsiiProxy_DataCloudflareListItem) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) CreatedOn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdOn",
 		&returns,
 	)
 	return returns
@@ -232,36 +194,6 @@ func (j *jsiiProxy_DataCloudflareListItem) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) Hostname() DataCloudflareListItemHostnameOutputReference {
-	var returns DataCloudflareListItemHostnameOutputReference
-	_jsii_.Get(
-		j,
-		"hostname",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) Id() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) Ip() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ip",
 		&returns,
 	)
 	return returns
@@ -317,16 +249,6 @@ func (j *jsiiProxy_DataCloudflareListItem) ListIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareListItem) ModifiedOn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"modifiedOn",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareListItem) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -352,16 +274,6 @@ func (j *jsiiProxy_DataCloudflareListItem) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareListItem) Redirect() DataCloudflareListItemRedirectOutputReference {
-	var returns DataCloudflareListItemRedirectOutputReference
-	_jsii_.Get(
-		j,
-		"redirect",
 		&returns,
 	)
 	return returns
@@ -398,7 +310,7 @@ func (j *jsiiProxy_DataCloudflareListItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) DataCloudflareListItem {
 	_init_.Initialize()
 
@@ -416,7 +328,7 @@ func NewDataCloudflareListItem(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/list_item cloudflare_list_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list_item cloudflare_list_item} Data Source.
 func NewDataCloudflareListItem_Override(d DataCloudflareListItem, scope constructs.Construct, id *string, config *DataCloudflareListItemConfig) {
 	_init_.Initialize()
 

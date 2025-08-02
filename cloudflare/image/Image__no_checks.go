@@ -103,6 +103,10 @@ func (j *jsiiProxy_Image) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Image) validateSetCreatorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Image) validateSetFileParameters(val *string) error {
 	return nil
 }

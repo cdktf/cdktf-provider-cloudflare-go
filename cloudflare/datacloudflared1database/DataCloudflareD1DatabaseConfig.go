@@ -24,13 +24,13 @@ type DataCloudflareD1DatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// D1 database identifier (UUID).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
 	DatabaseId *string `field:"optional" json:"databaseId" yaml:"databaseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
 	Filter *DataCloudflareD1DatabaseFilter `field:"optional" json:"filter" yaml:"filter"`
 }
 

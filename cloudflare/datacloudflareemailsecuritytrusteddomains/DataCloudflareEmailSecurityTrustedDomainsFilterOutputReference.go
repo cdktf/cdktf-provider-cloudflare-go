@@ -44,6 +44,9 @@ type DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference interface {
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
+	Pattern() *string
+	SetPattern(val *string)
+	PatternInput() *string
 	Search() *string
 	SetSearch(val *string)
 	SearchInput() *string
@@ -83,6 +86,7 @@ type DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference interface {
 	ResetIsRecent()
 	ResetIsSimilarity()
 	ResetOrder()
+	ResetPattern()
 	ResetSearch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) Pattern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) PatternInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"patternInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) Search() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,6 +394,17 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	_jsii_.Set(
 		j,
 		"order",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference)SetPattern(val *string) {
+	if err := j.validateSetPatternParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pattern",
 		val,
 	)
 }
@@ -621,6 +656,14 @@ func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetOrder",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference) ResetPattern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPattern",
 		nil, // no parameters
 	)
 }

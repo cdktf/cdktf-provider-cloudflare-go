@@ -115,6 +115,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	OriginInput() interface{}
 	Overrides() RulesetRulesActionParametersOverridesOutputReference
 	OverridesInput() interface{}
+	Phase() *string
+	SetPhase(val *string)
+	PhaseInput() *string
 	Phases() *[]*string
 	SetPhases(val *[]*string)
 	PhasesInput() *[]*string
@@ -258,6 +261,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetOriginCacheControl()
 	ResetOriginErrorPagePassthru()
 	ResetOverrides()
+	ResetPhase()
 	ResetPhases()
 	ResetPolish()
 	ResetProducts()
@@ -980,6 +984,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OverridesInput()
 	_jsii_.Get(
 		j,
 		"overridesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Phase() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PhaseInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phaseInput",
 		&returns,
 	)
 	return returns
@@ -1711,6 +1735,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginErrorPag
 	_jsii_.Set(
 		j,
 		"originErrorPagePassthru",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetPhase(val *string) {
+	if err := j.validateSetPhaseParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"phase",
 		val,
 	)
 }
@@ -2560,6 +2595,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOverrides()
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrides",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPhase() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPhase",
 		nil, // no parameters
 	)
 }

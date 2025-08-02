@@ -103,7 +103,7 @@ func (z *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAddHeadersParameters(val *map[string]*string) error {
+func (j *jsiiProxy_ZeroTrustGatewayPolicyRuleSettingsOutputReference) validateSetAddHeadersParameters(val interface{}) error {
 	return nil
 }
 

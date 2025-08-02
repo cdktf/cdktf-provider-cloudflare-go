@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 type ZeroTrustOrganization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -39,7 +39,6 @@ type ZeroTrustOrganization interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CreatedAt() *string
 	CustomPages() ZeroTrustOrganizationCustomPagesOutputReference
 	CustomPagesInput() interface{}
 	// Experimental.
@@ -90,7 +89,6 @@ type ZeroTrustOrganization interface {
 	UiReadOnlyToggleReason() *string
 	SetUiReadOnlyToggleReason(val *string)
 	UiReadOnlyToggleReasonInput() *string
-	UpdatedAt() *string
 	UserSeatExpirationInactiveTime() *string
 	SetUserSeatExpirationInactiveTime(val *string)
 	UserSeatExpirationInactiveTimeInput() *string
@@ -294,16 +292,6 @@ func (j *jsiiProxy_ZeroTrustOrganization) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZeroTrustOrganization) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns
@@ -549,16 +537,6 @@ func (j *jsiiProxy_ZeroTrustOrganization) UiReadOnlyToggleReasonInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustOrganization) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustOrganization) UserSeatExpirationInactiveTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -620,7 +598,7 @@ func (j *jsiiProxy_ZeroTrustOrganization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) ZeroTrustOrganization {
 	_init_.Initialize()
 
@@ -638,7 +616,7 @@ func NewZeroTrustOrganization(scope constructs.Construct, id *string, config *Ze
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource.
 func NewZeroTrustOrganization_Override(z ZeroTrustOrganization, scope constructs.Construct, id *string, config *ZeroTrustOrganizationConfig) {
 	_init_.Initialize()
 

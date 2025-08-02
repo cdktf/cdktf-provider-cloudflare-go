@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetPatternParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityBlockSenderFilterOutputReference) validateSetPatternTypeParameters(val *string) error {
 	return nil
 }

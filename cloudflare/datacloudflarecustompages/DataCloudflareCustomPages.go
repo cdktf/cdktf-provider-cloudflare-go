@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages cloudflare_custom_pages}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages cloudflare_custom_pages}.
 type DataCloudflareCustomPages interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -26,10 +26,12 @@ type DataCloudflareCustomPages interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedOn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -38,6 +40,7 @@ type DataCloudflareCustomPages interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
@@ -45,20 +48,25 @@ type DataCloudflareCustomPages interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
+	PreviewTarget() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RequiredTokens() *[]*string
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Url() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -161,11 +169,31 @@ func (j *jsiiProxy_DataCloudflareCustomPages) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPages) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPages) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPages) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -201,6 +229,16 @@ func (j *jsiiProxy_DataCloudflareCustomPages) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPages) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPages) Identifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -231,11 +269,31 @@ func (j *jsiiProxy_DataCloudflareCustomPages) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPages) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPages) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPages) PreviewTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"previewTarget",
 		&returns,
 	)
 	return returns
@@ -256,6 +314,26 @@ func (j *jsiiProxy_DataCloudflareCustomPages) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPages) RequiredTokens() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiredTokens",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareCustomPages) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns
@@ -291,6 +369,16 @@ func (j *jsiiProxy_DataCloudflareCustomPages) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareCustomPages) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareCustomPages) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -312,7 +400,7 @@ func (j *jsiiProxy_DataCloudflareCustomPages) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
 func NewDataCloudflareCustomPages(scope constructs.Construct, id *string, config *DataCloudflareCustomPagesConfig) DataCloudflareCustomPages {
 	_init_.Initialize()
 
@@ -330,7 +418,7 @@ func NewDataCloudflareCustomPages(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_pages cloudflare_custom_pages} Data Source.
 func NewDataCloudflareCustomPages_Override(d DataCloudflareCustomPages, scope constructs.Construct, id *string, config *DataCloudflareCustomPagesConfig) {
 	_init_.Initialize()
 

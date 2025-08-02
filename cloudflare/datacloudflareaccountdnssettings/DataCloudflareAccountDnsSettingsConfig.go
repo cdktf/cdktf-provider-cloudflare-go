@@ -24,7 +24,7 @@ type DataCloudflareAccountDnsSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/account_dns_settings#account_id DataCloudflareAccountDnsSettings#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/account_dns_settings#account_id DataCloudflareAccountDnsSettings#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 

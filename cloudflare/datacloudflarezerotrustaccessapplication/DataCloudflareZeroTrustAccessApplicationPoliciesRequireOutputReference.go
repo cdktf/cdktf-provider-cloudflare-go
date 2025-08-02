@@ -50,6 +50,7 @@ type DataCloudflareZeroTrustAccessApplicationPoliciesRequireOutputReference inte
 	SetInternalValue(val *DataCloudflareZeroTrustAccessApplicationPoliciesRequire)
 	Ip() DataCloudflareZeroTrustAccessApplicationPoliciesRequireIpOutputReference
 	IpList() DataCloudflareZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference
+	LinkedAppToken() DataCloudflareZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference
 	LoginMethod() DataCloudflareZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference
 	Oidc() DataCloudflareZeroTrustAccessApplicationPoliciesRequireOidcOutputReference
 	Okta() DataCloudflareZeroTrustAccessApplicationPoliciesRequireOktaOutputReference
@@ -327,6 +328,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesRequireOutput
 	_jsii_.Get(
 		j,
 		"ipList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplicationPoliciesRequireOutputReference) LinkedAppToken() DataCloudflareZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference {
+	var returns DataCloudflareZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference
+	_jsii_.Get(
+		j,
+		"linkedAppToken",
 		&returns,
 	)
 	return returns

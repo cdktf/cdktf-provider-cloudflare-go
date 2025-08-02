@@ -103,7 +103,7 @@ func (j *jsiiProxy_Snippets) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Snippets) validateSetFilesParameters(val *string) error {
+func (j *jsiiProxy_Snippets) validateSetFilesParameters(val *[]*string) error {
 	return nil
 }
 

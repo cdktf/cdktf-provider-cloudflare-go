@@ -119,6 +119,10 @@ func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOutputReference) val
 	return nil
 }
 
+func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOutputReference) validatePutLinkedAppTokenParameters(value *ZeroTrustAccessApplicationPoliciesExcludeLinkedAppToken) error {
+	return nil
+}
+
 func (z *jsiiProxy_ZeroTrustAccessApplicationPoliciesExcludeOutputReference) validatePutLoginMethodParameters(value *ZeroTrustAccessApplicationPoliciesExcludeLoginMethod) error {
 	return nil
 }

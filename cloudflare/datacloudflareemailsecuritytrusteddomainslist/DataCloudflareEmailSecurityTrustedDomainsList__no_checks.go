@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetOrd
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetPatternParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) validateSetSearchParameters(val *string) error {
 	return nil
 }

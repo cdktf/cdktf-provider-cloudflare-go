@@ -22,29 +22,29 @@ type DnsZoneTransfersPeerConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#account_id DnsZoneTransfersPeer#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#account_id DnsZoneTransfersPeer#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the peer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#name DnsZoneTransfersPeer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#name DnsZoneTransfersPeer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// IPv4/IPv6 address of primary or secondary nameserver, depending on what zone this peer is linked to.
 	//
 	// For primary zones this IP defines the IP of the secondary nameserver Cloudflare will NOTIFY upon zone changes. For secondary zones this IP defines the IP of the primary nameserver Cloudflare will send AXFR/IXFR requests to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#ip DnsZoneTransfersPeer#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#ip DnsZoneTransfersPeer#ip}
 	Ip *string `field:"optional" json:"ip" yaml:"ip"`
 	// Enable IXFR transfer protocol, default is AXFR. Only applicable to secondary zones.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#ixfr_enable DnsZoneTransfersPeer#ixfr_enable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#ixfr_enable DnsZoneTransfersPeer#ixfr_enable}
 	IxfrEnable interface{} `field:"optional" json:"ixfrEnable" yaml:"ixfrEnable"`
 	// DNS port of primary or secondary nameserver, depending on what zone this peer is linked to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#port DnsZoneTransfersPeer#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#port DnsZoneTransfersPeer#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// TSIG authentication will be used for zone transfer if configured.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/resources/dns_zone_transfers_peer#tsig_id DnsZoneTransfersPeer#tsig_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_zone_transfers_peer#tsig_id DnsZoneTransfersPeer#tsig_id}
 	TsigId *string `field:"optional" json:"tsigId" yaml:"tsigId"`
 }
 

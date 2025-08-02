@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/waiting_room_events cloudflare_waiting_room_events}.
 type DataCloudflareWaitingRoomEvents interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareWaitingRoomEvents) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) DataCloudflareWaitingRoomEvents {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareWaitingRoomEvents(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/waiting_room_events cloudflare_waiting_room_events} Data Source.
 func NewDataCloudflareWaitingRoomEvents_Override(d DataCloudflareWaitingRoomEvents, scope constructs.Construct, id *string, config *DataCloudflareWaitingRoomEventsConfig) {
 	_init_.Initialize()
 

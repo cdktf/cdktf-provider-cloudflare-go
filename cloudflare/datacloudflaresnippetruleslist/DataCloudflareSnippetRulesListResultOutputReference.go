@@ -33,8 +33,10 @@ type DataCloudflareSnippetRulesListResultOutputReference interface {
 	Expression() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *DataCloudflareSnippetRulesListResult
 	SetInternalValue(val *DataCloudflareSnippetRulesListResult)
+	LastUpdated() *string
 	SnippetName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -153,11 +155,31 @@ func (j *jsiiProxy_DataCloudflareSnippetRulesListResultOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareSnippetRulesListResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareSnippetRulesListResultOutputReference) InternalValue() *DataCloudflareSnippetRulesListResult {
 	var returns *DataCloudflareSnippetRulesListResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareSnippetRulesListResultOutputReference) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
 		&returns,
 	)
 	return returns

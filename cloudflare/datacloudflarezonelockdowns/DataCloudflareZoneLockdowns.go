@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
 type DataCloudflareZoneLockdowns interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataCloudflareZoneLockdowns) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) DataCloudflareZoneLockdowns {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewDataCloudflareZoneLockdowns(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns} Data Source.
 func NewDataCloudflareZoneLockdowns_Override(d DataCloudflareZoneLockdowns, scope constructs.Construct, id *string, config *DataCloudflareZoneLockdownsConfig) {
 	_init_.Initialize()
 

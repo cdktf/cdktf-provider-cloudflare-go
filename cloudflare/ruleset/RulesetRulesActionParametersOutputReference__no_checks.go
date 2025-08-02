@@ -223,6 +223,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOrigi
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPhaseParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPhasesParameters(val *[]*string) error {
 	return nil
 }

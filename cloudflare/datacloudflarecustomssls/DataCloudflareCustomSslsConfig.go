@@ -24,19 +24,19 @@ type DataCloudflareCustomSslsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Whether to match all search requirements or at least one (any). Available values: "any", "all".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
 	Match *string `field:"optional" json:"match" yaml:"match"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Status of the zone's custom SSL. Available values: "active", "expired", "deleted", "pending", "initializing".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.7.1/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 
