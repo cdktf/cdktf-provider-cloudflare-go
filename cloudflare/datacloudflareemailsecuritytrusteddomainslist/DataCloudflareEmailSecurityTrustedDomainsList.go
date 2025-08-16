@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}.
 type DataCloudflareEmailSecurityTrustedDomainsList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityTrustedDomainsList) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) DataCloudflareEmailSecurityTrustedDomainsList {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataCloudflareEmailSecurityTrustedDomainsList(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source.
 func NewDataCloudflareEmailSecurityTrustedDomainsList_Override(d DataCloudflareEmailSecurityTrustedDomainsList, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityTrustedDomainsListConfig) {
 	_init_.Initialize()
 

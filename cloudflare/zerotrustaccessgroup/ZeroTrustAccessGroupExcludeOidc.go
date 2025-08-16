@@ -7,15 +7,15 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupExcludeOidc struct {
 	// The name of the OIDC claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
 	ClaimName *string `field:"required" json:"claimName" yaml:"claimName"`
 	// The OIDC claim value to look for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
 	ClaimValue *string `field:"required" json:"claimValue" yaml:"claimValue"`
 	// The ID of your OIDC identity provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
 	IdentityProviderId *string `field:"required" json:"identityProviderId" yaml:"identityProviderId"`
 }
 

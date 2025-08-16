@@ -174,25 +174,9 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *RulesetRulesActionParametersFromValueTargetUrl:
-		val := val.(*RulesetRulesActionParametersFromValueTargetUrl)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case RulesetRulesActionParametersFromValueTargetUrl:
-		val_ := val.(RulesetRulesActionParametersFromValueTargetUrl)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RulesetRulesActionParametersFromValueTargetUrl; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersFromValueTargetUrl) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

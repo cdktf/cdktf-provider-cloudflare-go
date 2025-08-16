@@ -33,8 +33,8 @@ type RulesetRulesActionParametersFromValueTargetUrlOutputReference interface {
 	ExpressionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *RulesetRulesActionParametersFromValueTargetUrl
+	SetInternalValue(val *RulesetRulesActionParametersFromValueTargetUrl)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) InternalValue() *RulesetRulesActionParametersFromValueTargetUrl {
+	var returns *RulesetRulesActionParametersFromValueTargetUrl
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -258,7 +258,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference)SetInternalValue(val *RulesetRulesActionParametersFromValueTargetUrl) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

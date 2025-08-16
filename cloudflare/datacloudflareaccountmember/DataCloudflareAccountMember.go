@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/account_member cloudflare_account_member}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_member cloudflare_account_member}.
 type DataCloudflareAccountMember interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataCloudflareAccountMember) User() DataCloudflareAccountMemb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/account_member cloudflare_account_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_member cloudflare_account_member} Data Source.
 func NewDataCloudflareAccountMember(scope constructs.Construct, id *string, config *DataCloudflareAccountMemberConfig) DataCloudflareAccountMember {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataCloudflareAccountMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/account_member cloudflare_account_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_member cloudflare_account_member} Data Source.
 func NewDataCloudflareAccountMember_Override(d DataCloudflareAccountMember, scope constructs.Construct, id *string, config *DataCloudflareAccountMemberConfig) {
 	_init_.Initialize()
 

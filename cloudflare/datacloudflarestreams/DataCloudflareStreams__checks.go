@@ -323,6 +323,14 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetTypeParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) validateSetVideoNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataCloudflareStreamsParameters(scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

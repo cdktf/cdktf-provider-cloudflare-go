@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 type DataCloudflareWorkersForPlatformsDispatchNamespace interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -67,6 +67,7 @@ type DataCloudflareWorkersForPlatformsDispatchNamespace interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrustedWorkers() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -375,8 +376,18 @@ func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespace) Terraform
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersForPlatformsDispatchNamespace) TrustedWorkers() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trustedWorkers",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Data Source.
 func NewDataCloudflareWorkersForPlatformsDispatchNamespace(scope constructs.Construct, id *string, config *DataCloudflareWorkersForPlatformsDispatchNamespaceConfig) DataCloudflareWorkersForPlatformsDispatchNamespace {
 	_init_.Initialize()
 
@@ -394,7 +405,7 @@ func NewDataCloudflareWorkersForPlatformsDispatchNamespace(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace} Data Source.
 func NewDataCloudflareWorkersForPlatformsDispatchNamespace_Override(d DataCloudflareWorkersForPlatformsDispatchNamespace, scope constructs.Construct, id *string, config *DataCloudflareWorkersForPlatformsDispatchNamespaceConfig) {
 	_init_.Initialize()
 

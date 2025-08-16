@@ -39,7 +39,7 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	SetStatusCode(val *float64)
 	StatusCodeInput() *float64
 	TargetUrl() RulesetRulesActionParametersFromValueTargetUrlOutputReference
-	TargetUrlInput() interface{}
+	TargetUrlInput() *RulesetRulesActionParametersFromValueTargetUrl
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,7 +75,6 @@ type RulesetRulesActionParametersFromValueOutputReference interface {
 	PutTargetUrl(value *RulesetRulesActionParametersFromValueTargetUrl)
 	ResetPreserveQueryString()
 	ResetStatusCode()
-	ResetTargetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -191,8 +190,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TargetU
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TargetUrlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) TargetUrlInput() *RulesetRulesActionParametersFromValueTargetUrl {
+	var returns *RulesetRulesActionParametersFromValueTargetUrl
 	_jsii_.Get(
 		j,
 		"targetUrlInput",
@@ -535,14 +534,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) ResetSt
 	_jsii_.InvokeVoid(
 		r,
 		"resetStatusCode",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersFromValueOutputReference) ResetTargetUrl() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetTargetUrl",
 		nil, // no parameters
 	)
 }

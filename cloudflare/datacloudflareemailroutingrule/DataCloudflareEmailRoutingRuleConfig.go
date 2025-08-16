@@ -24,13 +24,13 @@ type DataCloudflareEmailRoutingRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
 	Filter *DataCloudflareEmailRoutingRuleFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Routing rule identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
 	RuleIdentifier *string `field:"optional" json:"ruleIdentifier" yaml:"ruleIdentifier"`
 }
 

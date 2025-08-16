@@ -119,6 +119,10 @@ func (j *jsiiProxy_BotManagement) validateSetFightModeParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetIsRobotsTxtManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

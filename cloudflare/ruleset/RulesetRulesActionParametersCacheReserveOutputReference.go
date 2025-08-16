@@ -70,6 +70,7 @@ type RulesetRulesActionParametersCacheReserveOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMinimumFileSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +485,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) ResetMinimumFileSize() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMinimumFileSize",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersCacheReserveOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

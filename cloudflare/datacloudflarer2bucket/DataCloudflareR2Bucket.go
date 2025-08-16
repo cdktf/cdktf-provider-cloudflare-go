@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_bucket cloudflare_r2_bucket}.
 type DataCloudflareR2Bucket interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflareR2Bucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) DataCloudflareR2Bucket {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataCloudflareR2Bucket(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_bucket cloudflare_r2_bucket} Data Source.
 func NewDataCloudflareR2Bucket_Override(d DataCloudflareR2Bucket, scope constructs.Construct, id *string, config *DataCloudflareR2BucketConfig) {
 	_init_.Initialize()
 

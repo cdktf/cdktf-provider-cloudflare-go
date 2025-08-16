@@ -75,6 +75,10 @@ func (f *jsiiProxy_Filter) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (f *jsiiProxy_Filter) validatePutBodyParameters(value interface{}) error {
+	return nil
+}
+
 func validateFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -99,6 +103,10 @@ func (j *jsiiProxy_Filter) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Filter) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Filter) validateSetExpressionParameters(val *string) error {
 	return nil
 }
@@ -107,7 +115,15 @@ func (j *jsiiProxy_Filter) validateSetLifecycleParameters(val *cdktf.TerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_Filter) validateSetPausedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Filter) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Filter) validateSetRefParameters(val *string) error {
 	return nil
 }
 

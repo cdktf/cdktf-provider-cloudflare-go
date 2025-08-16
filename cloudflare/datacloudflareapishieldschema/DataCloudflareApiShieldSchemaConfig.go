@@ -22,15 +22,15 @@ type DataCloudflareApiShieldSchemaConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}.
 	SchemaId *string `field:"required" json:"schemaId" yaml:"schemaId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Omit the source-files of schemas and only retrieve their meta-data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
 	OmitSource interface{} `field:"optional" json:"omitSource" yaml:"omitSource"`
 }
 

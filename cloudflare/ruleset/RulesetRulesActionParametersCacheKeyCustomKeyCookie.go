@@ -5,15 +5,15 @@ package ruleset
 
 
 type RulesetRulesActionParametersCacheKeyCustomKeyCookie struct {
-	// Checks for the presence of these cookie names.
+	// A list of cookies to check for the presence of.
 	//
-	// The presence of these cookies is used in building the cache key.
+	// The presence of these cookies is included in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#check_presence Ruleset#check_presence}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#check_presence Ruleset#check_presence}
 	CheckPresence *[]*string `field:"optional" json:"checkPresence" yaml:"checkPresence"`
-	// Include these cookies' names and their values.
+	// A list of cookies to include in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#include Ruleset#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#include Ruleset#include}
 	Include *[]*string `field:"optional" json:"include" yaml:"include"`
 }
 

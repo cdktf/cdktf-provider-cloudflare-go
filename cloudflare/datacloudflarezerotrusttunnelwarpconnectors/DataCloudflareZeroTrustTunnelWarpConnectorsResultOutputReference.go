@@ -24,6 +24,7 @@ type DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference interface 
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfigSrc() *string
 	Connections() DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList
 	ConnsActiveAt() *string
 	ConnsInactiveAt() *string
@@ -116,6 +117,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputRefere
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference) ConfigSrc() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configSrc",
 		&returns,
 	)
 	return returns

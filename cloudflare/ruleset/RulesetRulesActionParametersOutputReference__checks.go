@@ -480,6 +480,14 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAddit
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAssetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAutomaticHttpsRewritesParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -864,14 +872,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOrigi
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPhaseParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

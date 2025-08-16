@@ -5,15 +5,15 @@ package ruleset
 
 
 type RulesetRulesActionParametersCacheReserve struct {
-	// Determines whether cache reserve is enabled.
+	// Whether Cache Reserve is enabled.
 	//
-	// If this is true and a request meets eligibility criteria, Cloudflare will write the resource to cache reserve.
+	// If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#eligible Ruleset#eligible}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#eligible Ruleset#eligible}
 	Eligible interface{} `field:"required" json:"eligible" yaml:"eligible"`
-	// The minimum file size eligible for store in cache reserve.
+	// The minimum file size eligible for storage in Cache Reserve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
-	MinimumFileSize *float64 `field:"required" json:"minimumFileSize" yaml:"minimumFileSize"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+	MinimumFileSize *float64 `field:"optional" json:"minimumFileSize" yaml:"minimumFileSize"`
 }
 

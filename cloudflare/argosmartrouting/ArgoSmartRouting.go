@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing cloudflare_argo_smart_routing}.
 type ArgoSmartRouting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type ArgoSmartRouting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +45,7 @@ type ArgoSmartRouting interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -182,6 +184,16 @@ func (j *jsiiProxy_ArgoSmartRouting) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ArgoSmartRouting) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ArgoSmartRouting) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -227,6 +239,16 @@ func (j *jsiiProxy_ArgoSmartRouting) Lifecycle() *cdktf.TerraformResourceLifecyc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArgoSmartRouting) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -343,7 +365,7 @@ func (j *jsiiProxy_ArgoSmartRouting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
 func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSmartRoutingConfig) ArgoSmartRouting {
 	_init_.Initialize()
 
@@ -361,7 +383,7 @@ func NewArgoSmartRouting(scope constructs.Construct, id *string, config *ArgoSma
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_smart_routing cloudflare_argo_smart_routing} Resource.
 func NewArgoSmartRouting_Override(a ArgoSmartRouting, scope constructs.Construct, id *string, config *ArgoSmartRoutingConfig) {
 	_init_.Initialize()
 

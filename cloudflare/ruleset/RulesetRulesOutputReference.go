@@ -18,9 +18,6 @@ type RulesetRulesOutputReference interface {
 	ActionInput() *string
 	ActionParameters() RulesetRulesActionParametersOutputReference
 	ActionParametersInput() interface{}
-	Categories() *[]*string
-	SetCategories(val *[]*string)
-	CategoriesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,13 +92,10 @@ type RulesetRulesOutputReference interface {
 	PutExposedCredentialCheck(value *RulesetRulesExposedCredentialCheck)
 	PutLogging(value *RulesetRulesLogging)
 	PutRatelimit(value *RulesetRulesRatelimit)
-	ResetAction()
 	ResetActionParameters()
-	ResetCategories()
 	ResetDescription()
 	ResetEnabled()
 	ResetExposedCredentialCheck()
-	ResetExpression()
 	ResetLogging()
 	ResetRatelimit()
 	ResetRef()
@@ -155,26 +149,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference) ActionParametersInput() interfac
 	_jsii_.Get(
 		j,
 		"actionParametersInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) Categories() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"categories",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference) CategoriesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"categoriesInput",
 		&returns,
 	)
 	return returns
@@ -435,17 +409,6 @@ func (j *jsiiProxy_RulesetRulesOutputReference)SetAction(val *string) {
 	_jsii_.Set(
 		j,
 		"action",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesOutputReference)SetCategories(val *[]*string) {
-	if err := j.validateSetCategoriesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"categories",
 		val,
 	)
 }
@@ -779,26 +742,10 @@ func (r *jsiiProxy_RulesetRulesOutputReference) PutRatelimit(value *RulesetRules
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetAction() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetAction",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RulesetRulesOutputReference) ResetActionParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetActionParameters",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetCategories() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCategories",
 		nil, // no parameters
 	)
 }
@@ -823,14 +770,6 @@ func (r *jsiiProxy_RulesetRulesOutputReference) ResetExposedCredentialCheck() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetExposedCredentialCheck",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesOutputReference) ResetExpression() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetExpression",
 		nil, // no parameters
 	)
 }

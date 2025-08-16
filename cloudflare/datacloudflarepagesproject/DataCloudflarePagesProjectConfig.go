@@ -24,11 +24,11 @@ type DataCloudflarePagesProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
 	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
 }
 

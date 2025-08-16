@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
 type R2CustomDomain interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -23,6 +23,9 @@ type R2CustomDomain interface {
 	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Ciphers() *[]*string
+	SetCiphers(val *[]*string)
+	CiphersInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -127,6 +130,7 @@ type R2CustomDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCiphers()
 	ResetJurisdiction()
 	ResetMinTls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -195,6 +199,26 @@ func (j *jsiiProxy_R2CustomDomain) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2CustomDomain) Ciphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_R2CustomDomain) CiphersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciphersInput",
 		&returns,
 	)
 	return returns
@@ -471,7 +495,7 @@ func (j *jsiiProxy_R2CustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
 func NewR2CustomDomain(scope constructs.Construct, id *string, config *R2CustomDomainConfig) R2CustomDomain {
 	_init_.Initialize()
 
@@ -489,7 +513,7 @@ func NewR2CustomDomain(scope constructs.Construct, id *string, config *R2CustomD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_custom_domain cloudflare_r2_custom_domain} Resource.
 func NewR2CustomDomain_Override(r R2CustomDomain, scope constructs.Construct, id *string, config *R2CustomDomainConfig) {
 	_init_.Initialize()
 
@@ -518,6 +542,17 @@ func (j *jsiiProxy_R2CustomDomain)SetBucketName(val *string) {
 	_jsii_.Set(
 		j,
 		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_R2CustomDomain)SetCiphers(val *[]*string) {
+	if err := j.validateSetCiphersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ciphers",
 		val,
 	)
 }
@@ -995,6 +1030,14 @@ func (r *jsiiProxy_R2CustomDomain) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_R2CustomDomain) ResetCiphers() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCiphers",
+		nil, // no parameters
 	)
 }
 

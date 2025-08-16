@@ -63,7 +63,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersFromValueTargetUrlOutputReference) validateSetInternalValueParameters(val *RulesetRulesActionParametersFromValueTargetUrl) error {
 	return nil
 }
 

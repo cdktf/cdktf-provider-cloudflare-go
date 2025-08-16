@@ -24,7 +24,7 @@ type DataCloudflareStreamKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 }
 

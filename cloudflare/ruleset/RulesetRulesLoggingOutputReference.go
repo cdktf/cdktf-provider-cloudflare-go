@@ -67,6 +67,7 @@ type RulesetRulesLoggingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RulesetRulesLoggingOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesLoggingOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEnabled",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesLoggingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

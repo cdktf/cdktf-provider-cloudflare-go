@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset cloudflare_ruleset}.
 type Ruleset interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -49,6 +49,7 @@ type Ruleset interface {
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
+	LastUpdated() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -79,6 +80,7 @@ type Ruleset interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Version() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -301,6 +303,16 @@ func (j *jsiiProxy_Ruleset) KindInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ruleset) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ruleset) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -441,6 +453,16 @@ func (j *jsiiProxy_Ruleset) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ruleset) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ruleset) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,7 +484,7 @@ func (j *jsiiProxy_Ruleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) Ruleset {
 	_init_.Initialize()
 
@@ -480,7 +502,7 @@ func NewRuleset(scope constructs.Construct, id *string, config *RulesetConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset cloudflare_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset cloudflare_ruleset} Resource.
 func NewRuleset_Override(r Ruleset, scope constructs.Construct, id *string, config *RulesetConfig) {
 	_init_.Initialize()
 

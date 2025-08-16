@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -55,6 +55,9 @@ type BotManagement interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IsRobotsTxtManaged() interface{}
+	SetIsRobotsTxtManaged(val interface{})
+	IsRobotsTxtManagedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -148,6 +151,7 @@ type BotManagement interface {
 	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
+	ResetIsRobotsTxtManaged()
 	ResetOptimizeWordpress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -360,6 +364,26 @@ func (j *jsiiProxy_BotManagement) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) IsRobotsTxtManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isRobotsTxtManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) IsRobotsTxtManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isRobotsTxtManagedInput",
 		&returns,
 	)
 	return returns
@@ -606,7 +630,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -624,7 +648,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -724,6 +748,17 @@ func (j *jsiiProxy_BotManagement)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetIsRobotsTxtManaged(val interface{}) {
+	if err := j.validateSetIsRobotsTxtManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isRobotsTxtManaged",
 		val,
 	)
 }
@@ -1224,6 +1259,14 @@ func (b *jsiiProxy_BotManagement) ResetFightMode() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetFightMode",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetIsRobotsTxtManaged() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIsRobotsTxtManaged",
 		nil, // no parameters
 	)
 }

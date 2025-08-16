@@ -13,6 +13,8 @@ import (
 
 type DataCloudflareListItemsResultOutputReference interface {
 	cdktf.ComplexObject
+	Asn() *float64
+	Comment() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,6 +25,7 @@ type DataCloudflareListItemsResultOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreatedOn() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -30,8 +33,13 @@ type DataCloudflareListItemsResultOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() DataCloudflareListItemsResultHostnameOutputReference
+	Id() *string
 	InternalValue() *DataCloudflareListItemsResult
 	SetInternalValue(val *DataCloudflareListItemsResult)
+	Ip() *string
+	ModifiedOn() *string
+	Redirect() DataCloudflareListItemsResultRedirectOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,6 +87,26 @@ type jsiiProxy_DataCloudflareListItemsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Asn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"asn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Comment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"comment",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -94,6 +122,16 @@ func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) ComplexObjectIs
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) CreatedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdOn",
 		&returns,
 	)
 	return returns
@@ -119,11 +157,61 @@ func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Hostname() DataCloudflareListItemsResultHostnameOutputReference {
+	var returns DataCloudflareListItemsResultHostnameOutputReference
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) InternalValue() *DataCloudflareListItemsResult {
 	var returns *DataCloudflareListItemsResult
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Ip() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItemsResultOutputReference) Redirect() DataCloudflareListItemsResultRedirectOutputReference {
+	var returns DataCloudflareListItemsResultRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"redirect",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/certificate_pack cloudflare_certificate_pack}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/certificate_pack cloudflare_certificate_pack}.
 type CertificatePack interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,9 +75,11 @@ type CertificatePack interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	ValidationErrors() CertificatePackValidationErrorsList
 	ValidationMethod() *string
 	SetValidationMethod(val *string)
 	ValidationMethodInput() *string
+	ValidationRecords() CertificatePackValidationRecordsList
 	ValidityDays() *float64
 	SetValidityDays(val *float64)
 	ValidityDaysInput() *float64
@@ -409,6 +411,16 @@ func (j *jsiiProxy_CertificatePack) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CertificatePack) ValidationErrors() CertificatePackValidationErrorsList {
+	var returns CertificatePackValidationErrorsList
+	_jsii_.Get(
+		j,
+		"validationErrors",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificatePack) ValidationMethod() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,6 +436,16 @@ func (j *jsiiProxy_CertificatePack) ValidationMethodInput() *string {
 	_jsii_.Get(
 		j,
 		"validationMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificatePack) ValidationRecords() CertificatePackValidationRecordsList {
+	var returns CertificatePackValidationRecordsList
+	_jsii_.Get(
+		j,
+		"validationRecords",
 		&returns,
 	)
 	return returns
@@ -470,7 +492,7 @@ func (j *jsiiProxy_CertificatePack) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack(scope constructs.Construct, id *string, config *CertificatePackConfig) CertificatePack {
 	_init_.Initialize()
 
@@ -488,7 +510,7 @@ func NewCertificatePack(scope constructs.Construct, id *string, config *Certific
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/certificate_pack cloudflare_certificate_pack} Resource.
 func NewCertificatePack_Override(c CertificatePack, scope constructs.Construct, id *string, config *CertificatePackConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package pagesproject
 type PagesProjectDeploymentConfigsProductionDurableObjectNamespaces struct {
 	// ID of the Durable Object namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
 	NamespaceId *string `field:"optional" json:"namespaceId" yaml:"namespaceId"`
 }
 

@@ -5,17 +5,17 @@ package ruleset
 
 
 type RulesetRulesActionParametersHeaders struct {
-	// Available values: "remove", "add", "set".
+	// The operation to perform on the header. Available values: "add", "set", "remove".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#operation Ruleset#operation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#operation Ruleset#operation}
 	Operation *string `field:"required" json:"operation" yaml:"operation"`
-	// Expression for the header value.
+	// An expression that evaluates to a value for the header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
-	// Static value for the header.
+	// A static value for the header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

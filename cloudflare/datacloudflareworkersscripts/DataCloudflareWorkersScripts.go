@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts cloudflare_workers_scripts}.
 type DataCloudflareWorkersScripts interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -54,6 +54,9 @@ type DataCloudflareWorkersScripts interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Result() DataCloudflareWorkersScriptsResultList
+	Tags() *string
+	SetTags(val *string)
+	TagsInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,6 +92,7 @@ type DataCloudflareWorkersScripts interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_DataCloudflareWorkersScripts) Result() DataCloudflareWorkersS
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScripts) Tags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScripts) TagsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScripts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -299,7 +323,7 @@ func (j *jsiiProxy_DataCloudflareWorkersScripts) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
 func NewDataCloudflareWorkersScripts(scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptsConfig) DataCloudflareWorkersScripts {
 	_init_.Initialize()
 
@@ -317,7 +341,7 @@ func NewDataCloudflareWorkersScripts(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_scripts cloudflare_workers_scripts} Data Source.
 func NewDataCloudflareWorkersScripts_Override(d DataCloudflareWorkersScripts, scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptsConfig) {
 	_init_.Initialize()
 
@@ -392,6 +416,17 @@ func (j *jsiiProxy_DataCloudflareWorkersScripts)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScripts)SetTags(val *string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -693,6 +728,14 @@ func (d *jsiiProxy_DataCloudflareWorkersScripts) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareWorkersScripts) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

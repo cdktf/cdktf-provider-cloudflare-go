@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStart", GoMethod: "ResetStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVideoName", GoMethod: "ResetVideoName"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
 			_jsii_.MemberProperty{JsiiProperty: "search", GoGetter: "Search"},
 			_jsii_.MemberProperty{JsiiProperty: "searchInput", GoGetter: "SearchInput"},
@@ -77,6 +78,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "videoName", GoGetter: "VideoName"},
+			_jsii_.MemberProperty{JsiiProperty: "videoNameInput", GoGetter: "VideoNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareStreams{}

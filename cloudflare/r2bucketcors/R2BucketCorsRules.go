@@ -7,17 +7,17 @@ package r2bucketcors
 type R2BucketCorsRules struct {
 	// Object specifying allowed origins, methods and headers for this CORS rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_cors#allowed R2BucketCors#allowed}
 	Allowed *R2BucketCorsRulesAllowed `field:"required" json:"allowed" yaml:"allowed"`
 	// Specifies the headers that can be exposed back, and accessed by, the JavaScript making the cross-origin request.
 	//
 	// If you need to access headers beyond the safelisted response headers, such as Content-Encoding or cf-cache-status, you must specify it here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_cors#expose_headers R2BucketCors#expose_headers}
 	ExposeHeaders *[]*string `field:"optional" json:"exposeHeaders" yaml:"exposeHeaders"`
 	// Identifier for this rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_cors#id R2BucketCors#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_cors#id R2BucketCors#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ type R2BucketCorsRules struct {
 	//
 	// Browsers may limit this to 2 hours or less, even if the maximum value (86400) is specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_cors#max_age_seconds R2BucketCors#max_age_seconds}
 	MaxAgeSeconds *float64 `field:"optional" json:"maxAgeSeconds" yaml:"maxAgeSeconds"`
 }
 

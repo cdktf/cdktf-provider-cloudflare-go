@@ -123,6 +123,10 @@ func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddressParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_MagicWanGreTunnel) validateSetInterfaceAddress6Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MagicWanGreTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

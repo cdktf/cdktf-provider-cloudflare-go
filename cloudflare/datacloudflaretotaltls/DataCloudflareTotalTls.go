@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/total_tls cloudflare_total_tls}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/total_tls cloudflare_total_tls}.
 type DataCloudflareTotalTls interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataCloudflareTotalTls) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
 func NewDataCloudflareTotalTls(scope constructs.Construct, id *string, config *DataCloudflareTotalTlsConfig) DataCloudflareTotalTls {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataCloudflareTotalTls(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/total_tls cloudflare_total_tls} Data Source.
 func NewDataCloudflareTotalTls_Override(d DataCloudflareTotalTls, scope constructs.Construct, id *string, config *DataCloudflareTotalTlsConfig) {
 	_init_.Initialize()
 

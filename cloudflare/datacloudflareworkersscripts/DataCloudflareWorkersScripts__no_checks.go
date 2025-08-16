@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareWorkersScripts) validateSetMaxItemsParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScripts) validateSetTagsParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareWorkersScriptsParameters(scope constructs.Construct, id *string, config *DataCloudflareWorkersScriptsConfig) error {
 	return nil
 }

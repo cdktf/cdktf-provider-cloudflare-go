@@ -70,8 +70,6 @@ type RulesetRulesActionParametersFromListStructOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetKey()
-	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) In
 	)
 
 	return returns
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ResetKey() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetKey",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) ResetName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetName",
-		nil, // no parameters
-	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersFromListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

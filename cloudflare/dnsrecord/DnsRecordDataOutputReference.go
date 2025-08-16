@@ -46,9 +46,9 @@ type DnsRecordDataOutputReference interface {
 	Fingerprint() *string
 	SetFingerprint(val *string)
 	FingerprintInput() *string
-	Flags() *float64
-	SetFlags(val *float64)
-	FlagsInput() *float64
+	Flags() *map[string]interface{}
+	SetFlags(val *map[string]interface{})
+	FlagsInput() *map[string]interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -373,8 +373,8 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) FingerprintInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) Flags() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DnsRecordDataOutputReference) Flags() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"flags",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_DnsRecordDataOutputReference) Flags() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference) FlagsInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DnsRecordDataOutputReference) FlagsInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
 		"flagsInput",
@@ -1129,7 +1129,7 @@ func (j *jsiiProxy_DnsRecordDataOutputReference)SetFingerprint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsRecordDataOutputReference)SetFlags(val *float64) {
+func (j *jsiiProxy_DnsRecordDataOutputReference)SetFlags(val *map[string]interface{}) {
 	if err := j.validateSetFlagsParameters(val); err != nil {
 		panic(err)
 	}

@@ -139,6 +139,10 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAddit
 	return nil
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAssetNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetAutomaticHttpsRewritesParameters(val interface{}) error {
 	return nil
 }
@@ -220,10 +224,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOrigi
 }
 
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetOriginErrorPagePassthruParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) validateSetPhaseParameters(val *string) error {
 	return nil
 }
 

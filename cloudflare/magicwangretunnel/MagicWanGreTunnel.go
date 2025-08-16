@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type MagicWanGreTunnel interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -57,6 +57,9 @@ type MagicWanGreTunnel interface {
 	Id() *string
 	InterfaceAddress() *string
 	SetInterfaceAddress(val *string)
+	InterfaceAddress6() *string
+	SetInterfaceAddress6(val *string)
+	InterfaceAddress6Input() *string
 	InterfaceAddressInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -136,6 +139,7 @@ type MagicWanGreTunnel interface {
 	PutHealthCheck(value *MagicWanGreTunnelHealthCheck)
 	ResetDescription()
 	ResetHealthCheck()
+	ResetInterfaceAddress6()
 	ResetMtu()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -369,6 +373,26 @@ func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddress6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceAddress6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MagicWanGreTunnel) InterfaceAddressInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -530,7 +554,7 @@ func (j *jsiiProxy_MagicWanGreTunnel) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) MagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -548,7 +572,7 @@ func NewMagicWanGreTunnel(scope constructs.Construct, id *string, config *MagicW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Resource.
 func NewMagicWanGreTunnel_Override(m MagicWanGreTunnel, scope constructs.Construct, id *string, config *MagicWanGreTunnelConfig) {
 	_init_.Initialize()
 
@@ -648,6 +672,17 @@ func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"interfaceAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MagicWanGreTunnel)SetInterfaceAddress6(val *string) {
+	if err := j.validateSetInterfaceAddress6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interfaceAddress6",
 		val,
 	)
 }
@@ -1091,6 +1126,14 @@ func (m *jsiiProxy_MagicWanGreTunnel) ResetHealthCheck() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MagicWanGreTunnel) ResetInterfaceAddress6() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInterfaceAddress6",
 		nil, // no parameters
 	)
 }

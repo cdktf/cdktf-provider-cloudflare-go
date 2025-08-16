@@ -5,7 +5,7 @@ package workerscrontrigger
 
 
 type WorkersCronTriggerSchedules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
 	Cron *string `field:"required" json:"cron" yaml:"cron"`
 }
 

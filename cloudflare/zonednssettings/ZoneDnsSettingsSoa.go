@@ -7,31 +7,31 @@ package zonednssettings
 type ZoneDnsSettingsSoa struct {
 	// Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#expire ZoneDnsSettings#expire}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#expire ZoneDnsSettings#expire}
 	Expire *float64 `field:"required" json:"expire" yaml:"expire"`
 	// The time to live (TTL) for negative caching of records within the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#min_ttl ZoneDnsSettings#min_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#min_ttl ZoneDnsSettings#min_ttl}
 	MinTtl *float64 `field:"required" json:"minTtl" yaml:"minTtl"`
 	// The primary nameserver, which may be used for outbound zone transfers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#mname ZoneDnsSettings#mname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#mname ZoneDnsSettings#mname}
 	Mname *string `field:"required" json:"mname" yaml:"mname"`
 	// Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#refresh ZoneDnsSettings#refresh}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#refresh ZoneDnsSettings#refresh}
 	Refresh *float64 `field:"required" json:"refresh" yaml:"refresh"`
 	// Time in seconds after which secondary servers should retry queries after the primary server was unresponsive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#retry ZoneDnsSettings#retry}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#retry ZoneDnsSettings#retry}
 	Retry *float64 `field:"required" json:"retry" yaml:"retry"`
 	// The email address of the zone administrator, with the first label representing the local part of the email address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#rname ZoneDnsSettings#rname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#rname ZoneDnsSettings#rname}
 	Rname *string `field:"required" json:"rname" yaml:"rname"`
 	// The time to live (TTL) of the SOA record itself.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zone_dns_settings#ttl ZoneDnsSettings#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zone_dns_settings#ttl ZoneDnsSettings#ttl}
 	Ttl *float64 `field:"required" json:"ttl" yaml:"ttl"`
 }
 

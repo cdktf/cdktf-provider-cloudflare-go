@@ -7,7 +7,7 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupExcludeEmailDomain struct {
 	// The email domain to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 }
 

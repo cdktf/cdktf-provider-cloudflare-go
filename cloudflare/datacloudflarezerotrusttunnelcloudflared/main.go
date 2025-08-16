@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountTag", GoGetter: "AccountTag"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "configSrc", GoGetter: "ConfigSrc"},
 			_jsii_.MemberProperty{JsiiProperty: "connections", GoGetter: "Connections"},
 			_jsii_.MemberProperty{JsiiProperty: "connsActiveAt", GoGetter: "ConnsActiveAt"},
 			_jsii_.MemberProperty{JsiiProperty: "connsInactiveAt", GoGetter: "ConnsInactiveAt"},

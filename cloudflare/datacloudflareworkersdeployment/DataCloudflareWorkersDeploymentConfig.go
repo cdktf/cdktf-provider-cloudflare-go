@@ -24,13 +24,13 @@ type DataCloudflareWorkersDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_deployment#account_id DataCloudflareWorkersDeployment#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_deployment#account_id DataCloudflareWorkersDeployment#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_deployment#deployment_id DataCloudflareWorkersDeployment#deployment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_deployment#deployment_id DataCloudflareWorkersDeployment#deployment_id}.
 	DeploymentId *string `field:"required" json:"deploymentId" yaml:"deploymentId"`
 	// Name of the script, used in URLs and route configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/workers_deployment#script_name DataCloudflareWorkersDeployment#script_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_deployment#script_name DataCloudflareWorkersDeployment#script_name}
 	ScriptName *string `field:"required" json:"scriptName" yaml:"scriptName"`
 }
 

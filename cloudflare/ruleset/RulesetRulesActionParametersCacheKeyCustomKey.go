@@ -5,25 +5,25 @@ package ruleset
 
 
 type RulesetRulesActionParametersCacheKeyCustomKey struct {
-	// The cookies to include in building the cache key.
+	// Which cookies to include in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#cookie Ruleset#cookie}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#cookie Ruleset#cookie}
 	Cookie *RulesetRulesActionParametersCacheKeyCustomKeyCookie `field:"optional" json:"cookie" yaml:"cookie"`
-	// The header names and values to include in building the cache key.
+	// Which headers to include in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#header Ruleset#header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#header Ruleset#header}
 	Header *RulesetRulesActionParametersCacheKeyCustomKeyHeader `field:"optional" json:"header" yaml:"header"`
-	// Whether to use the original host or the resolved host in the cache key.
+	// How to use the host in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#host Ruleset#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#host Ruleset#host}
 	Host *RulesetRulesActionParametersCacheKeyCustomKeyHost `field:"optional" json:"host" yaml:"host"`
-	// Use the presence of parameters in the query string to build the cache key.
+	// Which query string parameters to include in or exclude from the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#query_string Ruleset#query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#query_string Ruleset#query_string}
 	QueryString *RulesetRulesActionParametersCacheKeyCustomKeyQueryString `field:"optional" json:"queryString" yaml:"queryString"`
-	// Characteristics of the request user agent used in building the cache key.
+	// How to use characteristics of the request user agent in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#user Ruleset#user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#user Ruleset#user}
 	User *RulesetRulesActionParametersCacheKeyCustomKeyUser `field:"optional" json:"user" yaml:"user"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}.
 type DataCloudflareContentScanningExpressions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareContentScanningExpressions) ZoneIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) DataCloudflareContentScanningExpressions {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareContentScanningExpressions(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source.
 func NewDataCloudflareContentScanningExpressions_Override(d DataCloudflareContentScanningExpressions, scope constructs.Construct, id *string, config *DataCloudflareContentScanningExpressionsConfig) {
 	_init_.Initialize()
 

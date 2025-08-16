@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain}.
 type DataCloudflareR2CustomDomain interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -23,6 +23,7 @@ type DataCloudflareR2CustomDomain interface {
 	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Ciphers() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) CdktfStack() cdktf.TerraformSta
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareR2CustomDomain) Ciphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ciphers",
 		&returns,
 	)
 	return returns
@@ -365,7 +376,7 @@ func (j *jsiiProxy_DataCloudflareR2CustomDomain) ZoneName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) DataCloudflareR2CustomDomain {
 	_init_.Initialize()
 
@@ -383,7 +394,7 @@ func NewDataCloudflareR2CustomDomain(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_custom_domain cloudflare_r2_custom_domain} Data Source.
 func NewDataCloudflareR2CustomDomain_Override(d DataCloudflareR2CustomDomain, scope constructs.Construct, id *string, config *DataCloudflareR2CustomDomainConfig) {
 	_init_.Initialize()
 

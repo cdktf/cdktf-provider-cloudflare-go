@@ -23,7 +23,6 @@ type ManagedTransformsManagedRequestHeadersOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConflictsWith() *[]*string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -34,7 +33,6 @@ type ManagedTransformsManagedRequestHeadersOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
-	HasConflict() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -107,16 +105,6 @@ func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) Comple
 	return returns
 }
 
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) ConflictsWith() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"conflictsWith",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -152,16 +140,6 @@ func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedTransformsManagedRequestHeadersOutputReference) HasConflict() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"hasConflict",
 		&returns,
 	)
 	return returns

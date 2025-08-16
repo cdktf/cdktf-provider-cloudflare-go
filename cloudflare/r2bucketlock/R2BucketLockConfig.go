@@ -24,17 +24,17 @@ type R2BucketLockConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// Jurisdiction of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
 	Jurisdiction *string `field:"optional" json:"jurisdiction" yaml:"jurisdiction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 

@@ -7,7 +7,7 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupIncludeLinkedAppToken struct {
 	// The ID of an Access OIDC SaaS application.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
 	AppUid *string `field:"required" json:"appUid" yaml:"appUid"`
 }
 

@@ -7,21 +7,21 @@ package magictransitsitelan
 type MagicTransitSiteLanStaticAddressingDhcpServer struct {
 	// A valid IPv4 address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
 	DhcpPoolEnd *string `field:"optional" json:"dhcpPoolEnd" yaml:"dhcpPoolEnd"`
 	// A valid IPv4 address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
 	DhcpPoolStart *string `field:"optional" json:"dhcpPoolStart" yaml:"dhcpPoolStart"`
 	// A valid IPv4 address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
 	DnsServer *string `field:"optional" json:"dnsServer" yaml:"dnsServer"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
 	DnsServers *[]*string `field:"optional" json:"dnsServers" yaml:"dnsServers"`
 	// Mapping of MAC addresses to IP addresses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
 	Reservations *map[string]*string `field:"optional" json:"reservations" yaml:"reservations"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
 type ZeroTrustDeviceDefaultProfileCertificates interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ZeroTrustDeviceDefaultProfileCertificates) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
 func NewZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileCertificatesConfig) ZeroTrustDeviceDefaultProfileCertificates {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewZeroTrustDeviceDefaultProfileCertificates(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates} Resource.
 func NewZeroTrustDeviceDefaultProfileCertificates_Override(z ZeroTrustDeviceDefaultProfileCertificates, scope constructs.Construct, id *string, config *ZeroTrustDeviceDefaultProfileCertificatesConfig) {
 	_init_.Initialize()
 

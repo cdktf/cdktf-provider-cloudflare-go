@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule}.
 type ZeroTrustDevicePostureRule interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ZeroTrustDevicePostureRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
 func NewZeroTrustDevicePostureRule(scope constructs.Construct, id *string, config *ZeroTrustDevicePostureRuleConfig) ZeroTrustDevicePostureRule {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewZeroTrustDevicePostureRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_device_posture_rule cloudflare_zero_trust_device_posture_rule} Resource.
 func NewZeroTrustDevicePostureRule_Override(z ZeroTrustDevicePostureRule, scope constructs.Construct, id *string, config *ZeroTrustDevicePostureRuleConfig) {
 	_init_.Initialize()
 

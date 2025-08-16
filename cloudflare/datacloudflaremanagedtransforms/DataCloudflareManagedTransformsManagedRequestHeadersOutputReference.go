@@ -23,7 +23,6 @@ type DataCloudflareManagedTransformsManagedRequestHeadersOutputReference interfa
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConflictsWith() *[]*string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,7 +31,6 @@ type DataCloudflareManagedTransformsManagedRequestHeadersOutputReference interfa
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
-	HasConflict() cdktf.IResolvable
 	Id() *string
 	InternalValue() *DataCloudflareManagedTransformsManagedRequestHeaders
 	SetInternalValue(val *DataCloudflareManagedTransformsManagedRequestHeaders)
@@ -103,16 +101,6 @@ func (j *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersOutputReference) ConflictsWith() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"conflictsWith",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -138,16 +126,6 @@ func (j *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersOutputRef
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareManagedTransformsManagedRequestHeadersOutputReference) HasConflict() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"hasConflict",
 		&returns,
 	)
 	return returns

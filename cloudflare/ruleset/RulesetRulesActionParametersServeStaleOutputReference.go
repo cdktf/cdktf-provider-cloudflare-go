@@ -67,6 +67,7 @@ type RulesetRulesActionParametersServeStaleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisableStaleWhileUpdating()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) ResetDisableStaleWhileUpdating() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableStaleWhileUpdating",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

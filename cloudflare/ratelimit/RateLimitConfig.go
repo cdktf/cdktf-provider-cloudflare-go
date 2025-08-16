@@ -24,27 +24,27 @@ type RateLimitConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The action to perform when the threshold of matched traffic within the configured period is exceeded.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/rate_limit#action RateLimit#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/rate_limit#action RateLimit#action}
 	Action *RateLimitAction `field:"required" json:"action" yaml:"action"`
 	// Determines which traffic the rate limit counts towards the threshold.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/rate_limit#match RateLimit#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/rate_limit#match RateLimit#match}
 	Match *RateLimitMatch `field:"required" json:"match" yaml:"match"`
 	// The time in seconds (an integer value) to count matching traffic.
 	//
 	// If the count exceeds the configured threshold within this period, Cloudflare will perform the configured action.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/rate_limit#period RateLimit#period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/rate_limit#period RateLimit#period}
 	Period *float64 `field:"required" json:"period" yaml:"period"`
 	// The threshold that will trigger the configured mitigation action.
 	//
 	// Configure this value along with the `period` property to establish a threshold per period.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/rate_limit#threshold RateLimit#threshold}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/rate_limit#threshold RateLimit#threshold}
 	Threshold *float64 `field:"required" json:"threshold" yaml:"threshold"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/rate_limit#zone_id RateLimit#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/rate_limit#zone_id RateLimit#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing}.
 type DataCloudflareArgoSmartRouting interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataCloudflareArgoSmartRouting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Editable() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,10 +36,12 @@ type DataCloudflareArgoSmartRouting interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ModifiedOn() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -53,6 +56,7 @@ type DataCloudflareArgoSmartRouting interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Value() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -143,6 +147,16 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareArgoSmartRouting) Editable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"editable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -173,11 +187,31 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareArgoSmartRouting) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareArgoSmartRouting) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ModifiedOn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modifiedOn",
 		&returns,
 	)
 	return returns
@@ -243,6 +277,16 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareArgoSmartRouting) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -264,7 +308,7 @@ func (j *jsiiProxy_DataCloudflareArgoSmartRouting) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) DataCloudflareArgoSmartRouting {
 	_init_.Initialize()
 
@@ -282,7 +326,7 @@ func NewDataCloudflareArgoSmartRouting(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/argo_smart_routing cloudflare_argo_smart_routing} Data Source.
 func NewDataCloudflareArgoSmartRouting_Override(d DataCloudflareArgoSmartRouting, scope constructs.Construct, id *string, config *DataCloudflareArgoSmartRoutingConfig) {
 	_init_.Initialize()
 

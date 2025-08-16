@@ -30,15 +30,15 @@ type SchemaValidationOperationSettingsConfig struct {
 	//   - `null` - clears any mitigation action
 	// Available values: "log", "block", "none".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
 	MitigationAction *string `field:"required" json:"mitigationAction" yaml:"mitigationAction"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
 	OperationId *string `field:"required" json:"operationId" yaml:"operationId"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

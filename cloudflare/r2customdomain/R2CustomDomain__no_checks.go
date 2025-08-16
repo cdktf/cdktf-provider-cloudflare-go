@@ -99,6 +99,10 @@ func (j *jsiiProxy_R2CustomDomain) validateSetBucketNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_R2CustomDomain) validateSetCiphersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_R2CustomDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

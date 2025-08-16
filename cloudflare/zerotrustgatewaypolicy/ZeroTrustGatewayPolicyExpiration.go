@@ -16,13 +16,13 @@ type ZeroTrustGatewayPolicyExpiration struct {
 	// clients they are applied to, and expire "globally" at the point
 	// given by their `expires_at` value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
 	ExpiresAt *string `field:"required" json:"expiresAt" yaml:"expiresAt"`
 	// The default duration a policy will be active in minutes.
 	//
 	// Must be set in order to use the `reset_expiration` endpoint on this rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
 	Duration *float64 `field:"optional" json:"duration" yaml:"duration"`
 }
 

@@ -5,13 +5,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange struct {
-	// Response status code lower bound.
+	// The lower bound of the range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#from Ruleset#from}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#from Ruleset#from}
 	From *float64 `field:"optional" json:"from" yaml:"from"`
-	// Response status code upper bound.
+	// The upper bound of the range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#to Ruleset#to}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#to Ruleset#to}
 	To *float64 `field:"optional" json:"to" yaml:"to"`
 }
 

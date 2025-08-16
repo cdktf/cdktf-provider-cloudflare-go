@@ -5,13 +5,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersOrigin struct {
-	// Override the resolved hostname.
+	// A resolved host to route to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#host Ruleset#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#host Ruleset#host}
 	Host *string `field:"optional" json:"host" yaml:"host"`
-	// Override the destination port.
+	// A destination port to route to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#port Ruleset#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#port Ruleset#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
 

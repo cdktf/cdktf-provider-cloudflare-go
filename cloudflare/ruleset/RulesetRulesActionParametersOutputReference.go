@@ -18,6 +18,9 @@ type RulesetRulesActionParametersOutputReference interface {
 	AdditionalCacheablePortsInput() *[]*float64
 	Algorithms() RulesetRulesActionParametersAlgorithmsList
 	AlgorithmsInput() interface{}
+	AssetName() *string
+	SetAssetName(val *string)
+	AssetNameInput() *string
 	AutomaticHttpsRewrites() interface{}
 	SetAutomaticHttpsRewrites(val interface{})
 	AutomaticHttpsRewritesInput() interface{}
@@ -115,9 +118,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	OriginInput() interface{}
 	Overrides() RulesetRulesActionParametersOverridesOutputReference
 	OverridesInput() interface{}
-	Phase() *string
-	SetPhase(val *string)
-	PhaseInput() *string
 	Phases() *[]*string
 	SetPhases(val *[]*string)
 	PhasesInput() *[]*string
@@ -231,6 +231,7 @@ type RulesetRulesActionParametersOutputReference interface {
 	PutUri(value *RulesetRulesActionParametersUri)
 	ResetAdditionalCacheablePorts()
 	ResetAlgorithms()
+	ResetAssetName()
 	ResetAutomaticHttpsRewrites()
 	ResetAutominify()
 	ResetBic()
@@ -261,7 +262,6 @@ type RulesetRulesActionParametersOutputReference interface {
 	ResetOriginCacheControl()
 	ResetOriginErrorPagePassthru()
 	ResetOverrides()
-	ResetPhase()
 	ResetPhases()
 	ResetPolish()
 	ResetProducts()
@@ -334,6 +334,26 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AlgorithmsInput(
 	_jsii_.Get(
 		j,
 		"algorithmsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AssetName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) AssetNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetNameInput",
 		&returns,
 	)
 	return returns
@@ -989,26 +1009,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) OverridesInput()
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Phase() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"phase",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) PhaseInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"phaseInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference) Phases() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1508,6 +1508,17 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAdditionalCach
 	)
 }
 
+func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAssetName(val *string) {
+	if err := j.validateSetAssetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assetName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetAutomaticHttpsRewrites(val interface{}) {
 	if err := j.validateSetAutomaticHttpsRewritesParameters(val); err != nil {
 		panic(err)
@@ -1735,17 +1746,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetOriginErrorPag
 	_jsii_.Set(
 		j,
 		"originErrorPagePassthru",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RulesetRulesActionParametersOutputReference)SetPhase(val *string) {
-	if err := j.validateSetPhaseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"phase",
 		val,
 	)
 }
@@ -2359,6 +2359,14 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAlgorithms(
 	)
 }
 
+func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAssetName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAssetName",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetAutomaticHttpsRewrites() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2595,14 +2603,6 @@ func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetOverrides()
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrides",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RulesetRulesActionParametersOutputReference) ResetPhase() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetPhase",
 		nil, // no parameters
 	)
 }

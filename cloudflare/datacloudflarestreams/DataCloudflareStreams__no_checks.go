@@ -119,6 +119,10 @@ func (j *jsiiProxy_DataCloudflareStreams) validateSetTypeParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareStreams) validateSetVideoNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareStreamsParameters(scope constructs.Construct, id *string, config *DataCloudflareStreamsConfig) error {
 	return nil
 }

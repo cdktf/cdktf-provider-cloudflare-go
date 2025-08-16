@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list}.
 type DataCloudflareList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -92,7 +92,6 @@ type DataCloudflareList interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetListId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -376,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataCloudflareListConfig) DataCloudflareList {
 	_init_.Initialize()
 
@@ -394,7 +393,7 @@ func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList_Override(d DataCloudflareList, scope constructs.Construct, id *string, config *DataCloudflareListConfig) {
 	_init_.Initialize()
 
@@ -755,14 +754,6 @@ func (d *jsiiProxy_DataCloudflareList) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataCloudflareList) ResetListId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetListId",
-		nil, // no parameters
 	)
 }
 

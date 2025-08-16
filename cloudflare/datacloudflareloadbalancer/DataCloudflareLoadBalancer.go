@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/load_balancer cloudflare_load_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/load_balancer cloudflare_load_balancer}.
 type DataCloudflareLoadBalancer interface {
 	cdktf.TerraformDataSource
 	AdaptiveRouting() DataCloudflareLoadBalancerAdaptiveRoutingOutputReference
@@ -556,7 +556,7 @@ func (j *jsiiProxy_DataCloudflareLoadBalancer) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) DataCloudflareLoadBalancer {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewDataCloudflareLoadBalancer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/load_balancer cloudflare_load_balancer} Data Source.
 func NewDataCloudflareLoadBalancer_Override(d DataCloudflareLoadBalancer, scope constructs.Construct, id *string, config *DataCloudflareLoadBalancerConfig) {
 	_init_.Initialize()
 

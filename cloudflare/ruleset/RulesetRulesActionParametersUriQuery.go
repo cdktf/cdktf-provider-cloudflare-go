@@ -5,13 +5,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersUriQuery struct {
-	// Expression to evaluate for the replacement value.
+	// An expression that evaluates to a value to rewrite the URI query to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#expression Ruleset#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#expression Ruleset#expression}
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
-	// Predefined replacement value.
+	// A value to rewrite the URI query to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#value Ruleset#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#value Ruleset#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

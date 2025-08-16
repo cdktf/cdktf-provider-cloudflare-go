@@ -24,11 +24,11 @@ type DataCloudflareR2BucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_bucket#account_id DataCloudflareR2Bucket#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/r2_bucket#bucket_name DataCloudflareR2Bucket#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 }
 

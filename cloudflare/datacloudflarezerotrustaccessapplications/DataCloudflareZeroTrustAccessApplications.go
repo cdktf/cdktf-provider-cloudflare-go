@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications}.
 type DataCloudflareZeroTrustAccessApplications interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustAccessApplications) ZoneIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
 func NewDataCloudflareZeroTrustAccessApplications(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationsConfig) DataCloudflareZeroTrustAccessApplications {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataCloudflareZeroTrustAccessApplications(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_access_applications cloudflare_zero_trust_access_applications} Data Source.
 func NewDataCloudflareZeroTrustAccessApplications_Override(d DataCloudflareZeroTrustAccessApplications, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustAccessApplicationsConfig) {
 	_init_.Initialize()
 

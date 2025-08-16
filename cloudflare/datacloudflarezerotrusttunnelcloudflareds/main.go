@@ -189,6 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "configSrc", GoGetter: "ConfigSrc"},
 			_jsii_.MemberProperty{JsiiProperty: "connections", GoGetter: "Connections"},
 			_jsii_.MemberProperty{JsiiProperty: "connsActiveAt", GoGetter: "ConnsActiveAt"},
 			_jsii_.MemberProperty{JsiiProperty: "connsInactiveAt", GoGetter: "ConnsInactiveAt"},

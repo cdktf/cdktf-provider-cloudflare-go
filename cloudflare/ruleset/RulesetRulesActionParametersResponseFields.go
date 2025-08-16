@@ -5,13 +5,13 @@ package ruleset
 
 
 type RulesetRulesActionParametersResponseFields struct {
-	// The name of the field.
+	// The name of the response header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Whether to log duplicate values of the same header.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 	PreserveDuplicates interface{} `field:"optional" json:"preserveDuplicates" yaml:"preserveDuplicates"`
 }
 

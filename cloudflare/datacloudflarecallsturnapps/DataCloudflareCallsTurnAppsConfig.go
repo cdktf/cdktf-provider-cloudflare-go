@@ -24,11 +24,11 @@ type DataCloudflareCallsTurnAppsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/calls_turn_apps#account_id DataCloudflareCallsTurnApps#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/calls_turn_apps#account_id DataCloudflareCallsTurnApps#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/data-sources/calls_turn_apps#max_items DataCloudflareCallsTurnApps#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/calls_turn_apps#max_items DataCloudflareCallsTurnApps#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

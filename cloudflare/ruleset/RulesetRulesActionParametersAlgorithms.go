@@ -5,9 +5,9 @@ package ruleset
 
 
 type RulesetRulesActionParametersAlgorithms struct {
-	// Name of compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
+	// Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/ruleset#name Ruleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/ruleset#name Ruleset#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

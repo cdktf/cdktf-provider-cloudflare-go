@@ -7,7 +7,7 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupIncludeEmail struct {
 	// The email of the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 }
 

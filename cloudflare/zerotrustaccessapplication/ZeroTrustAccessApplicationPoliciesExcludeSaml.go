@@ -7,15 +7,15 @@ package zerotrustaccessapplication
 type ZeroTrustAccessApplicationPoliciesExcludeSaml struct {
 	// The name of the SAML attribute.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_application#attribute_name ZeroTrustAccessApplication#attribute_name}
 	AttributeName *string `field:"required" json:"attributeName" yaml:"attributeName"`
 	// The SAML attribute value to look for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_application#attribute_value ZeroTrustAccessApplication#attribute_value}
 	AttributeValue *string `field:"required" json:"attributeValue" yaml:"attributeValue"`
 	// The ID of your SAML identity provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_application#identity_provider_id ZeroTrustAccessApplication#identity_provider_id}
 	IdentityProviderId *string `field:"required" json:"identityProviderId" yaml:"identityProviderId"`
 }
 
