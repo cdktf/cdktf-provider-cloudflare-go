@@ -12,13 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 type DataCloudflareWorkersKvNamespace interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	Beta() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -130,16 +129,6 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Beta() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"beta",
 		&returns,
 	)
 	return returns
@@ -356,7 +345,7 @@ func (j *jsiiProxy_DataCloudflareWorkersKvNamespace) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace} Data Source.
 func NewDataCloudflareWorkersKvNamespace(scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespaceConfig) DataCloudflareWorkersKvNamespace {
 	_init_.Initialize()
 
@@ -374,7 +363,7 @@ func NewDataCloudflareWorkersKvNamespace(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/workers_kv_namespace cloudflare_workers_kv_namespace} Data Source.
 func NewDataCloudflareWorkersKvNamespace_Override(d DataCloudflareWorkersKvNamespace, scope constructs.Construct, id *string, config *DataCloudflareWorkersKvNamespaceConfig) {
 	_init_.Initialize()
 

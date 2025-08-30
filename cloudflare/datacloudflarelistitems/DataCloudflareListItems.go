@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items cloudflare_list_items}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items cloudflare_list_items}.
 type DataCloudflareListItems interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -50,6 +50,9 @@ type DataCloudflareListItems interface {
 	MaxItemsInput() *float64
 	// The tree node.
 	Node() constructs.Node
+	PerPage() *float64
+	SetPerPage(val *float64)
+	PerPageInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -95,6 +98,7 @@ type DataCloudflareListItems interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerPage()
 	ResetSearch()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -265,6 +269,26 @@ func (j *jsiiProxy_DataCloudflareListItems) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareListItems) PerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareListItems) PerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"perPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareListItems) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -346,7 +370,7 @@ func (j *jsiiProxy_DataCloudflareListItems) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items cloudflare_list_items} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items cloudflare_list_items} Data Source.
 func NewDataCloudflareListItems(scope constructs.Construct, id *string, config *DataCloudflareListItemsConfig) DataCloudflareListItems {
 	_init_.Initialize()
 
@@ -364,7 +388,7 @@ func NewDataCloudflareListItems(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list_items cloudflare_list_items} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list_items cloudflare_list_items} Data Source.
 func NewDataCloudflareListItems_Override(d DataCloudflareListItems, scope constructs.Construct, id *string, config *DataCloudflareListItemsConfig) {
 	_init_.Initialize()
 
@@ -442,6 +466,17 @@ func (j *jsiiProxy_DataCloudflareListItems)SetMaxItems(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxItems",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareListItems)SetPerPage(val *float64) {
+	if err := j.validateSetPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perPage",
 		val,
 	)
 }
@@ -762,6 +797,14 @@ func (d *jsiiProxy_DataCloudflareListItems) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareListItems) ResetPerPage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPerPage",
 		nil, // no parameters
 	)
 }

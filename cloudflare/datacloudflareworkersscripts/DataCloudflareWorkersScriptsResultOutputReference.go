@@ -13,6 +13,8 @@ import (
 
 type DataCloudflareWorkersScriptsResultOutputReference interface {
 	cdktf.ComplexObject
+	CompatibilityDate() *string
+	CompatibilityFlags() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,13 +34,17 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 	Etag() *string
 	// Experimental.
 	Fqn() *string
+	Handlers() *[]*string
 	HasAssets() cdktf.IResolvable
 	HasModules() cdktf.IResolvable
 	Id() *string
 	InternalValue() *DataCloudflareWorkersScriptsResult
 	SetInternalValue(val *DataCloudflareWorkersScriptsResult)
+	LastDeployedFrom() *string
 	Logpush() cdktf.IResolvable
+	MigrationTag() *string
 	ModifiedOn() *string
+	NamedHandlers() DataCloudflareWorkersScriptsResultNamedHandlersList
 	Placement() DataCloudflareWorkersScriptsResultPlacementOutputReference
 	PlacementMode() *string
 	PlacementStatus() *string
@@ -89,6 +95,26 @@ type DataCloudflareWorkersScriptsResultOutputReference interface {
 // The jsii proxy struct for DataCloudflareWorkersScriptsResultOutputReference
 type jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) CompatibilityDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compatibilityDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) CompatibilityFlags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"compatibilityFlags",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) ComplexObjectIndex() interface{} {
@@ -151,6 +177,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Fqn() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Handlers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"handlers",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) HasAssets() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -191,6 +227,16 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) LastDeployedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastDeployedFrom",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Logpush() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -201,11 +247,31 @@ func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) Logpush() 
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) MigrationTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareWorkersScriptsResultOutputReference) NamedHandlers() DataCloudflareWorkersScriptsResultNamedHandlersList {
+	var returns DataCloudflareWorkersScriptsResultNamedHandlersList
+	_jsii_.Get(
+		j,
+		"namedHandlers",
 		&returns,
 	)
 	return returns

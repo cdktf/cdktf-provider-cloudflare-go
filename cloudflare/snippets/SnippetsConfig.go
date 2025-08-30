@@ -24,19 +24,19 @@ type SnippetsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The list of files belonging to the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/snippets#files Snippets#files}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/snippets#files Snippets#files}
 	Files *[]*string `field:"required" json:"files" yaml:"files"`
 	// Metadata about the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/snippets#metadata Snippets#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/snippets#metadata Snippets#metadata}
 	Metadata *SnippetsMetadata `field:"required" json:"metadata" yaml:"metadata"`
 	// The identifying name of the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/snippets#snippet_name Snippets#snippet_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/snippets#snippet_name Snippets#snippet_name}
 	SnippetName *string `field:"required" json:"snippetName" yaml:"snippetName"`
 	// The unique ID of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/snippets#zone_id Snippets#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/snippets#zone_id Snippets#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

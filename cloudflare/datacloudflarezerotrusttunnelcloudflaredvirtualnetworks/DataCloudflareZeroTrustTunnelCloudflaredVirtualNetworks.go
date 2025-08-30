@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks}.
 type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -44,6 +44,9 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks interface {
 	IsDefault() interface{}
 	SetIsDefault(val interface{})
 	IsDefaultInput() interface{}
+	IsDefaultNetwork() interface{}
+	SetIsDefaultNetwork(val interface{})
+	IsDefaultNetworkInput() interface{}
 	IsDeleted() interface{}
 	SetIsDeleted(val interface{})
 	IsDeletedInput() interface{}
@@ -99,6 +102,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
 	ResetIsDefault()
+	ResetIsDefaultNetwork()
 	ResetIsDeleted()
 	ResetMaxItems()
 	ResetName()
@@ -254,6 +258,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) IsDe
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) IsDefaultNetwork() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) IsDefaultNetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) IsDeleted() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -395,7 +419,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) Terr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig) DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks {
 	_init_.Initialize()
 
@@ -413,7 +437,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_tunnel_cloudflared_virtual_networks cloudflare_zero_trust_tunnel_cloudflared_virtual_networks} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks_Override(d DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworksConfig) {
 	_init_.Initialize()
 
@@ -480,6 +504,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks)SetIs
 	_jsii_.Set(
 		j,
 		"isDefault",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks)SetIsDefaultNetwork(val interface{}) {
+	if err := j.validateSetIsDefaultNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultNetwork",
 		val,
 	)
 }
@@ -833,6 +868,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetIsDefault",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) ResetIsDefaultNetwork() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsDefaultNetwork",
 		nil, // no parameters
 	)
 }

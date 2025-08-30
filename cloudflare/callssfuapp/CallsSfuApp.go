@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 type CallsSfuApp interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_CallsSfuApp) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
 func NewCallsSfuApp(scope constructs.Construct, id *string, config *CallsSfuAppConfig) CallsSfuApp {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewCallsSfuApp(scope constructs.Construct, id *string, config *CallsSfuAppC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app} Resource.
 func NewCallsSfuApp_Override(c CallsSfuApp, scope constructs.Construct, id *string, config *CallsSfuAppConfig) {
 	_init_.Initialize()
 

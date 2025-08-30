@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account cloudflare_account}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account cloudflare_account}.
 type Account interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -122,6 +122,7 @@ type Account interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSettings()
+	ResetType()
 	ResetUnit()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -402,7 +403,7 @@ func (j *jsiiProxy_Account) UnitInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -420,7 +421,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account cloudflare_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account cloudflare_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 
@@ -908,6 +909,14 @@ func (a *jsiiProxy_Account) ResetSettings() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Account) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
 		nil, // no parameters
 	)
 }

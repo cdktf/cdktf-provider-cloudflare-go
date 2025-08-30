@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_deployment cloudflare_workers_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 type WorkersDeployment interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_WorkersDeployment) VersionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment(scope constructs.Construct, id *string, config *WorkersDeploymentConfig) WorkersDeployment {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewWorkersDeployment(scope constructs.Construct, id *string, config *Worker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_deployment cloudflare_workers_deployment} Resource.
 func NewWorkersDeployment_Override(w WorkersDeployment, scope constructs.Construct, id *string, config *WorkersDeploymentConfig) {
 	_init_.Initialize()
 

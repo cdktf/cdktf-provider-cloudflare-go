@@ -446,14 +446,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntry) validateSetTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewZeroTrustDlpCustomEntryParameters(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

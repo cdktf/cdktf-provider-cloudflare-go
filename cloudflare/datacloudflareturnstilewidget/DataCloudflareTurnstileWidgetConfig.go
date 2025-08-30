@@ -24,13 +24,13 @@ type DataCloudflareTurnstileWidgetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}.
 	Filter *DataCloudflareTurnstileWidgetFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Widget item identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
 	Sitekey *string `field:"optional" json:"sitekey" yaml:"sitekey"`
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterO
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference) validateSetIsDefaultNetworkParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference) validateSetIsDeletedParameters(val interface{}) error {
 	return nil
 }

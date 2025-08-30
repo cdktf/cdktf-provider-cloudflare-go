@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_script cloudflare_workers_script}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_script cloudflare_workers_script}.
 type WorkersScript interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -69,6 +69,7 @@ type WorkersScript interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Handlers() *[]*string
 	HasAssets() cdktf.IResolvable
 	HasModules() cdktf.IResolvable
 	Id() *string
@@ -78,10 +79,13 @@ type WorkersScript interface {
 	KeepBindings() *[]*string
 	SetKeepBindings(val *[]*string)
 	KeepBindingsInput() *[]*string
+	LastDeployedFrom() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Limits() WorkersScriptLimitsOutputReference
+	LimitsInput() interface{}
 	Logpush() interface{}
 	SetLogpush(val interface{})
 	LogpushInput() interface{}
@@ -90,7 +94,9 @@ type WorkersScript interface {
 	MainModuleInput() *string
 	Migrations() WorkersScriptMigrationsOutputReference
 	MigrationsInput() interface{}
+	MigrationTag() *string
 	ModifiedOn() *string
+	NamedHandlers() WorkersScriptNamedHandlersList
 	// The tree node.
 	Node() constructs.Node
 	Observability() WorkersScriptObservabilityOutputReference
@@ -167,6 +173,7 @@ type WorkersScript interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAssets(value *WorkersScriptAssets)
 	PutBindings(value interface{})
+	PutLimits(value *WorkersScriptLimits)
 	PutMigrations(value *WorkersScriptMigrations)
 	PutObservability(value *WorkersScriptObservability)
 	PutPlacement(value *WorkersScriptPlacement)
@@ -182,6 +189,7 @@ type WorkersScript interface {
 	ResetContentType()
 	ResetKeepAssets()
 	ResetKeepBindings()
+	ResetLimits()
 	ResetLogpush()
 	ResetMainModule()
 	ResetMigrations()
@@ -510,6 +518,16 @@ func (j *jsiiProxy_WorkersScript) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) Handlers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"handlers",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScript) HasAssets() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -580,11 +598,41 @@ func (j *jsiiProxy_WorkersScript) KeepBindingsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) LastDeployedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastDeployedFrom",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) Limits() WorkersScriptLimitsOutputReference {
+	var returns WorkersScriptLimitsOutputReference
+	_jsii_.Get(
+		j,
+		"limits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) LimitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"limitsInput",
 		&returns,
 	)
 	return returns
@@ -650,11 +698,31 @@ func (j *jsiiProxy_WorkersScript) MigrationsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkersScript) MigrationTag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"migrationTag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkersScript) ModifiedOn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"modifiedOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkersScript) NamedHandlers() WorkersScriptNamedHandlersList {
+	var returns WorkersScriptNamedHandlersList
+	_jsii_.Get(
+		j,
+		"namedHandlers",
 		&returns,
 	)
 	return returns
@@ -841,7 +909,7 @@ func (j *jsiiProxy_WorkersScript) UsageModelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScriptConfig) WorkersScript {
 	_init_.Initialize()
 
@@ -859,7 +927,7 @@ func NewWorkersScript(scope constructs.Construct, id *string, config *WorkersScr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/workers_script cloudflare_workers_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_script cloudflare_workers_script} Resource.
 func NewWorkersScript_Override(w WorkersScript, scope constructs.Construct, id *string, config *WorkersScriptConfig) {
 	_init_.Initialize()
 
@@ -1467,6 +1535,17 @@ func (w *jsiiProxy_WorkersScript) PutBindings(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_WorkersScript) PutLimits(value *WorkersScriptLimits) {
+	if err := w.validatePutLimitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putLimits",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkersScript) PutMigrations(value *WorkersScriptMigrations) {
 	if err := w.validatePutMigrationsParameters(value); err != nil {
 		panic(err)
@@ -1595,6 +1674,14 @@ func (w *jsiiProxy_WorkersScript) ResetKeepBindings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetKeepBindings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkersScript) ResetLimits() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetLimits",
 		nil, // no parameters
 	)
 }

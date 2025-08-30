@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataCloudflareRuleset) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareRuleset) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareRuleset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

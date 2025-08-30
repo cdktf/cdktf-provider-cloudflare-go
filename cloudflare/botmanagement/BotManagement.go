@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/bot_management cloudflare_bot_management}.
 type BotManagement interface {
 	cdktf.TerraformResource
 	AiBotsProtection() *string
@@ -21,6 +21,9 @@ type BotManagement interface {
 	AutoUpdateModel() interface{}
 	SetAutoUpdateModel(val interface{})
 	AutoUpdateModelInput() interface{}
+	BmCookieEnabled() interface{}
+	SetBmCookieEnabled(val interface{})
+	BmCookieEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -148,6 +151,7 @@ type BotManagement interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAiBotsProtection()
 	ResetAutoUpdateModel()
+	ResetBmCookieEnabled()
 	ResetCrawlerProtection()
 	ResetEnableJs()
 	ResetFightMode()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_BotManagement) AutoUpdateModelInput() interface{} {
 	_jsii_.Get(
 		j,
 		"autoUpdateModelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) BmCookieEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bmCookieEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BotManagement) BmCookieEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bmCookieEnabledInput",
 		&returns,
 	)
 	return returns
@@ -630,7 +654,7 @@ func (j *jsiiProxy_BotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement(scope constructs.Construct, id *string, config *BotManagementConfig) BotManagement {
 	_init_.Initialize()
 
@@ -648,7 +672,7 @@ func NewBotManagement(scope constructs.Construct, id *string, config *BotManagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/bot_management cloudflare_bot_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/bot_management cloudflare_bot_management} Resource.
 func NewBotManagement_Override(b BotManagement, scope constructs.Construct, id *string, config *BotManagementConfig) {
 	_init_.Initialize()
 
@@ -677,6 +701,17 @@ func (j *jsiiProxy_BotManagement)SetAutoUpdateModel(val interface{}) {
 	_jsii_.Set(
 		j,
 		"autoUpdateModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BotManagement)SetBmCookieEnabled(val interface{}) {
+	if err := j.validateSetBmCookieEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bmCookieEnabled",
 		val,
 	)
 }
@@ -1235,6 +1270,14 @@ func (b *jsiiProxy_BotManagement) ResetAutoUpdateModel() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAutoUpdateModel",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BotManagement) ResetBmCookieEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBmCookieEnabled",
 		nil, // no parameters
 	)
 }

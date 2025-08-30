@@ -7,7 +7,7 @@ package zerotrustaccessgroup
 type ZeroTrustAccessGroupIncludeCommonName struct {
 	// The common name to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
 	CommonName *string `field:"required" json:"commonName" yaml:"commonName"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/page_rule cloudflare_page_rule}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/page_rule cloudflare_page_rule}.
 type DataCloudflarePageRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataCloudflarePageRule) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/page_rule cloudflare_page_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/page_rule cloudflare_page_rule} Data Source.
 func NewDataCloudflarePageRule(scope constructs.Construct, id *string, config *DataCloudflarePageRuleConfig) DataCloudflarePageRule {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataCloudflarePageRule(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/page_rule cloudflare_page_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/page_rule cloudflare_page_rule} Data Source.
 func NewDataCloudflarePageRule_Override(d DataCloudflarePageRule, scope constructs.Construct, id *string, config *DataCloudflarePageRuleConfig) {
 	_init_.Initialize()
 

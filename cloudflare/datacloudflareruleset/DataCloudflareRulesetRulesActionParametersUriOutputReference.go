@@ -32,6 +32,7 @@ type DataCloudflareRulesetRulesActionParametersUriOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataCloudflareRulesetRulesActionParametersUri
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParametersUri)
+	Origin() cdktf.IResolvable
 	Path() DataCloudflareRulesetRulesActionParametersUriPathOutputReference
 	Query() DataCloudflareRulesetRulesActionParametersUriQueryOutputReference
 	// Experimental.
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersUriOutputReference) Origin() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"origin",
 		&returns,
 	)
 	return returns

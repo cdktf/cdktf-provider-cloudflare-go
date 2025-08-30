@@ -24,11 +24,11 @@ type ArgoTieredCachingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Enables Tiered Caching. Available values: "on", "off".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/argo_tiered_caching#value ArgoTieredCaching#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/argo_tiered_caching#zone_id ArgoTieredCaching#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

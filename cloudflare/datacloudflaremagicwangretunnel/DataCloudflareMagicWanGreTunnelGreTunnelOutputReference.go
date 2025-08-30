@@ -13,6 +13,8 @@ import (
 
 type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 	cdktf.ComplexObject
+	Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
+	BgpStatus() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
 	CloudflareGreEndpoint() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -89,6 +91,26 @@ type DataCloudflareMagicWanGreTunnelGreTunnelOutputReference interface {
 // The jsii proxy struct for DataCloudflareMagicWanGreTunnelGreTunnelOutputReference
 type jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) Bgp() DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference {
+	var returns DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) BgpStatus() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference {
+	var returns DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataCloudflareMagicWanGreTunnelGreTunnelOutputReference) CloudflareGreEndpoint() *string {

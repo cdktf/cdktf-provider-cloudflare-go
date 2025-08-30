@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataCloudflareListItems) validateSetMaxItemsParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareListItems) validateSetPerPageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareListItems) validateSetSearchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
 type ZeroTrustDlpCustomEntry interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -81,9 +81,8 @@ type ZeroTrustDlpCustomEntry interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	UpdatedAt() *string
+	Variant() ZeroTrustDlpCustomEntryVariantOutputReference
 	WordList() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -132,7 +131,6 @@ type ZeroTrustDlpCustomEntry interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -471,21 +469,21 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntry) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ZeroTrustDlpCustomEntry) UpdatedAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpCustomEntry) Variant() ZeroTrustDlpCustomEntryVariantOutputReference {
+	var returns ZeroTrustDlpCustomEntryVariantOutputReference
+	_jsii_.Get(
+		j,
+		"variant",
 		&returns,
 	)
 	return returns
@@ -502,7 +500,7 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) WordList() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) ZeroTrustDlpCustomEntry {
 	_init_.Initialize()
 
@@ -520,7 +518,7 @@ func NewZeroTrustDlpCustomEntry(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry} Resource.
 func NewZeroTrustDlpCustomEntry_Override(z ZeroTrustDlpCustomEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) {
 	_init_.Initialize()
 
@@ -639,17 +637,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ZeroTrustDlpCustomEntry)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -1022,14 +1009,6 @@ func (z *jsiiProxy_ZeroTrustDlpCustomEntry) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (z *jsiiProxy_ZeroTrustDlpCustomEntry) ResetType() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetType",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package pagesproject
 type PagesProjectDeploymentConfigsPreviewQueueProducers struct {
 	// Name of the Queue.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/pages_project#name PagesProject#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/pages_project#name PagesProject#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -24,15 +24,15 @@ type CallsSfuAppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 	AppId *string `field:"optional" json:"appId" yaml:"appId"`
 	// A short description of Calls app, not shown to end users.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

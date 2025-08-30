@@ -24,15 +24,15 @@ type AccountDnsSettingsInternalViewConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The name of the view.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The list of zones linked to this view.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 	Zones *[]*string `field:"required" json:"zones" yaml:"zones"`
 }
 

@@ -24,11 +24,11 @@ type StreamWebhookConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The URL where webhooks will be sent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
 	NotificationUrl *string `field:"required" json:"notificationUrl" yaml:"notificationUrl"`
 }
 

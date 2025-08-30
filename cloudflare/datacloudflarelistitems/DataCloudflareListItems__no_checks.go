@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataCloudflareListItems) validateSetMaxItemsParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareListItems) validateSetPerPageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareListItems) validateSetSearchParameters(val *string) error {
 	return nil
 }

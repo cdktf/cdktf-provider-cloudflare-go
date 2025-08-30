@@ -5,9 +5,9 @@ package zerotrustgatewaysettings
 
 
 type ZeroTrustGatewaySettingsSettingsFips struct {
-	// Enable only cipher suites and TLS versions compliant with FIPS 140-2.
+	// Enable only cipher suites and TLS versions compliant with FIPS. 140-2.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
 	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
 }
 

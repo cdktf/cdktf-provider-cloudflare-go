@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}.
 type DataCloudflareMagicWanGreTunnel interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareMagicWanGreTunnel) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source.
 func NewDataCloudflareMagicWanGreTunnel(scope constructs.Construct, id *string, config *DataCloudflareMagicWanGreTunnelConfig) DataCloudflareMagicWanGreTunnel {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataCloudflareMagicWanGreTunnel(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source.
 func NewDataCloudflareMagicWanGreTunnel_Override(d DataCloudflareMagicWanGreTunnel, scope constructs.Construct, id *string, config *DataCloudflareMagicWanGreTunnelConfig) {
 	_init_.Initialize()
 

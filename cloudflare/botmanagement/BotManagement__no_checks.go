@@ -99,6 +99,10 @@ func (j *jsiiProxy_BotManagement) validateSetAutoUpdateModelParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BotManagement) validateSetBmCookieEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BotManagement) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

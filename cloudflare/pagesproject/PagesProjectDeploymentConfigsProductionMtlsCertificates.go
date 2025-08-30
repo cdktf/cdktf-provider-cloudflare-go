@@ -5,7 +5,7 @@ package pagesproject
 
 
 type PagesProjectDeploymentConfigsProductionMtlsCertificates struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}.
 	CertificateId *string `field:"optional" json:"certificateId" yaml:"certificateId"`
 }
 

@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/bot_management cloudflare_bot_management}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/bot_management cloudflare_bot_management}.
 type DataCloudflareBotManagement interface {
 	cdktf.TerraformDataSource
 	AiBotsProtection() *string
 	AutoUpdateModel() cdktf.IResolvable
+	BmCookieEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataCloudflareBotManagement) AutoUpdateModel() cdktf.IResolva
 	_jsii_.Get(
 		j,
 		"autoUpdateModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareBotManagement) BmCookieEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"bmCookieEnabled",
 		&returns,
 	)
 	return returns
@@ -418,7 +429,7 @@ func (j *jsiiProxy_DataCloudflareBotManagement) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) DataCloudflareBotManagement {
 	_init_.Initialize()
 
@@ -436,7 +447,7 @@ func NewDataCloudflareBotManagement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/bot_management cloudflare_bot_management} Data Source.
 func NewDataCloudflareBotManagement_Override(d DataCloudflareBotManagement, scope constructs.Construct, id *string, config *DataCloudflareBotManagementConfig) {
 	_init_.Initialize()
 

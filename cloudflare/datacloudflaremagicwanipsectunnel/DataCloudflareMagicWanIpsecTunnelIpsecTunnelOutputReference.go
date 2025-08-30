@@ -14,6 +14,8 @@ import (
 type DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference interface {
 	cdktf.ComplexObject
 	AllowNullCipher() cdktf.IResolvable
+	Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
+	BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
 	CloudflareEndpoint() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -97,6 +99,26 @@ func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) 
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) Bgp() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpOutputReference
+	_jsii_.Get(
+		j,
+		"bgp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareMagicWanIpsecTunnelIpsecTunnelOutputReference) BgpStatus() DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference {
+	var returns DataCloudflareMagicWanIpsecTunnelIpsecTunnelBgpStatusOutputReference
+	_jsii_.Get(
+		j,
+		"bgpStatus",
 		&returns,
 	)
 	return returns

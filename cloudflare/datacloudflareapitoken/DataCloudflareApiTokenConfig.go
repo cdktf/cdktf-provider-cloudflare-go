@@ -22,11 +22,11 @@ type DataCloudflareApiTokenConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_token#filter DataCloudflareApiToken#filter}.
 	Filter *DataCloudflareApiTokenFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Token identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_token#token_id DataCloudflareApiToken#token_id}
 	TokenId *string `field:"optional" json:"tokenId" yaml:"tokenId"`
 }
 

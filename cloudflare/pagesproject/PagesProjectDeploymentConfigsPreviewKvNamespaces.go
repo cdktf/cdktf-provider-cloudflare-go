@@ -7,7 +7,7 @@ package pagesproject
 type PagesProjectDeploymentConfigsPreviewKvNamespaces struct {
 	// ID of the KV namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
 	NamespaceId *string `field:"optional" json:"namespaceId" yaml:"namespaceId"`
 }
 

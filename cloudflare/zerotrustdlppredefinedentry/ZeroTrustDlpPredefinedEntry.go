@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry}.
 type ZeroTrustDlpPredefinedEntry interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	CaseSensitive() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Confidence() ZeroTrustDlpPredefinedEntryConfidenceOutputReference
@@ -31,6 +32,7 @@ type ZeroTrustDlpPredefinedEntry interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,6 +59,7 @@ type ZeroTrustDlpPredefinedEntry interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Pattern() ZeroTrustDlpPredefinedEntryPatternOutputReference
 	ProfileId() *string
 	SetProfileId(val *string)
 	ProfileIdInput() *string
@@ -70,12 +73,17 @@ type ZeroTrustDlpPredefinedEntry interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Secret() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	UpdatedAt() *string
+	Variant() ZeroTrustDlpPredefinedEntryVariantOutputReference
+	WordList() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,6 +169,16 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) AccountIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) CaseSensitive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"caseSensitive",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -206,6 +224,16 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -331,6 +359,16 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Pattern() ZeroTrustDlpPredefinedEntryPatternOutputReference {
+	var returns ZeroTrustDlpPredefinedEntryPatternOutputReference
+	_jsii_.Get(
+		j,
+		"pattern",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) ProfileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,6 +419,16 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Secret() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -411,8 +459,48 @@ func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) Variant() ZeroTrustDlpPredefinedEntryVariantOutputReference {
+	var returns ZeroTrustDlpPredefinedEntryVariantOutputReference
+	_jsii_.Get(
+		j,
+		"variant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZeroTrustDlpPredefinedEntry) WordList() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"wordList",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
 func NewZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedEntryConfig) ZeroTrustDlpPredefinedEntry {
 	_init_.Initialize()
 
@@ -430,7 +518,7 @@ func NewZeroTrustDlpPredefinedEntry(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_dlp_predefined_entry cloudflare_zero_trust_dlp_predefined_entry} Resource.
 func NewZeroTrustDlpPredefinedEntry_Override(z ZeroTrustDlpPredefinedEntry, scope constructs.Construct, id *string, config *ZeroTrustDlpPredefinedEntryConfig) {
 	_init_.Initialize()
 

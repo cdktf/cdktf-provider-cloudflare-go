@@ -51,6 +51,7 @@ type DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputReference interface
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
 	UpdatedAt() *string
+	Variant() DataCloudflareZeroTrustDlpPredefinedProfileEntriesVariantOutputReference
 	WordList() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -266,6 +267,16 @@ func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputRefer
 	_jsii_.Get(
 		j,
 		"updatedAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustDlpPredefinedProfileEntriesOutputReference) Variant() DataCloudflareZeroTrustDlpPredefinedProfileEntriesVariantOutputReference {
+	var returns DataCloudflareZeroTrustDlpPredefinedProfileEntriesVariantOutputReference
+	_jsii_.Get(
+		j,
+		"variant",
 		&returns,
 	)
 	return returns

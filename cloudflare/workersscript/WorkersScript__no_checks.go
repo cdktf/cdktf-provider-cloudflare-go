@@ -83,6 +83,10 @@ func (w *jsiiProxy_WorkersScript) validatePutBindingsParameters(value interface{
 	return nil
 }
 
+func (w *jsiiProxy_WorkersScript) validatePutLimitsParameters(value *WorkersScriptLimits) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkersScript) validatePutMigrationsParameters(value *WorkersScriptMigrations) error {
 	return nil
 }

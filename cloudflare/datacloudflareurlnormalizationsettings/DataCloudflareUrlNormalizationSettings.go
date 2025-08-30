@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings}.
 type DataCloudflareUrlNormalizationSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataCloudflareUrlNormalizationSettings) ZoneIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings} Data Source.
 func NewDataCloudflareUrlNormalizationSettings(scope constructs.Construct, id *string, config *DataCloudflareUrlNormalizationSettingsConfig) DataCloudflareUrlNormalizationSettings {
 	_init_.Initialize()
 
@@ -304,7 +304,7 @@ func NewDataCloudflareUrlNormalizationSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/url_normalization_settings cloudflare_url_normalization_settings} Data Source.
 func NewDataCloudflareUrlNormalizationSettings_Override(d DataCloudflareUrlNormalizationSettings, scope constructs.Construct, id *string, config *DataCloudflareUrlNormalizationSettingsConfig) {
 	_init_.Initialize()
 

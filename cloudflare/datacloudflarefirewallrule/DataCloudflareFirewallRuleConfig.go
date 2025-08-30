@@ -24,11 +24,11 @@ type DataCloudflareFirewallRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Defines an identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/firewall_rule#zone_id DataCloudflareFirewallRule#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/firewall_rule#zone_id DataCloudflareFirewallRule#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// The unique identifier of the firewall rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/firewall_rule#rule_id DataCloudflareFirewallRule#rule_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/firewall_rule#rule_id DataCloudflareFirewallRule#rule_id}
 	RuleId *string `field:"optional" json:"ruleId" yaml:"ruleId"`
 }
 

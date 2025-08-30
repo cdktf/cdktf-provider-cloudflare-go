@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset cloudflare_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset cloudflare_ruleset}.
 type DataCloudflareRuleset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -40,7 +40,10 @@ type DataCloudflareRuleset interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	Kind() *string
+	LastUpdated() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -65,6 +68,7 @@ type DataCloudflareRuleset interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Version() *string
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -94,6 +98,7 @@ type DataCloudflareRuleset interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -228,11 +233,31 @@ func (j *jsiiProxy_DataCloudflareRuleset) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRuleset) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRuleset) Kind() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"kind",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRuleset) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
 		&returns,
 	)
 	return returns
@@ -358,6 +383,16 @@ func (j *jsiiProxy_DataCloudflareRuleset) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRuleset) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRuleset) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +414,7 @@ func (j *jsiiProxy_DataCloudflareRuleset) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
 func NewDataCloudflareRuleset(scope constructs.Construct, id *string, config *DataCloudflareRulesetConfig) DataCloudflareRuleset {
 	_init_.Initialize()
 
@@ -397,7 +432,7 @@ func NewDataCloudflareRuleset(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source.
 func NewDataCloudflareRuleset_Override(d DataCloudflareRuleset, scope constructs.Construct, id *string, config *DataCloudflareRulesetConfig) {
 	_init_.Initialize()
 
@@ -442,6 +477,17 @@ func (j *jsiiProxy_DataCloudflareRuleset)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareRuleset)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }
@@ -776,6 +822,14 @@ func (d *jsiiProxy_DataCloudflareRuleset) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareRuleset) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
 		nil, // no parameters
 	)
 }

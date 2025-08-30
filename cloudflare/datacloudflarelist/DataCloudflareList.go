@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list}.
 type DataCloudflareList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataCloudflareList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataCloudflareListConfig) DataCloudflareList {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList_Override(d DataCloudflareList, scope constructs.Construct, id *string, config *DataCloudflareListConfig) {
 	_init_.Initialize()
 

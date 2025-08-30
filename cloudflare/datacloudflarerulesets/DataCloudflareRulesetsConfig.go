@@ -22,17 +22,17 @@ type DataCloudflareRulesetsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+	// The unique ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/rulesets#account_id DataCloudflareRulesets#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
-	// Max items to fetch, default: 1000.
+	// Maximum number of rulesets to fetch (defaults to 1000).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/rulesets#max_items DataCloudflareRulesets#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
-	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+	// The unique ID of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/rulesets#zone_id DataCloudflareRulesets#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

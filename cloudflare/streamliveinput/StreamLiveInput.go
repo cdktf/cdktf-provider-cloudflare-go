@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/stream_live_input cloudflare_stream_live_input}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 type StreamLiveInput interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -539,7 +539,7 @@ func (j *jsiiProxy_StreamLiveInput) WebRtcPlayback() StreamLiveInputWebRtcPlayba
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLiveInputConfig) StreamLiveInput {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewStreamLiveInput(scope constructs.Construct, id *string, config *StreamLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource.
 func NewStreamLiveInput_Override(s StreamLiveInput, scope constructs.Construct, id *string, config *StreamLiveInputConfig) {
 	_init_.Initialize()
 

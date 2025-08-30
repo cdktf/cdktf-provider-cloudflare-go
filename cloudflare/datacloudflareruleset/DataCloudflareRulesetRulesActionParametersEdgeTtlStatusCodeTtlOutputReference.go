@@ -32,8 +32,8 @@ type DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReferen
 	Fqn() *string
 	InternalValue() *DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtl
 	SetInternalValue(val *DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtl)
+	StatusCode() *float64
 	StatusCodeRange() DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
-	StatusCodeValue() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,21 +132,21 @@ func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTt
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCodeRange() DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference {
-	var returns DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCode() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"statusCodeRange",
+		"statusCode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCodeValue() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference) StatusCodeRange() DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference {
+	var returns DataCloudflareRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference
 	_jsii_.Get(
 		j,
-		"statusCodeValue",
+		"statusCodeRange",
 		&returns,
 	)
 	return returns

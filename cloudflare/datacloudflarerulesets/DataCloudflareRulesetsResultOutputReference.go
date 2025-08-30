@@ -35,6 +35,7 @@ type DataCloudflareRulesetsResultOutputReference interface {
 	InternalValue() *DataCloudflareRulesetsResult
 	SetInternalValue(val *DataCloudflareRulesetsResult)
 	Kind() *string
+	LastUpdated() *string
 	Name() *string
 	Phase() *string
 	// Experimental.
@@ -45,6 +46,7 @@ type DataCloudflareRulesetsResultOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Version() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -164,6 +166,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) Kind() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) LastUpdated() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastUpdated",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -199,6 +211,16 @@ func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareRulesetsResultOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
 		&returns,
 	)
 	return returns

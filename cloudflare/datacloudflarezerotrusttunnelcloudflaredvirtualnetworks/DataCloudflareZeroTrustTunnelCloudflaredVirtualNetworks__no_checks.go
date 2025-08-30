@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) vali
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) validateSetIsDefaultNetworkParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworks) validateSetIsDeletedParameters(val interface{}) error {
 	return nil
 }

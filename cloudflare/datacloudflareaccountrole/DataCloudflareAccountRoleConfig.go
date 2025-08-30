@@ -24,11 +24,11 @@ type DataCloudflareAccountRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_role#account_id DataCloudflareAccountRole#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/account_role#account_id DataCloudflareAccountRole#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Role identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/account_role#role_id DataCloudflareAccountRole#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/account_role#role_id DataCloudflareAccountRole#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 }
 

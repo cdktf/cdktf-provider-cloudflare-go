@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer}.
 type DataCloudflareDnsZoneTransfersPeer interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataCloudflareDnsZoneTransfersPeer) TsigId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeer(scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeerConfig) DataCloudflareDnsZoneTransfersPeer {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataCloudflareDnsZoneTransfersPeer(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/dns_zone_transfers_peer cloudflare_dns_zone_transfers_peer} Data Source.
 func NewDataCloudflareDnsZoneTransfersPeer_Override(d DataCloudflareDnsZoneTransfersPeer, scope constructs.Construct, id *string, config *DataCloudflareDnsZoneTransfersPeerConfig) {
 	_init_.Initialize()
 

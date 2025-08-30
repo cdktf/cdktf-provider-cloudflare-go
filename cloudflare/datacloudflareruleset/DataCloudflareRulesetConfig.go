@@ -22,17 +22,24 @@ type DataCloudflareRulesetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+	// The unique ID of the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
 	AccountId *string `field:"optional" json:"accountId" yaml:"accountId"`
 	// The unique ID of the ruleset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
-	RulesetId *string `field:"optional" json:"rulesetId" yaml:"rulesetId"`
-	// The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.4/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The unique ID of the ruleset.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+	RulesetId *string `field:"optional" json:"rulesetId" yaml:"rulesetId"`
+	// The unique ID of the zone.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -127,10 +127,6 @@ func (j *jsiiProxy_ZeroTrustDlpCustomEntry) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ZeroTrustDlpCustomEntry) validateSetTypeParameters(val *string) error {
-	return nil
-}
-
 func validateNewZeroTrustDlpCustomEntryParameters(scope constructs.Construct, id *string, config *ZeroTrustDlpCustomEntryConfig) error {
 	return nil
 }

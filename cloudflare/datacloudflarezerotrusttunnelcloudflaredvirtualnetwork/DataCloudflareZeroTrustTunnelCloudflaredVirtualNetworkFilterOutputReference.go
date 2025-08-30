@@ -38,6 +38,9 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference
 	IsDefault() interface{}
 	SetIsDefault(val interface{})
 	IsDefaultInput() interface{}
+	IsDefaultNetwork() interface{}
+	SetIsDefaultNetwork(val interface{})
+	IsDefaultNetworkInput() interface{}
 	IsDeleted() interface{}
 	SetIsDeleted(val interface{})
 	IsDeletedInput() interface{}
@@ -78,6 +81,7 @@ type DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetId()
 	ResetIsDefault()
+	ResetIsDefaultNetwork()
 	ResetIsDeleted()
 	ResetName()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterO
 	_jsii_.Get(
 		j,
 		"isDefaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference) IsDefaultNetwork() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference) IsDefaultNetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNetworkInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +348,17 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterO
 	_jsii_.Set(
 		j,
 		"isDefault",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference)SetIsDefaultNetwork(val interface{}) {
+	if err := j.validateSetIsDefaultNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultNetwork",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterO
 	_jsii_.InvokeVoid(
 		d,
 		"resetIsDefault",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredVirtualNetworkFilterOutputReference) ResetIsDefaultNetwork() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsDefaultNetwork",
 		nil, // no parameters
 	)
 }
