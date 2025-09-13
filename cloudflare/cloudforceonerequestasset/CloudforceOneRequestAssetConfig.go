@@ -24,23 +24,23 @@ type CloudforceOneRequestAssetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Page number of results.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
 	Page *float64 `field:"required" json:"page" yaml:"page"`
 	// Number of results per page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
 	PerPage *float64 `field:"required" json:"perPage" yaml:"perPage"`
 	// UUID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
 	RequestId *string `field:"required" json:"requestId" yaml:"requestId"`
 	// Asset file to upload.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
 

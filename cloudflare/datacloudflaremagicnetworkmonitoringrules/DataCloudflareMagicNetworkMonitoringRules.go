@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules}.
 type DataCloudflareMagicNetworkMonitoringRules interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareMagicNetworkMonitoringRules) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRules(scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRulesConfig) DataCloudflareMagicNetworkMonitoringRules {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareMagicNetworkMonitoringRules(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/magic_network_monitoring_rules cloudflare_magic_network_monitoring_rules} Data Source.
 func NewDataCloudflareMagicNetworkMonitoringRules_Override(d DataCloudflareMagicNetworkMonitoringRules, scope constructs.Construct, id *string, config *DataCloudflareMagicNetworkMonitoringRulesConfig) {
 	_init_.Initialize()
 

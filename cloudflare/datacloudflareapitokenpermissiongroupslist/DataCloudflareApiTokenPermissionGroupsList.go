@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list}.
 type DataCloudflareApiTokenPermissionGroupsList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroupsList) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareApiTokenPermissionGroupsList(scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsListConfig) DataCloudflareApiTokenPermissionGroupsList {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataCloudflareApiTokenPermissionGroupsList(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/api_token_permission_groups_list cloudflare_api_token_permission_groups_list} Data Source.
 func NewDataCloudflareApiTokenPermissionGroupsList_Override(d DataCloudflareApiTokenPermissionGroupsList, scope constructs.Construct, id *string, config *DataCloudflareApiTokenPermissionGroupsListConfig) {
 	_init_.Initialize()
 

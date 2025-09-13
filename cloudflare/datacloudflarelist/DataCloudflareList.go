@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list cloudflare_list}.
 type DataCloudflareList interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -41,6 +41,7 @@ type DataCloudflareList interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Items() DataCloudflareListItemsList
 	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -61,6 +62,9 @@ type DataCloudflareList interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Search() *string
+	SetSearch(val *string)
+	SearchInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -95,6 +99,7 @@ type DataCloudflareList interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSearch()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -234,6 +239,16 @@ func (j *jsiiProxy_DataCloudflareList) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareList) Items() DataCloudflareListItemsList {
+	var returns DataCloudflareListItemsList
+	_jsii_.Get(
+		j,
+		"items",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareList) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -344,6 +359,26 @@ func (j *jsiiProxy_DataCloudflareList) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataCloudflareList) Search() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"search",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataCloudflareList) SearchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"searchInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataCloudflareList) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -375,7 +410,7 @@ func (j *jsiiProxy_DataCloudflareList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataCloudflareListConfig) DataCloudflareList {
 	_init_.Initialize()
 
@@ -393,7 +428,7 @@ func NewDataCloudflareList(scope constructs.Construct, id *string, config *DataC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/list cloudflare_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list cloudflare_list} Data Source.
 func NewDataCloudflareList_Override(d DataCloudflareList, scope constructs.Construct, id *string, config *DataCloudflareListConfig) {
 	_init_.Initialize()
 
@@ -468,6 +503,17 @@ func (j *jsiiProxy_DataCloudflareList)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataCloudflareList)SetSearch(val *string) {
+	if err := j.validateSetSearchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"search",
 		val,
 	)
 }
@@ -761,6 +807,14 @@ func (d *jsiiProxy_DataCloudflareList) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataCloudflareList) ResetSearch() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSearch",
 		nil, // no parameters
 	)
 }

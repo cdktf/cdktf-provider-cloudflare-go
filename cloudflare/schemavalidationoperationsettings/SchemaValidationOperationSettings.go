@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
 type SchemaValidationOperationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SchemaValidationOperationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource.
 func NewSchemaValidationOperationSettings(scope constructs.Construct, id *string, config *SchemaValidationOperationSettingsConfig) SchemaValidationOperationSettings {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSchemaValidationOperationSettings(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource.
 func NewSchemaValidationOperationSettings_Override(s SchemaValidationOperationSettings, scope constructs.Construct, id *string, config *SchemaValidationOperationSettingsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 type DataCloudflareCloudforceOneRequestAsset interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataCloudflareCloudforceOneRequestAsset) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) DataCloudflareCloudforceOneRequestAsset {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataCloudflareCloudforceOneRequestAsset(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset} Data Source.
 func NewDataCloudflareCloudforceOneRequestAsset_Override(d DataCloudflareCloudforceOneRequestAsset, scope constructs.Construct, id *string, config *DataCloudflareCloudforceOneRequestAssetConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior}.
 type DataCloudflareZeroTrustRiskBehavior interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustRiskBehavior) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Data Source.
 func NewDataCloudflareZeroTrustRiskBehavior(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskBehaviorConfig) DataCloudflareZeroTrustRiskBehavior {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataCloudflareZeroTrustRiskBehavior(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_risk_behavior cloudflare_zero_trust_risk_behavior} Data Source.
 func NewDataCloudflareZeroTrustRiskBehavior_Override(d DataCloudflareZeroTrustRiskBehavior, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustRiskBehaviorConfig) {
 	_init_.Initialize()
 

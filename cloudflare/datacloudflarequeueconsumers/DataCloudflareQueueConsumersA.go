@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}.
 type DataCloudflareQueueConsumersA interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataCloudflareQueueConsumersA) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
 func NewDataCloudflareQueueConsumersA(scope constructs.Construct, id *string, config *DataCloudflareQueueConsumersAConfig) DataCloudflareQueueConsumersA {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataCloudflareQueueConsumersA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source.
 func NewDataCloudflareQueueConsumersA_Override(d DataCloudflareQueueConsumersA, scope constructs.Construct, id *string, config *DataCloudflareQueueConsumersAConfig) {
 	_init_.Initialize()
 

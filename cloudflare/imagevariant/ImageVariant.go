@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/image_variant cloudflare_image_variant}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant cloudflare_image_variant}.
 type ImageVariant interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ImageVariant) Variant() ImageVariantVariantOutputReference {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant(scope constructs.Construct, id *string, config *ImageVariantConfig) ImageVariant {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewImageVariant(scope constructs.Construct, id *string, config *ImageVarian
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/image_variant cloudflare_image_variant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant cloudflare_image_variant} Resource.
 func NewImageVariant_Override(i ImageVariant, scope constructs.Construct, id *string, config *ImageVariantConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ type ZeroTrustAccessApplicationSaasAppRefreshTokenOptions struct {
 	//
 	// Valid units are m,h,d. Must be longer than 1m.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_access_application#lifetime ZeroTrustAccessApplication#lifetime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_access_application#lifetime ZeroTrustAccessApplication#lifetime}
 	Lifetime *string `field:"optional" json:"lifetime" yaml:"lifetime"`
 }
 

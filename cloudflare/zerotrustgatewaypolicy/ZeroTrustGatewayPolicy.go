@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}.
 type ZeroTrustGatewayPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -694,7 +694,7 @@ func (j *jsiiProxy_ZeroTrustGatewayPolicy) WarningStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) ZeroTrustGatewayPolicy {
 	_init_.Initialize()
 
@@ -712,7 +712,7 @@ func NewZeroTrustGatewayPolicy(scope constructs.Construct, id *string, config *Z
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource.
 func NewZeroTrustGatewayPolicy_Override(z ZeroTrustGatewayPolicy, scope constructs.Construct, id *string, config *ZeroTrustGatewayPolicyConfig) {
 	_init_.Initialize()
 

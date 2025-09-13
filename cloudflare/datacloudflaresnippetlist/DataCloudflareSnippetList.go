@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/snippet_list cloudflare_snippet_list}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/snippet_list cloudflare_snippet_list}.
 type DataCloudflareSnippetList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCloudflareSnippetList) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/snippet_list cloudflare_snippet_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/snippet_list cloudflare_snippet_list} Data Source.
 func NewDataCloudflareSnippetList(scope constructs.Construct, id *string, config *DataCloudflareSnippetListConfig) DataCloudflareSnippetList {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataCloudflareSnippetList(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/snippet_list cloudflare_snippet_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/snippet_list cloudflare_snippet_list} Data Source.
 func NewDataCloudflareSnippetList_Override(d DataCloudflareSnippetList, scope constructs.Construct, id *string, config *DataCloudflareSnippetListConfig) {
 	_init_.Initialize()
 

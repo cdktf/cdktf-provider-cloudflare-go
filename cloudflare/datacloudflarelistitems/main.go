@@ -11,8 +11,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItems",
-		reflect.TypeOf((*DataCloudflareListItems)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA",
+		reflect.TypeOf((*DataCloudflareListItemsA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -63,14 +63,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataCloudflareListItems{}
+			j := jsiiProxy_DataCloudflareListItemsA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsConfig",
-		reflect.TypeOf((*DataCloudflareListItemsConfig)(nil)).Elem(),
+		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig",
+		reflect.TypeOf((*DataCloudflareListItemsAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsResult",

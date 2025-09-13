@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_route cloudflare_workers_route}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_route cloudflare_workers_route}.
 type WorkersRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_WorkersRoute) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRouteConfig) WorkersRoute {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewWorkersRoute(scope constructs.Construct, id *string, config *WorkersRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/workers_route cloudflare_workers_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_route cloudflare_workers_route} Resource.
 func NewWorkersRoute_Override(w WorkersRoute, scope constructs.Construct, id *string, config *WorkersRouteConfig) {
 	_init_.Initialize()
 

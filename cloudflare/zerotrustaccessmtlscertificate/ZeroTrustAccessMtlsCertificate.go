@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate}.
 type ZeroTrustAccessMtlsCertificate interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ZeroTrustAccessMtlsCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) ZeroTrustAccessMtlsCertificate {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewZeroTrustAccessMtlsCertificate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_access_mtls_certificate cloudflare_zero_trust_access_mtls_certificate} Resource.
 func NewZeroTrustAccessMtlsCertificate_Override(z ZeroTrustAccessMtlsCertificate, scope constructs.Construct, id *string, config *ZeroTrustAccessMtlsCertificateConfig) {
 	_init_.Initialize()
 

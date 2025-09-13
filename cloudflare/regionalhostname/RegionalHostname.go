@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 type RegionalHostname interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_RegionalHostname) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname(scope constructs.Construct, id *string, config *RegionalHostnameConfig) RegionalHostname {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewRegionalHostname(scope constructs.Construct, id *string, config *Regiona
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource.
 func NewRegionalHostname_Override(r RegionalHostname, scope constructs.Construct, id *string, config *RegionalHostnameConfig) {
 	_init_.Initialize()
 

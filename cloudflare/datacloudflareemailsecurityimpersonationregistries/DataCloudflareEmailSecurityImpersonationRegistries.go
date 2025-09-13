@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries}.
 type DataCloudflareEmailSecurityImpersonationRegistries interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_DataCloudflareEmailSecurityImpersonationRegistries) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistries(scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistriesConfig) DataCloudflareEmailSecurityImpersonationRegistries {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewDataCloudflareEmailSecurityImpersonationRegistries(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/email_security_impersonation_registries cloudflare_email_security_impersonation_registries} Data Source.
 func NewDataCloudflareEmailSecurityImpersonationRegistries_Override(d DataCloudflareEmailSecurityImpersonationRegistries, scope constructs.Construct, id *string, config *DataCloudflareEmailSecurityImpersonationRegistriesConfig) {
 	_init_.Initialize()
 

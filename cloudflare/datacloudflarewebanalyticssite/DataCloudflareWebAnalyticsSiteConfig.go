@@ -24,13 +24,13 @@ type DataCloudflareWebAnalyticsSiteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/web_analytics_site#account_id DataCloudflareWebAnalyticsSite#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/web_analytics_site#account_id DataCloudflareWebAnalyticsSite#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/web_analytics_site#filter DataCloudflareWebAnalyticsSite#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/web_analytics_site#filter DataCloudflareWebAnalyticsSite#filter}.
 	Filter *DataCloudflareWebAnalyticsSiteFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/data-sources/web_analytics_site#site_id DataCloudflareWebAnalyticsSite#site_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/web_analytics_site#site_id DataCloudflareWebAnalyticsSite#site_id}
 	SiteId *string `field:"optional" json:"siteId" yaml:"siteId"`
 }
 

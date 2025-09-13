@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataCloudflareList) validateSetListIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataCloudflareList) validateSetSearchParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataCloudflareListParameters(scope constructs.Construct, id *string, config *DataCloudflareListConfig) error {
 	return nil
 }

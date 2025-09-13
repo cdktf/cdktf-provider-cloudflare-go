@@ -5,9 +5,9 @@ package apitoken
 
 
 type ApiTokenPoliciesPermissionGroupsMeta struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/api_token#key ApiToken#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_token#key ApiToken#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/api_token#value ApiToken#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_token#value ApiToken#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

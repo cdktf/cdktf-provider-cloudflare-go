@@ -7,7 +7,7 @@ package r2bucketlifecycle
 type R2BucketLifecycleRulesAbortMultipartUploadsTransition struct {
 	// Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.9.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
 	Condition *R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition `field:"optional" json:"condition" yaml:"condition"`
 }
 
