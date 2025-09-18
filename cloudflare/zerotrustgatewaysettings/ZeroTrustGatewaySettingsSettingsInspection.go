@@ -11,7 +11,7 @@ type ZeroTrustGatewaySettingsSettingsInspection struct {
 	// - dynamic: Gateway will use protocol detection to dynamically inspect HTTP and HTTPS traffic on any port. TLS decryption must be on to inspect HTTPS traffic.
 	// Available values: "static", "dynamic".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

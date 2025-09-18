@@ -26,19 +26,19 @@ type ApiShieldOperationConfig struct {
 	//
 	// This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 	// RFC3986-compliant host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 	Host *string `field:"required" json:"host" yaml:"host"`
 	// The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 	Method *string `field:"required" json:"method" yaml:"method"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -9,11 +9,11 @@ type RulesetRulesActionParametersCacheKeyCustomKeyCookie struct {
 	//
 	// The presence of these cookies is included in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/ruleset#check_presence Ruleset#check_presence}
 	CheckPresence *[]*string `field:"optional" json:"checkPresence" yaml:"checkPresence"`
 	// A list of cookies to include in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/ruleset#include Ruleset#include}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/ruleset#include Ruleset#include}
 	Include *[]*string `field:"optional" json:"include" yaml:"include"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate}.
 type DataCloudflareKeylessCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataCloudflareKeylessCertificate) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
 func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string, config *DataCloudflareKeylessCertificateConfig) DataCloudflareKeylessCertificate {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataCloudflareKeylessCertificate(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/keyless_certificate cloudflare_keyless_certificate} Data Source.
 func NewDataCloudflareKeylessCertificate_Override(d DataCloudflareKeylessCertificate, scope constructs.Construct, id *string, config *DataCloudflareKeylessCertificateConfig) {
 	_init_.Initialize()
 

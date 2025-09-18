@@ -24,15 +24,15 @@ type DataCloudflareCertificatePacksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

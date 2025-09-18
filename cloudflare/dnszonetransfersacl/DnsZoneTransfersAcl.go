@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl}.
 type DnsZoneTransfersAcl interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DnsZoneTransfersAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource.
 func NewDnsZoneTransfersAcl(scope constructs.Construct, id *string, config *DnsZoneTransfersAclConfig) DnsZoneTransfersAcl {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDnsZoneTransfersAcl(scope constructs.Construct, id *string, config *DnsZ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/dns_zone_transfers_acl cloudflare_dns_zone_transfers_acl} Resource.
 func NewDnsZoneTransfersAcl_Override(d DnsZoneTransfersAcl, scope constructs.Construct, id *string, config *DnsZoneTransfersAclConfig) {
 	_init_.Initialize()
 

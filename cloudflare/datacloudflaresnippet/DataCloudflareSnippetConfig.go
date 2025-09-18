@@ -24,11 +24,11 @@ type DataCloudflareSnippetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The identifying name of the snippet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
 	SnippetName *string `field:"required" json:"snippetName" yaml:"snippetName"`
 	// The unique ID of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

@@ -24,11 +24,11 @@ type DataCloudflareResourceGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Resource Group identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
 	ResourceGroupId *string `field:"required" json:"resourceGroupId" yaml:"resourceGroupId"`
 }
 

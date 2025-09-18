@@ -24,9 +24,9 @@ type AccountDnsSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
 	ZoneDefaults *AccountDnsSettingsZoneDefaults `field:"optional" json:"zoneDefaults" yaml:"zoneDefaults"`
 }
 

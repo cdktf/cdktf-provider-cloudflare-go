@@ -24,25 +24,25 @@ type DataCloudflareListItemsAConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Account ID for this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// The unique ID of the list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
 	ListId *string `field:"required" json:"listId" yaml:"listId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 	// Amount of results to include in each paginated response. A non-negative 32 bit integer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
 	PerPage *float64 `field:"optional" json:"perPage" yaml:"perPage"`
 	// A search query to filter returned items.
 	//
 	// Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
 	Search *string `field:"optional" json:"search" yaml:"search"`
 }
 

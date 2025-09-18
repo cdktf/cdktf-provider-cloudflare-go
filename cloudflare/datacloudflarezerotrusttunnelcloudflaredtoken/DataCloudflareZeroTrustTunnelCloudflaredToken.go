@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token}.
 type DataCloudflareZeroTrustTunnelCloudflaredToken interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataCloudflareZeroTrustTunnelCloudflaredToken) TunnelIdInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredToken(scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredTokenConfig) DataCloudflareZeroTrustTunnelCloudflaredToken {
 	_init_.Initialize()
 
@@ -316,7 +316,7 @@ func NewDataCloudflareZeroTrustTunnelCloudflaredToken(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token} Data Source.
 func NewDataCloudflareZeroTrustTunnelCloudflaredToken_Override(d DataCloudflareZeroTrustTunnelCloudflaredToken, scope constructs.Construct, id *string, config *DataCloudflareZeroTrustTunnelCloudflaredTokenConfig) {
 	_init_.Initialize()
 

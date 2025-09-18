@@ -24,23 +24,23 @@ type EmailRoutingCatchAllConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// List actions for the catch-all routing rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_catch_all#actions EmailRoutingCatchAll#actions}
 	Actions interface{} `field:"required" json:"actions" yaml:"actions"`
 	// List of matchers for the catch-all routing rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_catch_all#matchers EmailRoutingCatchAll#matchers}
 	Matchers interface{} `field:"required" json:"matchers" yaml:"matchers"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_catch_all#zone_id EmailRoutingCatchAll#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// Routing rule status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_catch_all#enabled EmailRoutingCatchAll#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// Routing rule name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/email_routing_catch_all#name EmailRoutingCatchAll#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

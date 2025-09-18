@@ -24,20 +24,20 @@ type ImageVariantConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account identifier tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant#account_id ImageVariant#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/image_variant#account_id ImageVariant#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant#id ImageVariant#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/image_variant#id ImageVariant#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"required" json:"id" yaml:"id"`
 	// Allows you to define image resizing sizes for different use cases.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant#options ImageVariant#options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/image_variant#options ImageVariant#options}
 	Options *ImageVariantOptions `field:"required" json:"options" yaml:"options"`
 	// Indicates whether the variant can access an image without a signature, regardless of image access control.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
 	NeverRequireSignedUrls interface{} `field:"optional" json:"neverRequireSignedUrls" yaml:"neverRequireSignedUrls"`
 }
 

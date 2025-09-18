@@ -24,15 +24,15 @@ type DataCloudflareStreamCaptionLanguageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/stream_caption_language#account_id DataCloudflareStreamCaptionLanguage#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_caption_language#account_id DataCloudflareStreamCaptionLanguage#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Cloudflare-generated unique identifier for a media item.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/stream_caption_language#identifier DataCloudflareStreamCaptionLanguage#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_caption_language#identifier DataCloudflareStreamCaptionLanguage#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// The language tag in BCP 47 format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/stream_caption_language#language DataCloudflareStreamCaptionLanguage#language}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/stream_caption_language#language DataCloudflareStreamCaptionLanguage#language}
 	Language *string `field:"required" json:"language" yaml:"language"`
 }
 

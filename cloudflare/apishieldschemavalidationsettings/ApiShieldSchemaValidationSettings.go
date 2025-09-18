@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}.
 type ApiShieldSchemaValidationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ApiShieldSchemaValidationSettings) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource.
 func NewApiShieldSchemaValidationSettings(scope constructs.Construct, id *string, config *ApiShieldSchemaValidationSettingsConfig) ApiShieldSchemaValidationSettings {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewApiShieldSchemaValidationSettings(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource.
 func NewApiShieldSchemaValidationSettings_Override(a ApiShieldSchemaValidationSettings, scope constructs.Construct, id *string, config *ApiShieldSchemaValidationSettingsConfig) {
 	_init_.Initialize()
 

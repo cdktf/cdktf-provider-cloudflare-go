@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
+// Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}.
 type R2BucketEventNotification interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_R2BucketEventNotification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification(scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) R2BucketEventNotification {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewR2BucketEventNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource.
 func NewR2BucketEventNotification_Override(r R2BucketEventNotification, scope constructs.Construct, id *string, config *R2BucketEventNotificationConfig) {
 	_init_.Initialize()
 

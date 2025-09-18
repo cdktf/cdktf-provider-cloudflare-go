@@ -24,15 +24,15 @@ type DataCloudflareQueueConsumersAConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A Resource identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
 	QueueId *string `field:"required" json:"queueId" yaml:"queueId"`
 	// Max items to fetch, default: 1000.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
 	MaxItems *float64 `field:"optional" json:"maxItems" yaml:"maxItems"`
 }
 

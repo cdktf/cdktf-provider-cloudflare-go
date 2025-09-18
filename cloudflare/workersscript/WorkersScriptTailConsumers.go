@@ -7,15 +7,15 @@ package workersscript
 type WorkersScriptTailConsumers struct {
 	// Name of Worker that is to be the consumer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_script#service WorkersScript#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/workers_script#service WorkersScript#service}
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// Optional environment if the Worker utilizes one.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_script#environment WorkersScript#environment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/workers_script#environment WorkersScript#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`
 	// Optional dispatch namespace the script belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.10.1/docs/resources/workers_script#namespace WorkersScript#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 
